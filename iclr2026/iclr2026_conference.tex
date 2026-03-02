@@ -55,7 +55,13 @@ Professor Sewon Min and Professor Alane Suhr \\
 \newcommand{\fix}{\marginpar{FIX}}
 \newcommand{\new}{\marginpar{NEW}}
 
-\iclrfinalcopy % Uncommented to show author names for abstract submission
+%\iclrfinalcopy % Commented out to remove "Published as a conference paper" label
+
+% Suppress the "Under review" notice for course submission
+\makeatletter
+\renewcommand{\@copyrightspace}{}
+\makeatother
+
 \begin{document}
 
 
