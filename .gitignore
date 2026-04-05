@@ -1,0 +1,43 @@
+# Generated data (can be regenerated from PDFs via process_pdfs.py)
+slideqa/data/slides/**/*.png
+slideqa/data/text/**/*.txt
+
+# NOTE: PDFs are tracked so teammates can run the pipeline.
+# If the repo gets too large, consider Git LFS for PDFs.
+
+# Keep annotation JSONs tracked (they're the benchmark output)
+# but ignore draft files that may be large/in-progress
+# slideqa/data/annotations/*_drafts.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# LaTeX build artifacts
+iclr2026/*.aux
+iclr2026/*.log
+iclr2026/*.out
+iclr2026/*.bbl
+iclr2026/*.blg
+iclr2026/*.fdb_latexmk
+iclr2026/*.fls
+iclr2026/*.synctex.gz

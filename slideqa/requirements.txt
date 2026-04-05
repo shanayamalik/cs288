@@ -1,0 +1,17 @@
+# SlideQA dependencies
+# ── PDF processing ──
+pdf2image>=1.17.0
+Pillow>=10.0.0
+PyMuPDF>=1.24.0
+pytesseract>=0.3.10     # optional: OCR fallback
+
+# ── VLM APIs (pick one or both) ──
+openai>=1.30.0
+google-generativeai>=0.7.0
+
+# ── Annotation tool ──
+streamlit>=1.35.0
+
+# ── Evaluation ──
+# rouge-score>=0.1.2    # optional: if you want the official ROUGE implementation
+# bert-score>=0.3.13    # optional: BERTScore metric

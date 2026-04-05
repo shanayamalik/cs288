@@ -1,0 +1,176 @@
+SlideQA — Literature Review Notes for Related Work Section
+==========================================================
+Prepared: April 5, 2026
+For: Checkpoint 2 (due 04/09)
+
+Start with these 5 core references. Then search Semantic Scholar / Google
+Scholar for newer papers (2024-2026) on "lecture slide QA", "educational
+document VQA", or "multimodal slide understanding" and add any you find.
+
+
+========================================================================
+CORE REFERENCES
+========================================================================
+
+1. SlideVQA  [MOST IMPORTANT — closest existing benchmark]
+   - Authors: Tanaka, Nishida, Nishida, Hasegawa, Saito, Saito
+   - Venue: AAAI 2023  |  arXiv: 2301.04883
+   - Size: 14.5k questions, 52k+ slide images, 2.6k+ slide decks
+   - Domain: General-domain slide decks (business, presentations)
+   - Multi-page: Yes (questions can span multiple slides)
+   - Question types: Single-hop, multi-hop, numerical reasoning
+   - Summary: First large-scale multi-image document VQA dataset on slides.
+     Proposes an end-to-end model treating evidence selection + QA as a
+     unified sequence-to-sequence task. Still has a large gap vs human perf.
+   - How SlideQA differs:
+     (a) SlideQA is education-specific (NLP courses) — slides contain
+         technical content (math, ML diagrams, pseudocode) unlike the
+         general-domain presentations in SlideVQA.
+     (b) SlideQA has a 5-category modality taxonomy enabling fine-grained
+         evaluation per visual-reasoning type. SlideVQA only distinguishes
+         single-hop / multi-hop / numerical.
+     (c) SlideQA jointly evaluates retrieval + QA via a RAG pipeline.
+         SlideVQA assumes the candidate slide deck is given.
+
+2. DocVQA  [foundational document VQA benchmark — everyone cites this]
+   - Authors: Mathew, Karatzas, Jawahar
+   - Venue: WACV 2021  |  arXiv: 2007.00398
+   - Size: 50k questions, 12k+ document images
+   - Domain: Industry documents (invoices, reports, forms)
+   - Multi-page: No (single page only)
+   - Summary: Foundational benchmark for VQA on document images. Large gap
+     between models and humans (94.36% acc), especially on questions requiring
+     structural understanding of documents.
+   - How SlideQA differs: DocVQA is single-page industry documents. SlideQA
+     targets multi-slide educational content with richer visual elements
+     (diagrams, math expressions, charts) and includes a retrieval stage.
+
+3. ChartQA  [covers our chart_graph question category]
+   - Authors: Masry, Long, Tan, Joty, Hoque
+   - Venue: ACL Findings 2022  |  arXiv: 2203.10244
+   - Size: 9.6k human-written + 23.1k generated questions (32.7k total)
+   - Domain: Charts only
+   - Summary: Focuses on complex visual and logical reasoning over charts.
+     Proposes transformer models combining visual features with chart data
+     tables. Includes both human-authored and machine-generated questions.
+   - How SlideQA differs: Chart-only and not embedded in slide context.
+     SlideQA's "chart_graph" category covers this as one of five question
+     types within the broader lecture slide setting.
+
+4. ColPali  [core to our retrieval pipeline]
+   - Authors: Faysse, Sibille, Wu, Omrani, Viaud, Hudelot, Colombo
+   - Venue: ICLR 2025  |  arXiv: 2407.01449
+   - Summary: Vision Language Model for document retrieval that directly
+     embeds page images — no OCR or text extraction needed. Uses late
+     interaction matching (ColBERT-style) on vision token embeddings.
+     Introduces the ViDoRe benchmark. Outperforms text-based retrieval
+     pipelines while being simpler and end-to-end trainable.
+   - Relevance: This is the retrieval approach we're using to embed slides
+     in our multimodal RAG pipeline.
+
+5. RAG  [foundational paper for retrieval-augmented generation]
+   - Authors: Lewis, Perez, Piktus, Petroni, Karpukhin, et al.
+   - Venue: NeurIPS 2020  |  arXiv: 2005.11401
+   - Summary: Combines a pre-trained retriever (DPR) with a seq2seq
+     generator. Shows that retrieval-augmented models outperform purely
+     parametric models on knowledge-intensive NLP tasks.
+   - Relevance: Cite for the general retrieval-augmented pipeline design.
+     Our system extends RAG to the multimodal (vision) setting.
+
+
+========================================================================
+COMPARISON TABLE (format as LaTeX table for the paper)
+========================================================================
+
+              SlideQA(Ours)   SlideVQA   DocVQA    ChartQA
+Domain        Edu / NLP       General    Industry  Charts
+              lectures        slides     docs      only
+Multi-slide   Yes             Yes        No        No
+Retrieval     Yes (RAG)       No         No        No
+evaluation
+Question      5 categories    3 types    Free-     Human +
+taxonomy      (text, img,     (1-hop,    form      generated
+              table, chart,   multi-hop,
+              layout)         numerical)
+Education-    Yes             No         No        No
+specific
+Dataset size  ~500+ (target)  14.5k Q    50k Q     32.7k Q
+
+
+========================================================================
+KEY DIFFERENTIATION ARGUMENTS (for the closing paragraph)
+========================================================================
+
+1. No existing benchmark focuses on EDUCATIONAL LECTURE CONTENT.
+   SlideVQA is closest but uses general-domain slide decks. SlideQA targets
+   university NLP courses with domain-specific technical content.
+
+2. No existing benchmark provides a MODALITY-GROUNDED CATEGORY TAXONOMY.
+   Most benchmarks have free-form questions without categorizing which type
+   of visual reasoning is required. SlideQA's 5 categories enable
+   fine-grained evaluation of where models succeed or fail.
+
+3. No existing benchmark jointly evaluates RETRIEVAL + QA over slides.
+   Existing benchmarks assume the relevant document is given. SlideQA
+   includes a retrieval stage, matching real-world RAG scenarios.
+
+
+========================================================================
+BIBTEX ENTRIES (add to iclr2026/iclr2026_conference.bib)
+========================================================================
+
+@inproceedings{tanaka2023slidevqa,
+  title={SlideVQA: A Dataset for Document Visual Question Answering on Multiple Images},
+  author={Tanaka, Ryota and Nishida, Kyosuke and Nishida, Kosuke and Hasegawa, Taku and Saito, Itsumi and Saito, Kuniko},
+  booktitle={AAAI},
+  year={2023}
+}
+
+@inproceedings{mathew2021docvqa,
+  title={DocVQA: A Dataset for VQA on Document Images},
+  author={Mathew, Minesh and Karatzas, Dimosthenis and Jawahar, C.V.},
+  booktitle={WACV},
+  year={2021}
+}
+
+@inproceedings{masry2022chartqa,
+  title={ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning},
+  author={Masry, Ahmed and Long, Do Xuan and Tan, Jia Qing and Joty, Shafiq and Hoque, Enamul},
+  booktitle={Findings of ACL},
+  year={2022}
+}
+
+@inproceedings{faysse2025colpali,
+  title={ColPali: Efficient Document Retrieval with Vision Language Models},
+  author={Faysse, Manuel and Sibille, Hugues and Wu, Tony and Omrani, Bilel and Viaud, Gautier and Hudelot, C{\'e}line and Colombo, Pierre},
+  booktitle={ICLR},
+  year={2025}
+}
+
+@inproceedings{lewis2020rag,
+  title={Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks},
+  author={Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{\"u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt{\"a}schel, Tim and others},
+  booktitle={NeurIPS},
+  year={2020}
+}
+
+
+========================================================================
+TODO
+========================================================================
+
+- [ ] Verify BibTeX entries have correct venues/years
+- [ ] Search for 2024-2026 papers on "lecture slide QA", "educational
+      document VQA", "multimodal slide understanding"
+- [ ] Consider adding if relevant: InfographicVQA (arXiv:2104.12756),
+      MP-DocVQA (arXiv:2212.05935), DUDE (arXiv:2305.08455),
+      LectureBank (arXiv:1904.08412)
+- [ ] Draft Related Work section (~1 page):
+      (a) Paragraph on document VQA benchmarks (DocVQA + any others found)
+      (b) Paragraph on specialized visual QA (ChartQA + others)
+      (c) Paragraph on slide-specific work (SlideVQA)
+      (d) Paragraph on retrieval for documents (ColPali, RAG)
+      (e) Closing paragraph positioning SlideQA (use differentiation
+          arguments above)
+- [ ] Format comparison table as LaTeX
+- [ ] Help review QA pairs once draft annotations are ready
