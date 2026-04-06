@@ -5,6 +5,9 @@ slideqa/data/text/**/*.txt
 # NOTE: PDFs are tracked so teammates can run the pipeline.
 # If the repo gets too large, consider Git LFS for PDFs.
 
+# Copilot prompt (local working doc, not for repo)
+slideqa_copilot_prompt.md
+
 # Keep annotation JSONs tracked (they're the benchmark output)
 # but ignore draft files that may be large/in-progress
 # slideqa/data/annotations/*_drafts.json

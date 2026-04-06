@@ -1,0 +1,7 @@
+category,n,text_only_exact_match,text_only_token_f1,text_only_llm_judge,zero_shot_vlm_exact_match,zero_shot_vlm_token_f1,zero_shot_vlm_llm_judge
+text_only,7,0.0000,0.3300,4.4286,0.0000,0.5465,5.0000
+image_diagram,35,0.0000,0.2107,2.2571,0.0000,0.3962,4.6571
+table,7,0.0000,0.1636,1.7143,0.0000,0.5501,4.5714
+chart_graph,9,0.0000,0.1804,1.4444,0.0000,0.5095,4.6667
+layout_aware,17,0.0000,0.2075,1.8235,0.0000,0.4330,4.2941
+OVERALL,75,0.0000,0.2131,2.2133,0.0000,0.4465,4.6000
