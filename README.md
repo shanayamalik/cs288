@@ -31,6 +31,7 @@ slideqa/
 ├── src/
 │   ├── process_pdfs.py                   # PDF → slide images + text
 │   ├── generate_qa.py                    # VLM-assisted QA draft generation
+│   ├── curate_qa.py                      # Auto-filter + balanced sampling
 │   ├── annotate.py                       # Streamlit review tool
 │   ├── evaluate.py                       # Evaluation metrics
 │   └── slideqa_dataset.py                # Dataset loader + stats
@@ -41,6 +42,11 @@ iclr2026/                                 # Paper (ICLR 2026 format)
 ## Setup
 
 ```bash
+# Clone the repo (Git LFS required for lecture PDFs)
+git lfs install
+git clone https://github.com/shanayamalik/cs288-sp26-slideQA.git
+cd cs288-sp26-slideQA
+
 # Create and activate virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
@@ -48,9 +54,28 @@ source .venv/bin/activate
 # Install Python dependencies
 pip install -r slideqa/requirements.txt
 
-# Install poppler (macOS — required for pdf2image)
-brew install poppler
+# Install system dependencies (macOS)
+brew install poppler    # required for pdf2image
+brew install git-lfs    # if not already installed
 ```
+
+### API Keys
+
+Copy the `.env` template and paste your key:
+
+```bash
+cp .env .env.local   # optional — .env works too
+# Edit .env and fill in:
+OPENROUTER_API_KEY=sk-or-...
+```
+
+Then load it before running scripts:
+
+```bash
+export $(grep -v '^#' .env | xargs)
+```
+
+The `.env` file is gitignored — never commit API keys.
 
 ## Usage
 
@@ -61,30 +86,47 @@ python slideqa/src/process_pdfs.py --course cs288
 
 ### 2. Generate QA drafts using a VLM
 ```bash
-# Requires OPENAI_API_KEY in environment
-python slideqa/src/generate_qa.py --course cs288 --model gpt-4o
+python slideqa/src/generate_qa.py --course cs288 --model openrouter/gpt-4o
 ```
 
-### 3. Review and annotate QA pairs
+### 3. Curate benchmark subset
+```bash
+python slideqa/src/curate_qa.py --course cs288 --target 75
+```
+
+### 4. (Optional) Review QA pairs in Streamlit
 ```bash
 streamlit run slideqa/src/annotate.py -- --course cs288
 ```
 
-### 4. View dataset statistics
+### 5. View dataset statistics
 ```bash
 python slideqa/src/slideqa_dataset.py --course cs288
 ```
 
-### 5. Evaluate predictions
+### 6. Evaluate predictions
 ```bash
 python slideqa/src/evaluate.py --course cs288 --predictions path/to/preds.json
 ```
 
+## Baselines (Checkpoint 2)
+
+Two baselines to measure the value of multimodality:
+
+| Baseline | Input | What it tests |
+|---|---|---|
+| Zero-shot VLM | slide image + question | Upper bound — full visual context |
+| Text-only LLM | extracted text + question | Does vision actually help? |
+
+Both use GPT-4o via OpenRouter. The gap between them shows how much visual understanding the benchmark requires.
+
 ## Progress
 
 - [x] Project scaffolding and paper abstract
-- [ ] Dataset creation (CS 288 pilot — 3 lectures)
-- [ ] Baseline VLM evaluation
+- [x] PDF processing pilot (3 lectures, 183 slides)
+- [x] QA draft generation (GPT-4o, 706 pairs)
+- [x] Auto-curation (75 benchmark pairs across 5 categories)
+- [ ] Baseline evaluation (zero-shot VLM vs text-only)
 - [ ] Scale to full CS 288 (16 lectures)
 - [ ] Add Stanford CS 224N and JHU CS 601.471
 - [ ] Retrieval pipeline (ColPali + vector DB)

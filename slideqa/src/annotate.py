@@ -17,8 +17,17 @@ DATA_DIR = PROJECT_ROOT / "data"
 # Data helpers
 # ──────────────────────────────────────────────
 
-def load_drafts(course: str) -> list[dict]:
-    path = DATA_DIR / "annotations" / f"{course}_qa_drafts.json"
+def load_drafts(course: str, model_slug: str = None) -> list[dict]:
+    """Load draft QA pairs. If model_slug given, load that model's file; otherwise find the first available."""
+    if model_slug:
+        path = DATA_DIR / "annotations" / f"{course}_qa_drafts_{model_slug}.json"
+    else:
+        # Auto-detect: find any drafts file for this course
+        candidates = sorted(DATA_DIR.glob(f"annotations/{course}_qa_drafts_*.json"))
+        if candidates:
+            path = candidates[0]
+        else:
+            path = DATA_DIR / "annotations" / f"{course}_qa_drafts.json"
     if not path.exists():
         return []
     with open(path) as f:
@@ -40,9 +49,10 @@ def save_approved(course: str, approved: list[dict]) -> None:
         json.dump(approved, f, indent=2)
 
 
-def save_drafts_back(course: str, drafts: list[dict]) -> None:
-    path = DATA_DIR / "annotations" / f"{course}_qa_drafts.json"
-    with open(path, "w") as f:
+def save_drafts_back(course: str, drafts: list[dict], drafts_path: Path = None) -> None:
+    if drafts_path is None:
+        drafts_path = DATA_DIR / "annotations" / f"{course}_qa_drafts.json"
+    with open(drafts_path, "w") as f:
         json.dump(drafts, f, indent=2)
 
 
@@ -67,6 +77,9 @@ def run_app(course: str):
     # Load data into session state
     if "drafts" not in st.session_state:
         st.session_state.drafts = load_drafts(course)
+        # Remember which file we loaded from
+        candidates = sorted(DATA_DIR.glob(f"annotations/{course}_qa_drafts_*.json"))
+        st.session_state.drafts_path = candidates[0] if candidates else DATA_DIR / "annotations" / f"{course}_qa_drafts.json"
     if "approved" not in st.session_state:
         st.session_state.approved = load_approved(course)
 
@@ -163,12 +176,12 @@ def run_app(course: str):
                     }
                     st.session_state.approved.append(approved_entry)
                     save_approved(course, st.session_state.approved)
-                    save_drafts_back(course, drafts)
+                    save_drafts_back(course, drafts, st.session_state.drafts_path)
                     st.success("Approved and saved!")
             with btn_col2:
                 if st.button(f"❌ Reject #{idx + 1}", key=f"reject_{selected_slide}_{idx}"):
                     qa["status"] = "rejected"
-                    save_drafts_back(course, drafts)
+                    save_drafts_back(course, drafts, st.session_state.drafts_path)
                     st.info("Rejected.")
 
         # ── Add new QA pair manually ──

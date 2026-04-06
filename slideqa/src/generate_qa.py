@@ -57,11 +57,16 @@ def encode_image_b64(image_path: Path) -> str:
     return base64.b64encode(image_path.read_bytes()).decode("utf-8")
 
 
-def call_openai(image_path: Path, model: str = "gpt-4o") -> list[dict]:
-    """Send a slide image to OpenAI's vision API and return parsed QA pairs."""
+def call_openai(image_path: Path, model: str = "gpt-4o", base_url: str = None) -> list[dict]:
+    """Send a slide image to an OpenAI-compatible vision API and return parsed QA pairs."""
+    import os
     from openai import OpenAI
 
-    client = OpenAI()  # uses OPENAI_API_KEY env var
+    # Support OpenRouter via OPENROUTER_API_KEY + base_url override
+    if base_url:
+        client = OpenAI(base_url=base_url, api_key=os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENAI_API_KEY"))
+    else:
+        client = OpenAI()  # uses OPENAI_API_KEY env var
     b64 = encode_image_b64(image_path)
 
     response = client.chat.completions.create(
@@ -109,11 +114,20 @@ def call_gemini(image_path: Path, model: str = "gemini-2.0-flash") -> list[dict]
     return json.loads(raw)
 
 
+OPENROUTER_BASE = "https://openrouter.ai/api/v1"
+
 MODEL_CALLERS = {
+    # Direct APIs
     "gpt-4o": call_openai,
     "gpt-4.1": lambda p: call_openai(p, model="gpt-4.1"),
     "gemini-2.0-flash": call_gemini,
     "gemini-2.5-pro": lambda p: call_gemini(p, model="gemini-2.5-pro-preview-03-25"),
+    # OpenRouter (uses OPENROUTER_API_KEY env var)
+    "openrouter/gpt-4o": lambda p: call_openai(p, model="openai/gpt-4o", base_url=OPENROUTER_BASE),
+    "openrouter/gpt-4.1": lambda p: call_openai(p, model="openai/gpt-4.1", base_url=OPENROUTER_BASE),
+    "openrouter/gemini-2.0-flash": lambda p: call_openai(p, model="google/gemini-2.0-flash-001", base_url=OPENROUTER_BASE),
+    "openrouter/gemini-2.5-pro": lambda p: call_openai(p, model="google/gemini-2.5-pro-preview-03-25", base_url=OPENROUTER_BASE),
+    "openrouter/qwen2-vl-72b": lambda p: call_openai(p, model="qwen/qwen2-vl-72b-instruct", base_url=OPENROUTER_BASE),
 }
 
 
@@ -149,7 +163,9 @@ def generate_qa_for_course(
     if not slides_dir.exists():
         raise FileNotFoundError(f"Slides directory not found: {slides_dir}. Run process_pdfs.py first.")
 
-    drafts_path = DATA_DIR / "annotations" / f"{course}_qa_drafts.json"
+    # Sanitize model name for filename: openrouter/gpt-4o → openrouter_gpt-4o
+    model_slug = model.replace("/", "_")
+    drafts_path = DATA_DIR / "annotations" / f"{course}_qa_drafts_{model_slug}.json"
     existing = load_existing_drafts(drafts_path)
     logger.info(f"Loaded {len(existing)} existing drafts from {drafts_path}")
 
