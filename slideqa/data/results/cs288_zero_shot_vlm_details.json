@@ -1,0 +1,1469 @@
+{
+  "per_question": [
+    {
+      "question_id": "cs288_q0001",
+      "question": "How does the text describe the relationship between human knowledge and computation in AI research?",
+      "gold_answer": "Researchers seek to leverage their human knowledge of the domain in the short term, but in the long run, leveraging computation is what matters.",
+      "predicted_answer": "The text describes that in AI research, leveraging human knowledge is often prioritized in the short term, but in the long run, leveraging computation is what truly matters. It suggests that while human knowledge can complicate methods, general methods that leverage computation are ultimately more effective.",
+      "category": "text_only",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_01/slide_038.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_038.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.46875,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0002",
+      "question": "How is the probability of the sentence 'the cat sat on the mat' expressed using the chain rule?",
+      "gold_answer": "P(the cat sat on the mat) = P(the) * P(cat|the) * P(sat|the cat) * P(on|the cat sat) * P(the|the cat sat on) * P(mat|the cat sat on the)",
+      "predicted_answer": "The probability of the sentence \"the cat sat on the mat\" is expressed using the chain rule as:\n\n\\[ P(\\text{the cat sat on the mat}) = P(\\text{the}) \\times P(\\text{cat}|\\text{the}) \\times P(\\text{sat}|\\text{the cat}) \\times P(\\text{on}|\\text{the cat sat}) \\times P(\\text{the}|\\text{the cat sat on}) \\times P(\\text{mat}|\\text{the cat sat on the}) \\]",
+      "category": "text_only",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_02/slide_004.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_004.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4406779661016949,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0003",
+      "question": "Why might 'car' and 'automobile' not be similar in dense vector representations?",
+      "gold_answer": "They should be similar but they aren\u2019t because 'car' and 'automobile' are distinct dimensions.",
+      "predicted_answer": "In dense vector representations, 'car' and 'automobile' might not be similar because they are treated as distinct dimensions, even though they should be similar.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.631578947368421,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0004",
+      "question": "Why does the listener have to infer when understanding language?",
+      "gold_answer": "Because of pragmatics.",
+      "predicted_answer": "The listener has to infer due to pragmatics, which involves understanding implied meanings beyond the literal words.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_011.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_011.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1111111111111111,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0005",
+      "question": "What is the function of discounting in smoothing?",
+      "gold_answer": "Discounting redistributes probability mass from observed n-grams to unobserved ones.",
+      "predicted_answer": "Discounting in smoothing redistributes probability mass from observed n-grams to unobserved ones.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_039.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_039.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.9090909090909091,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0006",
+      "question": "What are some challenges mentioned in optimizing downstream objectives?",
+      "gold_answer": "It is expensive, time-consuming, and hard to optimize due to indirect feedback.",
+      "predicted_answer": "The challenges mentioned in optimizing downstream objectives are that it is expensive, time-consuming, and hard to optimize due to indirect feedback.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_020.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_020.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.7499999999999999,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0007",
+      "question": "What is the main lesson from 70 years of AI research according to Rich Sutton?",
+      "gold_answer": "General methods that leverage computation are ultimately the most effective.",
+      "predicted_answer": "The main lesson from 70 years of AI research, according to Rich Sutton, is that general methods that leverage computation are ultimately the most effective, by a large margin.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_038.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_038.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5142857142857142,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0008",
+      "question": "What does the mathematical expression on the slide represent?",
+      "gold_answer": "The expression represents the probability of a sequence of words, calculated as the product of conditional probabilities of each word given the previous words.",
+      "predicted_answer": "The mathematical expression on the slide represents the probability of a sequence of words \\( P(w_1, w_2, \\ldots, w_n) \\) in a language model. It is calculated as the product of the conditional probabilities of each word given the preceding words, specifically \\( P(w_i \\mid w_{i-1024}, \\ldots, w_{i-2}, w_{i-1}) \\).",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.631578947368421,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0009",
+      "question": "What does the expression in the box represent?",
+      "gold_answer": "It represents the loss function for skip-gram with negative sampling.",
+      "predicted_answer": "The expression in the box represents the loss function for Skip-gram with Negative Sampling (SGNS). It combines the log probability of a true context word \\( c \\) given a target word \\( t \\) and the expected log probability of negative samples. The loss function is:\n\n\\[ y = -\\log(\\sigma(\\mathbf{u}_t \\cdot \\mathbf{v}_c)) - \\sum_{i=1}^{K} \\mathbb{E}_{j \\sim P(w)} \\log(\\sigma(-\\mathbf{u}_t \\cdot \\mathbf{v}_j)) \\]\n\nwhere \\( \\sigma \\) is the sigmoid function, \\( \\mathbf{u}_t \\) and \\( \\mathbf{v}_c \\) are the word vectors for the target and context words, and \\( P(w) \\) is the distribution for sampling negative examples.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_060.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_060.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.22784810126582278,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0010",
+      "question": "What does the word analogy test formula represent?",
+      "gold_answer": "The formula represents finding the word 'b*' that maximizes the cosine similarity in the analogy a : a* :: b : b*.",
+      "predicted_answer": "The word analogy test formula represents a method to find a word \\( b^* \\) that completes the analogy \\( a : a^* :: b : b^* \\). It does this by maximizing the cosine similarity between the vector of the candidate word \\( w \\) and the vector resulting from the operation \\( e(a^*) - e(a) + e(b) \\). This operation captures the relationship between the words in the analogy using their vector embeddings.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_025.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.360655737704918,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0011",
+      "question": "How does the meaning of the word 'gay' change from the 1900s to the 1990s?",
+      "gold_answer": "In the 1900s, 'gay' is associated with words like 'daft' and 'frolicsome'. By the 1990s, it is associated with 'bisexual' and 'homosexual'.",
+      "predicted_answer": "In the 1900s, \"gay\" is associated with words like \"daft,\" \"flaunting,\" and \"witty,\" suggesting a meaning related to being cheerful or lively. By the 1990s, it shifts to be associated with words like \"bisexual,\" \"homosexual,\" and \"lesbian,\" indicating a change to a meaning related to sexual orientation.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_027.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_027.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5806451612903225,
+        "llm_judge": 4
+      }
+    },
+    {
+      "question_id": "cs288_q0012",
+      "question": "What is depicted in the image on the slide?",
+      "gold_answer": "An image of a stone with inscriptions, possibly the Rosetta Stone.",
+      "predicted_answer": "The image on the slide depicts the Rosetta Stone.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_01/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.42857142857142855,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0013",
+      "question": "What is the difference between top-k and top-p sampling as shown in the diagrams?",
+      "gold_answer": "Top-k sampling selects from the top k probable words, while top-p sampling selects from the smallest set of words whose cumulative probability exceeds p.",
+      "predicted_answer": "In the diagrams, top-k sampling selects the top 4 words with the highest probabilities, while top-p sampling selects words whose cumulative probability reaches 0.75. Top-k focuses on a fixed number of words, whereas top-p considers a variable number of words based on a probability threshold.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.459016393442623,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0014",
+      "question": "How is the context vector \\( \\bar{v}_c \\) calculated?",
+      "gold_answer": "\\( \\bar{v}_c = \\frac{1}{2m} \\sum_{-m \\leq j \\leq m, j \\neq 0} \\mathbf{v}_{w_{t+j}} \\)",
+      "predicted_answer": "The context vector \\( \\bar{v}_c \\) is calculated as:\n\n\\[\n\\bar{v}_c = \\frac{1}{2m} \\sum_{-m \\leq j \\leq m, j \\neq 0} \\mathbf{v}_{w_{t+j}}\n\\]\n\nThis means it is the average of the word vectors \\( \\mathbf{v}_{w_{t+j}} \\) for the context words surrounding the target word, excluding the target word itself.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_065.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_065.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.46808510638297873,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0015",
+      "question": "Which word pair has a Count*(x) of 0.5?",
+      "gold_answer": "the, telescope; the, manual; the, afternoon; the, country; the, street",
+      "predicted_answer": "The word pairs \"the, telescope,\" \"the, manual,\" \"the, afternoon,\" \"the, country,\" and \"the, street\" each have a Count\\*(x) of 0.5.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_048.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_048.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5555555555555556,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0016",
+      "question": "How does the norm position differ between Vaswani et al. and Llama models?",
+      "gold_answer": "Vaswani et al. uses post-norm, while Llama uses pre-norm.",
+      "predicted_answer": "In Vaswani et al., the norm position is \"Post-norm,\" while in Llama models, it is \"Pre-norm.\"",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_034.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_034.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5833333333333334,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0017",
+      "question": "Which bigram has the highest count in the table?",
+      "gold_answer": "'i want' with a count of 828",
+      "predicted_answer": "The bigram \"i want\" has the highest count in the table, with a count of 828.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_043.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_043.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666666,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0018",
+      "question": "Which model has the highest total accuracy for word analogy tasks?",
+      "gold_answer": "GloVe with 300 dimensions and 42B size has the highest total accuracy of 75.0.",
+      "predicted_answer": "The GloVe model with 300 dimensions and 42B size has the highest total accuracy for word analogy tasks, with a score of 75.0.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_076.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_076.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.787878787878788,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0019",
+      "question": "Which model and size combination achieved the highest score on the RG dataset?",
+      "gold_answer": "GloVe 42B",
+      "predicted_answer": "The GloVe model with a size of 42B achieved the highest score on the RG dataset, with a score of 82.9.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_075.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_075.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2222222222222222,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0020",
+      "question": "What does the table illustrate about the word 'digital'?",
+      "gold_answer": "The word 'digital' has co-occurrence counts of 1670 with 'computer', 1683 with 'data', 85 with 'result', 5 with 'pie', and 4 with 'sugar'.",
+      "predicted_answer": "The table illustrates that the word \"digital\" has co-occurrence counts with other words, such as \"computer\" (1670), \"data\" (1683), \"result\" (85), \"pie\" (5), and \"sugar\" (4). This indicates how often \"digital\" appears in the context of these words, showing its relationships and usage patterns. The matrix is high-dimensional and sparse, with many entries being zero.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_013.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_013.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5205479452054794,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0021",
+      "question": "How does the semantic accuracy of the GloVe model with 1.6B size compare to its syntactic accuracy?",
+      "gold_answer": "The semantic accuracy is 80.8, which is higher than the syntactic accuracy of 61.5.",
+      "predicted_answer": "The semantic accuracy of the GloVe model with 1.6B size is 67.5, while its syntactic accuracy is 54.3. The semantic accuracy is higher than the syntactic accuracy.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_076.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_076.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5142857142857143,
+        "llm_judge": 2
+      }
+    },
+    {
+      "question_id": "cs288_q0022",
+      "question": "What is the relationship between the number of words and the fraction seen for bigrams?",
+      "gold_answer": "As the number of words increases, the fraction seen for bigrams increases but at a slower rate than unigrams.",
+      "predicted_answer": "The fraction seen for bigrams increases as the number of words increases, but it does so at a slower rate compared to unigrams. The curve for bigrams shows a gradual rise, indicating that sparsity is more pronounced for bigrams.",
+      "category": "chart_graph",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_01/slide_019.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_019.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0023",
+      "question": "What does the graph on the slide represent?",
+      "gold_answer": "The graph represents the behavior of the weighting function f.",
+      "predicted_answer": "The graph on the slide represents the weighting function \\( f \\), which gives more importance to more common pairs but is capped at a certain point.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_067.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_067.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.35714285714285715,
+        "llm_judge": 4
+      }
+    },
+    {
+      "question_id": "cs288_q0024",
+      "question": "According to the chart, how does training loss change with increasing FLOPS?",
+      "gold_answer": "Training loss decreases as FLOPS increase.",
+      "predicted_answer": "According to the chart, training loss decreases as FLOPS increase.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_034.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_034.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.8,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0025",
+      "question": "Which type of word pair reaches a higher fraction seen according to the chart?",
+      "gold_answer": "Unigrams reach a higher fraction seen than bigrams.",
+      "predicted_answer": "Unigrams reach a higher fraction seen according to the chart.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_019.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_019.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666666,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0026",
+      "question": "What trend is shown in the graph regarding test perplexity over time?",
+      "gold_answer": "The test perplexity generally decreases over time from January 2015 to January 2021.",
+      "predicted_answer": "The graph shows a decreasing trend in test perplexity over time, indicating that models have become more effective at language modeling, achieving lower perplexity scores.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_028.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_028.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.22857142857142854,
+        "llm_judge": 4
+      }
+    },
+    {
+      "question_id": "cs288_q0027",
+      "question": "Which model had 340 million parameters, according to the graph?",
+      "gold_answer": "BERT-Large.",
+      "predicted_answer": "BERT-Large had 340 million parameters, according to the graph.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_028.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_028.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2222222222222222,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0028",
+      "question": "What is the trend shown in the graph regarding model size over time?",
+      "gold_answer": "The model size has been increasing exponentially over time.",
+      "predicted_answer": "The graph shows an increasing trend in model size over time, with model sizes growing from millions to billions of parameters between 2018 and 2022.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_028.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_028.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3225806451612903,
+        "llm_judge": 4
+      }
+    },
+    {
+      "question_id": "cs288_q0029",
+      "question": "How are the Google search and messaging app examples related?",
+      "gold_answer": "Both examples demonstrate the use of language models for autocomplete and predictive text.",
+      "predicted_answer": "Both the Google search and messaging app examples demonstrate the use of language models for predictive text. In Google search, language models suggest search queries based on partial input. In the messaging app, they suggest possible word completions or next words in a sentence.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_02/slide_005.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_005.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4230769230769231,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0030",
+      "question": "How are the concepts of 'Dialogue history' and 'Output message' connected in the diagram?",
+      "gold_answer": "Dialogue history feeds into strategic reasoning and dialogue, which then influences message generation, leading to the output message.",
+      "predicted_answer": "In the diagram, 'Dialogue history' is used in the 'Dialogue-conditional action model' to generate 'Message candidates.' These candidates are then processed by the 'Dialogue model' and 'Filters' to produce the 'Output message.'",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_01/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_009.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.39999999999999997,
+        "llm_judge": 3
+      }
+    },
+    {
+      "question_id": "cs288_q0031",
+      "question": "Describe how the spatial layout of the slide helps in understanding the conversion process.",
+      "gold_answer": "The spatial layout shows a flow from the example sentence to the conversion into training data, with arrows indicating the transformation process.",
+      "predicted_answer": "The spatial layout of the slide aids understanding by visually separating the process into two main parts. On the left, the context words and center word are shown in a sentence with arrows indicating the relationships between them. This illustrates the concept of predicting context words given a center word. On the right, the conversion into training data is clearly listed, showing pairs of center and context words. The arrows connecting the two sides emphasize the transformation from sentence context to training pairs, making the process intuitive and easy to follow.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_033.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_033.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3010752688172043,
+        "llm_judge": 4
+      }
+    },
+    {
+      "question_id": "cs288_q0032",
+      "question": "How does the vector for 'dog' compare to the vector for 'the' in terms of dimensional values?",
+      "gold_answer": "The vector for 'dog' is (-0.124, 0.430, -0.200, 0.329) and for 'the' is (0.234, 0.266, 0.239, -0.199).",
+      "predicted_answer": "The vector for 'dog' is \\((-0.124, 0.430, -0.200, 0.329)\\) and the vector for 'the' is \\((0.234, 0.266, 0.239, -0.199)\\). \n\nComparing the dimensional values:\n- First dimension: 'dog' is \\(-0.124\\), 'the' is \\(0.234\\)\n- Second dimension: 'dog' is \\(0.430\\), 'the' is \\(0.266\\)\n- Third dimension: 'dog' is \\(-0.200\\), 'the' is \\(0.239\\)\n- Fourth dimension: 'dog' is \\(0.329\\), 'the' is \\(-0.199\\)",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_017.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.48387096774193555,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0033",
+      "question": "Compare the dense vector for 'cat' and 'dog'. Which component is larger in 'dog' than in 'cat'?",
+      "gold_answer": "The second component (0.430) is larger in 'dog' than in 'cat' (0.130).",
+      "predicted_answer": "The second component is larger in 'dog' (0.430) than in 'cat' (0.130).",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_053.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_053.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 1.0,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0034",
+      "question": "What is the relationship between the vectors 'digital' and 'information' in the graph?",
+      "gold_answer": "The vectors 'digital' and 'information' are represented as arrows with specific coordinates, indicating their direction and magnitude.",
+      "predicted_answer": "The vectors 'digital' and 'information' in the graph are represented as two different vectors in a 2D space with coordinates [1683, 1670] and [3982, 3325], respectively. The graph is used to illustrate the concept of measuring similarity between these vectors using cosine similarity, which considers the angle between them. The closer the angle is to zero, the more similar the vectors are.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.29411764705882354,
+        "llm_judge": 3
+      }
+    },
+    {
+      "question_id": "cs288_q0035",
+      "question": "Compare the vector representations of 'dog' and 'language'. Which has a higher third component?",
+      "gold_answer": "'language' has a higher third component (0.762) compared to 'dog' (-0.200).",
+      "predicted_answer": "The vector representation of 'language' has a higher third component (0.762) compared to 'dog' (-0.200).",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_029.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_029.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.8695652173913044,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0036",
+      "question": "What is the relationship between the n-gram types and the example sentences provided?",
+      "gold_answer": "The example sentences demonstrate the output generated by unigram, bigram, and trigram models.",
+      "predicted_answer": "The example sentences illustrate how different n-gram models (unigram, bigram, trigram) generate text. Unigrams produce random sequences of words without context. Bigrams create slightly more coherent sequences by considering pairs of words. Trigrams improve coherence further by considering triples of words. However, the slide notes that typical language models (LMs) like these struggle with long-range dependencies, as shown in the example sentence about gender pronouns.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_02/slide_016.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_016.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1917808219178082,
+        "llm_judge": 4
+      }
+    },
+    {
+      "question_id": "cs288_q0037",
+      "question": "What does the diagram illustrate in the context of the skip-gram model?",
+      "gold_answer": "The diagram shows how the center word 'into' is used to predict outside context words 'problems', 'turning', 'banking', and 'crises' within a window of size 2.",
+      "predicted_answer": "The diagram illustrates how the skip-gram model uses a center word to predict surrounding context words within a fixed window. In this example, the center word \"into\" is used to predict the probability of the context words \"problems,\" \"turning,\" \"banking,\" and \"crises\" within a window size of 2. This process turns unlabeled text into supervised learning data by treating it as a classification problem.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_031.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_031.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5384615384615384,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0038",
+      "question": "What is the correct answer for the perplexity of the test corpus given the k-gram model probability?",
+      "gold_answer": "A) 2^|V|",
+      "predicted_answer": "The correct answer is B) \\(|V|\\).",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_02/slide_026.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_026.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "llm_judge": 1
+      }
+    },
+    {
+      "question_id": "cs288_q0039",
+      "question": "What is the formula for calculating perplexity as shown in the slide?",
+      "gold_answer": "ppl(S) = 2^x where x = -1/n * \u03a3 log P(w_i | w_1...w_i-1)",
+      "predicted_answer": "The formula for calculating perplexity as shown in the slide is:\n\n\\[\n\\text{ppl}(S) = 2^x \\quad \\text{where} \\quad x = -\\frac{1}{n} \\sum_{i=1}^{n} \\log P(w_i \\mid w_1 \\ldots w_{i-1})\n\\]",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_02/slide_038.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_038.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.25,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0040",
+      "question": "What is the main difference in the input-output relationship between Skip-gram and CBOW?",
+      "gold_answer": "Skip-gram takes a single word as input and predicts surrounding words as output, whereas CBOW takes surrounding words as input and predicts the central word as output.",
+      "predicted_answer": "The main difference in the input-output relationship between Skip-gram and CBOW is:\n\n- **Skip-gram**: Takes a single word as input and predicts the surrounding context words as output.\n- **CBOW (Continuous Bag of Words)**: Takes multiple context words as input and predicts the single target word as output.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_064.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_064.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666667,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0041",
+      "question": "What does the diagram illustrate about the relationship between context words and the center word?",
+      "gold_answer": "The diagram illustrates how context words are used to predict the center word in a window of size 2.",
+      "predicted_answer": "The diagram illustrates that the center word (\"into\" or \"banking\") is used to predict the surrounding context words within a window of size 2. It shows how the center word is paired with each of its context words to create training data for the skip-gram model, which aims to maximize the probability of context words given the center word.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_034.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_034.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4179104477611941,
+        "llm_judge": 3
+      }
+    },
+    {
+      "question_id": "cs288_q0042",
+      "question": "What does the expression P(problems | into) \u00d7 P(turning | into) \u00d7 P(banking | into) represent?",
+      "gold_answer": "It represents the probability expressions that the Skip-gram model aims to maximize.",
+      "predicted_answer": "The expression \\( P(\\text{problems} \\mid \\text{into}) \\times P(\\text{turning} \\mid \\text{into}) \\times P(\\text{banking} \\mid \\text{into}) \\) represents the probabilities of predicting the context words \"problems,\" \"turning,\" and \"banking\" given the word \"into\" in the skip-gram model. The goal is to maximize these probabilities to learn high-quality word embeddings.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_058.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_058.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2040816326530612,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0043",
+      "question": "What does the formula J(\u03b8) represent in the Word2vec formulation?",
+      "gold_answer": "J(\u03b8) represents the objective function used in Word2vec to calculate the probability of context words given a target word.",
+      "predicted_answer": "The formula \\( J(\\theta) \\) represents the objective function used in the Word2vec formulation. It calculates the average log probability of context words given a target word, aiming to maximize the likelihood of context words appearing around a target word in a corpus.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_043.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_043.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5714285714285714,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0044",
+      "question": "How are the two images on the slide related to NLP?",
+      "gold_answer": "The left image relates to NLP's role in human communication, while the right image signifies accessing information, both key aspects of NLP.",
+      "predicted_answer": "The two images on the slide illustrate applications of NLP. The first image, showing a conversation about sending money, represents NLP's role in communication with humans, such as personal assistants and customer service. The second image of books symbolizes NLP's ability to access and process vast amounts of information, which is crucial for AI systems.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_01/slide_008.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_008.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.28571428571428575,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0045",
+      "question": "What is the formal objective function of GloVe?",
+      "gold_answer": "J(\u03b8) = \u03a3 f(X_i,j) (u_i \u00b7 v_j + b_i + b\u0303_j - log X_i,j)",
+      "predicted_answer": "The formal objective function of GloVe is:\n\n\\[ J(\\theta) = \\sum_{i,j \\in V} f(X_{i,j}) \\left( \\mathbf{u}_i \\cdot \\mathbf{v}_j + b_i + \\tilde{b}_j - \\log X_{i,j} \\right) \\]",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_067.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_067.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.26666666666666666,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0046",
+      "question": "Compare the vector representations of 'cat' and 'dog'.",
+      "gold_answer": "v_cat = (-0.224, 0.130, -0.290, 0.276), v_dog = (-0.124, 0.430, -0.200, 0.329).",
+      "predicted_answer": "The vector representation of 'cat' is \\(\\begin{pmatrix} -0.224 \\\\ 0.130 \\\\ -0.290 \\\\ 0.276 \\end{pmatrix}\\), and the vector representation of 'dog' is \\(\\begin{pmatrix} -0.124 \\\\ 0.430 \\\\ -0.200 \\\\ 0.329 \\end{pmatrix}\\). Both vectors are four-dimensional, but they have different values for each component.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_022.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_022.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3555555555555555,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0047",
+      "question": "What is the formula used for the skip-gram model on this slide?",
+      "gold_answer": "P(w_{t+j} | w_t) = \\frac{\\exp(\\mathbf{v}_{w_{t+j}}^T \\mathbf{v}_{w_t})}{\\sum_{w' \\in V} \\exp(\\mathbf{v}_{w'}^T \\mathbf{v}_{w_t})}",
+      "predicted_answer": "The formula used for the skip-gram model on this slide is:\n\n\\[ P(w_{t+j} | w_t) = \\frac{\\exp(\\mathbf{v}_{w_{t+j}}^\\top \\mathbf{v}_{w_t})}{\\sum_{w' \\in V} \\exp(\\mathbf{v}_{w'}^\\top \\mathbf{v}_{w_t})} \\]",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_065.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_065.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.48,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0048",
+      "question": "Compare the two probability expressions given on the slide.",
+      "gold_answer": "The first expression is for P(y = c | x) in multinomial logistic regression, and the second is for P(w_{t+j} | w_t). Both involve exponentials and summations but differ in their specific parameters and context.",
+      "predicted_answer": "The slide presents two probability expressions:\n\n1. **Multinomial Logistic Regression:**\n   \\[\n   P(y = c \\mid x) = \\frac{\\exp(\\mathbf{w}_c \\cdot \\mathbf{x} + b_c)}{\\sum_{j=1}^{m} \\exp(\\mathbf{w}_j \\cdot \\mathbf{x} + b_j)}\n   \\]\n   - This expression calculates the probability of class \\(c\\) given input \\(\\mathbf{x}\\) using weights \\(\\mathbf{w}_c\\) and bias \\(b_c\\).\n   - It involves a softmax function over \\(m\\) classes.\n\n2. **Word Prediction Model:**\n   \\[\n   P(w_{t+j} \\mid w_t) = \\frac{\\exp(\\mathbf{u}_{w_t} \\cdot \\mathbf{v}_{w_{t+j}})}{\\sum_{k \\in V} \\exp(\\mathbf{u}_{w_t} \\cdot \\mathbf{v}_k)}\n   \\]\n   - This expression calculates the probability of word \\(w_{t+j}\\) given word \\(w_t\\) using vectors \\(\\mathbf{u}_{w_t}\\) and \\(\\mathbf",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_039.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_039.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.23076923076923078,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0049",
+      "question": "What is the role of the word 'into' in the skip-gram model diagram?",
+      "gold_answer": "'Into' is the center word at position t, and the model predicts outside context words based on it.",
+      "predicted_answer": "In the skip-gram model diagram, the word \"into\" serves as the center word at position \\( t \\). The model uses this center word to predict the surrounding context words, which are \"problems,\" \"turning,\" \"banking,\" and \"crises.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_057.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_057.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.43478260869565216,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0050",
+      "question": "What is the main difference between the CBOW and Skip-gram models as shown in the diagrams?",
+      "gold_answer": "The CBOW model predicts the current word based on the context words, while the Skip-gram model predicts the context words based on the current word.",
+      "predicted_answer": "The main difference between the CBOW and Skip-gram models, as shown in the diagrams, is the direction of prediction:\n\n- **CBOW (Continuous Bag of Words):** Predicts the target word \\( w(t) \\) using the context words \\( w(t-2), w(t-1), w(t+1), w(t+2) \\).\n\n- **Skip-gram:** Predicts the context words \\( w(t-2), w(t-1), w(t+1), w(t+2) \\) using the target word \\( w(t) \\).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_056.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_056.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3225806451612903,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0051",
+      "question": "How are the words 'problems' and 'turning' categorized in the diagram?",
+      "gold_answer": "They are categorized as outside context words in a window of size 2.",
+      "predicted_answer": "The words 'problems' and 'turning' are categorized as \"outside context words in window of size 2\" in the diagram.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_033.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_033.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.7586206896551724,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0052",
+      "question": "What does the translation example on the slide demonstrate?",
+      "gold_answer": "It demonstrates machine translation from English to Chinese (Simplified).",
+      "predicted_answer": "The translation example on the slide demonstrates machine translation, showing how a sentence in English is translated into Chinese (Simplified).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_032.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_032.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.46153846153846156,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0053",
+      "question": "How are the instructors' profiles visually organized on the slide?",
+      "gold_answer": "The profiles are side-by-side with images on the left and text on the right for each instructor.",
+      "predicted_answer": "The instructors' profiles are organized side by side on the slide. Each profile includes a photo at the top, followed by the instructor's name, percentage contribution, and a bullet-point list of their roles, research interests, educational background, and previous experience. Sewon Min's profile is on the left, and Alane Suhr's profile is on the right, separated by a dotted line.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_003.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_003.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.24615384615384614,
+        "llm_judge": 3
+      }
+    },
+    {
+      "question_id": "cs288_q0054",
+      "question": "What is the semantic ambiguity illustrated in the comic on the slide?",
+      "gold_answer": "The word 'background' is used ambiguously; the employer is asking about the candidate's personal or professional history, while the candidate responds with a literal interpretation, referring to the mountain scenery behind him.",
+      "predicted_answer": "The semantic ambiguity illustrated in the comic is the dual meaning of the word \"background.\" The employer is asking about the candidate's personal or professional history, but the candidate interprets it as referring to the scenery behind him, which is Mount Everest.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5999999999999999,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0055",
+      "question": "How is perplexity calculated for a test corpus with words?",
+      "gold_answer": "Perplexity is calculated as P(w1, w2, ..., wn)^(-1/n).",
+      "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is calculated as:\n\n\\[ \\text{Perplexity} = P(w_1, w_2, \\ldots, w_n)^{-1/n} \\]\n\nThis can also be expressed as:\n\n\\[ \\text{ppl}(S) = 2^x \\]\n\nwhere \n\n\\[ x = -\\frac{1}{n} \\log_2 P(w_1, \\ldots, w_n) = -\\frac{1}{n} \\sum_{i=1}^{n} \\log_2 P(w_i | w_1 \\ldots w_{i-1}) \\]\n\nThis expression for \\( x \\) represents the cross-entropy.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2641509433962264,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0056",
+      "question": "How are the CBOW and Skip-gram models visually differentiated on the slide?",
+      "gold_answer": "The CBOW model is on the left with inputs leading to a sum and then an output, while the Skip-gram model is on the right with a single input leading to multiple outputs.",
+      "predicted_answer": "The CBOW and Skip-gram models are visually differentiated by their diagrams. The CBOW model shows multiple input words converging to predict a single output word, while the Skip-gram model shows a single input word being used to predict multiple output words.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_056.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_056.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3870967741935484,
+        "llm_judge": 4
+      }
+    },
+    {
+      "question_id": "cs288_q0057",
+      "question": "What is the relationship between 'book' and 'publication' in the diagram?",
+      "gold_answer": "Publication is a related concept to 'book'.",
+      "predicted_answer": "In the diagram, 'publication' is a more general term connected to 'book,' indicating that a book is a type of publication.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_006.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_006.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3478260869565218,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0058",
+      "question": "What is depicted in the diagram on the right side of the slide?",
+      "gold_answer": "A sequence of word embeddings being processed by an ML model resulting in a thumbs down symbol.",
+      "predicted_answer": "The diagram on the right side of the slide depicts an ML model processing word embeddings for the sentence \"I don't like this movie.\" Each word is represented by a vector, and the model outputs a thumbs-down emoji, indicating a negative sentiment.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_072.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_072.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2553191489361702,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0059",
+      "question": "How are the context words and center word represented in the diagram?",
+      "gold_answer": "The context words are outside the window, and the center word is at position 1.",
+      "predicted_answer": "In the diagram, the center word is represented in red, and the context words are represented in blue.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_034.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_034.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5185185185185186,
+        "llm_judge": 3
+      }
+    },
+    {
+      "question_id": "cs288_q0060",
+      "question": "What does the diagram on the slide represent?",
+      "gold_answer": "The diagram represents an ML model processing word embeddings for the sentence 'I don't like this movie', with corresponding numerical vectors for each word.",
+      "predicted_answer": "The diagram represents an example of extrinsic evaluation in NLP, where word embeddings for the sentence \"I don't like this movie\" are input into an ML model, which outputs a thumbs-down emoji, indicating a negative sentiment.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_073.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_073.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5098039215686274,
+        "llm_judge": 4
+      }
+    },
+    {
+      "question_id": "cs288_q0061",
+      "question": "How does the derivative \u2202y/\u2202v_k differ based on the condition k = c or k \u2260 c?",
+      "gold_answer": "If k = c, \u2202y/\u2202v_k = (P(k|t) - 1) u_t; if k \u2260 c, \u2202y/\u2202v_k = P(k|t) u_t.",
+      "predicted_answer": "The derivative \\(\\frac{\\partial y}{\\partial \\mathbf{v}_k}\\) differs based on the condition as follows:\n\n- For \\(k = c\\): \\(\\frac{\\partial y}{\\partial \\mathbf{v}_k} = (P(k|t) - 1) \\mathbf{u}_t\\)\n- For \\(k \\neq c\\): \\(\\frac{\\partial y}{\\partial \\mathbf{v}_k} = P(k|t) \\mathbf{u}_t\\)",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_049.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_049.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3333333333333333,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0062",
+      "question": "What is the relationship between the words 'digital' and 'information' in the context provided?",
+      "gold_answer": "The word 'digital' is associated with 'computer peripherals and personal assistants', while 'information' is associated with being 'available on the internet'.",
+      "predicted_answer": "In the context provided, the words \"digital\" and \"information\" are related as they both appear in the same sentence, indicating a co-occurrence. This suggests that they are likely to be used together or in similar contexts, as shown by their presence in the word-word co-occurrence matrix.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_013.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_013.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09999999999999999,
+        "llm_judge": 2
+      }
+    },
+    {
+      "question_id": "cs288_q0063",
+      "question": "What does the graph in the inset box suggest about data size and translation quality?",
+      "gold_answer": "More data is better data.",
+      "predicted_answer": "The graph in the inset box suggests that more data improves the quality of the Arabic-English statistical machine translation system.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_025.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19047619047619047,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0064",
+      "question": "What transformation is depicted in the diagrams?",
+      "gold_answer": "The transformation of word embeddings from English to Spanish.",
+      "predicted_answer": "The diagrams depict a transformation of word embeddings from English to Spanish, showing how similar words in different languages can be aligned in a vector space.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_026.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_026.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5161290322580645,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0065",
+      "question": "How are the context words organized in the skip-gram diagram?",
+      "gold_answer": "Context words are organized in a window of size 2 around the center word 'into'.",
+      "predicted_answer": "In the skip-gram diagram, the context words are organized around the center word \"into\" with a window size of 2. The context words are \"problems\" and \"turning\" to the left, and \"banking\" and \"crises\" to the right.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_057.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_057.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6046511627906976,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0066",
+      "question": "What is the difference between the 'convex' and 'non-convex' graphs shown?",
+      "gold_answer": "The 'convex' graph shows a single minimum, while the 'non-convex' graph has multiple local minima.",
+      "predicted_answer": "The 'convex' graph shows a smooth, U-shaped curve with a single global minimum, making it easier to find the optimal solution. The 'non-convex' graph has multiple local minima and maxima, making it harder to find the global minimum. Despite this complexity, stochastic gradient descent can still be used to optimize the parameters.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_040.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_040.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3859649122807018,
+        "llm_judge": 4
+      }
+    },
+    {
+      "question_id": "cs288_q0067",
+      "question": "What visual element is used to represent the industrialization theme?",
+      "gold_answer": "An image of an industrial facility with smokestacks.",
+      "predicted_answer": "An image of an industrial plant or refinery is used to represent the industrialization theme.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_030.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_030.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3333333333333333,
+        "llm_judge": 4
+      }
+    },
+    {
+      "question_id": "cs288_q0068",
+      "question": "What is the relationship between the evaluator and the other entities in the diagram?",
+      "gold_answer": "The evaluator interacts with both the computer and the human to determine which is which.",
+      "predicted_answer": "In the diagram, the evaluator (A) interacts with both the computer (C) and the human (B) by receiving written responses from them. The evaluator's task is to determine which entity is the computer and which is the human based on their responses.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_010.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_010.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5217391304347826,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0069",
+      "question": "What is the formula for J(\u03b8) as given on the slide?",
+      "gold_answer": "J(\u03b8) = -1/T * sum(t=1 to T) sum(-m \u2264 j \u2264 m, j \u2260 0) log(exp(u_wt \u22c5 v_wt+j) / sum(k \u2208 V) exp(u_wt \u22c5 v_k))",
+      "predicted_answer": "The formula for \\( J(\\theta) \\) on the slide is:\n\n\\[\nJ(\\theta) = -\\frac{1}{T} \\sum_{t=1}^{T} \\sum_{-m \\leq j \\leq m, j \\neq 0} \\log \\frac{\\exp(\\mathbf{u}_{w_t} \\cdot \\mathbf{v}_{w_{t+j}})}{\\sum_{k \\in V} \\exp(\\mathbf{u}_{w_t} \\cdot \\mathbf{v}_k)}\n\\]",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_047.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_047.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.24999999999999994,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0070",
+      "question": "What is the significance of the arrows in the diagram?",
+      "gold_answer": "The arrows indicate the semantic shift of words over time.",
+      "predicted_answer": "The arrows in the diagram indicate the semantic shift of words over time. They show how the meanings of the words \"gay,\" \"broadcast,\" and \"awful\" have changed from one time period to another, based on word embeddings trained on historical text data.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_027.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_027.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.35555555555555557,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0071",
+      "question": "How is the value of x calculated in the context of perplexity?",
+      "gold_answer": "x is calculated as x = -1/n log2 P(w1, ..., wn).",
+      "predicted_answer": "The value of \\( x \\) is calculated as:\n\n\\[ x = -\\frac{1}{n} \\log_2 P(w_1, \\ldots, w_n) \\]\n\nwhere \\( P(w_1, \\ldots, w_n) \\) is the probability of the sequence of words.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_035.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_035.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5161290322580644,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0072",
+      "question": "What is the condition for the weights in the linear interpolation equation?",
+      "gold_answer": "The sum of the weights \u03bbi is equal to 1.",
+      "predicted_answer": "The condition for the weights in the linear interpolation equation is that the sum of the weights \\(\\lambda_i\\) must equal 1, i.e., \\(\\sum_i \\lambda_i = 1\\).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_045.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_045.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4285714285714285,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0073",
+      "question": "What is the largest model mentioned on the graph, and what is its size?",
+      "gold_answer": "Megatron-Turing NLG with 530 billion parameters.",
+      "predicted_answer": "The largest model mentioned on the graph is Megatron-Turing NLG, with a size of 530 billion parameters.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_028.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_028.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0074",
+      "question": "What is the formula for the max likelihood estimate for bigrams before smoothing?",
+      "gold_answer": "P(w_i | w_{i-1}) = C(w_{i-1}, w_i) / C(w_{i-1})",
+      "predicted_answer": "The formula for the max likelihood estimate for bigrams before smoothing is:\n\n\\[ P(w_i \\mid w_{i-1}) = \\frac{C(w_{i-1}, w_i)}{C(w_{i-1})} \\]",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_041.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_041.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2,
+        "llm_judge": 5
+      }
+    },
+    {
+      "question_id": "cs288_q0075",
+      "question": "What does the chart on the slide compare?",
+      "gold_answer": "The chart compares the fraction seen of unigrams and bigrams as the number of words increases.",
+      "predicted_answer": "The chart compares the fraction of new words or word pairs seen (unigrams and bigrams) as the number of words in a corpus increases.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_019.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_019.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.787878787878788,
+        "llm_judge": 5
+      }
+    }
+  ],
+  "summary": {
+    "overall": {
+      "count": 75,
+      "exact_match": 0.0,
+      "token_f1": 0.4465,
+      "llm_judge": 4.6
+    },
+    "per_category": {
+      "text_only": {
+        "count": 7,
+        "exact_match": 0.0,
+        "token_f1": 0.5465,
+        "llm_judge": 5.0
+      },
+      "image_diagram": {
+        "count": 35,
+        "exact_match": 0.0,
+        "token_f1": 0.3962,
+        "llm_judge": 4.6571
+      },
+      "table": {
+        "count": 7,
+        "exact_match": 0.0,
+        "token_f1": 0.5501,
+        "llm_judge": 4.5714
+      },
+      "chart_graph": {
+        "count": 9,
+        "exact_match": 0.0,
+        "token_f1": 0.5095,
+        "llm_judge": 4.6667
+      },
+      "layout_aware": {
+        "count": 17,
+        "exact_match": 0.0,
+        "token_f1": 0.433,
+        "llm_judge": 4.2941
+      }
+    }
+  }
+}
