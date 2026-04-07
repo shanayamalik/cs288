@@ -1,0 +1,1383 @@
+{
+  "per_question": [
+    {
+      "question_id": "cs601_q0001",
+      "question": "What type of machine might not halt according to the slide?",
+      "gold_answer": "Nondeterministic Turing machine",
+      "predicted_answer": "A nondeterministic Turing machine might not halt according to the slide.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_019.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_019.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5
+      }
+    },
+    {
+      "question_id": "cs601_q0002",
+      "question": "What type of grammar is described as 'seemingly somewhere in between' context-free and context-sensitive grammars?",
+      "gold_answer": "Mildly context-sensitive grammar (e.g., TAG, CCG, etc.)",
+      "predicted_answer": "Mildly context-sensitive grammar (e.g., TAG, CCG, etc.) is described as 'seemingly somewhere in between' context-free and context-sensitive grammars.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_020.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_020.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.56
+      }
+    },
+    {
+      "question_id": "cs601_q0003",
+      "question": "Which headline could imply a humorous misunderstanding about food?",
+      "gold_answer": "Kids Make Nutritious Snacks",
+      "predicted_answer": "\"Kids Make Nutritious Snacks\"",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_007.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_007.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0004",
+      "question": "Which model allows for the generation of sentences by rolling dice?",
+      "gold_answer": "Trained 3-gram model",
+      "predicted_answer": "The trained 3-gram model allows for the generation of sentences by rolling dice.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_006.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_006.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.42857142857142855
+      }
+    },
+    {
+      "question_id": "cs601_q0005",
+      "question": "What are the possible sources of ambiguity mentioned in the slide?",
+      "gold_answer": "The particular coffee, the donut store, the situation.",
+      "predicted_answer": "The possible sources of ambiguity mentioned in the slide are:\n\n- The particular coffee that was good every few hours\n- The donut store\n- The situation",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_021.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_021.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4166666666666667
+      }
+    },
+    {
+      "question_id": "cs601_q0006",
+      "question": "What are the two forms of strings allowed in the formal language equivalent mentioned?",
+      "gold_answer": "The forms are a x* b and c x* d.",
+      "predicted_answer": "The two forms of strings allowed are \\( a \\, x^* \\, b \\) and \\( c \\, x^* \\, d \\).",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_010.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_010.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.8
+      }
+    },
+    {
+      "question_id": "cs601_q0007",
+      "question": "What is the implied question in the text regarding John's thoughts?",
+      "gold_answer": "That's how often he thought it?",
+      "predicted_answer": "The implied question is whether \"every few hours\" refers to how often John thought about coffee or how often he thought it was good to have a coffee.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3125
+      }
+    },
+    {
+      "question_id": "cs601_q0008",
+      "question": "What is the example of an unrestricted grammar rule?",
+      "gold_answer": "The example is 'L S R \u2192 X Y S'.",
+      "predicted_answer": "The example of an unrestricted grammar rule is \\( LSR \\rightarrow XYS \\).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2222222222222222
+      }
+    },
+    {
+      "question_id": "cs601_q0009",
+      "question": "What does the smallest box in the diagram represent?",
+      "gold_answer": "Training sentences",
+      "predicted_answer": "The smallest box in the diagram represents the \"Training sentences.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_006.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_006.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4444444444444445
+      }
+    },
+    {
+      "question_id": "cs601_q0010",
+      "question": "Which model is represented by the largest box in the diagram?",
+      "gold_answer": "Trained 50-gram model",
+      "predicted_answer": "The largest box in the diagram represents the \"Possible under trained 50-gram model.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_006.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_006.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4615384615384615
+      }
+    },
+    {
+      "question_id": "cs601_q0011",
+      "question": "What are the components of the noun phrase (NP) in the tree diagram?",
+      "gold_answer": "Det, N\u2019, Noun",
+      "predicted_answer": "The components of the noun phrase (NP) in the tree diagram are:\n\n- Det (Determiner): \"every\"\n- N' (N-bar)\n  - Noun: \"castle\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.21052631578947367
+      }
+    },
+    {
+      "question_id": "cs601_q0012",
+      "question": "What is the example of a context-sensitive grammar rule on the slide?",
+      "gold_answer": "The example is 'S \u2192 N V S // L_R'.",
+      "predicted_answer": "The example of a context-sensitive grammar rule on the slide is \\( S \\rightarrow N V S \\, // \\, L \\_ R \\).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5217391304347827
+      }
+    },
+    {
+      "question_id": "cs601_q0013",
+      "question": "What is the structure of the tree diagram on the left side of the slide?",
+      "gold_answer": "S \u2192 NP VP .",
+      "predicted_answer": "The tree diagram on the left side of the slide has the following structure:\n\n- The root is labeled \"S.\"\n- \"S\" branches into \"NP\" and \"VP.\"\n- \"NP\" branches into \"Det\" and \"N\u2019.\"\n- \"Det\" is labeled \"every.\"\n- \"N\u2019\" branches into \"Noun.\"\n- \"Noun\" is labeled \"castle.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14285714285714285
+      }
+    },
+    {
+      "question_id": "cs601_q0014",
+      "question": "What is the relationship between 'deficit' and 'current' in the diagram?",
+      "gold_answer": "MOD",
+      "predicted_answer": "The relationship between 'deficit' and 'current' in the diagram is \"MOD\" (modifier).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.18181818181818182
+      }
+    },
+    {
+      "question_id": "cs601_q0015",
+      "question": "Which English sentence is both good English and a good match to the input?",
+      "gold_answer": "Jon appeared on TV.",
+      "predicted_answer": "\"Jon appeared on TV.\"",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0016",
+      "question": "Which sentence is marked as a good match to the input but not good English?",
+      "gold_answer": "TV appeared on Jon.",
+      "predicted_answer": "\"Appeared on Jon TV.\"",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0017",
+      "question": "Which sentence is a good match to the input but not good English?",
+      "gold_answer": "TV appeared on Jon.",
+      "predicted_answer": "\"Appeared on Jon TV.\"",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0018",
+      "question": "How many sentences are marked as good English according to the n-gram column?",
+      "gold_answer": "Four sentences are marked as good English.",
+      "predicted_answer": "Three sentences are marked as good English according to the n-gram column.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666665
+      }
+    },
+    {
+      "question_id": "cs601_q0019",
+      "question": "Which sentence in the 'Huge set of choices' is not related to the translation task?",
+      "gold_answer": "Jon is happy today.",
+      "predicted_answer": "\"Jon is happy today.\"",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_010.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_010.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0020",
+      "question": "How many sentences are marked with a question mark?",
+      "gold_answer": "Three sentences are marked with a question mark.",
+      "predicted_answer": "Three sentences are marked with a question mark.",
+      "category": "layout_aware",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_002.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_002.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0021",
+      "question": "What is the example given for a context-free grammar?",
+      "gold_answer": "The example given is 'S \u2192 N V S'.",
+      "predicted_answer": "The example given for a context-free grammar is \\( S \\rightarrow N V S \\).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.7368421052631579
+      }
+    },
+    {
+      "question_id": "cs601_q0022",
+      "question": "What is the probability ratio for choosing between 'NP \u2192 Det N\u2019' and 'NP \u2192 Proper'?",
+      "gold_answer": "20:1 odds ratio.",
+      "predicted_answer": "The probability ratio for choosing between 'NP \u2192 Det N\u2019' and 'NP \u2192 Proper' is 20:1.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_016.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_016.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2222222222222222
+      }
+    },
+    {
+      "question_id": "cs601_q0023",
+      "question": "What visual element is used to represent training sentences?",
+      "gold_answer": "A blue abstract shape is used to represent training sentences.",
+      "predicted_answer": "A blue abstract shape is used to represent training sentences.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_008.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_008.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0024",
+      "question": "What is the function of 'in September' in the sentence according to the diagram?",
+      "gold_answer": "COMP",
+      "predicted_answer": "The function of \"in September\" in the sentence is \"COMP\" (complement) according to the diagram.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.15384615384615385
+      }
+    },
+    {
+      "question_id": "cs601_q0025",
+      "question": "What sentence is generated by the tree diagram?",
+      "gold_answer": "Papa ate the caviar with a spoon",
+      "predicted_answer": "The sentence generated by the tree diagram is \"Papa ate the caviar with a spoon.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_021.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_021.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.625
+      }
+    },
+    {
+      "question_id": "cs601_q0026",
+      "question": "Which word is the subject of the sentence according to the dependency diagram?",
+      "gold_answer": "He",
+      "predicted_answer": "The word \"He\" is the subject of the sentence according to the dependency diagram.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.18181818181818182
+      }
+    },
+    {
+      "question_id": "cs601_q0027",
+      "question": "What is the root of the sentence in the dependency diagram?",
+      "gold_answer": "reckons",
+      "predicted_answer": "The root of the sentence in the dependency diagram is \"reckons.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2222222222222222
+      }
+    },
+    {
+      "question_id": "cs601_q0028",
+      "question": "What does the 'NP' node expand into according to the tree diagram?",
+      "gold_answer": "NP expands into Det N'.",
+      "predicted_answer": "According to the tree diagram, the 'NP' node expands into 'Det N''.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_016.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_016.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666666
+      }
+    },
+    {
+      "question_id": "cs601_q0029",
+      "question": "What does the black rectangle represent in the diagram?",
+      "gold_answer": "The black rectangle represents the 'Training sentences'.",
+      "predicted_answer": "The black rectangle represents the \"Training sentences\" in the diagram.",
+      "category": "image_diagram",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_007.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_007.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.8333333333333333
+      }
+    },
+    {
+      "question_id": "cs601_q0030",
+      "question": "What is the transformation rule for a noun phrase (NP) involving a determiner (Det)?",
+      "gold_answer": "NP \u2192 Det N\u2019",
+      "predicted_answer": "The transformation rule for a noun phrase (NP) involving a determiner (Det) is: \\( \\text{NP} \\rightarrow \\text{Det N'} \\).",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.22222222222222224
+      }
+    },
+    {
+      "question_id": "cs601_q0031",
+      "question": "What is the correct English translation for 'Jon est apparu \u00e0 la t\u00e9l\u00e9vision' according to the slide?",
+      "gold_answer": "Jon appeared on TV.",
+      "predicted_answer": "\"Jon appeared on TV.\"",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_010.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_010.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0032",
+      "question": "According to the grammar rules, what can a 'VP' expand into?",
+      "gold_answer": "A 'VP' can expand into 'V NP' or 'VP PP'.",
+      "predicted_answer": "According to the grammar rules, a 'VP' can expand into:\n\n- V NP\n- VP PP",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_022.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_022.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.761904761904762
+      }
+    },
+    {
+      "question_id": "cs601_q0033",
+      "question": "Which headline suggests a potential misunderstanding involving a legal setting?",
+      "gold_answer": "Juvenile Court to Try Shooting Defendant",
+      "predicted_answer": "\"Juvenile Court to Try Shooting Defendant\" suggests a potential misunderstanding involving a legal setting.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_007.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_007.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666666
+      }
+    },
+    {
+      "question_id": "cs601_q0034",
+      "question": "Why did John find it difficult to continue getting coffee?",
+      "gold_answer": "It turned out to be too expensive there.",
+      "predicted_answer": "John found it difficult to continue getting coffee because it turned out to be too expensive at the donut store.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5185185185185185
+      }
+    },
+    {
+      "question_id": "cs601_q0035",
+      "question": "According to the grammar rules, how is a 'VP' defined?",
+      "gold_answer": "VP \u2192 VerbT NP",
+      "predicted_answer": "According to the grammar rules, a 'VP' is defined as \"VP \u2192 VerbT NP\".",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5
+      }
+    },
+    {
+      "question_id": "cs601_q0036",
+      "question": "Why did John find the donut store problematic?",
+      "gold_answer": "He found it too expensive.",
+      "predicted_answer": "John found the donut store problematic because the coffee there turned out to be too expensive.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_015.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_015.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3157894736842105
+      }
+    },
+    {
+      "question_id": "cs601_q0037",
+      "question": "How is 'NP' defined in the context-free grammar?",
+      "gold_answer": "NP \u2192 Det N\u2019 or NP \u2192 Proper",
+      "predicted_answer": "In the context-free grammar, 'NP' (Noun Phrase) is defined with two rules:\n1. \\( \\text{NP} \\rightarrow \\text{Det N'} \\)\n2. \\( \\text{NP} \\rightarrow \\text{Proper} \\)",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_015.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_015.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07142857142857144
+      }
+    },
+    {
+      "question_id": "cs601_q0038",
+      "question": "Which phrase is most probable: 'by the way, are they\u2019re likely to', 'by the way, are there likely to', or 'by the way, are their likely to'?",
+      "gold_answer": "by the way, are they\u2019re likely to",
+      "predicted_answer": "\"\u2026 by the way, are there likely to \u2026\" is the most probable phrase.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_006.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_006.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5555555555555556
+      }
+    },
+    {
+      "question_id": "cs601_q0039",
+      "question": "What example is given to illustrate the ambiguity in the story?",
+      "gold_answer": "Mozart composed music.",
+      "predicted_answer": "The example given is \"Mozart composed music.\"",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_017.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666666
+      }
+    },
+    {
+      "question_id": "cs601_q0040",
+      "question": "What turned out to be too expensive for John?",
+      "gold_answer": "The coffee at the donut store.",
+      "predicted_answer": "The slide suggests ambiguity about what \"it\" refers to, but it implies that either the coffee, the donut store, or the situation turned out to be too expensive for John.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_021.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_021.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19999999999999998
+      }
+    },
+    {
+      "question_id": "cs601_q0041",
+      "question": "What is the probability of the rule 'NP \u2192 Det N\u2019'?",
+      "gold_answer": "20",
+      "predicted_answer": "The probability of the rule 'NP \u2192 Det N\u2019' is 20.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19999999999999998
+      }
+    },
+    {
+      "question_id": "cs601_q0042",
+      "question": "Why did John think getting a coffee was good?",
+      "gold_answer": "He thought a coffee was good every few hours.",
+      "predicted_answer": "John thought getting a coffee was good every few hours.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.823529411764706
+      }
+    },
+    {
+      "question_id": "cs601_q0043",
+      "question": "Which phrase is most probable: 'I think they\u2019re okay', 'I think there okay', or 'I think their okay'?",
+      "gold_answer": "I think they\u2019re okay",
+      "predicted_answer": "\"I think they\u2019re okay\" is the most probable phrase.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_006.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_006.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666666
+      }
+    },
+    {
+      "question_id": "cs601_q0044",
+      "question": "What is a strictly local grammar according to the slide?",
+      "gold_answer": "A strictly local grammar is a set of legal n-grams.",
+      "predicted_answer": "A strictly local grammar is a set of legal n-grams.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0045",
+      "question": "What is the rule for expanding 'S' in the context-free grammar provided?",
+      "gold_answer": "S \u2192 NP VP .",
+      "predicted_answer": "The rule for expanding 'S' is: \\( S \\rightarrow \\text{NP VP .} \\)",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_016.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_016.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.30769230769230765
+      }
+    },
+    {
+      "question_id": "cs601_q0046",
+      "question": "Why did John find the coffee to be problematic?",
+      "gold_answer": "It turned out to be too expensive.",
+      "predicted_answer": "John found the coffee to be problematic because it turned out to be too expensive at the donut store.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_012.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_012.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5833333333333334
+      }
+    },
+    {
+      "question_id": "cs601_q0047",
+      "question": "What is the context-free grammar rule for 'S'?",
+      "gold_answer": "S \u2192 NP VP .",
+      "predicted_answer": "The context-free grammar rule for 'S' is: \\( S \\rightarrow \\text{NP VP .} \\)",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_015.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_015.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.28571428571428575
+      }
+    },
+    {
+      "question_id": "cs601_q0048",
+      "question": "What does x* mean in the context of the formal language equivalent?",
+      "gold_answer": "x* means '0 or more x's'.",
+      "predicted_answer": "In the context of the formal language equivalent, \\( x^* \\) means \"0 or more x's.\"",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_010.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_010.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666666
+      }
+    },
+    {
+      "question_id": "cs601_q0049",
+      "question": "What is the main topic of the slide?",
+      "gold_answer": "Ambiguity",
+      "predicted_answer": "The main topic of the slide is \"Ambiguity\" in sentence structure, illustrated through a syntactic tree diagram and grammar rules.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_023.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_023.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1111111111111111
+      }
+    },
+    {
+      "question_id": "cs601_q0050",
+      "question": "What is the suggested action if you do not want to stay for questions?",
+      "gold_answer": "Please leave quickly and quietly.",
+      "predicted_answer": "If you do not want to stay for questions, please leave quickly and quietly.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_026.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_026.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5263157894736842
+      }
+    },
+    {
+      "question_id": "cs601_q0051",
+      "question": "Which lexical category does 'king' belong to according to the lexical rules?",
+      "gold_answer": "Noun",
+      "predicted_answer": "According to the lexical rules, 'king' belongs to the category \"Noun.\"",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19999999999999998
+      }
+    },
+    {
+      "question_id": "cs601_q0052",
+      "question": "What does the non-terminal 'N' represent in the grammar?",
+      "gold_answer": "N \u2192 Mary",
+      "predicted_answer": "The non-terminal 'N' represents \"Mary.\"",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_012.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_012.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5714285714285715
+      }
+    },
+    {
+      "question_id": "cs601_q0053",
+      "question": "What are the four levels of language mentioned on the slide?",
+      "gold_answer": "Phonetics/phonology/morphology, Syntax, Semantics, Pragmatics",
+      "predicted_answer": "The four levels of language mentioned on the slide are:\n\n1. Phonetics/phonology/morphology\n2. Syntax\n3. Semantics\n4. Pragmatics",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_009.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4
+      }
+    },
+    {
+      "question_id": "cs601_q0054",
+      "question": "What did John think was good every few hours?",
+      "gold_answer": "A coffee.",
+      "predicted_answer": "John thought a coffee was good every few hours.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_020.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_020.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2222222222222222
+      }
+    },
+    {
+      "question_id": "cs601_q0055",
+      "question": "What is the relationship between context-sensitive grammar and linear bounded automaton?",
+      "gold_answer": "A context-sensitive grammar corresponds to a linear bounded automaton.",
+      "predicted_answer": "A context-sensitive grammar corresponds to a linear bounded automaton.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_019.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_019.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0056",
+      "question": "How long do you have to complete the task?",
+      "gold_answer": "Two weeks.",
+      "predicted_answer": "Two weeks.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_013.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_013.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0057",
+      "question": "What is one example of a topic 1 sample?",
+      "gold_answer": "In the beginning God created \u2026",
+      "predicted_answer": "\"In the beginning God created \u2026\"",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_03/slide_004.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_004.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0058",
+      "question": "What is the topic of the slide?",
+      "gold_answer": "Contextual Spelling Correction",
+      "predicted_answer": "The topic of the slide is \"Contextual Spelling Correction.\"",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_03/slide_006.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_006.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6
+      }
+    },
+    {
+      "question_id": "cs601_q0059",
+      "question": "What should students agree on by the end of the course?",
+      "gold_answer": "Students should agree that language is subtle & interesting.",
+      "predicted_answer": "Students should agree that language is subtle and interesting.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_004.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_004.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.9411764705882353
+      }
+    },
+    {
+      "question_id": "cs601_q0060",
+      "question": "What is the main topic of the slide?",
+      "gold_answer": "Machine Translation",
+      "predicted_answer": "The main topic of the slide is \"Machine Translation.\"",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4444444444444445
+      }
+    },
+    {
+      "question_id": "cs601_q0061",
+      "question": "What is the main question posed on the slide?",
+      "gold_answer": "But can't GPT-4 read/write that?",
+      "predicted_answer": "The main question posed on the slide is \"But can\u2019t GPT-4 read/write that?\"",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_023.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_023.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5000000000000001
+      }
+    },
+    {
+      "question_id": "cs601_q0062",
+      "question": "What does the slide suggest we consider at the phonetics/phonology/morphology level?",
+      "gold_answer": "What words (or subwords) are we dealing with?",
+      "predicted_answer": "The slide suggests we consider what words (or subwords) we are dealing with at the phonetics/phonology/morphology level.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_009.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6956521739130436
+      }
+    },
+    {
+      "question_id": "cs601_q0063",
+      "question": "What does the slide suggest as a possible solution to rule out bad sentences?",
+      "gold_answer": "Using 4-grams, 5-grams, ... 50-grams.",
+      "predicted_answer": "The slide suggests using longer n-grams, such as 4-grams, 5-grams, up to 50-grams, as a possible solution to rule out bad sentences.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_005.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_005.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.33333333333333337
+      }
+    },
+    {
+      "question_id": "cs601_q0064",
+      "question": "What does the non-terminal 'V' represent in the grammar?",
+      "gold_answer": "V \u2192 likes",
+      "predicted_answer": "The non-terminal 'V' represents the verbs \"likes,\" \"sleeps,\" and \"thinks\" in the grammar.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_012.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_012.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.30769230769230765
+      }
+    },
+    {
+      "question_id": "cs601_q0065",
+      "question": "What was the issue John faced with buying coffee?",
+      "gold_answer": "It turned out to be too expensive.",
+      "predicted_answer": "The issue John faced was that the coffee turned out to be too expensive at the donut store.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_020.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_020.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5454545454545455
+      }
+    },
+    {
+      "question_id": "cs601_q0066",
+      "question": "What is the main topic of the slide?",
+      "gold_answer": "Probabilistic Context-Free Grammar: Randomly Sampling a Sentence",
+      "predicted_answer": "The main topic of the slide is \"Probabilistic Context-Free Grammar: Randomly Sampling a Sentence.\"",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_021.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_021.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.7058823529411764
+      }
+    },
+    {
+      "question_id": "cs601_q0067",
+      "question": "What is the main topic of the slide?",
+      "gold_answer": "Word trigrams: A good model of English?",
+      "predicted_answer": "The main topic of the slide is evaluating whether word trigrams are a good model of English by determining which sentences are acceptable.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_002.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_002.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4615384615384615
+      }
+    },
+    {
+      "question_id": "cs601_q0068",
+      "question": "What did John think was good every few hours?",
+      "gold_answer": "A coffee",
+      "predicted_answer": "John thought a coffee was good every few hours.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_017.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2222222222222222
+      }
+    },
+    {
+      "question_id": "cs601_q0069",
+      "question": "What is the sequence of letters useful for solving cryptograms?",
+      "gold_answer": "ETAOINSHRDLU",
+      "predicted_answer": "ETAOINSHRDLU",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_024.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_024.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0070",
+      "question": "What is the initial rule for a sentence in the context-free grammar?",
+      "gold_answer": "S \u2192 N V N",
+      "predicted_answer": "The initial rule for a sentence in the context-free grammar is \\( S \\rightarrow N V N \\).",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_012.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_012.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4444444444444444
+      }
+    },
+    {
+      "question_id": "cs601_q0071",
+      "question": "What is the French sentence provided on the slide?",
+      "gold_answer": "Jon est apparu \u00e0 la t\u00e9l\u00e9vision.",
+      "predicted_answer": "The French sentence provided on the slide is \"Jon est apparu \u00e0 la t\u00e9l\u00e9vision.\"",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666666
+      }
+    },
+    {
+      "question_id": "cs601_q0072",
+      "question": "What activity did the narrator stop doing during freshman year?",
+      "gold_answer": "Smoking",
+      "predicted_answer": "The narrator stopped smoking during freshman year.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_01/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_01/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2857142857142857
+      }
+    },
+    {
+      "question_id": "cs601_q0073",
+      "question": "What does the slide indicate about context-sensitive grammar?",
+      "gold_answer": "A context-sensitive grammar is a set of context-sensitive rules.",
+      "predicted_answer": "The slide indicates that context-sensitive grammar is a set of context-sensitive rules.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.8235294117647058
+      }
+    },
+    {
+      "question_id": "cs601_q0074",
+      "question": "What is the context-free grammar rule for a sentence (S) in the syntactic rules?",
+      "gold_answer": "S \u2192 NP VP .",
+      "predicted_answer": "The context-free grammar rule for a sentence (S) in the syntactic rules is: \\( S \\rightarrow NP \\, VP \\, . \\)",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3333333333333333
+      }
+    },
+    {
+      "question_id": "cs601_q0075",
+      "question": "What is a context-free grammar according to the slide?",
+      "gold_answer": "A context-free grammar is a set of context-free rewrite rules.",
+      "predicted_answer": "A context-free grammar is a set of context-free rewrite rules.",
+      "category": "text_only",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_020.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_020.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    }
+  ],
+  "summary": {
+    "overall": {
+      "count": 75,
+      "exact_match": 0.16,
+      "token_f1": 0.5582
+    },
+    "per_category": {
+      "text_only": {
+        "count": 53,
+        "exact_match": 0.1509,
+        "token_f1": 0.5542
+      },
+      "image_diagram": {
+        "count": 16,
+        "exact_match": 0.0625,
+        "token_f1": 0.4267
+      },
+      "table": {
+        "count": 4,
+        "exact_match": 0.25,
+        "token_f1": 0.9167
+      },
+      "layout_aware": {
+        "count": 2,
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    }
+  }
+}

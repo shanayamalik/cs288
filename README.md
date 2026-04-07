@@ -87,6 +87,9 @@ python slideqa/src/process_pdfs.py --course cs288
 ### 2. Generate QA drafts using a VLM
 ```bash
 python slideqa/src/generate_qa.py --course cs288 --model openrouter/gpt-4o
+
+# To generate for specific lectures only (e.g., first 3):
+python slideqa/src/generate_qa.py --course cs601 --model openrouter/gpt-4o --lectures 1 2 3
 ```
 
 ### 3. Curate benchmark subset
@@ -123,9 +126,11 @@ Both use GPT-4o via OpenRouter. Run with:
 python slideqa/src/run_baselines.py --course cs288
 ```
 
-### Results (3-lecture pilot, 75 QA pairs)
+### Results
 
 Evaluation uses **Exact Match** and **Token-F1** (SQuAD-style). Answers are short-form (≤10 words) for reliable automated scoring.
+
+#### UC Berkeley CS 288 (3 lectures, 75 QA pairs)
 
 | Category | N | Text-Only EM | Text-Only F1 | VLM EM | VLM F1 |
 |---|---|---|---|---|---|
@@ -136,21 +141,67 @@ Evaluation uses **Exact Match** and **Token-F1** (SQuAD-style). Answers are shor
 | layout_aware | 7 | 0.000 | 0.175 | 0.000 | 0.392 |
 | **Overall** | **75** | **0.013** | **0.130** | **0.013** | **0.358** |
 
+#### JHU CS 601.471 (3 lectures, 75 QA pairs)
+
+| Category | N | Text-Only EM | Text-Only F1 | VLM EM | VLM F1 |
+|---|---|---|---|---|---|
+| text_only | 53 | 0.132 | 0.383 | 0.151 | 0.554 |
+| image_diagram | 16 | 0.000 | 0.218 | 0.063 | 0.427 |
+| table | 4 | 0.500 | 0.854 | 0.250 | 0.917 |
+| layout_aware | 2 | 0.000 | 0.519 | 1.000 | 1.000 |
+| **Overall** | **75** | **0.120** | **0.376** | **0.160** | **0.558** |
+
+#### Cross-course comparison
+
+| Course | Text-Only F1 | VLM F1 | VLM Advantage |
+|---|---|---|---|
+| CS 288 (Berkeley) | 0.130 | 0.358 | 2.75x |
+| CS 601 (JHU) | 0.376 | 0.558 | 1.48x |
+
 **Key takeaways:**
-- The VLM baseline (with the correct slide image) nearly triples Token-F1 over text-only (0.36 vs 0.13), confirming the benchmark requires genuine visual understanding.
-- The gap is largest on **chart_graph** (0.14 → 0.52) and **table** (0.06 → 0.37) — categories where the answer lives in a visual element that text extraction misses.
-- EM is low for both baselines (~1%) because even short answers get paraphrased. Token-F1 is our primary metric.
+- VLM consistently outperforms text-only across both courses, confirming the benchmark requires visual understanding.
+- The VLM advantage is larger on CS 288 (2.75x) which has more diagram/chart-heavy slides, vs CS 601 (1.48x) which has older, more text-heavy PPT slides.
+- CS 601's higher text_only category share (53/75 vs 7/75) explains why text-only BM25+LLM performs better there.
+- EM is low for both baselines because even short answers get paraphrased. Token-F1 is our primary metric.
 
 Detailed per-question results are in `slideqa/data/results/`.
+
+### Reproducing CS 601 results
+
+The JHU CS 601.471 slides were originally `.ppt`/`.pptx` files. They were converted to PDF using LibreOffice headless:
+```bash
+# Install LibreOffice (macOS, one-time)
+brew install --cask libreoffice
+
+# Convert PPT/PPTX to PDF (already done — PDFs are in the repo)
+soffice --headless --convert-to pdf *.ppt *.pptx
+```
+
+Then run the standard pipeline:
+```bash
+# 1. Process all lectures (extracts slide images + text)
+python slideqa/src/process_pdfs.py --course cs601
+
+# 2. Generate QA for first 3 lectures only
+python slideqa/src/generate_qa.py --course cs601 --model openrouter/gpt-4o --rate-limit 1.5 --lectures 1 2 3
+
+# 3. Curate 75 short-answer QA pairs
+python slideqa/src/curate_qa.py --course cs601 --target 75
+
+# 4. Run baselines
+python slideqa/src/run_baselines.py --course cs601 --rate-limit 1.0
+```
 
 ## Progress
 
 - [x] Project scaffolding and paper abstract
-- [x] PDF processing pilot (3 lectures, 183 slides)
-- [x] QA draft generation (GPT-4o, 706 pairs)
-- [x] Auto-curation (75 benchmark pairs across 5 categories)
-- [x] Baseline evaluation (zero-shot VLM vs text-only)
+- [x] PDF processing pilot — CS 288 (3 lectures, 183 slides)
+- [x] QA draft generation — CS 288 (GPT-4o, 706 pairs → 75 curated)
+- [x] Baseline evaluation — CS 288 (zero-shot VLM vs text-only)
+- [x] JHU CS 601.471 added (19 lectures, 1264 slides; 3-lecture pilot: 231 pairs → 75 curated)
+- [x] Baseline evaluation — CS 601 (zero-shot VLM vs text-only)
+- [ ] Add Stanford CS 224N (3-lecture pilot)
 - [ ] Scale to full CS 288 (16 lectures)
-- [ ] Add Stanford CS 224N and JHU CS 601.471
+- [ ] Scale to full CS 601 and CS 224N
 - [ ] Retrieval pipeline (ColPali + vector DB)
 - [ ] Final evaluation and ablations

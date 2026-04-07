@@ -1,0 +1,1277 @@
+[
+  {
+    "question_id": "cs601_q0001",
+    "question": "What type of machine might not halt according to the slide?",
+    "answer": "Nondeterministic Turing machine",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_019.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0002",
+    "question": "What type of grammar is described as 'seemingly somewhere in between' context-free and context-sensitive grammars?",
+    "answer": "Mildly context-sensitive grammar (e.g., TAG, CCG, etc.)",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_020.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0003",
+    "question": "Which headline could imply a humorous misunderstanding about food?",
+    "answer": "Kids Make Nutritious Snacks",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_007.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0004",
+    "question": "Which model allows for the generation of sentences by rolling dice?",
+    "answer": "Trained 3-gram model",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_006.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0005",
+    "question": "What are the possible sources of ambiguity mentioned in the slide?",
+    "answer": "The particular coffee, the donut store, the situation.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_021.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0006",
+    "question": "What are the two forms of strings allowed in the formal language equivalent mentioned?",
+    "answer": "The forms are a x* b and c x* d.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_010.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0007",
+    "question": "What is the implied question in the text regarding John's thoughts?",
+    "answer": "That's how often he thought it?",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_018.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0008",
+    "question": "What is the example of an unrestricted grammar rule?",
+    "answer": "The example is 'L S R \u2192 X Y S'.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0009",
+    "question": "What does the smallest box in the diagram represent?",
+    "answer": "Training sentences",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_006.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0010",
+    "question": "Which model is represented by the largest box in the diagram?",
+    "answer": "Trained 50-gram model",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_006.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0011",
+    "question": "What are the components of the noun phrase (NP) in the tree diagram?",
+    "answer": "Det, N\u2019, Noun",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_017.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0012",
+    "question": "What is the example of a context-sensitive grammar rule on the slide?",
+    "answer": "The example is 'S \u2192 N V S // L_R'.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0013",
+    "question": "What is the structure of the tree diagram on the left side of the slide?",
+    "answer": "S \u2192 NP VP .",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_017.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0014",
+    "question": "What is the relationship between 'deficit' and 'current' in the diagram?",
+    "answer": "MOD",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_025.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0015",
+    "question": "Which English sentence is both good English and a good match to the input?",
+    "answer": "Jon appeared on TV.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0016",
+    "question": "Which sentence is marked as a good match to the input but not good English?",
+    "answer": "TV appeared on Jon.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0017",
+    "question": "Which sentence is a good match to the input but not good English?",
+    "answer": "TV appeared on Jon.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0018",
+    "question": "How many sentences are marked as good English according to the n-gram column?",
+    "answer": "Four sentences are marked as good English.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0019",
+    "question": "Which sentence in the 'Huge set of choices' is not related to the translation task?",
+    "answer": "Jon is happy today.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_010.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0020",
+    "question": "How many sentences are marked with a question mark?",
+    "answer": "Three sentences are marked with a question mark.",
+    "category": "layout_aware",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_002.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0021",
+    "question": "What is the example given for a context-free grammar?",
+    "answer": "The example given is 'S \u2192 N V S'.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0022",
+    "question": "What is the probability ratio for choosing between 'NP \u2192 Det N\u2019' and 'NP \u2192 Proper'?",
+    "answer": "20:1 odds ratio.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_016.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0023",
+    "question": "What visual element is used to represent training sentences?",
+    "answer": "A blue abstract shape is used to represent training sentences.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_008.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0024",
+    "question": "What is the function of 'in September' in the sentence according to the diagram?",
+    "answer": "COMP",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_025.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0025",
+    "question": "What sentence is generated by the tree diagram?",
+    "answer": "Papa ate the caviar with a spoon",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_021.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0026",
+    "question": "Which word is the subject of the sentence according to the dependency diagram?",
+    "answer": "He",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_025.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0027",
+    "question": "What is the root of the sentence in the dependency diagram?",
+    "answer": "reckons",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_025.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0028",
+    "question": "What does the 'NP' node expand into according to the tree diagram?",
+    "answer": "NP expands into Det N'.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_016.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0029",
+    "question": "What does the black rectangle represent in the diagram?",
+    "answer": "The black rectangle represents the 'Training sentences'.",
+    "category": "image_diagram",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_007.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0030",
+    "question": "What is the transformation rule for a noun phrase (NP) involving a determiner (Det)?",
+    "answer": "NP \u2192 Det N\u2019",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0031",
+    "question": "What is the correct English translation for 'Jon est apparu \u00e0 la t\u00e9l\u00e9vision' according to the slide?",
+    "answer": "Jon appeared on TV.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_010.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0032",
+    "question": "According to the grammar rules, what can a 'VP' expand into?",
+    "answer": "A 'VP' can expand into 'V NP' or 'VP PP'.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_022.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0033",
+    "question": "Which headline suggests a potential misunderstanding involving a legal setting?",
+    "answer": "Juvenile Court to Try Shooting Defendant",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_007.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0034",
+    "question": "Why did John find it difficult to continue getting coffee?",
+    "answer": "It turned out to be too expensive there.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0035",
+    "question": "According to the grammar rules, how is a 'VP' defined?",
+    "answer": "VP \u2192 VerbT NP",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_017.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0036",
+    "question": "Why did John find the donut store problematic?",
+    "answer": "He found it too expensive.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_015.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0037",
+    "question": "How is 'NP' defined in the context-free grammar?",
+    "answer": "NP \u2192 Det N\u2019 or NP \u2192 Proper",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_015.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0038",
+    "question": "Which phrase is most probable: 'by the way, are they\u2019re likely to', 'by the way, are there likely to', or 'by the way, are their likely to'?",
+    "answer": "by the way, are they\u2019re likely to",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_006.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0039",
+    "question": "What example is given to illustrate the ambiguity in the story?",
+    "answer": "Mozart composed music.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_017.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0040",
+    "question": "What turned out to be too expensive for John?",
+    "answer": "The coffee at the donut store.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_021.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0041",
+    "question": "What is the probability of the rule 'NP \u2192 Det N\u2019'?",
+    "answer": "20",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_017.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0042",
+    "question": "Why did John think getting a coffee was good?",
+    "answer": "He thought a coffee was good every few hours.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0043",
+    "question": "Which phrase is most probable: 'I think they\u2019re okay', 'I think there okay', or 'I think their okay'?",
+    "answer": "I think they\u2019re okay",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_006.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0044",
+    "question": "What is a strictly local grammar according to the slide?",
+    "answer": "A strictly local grammar is a set of legal n-grams.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0045",
+    "question": "What is the rule for expanding 'S' in the context-free grammar provided?",
+    "answer": "S \u2192 NP VP .",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_016.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0046",
+    "question": "Why did John find the coffee to be problematic?",
+    "answer": "It turned out to be too expensive.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_012.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0047",
+    "question": "What is the context-free grammar rule for 'S'?",
+    "answer": "S \u2192 NP VP .",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_015.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0048",
+    "question": "What does x* mean in the context of the formal language equivalent?",
+    "answer": "x* means '0 or more x's'.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_010.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0049",
+    "question": "What is the main topic of the slide?",
+    "answer": "Ambiguity",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_023.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0050",
+    "question": "What is the suggested action if you do not want to stay for questions?",
+    "answer": "Please leave quickly and quietly.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_026.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0051",
+    "question": "Which lexical category does 'king' belong to according to the lexical rules?",
+    "answer": "Noun",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0052",
+    "question": "What does the non-terminal 'N' represent in the grammar?",
+    "answer": "N \u2192 Mary",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_012.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0053",
+    "question": "What are the four levels of language mentioned on the slide?",
+    "answer": "Phonetics/phonology/morphology, Syntax, Semantics, Pragmatics",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0054",
+    "question": "What did John think was good every few hours?",
+    "answer": "A coffee.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_020.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0055",
+    "question": "What is the relationship between context-sensitive grammar and linear bounded automaton?",
+    "answer": "A context-sensitive grammar corresponds to a linear bounded automaton.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_019.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0056",
+    "question": "How long do you have to complete the task?",
+    "answer": "Two weeks.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_013.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0057",
+    "question": "What is one example of a topic 1 sample?",
+    "answer": "In the beginning God created \u2026",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_03/slide_004.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0058",
+    "question": "What is the topic of the slide?",
+    "answer": "Contextual Spelling Correction",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_03/slide_006.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0059",
+    "question": "What should students agree on by the end of the course?",
+    "answer": "Students should agree that language is subtle & interesting.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_004.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0060",
+    "question": "What is the main topic of the slide?",
+    "answer": "Machine Translation",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0061",
+    "question": "What is the main question posed on the slide?",
+    "answer": "But can't GPT-4 read/write that?",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_023.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0062",
+    "question": "What does the slide suggest we consider at the phonetics/phonology/morphology level?",
+    "answer": "What words (or subwords) are we dealing with?",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0063",
+    "question": "What does the slide suggest as a possible solution to rule out bad sentences?",
+    "answer": "Using 4-grams, 5-grams, ... 50-grams.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_005.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0064",
+    "question": "What does the non-terminal 'V' represent in the grammar?",
+    "answer": "V \u2192 likes",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_012.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0065",
+    "question": "What was the issue John faced with buying coffee?",
+    "answer": "It turned out to be too expensive.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_020.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0066",
+    "question": "What is the main topic of the slide?",
+    "answer": "Probabilistic Context-Free Grammar: Randomly Sampling a Sentence",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_021.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0067",
+    "question": "What is the main topic of the slide?",
+    "answer": "Word trigrams: A good model of English?",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_002.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0068",
+    "question": "What did John think was good every few hours?",
+    "answer": "A coffee",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_017.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0069",
+    "question": "What is the sequence of letters useful for solving cryptograms?",
+    "answer": "ETAOINSHRDLU",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_024.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0070",
+    "question": "What is the initial rule for a sentence in the context-free grammar?",
+    "answer": "S \u2192 N V N",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_012.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0071",
+    "question": "What is the French sentence provided on the slide?",
+    "answer": "Jon est apparu \u00e0 la t\u00e9l\u00e9vision.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0072",
+    "question": "What activity did the narrator stop doing during freshman year?",
+    "answer": "Smoking",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_01/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0073",
+    "question": "What does the slide indicate about context-sensitive grammar?",
+    "answer": "A context-sensitive grammar is a set of context-sensitive rules.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0074",
+    "question": "What is the context-free grammar rule for a sentence (S) in the syntactic rules?",
+    "answer": "S \u2192 NP VP .",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0075",
+    "question": "What is a context-free grammar according to the slide?",
+    "answer": "A context-free grammar is a set of context-free rewrite rules.",
+    "category": "text_only",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_020.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  }
+]

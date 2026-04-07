@@ -1,0 +1,2813 @@
+[
+  {
+    "evidence_slide": "lecture_01/slide_001.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the course number for Natural Language Processing?",
+        "answer": "601.465/665",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The course number is explicitly stated in the text on the slide.",
+        "question_id": "cs601_q0001",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Who is the professor for the Natural Language Processing course?",
+        "answer": "Prof: Jason Eisner",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The professor's name is clearly mentioned in the text on the slide.",
+        "question_id": "cs601_q0002",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the URL for the course webpage?",
+        "answer": "http://cs.jhu.edu/~jason/465",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The URL is provided in the text on the slide.",
+        "question_id": "cs601_q0003",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What resources are available on the course webpage?",
+        "answer": "syllabus, announcements, slides, homeworks",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The resources are listed in the text on the slide.",
+        "question_id": "cs601_q0004",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_002.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What would make computers more useful according to the slide?",
+        "answer": "Computers would be more useful if they could handle our email, do our library research, and talk to us.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly stated in the text on the slide.",
+        "question_id": "cs601_q0005",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What challenge do computers face according to the slide?",
+        "answer": "Computers are fazed by natural human language.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The challenge is explicitly mentioned in the text on the slide.",
+        "question_id": "cs601_q0006",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What question does the slide pose about teaching computers?",
+        "answer": "How can we tell computers about language? (Or help them learn it as kids do?)",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question is directly quoted from the slide text.",
+        "question_id": "cs601_q0007",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_003.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What are some applications of NLP mentioned on the slide?",
+        "answer": "Spelling correction, grammar checking, better search engines, information extraction, psychotherapy, Harlequin romances, etc.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered by directly reading the list of applications provided on the slide.",
+        "question_id": "cs601_q0008",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are the new interfaces of NLP listed on the slide?",
+        "answer": "Speech recognition (and text-to-speech), dialogue systems (USS Enterprise onboard computer), machine translation (the Babel fish).",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is answerable by reading the section under 'New interfaces' on the slide.",
+        "question_id": "cs601_q0009",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How is the content on the slide organized?",
+        "answer": "The slide is organized into two main sections: applications of NLP and new interfaces, with bullet points under each.",
+        "category": "layout_aware",
+        "difficulty": "medium",
+        "reasoning": "Understanding the organization requires recognizing the spatial layout and grouping of content on the slide.",
+        "question_id": "cs601_q0010",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_004.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What are the main goals of the course as stated on the slide?",
+        "answer": "Introduce you to NLP problems & solutions, and the relation to linguistics & machine learning.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text on the slide, which lists the main goals of the course.",
+        "question_id": "cs601_q0011",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What should students agree on by the end of the course?",
+        "answer": "Students should agree that language is subtle & interesting.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is explicitly stated in the text under the section 'At the end you should'.",
+        "question_id": "cs601_q0012",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are the expected outcomes for students by the end of the course?",
+        "answer": "Students should feel some ownership of the formal & statistical models, have new perspectives and habits of mind, and understand research papers in the field.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question requires synthesizing multiple points listed under the expected outcomes at the end of the course.",
+        "question_id": "cs601_q0013",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_005.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the title of the slide?",
+        "answer": "Caveat Auditor (listener beware)",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The title is clearly stated at the top of the slide.",
+        "question_id": "cs601_q0014",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What feedback did a student give about the class on Piazza?",
+        "answer": "The student said they felt like they learned enough for 3 classes combined and that it made their undergraduate at Hopkins worth it.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The feedback is quoted text on the slide, requiring reading comprehension.",
+        "question_id": "cs601_q0015",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the workload like for the class according to the slide?",
+        "answer": "The workload is high.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide explicitly states that the workload is high.",
+        "question_id": "cs601_q0016",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How many credits is the class worth?",
+        "answer": "4 credits",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The number of credits is directly mentioned in the bullet points.",
+        "question_id": "cs601_q0017",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are some methods mentioned to handle the workload?",
+        "answer": "Learn by doing, assignments will take time, grading is set slightly high, looking for ways to reduce workload, objections when trying to cut topics.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "These methods are listed in the bullet points and require synthesis of information.",
+        "question_id": "cs601_q0018",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_006.png",
+    "course": "cs601",
+    "qa_pairs": [],
+    "status": "empty",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_007.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Ambiguity: Favorite Headlines",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The main topic is clearly stated at the top of the slide.",
+        "question_id": "cs601_q0019",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How many ambiguous headlines are listed on the slide?",
+        "answer": "Eight",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide lists eight headlines, which can be counted directly from the text.",
+        "question_id": "cs601_q0020",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is an example of an ambiguous headline from the slide?",
+        "answer": "Iraqi Head Seeks Arms",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The headline is listed on the slide and demonstrates ambiguity.",
+        "question_id": "cs601_q0021",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which headline suggests a potential misunderstanding involving a legal setting?",
+        "answer": "Juvenile Court to Try Shooting Defendant",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The headline involves a court and could be interpreted in multiple ways.",
+        "question_id": "cs601_q0022",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which headline could imply a humorous misunderstanding about food?",
+        "answer": "Kids Make Nutritious Snacks",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The headline can be interpreted as either kids creating snacks or kids being snacks.",
+        "question_id": "cs601_q0023",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_008.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Ambiguity: Favorite Headlines",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The main topic is stated at the top of the slide, which can be directly read from the text.",
+        "question_id": "cs601_q0024",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "List two examples of ambiguous headlines mentioned on the slide.",
+        "answer": "1. British Left Waffles on Falkland Islands 2. Hospitals Are Sued by 7 Foot Doctors",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The answer requires reading and selecting specific examples from the list of headlines.",
+        "question_id": "cs601_q0025",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the humorous ambiguity in the headline 'Man Struck by Lightning Faces Battery Charge'?",
+        "answer": "The ambiguity arises from 'battery charge' which can mean both a legal charge and an electrical charge.",
+        "category": "text_only",
+        "difficulty": "hard",
+        "reasoning": "Understanding the ambiguity requires interpretation of the language and context beyond just reading the text.",
+        "question_id": "cs601_q0026",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_009.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What are the four levels of language mentioned on the slide?",
+        "answer": "Phonetics/phonology/morphology, Syntax, Semantics, Pragmatics",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly answerable from the text on the slide, which lists the four levels of language.",
+        "question_id": "cs601_q0027",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the slide suggest we consider at the phonetics/phonology/morphology level?",
+        "answer": "What words (or subwords) are we dealing with?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is explicitly stated in the text following the 'Phonetics/phonology/morphology' heading.",
+        "question_id": "cs601_q0028",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "According to the slide, what should be analyzed at the syntax level?",
+        "answer": "What phrases are we dealing with? Which words modify one another?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The text under the 'Syntax' heading provides the information needed to answer this question.",
+        "question_id": "cs601_q0029",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What question does the slide pose regarding semantics?",
+        "answer": "What\u2019s the literal meaning?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide directly states the question related to semantics.",
+        "question_id": "cs601_q0030",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the slide indicate should be concluded at the pragmatics level?",
+        "answer": "What should you conclude from the fact that I said something? How should you react?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The text under 'Pragmatics' provides the exact question posed at this level.",
+        "question_id": "cs601_q0031",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_010.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the topic of the slide?",
+        "answer": "Subtler Ambiguity",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The topic is clearly stated at the top of the slide.",
+        "question_id": "cs601_q0032",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the humorous explanation given for the suspension?",
+        "answer": "Administrative error. They\u2019re supposed to give you a suspension for auto shop, and a jump rope for skipping class.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The answer is directly provided in the text, but understanding the humor requires comprehension of the wordplay.",
+        "question_id": "cs601_q0033",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_011.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What did John stop for on his way home from work?",
+        "answer": "John stopped at the donut store.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text on the slide, which mentions that John stopped at the donut store.",
+        "question_id": "cs601_q0034",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why did John think a coffee was good every few hours?",
+        "answer": "John thought a coffee was good every few hours because it was part of his routine or preference.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The text implies John's habit or preference for coffee every few hours, which requires interpretation of the text.",
+        "question_id": "cs601_q0035",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What was the issue John faced at the donut store?",
+        "answer": "The coffee was too expensive there.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The text explicitly states that the coffee turned out to be too expensive.",
+        "question_id": "cs601_q0036",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_012.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What did John think was good every few hours?",
+        "answer": "A coffee.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly stated in the text on the slide.",
+        "question_id": "cs601_q0037",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why did John find the coffee to be problematic?",
+        "answer": "It turned out to be too expensive.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The text explicitly states that the coffee was too expensive.",
+        "question_id": "cs601_q0038",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the potential ambiguity in the story?",
+        "answer": "The word 'donut' could refer to a spare tire for his car.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "Understanding this requires recognizing the dual meaning of 'donut' as highlighted in the text.",
+        "question_id": "cs601_q0039",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_013.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What did John stop at on his way home from work?",
+        "answer": "John stopped at the donut store.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text on the slide.",
+        "question_id": "cs601_q0040",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why did John think a coffee was good every few hours?",
+        "answer": "John thought a coffee was good every few hours, but it turned out to be too expensive there.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The answer requires understanding the sequence of thoughts and events described in the text.",
+        "question_id": "cs601_q0041",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are some humorous interpretations of 'donut store' mentioned on the slide?",
+        "answer": "Store where donuts shop, run by donuts, looks like a big donut, made of donut, or has an emptiness at its core.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question asks for interpretations provided in the text, requiring comprehension of the humorous context.",
+        "question_id": "cs601_q0042",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_014.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main question posed by the slide?",
+        "answer": "What\u2019s hard about this story?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly taken from the text at the top of the slide.",
+        "question_id": "cs601_q0043",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What activity did the narrator stop doing during freshman year?",
+        "answer": "Smoking",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is explicitly mentioned in the text: 'I stopped smoking freshman year.'",
+        "question_id": "cs601_q0044",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Where did John stop on his way home from work?",
+        "answer": "At the donut store",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly stated in the text: 'John stopped at the donut store on his way home from work.'",
+        "question_id": "cs601_q0045",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why did John think getting a coffee was good?",
+        "answer": "He thought a coffee was good every few hours.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The reasoning behind John's action is explained in the text: 'He thought a coffee was good every few hours.'",
+        "question_id": "cs601_q0046",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why did John find it difficult to continue getting coffee?",
+        "answer": "It turned out to be too expensive there.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The text provides the reason for John's difficulty: 'But it turned out to be too expensive there.'",
+        "question_id": "cs601_q0047",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_015.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "Where did John stop on his way home from work?",
+        "answer": "John stopped at the donut store.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly answerable from the text on the slide, which states that John stopped at the donut store.",
+        "question_id": "cs601_q0048",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What did John think was good every few hours?",
+        "answer": "John thought a coffee was good every few hours.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is explicitly mentioned in the text, making it straightforward to answer.",
+        "question_id": "cs601_q0049",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why did John find the donut store problematic?",
+        "answer": "He found it too expensive.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The text mentions that the coffee turned out to be too expensive, which is why the store was problematic for John.",
+        "question_id": "cs601_q0050",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Does the text describe where the store is or when John stopped?",
+        "answer": "The text describes when John stopped, not where the store is.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The text specifies that John stopped on his way home from work, indicating the timing but not the location of the store.",
+        "question_id": "cs601_q0051",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_016.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "Why did John stop at the donut store according to the initial statement?",
+        "answer": "John stopped at the donut store on his way home from work.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly answerable from the text provided in the slide.",
+        "question_id": "cs601_q0052",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What additional reasons are given for John's stop at the donut store?",
+        "answer": "He stopped there from hunger and exhaustion, not just from work.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "This requires reading and understanding the contrasting information provided in the text.",
+        "question_id": "cs601_q0053",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the main question posed by the slide?",
+        "answer": "What's hard about this story?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is explicitly stated at the top of the slide.",
+        "question_id": "cs601_q0054",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How does the layout emphasize the contrast in reasons for John's stop?",
+        "answer": "The initial reason is in regular font, while the additional reasons are highlighted in a different color and font.",
+        "category": "layout_aware",
+        "difficulty": "medium",
+        "reasoning": "Understanding this requires noticing the spatial and color differences in the text presentation.",
+        "question_id": "cs601_q0055",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_017.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What did John think was good every few hours?",
+        "answer": "A coffee",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly stated in the text on the slide.",
+        "question_id": "cs601_q0056",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why did John find the coffee to be problematic?",
+        "answer": "It turned out to be too expensive there.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The reason is explicitly mentioned in the text on the slide.",
+        "question_id": "cs601_q0057",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the ambiguity presented in the slide regarding John's action?",
+        "answer": "Whether John stopped at the donut store at that moment or habitually.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The slide presents a question about the nature of John's action, requiring interpretation of the text.",
+        "question_id": "cs601_q0058",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What example is given to illustrate the ambiguity in the story?",
+        "answer": "Mozart composed music.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The slide uses an example to illustrate the concept of habitual versus momentary actions.",
+        "question_id": "cs601_q0059",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_018.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What did John think was good every few hours?",
+        "answer": "A coffee.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text on the slide, which states that John thought a coffee was good every few hours.",
+        "question_id": "cs601_q0060",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why did John find the coffee to be problematic?",
+        "answer": "It turned out to be too expensive.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is explicitly stated in the text, which mentions that the coffee turned out to be too expensive.",
+        "question_id": "cs601_q0061",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the implied question in the text regarding John's thoughts?",
+        "answer": "That's how often he thought it?",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question is implied by the text and requires understanding the context provided by the slide.",
+        "question_id": "cs601_q0062",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_019.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What did John think about the coffee?",
+        "answer": "He thought a coffee was good every few hours.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly answerable from the text on the slide.",
+        "question_id": "cs601_q0063",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How long does a coffee actually stay good according to the slide?",
+        "answer": "A coffee only stays good for about 10 minutes before it gets cold.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is explicitly stated in the text on the slide.",
+        "question_id": "cs601_q0064",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the contrast presented in the story about coffee?",
+        "answer": "John thought coffee was good every few hours, but it actually only stays good for about 10 minutes.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "Understanding the contrast requires synthesizing two pieces of information from the text.",
+        "question_id": "cs601_q0065",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_020.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What did John think was good every few hours?",
+        "answer": "A coffee.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly stated in the text on the slide.",
+        "question_id": "cs601_q0066",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What was the issue John faced with buying coffee?",
+        "answer": "It turned out to be too expensive.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The issue is explicitly mentioned in the text.",
+        "question_id": "cs601_q0067",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the frequency of a woman having a baby in America according to the slide?",
+        "answer": "Every 15 minutes.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The frequency is clearly stated in the text.",
+        "question_id": "cs601_q0068",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the implied challenge in the statement about finding a woman in America?",
+        "answer": "The challenge is the impracticality of finding a specific woman who has a baby every 15 minutes.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The challenge is implied through the text and requires understanding the context.",
+        "question_id": "cs601_q0069",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_021.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What did John think was good every few hours?",
+        "answer": "A coffee.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text on the slide, which states that John thought a coffee was good every few hours.",
+        "question_id": "cs601_q0070",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What turned out to be too expensive for John?",
+        "answer": "The coffee at the donut store.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question requires understanding that 'it' refers to the coffee, which is mentioned earlier in the text.",
+        "question_id": "cs601_q0071",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are the possible sources of ambiguity mentioned in the slide?",
+        "answer": "The particular coffee, the donut store, the situation.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question is answerable from the text, specifically the highlighted questions at the bottom of the slide.",
+        "question_id": "cs601_q0072",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_022.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What did John think was good every few hours?",
+        "answer": "John thought a coffee was good every few hours.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly stated in the text on the slide.",
+        "question_id": "cs601_q0073",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why did John find it hard to get a coffee?",
+        "answer": "It turned out to be too expensive there.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The text explicitly mentions that the coffee was too expensive.",
+        "question_id": "cs601_q0074",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What questions are raised about the story?",
+        "answer": "Too expensive for what? What are we supposed to conclude about what John did? How do we connect 'it' to 'expensive'?",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The slide lists specific questions that are raised by the story, which are directly stated in the text.",
+        "question_id": "cs601_q0075",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_023.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main question posed on the slide?",
+        "answer": "But can't GPT-4 read/write that?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly stated in the text on the slide.",
+        "question_id": "cs601_q0076",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the suggested next step according to the slide?",
+        "answer": "Let us take the first step right now.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The next step is explicitly mentioned in the text on the slide.",
+        "question_id": "cs601_q0077",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_024.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What are 1-grams also known as?",
+        "answer": "Unigrams",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide explicitly states that 1-grams are equivalent to unigrams.",
+        "question_id": "cs601_q0078",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How common is the letter 'h' in English, and how does its frequency change after 't'?",
+        "answer": "'h' is rare in English with a frequency of 4%, but it is common after 't' with a frequency of 20%.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The slide provides specific frequency percentages for 'h' in general and after 't'.",
+        "question_id": "cs601_q0079",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the sequence of letters useful for solving cryptograms?",
+        "answer": "ETAOINSHRDLU",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The sequence is directly mentioned on the slide as useful for solving cryptograms.",
+        "question_id": "cs601_q0080",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are 2-grams and 3-grams also known as?",
+        "answer": "2-grams are known as bigrams, and 3-grams are known as trigrams.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide directly equates 2-grams with bigrams and 3-grams with trigrams.",
+        "question_id": "cs601_q0081",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why is knowing the previous letter or letters important in n-grams?",
+        "answer": "Knowing the previous letter or letters helps predict the next letter, as shown by the increased frequency of 'h' after 't' or '(space) t'.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The slide explains the predictive value of knowing previous letters in n-grams.",
+        "question_id": "cs601_q0082",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_025.png",
+    "course": "cs601",
+    "qa_pairs": [],
+    "status": "empty",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_01/slide_026.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What should you do if you want to stay for free-form questions and conversation?",
+        "answer": "Come sit at the front of the room for group 'office hours' until 4:30.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly stated in the text on the slide.",
+        "question_id": "cs601_q0083",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the suggested action if you do not want to stay for questions?",
+        "answer": "Please leave quickly and quietly.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is clearly provided in the text on the slide.",
+        "question_id": "cs601_q0084",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What should you do if your question is specific to you, such as about registration or homework?",
+        "answer": "Use Piazza or email, or attend TA office hours, or wait until 4:30.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide text explicitly provides this information.",
+        "question_id": "cs601_q0085",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_001.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Modeling Grammaticality",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The main topic is clearly stated at the top of the slide in bold text.",
+        "question_id": "cs601_q0086",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the more precise focus of the topic mentioned on the slide?",
+        "answer": "Using grammaticality to model acceptability",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide provides a more precise explanation of the topic below the main title.",
+        "question_id": "cs601_q0087",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_002.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Word trigrams: A good model of English?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly answerable from the title text on the slide.",
+        "question_id": "cs601_q0088",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which sentence is marked as not acceptable and why?",
+        "answer": "[Gen 7:81] Of clean beasts, and of beasts that are not clean by two, the male and his house with great plagues because of the ground of the same character, into one nation, with one government, one code of laws, one national class interest, one frontier, and one custom tariff. It is marked with an 'x' because it has no main verb.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question requires reading the text and understanding the annotation indicating the sentence's grammatical issue.",
+        "question_id": "cs601_q0089",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What visual indicators are used to show sentence acceptability?",
+        "answer": "A check mark (\u2713) for acceptable sentences, a question mark (?) for uncertain sentences, and a cross (\u2717) for unacceptable sentences.",
+        "category": "image_diagram",
+        "difficulty": "easy",
+        "reasoning": "The question requires interpreting the visual symbols used on the slide to indicate sentence acceptability.",
+        "question_id": "cs601_q0090",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How many sentences are marked with a question mark?",
+        "answer": "Three sentences are marked with a question mark.",
+        "category": "layout_aware",
+        "difficulty": "easy",
+        "reasoning": "The question requires counting the number of question marks, which involves understanding the spatial layout of the symbols on the slide.",
+        "question_id": "cs601_q0091",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_003.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What phrase is never seen in the training text according to the slide?",
+        "answer": "The phrase 'the go of' is never seen in the training text.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly answerable from the text on the slide, which states that 'the go of' is never seen in the training text.",
+        "question_id": "cs601_q0092",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the probability of the trigram 'the go of' according to the slide?",
+        "answer": "The probability of the trigram 'the go of' is 0.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide explicitly states that the trigram 'the go of' has a probability of 0.",
+        "question_id": "cs601_q0093",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_004.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "Why will the trigram 'the go of' never be generated?",
+        "answer": "Because 'the go of' is never seen in the training text, so its probability is 0.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly stated in the text on the slide.",
+        "question_id": "cs601_q0094",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What issue is highlighted with the sentence 'You shouldn\u2019t eat these chickens because these chickens eat arsenic and bone meal'?",
+        "answer": "The sentence is unacceptable despite all its 3-grams being attested in the training text.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "Understanding requires synthesizing information from the text about acceptable 3-grams and sentence quality.",
+        "question_id": "cs601_q0095",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the 3-gram model in the diagram illustrate?",
+        "answer": "It illustrates that even though each 3-gram in the sentence is attested, the overall sentence can still be poor.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Interpreting the diagram requires understanding the relationship between 3-grams and sentence quality.",
+        "question_id": "cs601_q0096",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How does the layout of the slide help convey the message about sentence quality?",
+        "answer": "The layout separates the explanation of the problem with 'the go of' from the example of an unacceptable sentence, emphasizing different issues.",
+        "category": "layout_aware",
+        "difficulty": "medium",
+        "reasoning": "Understanding requires recognizing how spatial separation of content highlights different points.",
+        "question_id": "cs601_q0097",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_005.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the probability of the trigram 'the go of'?",
+        "answer": "0",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide explicitly states that the trigram 'the go of' has probability 0.",
+        "question_id": "cs601_q0098",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Why might some sentences still be unacceptable despite having all their 3-grams attested in the training text?",
+        "answer": "Because even though all their 3-grams are attested in the training text, the sentence as a whole may not be good.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The slide mentions that sentences can be unacceptable even if all their 3-grams are attested, indicating a limitation of using only 3-grams.",
+        "question_id": "cs601_q0099",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the slide suggest as a possible solution to rule out bad sentences?",
+        "answer": "Using 4-grams, 5-grams, ... 50-grams.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide suggests increasing the n-gram size as a potential solution to generate only acceptable English.",
+        "question_id": "cs601_q0100",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_006.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the title of the slide?",
+        "answer": "Acceptable English sentences",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered by reading the text at the top of the slide.",
+        "question_id": "cs601_q0101",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which model allows for the generation of sentences by rolling dice?",
+        "answer": "Trained 3-gram model",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The answer is found in the text description under the 'Possible under trained 3-gram model' label.",
+        "question_id": "cs601_q0102",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the smallest box in the diagram represent?",
+        "answer": "Training sentences",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Understanding the diagram requires interpreting the spatial layout and labels of the boxes.",
+        "question_id": "cs601_q0103",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which model is represented by the largest box in the diagram?",
+        "answer": "Trained 50-gram model",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The largest box is labeled 'Possible under trained 50-gram model', requiring interpretation of the diagram.",
+        "question_id": "cs601_q0104",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How are the models represented in the diagram organized?",
+        "answer": "By increasing n-gram size from the smallest to the largest box.",
+        "category": "layout_aware",
+        "difficulty": "hard",
+        "reasoning": "Understanding the organization requires spatial awareness of the diagram's layout.",
+        "question_id": "cs601_q0105",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_007.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What happens as you increase the amount of training text?",
+        "answer": "The slide suggests that as you increase the amount of training text, different n-gram models become possible, such as 3-gram, 4-gram, and 50-gram models.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly answerable from the text on the slide, which discusses the implications of increasing training text.",
+        "question_id": "cs601_q0106",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the black rectangle represent in the diagram?",
+        "answer": "The black rectangle represents the 'Training sentences'.",
+        "category": "image_diagram",
+        "difficulty": "easy",
+        "reasoning": "The question requires interpreting the diagram to understand what the black rectangle signifies.",
+        "question_id": "cs601_q0107",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How does the diagram illustrate the concept of different n-gram models?",
+        "answer": "The diagram uses colored rectangles to show the scope of different n-gram models: a small black rectangle for training sentences, a red rectangle for a 3-gram model, a pink rectangle for a 4-gram model, and a larger red rectangle for a 50-gram model.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Understanding this requires interpreting the spatial layout and color coding in the diagram.",
+        "question_id": "cs601_q0108",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the relationship between the size of the n-gram model and the amount of training text?",
+        "answer": "Larger n-gram models, such as the 50-gram model, require more training text, as indicated by the larger red rectangle compared to the smaller rectangles for 3-gram and 4-gram models.",
+        "category": "layout_aware",
+        "difficulty": "medium",
+        "reasoning": "This question requires understanding the spatial relationship between the rectangles representing different n-gram models.",
+        "question_id": "cs601_q0109",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_008.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic discussed in the slide?",
+        "answer": "The effect of increasing the amount of training text.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The main topic is explicitly stated in the large blue text at the top of the slide.",
+        "question_id": "cs601_q0110",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What language are the training sentences in?",
+        "answer": "All of the training sentences are in English.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The text 'Training sentences (all of English!)' indicates the language of the sentences.",
+        "question_id": "cs601_q0111",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What question is posed about the 50-gram box?",
+        "answer": "Is the 50-gram box now perfect? (Can any model of language be perfect?)",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question is directly quoted from the red text at the bottom of the slide.",
+        "question_id": "cs601_q0112",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What visual element is used to represent training sentences?",
+        "answer": "A blue abstract shape is used to represent training sentences.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The abstract shape is visually distinct and labeled as 'Training sentences'.",
+        "question_id": "cs601_q0113",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the relationship between the 3-gram, 4-gram, and 50-gram boxes?",
+        "answer": "The slide questions the location and perfection of these n-gram boxes.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The questions about the n-gram boxes are listed in the red text, indicating a relationship of inquiry.",
+        "question_id": "cs601_q0114",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_009.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main question posed by the slide?",
+        "answer": "Are n-gram models enough?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly stated in the title of the slide.",
+        "question_id": "cs601_q0115",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are the three specific questions asked about 3-grams?",
+        "answer": "1. Can we make a list of 3-grams that combine into all the acceptable sentences of English? 2. How about only the acceptable sentences? 3. How about all and only?",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The questions are listed in sequence on the slide and require reading comprehension.",
+        "question_id": "cs601_q0116",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_010.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Avoiding systematic problems with n-gram models.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The main topic is stated in the title of the slide.",
+        "question_id": "cs601_q0117",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are the two forms of strings allowed in the formal language equivalent mentioned?",
+        "answer": "The forms are a x* b and c x* d.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The forms are explicitly listed under the 'Formal language equivalent' section.",
+        "question_id": "cs601_q0118",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does x* mean in the context of the formal language equivalent?",
+        "answer": "x* means '0 or more x's'.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The explanation for x* is provided directly next to the expression.",
+        "question_id": "cs601_q0119",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are the two questions listed under 'Remembering things from arbitrarily far back in the sentence'?",
+        "answer": "Was the subject singular or plural? Have we had a verb yet?",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "These questions are part of the bullet points under the specified section.",
+        "question_id": "cs601_q0120",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the implied limitation of a 50-gram model mentioned in the slide?",
+        "answer": "The slide implies that a 50-gram model may not be sufficient, asking 'Can we check a string using a 50-gram model?'",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question about the 50-gram model suggests a limitation, prompting what can be used instead.",
+        "question_id": "cs601_q0121",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_011.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the regular expression given on the slide?",
+        "answer": "a x* b | c x* d",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly by reading the text under 'Regular expression:' on the slide.",
+        "question_id": "cs601_q0122",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the finite-state acceptor need to remember according to the slide?",
+        "answer": "Must remember whether the first letter was a or c.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is explicitly stated in the red text on the slide.",
+        "question_id": "cs601_q0123",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How does the finite-state acceptor differentiate between inputs starting with 'a' and 'c'?",
+        "answer": "The finite-state acceptor uses different transitions from the initial state based on whether the input starts with 'a' or 'c'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Understanding this requires interpreting the diagram to see how the state transitions are labeled with 'a' and 'c'.",
+        "question_id": "cs601_q0124",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_012.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the initial rule for a sentence in the context-free grammar?",
+        "answer": "S \u2192 N V N",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The initial rule is directly stated in the text on the slide.",
+        "question_id": "cs601_q0125",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the non-terminal 'N' represent in the grammar?",
+        "answer": "N \u2192 Mary",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The representation of 'N' is explicitly given in the text.",
+        "question_id": "cs601_q0126",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the non-terminal 'V' represent in the grammar?",
+        "answer": "V \u2192 likes",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The representation of 'V' is explicitly given in the text.",
+        "question_id": "cs601_q0127",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What additional rules are suggested to be added to the grammar?",
+        "answer": "N \u2192 John; V \u2192 sleeps, S \u2192 N V; V \u2192 thinks, S \u2192 N V S",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The additional rules are listed in the text, requiring careful reading to identify all of them.",
+        "question_id": "cs601_q0128",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_013.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the task mentioned on the slide?",
+        "answer": "Write a context-free grammar of English.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The task is explicitly stated in the text on the slide.",
+        "question_id": "cs601_q0129",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How long do you have to complete the task?",
+        "answer": "Two weeks.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The duration is clearly mentioned in the text on the slide.",
+        "question_id": "cs601_q0130",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the rule 'S \u2192 NP VP .' represent in the syntactic rules?",
+        "answer": "It represents a sentence (S) being composed of a noun phrase (NP) followed by a verb phrase (VP) and a period.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Understanding this requires interpreting the syntactic rule notation shown in the diagram.",
+        "question_id": "cs601_q0131",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How many rules are there for 'NP' in the syntactic rules?",
+        "answer": "There are two rules for 'NP': 'NP \u2192 Det N\u2019' and 'NP \u2192 Proper'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "This requires counting and interpreting the rules listed in the diagram.",
+        "question_id": "cs601_q0132",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the purpose of the speech bubble in the slide?",
+        "answer": "The speech bubble asks 'What\u2019s a grammar?' suggesting a question about the topic.",
+        "category": "layout_aware",
+        "difficulty": "easy",
+        "reasoning": "Understanding the purpose requires recognizing the spatial layout and context of the speech bubble.",
+        "question_id": "cs601_q0133",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_014.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the context-free grammar rule for a sentence (S) in the syntactic rules?",
+        "answer": "S \u2192 NP VP .",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly by reading the text under 'Syntactic rules.'",
+        "question_id": "cs601_q0134",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which lexical category does 'king' belong to according to the lexical rules?",
+        "answer": "Noun",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is found directly in the 'Lexical rules.' section where 'Noun \u2192 king' is listed.",
+        "question_id": "cs601_q0135",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How are the lexical and syntactic rules visually separated on the slide?",
+        "answer": "They are separated into two distinct columns: 'Lexical rules.' on the left and 'Syntactic rules.' on the right.",
+        "category": "layout_aware",
+        "difficulty": "medium",
+        "reasoning": "Understanding the spatial layout of the slide is necessary to identify how the rules are organized.",
+        "question_id": "cs601_q0136",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the rule for a verb phrase (VP) in the syntactic rules?",
+        "answer": "VP \u2192 VerbT NP",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly available in the 'Syntactic rules.' section.",
+        "question_id": "cs601_q0137",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the transformation rule for a noun phrase (NP) involving a determiner (Det)?",
+        "answer": "NP \u2192 Det N\u2019",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The answer requires identifying the specific rule under 'Syntactic rules.' related to noun phrases.",
+        "question_id": "cs601_q0138",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_015.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the context-free grammar rule for 'S'?",
+        "answer": "S \u2192 NP VP .",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text in the list on the slide.",
+        "question_id": "cs601_q0139",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How is 'NP' defined in the context-free grammar?",
+        "answer": "NP \u2192 Det N\u2019 or NP \u2192 Proper",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The answer requires identifying multiple rules for 'NP' from the text on the slide.",
+        "question_id": "cs601_q0140",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the tree diagram represent?",
+        "answer": "The tree diagram represents the structure of a sentence with 'S' branching into 'NP' and 'VP'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Understanding the tree diagram requires interpreting its structure, which is not directly stated in the text.",
+        "question_id": "cs601_q0141",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the probability of selecting the rule 'VP \u2192 VerbT NP'?",
+        "answer": "1",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The probability is given directly next to the rule in the text on the slide.",
+        "question_id": "cs601_q0142",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Compare the probabilities of the rules for 'N\u2019'.",
+        "answer": "The rule 'N\u2019 \u2192 Noun' has a probability of 20, while 'N\u2019 \u2192 N\u2019 PP' has a probability of 1.",
+        "category": "layout_aware",
+        "difficulty": "medium",
+        "reasoning": "This requires comparing the probabilities of two rules listed under 'N\u2019' by considering their spatial arrangement.",
+        "question_id": "cs601_q0143",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_016.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the rule for expanding 'S' in the context-free grammar provided?",
+        "answer": "S \u2192 NP VP .",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text listing the grammar rules.",
+        "question_id": "cs601_q0144",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the 'NP' node expand into according to the tree diagram?",
+        "answer": "NP expands into Det N'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The answer requires interpreting the tree diagram to understand how 'NP' is expanded.",
+        "question_id": "cs601_q0145",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the probability ratio for choosing between 'NP \u2192 Det N\u2019' and 'NP \u2192 Proper'?",
+        "answer": "20:1 odds ratio.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The answer requires understanding the odds ratio depicted with the dice image.",
+        "question_id": "cs601_q0146",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How are the grammar rules organized in the slide?",
+        "answer": "The rules are organized in a list format with numbers indicating frequency or weight.",
+        "category": "layout_aware",
+        "difficulty": "easy",
+        "reasoning": "Understanding the spatial layout of the list helps in interpreting the frequency or weight of each rule.",
+        "question_id": "cs601_q0147",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_017.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the starting symbol in the context-free grammar provided?",
+        "answer": "S",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The starting symbol 'S' is explicitly mentioned in the list of grammar rules.",
+        "question_id": "cs601_q0148",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does 'NP' stand for in the context of this grammar?",
+        "answer": "Noun Phrase",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The abbreviation 'NP' is a standard notation for 'Noun Phrase' in grammar.",
+        "question_id": "cs601_q0149",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "According to the grammar rules, how is a 'VP' defined?",
+        "answer": "VP \u2192 VerbT NP",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The rule for 'VP' is directly listed in the grammar rules on the slide.",
+        "question_id": "cs601_q0150",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the probability of the rule 'NP \u2192 Det N\u2019'?",
+        "answer": "20",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The probability is explicitly stated next to the rule 'NP \u2192 Det N\u2019'.",
+        "question_id": "cs601_q0151",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the structure of the tree diagram on the left side of the slide?",
+        "answer": "S \u2192 NP VP .",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Understanding the tree structure requires interpreting the diagram, which shows 'S' branching into 'NP' and 'VP'.",
+        "question_id": "cs601_q0152",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are the components of the noun phrase (NP) in the tree diagram?",
+        "answer": "Det, N\u2019, Noun",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The tree diagram shows 'NP' branching into 'Det' and 'N\u2019', which further branches into 'Noun'.",
+        "question_id": "cs601_q0153",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How does the layout of the slide help differentiate between the grammar rules and the tree diagram?",
+        "answer": "The grammar rules are listed in a scroll-like box on the right, while the tree diagram is on the left.",
+        "category": "layout_aware",
+        "difficulty": "easy",
+        "reasoning": "The spatial layout distinctly separates the grammar rules from the tree diagram, aiding in visual differentiation.",
+        "question_id": "cs601_q0154",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_018.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is a strictly local grammar according to the slide?",
+        "answer": "A strictly local grammar is a set of legal n-grams.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The definition of strictly local grammar is explicitly stated in the text.",
+        "question_id": "cs601_q0155",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How is a regular grammar represented on the slide?",
+        "answer": "A regular grammar is represented by a regular expression.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide directly states that a regular grammar is a regular expression.",
+        "question_id": "cs601_q0156",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the representation of a context-free grammar on the slide?",
+        "answer": "A context-free grammar is represented as a set of context-free rewrite rules.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide text clearly defines context-free grammar.",
+        "question_id": "cs601_q0157",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the slide indicate about context-sensitive grammar?",
+        "answer": "A context-sensitive grammar is a set of context-sensitive rules.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide provides a straightforward definition of context-sensitive grammar.",
+        "question_id": "cs601_q0158",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the note at the bottom of the slide about?",
+        "answer": "The note states that all grammars can be described as string rewriting systems with gradually fewer restrictions on the rewrite rules \u03b1 \u2192 \u03b2.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The note provides additional information about the nature of the grammars discussed.",
+        "question_id": "cs601_q0159",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the example given for a strictly local grammar?",
+        "answer": "The example given is 'these chickens eat'.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The example is explicitly shown under the strictly local grammar section.",
+        "question_id": "cs601_q0160",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the example of a regular expression provided on the slide?",
+        "answer": "The example of a regular expression is 'a x* b | c x* d'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Interpreting the example involves understanding the notation of regular expressions.",
+        "question_id": "cs601_q0161",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the example given for a context-free grammar?",
+        "answer": "The example given is 'S \u2192 N V S'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Understanding the example requires interpreting the context-free grammar notation.",
+        "question_id": "cs601_q0162",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the example of a context-sensitive grammar rule on the slide?",
+        "answer": "The example is 'S \u2192 N V S // L_R'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The example requires interpretation of context-sensitive grammar notation.",
+        "question_id": "cs601_q0163",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the example of an unrestricted grammar rule?",
+        "answer": "The example is 'L S R \u2192 X Y S'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Understanding the example involves interpreting the unrestricted grammar notation.",
+        "question_id": "cs601_q0164",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_019.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is a strictly local grammar defined as in the Chomsky hierarchy?",
+        "answer": "A strictly local grammar is defined as a set of legal n-grams.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly stated in the text on the slide.",
+        "question_id": "cs601_q0165",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which type of automaton corresponds to a regular grammar?",
+        "answer": "Finite-state automaton",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide explicitly states that a regular grammar corresponds to a finite-state automaton.",
+        "question_id": "cs601_q0166",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What type of grammar corresponds to a pushdown automaton?",
+        "answer": "Context-free grammar",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide directly associates a context-free grammar with a pushdown automaton.",
+        "question_id": "cs601_q0167",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the relationship between context-sensitive grammar and linear bounded automaton?",
+        "answer": "A context-sensitive grammar corresponds to a linear bounded automaton.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The slide text clearly states this relationship.",
+        "question_id": "cs601_q0168",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What type of machine might not halt according to the slide?",
+        "answer": "Nondeterministic Turing machine",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The slide mentions that the nondeterministic Turing machine might not halt, which requires understanding the implication of the text.",
+        "question_id": "cs601_q0169",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How are different types of grammars related to machines in the Chomsky hierarchy?",
+        "answer": "Each type of grammar corresponds to a type of simple machine that can generate or check sentences.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The slide provides a summary statement relating grammars to machines, requiring synthesis of the information presented.",
+        "question_id": "cs601_q0170",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_020.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is a context-free grammar according to the slide?",
+        "answer": "A context-free grammar is a set of context-free rewrite rules.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is directly stated in the text on the slide.",
+        "question_id": "cs601_q0171",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What type of grammar is described as 'seemingly somewhere in between' context-free and context-sensitive grammars?",
+        "answer": "Mildly context-sensitive grammar (e.g., TAG, CCG, etc.)",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The answer requires synthesizing information from different parts of the text on the slide.",
+        "question_id": "cs601_q0172",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the arrow on the slide represent?",
+        "answer": "The arrow represents the hierarchy from context-free grammars to context-sensitive grammars.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Understanding the meaning of the arrow requires interpreting the diagrammatic elements of the slide.",
+        "question_id": "cs601_q0173",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the relationship between context-free and context-sensitive grammars as depicted on the slide?",
+        "answer": "Context-free grammars are a subset of context-sensitive grammars, as indicated by the hierarchy.",
+        "category": "layout_aware",
+        "difficulty": "hard",
+        "reasoning": "The question requires understanding the spatial layout and hierarchy indicated by the arrow and text placement.",
+        "question_id": "cs601_q0174",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_021.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Probabilistic Context-Free Grammar: Randomly Sampling a Sentence",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The main topic is clearly stated in the title at the top of the slide.",
+        "question_id": "cs601_q0175",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What sentence is generated by the tree diagram?",
+        "answer": "Papa ate the caviar with a spoon",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The sentence is constructed by following the paths from the root to the leaves of the tree diagram.",
+        "question_id": "cs601_q0176",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the rule 'S \u2192 NP VP' represent in the context-free grammar?",
+        "answer": "It represents that a sentence (S) can be composed of a noun phrase (NP) followed by a verb phrase (VP).",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The rule is explicitly listed in the grammar rules section on the slide.",
+        "question_id": "cs601_q0177",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which part of the slide shows the derivation rules used in the tree diagram?",
+        "answer": "The derivation rules are shown in the yellow boxes on the right side of the slide.",
+        "category": "layout_aware",
+        "difficulty": "easy",
+        "reasoning": "Understanding the spatial layout helps identify where the derivation rules are located.",
+        "question_id": "cs601_q0178",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the role of the dice symbols next to the grammar rules?",
+        "answer": "The dice symbols likely indicate the probabilistic nature of the grammar rules.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The dice symbols suggest randomness or probability, which aligns with the concept of probabilistic grammar.",
+        "question_id": "cs601_q0179",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_022.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Ambiguity",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The title of the slide is 'Ambiguity', which is clearly stated at the top.",
+        "question_id": "cs601_q0180",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the tree diagram represent?",
+        "answer": "The tree diagram represents the syntactic structure of the sentence 'Papa ate the caviar with a spoon'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The tree diagram visually breaks down the sentence into its syntactic components, showing the hierarchical structure.",
+        "question_id": "cs601_q0181",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "According to the grammar rules, what can a 'VP' expand into?",
+        "answer": "A 'VP' can expand into 'V NP' or 'VP PP'.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The grammar rules are listed in the yellow box on the right side of the slide, showing possible expansions for 'VP'.",
+        "question_id": "cs601_q0182",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the relationship between 'NP' and 'PP' in the tree diagram?",
+        "answer": "In the tree diagram, 'NP' is part of the 'VP' and can also be expanded into 'NP PP'.",
+        "category": "layout_aware",
+        "difficulty": "hard",
+        "reasoning": "Understanding the spatial layout of the tree diagram is necessary to see how 'NP' and 'PP' are related within the 'VP'.",
+        "question_id": "cs601_q0183",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_023.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Ambiguity",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The title 'Ambiguity' is clearly stated at the top of the slide.",
+        "question_id": "cs601_q0184",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What does the tree diagram represent?",
+        "answer": "The tree diagram represents the syntactic structure of the sentence 'Papa ate the caviar with a spoon'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Understanding the tree diagram requires interpreting the hierarchical structure of the sentence.",
+        "question_id": "cs601_q0185",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the role of 'with' in the sentence structure?",
+        "answer": "'With' is a preposition (P) that introduces a prepositional phrase (PP) modifying the verb phrase (VP).",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The role of 'with' is shown in the tree diagram as part of the prepositional phrase.",
+        "question_id": "cs601_q0186",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "List the grammatical rules provided on the slide.",
+        "answer": [
+          "S \u2192 NP VP",
+          "NP \u2192 Det N",
+          "NP \u2192 NP PP",
+          "VP \u2192 V NP",
+          "VP \u2192 VP PP",
+          "PP \u2192 P NP"
+        ],
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The grammatical rules are explicitly listed in the text on the slide.",
+        "question_id": "cs601_q0187",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are the lexical items defined on the slide?",
+        "answer": [
+          "NP \u2192 Papa",
+          "N \u2192 caviar",
+          "N \u2192 spoon",
+          "V \u2192 spoon",
+          "V \u2192 ate",
+          "P \u2192 with",
+          "Det \u2192 the",
+          "Det \u2192 a"
+        ],
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The lexical items are clearly listed in the text on the slide.",
+        "question_id": "cs601_q0188",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How does the spatial layout of the slide help in understanding the content?",
+        "answer": "The slide uses a tree diagram on the left to show sentence structure, while the right side lists grammatical rules and lexical items, organizing the information for clarity.",
+        "category": "layout_aware",
+        "difficulty": "medium",
+        "reasoning": "Understanding the spatial organization helps in connecting the tree diagram with the corresponding rules and lexical items.",
+        "question_id": "cs601_q0189",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_024.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What does 'S' expand to in the parsing rules?",
+        "answer": "NP VP",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text in the parsing rules on the left side of the slide.",
+        "question_id": "cs601_q0190",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the structure of the sentence 'Papa ate the caviar with a spoon' according to the parse tree?",
+        "answer": "The sentence structure is S -> NP VP, where NP is 'Papa' and VP is 'ate the caviar with a spoon'.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "This question requires interpreting the parse tree diagram to understand the hierarchical structure of the sentence.",
+        "question_id": "cs601_q0191",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which words are identified as determiners (Det) in the parsing rules?",
+        "answer": "the, a",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered by reading the text in the parsing rules on the right side of the slide.",
+        "question_id": "cs601_q0192",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How are the elements 'caviar' and 'spoon' categorized in the parse tree?",
+        "answer": "Both 'caviar' and 'spoon' are categorized as nouns (N) in the parse tree.",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "This question requires interpreting the parse tree to identify the grammatical categories of specific words.",
+        "question_id": "cs601_q0193",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the spatial relationship between the parsing rules and the parse tree on the slide?",
+        "answer": "The parsing rules are listed on the left and right sides, while the parse tree is centrally located.",
+        "category": "layout_aware",
+        "difficulty": "easy",
+        "reasoning": "Understanding the spatial layout is necessary to describe the arrangement of elements on the slide.",
+        "question_id": "cs601_q0194",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_02/slide_025.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Dependency Parsing",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The main topic is explicitly stated at the top of the slide.",
+        "question_id": "cs601_q0195",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the root of the sentence in the dependency diagram?",
+        "answer": "reckons",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "Identifying the root requires interpreting the dependency diagram and following the 'ROOT' label.",
+        "question_id": "cs601_q0196",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which word is the subject of the sentence according to the dependency diagram?",
+        "answer": "He",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The subject is indicated by the 'SUBJ' label in the diagram, which requires understanding the structure.",
+        "question_id": "cs601_q0197",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the relationship between 'deficit' and 'current' in the diagram?",
+        "answer": "MOD",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The relationship is shown by the arrow labeled 'MOD' connecting 'current' to 'deficit'.",
+        "question_id": "cs601_q0198",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the function of 'in September' in the sentence according to the diagram?",
+        "answer": "COMP",
+        "category": "image_diagram",
+        "difficulty": "medium",
+        "reasoning": "The function is indicated by the 'COMP' label in the diagram, showing its role in the sentence.",
+        "question_id": "cs601_q0199",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_03/slide_001.png",
+    "course": "cs601",
+    "qa_pairs": [],
+    "status": "empty",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_03/slide_002.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is one application of Language ID mentioned on the slide?",
+        "answer": "Useful for search engines, indexers, etc.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text on the slide.",
+        "question_id": "cs601_q0200",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How is Language ID useful for text-to-speech systems?",
+        "answer": "It helps in determining how to pronounce names like 'Jan Lukasiewicz'.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The answer is explicitly stated in the text on the slide.",
+        "question_id": "cs601_q0201",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_03/slide_003.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What are two types of histograms mentioned for building a language IDer?",
+        "answer": "Histogram of letters and histogram of bigrams.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly answerable from the list of items on the slide.",
+        "question_id": "cs601_q0202",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What technique is suggested for aggregating evidence in language identification?",
+        "answer": "Stealing techniques from information retrieval and treating every language as a huge document with input text as a query.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The answer requires understanding the suggested methods for aggregating evidence as described in the text.",
+        "question_id": "cs601_q0203",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the 'nicer solution' proposed for building a language IDer?",
+        "answer": "How likely is this text to be generated randomly?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The 'nicer solution' is explicitly stated in a different color, making it easy to identify.",
+        "question_id": "cs601_q0204",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_03/slide_004.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is one example of a topic 1 sample?",
+        "answer": "In the beginning God created \u2026",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question is directly answerable from the text on the slide, which provides a specific example of a topic 1 sample.",
+        "question_id": "cs601_q0205",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the input text related to capitalism?",
+        "answer": "Matt\u2019s Communist Homepage. Capitalism is unfair and has been ruining the lives of millions of people around the world. The profits from the workers\u2019 labor \u2026",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question requires extracting and understanding a specific input text related to capitalism from the slide.",
+        "question_id": "cs601_q0206",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How does the slide suggest text categorization is similar to language ID?",
+        "answer": "The slide states 'Similar to language ID \u2026', implying that the process or concept of text categorization shares similarities with language identification.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The question involves understanding a comparison made on the slide, which is explicitly mentioned in the text.",
+        "question_id": "cs601_q0207",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_03/slide_005.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main purpose of topic segmentation according to the slide?",
+        "answer": "To break a big document or media stream into indexable chunks.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text on the slide, which states the purpose of topic segmentation.",
+        "question_id": "cs601_q0208",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What example is given from NPR's All Things Considered?",
+        "answer": "The U.N. says its observers will stay in Liberia only as long as West African peacekeepers do, but West African states are threatening to pull out unless Liberia\u2019s militia leaders stop violating last year\u2019s peace accord.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The answer requires extracting specific information from the text provided on the slide.",
+        "question_id": "cs601_q0209",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_03/slide_006.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the topic of the slide?",
+        "answer": "Contextual Spelling Correction",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The topic is clearly stated at the top of the slide.",
+        "question_id": "cs601_q0210",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which phrase is most probable: 'I think they\u2019re okay', 'I think there okay', or 'I think their okay'?",
+        "answer": "I think they\u2019re okay",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "This requires understanding of correct spelling and usage of 'they\u2019re', 'there', and 'their'.",
+        "question_id": "cs601_q0211",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which phrase is most probable: 'by the way, are they\u2019re likely to', 'by the way, are there likely to', or 'by the way, are their likely to'?",
+        "answer": "by the way, are they\u2019re likely to",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "This requires understanding of correct spelling and usage of 'they\u2019re', 'there', and 'their'.",
+        "question_id": "cs601_q0212",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_03/slide_007.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Speech Recognition",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The main topic is clearly stated at the top of the slide.",
+        "question_id": "cs601_q0213",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are the two similar-sounding phrases listed on the slide?",
+        "answer": "How do you recognize speech? How do you wreck a nice beach?",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The phrases are listed in bullet points and require reading the text to identify them.",
+        "question_id": "cs601_q0214",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What instruction is given on the slide regarding listening?",
+        "answer": "Listen carefully: what am I saying?",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The instruction is explicitly written on the slide.",
+        "question_id": "cs601_q0215",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Identify the two similar-sounding instructions related to files and folders.",
+        "answer": "Put the file in the folder. Put the file and the folder.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The instructions are listed in bullet points and require reading the text to identify them.",
+        "question_id": "cs601_q0216",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_03/slide_008.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the title of the slide?",
+        "answer": "Language generation",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The title is explicitly stated at the top of the slide.",
+        "question_id": "cs601_q0217",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the first output listed according to bigram probabilities?",
+        "answer": "Visitors who came in Japan admire Mount Fuji.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The first output is directly listed under the section 'Top 10 outputs according to bigram probabilities'.",
+        "question_id": "cs601_q0218",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How many outputs are listed under 'Top 10 outputs according to bigram probabilities'?",
+        "answer": "10",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The section explicitly mentions 'Top 10 outputs', and there are ten bullet points listed.",
+        "question_id": "cs601_q0219",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the unique phrase used in the 'Choose randomly from' section?",
+        "answer": "Visitant which came into the place where it will be Japanese has admired that there was Mount Fuji.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The phrase is unique and different from the outputs listed under bigram probabilities.",
+        "question_id": "cs601_q0220",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_03/slide_009.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the French sentence provided on the slide?",
+        "answer": "Jon est apparu \u00e0 la t\u00e9l\u00e9vision.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text provided on the slide.",
+        "question_id": "cs601_q0221",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which English sentence is both good English and a good match to the input?",
+        "answer": "Jon appeared on TV.",
+        "category": "table",
+        "difficulty": "medium",
+        "reasoning": "The question requires reading the table to find the sentence that satisfies both conditions.",
+        "question_id": "cs601_q0222",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "How many sentences are marked as good English according to the n-gram column?",
+        "answer": "Four sentences are marked as good English.",
+        "category": "table",
+        "difficulty": "medium",
+        "reasoning": "The question requires counting the checkmarks in the 'good English? (n-gram)' column of the table.",
+        "question_id": "cs601_q0223",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which sentence is a good match to the input but not good English?",
+        "answer": "TV appeared on Jon.",
+        "category": "table",
+        "difficulty": "medium",
+        "reasoning": "The question requires analyzing the table to find a sentence that meets one condition but not the other.",
+        "question_id": "cs601_q0224",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the main topic of the slide?",
+        "answer": "Machine Translation",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The main topic is clearly stated in the title of the slide.",
+        "question_id": "cs601_q0225",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which sentence is marked as a good match to the input but not good English?",
+        "answer": "TV appeared on Jon.",
+        "category": "table",
+        "difficulty": "medium",
+        "reasoning": "The question requires checking the table for a sentence that is only marked in the 'good match to input?' column.",
+        "question_id": "cs601_q0226",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  },
+  {
+    "evidence_slide": "lecture_03/slide_010.png",
+    "course": "cs601",
+    "qa_pairs": [
+      {
+        "question": "What is the French sentence mentioned on the slide?",
+        "answer": "Jon est apparu \u00e0 la t\u00e9l\u00e9vision.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The question can be answered directly from the text on the slide.",
+        "question_id": "cs601_q0227",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the correct English translation for 'Jon est apparu \u00e0 la t\u00e9l\u00e9vision' according to the slide?",
+        "answer": "Jon appeared on TV.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The correct translation is listed among the choices, requiring understanding of the context.",
+        "question_id": "cs601_q0228",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What are the two main tasks of generative AI mentioned on the slide?",
+        "answer": "Choose or construct a complex output that is appropriate for input and choose or construct a complex interpretation of the input.",
+        "category": "text_only",
+        "difficulty": "medium",
+        "reasoning": "The tasks are explicitly mentioned in the text, requiring comprehension of the content.",
+        "question_id": "cs601_q0229",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "Which sentence in the 'Huge set of choices' is not related to the translation task?",
+        "answer": "Jon is happy today.",
+        "category": "layout_aware",
+        "difficulty": "medium",
+        "reasoning": "Identifying the unrelated sentence requires understanding the context and layout of the choices.",
+        "question_id": "cs601_q0230",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      },
+      {
+        "question": "What is the purpose of 'structured prediction' as described on the slide?",
+        "answer": "To predict a complex structure from the input.",
+        "category": "text_only",
+        "difficulty": "easy",
+        "reasoning": "The purpose is directly stated in the text.",
+        "question_id": "cs601_q0231",
+        "status": "draft",
+        "annotator": "llm_openrouter/gpt-4o"
+      }
+    ],
+    "status": "draft",
+    "annotator": "llm_openrouter/gpt-4o"
+  }
+]

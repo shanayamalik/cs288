@@ -158,6 +158,7 @@ def generate_qa_for_course(
     model: str = "gpt-4o",
     rate_limit_delay: float = 1.0,
     max_retries: int = 3,
+    lectures: list = None,
 ) -> None:
     slides_dir = DATA_DIR / "slides" / course
     if not slides_dir.exists():
@@ -175,6 +176,10 @@ def generate_qa_for_course(
 
     # Collect all slide images sorted by lecture then slide number
     slide_images = sorted(slides_dir.rglob("*.png"))
+    if lectures:
+        lecture_dirs = {f"lecture_{int(l):02d}" for l in lectures}
+        slide_images = [p for p in slide_images if p.parent.name in lecture_dirs]
+        logger.info(f"Filtering to lectures: {sorted(lecture_dirs)}")
     logger.info(f"Found {len(slide_images)} slide images")
 
     q_counter = len(existing)  # for question_id numbering
@@ -251,8 +256,9 @@ def main():
     )
     parser.add_argument("--rate-limit", type=float, default=1.0, help="Seconds between API calls (default: 1.0)")
     parser.add_argument("--max-retries", type=int, default=3, help="Max retries per slide (default: 3)")
+    parser.add_argument("--lectures", type=int, nargs="+", help="Lecture numbers to process (e.g., --lectures 1 2 3). Default: all")
     args = parser.parse_args()
-    generate_qa_for_course(args.course, model=args.model, rate_limit_delay=args.rate_limit, max_retries=args.max_retries)
+    generate_qa_for_course(args.course, model=args.model, rate_limit_delay=args.rate_limit, max_retries=args.max_retries, lectures=args.lectures)
 
 
 if __name__ == "__main__":
