@@ -1,0 +1,1618 @@
+[
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 1,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_001.png",
+    "text_path": "cs224n/lecture_01/slide_001.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 2,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_002.png",
+    "text_path": "cs224n/lecture_01/slide_002.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 3,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_003.png",
+    "text_path": "cs224n/lecture_01/slide_003.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 4,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_004.png",
+    "text_path": "cs224n/lecture_01/slide_004.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 5,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_005.png",
+    "text_path": "cs224n/lecture_01/slide_005.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 6,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_006.png",
+    "text_path": "cs224n/lecture_01/slide_006.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 7,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_007.png",
+    "text_path": "cs224n/lecture_01/slide_007.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 8,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_008.png",
+    "text_path": "cs224n/lecture_01/slide_008.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 9,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_009.png",
+    "text_path": "cs224n/lecture_01/slide_009.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 10,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_010.png",
+    "text_path": "cs224n/lecture_01/slide_010.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 11,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_011.png",
+    "text_path": "cs224n/lecture_01/slide_011.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 12,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_012.png",
+    "text_path": "cs224n/lecture_01/slide_012.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 13,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_013.png",
+    "text_path": "cs224n/lecture_01/slide_013.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 14,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_014.png",
+    "text_path": "cs224n/lecture_01/slide_014.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 15,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_015.png",
+    "text_path": "cs224n/lecture_01/slide_015.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 16,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_016.png",
+    "text_path": "cs224n/lecture_01/slide_016.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 17,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_017.png",
+    "text_path": "cs224n/lecture_01/slide_017.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 18,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_018.png",
+    "text_path": "cs224n/lecture_01/slide_018.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 19,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_019.png",
+    "text_path": "cs224n/lecture_01/slide_019.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 20,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_020.png",
+    "text_path": "cs224n/lecture_01/slide_020.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 21,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_021.png",
+    "text_path": "cs224n/lecture_01/slide_021.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 22,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_022.png",
+    "text_path": "cs224n/lecture_01/slide_022.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 23,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_023.png",
+    "text_path": "cs224n/lecture_01/slide_023.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 24,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_024.png",
+    "text_path": "cs224n/lecture_01/slide_024.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 25,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_025.png",
+    "text_path": "cs224n/lecture_01/slide_025.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 26,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_026.png",
+    "text_path": "cs224n/lecture_01/slide_026.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 27,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_027.png",
+    "text_path": "cs224n/lecture_01/slide_027.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 28,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_028.png",
+    "text_path": "cs224n/lecture_01/slide_028.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 29,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_029.png",
+    "text_path": "cs224n/lecture_01/slide_029.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 30,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_030.png",
+    "text_path": "cs224n/lecture_01/slide_030.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 31,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_031.png",
+    "text_path": "cs224n/lecture_01/slide_031.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 32,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_032.png",
+    "text_path": "cs224n/lecture_01/slide_032.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 33,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_033.png",
+    "text_path": "cs224n/lecture_01/slide_033.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 34,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_034.png",
+    "text_path": "cs224n/lecture_01/slide_034.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 35,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_035.png",
+    "text_path": "cs224n/lecture_01/slide_035.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 36,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_036.png",
+    "text_path": "cs224n/lecture_01/slide_036.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 37,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_037.png",
+    "text_path": "cs224n/lecture_01/slide_037.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 38,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_038.png",
+    "text_path": "cs224n/lecture_01/slide_038.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 39,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_039.png",
+    "text_path": "cs224n/lecture_01/slide_039.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 40,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_040.png",
+    "text_path": "cs224n/lecture_01/slide_040.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 41,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_041.png",
+    "text_path": "cs224n/lecture_01/slide_041.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 42,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_042.png",
+    "text_path": "cs224n/lecture_01/slide_042.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 43,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_043.png",
+    "text_path": "cs224n/lecture_01/slide_043.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 44,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_044.png",
+    "text_path": "cs224n/lecture_01/slide_044.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 45,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_045.png",
+    "text_path": "cs224n/lecture_01/slide_045.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 46,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_046.png",
+    "text_path": "cs224n/lecture_01/slide_046.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 47,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_047.png",
+    "text_path": "cs224n/lecture_01/slide_047.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 48,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_048.png",
+    "text_path": "cs224n/lecture_01/slide_048.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 49,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_049.png",
+    "text_path": "cs224n/lecture_01/slide_049.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 50,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_050.png",
+    "text_path": "cs224n/lecture_01/slide_050.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 51,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_051.png",
+    "text_path": "cs224n/lecture_01/slide_051.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 52,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_052.png",
+    "text_path": "cs224n/lecture_01/slide_052.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 53,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_053.png",
+    "text_path": "cs224n/lecture_01/slide_053.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 54,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_054.png",
+    "text_path": "cs224n/lecture_01/slide_054.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 55,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_055.png",
+    "text_path": "cs224n/lecture_01/slide_055.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 56,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_056.png",
+    "text_path": "cs224n/lecture_01/slide_056.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 1,
+    "slide": 57,
+    "source_pdf": "cs224n-2026-lecture01-history.pdf",
+    "image_path": "cs224n/lecture_01/slide_057.png",
+    "text_path": "cs224n/lecture_01/slide_057.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 1,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_001.png",
+    "text_path": "cs224n/lecture_02/slide_001.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 2,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_002.png",
+    "text_path": "cs224n/lecture_02/slide_002.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 3,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_003.png",
+    "text_path": "cs224n/lecture_02/slide_003.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 4,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_004.png",
+    "text_path": "cs224n/lecture_02/slide_004.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 5,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_005.png",
+    "text_path": "cs224n/lecture_02/slide_005.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 6,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_006.png",
+    "text_path": "cs224n/lecture_02/slide_006.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 7,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_007.png",
+    "text_path": "cs224n/lecture_02/slide_007.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 8,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_008.png",
+    "text_path": "cs224n/lecture_02/slide_008.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 9,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_009.png",
+    "text_path": "cs224n/lecture_02/slide_009.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 10,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_010.png",
+    "text_path": "cs224n/lecture_02/slide_010.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 11,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_011.png",
+    "text_path": "cs224n/lecture_02/slide_011.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 12,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_012.png",
+    "text_path": "cs224n/lecture_02/slide_012.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 13,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_013.png",
+    "text_path": "cs224n/lecture_02/slide_013.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 14,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_014.png",
+    "text_path": "cs224n/lecture_02/slide_014.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 15,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_015.png",
+    "text_path": "cs224n/lecture_02/slide_015.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 16,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_016.png",
+    "text_path": "cs224n/lecture_02/slide_016.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 17,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_017.png",
+    "text_path": "cs224n/lecture_02/slide_017.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 18,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_018.png",
+    "text_path": "cs224n/lecture_02/slide_018.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 19,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_019.png",
+    "text_path": "cs224n/lecture_02/slide_019.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 20,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_020.png",
+    "text_path": "cs224n/lecture_02/slide_020.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 2,
+    "slide": 21,
+    "source_pdf": "cs224n-2026-lecture01-intro.pdf",
+    "image_path": "cs224n/lecture_02/slide_021.png",
+    "text_path": "cs224n/lecture_02/slide_021.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 1,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_001.png",
+    "text_path": "cs224n/lecture_03/slide_001.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 2,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_002.png",
+    "text_path": "cs224n/lecture_03/slide_002.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 3,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_003.png",
+    "text_path": "cs224n/lecture_03/slide_003.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 4,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_004.png",
+    "text_path": "cs224n/lecture_03/slide_004.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 5,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_005.png",
+    "text_path": "cs224n/lecture_03/slide_005.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 6,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_006.png",
+    "text_path": "cs224n/lecture_03/slide_006.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 7,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_007.png",
+    "text_path": "cs224n/lecture_03/slide_007.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 8,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_008.png",
+    "text_path": "cs224n/lecture_03/slide_008.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 9,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_009.png",
+    "text_path": "cs224n/lecture_03/slide_009.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 10,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_010.png",
+    "text_path": "cs224n/lecture_03/slide_010.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 11,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_011.png",
+    "text_path": "cs224n/lecture_03/slide_011.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 12,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_012.png",
+    "text_path": "cs224n/lecture_03/slide_012.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 13,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_013.png",
+    "text_path": "cs224n/lecture_03/slide_013.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 14,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_014.png",
+    "text_path": "cs224n/lecture_03/slide_014.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 15,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_015.png",
+    "text_path": "cs224n/lecture_03/slide_015.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 16,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_016.png",
+    "text_path": "cs224n/lecture_03/slide_016.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 17,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_017.png",
+    "text_path": "cs224n/lecture_03/slide_017.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 18,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_018.png",
+    "text_path": "cs224n/lecture_03/slide_018.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 19,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_019.png",
+    "text_path": "cs224n/lecture_03/slide_019.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 20,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_020.png",
+    "text_path": "cs224n/lecture_03/slide_020.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 21,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_021.png",
+    "text_path": "cs224n/lecture_03/slide_021.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 22,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_022.png",
+    "text_path": "cs224n/lecture_03/slide_022.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 23,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_023.png",
+    "text_path": "cs224n/lecture_03/slide_023.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 24,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_024.png",
+    "text_path": "cs224n/lecture_03/slide_024.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 25,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_025.png",
+    "text_path": "cs224n/lecture_03/slide_025.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 26,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_026.png",
+    "text_path": "cs224n/lecture_03/slide_026.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 27,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_027.png",
+    "text_path": "cs224n/lecture_03/slide_027.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 28,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_028.png",
+    "text_path": "cs224n/lecture_03/slide_028.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 29,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_029.png",
+    "text_path": "cs224n/lecture_03/slide_029.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 30,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_030.png",
+    "text_path": "cs224n/lecture_03/slide_030.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 31,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_031.png",
+    "text_path": "cs224n/lecture_03/slide_031.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 32,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_032.png",
+    "text_path": "cs224n/lecture_03/slide_032.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 33,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_033.png",
+    "text_path": "cs224n/lecture_03/slide_033.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 34,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_034.png",
+    "text_path": "cs224n/lecture_03/slide_034.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 35,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_035.png",
+    "text_path": "cs224n/lecture_03/slide_035.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 36,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_036.png",
+    "text_path": "cs224n/lecture_03/slide_036.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 37,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_037.png",
+    "text_path": "cs224n/lecture_03/slide_037.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 38,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_038.png",
+    "text_path": "cs224n/lecture_03/slide_038.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 39,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_039.png",
+    "text_path": "cs224n/lecture_03/slide_039.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 40,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_040.png",
+    "text_path": "cs224n/lecture_03/slide_040.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 41,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_041.png",
+    "text_path": "cs224n/lecture_03/slide_041.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 42,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_042.png",
+    "text_path": "cs224n/lecture_03/slide_042.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 43,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_043.png",
+    "text_path": "cs224n/lecture_03/slide_043.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 3,
+    "slide": 44,
+    "source_pdf": "cs224n-2026-lecture02-wordvecs.pdf",
+    "image_path": "cs224n/lecture_03/slide_044.png",
+    "text_path": "cs224n/lecture_03/slide_044.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 1,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_001.png",
+    "text_path": "cs224n/lecture_04/slide_001.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 2,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_002.png",
+    "text_path": "cs224n/lecture_04/slide_002.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 3,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_003.png",
+    "text_path": "cs224n/lecture_04/slide_003.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 4,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_004.png",
+    "text_path": "cs224n/lecture_04/slide_004.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 5,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_005.png",
+    "text_path": "cs224n/lecture_04/slide_005.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 6,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_006.png",
+    "text_path": "cs224n/lecture_04/slide_006.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 7,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_007.png",
+    "text_path": "cs224n/lecture_04/slide_007.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 8,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_008.png",
+    "text_path": "cs224n/lecture_04/slide_008.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 9,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_009.png",
+    "text_path": "cs224n/lecture_04/slide_009.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 10,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_010.png",
+    "text_path": "cs224n/lecture_04/slide_010.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 11,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_011.png",
+    "text_path": "cs224n/lecture_04/slide_011.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 12,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_012.png",
+    "text_path": "cs224n/lecture_04/slide_012.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 13,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_013.png",
+    "text_path": "cs224n/lecture_04/slide_013.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 14,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_014.png",
+    "text_path": "cs224n/lecture_04/slide_014.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 15,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_015.png",
+    "text_path": "cs224n/lecture_04/slide_015.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 16,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_016.png",
+    "text_path": "cs224n/lecture_04/slide_016.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 17,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_017.png",
+    "text_path": "cs224n/lecture_04/slide_017.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 18,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_018.png",
+    "text_path": "cs224n/lecture_04/slide_018.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 19,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_019.png",
+    "text_path": "cs224n/lecture_04/slide_019.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 20,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_020.png",
+    "text_path": "cs224n/lecture_04/slide_020.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 21,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_021.png",
+    "text_path": "cs224n/lecture_04/slide_021.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 22,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_022.png",
+    "text_path": "cs224n/lecture_04/slide_022.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 23,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_023.png",
+    "text_path": "cs224n/lecture_04/slide_023.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 24,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_024.png",
+    "text_path": "cs224n/lecture_04/slide_024.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 25,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_025.png",
+    "text_path": "cs224n/lecture_04/slide_025.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 26,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_026.png",
+    "text_path": "cs224n/lecture_04/slide_026.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 27,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_027.png",
+    "text_path": "cs224n/lecture_04/slide_027.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 28,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_028.png",
+    "text_path": "cs224n/lecture_04/slide_028.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 29,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_029.png",
+    "text_path": "cs224n/lecture_04/slide_029.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 30,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_030.png",
+    "text_path": "cs224n/lecture_04/slide_030.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 31,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_031.png",
+    "text_path": "cs224n/lecture_04/slide_031.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 32,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_032.png",
+    "text_path": "cs224n/lecture_04/slide_032.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 33,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_033.png",
+    "text_path": "cs224n/lecture_04/slide_033.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 34,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_034.png",
+    "text_path": "cs224n/lecture_04/slide_034.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 35,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_035.png",
+    "text_path": "cs224n/lecture_04/slide_035.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 36,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_036.png",
+    "text_path": "cs224n/lecture_04/slide_036.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 37,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_037.png",
+    "text_path": "cs224n/lecture_04/slide_037.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 38,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_038.png",
+    "text_path": "cs224n/lecture_04/slide_038.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 39,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_039.png",
+    "text_path": "cs224n/lecture_04/slide_039.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 40,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_040.png",
+    "text_path": "cs224n/lecture_04/slide_040.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 41,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_041.png",
+    "text_path": "cs224n/lecture_04/slide_041.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 42,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_042.png",
+    "text_path": "cs224n/lecture_04/slide_042.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 43,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_043.png",
+    "text_path": "cs224n/lecture_04/slide_043.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 44,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_044.png",
+    "text_path": "cs224n/lecture_04/slide_044.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 45,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_045.png",
+    "text_path": "cs224n/lecture_04/slide_045.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 46,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_046.png",
+    "text_path": "cs224n/lecture_04/slide_046.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 47,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_047.png",
+    "text_path": "cs224n/lecture_04/slide_047.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 48,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_048.png",
+    "text_path": "cs224n/lecture_04/slide_048.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 49,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_049.png",
+    "text_path": "cs224n/lecture_04/slide_049.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 50,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_050.png",
+    "text_path": "cs224n/lecture_04/slide_050.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 51,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_051.png",
+    "text_path": "cs224n/lecture_04/slide_051.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 52,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_052.png",
+    "text_path": "cs224n/lecture_04/slide_052.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 53,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_053.png",
+    "text_path": "cs224n/lecture_04/slide_053.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 54,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_054.png",
+    "text_path": "cs224n/lecture_04/slide_054.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 55,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_055.png",
+    "text_path": "cs224n/lecture_04/slide_055.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 56,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_056.png",
+    "text_path": "cs224n/lecture_04/slide_056.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 57,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_057.png",
+    "text_path": "cs224n/lecture_04/slide_057.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 58,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_058.png",
+    "text_path": "cs224n/lecture_04/slide_058.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 59,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_059.png",
+    "text_path": "cs224n/lecture_04/slide_059.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 60,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_060.png",
+    "text_path": "cs224n/lecture_04/slide_060.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 61,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_061.png",
+    "text_path": "cs224n/lecture_04/slide_061.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 62,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_062.png",
+    "text_path": "cs224n/lecture_04/slide_062.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 63,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_063.png",
+    "text_path": "cs224n/lecture_04/slide_063.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 64,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_064.png",
+    "text_path": "cs224n/lecture_04/slide_064.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 65,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_065.png",
+    "text_path": "cs224n/lecture_04/slide_065.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 66,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_066.png",
+    "text_path": "cs224n/lecture_04/slide_066.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 67,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_067.png",
+    "text_path": "cs224n/lecture_04/slide_067.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 68,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_068.png",
+    "text_path": "cs224n/lecture_04/slide_068.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 69,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_069.png",
+    "text_path": "cs224n/lecture_04/slide_069.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 70,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_070.png",
+    "text_path": "cs224n/lecture_04/slide_070.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 71,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_071.png",
+    "text_path": "cs224n/lecture_04/slide_071.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 72,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_072.png",
+    "text_path": "cs224n/lecture_04/slide_072.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 73,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_073.png",
+    "text_path": "cs224n/lecture_04/slide_073.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 74,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_074.png",
+    "text_path": "cs224n/lecture_04/slide_074.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 75,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_075.png",
+    "text_path": "cs224n/lecture_04/slide_075.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 76,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_076.png",
+    "text_path": "cs224n/lecture_04/slide_076.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 77,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_077.png",
+    "text_path": "cs224n/lecture_04/slide_077.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 78,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_078.png",
+    "text_path": "cs224n/lecture_04/slide_078.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 79,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_079.png",
+    "text_path": "cs224n/lecture_04/slide_079.txt"
+  },
+  {
+    "course": "cs224n",
+    "lecture": 4,
+    "slide": 80,
+    "source_pdf": "cs224n-2026-lecture03-neuralnets.pdf",
+    "image_path": "cs224n/lecture_04/slide_080.png",
+    "text_path": "cs224n/lecture_04/slide_080.txt"
+  }
+]

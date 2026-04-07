@@ -1,0 +1,602 @@
+[
+  {
+    "question_id": "cs224n_q0001",
+    "predicted_answer": "The total time allocated for Lecture 2 is 68 minutes.",
+    "retrieved_slides": [
+      "lecture_03/slide_002.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0002",
+    "predicted_answer": "The function \\( f \\) is an element-wise non-linear function applied to the linear transformation \\( Wx + b \\). It can be a function like logistic, tanh, or ReLU.",
+    "retrieved_slides": [
+      "lecture_04/slide_014.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0003",
+    "predicted_answer": "The relationship is given by the equation:\n\n\\[ \\text{[downstream gradient]} = \\text{[upstream gradient]} \\times \\text{[local gradient]} \\]\n\nThis means the downstream gradient (\\(\\frac{\\partial s}{\\partial z}\\)) is the product of the upstream gradient (\\(\\frac{\\partial s}{\\partial h}\\)) and the local gradient (\\(\\frac{\\partial h}{\\partial z}\\)).",
+    "retrieved_slides": [
+      "lecture_04/slide_064.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0004",
+    "predicted_answer": "Additional important information about the class can be found on the class webpage: [http://cs224n.stanford.edu/](http://cs224n.stanford.edu/) or [http://www.stanford.edu/class/cs224n/](http://www.stanford.edu/class/cs224n/).",
+    "retrieved_slides": [
+      "lecture_02/slide_003.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0005",
+    "predicted_answer": "The softmax function is considered to have a 'weird name' because, despite its name, it returns a probability distribution rather than a single maximum value.",
+    "retrieved_slides": [
+      "lecture_03/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0006",
+    "predicted_answer": "Office hours start on Thursday.",
+    "retrieved_slides": [
+      "lecture_02/slide_003.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0007",
+    "predicted_answer": "According to the slide, NLP systems need not be designed as physical symbol systems. Instead, they should be more like neural network models, as artificial neural network models scale better and can capture the world represented by symbols.",
+    "retrieved_slides": [
+      "lecture_01/slide_040.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0008",
+    "predicted_answer": "The relationship is given by the chain rule:\n\n\\[\n\\frac{\\partial s}{\\partial b} = \\frac{\\partial s}{\\partial h} \\cdot \\frac{\\partial h}{\\partial z} \\cdot \\frac{\\partial z}{\\partial b}\n\\]\n\nThis is further expanded as:\n\n\\[\n\\frac{\\partial s}{\\partial b} = u^T \\cdot \\text{diag}(f'(z)) \\cdot I\n\\]",
+    "retrieved_slides": [
+      "lecture_04/slide_044.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0009",
+    "predicted_answer": "The structure labeled 'mBERT' on the right side of the slide is depicted as a tower, resembling the Tower of Babel. This suggests the idea of multilingual capabilities and the complexity of language understanding, as mBERT (Multilingual BERT) is a model designed to handle multiple languages. The imagery implies the ambition and challenges of building a comprehensive multilingual model.",
+    "retrieved_slides": [
+      "lecture_02/slide_016.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0010",
+    "predicted_answer": "The two words directly connected to 'emperor' are 'empress' and 'king'.",
+    "retrieved_slides": [
+      "lecture_04/slide_006.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0011",
+    "predicted_answer": "The formula for cross entropy given on the slide is:\n\n\\[ H(p, q) = -\\sum_{c=1}^{C} p(c) \\log q(c) \\]",
+    "retrieved_slides": [
+      "lecture_04/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0012",
+    "predicted_answer": "The notation \\((\\partial f/\\partial x)_{ij}\\) represents the partial derivative of the \\(i\\)-th output function \\(f_i\\) with respect to the \\(j\\)-th input variable \\(x_j\\).",
+    "retrieved_slides": [
+      "lecture_04/slide_023.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0013",
+    "predicted_answer": "The components of the input vector \\( x \\) are \\( x_{\\text{museums}} \\), \\( x_{\\text{in}} \\), \\( x_{\\text{Paris}} \\), \\( x_{\\text{are}} \\), and \\( x_{\\text{amazing}} \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0014",
+    "predicted_answer": "The variables \\( h \\) and \\( z \\) are classified as vectors in \\( \\mathbb{R}^n \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_026.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0015",
+    "predicted_answer": "Five words have a co-occurrence count of 0 with 'enjoy': \"like,\" \"deep,\" \"learning,\" \"NLP,\" and \".\"",
+    "retrieved_slides": [
+      "lecture_03/slide_031.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0016",
+    "predicted_answer": "The GloVe model with a size of 42B has the highest correlation score in the WS353 category, with a score of 75.9.",
+    "retrieved_slides": [
+      "lecture_03/slide_042.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0017",
+    "predicted_answer": "The GloVe model has the highest score in the MUC7 column with a score of 82.2.",
+    "retrieved_slides": [
+      "lecture_03/slide_043.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0018",
+    "predicted_answer": "The SVD model has the lowest correlation score in the RW category, with a score of 25.6.",
+    "retrieved_slides": [
+      "lecture_03/slide_042.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0019",
+    "predicted_answer": "The word 'like' has a co-occurrence count of 1 with 'deep'.",
+    "retrieved_slides": [
+      "lecture_03/slide_031.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0020",
+    "predicted_answer": "The models \"CW\" and \"HPCA\" both have the same ACE score of 81.7.",
+    "retrieved_slides": [
+      "lecture_04/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0021",
+    "predicted_answer": "The GloVe model with a size of 42B has the highest overall correlation score in the MC dataset, with a score of 83.6.",
+    "retrieved_slides": [
+      "lecture_04/slide_008.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0022",
+    "predicted_answer": "According to the chart, as FLOPS (floating point operations per second) increase, the training loss decreases. This suggests that more computational power leads to better model performance, as indicated by lower training loss.",
+    "retrieved_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0023",
+    "predicted_answer": "In the graph, the words 'man', 'woman', and 'king' are represented as points in a vector space. The vectors are shown with arrows indicating the direction and relationship between these words. The vector from 'man' to 'woman' is parallel to the vector from 'king' to the unknown word, illustrating the analogy.",
+    "retrieved_slides": [
+      "lecture_03/slide_039.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0024",
+    "predicted_answer": "Neural MT shows the most improvement from 2013 to 2016.",
+    "retrieved_slides": [
+      "lecture_01/slide_047.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0025",
+    "predicted_answer": "In Q2 2023, approximately 250 S&P 500 earnings calls cited 'AI'.",
+    "retrieved_slides": [
+      "lecture_01/slide_049.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0026",
+    "predicted_answer": "The approximate BLEU score for Phrase-based SMT in 2013 is 20.3.",
+    "retrieved_slides": [
+      "lecture_01/slide_047.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0027",
+    "predicted_answer": "The color gradient in the chart represents different model sizes, ranging from 75 million to 10 billion parameters.",
+    "retrieved_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0028",
+    "predicted_answer": "The y-axis represents \"Training loss.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0029",
+    "predicted_answer": "The pairs of words with a vertical relationship in the visualization are:\n\n1. niece - nephew\n2. aunt - uncle\n3. sister - brother\n4. woman - man\n5. heiress - heir\n6. madam - sir\n7. countess - earl\n8. duchess - duke\n9. empress - emperor\n10. queen - king",
+    "retrieved_slides": [
+      "lecture_03/slide_040.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0030",
+    "predicted_answer": "The 'Bottleneck' in the diagram represents the compressed representation of the source sentence created by the encoder. It serves as the intermediary between the encoder and decoder, capturing the essential meaning of the input sentence to be used for generating the translation.",
+    "retrieved_slides": [
+      "lecture_01/slide_046.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0031",
+    "predicted_answer": "The section \"Word2vec objective function gradients\" is allocated the most time, with 25 minutes.",
+    "retrieved_slides": [
+      "lecture_03/slide_044.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0032",
+    "predicted_answer": "The word \"woman\" is positioned above and slightly to the right of the word \"man.\"",
+    "retrieved_slides": [
+      "lecture_04/slide_006.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0033",
+    "predicted_answer": "The purpose of using the Jacobian form is to compute, and the shape convention is used to format.",
+    "retrieved_slides": [
+      "lecture_04/slide_055.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0034",
+    "predicted_answer": "The arrow pointing from \\( z \\) to the function \\( f \\) represents the input \\( z \\) being fed into the function \\( f \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_064.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0035",
+    "predicted_answer": "C. Ray Perrault",
+    "retrieved_slides": [
+      "lecture_01/slide_022.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0036",
+    "predicted_answer": "The formula for vector differences in this context is:\n\n\\[ w_x \\cdot (w_a - w_b) = \\log \\frac{P(x|a)}{P(x|b)} \\]",
+    "retrieved_slides": [
+      "lecture_03/slide_037.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0037",
+    "predicted_answer": "The expression for the partial derivative of \\( h \\) with respect to \\( z \\) is the Jacobian matrix \\(\\frac{\\partial h}{\\partial z}\\). Since \\( h = f(z) \\) is an elementwise activation function, the Jacobian is a diagonal matrix where each diagonal element is \\(\\frac{\\partial h_i}{\\partial z_i} = f'(z_i)\\).",
+    "retrieved_slides": [
+      "lecture_04/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0038",
+    "predicted_answer": "The right image on the slide shows the Mark I Perceptron, an early neural network computer.",
+    "retrieved_slides": [
+      "lecture_01/slide_014.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0039",
+    "predicted_answer": "The outside context words in the window of size 2 are \"problems,\" \"turning,\" \"banking,\" and \"crises.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0040",
+    "predicted_answer": "The word pair \"tiger\" and \"tiger\" has the highest human mean similarity score of 10.",
+    "retrieved_slides": [
+      "lecture_03/slide_041.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0041",
+    "predicted_answer": "The diagram at the bottom of the slide represents the process of forward propagation in a neural network. It shows the flow of data through the network, starting with input \\( x \\), which is multiplied by weights \\( W \\), added to a bias \\( b \\) to produce \\( z \\), passed through an activation function \\( f \\) to produce \\( h \\), and finally multiplied by weights \\( u \\) to produce the output \\( s \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_059.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0042",
+    "predicted_answer": "The probability notation used for the word 'banking' is \\( P(w_{t+1} \\mid w_t) \\).",
+    "retrieved_slides": [
+      "lecture_03/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0043",
+    "predicted_answer": "The derivative of \\( s \\) with respect to \\( b \\) is expressed using the chain rule as:\n\n\\[\n\\frac{\\partial s}{\\partial b} = \\frac{\\partial s}{\\partial h} \\frac{\\partial h}{\\partial z} \\frac{\\partial z}{\\partial b}\n\\]",
+    "retrieved_slides": [
+      "lecture_04/slide_037.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0044",
+    "predicted_answer": "Four vectors are used in the encoder section.",
+    "retrieved_slides": [
+      "lecture_01/slide_045.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0045",
+    "predicted_answer": "The operation performed to obtain 'z' is the addition of \\( Wx \\) and \\( b \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_060.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0046",
+    "predicted_answer": "The words labeled as 'LOC' are \"Hilton Hotel\" and \"Paris.\"",
+    "retrieved_slides": [
+      "lecture_04/slide_010.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0047",
+    "predicted_answer": "The Jacobian of \\( f(z) \\) with respect to \\( z \\) is represented as \\( \\text{diag}(f'(z)) \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_043.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0048",
+    "predicted_answer": "The function represented by a blue line graph that starts at zero and increases linearly is ReLU (Rectified Linear Unit).",
+    "retrieved_slides": [
+      "lecture_04/slide_015.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0049",
+    "predicted_answer": "The equation representing the computation of 'z' in the graph is \\( z = Wx + b \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_057.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0050",
+    "predicted_answer": "The value of \\( s \\) is computed as \\( s = u^T h \\), where \\( h \\) is the result of applying the function \\( f \\) to \\( z \\), and \\( z \\) is calculated as \\( z = Wx + b \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_058.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0051",
+    "predicted_answer": "The word pair \"stock\" and \"jaguar\" has the lowest human mean similarity score of 0.92.",
+    "retrieved_slides": [
+      "lecture_04/slide_007.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0052",
+    "predicted_answer": "The upstream gradient is represented by the expression \\( \\delta = u^T \\circ f'(z) \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_048.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0053",
+    "predicted_answer": "The derivative of \\( s \\) with respect to \\( b \\) is expressed as:\n\n\\[\n\\frac{\\partial s}{\\partial b} = u^T \\, \\text{diag}(f'(z)) \\, I\n\\]",
+    "retrieved_slides": [
+      "lecture_04/slide_044.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0054",
+    "predicted_answer": "In 1980, the ARPA Speech Understanding Research (SUR) project led by Lea is noted in the timeline.",
+    "retrieved_slides": [
+      "lecture_01/slide_031.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0055",
+    "predicted_answer": "The SVD-L model has the lowest ACE score of 73.6.",
+    "retrieved_slides": [
+      "lecture_03/slide_043.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0056",
+    "predicted_answer": "The correlation score of SVD-L for the WS353 dataset increases from 65.7 at 6B to 74.0 at 42B.",
+    "retrieved_slides": [
+      "lecture_04/slide_008.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0057",
+    "predicted_answer": "The 'Selective parameters' in the diagram are part of the 'Selection Mechanism,' which likely determines which input words or features are used to influence the output. They help in deciding which parts of the input are relevant for processing at each step.",
+    "retrieved_slides": [
+      "lecture_02/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0058",
+    "predicted_answer": "The Jacobian of \\( s \\) with respect to \\( h \\) is \\( u^T \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_043.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0059",
+    "predicted_answer": "Local gradients in the diagram are represented by \\(\\frac{\\partial z}{\\partial W}\\) and \\(\\frac{\\partial z}{\\partial x}\\).",
+    "retrieved_slides": [
+      "lecture_04/slide_066.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0060",
+    "predicted_answer": "The derivative of \\( s \\) with respect to \\( h \\) is \\( u^T \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_042.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0061",
+    "predicted_answer": "The Jacobian for the elementwise activation function is defined as:\n\n\\[\n\\left( \\frac{\\partial \\mathbf{h}}{\\partial \\mathbf{z}} \\right)_{ij} = \\frac{\\partial h_i}{\\partial z_j} = \\frac{\\partial}{\\partial z_j} f(z_i)\n\\]\n\nThis represents the partial derivative of each element \\( h_i \\) with respect to each element \\( z_j \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_027.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0062",
+    "predicted_answer": "The local gradient in the diagram is \\(\\frac{\\partial h}{\\partial z}\\).",
+    "retrieved_slides": [
+      "lecture_04/slide_062.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0063",
+    "predicted_answer": "\\( h = f(z) \\)",
+    "retrieved_slides": [
+      "lecture_04/slide_036.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0064",
+    "predicted_answer": "There are five main components in the noisy channel model: Information Source, Transmitter, Noise Source, Receiver, and Destination.",
+    "retrieved_slides": [
+      "lecture_01/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0065",
+    "predicted_answer": "The GloVe model with a size of 42B has the highest correlation score for the RW dataset, with a score of 47.8.",
+    "retrieved_slides": [
+      "lecture_04/slide_008.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0066",
+    "predicted_answer": "The '+' node in the diagram performs the addition operation, adding the values of \\(x\\) and \\(y\\).",
+    "retrieved_slides": [
+      "lecture_04/slide_069.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0067",
+    "predicted_answer": "The highlighted text in the orange box represents the context words that will be used to represent \"laptops.\"",
+    "retrieved_slides": [
+      "lecture_01/slide_044.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0068",
+    "predicted_answer": "The word pair \"tiger\" and \"tiger\" has the highest human mean similarity score of 10.",
+    "retrieved_slides": [
+      "lecture_04/slide_007.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0069",
+    "predicted_answer": "The decoder outputs the translation of the source sentence: \"The protests escalated over the weekend.\"",
+    "retrieved_slides": [
+      "lecture_01/slide_046.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0070",
+    "predicted_answer": "The diagram on the right illustrates the Skip-gram model used in Word2vec. It shows how a central word \\( w(t) \\) is used to predict surrounding context words \\( w(t-2), w(t-1), w(t+1), \\) and \\( w(t+2) \\).",
+    "retrieved_slides": [
+      "lecture_03/slide_011.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0071",
+    "predicted_answer": "The expression \\( \\nabla_{\\theta} J_t(\\theta) \\) represents the gradient of the objective function \\( J_t(\\theta) \\) with respect to the parameters \\( \\theta \\) in the context of stochastic gradient descent (SGD) with negative sampling. It is described as being very sparse because it involves only a small number of words in each window, specifically at most \\( 2m + 1 \\) words plus \\( 2km \\) negative words.",
+    "retrieved_slides": [
+      "lecture_03/slide_028.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0072",
+    "predicted_answer": "In the diagram, the neurons are connected through their axons and dendrites. The axon of one neuron extends and connects to the dendrites of another neuron at the terminal buttons, forming synapses.",
+    "retrieved_slides": [
+      "lecture_01/slide_011.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0073",
+    "predicted_answer": "The dimensionality of the expression \\( \\frac{\\partial s}{\\partial \\mathbf{W}} \\) is \\( n \\times m \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_052.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0074",
+    "predicted_answer": "The formula for the softmax function as shown on the slide is:\n\n\\[\n\\text{softmax}(x_i) = \\frac{\\exp(x_i)}{\\sum_{j=1}^{n} \\exp(x_j)} = p_i\n\\]",
+    "retrieved_slides": [
+      "lecture_03/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs224n_q0075",
+    "predicted_answer": "The expression for the partial derivative of \\( h \\) with respect to \\( z \\) is \\(\\frac{\\partial h}{\\partial z}\\).",
+    "retrieved_slides": [
+      "lecture_04/slide_026.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  }
+]
