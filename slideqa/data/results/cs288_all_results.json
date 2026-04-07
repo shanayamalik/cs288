@@ -2,80 +2,68 @@
   "text_only": {
     "overall": {
       "count": 75,
-      "exact_match": 0.0,
-      "token_f1": 0.2131,
-      "llm_judge": 2.2133
+      "exact_match": 0.0133,
+      "token_f1": 0.1299
     },
     "per_category": {
       "text_only": {
         "count": 7,
-        "exact_match": 0.0,
-        "token_f1": 0.33,
-        "llm_judge": 4.4286
+        "exact_match": 0.1429,
+        "token_f1": 0.2723
       },
       "image_diagram": {
-        "count": 35,
+        "count": 43,
         "exact_match": 0.0,
-        "token_f1": 0.2107,
-        "llm_judge": 2.2571
+        "token_f1": 0.1151
       },
       "table": {
-        "count": 7,
+        "count": 11,
         "exact_match": 0.0,
-        "token_f1": 0.1636,
-        "llm_judge": 1.7143
+        "token_f1": 0.0628
       },
       "chart_graph": {
-        "count": 9,
+        "count": 7,
         "exact_match": 0.0,
-        "token_f1": 0.1804,
-        "llm_judge": 1.4444
+        "token_f1": 0.138
       },
       "layout_aware": {
-        "count": 17,
+        "count": 7,
         "exact_match": 0.0,
-        "token_f1": 0.2075,
-        "llm_judge": 1.8235
+        "token_f1": 0.1752
       }
     }
   },
   "zero_shot_vlm": {
     "overall": {
       "count": 75,
-      "exact_match": 0.0,
-      "token_f1": 0.4465,
-      "llm_judge": 4.6
+      "exact_match": 0.0133,
+      "token_f1": 0.3577
     },
     "per_category": {
       "text_only": {
         "count": 7,
         "exact_match": 0.0,
-        "token_f1": 0.5465,
-        "llm_judge": 5.0
+        "token_f1": 0.5345
       },
       "image_diagram": {
-        "count": 35,
-        "exact_match": 0.0,
-        "token_f1": 0.3962,
-        "llm_judge": 4.6571
+        "count": 43,
+        "exact_match": 0.0233,
+        "token_f1": 0.2944
       },
       "table": {
-        "count": 7,
+        "count": 11,
         "exact_match": 0.0,
-        "token_f1": 0.5501,
-        "llm_judge": 4.5714
+        "token_f1": 0.3677
       },
       "chart_graph": {
-        "count": 9,
+        "count": 7,
         "exact_match": 0.0,
-        "token_f1": 0.5095,
-        "llm_judge": 4.6667
+        "token_f1": 0.5193
       },
       "layout_aware": {
-        "count": 17,
+        "count": 7,
         "exact_match": 0.0,
-        "token_f1": 0.433,
-        "llm_judge": 4.2941
+        "token_f1": 0.3921
       }
     }
   }

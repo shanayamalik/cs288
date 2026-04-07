@@ -125,19 +125,21 @@ python slideqa/src/run_baselines.py --course cs288
 
 ### Results (3-lecture pilot, 75 QA pairs)
 
-| Category | N | Text-Only F1 | Text-Only Judge | VLM F1 | VLM Judge |
+Evaluation uses **Exact Match** and **Token-F1** (SQuAD-style). Answers are short-form (≤10 words) for reliable automated scoring.
+
+| Category | N | Text-Only EM | Text-Only F1 | VLM EM | VLM F1 |
 |---|---|---|---|---|---|
-| text_only | 7 | 0.330 | 4.43 | 0.547 | 5.00 |
-| image_diagram | 35 | 0.211 | 2.26 | 0.396 | 4.66 |
-| table | 7 | 0.164 | 1.71 | 0.550 | 4.57 |
-| chart_graph | 9 | 0.180 | 1.44 | 0.510 | 4.67 |
-| layout_aware | 17 | 0.208 | 1.82 | 0.433 | 4.29 |
-| **Overall** | **75** | **0.213** | **2.21** | **0.447** | **4.60** |
+| text_only | 7 | 0.143 | 0.272 | 0.000 | 0.535 |
+| image_diagram | 43 | 0.000 | 0.115 | 0.023 | 0.294 |
+| table | 11 | 0.000 | 0.063 | 0.000 | 0.368 |
+| chart_graph | 7 | 0.000 | 0.138 | 0.000 | 0.519 |
+| layout_aware | 7 | 0.000 | 0.175 | 0.000 | 0.392 |
+| **Overall** | **75** | **0.013** | **0.130** | **0.013** | **0.358** |
 
 **Key takeaways:**
-- The VLM baseline (with the correct slide image) more than doubles Token-F1 (0.21 → 0.45) and LLM-Judge score (2.2 → 4.6) over text-only, confirming the benchmark requires genuine visual understanding.
-- The gap is largest on **chart_graph** (1.44 → 4.67) and **table** (1.71 → 4.57) — categories where the answer lives in a visual element that text extraction misses entirely.
-- Exact Match is 0% for both baselines because answers are free-form; LLM-as-Judge (1-5 scale) is the most informative metric.
+- The VLM baseline (with the correct slide image) nearly triples Token-F1 over text-only (0.36 vs 0.13), confirming the benchmark requires genuine visual understanding.
+- The gap is largest on **chart_graph** (0.14 → 0.52) and **table** (0.06 → 0.37) — categories where the answer lives in a visual element that text extraction misses.
+- EM is low for both baselines (~1%) because even short answers get paraphrased. Token-F1 is our primary metric.
 
 Detailed per-question results are in `slideqa/data/results/`.
 

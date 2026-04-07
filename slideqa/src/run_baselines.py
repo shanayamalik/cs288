@@ -143,7 +143,6 @@ def main():
     parser = argparse.ArgumentParser(description="Run SlideQA baselines and evaluate")
     parser.add_argument("--course", required=True)
     parser.add_argument("--model", default="openai/gpt-4o", help="OpenRouter model for all baselines")
-    parser.add_argument("--skip-judge", action="store_true", help="Skip LLM-as-judge (faster)")
     parser.add_argument("--only", choices=["text_only", "zero_shot_vlm"], help="Run only one baseline")
     parser.add_argument("--rate-limit", type=float, default=1.5, help="Seconds between API calls")
     args = parser.parse_args()
@@ -176,10 +175,7 @@ def main():
             )
             save_predictions(text_preds, text_preds_path)
 
-        text_results = evaluate(
-            qa_pairs, text_preds,
-            use_llm_judge=not args.skip_judge,
-        )
+        text_results = evaluate(qa_pairs, text_preds)
         print_results_table(text_results, "Text-Only (BM25 + LLM)")
         all_results["text_only"] = text_results
 
@@ -204,10 +200,7 @@ def main():
             )
             save_predictions(vlm_preds, vlm_preds_path)
 
-        vlm_results = evaluate(
-            qa_pairs, vlm_preds,
-            use_llm_judge=not args.skip_judge,
-        )
+        vlm_results = evaluate(qa_pairs, vlm_preds)
         print_results_table(vlm_results, "Zero-Shot VLM (Oracle Slide)")
         all_results["zero_shot_vlm"] = vlm_results
 
