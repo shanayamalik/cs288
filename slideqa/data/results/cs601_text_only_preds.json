@@ -1,0 +1,752 @@
+[
+  {
+    "question_id": "cs601_q0001",
+    "predicted_answer": "A nondeterministic Turing machine might not halt according to the slide.",
+    "retrieved_slides": [
+      "lecture_02/slide_019.png",
+      "lecture_14/slide_111.png",
+      "lecture_07/slide_045.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0002",
+    "predicted_answer": "Mildly context-sensitive grammar (TAG, CCG, etc.)",
+    "retrieved_slides": [
+      "lecture_02/slide_020.png",
+      "lecture_02/slide_019.png",
+      "lecture_02/slide_018.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0003",
+    "predicted_answer": "\"Trump Declares All Owls Are Bachelors, Orders Owl-Themed Bachelor Party Menu\"",
+    "retrieved_slides": [
+      "lecture_19/slide_040.png",
+      "lecture_13/slide_074.png",
+      "lecture_18/slide_103.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0004",
+    "predicted_answer": "The trained 3-gram model allows for the generation of sentences by rolling dice.",
+    "retrieved_slides": [
+      "lecture_02/slide_006.png",
+      "lecture_02/slide_007.png",
+      "lecture_18/slide_042.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0005",
+    "predicted_answer": "The possible sources of ambiguity mentioned in the slide include determining what the \"minimum changes\" are in counterfactual scenarios, as it is \"rather slippery\" to figure out. Additionally, there is ambiguity in reasoning about what would tend to happen if you didn\u2019t pay the rent, which seems to require probabilistic reasoning and involves defining conditional probabilities even when the probability of the condition is zero.",
+    "retrieved_slides": [
+      "lecture_13/slide_044.png",
+      "lecture_13/slide_045.png",
+      "lecture_13/slide_046.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0006",
+    "predicted_answer": "The two forms of strings allowed in the formal language equivalent mentioned are \"a x* b\" and \"c x* d\".",
+    "retrieved_slides": [
+      "lecture_02/slide_010.png",
+      "lecture_01/slide_004.png",
+      "lecture_02/slide_008.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0007",
+    "predicted_answer": "The context does not provide information about John's thoughts or any implied question regarding them.",
+    "retrieved_slides": [
+      "lecture_18/slide_067.png",
+      "lecture_19/slide_043.png",
+      "lecture_10/slide_056.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0008",
+    "predicted_answer": "The example of an unrestricted grammar rule is:  \nS[head=thrill, tense=pres, \u2026] \uf0e0 NP[head=plan, num=1, animate=no\u2026] VP[head=thrill, tense=pres, num=1, \u2026]",
+    "retrieved_slides": [
+      "lecture_07/slide_016.png",
+      "lecture_10/slide_064.png",
+      "lecture_18/slide_021.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0009",
+    "predicted_answer": "The context does not provide specific information about what the smallest box in the diagram represents.",
+    "retrieved_slides": [
+      "lecture_02/slide_008.png",
+      "lecture_12/slide_020.png",
+      "lecture_12/slide_002.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0010",
+    "predicted_answer": "The 50-gram model is represented by the largest box in the diagram.",
+    "retrieved_slides": [
+      "lecture_02/slide_008.png",
+      "lecture_12/slide_020.png",
+      "lecture_13/slide_044.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0011",
+    "predicted_answer": "The provided context does not specify the components of a noun phrase (NP) in a tree diagram.",
+    "retrieved_slides": [
+      "lecture_10/slide_056.png",
+      "lecture_07/slide_002.png",
+      "lecture_07/slide_045.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0012",
+    "predicted_answer": "The example of a context-sensitive grammar rule on the slide is: S \uf0e0 N V S  // L _ R",
+    "retrieved_slides": [
+      "lecture_02/slide_018.png",
+      "lecture_08/slide_017.png",
+      "lecture_08/slide_018.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0013",
+    "predicted_answer": "The tree diagram on the left side of the slide is a syntactic structure representing the sentence \"Time flies like an arrow.\" It includes the following components: \n\n- S (Sentence)\n  - NP (Noun Phrase)\n    - N (Noun)\n  - VP (Verb Phrase)\n    - V (Verb)\n    - PP (Prepositional Phrase)\n      - P (Preposition)\n      - NP (Noun Phrase)\n        - D (Determiner)\n        - N (Noun)",
+    "retrieved_slides": [
+      "lecture_17/slide_060.png",
+      "lecture_10/slide_056.png",
+      "lecture_14/slide_132.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0014",
+    "predicted_answer": "The provided context does not mention 'deficit' or 'current,' so I cannot determine their relationship based on the lecture slides.",
+    "retrieved_slides": [
+      "lecture_14/slide_082.png",
+      "lecture_08/slide_042.png",
+      "lecture_10/slide_056.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0015",
+    "predicted_answer": "Jon appeared on TV.",
+    "retrieved_slides": [
+      "lecture_03/slide_010.png",
+      "lecture_03/slide_009.png",
+      "lecture_18/slide_014.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0016",
+    "predicted_answer": "\"TV appeared on Jon.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_010.png",
+      "lecture_03/slide_009.png",
+      "lecture_16/slide_067.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0017",
+    "predicted_answer": "\"Appeared on Jon TV.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_010.png",
+      "lecture_03/slide_009.png",
+      "lecture_16/slide_067.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0018",
+    "predicted_answer": "The provided text context does not specify the number of sentences marked as good English according to the n-gram column.",
+    "retrieved_slides": [
+      "lecture_02/slide_009.png",
+      "lecture_09/slide_099.png",
+      "lecture_17/slide_110.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0019",
+    "predicted_answer": "The sentence \"The to swallow Wanda has been Otto plan thrilling\" is not related to the translation task.",
+    "retrieved_slides": [
+      "lecture_16/slide_067.png",
+      "lecture_18/slide_058.png",
+      "lecture_13/slide_043.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0020",
+    "predicted_answer": "There are three sentences marked with a question mark.",
+    "retrieved_slides": [
+      "lecture_02/slide_009.png",
+      "lecture_19/slide_047.png",
+      "lecture_14/slide_180.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0021",
+    "predicted_answer": "The example given for a context-free grammar is:  \n- S \u2192 NP VP  \n- VP \u2192 VerbT NP  \n- NP \u2192 Det N'  \n- NP \u2192 Proper  \n- N' \u2192 Noun  \n- N' \u2192 N' PP  \n- PP \u2192 Prep NP",
+    "retrieved_slides": [
+      "lecture_02/slide_013.png",
+      "lecture_10/slide_056.png",
+      "lecture_13/slide_074.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0022",
+    "predicted_answer": "The provided text context does not contain any information related to probabilities or grammar rules such as 'NP \u2192 Det N' or 'NP \u2192 Proper'. Therefore, I cannot determine the probability ratio for choosing between these two grammar rules based on the given context.",
+    "retrieved_slides": [
+      "lecture_14/slide_005.png",
+      "lecture_14/slide_006.png",
+      "lecture_08/slide_032.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0023",
+    "predicted_answer": "The context provided does not specify a visual element used to represent training sentences.",
+    "retrieved_slides": [
+      "lecture_14/slide_074.png",
+      "lecture_04/slide_032.png",
+      "lecture_04/slide_031.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0024",
+    "predicted_answer": "The provided context does not include any information about a sentence diagram or the function of 'in September' within a sentence. Therefore, I cannot determine the function of 'in September' based on the given lecture slides.",
+    "retrieved_slides": [
+      "lecture_09/slide_016.png",
+      "lecture_13/slide_043.png",
+      "lecture_16/slide_067.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0025",
+    "predicted_answer": "The sentence generated by the tree diagram is \"Every nation wants Don to love Mel.\"",
+    "retrieved_slides": [
+      "lecture_14/slide_095.png",
+      "lecture_09/slide_006.png",
+      "lecture_19/slide_060.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0026",
+    "predicted_answer": "The word \"He\" is the subject of the sentence according to the dependency diagram.",
+    "retrieved_slides": [
+      "lecture_18/slide_054.png",
+      "lecture_18/slide_059.png",
+      "lecture_18/slide_058.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0027",
+    "predicted_answer": "The root of the sentence in the dependency diagram is \"reckons.\"",
+    "retrieved_slides": [
+      "lecture_18/slide_054.png",
+      "lecture_18/slide_059.png",
+      "lecture_02/slide_025.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0028",
+    "predicted_answer": "The 'NP' node expands into 'N' and 'PP' according to the tree diagram.",
+    "retrieved_slides": [
+      "lecture_08/slide_013.png",
+      "lecture_13/slide_003.png",
+      "lecture_14/slide_132.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0029",
+    "predicted_answer": "The black rectangle represents the bias weights in the diagram.",
+    "retrieved_slides": [
+      "lecture_14/slide_029.png",
+      "lecture_14/slide_030.png",
+      "lecture_14/slide_020.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0030",
+    "predicted_answer": "The transformation rule for a noun phrase (NP) involving a determiner (Det) is not explicitly provided in the given context. However, based on the structure of the rewrite rules, a possible transformation could be NP -> Det Noun, where an NP can be made of a Det next to a Noun.",
+    "retrieved_slides": [
+      "lecture_08/slide_044.png",
+      "lecture_15/slide_023.png",
+      "lecture_15/slide_024.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0031",
+    "predicted_answer": "Jon appeared on TV.",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png",
+      "lecture_03/slide_010.png",
+      "lecture_18/slide_014.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0032",
+    "predicted_answer": "The provided text context does not specify the grammar rules for what a 'VP' can expand into.",
+    "retrieved_slides": [
+      "lecture_11/slide_043.png",
+      "lecture_10/slide_004.png",
+      "lecture_09/slide_016.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0033",
+    "predicted_answer": "Draft Feedback misunderstanding",
+    "retrieved_slides": [
+      "lecture_19/slide_040.png",
+      "lecture_17/slide_109.png",
+      "lecture_14/slide_149.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0034",
+    "predicted_answer": "John found it difficult to continue getting coffee because it turned out to be too expensive at the donut store.",
+    "retrieved_slides": [
+      "lecture_01/slide_020.png",
+      "lecture_13/slide_007.png",
+      "lecture_18/slide_053.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0035",
+    "predicted_answer": "The provided text context does not specify how a 'VP' (verb phrase) is defined according to the grammar rules.",
+    "retrieved_slides": [
+      "lecture_11/slide_043.png",
+      "lecture_10/slide_004.png",
+      "lecture_10/slide_079.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0036",
+    "predicted_answer": "John found the donut store problematic because it turned out to be too expensive there.",
+    "retrieved_slides": [
+      "lecture_01/slide_021.png",
+      "lecture_01/slide_015.png",
+      "lecture_01/slide_012.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0037",
+    "predicted_answer": "In the context-free grammar, 'NP' is defined as either 'Det N\u2019' or 'Proper'.",
+    "retrieved_slides": [
+      "lecture_02/slide_013.png",
+      "lecture_13/slide_018.png",
+      "lecture_13/slide_020.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0038",
+    "predicted_answer": "'by the way, are there likely to'",
+    "retrieved_slides": [
+      "lecture_03/slide_006.png",
+      "lecture_13/slide_074.png",
+      "lecture_17/slide_123.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0039",
+    "predicted_answer": "The example given to illustrate the ambiguity is \"Put the apple on the towel in the box.\"",
+    "retrieved_slides": [
+      "lecture_10/slide_056.png",
+      "lecture_12/slide_016.png",
+      "lecture_17/slide_022.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0040",
+    "predicted_answer": "The coffee turned out to be too expensive for John.",
+    "retrieved_slides": [
+      "lecture_01/slide_022.png",
+      "lecture_01/slide_012.png",
+      "lecture_01/slide_011.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0041",
+    "predicted_answer": "The provided context does not contain specific information about the probability of the rule 'NP \u2192 Det N'. The context discusses general concepts of probability in parsing and generation but does not provide details on specific rules or their probabilities.",
+    "retrieved_slides": [
+      "lecture_14/slide_005.png",
+      "lecture_10/slide_067.png",
+      "lecture_10/slide_056.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0042",
+    "predicted_answer": "John thought getting a coffee was good every few hours.",
+    "retrieved_slides": [
+      "lecture_01/slide_021.png",
+      "lecture_01/slide_019.png",
+      "lecture_01/slide_011.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0043",
+    "predicted_answer": "I think they\u2019re okay",
+    "retrieved_slides": [
+      "lecture_03/slide_006.png",
+      "lecture_13/slide_073.png",
+      "lecture_13/slide_074.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0044",
+    "predicted_answer": "A strictly local grammar is defined as a set of legal n-grams.",
+    "retrieved_slides": [
+      "lecture_17/slide_110.png",
+      "lecture_02/slide_019.png",
+      "lecture_09/slide_016.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0045",
+    "predicted_answer": "The context provided does not specify a rule for expanding 'S' in the context-free grammar.",
+    "retrieved_slides": [
+      "lecture_08/slide_038.png",
+      "lecture_08/slide_017.png",
+      "lecture_08/slide_018.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0046",
+    "predicted_answer": "John found the coffee to be problematic because it turned out to be too expensive at the donut store.",
+    "retrieved_slides": [
+      "lecture_01/slide_021.png",
+      "lecture_01/slide_020.png",
+      "lecture_01/slide_019.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0047",
+    "predicted_answer": "The context-free grammar rule for 'S' is \\( S \\rightarrow N V S \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_019.png",
+      "lecture_02/slide_018.png",
+      "lecture_16/slide_043.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0048",
+    "predicted_answer": "In the context of the formal language equivalent, x* means \"0 or more x's.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_010.png",
+      "lecture_09/slide_015.png",
+      "lecture_02/slide_011.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0049",
+    "predicted_answer": "The main topic of the slide is \"Phrase Types to Identify for Information Extraction (IE).\"",
+    "retrieved_slides": [
+      "lecture_03/slide_005.png",
+      "lecture_03/slide_004.png",
+      "lecture_18/slide_073.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0050",
+    "predicted_answer": "If you do not want to stay for questions, the suggested action is to leave quickly and quietly.",
+    "retrieved_slides": [
+      "lecture_01/slide_026.png",
+      "lecture_17/slide_135.png",
+      "lecture_13/slide_008.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0051",
+    "predicted_answer": "The provided context does not include specific lexical rules or information about the lexical category of 'king'. Therefore, I cannot determine which lexical category 'king' belongs to based on the given lecture slides.",
+    "retrieved_slides": [
+      "lecture_09/slide_099.png",
+      "lecture_08/slide_044.png",
+      "lecture_04/slide_044.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0052",
+    "predicted_answer": "The provided text context does not contain information about a non-terminal 'N' or any grammar-related details. Therefore, I cannot provide an answer based on the given context.",
+    "retrieved_slides": [
+      "lecture_14/slide_091.png",
+      "lecture_06/slide_016.png",
+      "lecture_18/slide_105.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0053",
+    "predicted_answer": "The four levels of language mentioned on the slide are phonetics/phonology/morphology, syntax, semantics, and pragmatics.",
+    "retrieved_slides": [
+      "lecture_01/slide_009.png",
+      "lecture_02/slide_008.png",
+      "lecture_14/slide_120.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0054",
+    "predicted_answer": "A coffee.",
+    "retrieved_slides": [
+      "lecture_01/slide_021.png",
+      "lecture_01/slide_022.png",
+      "lecture_01/slide_011.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0055",
+    "predicted_answer": "A context-sensitive grammar corresponds to a linear bounded automaton.",
+    "retrieved_slides": [
+      "lecture_02/slide_019.png",
+      "lecture_02/slide_020.png",
+      "lecture_14/slide_082.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0056",
+    "predicted_answer": "The provided text context does not specify a time limit for completing the task.",
+    "retrieved_slides": [
+      "lecture_03/slide_007.png",
+      "lecture_06/slide_016.png",
+      "lecture_16/slide_064.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0057",
+    "predicted_answer": "\"In the beginning God created \u2026\"",
+    "retrieved_slides": [
+      "lecture_18/slide_002.png",
+      "lecture_03/slide_004.png",
+      "lecture_18/slide_021.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0058",
+    "predicted_answer": "The topic of the slide is \"Text Categorization.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_004.png",
+      "lecture_18/slide_002.png",
+      "lecture_14/slide_111.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0059",
+    "predicted_answer": "Students should agree that language is subtle and interesting.",
+    "retrieved_slides": [
+      "lecture_13/slide_074.png",
+      "lecture_01/slide_004.png",
+      "lecture_18/slide_066.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0060",
+    "predicted_answer": "The main topic of the slide is \"Topic Segmentation,\" which involves breaking a large document or media stream into indexable chunks.",
+    "retrieved_slides": [
+      "lecture_03/slide_005.png",
+      "lecture_03/slide_004.png",
+      "lecture_18/slide_073.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0061",
+    "predicted_answer": "The main question posed on the slide is: \"How can semantic roles feed into further tasks?\"",
+    "retrieved_slides": [
+      "lecture_19/slide_043.png",
+      "lecture_18/slide_073.png",
+      "lecture_18/slide_067.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0062",
+    "predicted_answer": "The slide does not provide any specific suggestions related to the phonetics/phonology/morphology level.",
+    "retrieved_slides": [
+      "lecture_18/slide_063.png",
+      "lecture_09/slide_015.png",
+      "lecture_17/slide_005.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0063",
+    "predicted_answer": "The slide suggests using a top-down (goal-directed) parser as a possible solution to rule out bad sentences. This approach involves starting to build a constituent based on the needs of the left context rather than the input, preventing the construction of constituents that cannot be used, such as building \"spoon\" as a verb when there's no context to use a verb there.",
+    "retrieved_slides": [
+      "lecture_09/slide_015.png",
+      "lecture_16/slide_070.png",
+      "lecture_13/slide_045.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0064",
+    "predicted_answer": "The provided text context does not contain information about a non-terminal 'V' or any specific grammar. Therefore, I cannot provide an answer based on the given lecture slides.",
+    "retrieved_slides": [
+      "lecture_14/slide_091.png",
+      "lecture_06/slide_016.png",
+      "lecture_18/slide_105.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0065",
+    "predicted_answer": "The issue John faced with buying coffee was that it turned out to be too expensive at the donut store.",
+    "retrieved_slides": [
+      "lecture_01/slide_022.png",
+      "lecture_01/slide_021.png",
+      "lecture_14/slide_152.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0066",
+    "predicted_answer": "The main topic of the slide is \"Topic Segmentation,\" which involves breaking a large document or media stream into indexable chunks.",
+    "retrieved_slides": [
+      "lecture_03/slide_005.png",
+      "lecture_03/slide_004.png",
+      "lecture_18/slide_073.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0067",
+    "predicted_answer": "The main topic of the slide is \"Topic Segmentation,\" which involves breaking a large document or media stream into indexable chunks.",
+    "retrieved_slides": [
+      "lecture_03/slide_005.png",
+      "lecture_03/slide_004.png",
+      "lecture_18/slide_073.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0068",
+    "predicted_answer": "A coffee.",
+    "retrieved_slides": [
+      "lecture_01/slide_021.png",
+      "lecture_01/slide_022.png",
+      "lecture_01/slide_011.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0069",
+    "predicted_answer": "ETAOINSHRDLU",
+    "retrieved_slides": [
+      "lecture_04/slide_033.png",
+      "lecture_10/slide_056.png",
+      "lecture_01/slide_024.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0070",
+    "predicted_answer": "The initial rule for a sentence in the context-free grammar is \\( S \\rightarrow NP \\ VP \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_013.png",
+      "lecture_16/slide_067.png",
+      "lecture_07/slide_002.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0071",
+    "predicted_answer": "The slide does not provide a French sentence.",
+    "retrieved_slides": [
+      "lecture_17/slide_032.png",
+      "lecture_09/slide_006.png",
+      "lecture_19/slide_042.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0072",
+    "predicted_answer": "The narrator stopped smoking during freshman year.",
+    "retrieved_slides": [
+      "lecture_06/slide_016.png",
+      "lecture_15/slide_013.png",
+      "lecture_01/slide_014.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0073",
+    "predicted_answer": "The slide does not provide specific information about context-sensitive grammar.",
+    "retrieved_slides": [
+      "lecture_06/slide_016.png",
+      "lecture_09/slide_099.png",
+      "lecture_07/slide_051.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0074",
+    "predicted_answer": "The context-free grammar rule for a sentence (S) in the syntactic rules is: S \u2192 NP VP.",
+    "retrieved_slides": [
+      "lecture_07/slide_002.png",
+      "lecture_08/slide_045.png",
+      "lecture_02/slide_013.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs601_q0075",
+    "predicted_answer": "A context-free grammar is defined as a set of context-free rewrite rules.",
+    "retrieved_slides": [
+      "lecture_02/slide_019.png",
+      "lecture_02/slide_017.png",
+      "lecture_09/slide_016.png"
+    ],
+    "baseline": "text_only"
+  }
+]

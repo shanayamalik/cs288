@@ -1,0 +1,602 @@
+[
+  {
+    "question_id": "cs601_q0001",
+    "predicted_answer": "A nondeterministic Turing machine might not halt according to the slide.",
+    "retrieved_slides": [
+      "lecture_02/slide_019.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0002",
+    "predicted_answer": "Mildly context-sensitive grammar (e.g., TAG, CCG, etc.) is described as 'seemingly somewhere in between' context-free and context-sensitive grammars.",
+    "retrieved_slides": [
+      "lecture_02/slide_020.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0003",
+    "predicted_answer": "\"Kids Make Nutritious Snacks\"",
+    "retrieved_slides": [
+      "lecture_01/slide_007.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0004",
+    "predicted_answer": "The trained 3-gram model allows for the generation of sentences by rolling dice.",
+    "retrieved_slides": [
+      "lecture_02/slide_006.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0005",
+    "predicted_answer": "The possible sources of ambiguity mentioned in the slide are:\n\n- The particular coffee that was good every few hours\n- The donut store\n- The situation",
+    "retrieved_slides": [
+      "lecture_01/slide_021.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0006",
+    "predicted_answer": "The two forms of strings allowed are \\( a \\, x^* \\, b \\) and \\( c \\, x^* \\, d \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_010.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0007",
+    "predicted_answer": "The implied question is whether \"every few hours\" refers to how often John thought about coffee or how often he thought it was good to have a coffee.",
+    "retrieved_slides": [
+      "lecture_01/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0008",
+    "predicted_answer": "The example of an unrestricted grammar rule is \\( LSR \\rightarrow XYS \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0009",
+    "predicted_answer": "The smallest box in the diagram represents the \"Training sentences.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_006.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0010",
+    "predicted_answer": "The largest box in the diagram represents the \"Possible under trained 50-gram model.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_006.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0011",
+    "predicted_answer": "The components of the noun phrase (NP) in the tree diagram are:\n\n- Det (Determiner): \"every\"\n- N' (N-bar)\n  - Noun: \"castle\"",
+    "retrieved_slides": [
+      "lecture_02/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0012",
+    "predicted_answer": "The example of a context-sensitive grammar rule on the slide is \\( S \\rightarrow N V S \\, // \\, L \\_ R \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0013",
+    "predicted_answer": "The tree diagram on the left side of the slide has the following structure:\n\n- The root is labeled \"S.\"\n- \"S\" branches into \"NP\" and \"VP.\"\n- \"NP\" branches into \"Det\" and \"N\u2019.\"\n- \"Det\" is labeled \"every.\"\n- \"N\u2019\" branches into \"Noun.\"\n- \"Noun\" is labeled \"castle.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0014",
+    "predicted_answer": "The relationship between 'deficit' and 'current' in the diagram is \"MOD\" (modifier).",
+    "retrieved_slides": [
+      "lecture_02/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0015",
+    "predicted_answer": "\"Jon appeared on TV.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0016",
+    "predicted_answer": "\"Appeared on Jon TV.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0017",
+    "predicted_answer": "\"Appeared on Jon TV.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0018",
+    "predicted_answer": "Three sentences are marked as good English according to the n-gram column.",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0019",
+    "predicted_answer": "\"Jon is happy today.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_010.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0020",
+    "predicted_answer": "Three sentences are marked with a question mark.",
+    "retrieved_slides": [
+      "lecture_02/slide_002.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0021",
+    "predicted_answer": "The example given for a context-free grammar is \\( S \\rightarrow N V S \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0022",
+    "predicted_answer": "The probability ratio for choosing between 'NP \u2192 Det N\u2019' and 'NP \u2192 Proper' is 20:1.",
+    "retrieved_slides": [
+      "lecture_02/slide_016.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0023",
+    "predicted_answer": "A blue abstract shape is used to represent training sentences.",
+    "retrieved_slides": [
+      "lecture_02/slide_008.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0024",
+    "predicted_answer": "The function of \"in September\" in the sentence is \"COMP\" (complement) according to the diagram.",
+    "retrieved_slides": [
+      "lecture_02/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0025",
+    "predicted_answer": "The sentence generated by the tree diagram is \"Papa ate the caviar with a spoon.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_021.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0026",
+    "predicted_answer": "The word \"He\" is the subject of the sentence according to the dependency diagram.",
+    "retrieved_slides": [
+      "lecture_02/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0027",
+    "predicted_answer": "The root of the sentence in the dependency diagram is \"reckons.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0028",
+    "predicted_answer": "According to the tree diagram, the 'NP' node expands into 'Det N''.",
+    "retrieved_slides": [
+      "lecture_02/slide_016.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0029",
+    "predicted_answer": "The black rectangle represents the \"Training sentences\" in the diagram.",
+    "retrieved_slides": [
+      "lecture_02/slide_007.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0030",
+    "predicted_answer": "The transformation rule for a noun phrase (NP) involving a determiner (Det) is: \\( \\text{NP} \\rightarrow \\text{Det N'} \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_014.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0031",
+    "predicted_answer": "\"Jon appeared on TV.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_010.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0032",
+    "predicted_answer": "According to the grammar rules, a 'VP' can expand into:\n\n- V NP\n- VP PP",
+    "retrieved_slides": [
+      "lecture_02/slide_022.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0033",
+    "predicted_answer": "\"Juvenile Court to Try Shooting Defendant\" suggests a potential misunderstanding involving a legal setting.",
+    "retrieved_slides": [
+      "lecture_01/slide_007.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0034",
+    "predicted_answer": "John found it difficult to continue getting coffee because it turned out to be too expensive at the donut store.",
+    "retrieved_slides": [
+      "lecture_01/slide_014.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0035",
+    "predicted_answer": "According to the grammar rules, a 'VP' is defined as \"VP \u2192 VerbT NP\".",
+    "retrieved_slides": [
+      "lecture_02/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0036",
+    "predicted_answer": "John found the donut store problematic because the coffee there turned out to be too expensive.",
+    "retrieved_slides": [
+      "lecture_01/slide_015.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0037",
+    "predicted_answer": "In the context-free grammar, 'NP' (Noun Phrase) is defined with two rules:\n1. \\( \\text{NP} \\rightarrow \\text{Det N'} \\)\n2. \\( \\text{NP} \\rightarrow \\text{Proper} \\)",
+    "retrieved_slides": [
+      "lecture_02/slide_015.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0038",
+    "predicted_answer": "\"\u2026 by the way, are there likely to \u2026\" is the most probable phrase.",
+    "retrieved_slides": [
+      "lecture_03/slide_006.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0039",
+    "predicted_answer": "The example given is \"Mozart composed music.\"",
+    "retrieved_slides": [
+      "lecture_01/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0040",
+    "predicted_answer": "The slide suggests ambiguity about what \"it\" refers to, but it implies that either the coffee, the donut store, or the situation turned out to be too expensive for John.",
+    "retrieved_slides": [
+      "lecture_01/slide_021.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0041",
+    "predicted_answer": "The probability of the rule 'NP \u2192 Det N\u2019' is 20.",
+    "retrieved_slides": [
+      "lecture_02/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0042",
+    "predicted_answer": "John thought getting a coffee was good every few hours.",
+    "retrieved_slides": [
+      "lecture_01/slide_014.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0043",
+    "predicted_answer": "\"I think they\u2019re okay\" is the most probable phrase.",
+    "retrieved_slides": [
+      "lecture_03/slide_006.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0044",
+    "predicted_answer": "A strictly local grammar is a set of legal n-grams.",
+    "retrieved_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0045",
+    "predicted_answer": "The rule for expanding 'S' is: \\( S \\rightarrow \\text{NP VP .} \\)",
+    "retrieved_slides": [
+      "lecture_02/slide_016.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0046",
+    "predicted_answer": "John found the coffee to be problematic because it turned out to be too expensive at the donut store.",
+    "retrieved_slides": [
+      "lecture_01/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0047",
+    "predicted_answer": "The context-free grammar rule for 'S' is: \\( S \\rightarrow \\text{NP VP .} \\)",
+    "retrieved_slides": [
+      "lecture_02/slide_015.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0048",
+    "predicted_answer": "In the context of the formal language equivalent, \\( x^* \\) means \"0 or more x's.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_010.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0049",
+    "predicted_answer": "The main topic of the slide is \"Ambiguity\" in sentence structure, illustrated through a syntactic tree diagram and grammar rules.",
+    "retrieved_slides": [
+      "lecture_02/slide_023.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0050",
+    "predicted_answer": "If you do not want to stay for questions, please leave quickly and quietly.",
+    "retrieved_slides": [
+      "lecture_01/slide_026.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0051",
+    "predicted_answer": "According to the lexical rules, 'king' belongs to the category \"Noun.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_014.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0052",
+    "predicted_answer": "The non-terminal 'N' represents \"Mary.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0053",
+    "predicted_answer": "The four levels of language mentioned on the slide are:\n\n1. Phonetics/phonology/morphology\n2. Syntax\n3. Semantics\n4. Pragmatics",
+    "retrieved_slides": [
+      "lecture_01/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0054",
+    "predicted_answer": "John thought a coffee was good every few hours.",
+    "retrieved_slides": [
+      "lecture_01/slide_020.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0055",
+    "predicted_answer": "A context-sensitive grammar corresponds to a linear bounded automaton.",
+    "retrieved_slides": [
+      "lecture_02/slide_019.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0056",
+    "predicted_answer": "Two weeks.",
+    "retrieved_slides": [
+      "lecture_02/slide_013.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0057",
+    "predicted_answer": "\"In the beginning God created \u2026\"",
+    "retrieved_slides": [
+      "lecture_03/slide_004.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0058",
+    "predicted_answer": "The topic of the slide is \"Contextual Spelling Correction.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_006.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0059",
+    "predicted_answer": "Students should agree that language is subtle and interesting.",
+    "retrieved_slides": [
+      "lecture_01/slide_004.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0060",
+    "predicted_answer": "The main topic of the slide is \"Machine Translation.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0061",
+    "predicted_answer": "The main question posed on the slide is \"But can\u2019t GPT-4 read/write that?\"",
+    "retrieved_slides": [
+      "lecture_01/slide_023.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0062",
+    "predicted_answer": "The slide suggests we consider what words (or subwords) we are dealing with at the phonetics/phonology/morphology level.",
+    "retrieved_slides": [
+      "lecture_01/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0063",
+    "predicted_answer": "The slide suggests using longer n-grams, such as 4-grams, 5-grams, up to 50-grams, as a possible solution to rule out bad sentences.",
+    "retrieved_slides": [
+      "lecture_02/slide_005.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0064",
+    "predicted_answer": "The non-terminal 'V' represents the verbs \"likes,\" \"sleeps,\" and \"thinks\" in the grammar.",
+    "retrieved_slides": [
+      "lecture_02/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0065",
+    "predicted_answer": "The issue John faced was that the coffee turned out to be too expensive at the donut store.",
+    "retrieved_slides": [
+      "lecture_01/slide_020.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0066",
+    "predicted_answer": "The main topic of the slide is \"Probabilistic Context-Free Grammar: Randomly Sampling a Sentence.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_021.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0067",
+    "predicted_answer": "The main topic of the slide is evaluating whether word trigrams are a good model of English by determining which sentences are acceptable.",
+    "retrieved_slides": [
+      "lecture_02/slide_002.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0068",
+    "predicted_answer": "John thought a coffee was good every few hours.",
+    "retrieved_slides": [
+      "lecture_01/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0069",
+    "predicted_answer": "ETAOINSHRDLU",
+    "retrieved_slides": [
+      "lecture_01/slide_024.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0070",
+    "predicted_answer": "The initial rule for a sentence in the context-free grammar is \\( S \\rightarrow N V N \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0071",
+    "predicted_answer": "The French sentence provided on the slide is \"Jon est apparu \u00e0 la t\u00e9l\u00e9vision.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0072",
+    "predicted_answer": "The narrator stopped smoking during freshman year.",
+    "retrieved_slides": [
+      "lecture_01/slide_014.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0073",
+    "predicted_answer": "The slide indicates that context-sensitive grammar is a set of context-sensitive rules.",
+    "retrieved_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0074",
+    "predicted_answer": "The context-free grammar rule for a sentence (S) in the syntactic rules is: \\( S \\rightarrow NP \\, VP \\, . \\)",
+    "retrieved_slides": [
+      "lecture_02/slide_014.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs601_q0075",
+    "predicted_answer": "A context-free grammar is a set of context-free rewrite rules.",
+    "retrieved_slides": [
+      "lecture_02/slide_020.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  }
+]

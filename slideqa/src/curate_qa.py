@@ -72,6 +72,9 @@ def is_self_referential(qa: dict) -> bool:
 
 def passes_quality(qa: dict) -> bool:
     """Return True if the QA pair passes all quality filters."""
+    # Normalize list answers to comma-separated string
+    if isinstance(qa.get("answer"), list):
+        qa["answer"] = ", ".join(str(a) for a in qa["answer"])
     if is_trivial(qa):
         return False
     if is_too_short(qa):
