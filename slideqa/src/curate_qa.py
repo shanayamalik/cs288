@@ -40,9 +40,14 @@ def is_trivial(qa: dict) -> bool:
     return any(p in q for p in trivial_patterns)
 
 
-def is_too_short(qa: dict, min_answer_len: int = 8) -> bool:
+def is_too_short(qa: dict, min_answer_len: int = 2) -> bool:
     """Reject answers that are too terse to be meaningful."""
     return len(qa["answer"].strip()) < min_answer_len
+
+
+def is_too_long_answer(qa: dict, max_words: int = 10) -> bool:
+    """Reject answers that are too long for EM/F1 evaluation."""
+    return len(qa["answer"].split()) > max_words
 
 
 def is_too_vague(qa: dict) -> bool:
@@ -70,6 +75,8 @@ def passes_quality(qa: dict) -> bool:
     if is_trivial(qa):
         return False
     if is_too_short(qa):
+        return False
+    if is_too_long_answer(qa):
         return False
     if is_too_vague(qa):
         return False
@@ -181,6 +188,8 @@ def curate(course: str, target: int = 100) -> None:
                 filter_reasons["trivial"] += 1
             elif is_too_short(q):
                 filter_reasons["too_short"] += 1
+            elif is_too_long_answer(q):
+                filter_reasons["too_long_answer"] += 1
             elif is_too_vague(q):
                 filter_reasons["too_vague"] += 1
             elif is_self_referential(q):

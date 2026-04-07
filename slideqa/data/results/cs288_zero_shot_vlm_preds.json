@@ -1,374 +1,70 @@
 [
   {
     "question_id": "cs288_q0001",
-    "predicted_answer": "The text describes that in AI research, leveraging human knowledge is often prioritized in the short term, but in the long run, leveraging computation is what truly matters. It suggests that while human knowledge can complicate methods, general methods that leverage computation are ultimately more effective.",
-    "retrieved_slides": [
-      "lecture_01/slide_038.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0002",
-    "predicted_answer": "The probability of the sentence \"the cat sat on the mat\" is expressed using the chain rule as:\n\n\\[ P(\\text{the cat sat on the mat}) = P(\\text{the}) \\times P(\\text{cat}|\\text{the}) \\times P(\\text{sat}|\\text{the cat}) \\times P(\\text{on}|\\text{the cat sat}) \\times P(\\text{the}|\\text{the cat sat on}) \\times P(\\text{mat}|\\text{the cat sat on the}) \\]",
-    "retrieved_slides": [
-      "lecture_02/slide_004.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0003",
-    "predicted_answer": "In dense vector representations, 'car' and 'automobile' might not be similar because they are treated as distinct dimensions, even though they should be similar.",
-    "retrieved_slides": [
-      "lecture_03/slide_018.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0004",
-    "predicted_answer": "The listener has to infer due to pragmatics, which involves understanding implied meanings beyond the literal words.",
-    "retrieved_slides": [
-      "lecture_01/slide_011.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0005",
-    "predicted_answer": "Discounting in smoothing redistributes probability mass from observed n-grams to unobserved ones.",
-    "retrieved_slides": [
-      "lecture_02/slide_039.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0006",
-    "predicted_answer": "The challenges mentioned in optimizing downstream objectives are that it is expensive, time-consuming, and hard to optimize due to indirect feedback.",
-    "retrieved_slides": [
-      "lecture_02/slide_020.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0007",
-    "predicted_answer": "The main lesson from 70 years of AI research, according to Rich Sutton, is that general methods that leverage computation are ultimately the most effective, by a large margin.",
-    "retrieved_slides": [
-      "lecture_01/slide_038.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0008",
-    "predicted_answer": "The mathematical expression on the slide represents the probability of a sequence of words \\( P(w_1, w_2, \\ldots, w_n) \\) in a language model. It is calculated as the product of the conditional probabilities of each word given the preceding words, specifically \\( P(w_i \\mid w_{i-1024}, \\ldots, w_{i-2}, w_{i-1}) \\).",
-    "retrieved_slides": [
-      "lecture_02/slide_017.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0009",
-    "predicted_answer": "The expression in the box represents the loss function for Skip-gram with Negative Sampling (SGNS). It combines the log probability of a true context word \\( c \\) given a target word \\( t \\) and the expected log probability of negative samples. The loss function is:\n\n\\[ y = -\\log(\\sigma(\\mathbf{u}_t \\cdot \\mathbf{v}_c)) - \\sum_{i=1}^{K} \\mathbb{E}_{j \\sim P(w)} \\log(\\sigma(-\\mathbf{u}_t \\cdot \\mathbf{v}_j)) \\]\n\nwhere \\( \\sigma \\) is the sigmoid function, \\( \\mathbf{u}_t \\) and \\( \\mathbf{v}_c \\) are the word vectors for the target and context words, and \\( P(w) \\) is the distribution for sampling negative examples.",
-    "retrieved_slides": [
-      "lecture_03/slide_060.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0010",
-    "predicted_answer": "The word analogy test formula represents a method to find a word \\( b^* \\) that completes the analogy \\( a : a^* :: b : b^* \\). It does this by maximizing the cosine similarity between the vector of the candidate word \\( w \\) and the vector resulting from the operation \\( e(a^*) - e(a) + e(b) \\). This operation captures the relationship between the words in the analogy using their vector embeddings.",
-    "retrieved_slides": [
-      "lecture_03/slide_025.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0011",
-    "predicted_answer": "In the 1900s, \"gay\" is associated with words like \"daft,\" \"flaunting,\" and \"witty,\" suggesting a meaning related to being cheerful or lively. By the 1990s, it shifts to be associated with words like \"bisexual,\" \"homosexual,\" and \"lesbian,\" indicating a change to a meaning related to sexual orientation.",
-    "retrieved_slides": [
-      "lecture_03/slide_027.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0012",
-    "predicted_answer": "The image on the slide depicts the Rosetta Stone.",
-    "retrieved_slides": [
-      "lecture_01/slide_018.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0013",
-    "predicted_answer": "In the diagrams, top-k sampling selects the top 4 words with the highest probabilities, while top-p sampling selects words whose cumulative probability reaches 0.75. Top-k focuses on a fixed number of words, whereas top-p considers a variable number of words based on a probability threshold.",
-    "retrieved_slides": [
-      "lecture_02/slide_018.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0014",
-    "predicted_answer": "The context vector \\( \\bar{v}_c \\) is calculated as:\n\n\\[\n\\bar{v}_c = \\frac{1}{2m} \\sum_{-m \\leq j \\leq m, j \\neq 0} \\mathbf{v}_{w_{t+j}}\n\\]\n\nThis means it is the average of the word vectors \\( \\mathbf{v}_{w_{t+j}} \\) for the context words surrounding the target word, excluding the target word itself.",
-    "retrieved_slides": [
-      "lecture_03/slide_065.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0015",
-    "predicted_answer": "The word pairs \"the, telescope,\" \"the, manual,\" \"the, afternoon,\" \"the, country,\" and \"the, street\" each have a Count\\*(x) of 0.5.",
-    "retrieved_slides": [
-      "lecture_02/slide_048.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0016",
-    "predicted_answer": "In Vaswani et al., the norm position is \"Post-norm,\" while in Llama models, it is \"Pre-norm.\"",
-    "retrieved_slides": [
-      "lecture_01/slide_034.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0017",
-    "predicted_answer": "The bigram \"i want\" has the highest count in the table, with a count of 828.",
-    "retrieved_slides": [
-      "lecture_02/slide_043.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0018",
-    "predicted_answer": "The GloVe model with 300 dimensions and 42B size has the highest total accuracy for word analogy tasks, with a score of 75.0.",
-    "retrieved_slides": [
-      "lecture_03/slide_076.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0019",
-    "predicted_answer": "The GloVe model with a size of 42B achieved the highest score on the RG dataset, with a score of 82.9.",
-    "retrieved_slides": [
-      "lecture_03/slide_075.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0020",
-    "predicted_answer": "The table illustrates that the word \"digital\" has co-occurrence counts with other words, such as \"computer\" (1670), \"data\" (1683), \"result\" (85), \"pie\" (5), and \"sugar\" (4). This indicates how often \"digital\" appears in the context of these words, showing its relationships and usage patterns. The matrix is high-dimensional and sparse, with many entries being zero.",
-    "retrieved_slides": [
-      "lecture_03/slide_013.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0021",
-    "predicted_answer": "The semantic accuracy of the GloVe model with 1.6B size is 67.5, while its syntactic accuracy is 54.3. The semantic accuracy is higher than the syntactic accuracy.",
-    "retrieved_slides": [
-      "lecture_03/slide_076.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0022",
-    "predicted_answer": "The fraction seen for bigrams increases as the number of words increases, but it does so at a slower rate compared to unigrams. The curve for bigrams shows a gradual rise, indicating that sparsity is more pronounced for bigrams.",
-    "retrieved_slides": [
-      "lecture_01/slide_019.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0023",
-    "predicted_answer": "The graph on the slide represents the weighting function \\( f \\), which gives more importance to more common pairs but is capped at a certain point.",
-    "retrieved_slides": [
-      "lecture_03/slide_067.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0024",
-    "predicted_answer": "According to the chart, training loss decreases as FLOPS increase.",
-    "retrieved_slides": [
-      "lecture_01/slide_034.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0025",
-    "predicted_answer": "Unigrams reach a higher fraction seen according to the chart.",
-    "retrieved_slides": [
-      "lecture_01/slide_019.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0026",
-    "predicted_answer": "The graph shows a decreasing trend in test perplexity over time, indicating that models have become more effective at language modeling, achieving lower perplexity scores.",
-    "retrieved_slides": [
-      "lecture_02/slide_028.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0027",
-    "predicted_answer": "BERT-Large had 340 million parameters, according to the graph.",
-    "retrieved_slides": [
-      "lecture_01/slide_028.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0028",
-    "predicted_answer": "The graph shows an increasing trend in model size over time, with model sizes growing from millions to billions of parameters between 2018 and 2022.",
-    "retrieved_slides": [
-      "lecture_01/slide_028.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0029",
-    "predicted_answer": "Both the Google search and messaging app examples demonstrate the use of language models for predictive text. In Google search, language models suggest search queries based on partial input. In the messaging app, they suggest possible word completions or next words in a sentence.",
-    "retrieved_slides": [
-      "lecture_02/slide_005.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0030",
-    "predicted_answer": "In the diagram, 'Dialogue history' is used in the 'Dialogue-conditional action model' to generate 'Message candidates.' These candidates are then processed by the 'Dialogue model' and 'Filters' to produce the 'Output message.'",
-    "retrieved_slides": [
-      "lecture_01/slide_009.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0031",
-    "predicted_answer": "The spatial layout of the slide aids understanding by visually separating the process into two main parts. On the left, the context words and center word are shown in a sentence with arrows indicating the relationships between them. This illustrates the concept of predicting context words given a center word. On the right, the conversion into training data is clearly listed, showing pairs of center and context words. The arrows connecting the two sides emphasize the transformation from sentence context to training pairs, making the process intuitive and easy to follow.",
-    "retrieved_slides": [
-      "lecture_03/slide_033.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0032",
-    "predicted_answer": "The vector for 'dog' is \\((-0.124, 0.430, -0.200, 0.329)\\) and the vector for 'the' is \\((0.234, 0.266, 0.239, -0.199)\\). \n\nComparing the dimensional values:\n- First dimension: 'dog' is \\(-0.124\\), 'the' is \\(0.234\\)\n- Second dimension: 'dog' is \\(0.430\\), 'the' is \\(0.266\\)\n- Third dimension: 'dog' is \\(-0.200\\), 'the' is \\(0.239\\)\n- Fourth dimension: 'dog' is \\(0.329\\), 'the' is \\(-0.199\\)",
-    "retrieved_slides": [
-      "lecture_03/slide_017.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0033",
-    "predicted_answer": "The second component is larger in 'dog' (0.430) than in 'cat' (0.130).",
-    "retrieved_slides": [
-      "lecture_03/slide_053.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0034",
-    "predicted_answer": "The vectors 'digital' and 'information' in the graph are represented as two different vectors in a 2D space with coordinates [1683, 1670] and [3982, 3325], respectively. The graph is used to illustrate the concept of measuring similarity between these vectors using cosine similarity, which considers the angle between them. The closer the angle is to zero, the more similar the vectors are.",
-    "retrieved_slides": [
-      "lecture_03/slide_014.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0035",
-    "predicted_answer": "The vector representation of 'language' has a higher third component (0.762) compared to 'dog' (-0.200).",
-    "retrieved_slides": [
-      "lecture_03/slide_029.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0036",
-    "predicted_answer": "The example sentences illustrate how different n-gram models (unigram, bigram, trigram) generate text. Unigrams produce random sequences of words without context. Bigrams create slightly more coherent sequences by considering pairs of words. Trigrams improve coherence further by considering triples of words. However, the slide notes that typical language models (LMs) like these struggle with long-range dependencies, as shown in the example sentence about gender pronouns.",
+    "predicted_answer": "Typical language models are not sufficient to handle long-range dependencies.",
     "retrieved_slides": [
       "lecture_02/slide_016.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0037",
-    "predicted_answer": "The diagram illustrates how the skip-gram model uses a center word to predict surrounding context words within a fixed window. In this example, the center word \"into\" is used to predict the probability of the context words \"problems,\" \"turning,\" \"banking,\" and \"crises\" within a window size of 2. This process turns unlabeled text into supervised learning data by treating it as a classification problem.",
+    "question_id": "cs288_q0002",
+    "predicted_answer": "The components of the Final Project and their respective percentages are:\n\n- Abstract: 5%\n- Midpoint report: 5%\n- Presentation: 10%\n- Final report: 20%",
     "retrieved_slides": [
-      "lecture_03/slide_031.png"
+      "lecture_01/slide_049.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0038",
-    "predicted_answer": "The correct answer is B) \\(|V|\\).",
+    "question_id": "cs288_q0003",
+    "predicted_answer": "Sewon Min has experience working at Meta and Google.",
     "retrieved_slides": [
-      "lecture_02/slide_026.png"
+      "lecture_01/slide_003.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0039",
-    "predicted_answer": "The formula for calculating perplexity as shown in the slide is:\n\n\\[\n\\text{ppl}(S) = 2^x \\quad \\text{where} \\quad x = -\\frac{1}{n} \\sum_{i=1}^{n} \\log P(w_i \\mid w_1 \\ldots w_{i-1})\n\\]",
+    "question_id": "cs288_q0004",
+    "predicted_answer": "The Ruby script is for preprocessing Twitter data.",
     "retrieved_slides": [
-      "lecture_02/slide_038.png"
+      "lecture_03/slide_023.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0040",
-    "predicted_answer": "The main difference in the input-output relationship between Skip-gram and CBOW is:\n\n- **Skip-gram**: Takes a single word as input and predicts the surrounding context words as output.\n- **CBOW (Continuous Bag of Words)**: Takes multiple context words as input and predicts the single target word as output.",
+    "question_id": "cs288_q0005",
+    "predicted_answer": "Newswire collections: 500M+ words.",
     "retrieved_slides": [
-      "lecture_03/slide_064.png"
+      "lecture_01/slide_018.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0041",
-    "predicted_answer": "The diagram illustrates that the center word (\"into\" or \"banking\") is used to predict the surrounding context words within a window of size 2. It shows how the center word is paired with each of its context words to create training data for the skip-gram model, which aims to maximize the probability of context words given the center word.",
-    "retrieved_slides": [
-      "lecture_03/slide_034.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0042",
-    "predicted_answer": "The expression \\( P(\\text{problems} \\mid \\text{into}) \\times P(\\text{turning} \\mid \\text{into}) \\times P(\\text{banking} \\mid \\text{into}) \\) represents the probabilities of predicting the context words \"problems,\" \"turning,\" and \"banking\" given the word \"into\" in the skip-gram model. The goal is to maximize these probabilities to learn high-quality word embeddings.",
-    "retrieved_slides": [
-      "lecture_03/slide_058.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0043",
-    "predicted_answer": "The formula \\( J(\\theta) \\) represents the objective function used in the Word2vec formulation. It calculates the average log probability of context words given a target word, aiming to maximize the likelihood of context words appearing around a target word in a corpus.",
-    "retrieved_slides": [
-      "lecture_03/slide_043.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0044",
-    "predicted_answer": "The two images on the slide illustrate applications of NLP. The first image, showing a conversation about sending money, represents NLP's role in communication with humans, such as personal assistants and customer service. The second image of books symbolizes NLP's ability to access and process vast amounts of information, which is crucial for AI systems.",
-    "retrieved_slides": [
-      "lecture_01/slide_008.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0045",
-    "predicted_answer": "The formal objective function of GloVe is:\n\n\\[ J(\\theta) = \\sum_{i,j \\in V} f(X_{i,j}) \\left( \\mathbf{u}_i \\cdot \\mathbf{v}_j + b_i + \\tilde{b}_j - \\log X_{i,j} \\right) \\]",
-    "retrieved_slides": [
-      "lecture_03/slide_067.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0046",
-    "predicted_answer": "The vector representation of 'cat' is \\(\\begin{pmatrix} -0.224 \\\\ 0.130 \\\\ -0.290 \\\\ 0.276 \\end{pmatrix}\\), and the vector representation of 'dog' is \\(\\begin{pmatrix} -0.124 \\\\ 0.430 \\\\ -0.200 \\\\ 0.329 \\end{pmatrix}\\). Both vectors are four-dimensional, but they have different values for each component.",
+    "question_id": "cs288_q0006",
+    "predicted_answer": "The output of the word embedding process is a function \\( f : V \\rightarrow \\mathbb{R}^d \\), where each word is represented by a low-dimensional, real-valued vector.",
     "retrieved_slides": [
       "lecture_03/slide_022.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0047",
+    "question_id": "cs288_q0007",
+    "predicted_answer": "The Brown corpus is described as having 1M words of tagged \"balanced\" text.",
+    "retrieved_slides": [
+      "lecture_01/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0008",
+    "predicted_answer": "The expression in the box represents the loss function for skip-gram with negative sampling (SGNS). It combines the log probability of the true context word with the expected log probabilities of negative samples. The first term, \\(-\\log(\\sigma(\\mathbf{u}_t \\cdot \\mathbf{v}_c))\\), is for the positive example, and the second term, \\(-\\sum_{i=1}^{K} \\mathbb{E}_{j \\sim P(w)} \\log(\\sigma(-\\mathbf{u}_t \\cdot \\mathbf{v}_j))\\), accounts for the negative samples, where \\(P(w)\\) is the sampling distribution based on word frequency.",
+    "retrieved_slides": [
+      "lecture_03/slide_060.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0009",
     "predicted_answer": "The formula used for the skip-gram model on this slide is:\n\n\\[ P(w_{t+j} | w_t) = \\frac{\\exp(\\mathbf{v}_{w_{t+j}}^\\top \\mathbf{v}_{w_t})}{\\sum_{w' \\in V} \\exp(\\mathbf{v}_{w'}^\\top \\mathbf{v}_{w_t})} \\]",
     "retrieved_slides": [
       "lecture_03/slide_065.png"
@@ -376,207 +72,135 @@
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0048",
-    "predicted_answer": "The slide presents two probability expressions:\n\n1. **Multinomial Logistic Regression:**\n   \\[\n   P(y = c \\mid x) = \\frac{\\exp(\\mathbf{w}_c \\cdot \\mathbf{x} + b_c)}{\\sum_{j=1}^{m} \\exp(\\mathbf{w}_j \\cdot \\mathbf{x} + b_j)}\n   \\]\n   - This expression calculates the probability of class \\(c\\) given input \\(\\mathbf{x}\\) using weights \\(\\mathbf{w}_c\\) and bias \\(b_c\\).\n   - It involves a softmax function over \\(m\\) classes.\n\n2. **Word Prediction Model:**\n   \\[\n   P(w_{t+j} \\mid w_t) = \\frac{\\exp(\\mathbf{u}_{w_t} \\cdot \\mathbf{v}_{w_{t+j}})}{\\sum_{k \\in V} \\exp(\\mathbf{u}_{w_t} \\cdot \\mathbf{v}_k)}\n   \\]\n   - This expression calculates the probability of word \\(w_{t+j}\\) given word \\(w_t\\) using vectors \\(\\mathbf{u}_{w_t}\\) and \\(\\mathbf",
+    "question_id": "cs288_q0010",
+    "predicted_answer": "The correct answer is B) \\(|V|\\).",
     "retrieved_slides": [
-      "lecture_03/slide_039.png"
+      "lecture_02/slide_026.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0049",
-    "predicted_answer": "In the skip-gram model diagram, the word \"into\" serves as the center word at position \\( t \\). The model uses this center word to predict the surrounding context words, which are \"problems,\" \"turning,\" \"banking,\" and \"crises.\"",
+    "question_id": "cs288_q0011",
+    "predicted_answer": "In the CBOW model diagram, the function applied to the input words is \"SUM.\"",
     "retrieved_slides": [
-      "lecture_03/slide_057.png"
+      "lecture_03/slide_062.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0050",
-    "predicted_answer": "The main difference between the CBOW and Skip-gram models, as shown in the diagrams, is the direction of prediction:\n\n- **CBOW (Continuous Bag of Words):** Predicts the target word \\( w(t) \\) using the context words \\( w(t-2), w(t-1), w(t+1), w(t+2) \\).\n\n- **Skip-gram:** Predicts the context words \\( w(t-2), w(t-1), w(t+1), w(t+2) \\) using the target word \\( w(t) \\).",
+    "question_id": "cs288_q0012",
+    "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is mathematically defined as:\n\n\\[\n\\text{Perplexity} = P(w_1, w_2, \\ldots, w_n)^{-1/n}\n\\]",
     "retrieved_slides": [
-      "lecture_03/slide_056.png"
+      "lecture_02/slide_033.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0051",
-    "predicted_answer": "The words 'problems' and 'turning' are categorized as \"outside context words in window of size 2\" in the diagram.",
+    "question_id": "cs288_q0013",
+    "predicted_answer": "The formula used is:\n\n\\[ w_3 = \\arg \\max_{w \\in V} P(w \\mid w_1, w_2) \\]",
     "retrieved_slides": [
-      "lecture_03/slide_033.png"
+      "lecture_02/slide_018.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0052",
-    "predicted_answer": "The translation example on the slide demonstrates machine translation, showing how a sentence in English is translated into Chinese (Simplified).",
+    "question_id": "cs288_q0014",
+    "predicted_answer": "The probability of the sentence \"<s> I like strawberries </s>\" using the bigram model is \\( \\frac{1}{9} \\).",
     "retrieved_slides": [
-      "lecture_01/slide_032.png"
+      "lecture_02/slide_012.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0053",
-    "predicted_answer": "The instructors' profiles are organized side by side on the slide. Each profile includes a photo at the top, followed by the instructor's name, percentage contribution, and a bullet-point list of their roles, research interests, educational background, and previous experience. Sewon Min's profile is on the left, and Alane Suhr's profile is on the right, separated by a dotted line.",
+    "question_id": "cs288_q0015",
+    "predicted_answer": "The valence score for 'courageous' is 8.05.",
     "retrieved_slides": [
-      "lecture_01/slide_003.png"
+      "lecture_03/slide_005.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0054",
-    "predicted_answer": "The semantic ambiguity illustrated in the comic is the dual meaning of the word \"background.\" The employer is asking about the candidate's personal or professional history, but the candidate interprets it as referring to the scenery behind him, which is Mount Everest.",
+    "question_id": "cs288_q0016",
+    "predicted_answer": "The word pairs \"the, telescope,\" \"the, manual,\" \"the, afternoon,\" \"the, country,\" and \"the, street\" each have a Count\\*(x) of 0.5.",
     "retrieved_slides": [
-      "lecture_01/slide_014.png"
+      "lecture_02/slide_048.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0055",
-    "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is calculated as:\n\n\\[ \\text{Perplexity} = P(w_1, w_2, \\ldots, w_n)^{-1/n} \\]\n\nThis can also be expressed as:\n\n\\[ \\text{ppl}(S) = 2^x \\]\n\nwhere \n\n\\[ x = -\\frac{1}{n} \\log_2 P(w_1, \\ldots, w_n) = -\\frac{1}{n} \\sum_{i=1}^{n} \\log_2 P(w_i | w_1 \\ldots w_{i-1}) \\]\n\nThis expression for \\( x \\) represents the cross-entropy.",
+    "question_id": "cs288_q0017",
+    "predicted_answer": "The probability of the bigram 'want to' according to the table is 0.00042.",
     "retrieved_slides": [
-      "lecture_02/slide_025.png"
+      "lecture_02/slide_044.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0056",
-    "predicted_answer": "The CBOW and Skip-gram models are visually differentiated by their diagrams. The CBOW model shows multiple input words converging to predict a single output word, while the Skip-gram model shows a single input word being used to predict multiple output words.",
+    "question_id": "cs288_q0018",
+    "predicted_answer": "The word \"norway\" has the highest cosine distance to \"sweden\" according to the table.",
     "retrieved_slides": [
-      "lecture_03/slide_056.png"
+      "lecture_03/slide_024.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0057",
-    "predicted_answer": "In the diagram, 'publication' is a more general term connected to 'book,' indicating that a book is a type of publication.",
+    "question_id": "cs288_q0019",
+    "predicted_answer": "The bigram \"eat lunch\" has a count of 42.",
     "retrieved_slides": [
-      "lecture_03/slide_006.png"
+      "lecture_02/slide_042.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0058",
-    "predicted_answer": "The diagram on the right side of the slide depicts an ML model processing word embeddings for the sentence \"I don't like this movie.\" Each word is represented by a vector, and the model outputs a thumbs-down emoji, indicating a negative sentiment.",
+    "question_id": "cs288_q0020",
+    "predicted_answer": "The word pair \"vanish/disappear\" has the highest similarity score of 9.8 according to SimLex-999.",
     "retrieved_slides": [
-      "lecture_03/slide_072.png"
+      "lecture_03/slide_005.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0059",
-    "predicted_answer": "In the diagram, the center word is represented in red, and the context words are represented in blue.",
+    "question_id": "cs288_q0021",
+    "predicted_answer": "In Vaswani et al., the norm position is \"Post-norm,\" while in Llama models, it is \"Pre-norm.\"",
     "retrieved_slides": [
-      "lecture_03/slide_034.png"
+      "lecture_01/slide_034.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0060",
-    "predicted_answer": "The diagram represents an example of extrinsic evaluation in NLP, where word embeddings for the sentence \"I don't like this movie\" are input into an ML model, which outputs a thumbs-down emoji, indicating a negative sentiment.",
+    "question_id": "cs288_q0022",
+    "predicted_answer": "The graph on the slide represents the weighting function \\( f \\), which gives more importance to more common pairs but is capped at a certain point.",
     "retrieved_slides": [
-      "lecture_03/slide_073.png"
+      "lecture_03/slide_067.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0061",
-    "predicted_answer": "The derivative \\(\\frac{\\partial y}{\\partial \\mathbf{v}_k}\\) differs based on the condition as follows:\n\n- For \\(k = c\\): \\(\\frac{\\partial y}{\\partial \\mathbf{v}_k} = (P(k|t) - 1) \\mathbf{u}_t\\)\n- For \\(k \\neq c\\): \\(\\frac{\\partial y}{\\partial \\mathbf{v}_k} = P(k|t) \\mathbf{u}_t\\)",
+    "question_id": "cs288_q0023",
+    "predicted_answer": "Unigrams reach a higher fraction seen according to the chart.",
     "retrieved_slides": [
-      "lecture_03/slide_049.png"
+      "lecture_01/slide_019.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0062",
-    "predicted_answer": "In the context provided, the words \"digital\" and \"information\" are related as they both appear in the same sentence, indicating a co-occurrence. This suggests that they are likely to be used together or in similar contexts, as shown by their presence in the word-word co-occurrence matrix.",
+    "question_id": "cs288_q0024",
+    "predicted_answer": "BERT-Large had 340 million parameters, according to the graph.",
     "retrieved_slides": [
-      "lecture_03/slide_013.png"
+      "lecture_01/slide_028.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0063",
-    "predicted_answer": "The graph in the inset box suggests that more data improves the quality of the Arabic-English statistical machine translation system.",
+    "question_id": "cs288_q0025",
+    "predicted_answer": "The graph shows an increasing trend in model size over time, with model sizes growing from millions to billions of parameters between 2018 and 2022.",
     "retrieved_slides": [
-      "lecture_01/slide_025.png"
+      "lecture_01/slide_028.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0064",
-    "predicted_answer": "The diagrams depict a transformation of word embeddings from English to Spanish, showing how similar words in different languages can be aligned in a vector space.",
-    "retrieved_slides": [
-      "lecture_03/slide_026.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0065",
-    "predicted_answer": "In the skip-gram diagram, the context words are organized around the center word \"into\" with a window size of 2. The context words are \"problems\" and \"turning\" to the left, and \"banking\" and \"crises\" to the right.",
-    "retrieved_slides": [
-      "lecture_03/slide_057.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0066",
-    "predicted_answer": "The 'convex' graph shows a smooth, U-shaped curve with a single global minimum, making it easier to find the optimal solution. The 'non-convex' graph has multiple local minima and maxima, making it harder to find the global minimum. Despite this complexity, stochastic gradient descent can still be used to optimize the parameters.",
-    "retrieved_slides": [
-      "lecture_03/slide_040.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0067",
-    "predicted_answer": "An image of an industrial plant or refinery is used to represent the industrialization theme.",
-    "retrieved_slides": [
-      "lecture_01/slide_030.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0068",
-    "predicted_answer": "In the diagram, the evaluator (A) interacts with both the computer (C) and the human (B) by receiving written responses from them. The evaluator's task is to determine which entity is the computer and which is the human based on their responses.",
-    "retrieved_slides": [
-      "lecture_01/slide_010.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0069",
-    "predicted_answer": "The formula for \\( J(\\theta) \\) on the slide is:\n\n\\[\nJ(\\theta) = -\\frac{1}{T} \\sum_{t=1}^{T} \\sum_{-m \\leq j \\leq m, j \\neq 0} \\log \\frac{\\exp(\\mathbf{u}_{w_t} \\cdot \\mathbf{v}_{w_{t+j}})}{\\sum_{k \\in V} \\exp(\\mathbf{u}_{w_t} \\cdot \\mathbf{v}_k)}\n\\]",
-    "retrieved_slides": [
-      "lecture_03/slide_047.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0070",
-    "predicted_answer": "The arrows in the diagram indicate the semantic shift of words over time. They show how the meanings of the words \"gay,\" \"broadcast,\" and \"awful\" have changed from one time period to another, based on word embeddings trained on historical text data.",
-    "retrieved_slides": [
-      "lecture_03/slide_027.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0071",
-    "predicted_answer": "The value of \\( x \\) is calculated as:\n\n\\[ x = -\\frac{1}{n} \\log_2 P(w_1, \\ldots, w_n) \\]\n\nwhere \\( P(w_1, \\ldots, w_n) \\) is the probability of the sequence of words.",
-    "retrieved_slides": [
-      "lecture_02/slide_035.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0072",
-    "predicted_answer": "The condition for the weights in the linear interpolation equation is that the sum of the weights \\(\\lambda_i\\) must equal 1, i.e., \\(\\sum_i \\lambda_i = 1\\).",
-    "retrieved_slides": [
-      "lecture_02/slide_045.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0073",
+    "question_id": "cs288_q0026",
     "predicted_answer": "The largest model mentioned on the graph is Megatron-Turing NLG, with a size of 530 billion parameters.",
     "retrieved_slides": [
       "lecture_01/slide_028.png"
@@ -584,18 +208,394 @@
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0074",
-    "predicted_answer": "The formula for the max likelihood estimate for bigrams before smoothing is:\n\n\\[ P(w_i \\mid w_{i-1}) = \\frac{C(w_{i-1}, w_i)}{C(w_{i-1})} \\]",
+    "question_id": "cs288_q0027",
+    "predicted_answer": "According to the chart, training loss decreases as FLOPS increase.",
+    "retrieved_slides": [
+      "lecture_01/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0028",
+    "predicted_answer": "GPT-3 (Zero-Shot) has the lowest test perplexity on the chart, with a perplexity of 20.5.",
+    "retrieved_slides": [
+      "lecture_02/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0029",
+    "predicted_answer": "The example at the bottom of the slide illustrates how context words surrounding the word \"banking\" can represent its meaning. It demonstrates the concept of distributional semantics, where words that occur in similar contexts tend to have similar meanings.",
+    "retrieved_slides": [
+      "lecture_03/slide_054.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0030",
+    "predicted_answer": "The pairs compared in the 'Country-Capital' diagram are:\n\n- Spain - Madrid\n- Italy - Rome\n- Germany - Berlin\n- Turkey - Ankara\n- Russia - Moscow\n- Canada - Ottawa\n- Japan - Tokyo\n- Vietnam - Hanoi\n- China - Beijing",
+    "retrieved_slides": [
+      "lecture_03/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0031",
+    "predicted_answer": "The guest lecture by Gopala Anumanchipalli on \"Speech\" is scheduled last on April 23.",
+    "retrieved_slides": [
+      "lecture_01/slide_050.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0032",
+    "predicted_answer": "Assignment 1 is worth 15%, while the Presentation component of the Final Project is worth 10%. Assignment 1 has a higher percentage by 5%.",
+    "retrieved_slides": [
+      "lecture_01/slide_049.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0033",
+    "predicted_answer": "On the SCWS dataset, SVD-L (42B) scores 58.3, while CBOW* (100B) scores 59.4. CBOW* performs slightly better than SVD-L on this dataset.",
+    "retrieved_slides": [
+      "lecture_03/slide_075.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0034",
+    "predicted_answer": "The word highlighted in pink is \"banking.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_010.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0035",
+    "predicted_answer": "The perplexity values are as follows: Unigram model has a perplexity of 962, bigram model has a perplexity of 170, and trigram model has a perplexity of 109.",
+    "retrieved_slides": [
+      "lecture_02/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0036",
+    "predicted_answer": "The mathematical expression used is:\n\n\\[\n\\arg\\max_{w \\in V} \\cos(e(w), e(w^*))\n\\]\n\nwhere \\( w^* = \\text{\"sweden\"} \\).",
+    "retrieved_slides": [
+      "lecture_03/slide_024.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0037",
+    "predicted_answer": "Some autocomplete suggestions shown are:\n\n- how is the weather in new york\n- how is the weather in new zealand\n- how is the weather in new orleans\n- how is the weather in new jersey\n- how is the weather in new orleans in february\n- how is the weather in new york in march",
+    "retrieved_slides": [
+      "lecture_02/slide_005.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0038",
+    "predicted_answer": "The word \"awful\" shifted from 'solemn' in the 1850s to 'horrible' in the 1900s.",
+    "retrieved_slides": [
+      "lecture_03/slide_027.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0039",
+    "predicted_answer": "The vector representation for the word \"cat\" is:\n\n\\[\n\\begin{pmatrix}\n-0.224 \\\\\n0.130 \\\\\n-0.290 \\\\\n0.276\n\\end{pmatrix}\n\\]",
+    "retrieved_slides": [
+      "lecture_03/slide_029.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0040",
+    "predicted_answer": "The condition for the weights in the linear interpolation equation is that the sum of the weights \\(\\lambda_i\\) must equal 1: \\(\\sum_i \\lambda_i = 1\\).",
+    "retrieved_slides": [
+      "lecture_02/slide_045.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0041",
+    "predicted_answer": "The formula for the max likelihood estimate for bigrams before smoothing is:\n\n\\[\nP(w_i \\mid w_{i-1}) = \\frac{C(w_{i-1}, w_i)}{C(w_{i-1})}\n\\]",
     "retrieved_slides": [
       "lecture_02/slide_041.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0075",
-    "predicted_answer": "The chart compares the fraction of new words or word pairs seen (unigrams and bigrams) as the number of words in a corpus increases.",
+    "question_id": "cs288_q0042",
+    "predicted_answer": "The missing probability mass is calculated using the formula:\n\n\\[\n\\alpha(w_{i-1}) = 1 - \\sum_{w} \\frac{\\text{Count}^*(w_{i-1}, w)}{\\text{Count}(w_{i-1})}\n\\]\n\nFor the example given with \"the,\" it is calculated as:\n\n\\[\n\\alpha(\\text{the}) = 1 - \\frac{43}{48} = \\frac{5}{48}\n\\]",
     "retrieved_slides": [
-      "lecture_01/slide_019.png"
+      "lecture_02/slide_048.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0043",
+    "predicted_answer": "Cosine similarity is mathematically expressed as:\n\n\\[\n\\cos(\\mathbf{u}, \\mathbf{v}) = \\frac{\\mathbf{u} \\cdot \\mathbf{v}}{\\|\\mathbf{u}\\| \\|\\mathbf{v}\\|}\n\\]\n\nThis can be expanded to:\n\n\\[\n\\cos(\\mathbf{u}, \\mathbf{v}) = \\frac{\\sum_{i=1}^{|V|} u_i v_i}{\\sqrt{\\sum_{i=1}^{|V|} u_i^2} \\sqrt{\\sum_{i=1}^{|V|} v_i^2}}\n\\]",
+    "retrieved_slides": [
+      "lecture_03/slide_014.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0044",
+    "predicted_answer": "The probability notation used for a sequence of words is \\( P(w_1, w_2, w_3, \\ldots, w_n) \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_003.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0045",
+    "predicted_answer": "The probability expression for \\( y = 1 \\) given \\( t \\) and \\( c \\) is \\( P(y = 1 \\mid t, c) = \\sigma(\\mathbf{u}_t \\cdot \\mathbf{v}_c) \\).",
+    "retrieved_slides": [
+      "lecture_03/slide_060.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0046",
+    "predicted_answer": "The perplexity of the GPT-3 model as shown in the slide is 20.5.",
+    "retrieved_slides": [
+      "lecture_02/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0047",
+    "predicted_answer": "The formula for cos(u, v) represents the cosine similarity between two count vectors \\( \\mathbf{u} \\) and \\( \\mathbf{v} \\). It measures the cosine of the angle between the two vectors, indicating their similarity.",
+    "retrieved_slides": [
+      "lecture_03/slide_015.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0048",
+    "predicted_answer": "The bigram \"want to\" has the highest probability in the table, with a probability of 0.26.",
+    "retrieved_slides": [
+      "lecture_02/slide_044.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0049",
+    "predicted_answer": "1.75 GB",
+    "retrieved_slides": [
+      "lecture_03/slide_069.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0050",
+    "predicted_answer": "The diagrams depict a transformation of word embeddings from English to Spanish, showing how similar words in different languages can be aligned in a vector space.",
+    "retrieved_slides": [
+      "lecture_03/slide_026.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0051",
+    "predicted_answer": "The purpose of the Google search example on the slide is to illustrate the concept of information retrieval in AI fields.",
+    "retrieved_slides": [
+      "lecture_01/slide_032.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0052",
+    "predicted_answer": "The sample space includes finite pieces of English text such as \"It was the best of times, it was the worst of times,\" \"Hey 'sup,\" \"green sentences, loaded with vitamins,\" \"911 how can I help you,\" and \"Call me Ishmael.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_003.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0053",
+    "predicted_answer": "The pairs generated from the word 'banking' for training data are:\n\n- (banking, turning)\n- (banking, into)\n- (banking, crises)\n- (banking, as)",
+    "retrieved_slides": [
+      "lecture_03/slide_033.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0054",
+    "predicted_answer": "The diagram on the left represents the architecture of a transformer model, showing components like input embedding, positional encoding, masked multi-head attention, feed forward layers, and output probabilities through softmax.",
+    "retrieved_slides": [
+      "lecture_01/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0055",
+    "predicted_answer": "An image of an industrial plant with smokestacks is used to represent the industrialization theme.",
+    "retrieved_slides": [
+      "lecture_01/slide_030.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0056",
+    "predicted_answer": "The vector \\( v_{\\text{cat}} \\) represents the word \"cat\" as a low-dimensional, real-valued vector in the context of word embeddings.",
+    "retrieved_slides": [
+      "lecture_03/slide_022.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0057",
+    "predicted_answer": "The formula for \\( P(k|t) \\) given on the slide is:\n\n\\[\nP(k|t) = \\frac{\\exp(\\mathbf{u}_t \\cdot \\mathbf{v}_k)}{\\sum_{j \\in V} \\exp(\\mathbf{u}_t \\cdot \\mathbf{v}_j)}\n\\]",
+    "retrieved_slides": [
+      "lecture_03/slide_049.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0058",
+    "predicted_answer": "The word most similar to 'simple' according to the output is 'straightforward'.",
+    "retrieved_slides": [
+      "lecture_03/slide_070.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0059",
+    "predicted_answer": "The expression \\( \\frac{\\partial}{\\partial x_i} \\exp\\left(\\sum_{k=1}^{n} w_i x_i\\right) \\) is simplified to \\( \\exp\\left(\\sum_{k=1}^{n} w_i x_i\\right) w_i \\).",
+    "retrieved_slides": [
+      "lecture_03/slide_046.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0060",
+    "predicted_answer": "In the diagram, 'publication' is a more general term connected to 'book,' indicating that a book is a type of publication.",
+    "retrieved_slides": [
+      "lecture_03/slide_006.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0061",
+    "predicted_answer": "The size of the GloVe vectors trained on Twitter data is 1.42 GB.",
+    "retrieved_slides": [
+      "lecture_03/slide_069.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0062",
+    "predicted_answer": "The messaging app example suggests that language models are used for predictive text or autocomplete, offering word suggestions like \"best,\" \"most,\" and \"same\" as the user types.",
+    "retrieved_slides": [
+      "lecture_02/slide_005.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0063",
+    "predicted_answer": "The mathematical expression used to calculate cosine similarity is:\n\n\\[\n\\cos(\\mathbf{u}, \\mathbf{v}) = \\frac{\\mathbf{u} \\cdot \\mathbf{v}}{\\|\\mathbf{u}\\| \\|\\mathbf{v}\\|}\n\\]\n\nThis can also be expressed as:\n\n\\[\n\\cos(\\mathbf{u}, \\mathbf{v}) = \\frac{\\sum_{i=1}^{|V|} u_i v_i}{\\sqrt{\\sum_{i=1}^{|V|} u_i^2} \\sqrt{\\sum_{i=1}^{|V|} v_i^2}}\n\\]",
+    "retrieved_slides": [
+      "lecture_03/slide_074.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0064",
+    "predicted_answer": "The bigram \"i want\" has the highest count in the table, with a count of 828.",
+    "retrieved_slides": [
+      "lecture_02/slide_043.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0065",
+    "predicted_answer": "The value of \u03b1(the) according to the slide is \\( \\frac{5}{48} \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_048.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0066",
+    "predicted_answer": "The arrows in the diagram indicate the semantic shift of words over time. They show how the meanings of the words \"gay,\" \"broadcast,\" and \"awful\" have changed from one time period to another, as represented by their proximity to different related words in each decade.",
+    "retrieved_slides": [
+      "lecture_03/slide_027.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0067",
+    "predicted_answer": "The search query being partially completed is \"how is the weather in new\".",
+    "retrieved_slides": [
+      "lecture_02/slide_005.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0068",
+    "predicted_answer": "The vector representation for the word \"cat\" is:\n\n\\[\n\\begin{pmatrix}\n-0.224 \\\\\n0.130 \\\\\n-0.290 \\\\\n0.276 \\\\\n\\end{pmatrix}\n\\]",
+    "retrieved_slides": [
+      "lecture_03/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0069",
+    "predicted_answer": "The function \\( f \\) is expanded as \\( f = x_1 a_1 + x_2 a_2 + \\ldots + x_n a_n \\).",
+    "retrieved_slides": [
+      "lecture_03/slide_045.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0070",
+    "predicted_answer": "The graph in the inset box suggests that larger language model training data sizes (in words) improve the quality of an Arabic-English statistical machine translation system.",
+    "retrieved_slides": [
+      "lecture_01/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0071",
+    "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is calculated as:\n\n\\[ \\text{Perplexity} = P(w_1, w_2, \\ldots, w_n)^{-1/n} \\]\n\nThis can also be expressed as:\n\n\\[ \\text{ppl}(S) = 2^x \\]\n\nwhere \n\n\\[ x = -\\frac{1}{n} \\log_2 P(w_1, \\ldots, w_n) = -\\frac{1}{n} \\sum_{i=1}^{n} \\log_2 P(w_i | w_1 \\ldots w_{i-1}) \\]\n\nThis expression for \\( x \\) represents the cross-entropy.",
+    "retrieved_slides": [
+      "lecture_02/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0072",
+    "predicted_answer": "The analogy used to illustrate the Male-Female property in word embeddings is \"man - woman \u2248 king - queen.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_055.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0073",
+    "predicted_answer": "The joint probability distribution of words represents how likely a given sequence of words (phrase, sentence, paragraph, or document) is.",
+    "retrieved_slides": [
+      "lecture_02/slide_003.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0074",
+    "predicted_answer": "The count vector value for 'digital' in the 'computer' column is 1670.",
+    "retrieved_slides": [
+      "lecture_03/slide_053.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0075",
+    "predicted_answer": "The GloVe model with a size of 42B achieved the highest score on the RG dataset, with a score of 83.6.",
+    "retrieved_slides": [
+      "lecture_03/slide_075.png"
     ],
     "baseline": "zero_shot_vlm"
   }
