@@ -148,5 +148,6 @@ VLM consistently outperforms text-only across all three courses. The advantage i
 - [x] Baseline evaluation — CS 224N (zero-shot VLM vs text-only)
 - [ ] Scale to full CS 288 (16 lectures)
 - [ ] Scale to full CS 601 and CS 224N
+- [ ] Multimodal RAG baseline (CLIP/ColPali embeddings → vector DB → VLM generation)
 - [ ] Retrieval pipeline (ColPali + vector DB)
 - [ ] Final evaluation and ablations
