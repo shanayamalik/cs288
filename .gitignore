@@ -8,6 +8,12 @@ slideqa/data/text/**/*.txt
 # Copilot prompt (local working doc, not for repo)
 slideqa_copilot_prompt.md
 
+# Project spec PDF (not code)
+Sp2026 CS288 Final Project.pdf
+
+# Original template file (we use slideqa_checkpoint2.tex)
+iclr2026/iclr2026_conference.tex
+
 # Keep annotation JSONs tracked (they're the benchmark output)
 # but ignore draft files that may be large/in-progress
 # slideqa/data/annotations/*_drafts.json
