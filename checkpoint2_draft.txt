@@ -1,0 +1,118 @@
+SLIDEQA — CHECKPOINT 2 REPORT DRAFT
+=====================================
+
+SECTION 1: INTRODUCTION (within 1 page)
+========================================
+
+Lecture slides are the primary medium for delivering instruction in university courses, yet existing question-answering (QA) systems treat documents as flat text, discarding the visual and spatial structure that makes slides effective as a teaching medium. A single lecture slide may combine a mathematical formula, an annotated diagram, a data table, and surrounding explanatory text — all arranged in a deliberate spatial layout. Text extraction via OCR or PDF parsing loses this structure entirely, reducing a richly multimodal document to a sequence of tokens. This is particularly problematic for technical courses such as NLP, where slides routinely contain architecture diagrams, attention visualizations, and equation derivations that cannot be faithfully represented as plain text.
+
+Despite growing interest in document visual question answering (DocVQA), no existing benchmark specifically targets lecture slide QA for university-level technical content. SlideVQA [1] provides a large-scale dataset but focuses on general-domain business presentations, where visual elements are often decorative. ChartQA [3] and InfographicVQA [4] target specific visual modalities in isolation. None of these benchmarks capture the multimodal diversity of lecture slides, where a single question may require jointly reasoning over text, diagrams, tables, and spatial layout.
+
+We introduce SlideQA, a multimodal QA benchmark and evaluation framework for lecture slide question answering. The benchmark is constructed from publicly available lecture slides of three NLP courses at UC Berkeley (CS 288), Stanford (CS 224N), and Johns Hopkins (CS 601.471), spanning different institutions, slide formats, and levels of visual complexity. SlideQA defines five question categories — text-only reasoning, image/diagram interpretation, table comprehension, chart/graph analysis, and layout-aware reasoning — enabling fine-grained evaluation of which visual capabilities current models possess and where they fail.
+
+To establish baseline performance, we implement two systems that bracket the contribution of visual information. A text-only baseline uses BM25 retrieval over extracted slide text followed by GPT-4o for answer generation, receiving no visual input. A zero-shot VLM baseline provides GPT-4o with the ground-truth slide image directly, representing an upper bound given perfect retrieval. Across all three courses, the VLM baseline outperforms text-only by 1.5-3.5x on Token F1, with the largest gains on diagram and table questions — confirming that the benchmark requires genuine visual understanding and that text extraction alone is insufficient.
+
+Our contributions are: (1) SlideQA, a multimodal QA benchmark of 225 curated questions across three institutions and five question categories; (2) an automated pipeline for generating, filtering, and curating slide-based QA pairs from lecture PDFs; (3) baseline evaluations demonstrating that visual understanding provides a substantial advantage over text-only approaches, with the gap varying systematically by slide format and question category. In ongoing work, we are developing a retrieval-augmented multimodal pipeline using ColPali [6] vision-language embeddings to retrieve relevant slides from a vector database, aiming to close the gap between text-only retrieval and oracle slide selection.
+
+
+SECTION 2: RELATED WORK (within 1 page)
+========================================
+
+Our work draws on three areas: document and slide-specific QA benchmarks, visual and structural reasoning, and multimodal retrieval-augmented generation.
+
+Document and Slide-Specific Benchmarks
+--------------------------------------
+
+Document Visual Question Answering (DocVQA) extends text-based QA to documents with complex visual layouts. SlideVQA [1] introduced a large-scale dataset of approximately 52,000 slide images for evaluating multi-image reasoning over presentation decks. However, SlideVQA focuses on general-domain content such as business presentations, where visual elements tend to be decorative rather than informationally dense. Lecture Presentations Multimodal Dataset [2] explored multimodal understanding in educational videos but did not isolate slide-level QA as a standalone task. SlideQA builds on this line of work by targeting university-level NLP lecture slides, which are fundamentally different from business presentations: they contain mathematical formulas, algorithm diagrams, architecture figures, and dense tables where the visual layout carries semantic meaning that text extraction alone cannot recover.
+
+Visual and Structural Reasoning
+--------------------------------
+
+Several benchmarks have been developed for reasoning over specific visual elements within documents. ChartQA [3] targets arithmetic and logical reasoning over data visualizations, while InfographicVQA [4] tests comprehension of complex, non-linear layouts combining text, icons, and graphics. These benchmarks address individual visual modalities in isolation. Lecture slides, however, require reasoning across multiple modalities simultaneously — a single slide may contain a formula referenced by a diagram that is explained by surrounding text. SlideQA addresses this through a five-category evaluation taxonomy (text-only, image/diagram, table, chart/graph, and layout-aware reasoning), enabling fine-grained analysis of which visual capabilities are needed and where current models fail. Our baseline results confirm this design: per-category Token F1 varies from 0.040 (text-only baseline on table questions) to 0.554 (VLM on text_only questions), demonstrating that different question categories test genuinely different capabilities.
+
+Multimodal Retrieval-Augmented Generation
+------------------------------------------
+
+Traditional retrieval-augmented generation (RAG) pipelines rely on OCR or PDF parsing to convert documents to text before retrieval, discarding spatial layout, visual elements, and inter-element relationships. Recent work has proposed bypassing this parsing bottleneck entirely. VisRAG [5] embeds document pages directly as images using vision-language models, preserving visual information throughout the retrieval pipeline. ColPali [6] introduced an efficient approach to document image retrieval based on fine-grained visual features extracted by a vision-language model, achieving strong retrieval performance without any text extraction. SlideQA adopts this paradigm: our planned retrieval pipeline will embed slide images using vision-language representations and store them in a vector database. At inference, the agent retrieves relevant slides based on visual similarity to the query and generates answers conditioned on the retrieved slide images. Our current baselines — which use either text-only retrieval (BM25) or oracle slide selection — establish the performance bounds that this retrieval-augmented approach must fall between.
+
+References
+----------
+[1] Tanaka et al. (2023). SlideVQA: A Dataset for Document Visual Question Answering on Multiple Images. AAAI.
+[2] Lee et al. (2023). Lecture Presentations Multimodal Dataset: Towards Understanding Multimodality in Educational Videos. ICCV.
+[3] Masry et al. (2022). ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning. ACL.
+[4] Mathew et al. (2021). InfographicVQA. WACV.
+[5] Yu et al. (2024). VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents. OpenReview.
+[6] Faysse et al. (2024). ColPali: Efficient Document Retrieval with Vision Language Models. arXiv.
+
+
+SECTION 3: BASELINE SETUP (within 1 page)
+==========================================
+
+3a. Implementation Details
+--------------------------
+
+We implement two baselines to quantify the contribution of visual information to lecture slide question answering. Both baselines use GPT-4o as the underlying language model, accessed via OpenRouter, isolating the effect of visual input as the sole experimental variable.
+
+Text-Only Baseline (BM25 + LLM). This baseline receives no visual input. For each question, we retrieve the top-3 most relevant slides using BM25 over extracted slide text (obtained via PyMuPDF with OCR fallback). The retrieved text passages are concatenated and passed to GPT-4o with the instruction to answer the question using only the provided text. This tests whether textual content alone is sufficient for answering slide-based questions.
+
+Zero-Shot VLM Baseline (Oracle Slide + VLM). This baseline provides the model with the ground-truth slide image for each question (oracle retrieval), bypassing retrieval entirely. The slide image and question are passed directly to GPT-4o in a zero-shot prompt. This serves as an upper bound on answering performance given perfect retrieval, and isolates the VLM's visual comprehension ability.
+
+The gap between these two baselines directly measures how much visual information contributes beyond what text extraction captures.
+
+3b. Dataset Details
+-------------------
+
+SlideQA is constructed from lecture slides of three publicly available NLP courses spanning different institutions and slide formats:
+
+- UC Berkeley CS 288 (Spring 2026): 3 lectures, 183 slides. Modern PDF slides with diagrams, tables, charts, and mathematical notation.
+- JHU CS 601.471: 3 lectures (of 19 total), 61 slides. Older PowerPoint-based slides (converted to PDF via LibreOffice), predominantly text-heavy with fewer visual elements.
+- Stanford CS 224N (2026): 3 lectures (4 PDF files, as Lecture 1 was split across intro and history), 202 slides. Diagram- and formula-heavy slides typical of a modern deep learning course.
+
+For each course, we generate QA drafts by prompting GPT-4o with each slide image and asking it to produce question-answer pairs across five categories: (1) text-only reasoning, (2) image/diagram interpretation, (3) table comprehension, (4) chart/graph analysis, and (5) layout-aware reasoning. The model generates pairs only for categories where the slide has relevant content.
+
+Raw drafts are automatically curated through quality filters that remove trivial questions (e.g., "what is the title?"), answers shorter than 2 characters, answers longer than 10 words (to ensure compatibility with exact-match evaluation), vague questions, and self-referential questions.
+
+From the filtered pool, we select 75 QA pairs per course using a balanced sampling procedure. Each category receives a minimum allocation of 5 questions (when available), preventing dominant categories like image_diagram from crowding out rarer ones like chart_graph or layout_aware. Within and across categories, hard and medium questions are prioritized over easy, and multimodal categories are preferred over text_only. After automatic curation, team members conduct a manual review using a Streamlit-based annotation tool to verify question quality, answer correctness, and category accuracy.
+
+Dataset summary:
+
+  Course       | Slides | Raw Drafts | Curated | text_only | image_diag | table | chart | layout
+  -------------|--------|------------|---------|-----------|------------|-------|-------|-------
+  CS 288       |    183 |        706 |      75 |         7 |         43 |    11 |     7 |      7
+  CS 601       |     61 |        231 |      75 |        53 |         16 |     4 |     0 |      2
+  CS 224N      |    202 |        889 |      75 |         7 |         40 |    13 |     7 |      8
+  -------------|--------|------------|---------|-----------|------------|-------|-------|-------
+  Total        |    446 |      1,826 |     225 |        67 |         99 |    28 |    14 |     17
+
+The category distribution reflects the slide format differences across institutions: CS 601's text-heavy PPT slides yield mostly text_only questions (71%), while CS 288 and CS 224N's modern slides produce predominantly image_diagram questions (57% and 53% respectively).
+
+3c. Evaluation Setup and Baseline Results
+------------------------------------------
+
+We evaluate using two standard metrics from extractive QA:
+
+- Exact Match (EM): Binary score indicating whether the predicted answer exactly matches the gold answer after normalization (lowercasing, removing articles/punctuation/extra whitespace).
+- Token F1: The harmonic mean of token-level precision and recall between predicted and gold answers, following the SQuAD evaluation protocol. This is our primary metric, as it is robust to minor paraphrasing.
+
+All answers are constrained to at most 10 words during curation, making both metrics meaningful for short-form factoid QA.
+
+Results:
+
+  Course       | Text-Only EM | Text-Only F1 | VLM EM | VLM F1 | VLM Advantage (F1)
+  -------------|--------------|--------------|--------|--------|-------------------
+  CS 288       |        0.013 |        0.130 |  0.013 |  0.358 |             2.75x
+  CS 601       |        0.120 |        0.376 |  0.160 |  0.558 |             1.48x
+  CS 224N      |        0.000 |        0.106 |  0.027 |  0.372 |             3.51x
+
+Key findings:
+
+1. The VLM baseline consistently outperforms the text-only baseline across all three courses, confirming that the benchmark requires genuine visual understanding.
+
+2. The VLM advantage varies by slide format: it is largest on CS 224N (3.51x), which has the most diagram-heavy slides (53% image_diagram), and smallest on CS 601 (1.48x), whose older text-heavy PPT slides allow BM25+LLM to recover more information through text extraction alone.
+
+3. Per-category analysis reveals that table and chart_graph questions show the largest VLM improvement, as these categories contain information embedded in visual elements that text extraction cannot capture. On CS 224N, the text-only baseline achieves only 0.040 F1 on table questions vs. 0.485 for the VLM (12x improvement).
+
+4. EM scores are low across both baselines (0-16%) because even short factoid answers are frequently paraphrased. Token F1 is therefore our primary evaluation metric.
+
+These results establish that SlideQA is a meaningful benchmark: text-only systems are insufficient, and visual understanding provides a substantial advantage. The gap motivates our planned retrieval-augmented multimodal pipeline, which aims to combine effective slide retrieval with VLM-based answer generation.
+
