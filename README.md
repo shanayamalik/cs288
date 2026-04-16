@@ -94,7 +94,7 @@ python slideqa/src/generate_qa.py --course cs601 --model openrouter/gpt-4o --lec
 
 ### 3. Curate benchmark subset
 ```bash
-python slideqa/src/curate_qa.py --course cs288 --target 75
+python slideqa/src/curate_qa.py --course cs288 --target 150
 ```
 
 ### 4. (Optional) Review QA pairs in Streamlit
@@ -126,7 +126,7 @@ Both use GPT-4o via OpenRouter. Run with:
 python slideqa/src/run_baselines.py --course cs288
 ```
 
-### Results (3-lecture pilot per course, 75 QA pairs each)
+### Results (3-lecture pilot per course, 75 QA pairs each — re-running on scaled data)
 
 | Course | Text-Only F1 | VLM F1 | VLM Advantage |
 |---|---|---|---|
@@ -139,15 +139,13 @@ VLM consistently outperforms text-only across all three courses. The advantage i
 ## Progress
 
 - [x] Project scaffolding and paper abstract
-- [x] PDF processing pilot — CS 288 (3 lectures, 183 slides)
-- [x] QA draft generation — CS 288 (GPT-4o, 706 pairs → 75 curated)
-- [x] Baseline evaluation — CS 288 (zero-shot VLM vs text-only)
-- [x] JHU CS 601.471 added (19 lectures, 1264 slides; 3-lecture pilot: 231 pairs → 75 curated)
-- [x] Baseline evaluation — CS 601 (zero-shot VLM vs text-only)
-- [x] Stanford CS 224N added (3 lectures, 202 slides; 889 pairs → 75 curated)
-- [x] Baseline evaluation — CS 224N (zero-shot VLM vs text-only)
-- [ ] Scale to full CS 288 (16 lectures)
-- [ ] Scale to full CS 601 and CS 224N
-- [ ] Multimodal RAG baseline (CLIP/ColPali embeddings → vector DB → VLM generation)
-- [ ] Retrieval pipeline (ColPali + vector DB)
+- [x] PDF processing — CS 288 (17 lectures, 1301 slides)
+- [x] PDF processing — CS 601 (19 lectures, 1264 slides)
+- [x] PDF processing — CS 224N (19 lectures, 1207 slides)
+- [x] QA generation — CS 288 (5518 drafts → 150 curated, balanced across lectures + categories)
+- [x] Baseline evaluation — CS 288, CS 601, CS 224N (pilot, 75 Qs each)
+- [ ] QA generation — CS 601 (scale to all 19 lectures, 150 curated)
+- [ ] QA generation — CS 224N (scale to all 19 lectures, 150 curated)
+- [ ] Re-run baselines on scaled 150-question sets
+- [ ] Multimodal RAG baseline (ColPali embeddings → retrieval → VLM generation)
 - [ ] Final evaluation and ablations

@@ -93,14 +93,32 @@ def passes_quality(qa: dict) -> bool:
 # ──────────────────────────────────────────────
 
 def balanced_sample(qa_pool: list[dict], target: int, seed: int = 42) -> list[dict]:
-    """Sample a balanced subset across categories and difficulties.
+    """Sample a balanced subset across categories, lectures, and difficulties.
 
     Strategy:
     - Allocate minimum slots per category to ensure coverage
-    - Within each category, prefer medium/hard over easy
-    - Spread across lectures
+    - Within each category, round-robin across lectures for even spread
+    - Prefer medium/hard over easy
     """
     rng = random.Random(seed)
+    priority = {"hard": 0, "medium": 1, "easy": 2}
+
+    def _round_robin_pick(pool: list[dict], n: int) -> list[dict]:
+        """Pick n items from pool, round-robin across lectures, preferring harder questions."""
+        by_lec = defaultdict(list)
+        for q in pool:
+            by_lec[q["lecture"]].append(q)
+        # Sort each lecture's pool by difficulty (hard first)
+        for lec in by_lec:
+            rng.shuffle(by_lec[lec])
+            by_lec[lec].sort(key=lambda q: priority.get(q.get("difficulty"), 1))
+        picked = []
+        lectures = sorted(by_lec.keys())
+        while len(picked) < n and any(by_lec[l] for l in lectures):
+            for lec in lectures:
+                if by_lec[lec] and len(picked) < n:
+                    picked.append(by_lec[lec].pop(0))
+        return picked
 
     # Group by category
     by_cat = defaultdict(list)
@@ -110,37 +128,27 @@ def balanced_sample(qa_pool: list[dict], target: int, seed: int = 42) -> list[di
     # Minimum allocation: ensure every category with data gets at least 10% of target
     min_per_cat = max(5, target // 10)
 
-    # First pass: allocate minimums
+    # First pass: allocate minimums per category with lecture balance
     selected = []
     leftover = []
     for cat in CATEGORIES:
         pool = by_cat.get(cat, [])
-        # Sort: hard first, then medium, then easy
-        priority = {"hard": 0, "medium": 1, "easy": 2}
-        pool.sort(key=lambda q: priority.get(q["difficulty"], 1))
-        # Shuffle within same difficulty for lecture spread
-        rng.shuffle(pool)
-        pool.sort(key=lambda q: priority.get(q["difficulty"], 1))
-
         take = min(len(pool), min_per_cat)
-        selected.extend(pool[:take])
-        leftover.extend(pool[take:])
+        picked = _round_robin_pick(pool, take)
+        selected.extend(picked)
+        picked_ids = {id(q) for q in picked}
+        leftover.extend(q for q in pool if id(q) not in picked_ids)
 
     # Second pass: fill remaining slots from leftover, preferring multimodal
     remaining = target - len(selected)
     if remaining > 0:
-        priority = {"hard": 0, "medium": 1, "easy": 2}
-        # Prefer non-text_only in leftover
         multimodal_left = [q for q in leftover if q["category"] != "text_only"]
         text_left = [q for q in leftover if q["category"] == "text_only"]
-        rng.shuffle(multimodal_left)
-        multimodal_left.sort(key=lambda q: priority.get(q["difficulty"], 1))
-        rng.shuffle(text_left)
-        text_left.sort(key=lambda q: priority.get(q["difficulty"], 1))
 
         for pool in [multimodal_left, text_left]:
             take = min(len(pool), remaining)
-            selected.extend(pool[:take])
+            picked = _round_robin_pick(pool, take)
+            selected.extend(picked)
             remaining -= take
             if remaining <= 0:
                 break
