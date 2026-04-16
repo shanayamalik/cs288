@@ -1,326 +1,636 @@
 [
   {
     "question_id": "cs224n_q0001",
-    "predicted_answer": "The provided context does not include any information about Lecture 2, so the total time allocated for Lecture 2 cannot be determined from the given text.",
+    "predicted_answer": "The new ideas introduced from EE & ASR during the statistical revolution of the 1990s included probabilistic modeling, corpus statistics, supervised learning, and empirical evaluation.",
     "retrieved_slides": [
-      "lecture_02/slide_002.png",
-      "lecture_02/slide_009.png",
-      "lecture_02/slide_019.png"
+      "lecture_01/slide_035.png",
+      "lecture_01/slide_037.png",
+      "lecture_17/slide_004.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0002",
-    "predicted_answer": "The provided context does not include information about the function \\( f \\) in the equation \\( h = f(Wx + b) \\). Therefore, I cannot provide an answer based on the given lecture slides.",
+    "predicted_answer": "The two types of parses shown in the middle section are \"Decoders\" and \"Encoders.\"",
     "retrieved_slides": [
-      "lecture_04/slide_078.png",
-      "lecture_03/slide_021.png",
-      "lecture_03/slide_014.png"
+      "lecture_08/slide_016.png",
+      "lecture_08/slide_039.png",
+      "lecture_18/slide_014.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0003",
-    "predicted_answer": "The relationship between downstream gradient, upstream gradient, and local gradient is that each node has a local gradient, which is the gradient of its output with respect to its input. The upstream gradient is combined with the local gradient to compute the downstream gradient using the chain rule.",
+    "predicted_answer": "The context does not provide specific information about the total time allocated for Lecture 2.",
     "retrieved_slides": [
-      "lecture_04/slide_066.png",
-      "lecture_04/slide_062.png",
-      "lecture_04/slide_063.png"
+      "lecture_08/slide_016.png",
+      "lecture_17/slide_004.png",
+      "lecture_16/slide_055.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0004",
-    "predicted_answer": "Additional important information about the class can be found in the lecture plan for Lecture 2: Word Vectors.",
+    "predicted_answer": "The provided context does not include information about what \\( h, z \\in \\mathbb{R}^n \\) signifies.",
     "retrieved_slides": [
-      "lecture_04/slide_018.png",
-      "lecture_03/slide_002.png",
-      "lecture_03/slide_044.png"
+      "lecture_04/slide_049.png",
+      "lecture_13/slide_069.png",
+      "lecture_10/slide_048.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0005",
-    "predicted_answer": "The softmax function is considered to have a 'weird name' because, despite its name suggesting a focus on the maximum value, it actually returns a probability distribution by assigning some probability to smaller values as well, not just amplifying the probability of the largest value.",
+    "predicted_answer": "The task type for 'Iroh went into the kitchen to make some tea. Standing next to Iroh, Zuko pondered his destiny. Zuko left the ______.' is [some reasoning \u2013 this is harder].",
     "retrieved_slides": [
-      "lecture_03/slide_017.png",
-      "lecture_03/slide_025.png",
-      "lecture_04/slide_080.png"
+      "lecture_05/slide_008.png",
+      "lecture_08/slide_054.png",
+      "lecture_06/slide_042.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0006",
-    "predicted_answer": "Office hours start Thursday.",
+    "predicted_answer": "The dimensionality of the matrix after the transpose operation in multi-head self-attention is \u211d\u210e\u00d7\ud835\udc5b\u00d7\ud835\udc51/\u210e.",
     "retrieved_slides": [
-      "lecture_03/slide_003.png",
-      "lecture_02/slide_003.png",
-      "lecture_04/slide_003.png"
+      "lecture_06/slide_058.png",
+      "lecture_04/slide_055.png",
+      "lecture_10/slide_061.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0007",
-    "predicted_answer": "According to the slide, NLP systems need not be designed as physical symbol systems.",
+    "predicted_answer": "The provided context does not explicitly mention a challenge posed by the two distinct internal mechanisms of current time in language models.",
     "retrieved_slides": [
-      "lecture_01/slide_040.png",
-      "lecture_04/slide_051.png",
-      "lecture_01/slide_039.png"
+      "lecture_16/slide_055.png",
+      "lecture_14/slide_046.png",
+      "lecture_15/slide_046.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0008",
-    "predicted_answer": "The relationship between \u2202s/\u2202b, \u2202s/\u2202h, \u2202h/\u2202z, and \u2202z/\u2202b involves the chain rule for derivatives. The derivative \u2202s/\u2202b can be expressed in terms of the other derivatives as follows: \u2202s/\u2202b = (\u2202s/\u2202h) * (\u2202h/\u2202z) * (\u2202z/\u2202b). This expression shows how the change in s with respect to b can be decomposed into the product of the intermediate derivatives.",
+    "predicted_answer": "34",
     "retrieved_slides": [
-      "lecture_04/slide_054.png",
-      "lecture_04/slide_050.png",
-      "lecture_02/slide_002.png"
+      "lecture_08/slide_017.png",
+      "lecture_05/slide_008.png",
+      "lecture_08/slide_054.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0009",
-    "predicted_answer": "The provided context does not mention or describe anything labeled 'mBERT'. Therefore, I cannot provide an answer regarding its significance based on the given information.",
+    "predicted_answer": "The total duration of all topics listed in the lecture plan is 120 minutes (10 mins for the course introduction, 65 mins for the history of NLP, 15 mins for the summary of Lecture 5, and 30 mins for Lecture 6).",
     "retrieved_slides": [
-      "lecture_01/slide_028.png",
-      "lecture_04/slide_050.png",
-      "lecture_02/slide_002.png"
+      "lecture_08/slide_016.png",
+      "lecture_02/slide_002.png",
+      "lecture_07/slide_002.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0010",
-    "predicted_answer": "The provided context does not specify which two words are directly connected to 'emperor'.",
+    "predicted_answer": "The context provided does not include any information about 'DPO'. Therefore, I cannot determine what 'DPO' stands for based on the given lecture slides.",
     "retrieved_slides": [
-      "lecture_04/slide_012.png",
-      "lecture_04/slide_013.png",
-      "lecture_03/slide_025.png"
+      "lecture_05/slide_003.png",
+      "lecture_04/slide_050.png",
+      "lecture_17/slide_004.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0011",
-    "predicted_answer": "The formula for cross entropy as given on the slide is the negative log probability of the true class \\( y_i \\): \\(- \\log p(y_i|x_i)\\).",
+    "predicted_answer": "The provided text context does not contain information about the total number of gems in the treasure chest.",
     "retrieved_slides": [
-      "lecture_04/slide_018.png",
-      "lecture_04/slide_055.png",
-      "lecture_04/slide_080.png"
+      "lecture_08/slide_016.png",
+      "lecture_05/slide_039.png",
+      "lecture_18/slide_018.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0012",
-    "predicted_answer": "The context provided does not explicitly define the notation \\((\\partial f/\\partial x)_{ij}\\). However, based on the discussion about derivatives with respect to matrices and the shape convention, it is likely that \\((\\partial f/\\partial x)_{ij}\\) represents an element of the gradient matrix of a function \\(f\\) with respect to a matrix \\(x\\), where the gradient has the same shape as the matrix \\(x\\).",
+    "predicted_answer": "The provided text context does not contain information about the 'Dataset Contributors' section or the number of contributors listed there.",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_049.png",
-      "lecture_01/slide_004.png"
+      "lecture_10/slide_028.png",
+      "lecture_16/slide_038.png",
+      "lecture_17/slide_005.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0013",
-    "predicted_answer": "The provided context does not specify the components of the input vector x.",
+    "predicted_answer": "The provided text context does not specify which universities are associated with the authors of the MMLU-Pro benchmark.",
     "retrieved_slides": [
-      "lecture_03/slide_039.png",
-      "lecture_04/slide_005.png",
-      "lecture_03/slide_036.png"
+      "lecture_01/slide_029.png",
+      "lecture_12/slide_011.png",
+      "lecture_15/slide_060.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0014",
-    "predicted_answer": "The variable \\( h \\) is classified as a small value used in manual gradient checking for numeric gradient approximation. The context does not provide specific information about the classification of \\( z \\).",
+    "predicted_answer": "The components of the 'PPO & GRPO & DAPO' session are PPO: dissecting the complexity, GRPO, and DAPO.",
     "retrieved_slides": [
-      "lecture_04/slide_078.png",
-      "lecture_04/slide_036.png",
-      "lecture_04/slide_024.png"
+      "lecture_14/slide_002.png",
+      "lecture_14/slide_022.png",
+      "lecture_14/slide_036.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0015",
-    "predicted_answer": "The provided context does not specify the exact number of words that have a co-occurrence count of 0 with 'enjoy'.",
+    "predicted_answer": "The provided context does not include specific details about the key questions addressed in 'The nature of reasoning' section.",
     "retrieved_slides": [
-      "lecture_03/slide_032.png",
-      "lecture_03/slide_030.png",
-      "lecture_03/slide_007.png"
+      "lecture_13/slide_015.png",
+      "lecture_02/slide_002.png",
+      "lecture_14/slide_058.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0016",
-    "predicted_answer": "The provided text context does not contain information about correlation scores or the WS353 category. Therefore, I cannot determine which model has the highest correlation score in the WS353 category based on the given context.",
+    "predicted_answer": "The context provided does not specify the number of main components in the noisy channel model.",
     "retrieved_slides": [
-      "lecture_03/slide_011.png",
-      "lecture_04/slide_035.png",
-      "lecture_01/slide_004.png"
+      "lecture_01/slide_034.png",
+      "lecture_10/slide_028.png",
+      "lecture_17/slide_007.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0017",
-    "predicted_answer": "The provided context does not contain any information about the MUC7 column or any model scores related to it. Therefore, I cannot answer which model has the highest score in the MUC7 column based on the given text.",
+    "predicted_answer": "The provided context does not contain any information about 'mBERT' or its significance.",
     "retrieved_slides": [
-      "lecture_03/slide_011.png",
-      "lecture_04/slide_035.png",
-      "lecture_01/slide_004.png"
+      "lecture_17/slide_064.png",
+      "lecture_08/slide_052.png",
+      "lecture_13/slide_015.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0018",
-    "predicted_answer": "The provided text context does not contain information about correlation scores or the RW category. Therefore, I cannot determine which model has the lowest correlation score in the RW category based on the given context.",
+    "predicted_answer": "The words considered outside context words in the window of size 2 are \"crises,\" \"banking,\" \"turning,\" and \"problems.\"",
     "retrieved_slides": [
-      "lecture_03/slide_011.png",
-      "lecture_04/slide_035.png",
-      "lecture_01/slide_004.png"
+      "lecture_03/slide_012.png",
+      "lecture_03/slide_013.png",
+      "lecture_03/slide_016.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0019",
-    "predicted_answer": "The provided context does not specify which word has a co-occurrence count of 1 with 'deep'.",
+    "predicted_answer": "The provided context does not contain any information about words directly connected to 'emperor'.",
     "retrieved_slides": [
-      "lecture_03/slide_032.png",
-      "lecture_01/slide_029.png",
-      "lecture_03/slide_011.png"
+      "lecture_11/slide_058.png",
+      "lecture_03/slide_025.png",
+      "lecture_08/slide_007.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0020",
-    "predicted_answer": "The provided context does not contain information about ACE scores or models with ACE scores. Therefore, I cannot determine which two models have the same ACE score based on the given text.",
+    "predicted_answer": "The lecture slides indicate that by 2018, everyone had adopted Neural Machine Translation (NMT), implying widespread adoption across companies, but no specific companies are named.",
     "retrieved_slides": [
-      "lecture_01/slide_029.png",
-      "lecture_03/slide_032.png",
-      "lecture_04/slide_055.png"
+      "lecture_05/slide_052.png",
+      "lecture_06/slide_015.png",
+      "lecture_01/slide_049.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0021",
-    "predicted_answer": "The provided text context does not contain information about model and size combinations or correlation scores in the MC dataset. Therefore, I cannot answer the question based on the given context.",
+    "predicted_answer": "The expression 'output_\u2113 = softmax(XQ_\u2113K_\u2113^TX^T) * XV_\u2113' represents a computation in a neural network layer, likely related to attention mechanisms. It involves calculating the attention scores using the softmax function applied to the product of matrices X, Q_\u2113, K_\u2113, and X^T, followed by element-wise multiplication with XV_\u2113 to produce the final output for layer \u2113.",
     "retrieved_slides": [
-      "lecture_03/slide_011.png",
-      "lecture_04/slide_035.png",
-      "lecture_01/slide_029.png"
+      "lecture_04/slide_071.png",
+      "lecture_04/slide_065.png",
+      "lecture_04/slide_076.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0022",
-    "predicted_answer": "The provided text context does not contain any information about the relationship between FLOPS and training loss.",
+    "predicted_answer": "The provided context does not include information about the 'Top Ten LDC Corpora' section, so I cannot determine which corpus is listed first.",
     "retrieved_slides": [
-      "lecture_04/slide_054.png",
-      "lecture_04/slide_035.png",
-      "lecture_03/slide_018.png"
+      "lecture_13/slide_019.png",
+      "lecture_12/slide_020.png",
+      "lecture_01/slide_052.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0023",
-    "predicted_answer": "The provided context does not include specific information about how the words 'man', 'woman', and 'king' are represented in a graph. The slides discuss general concepts of word representation and meaning, such as using vectors in Word2vec, but do not provide details on these specific words.",
+    "predicted_answer": "The provided context does not contain information about the composition of the pile or any categories related to it. Therefore, I cannot determine which category occupies the largest space in the composition of the pile based on the given text.",
     "retrieved_slides": [
-      "lecture_03/slide_034.png",
-      "lecture_03/slide_011.png",
-      "lecture_03/slide_004.png"
+      "lecture_19/slide_040.png",
+      "lecture_14/slide_045.png",
+      "lecture_15/slide_045.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0024",
-    "predicted_answer": "Neural MT shows the most improvement from 2013 to 2016.",
+    "predicted_answer": "The context provided does not include any information about an equation shown at the bottom of the slide.",
     "retrieved_slides": [
-      "lecture_01/slide_047.png",
-      "lecture_04/slide_076.png",
-      "lecture_01/slide_009.png"
+      "lecture_02/slide_019.png",
+      "lecture_02/slide_009.png",
+      "lecture_17/slide_008.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0025",
-    "predicted_answer": "More than 40% of S&P 500 companies cited 'AI' on earnings calls for the fifth straight quarter.",
+    "predicted_answer": "The mathematical expression \"\ud835\udc96\ud835\udc47\" on the slide represents the transpose of a vector or matrix denoted by \ud835\udc96.",
     "retrieved_slides": [
-      "lecture_01/slide_049.png",
-      "lecture_02/slide_002.png",
-      "lecture_03/slide_036.png"
+      "lecture_04/slide_041.png",
+      "lecture_04/slide_042.png",
+      "lecture_04/slide_043.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0026",
-    "predicted_answer": "The approximate BLEU score for Phrase-based SMT in 2013 is 20.3.",
+    "predicted_answer": "The provided context does not contain information related to calculating the number of keystrokes needed to type the numbers from 1 to 500.",
     "retrieved_slides": [
-      "lecture_01/slide_047.png",
-      "lecture_04/slide_035.png",
-      "lecture_04/slide_078.png"
+      "lecture_04/slide_076.png",
+      "lecture_16/slide_038.png",
+      "lecture_17/slide_066.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0027",
-    "predicted_answer": "The provided context does not contain information about a color gradient in a chart, so I cannot answer what the color gradient represents.",
+    "predicted_answer": "The slide does not provide a specific mathematical expression for Shannon entropy. It describes Shannon entropy as the expected surprise or average information content of a random variable.",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_01/slide_004.png",
-      "lecture_04/slide_054.png"
+      "lecture_12/slide_043.png",
+      "lecture_13/slide_043.png",
+      "lecture_13/slide_044.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0028",
-    "predicted_answer": "The provided context does not include any information about a chart or its y-axis. Therefore, I cannot determine what the y-axis represents based on the given text.",
+    "predicted_answer": "The diagram on the slide represents the attention mechanism, which provides a solution to the bottleneck problem by allowing the decoder to focus on a particular part of the source sequence through a direct connection to the encoder.",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_01/slide_039.png",
-      "lecture_01/slide_004.png"
+      "lecture_06/slide_022.png",
+      "lecture_04/slide_041.png",
+      "lecture_04/slide_042.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0029",
-    "predicted_answer": "The provided text context does not contain information about specific pairs of words having a vertical relationship in a visualization.",
+    "predicted_answer": "The provided context does not include the specific mathematical expression for GRPO's sample-level loss.",
     "retrieved_slides": [
-      "lecture_03/slide_011.png",
-      "lecture_01/slide_029.png",
-      "lecture_03/slide_026.png"
+      "lecture_04/slide_076.png",
+      "lecture_01/slide_034.png",
+      "lecture_15/slide_049.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0030",
-    "predicted_answer": "The provided text context does not mention a 'Bottleneck' or provide a diagram. Therefore, I cannot answer the question based on the given information.",
+    "predicted_answer": "In the beam search algorithm, \\( B_t \\) represents the set of the top-k most probable partial sequences (hypotheses) at time step \\( t \\).",
     "retrieved_slides": [
-      "lecture_02/slide_002.png",
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_054.png"
+      "lecture_14/slide_007.png",
+      "lecture_15/slide_007.png",
+      "lecture_15/slide_006.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0031",
-    "predicted_answer": "The section \"The history of NLP: How we got here\" is allocated the most time, with 65 minutes.",
+    "predicted_answer": "The approach by Saon et al. (2017) shows the greatest improvement in WER on the RT03S FSH dataset, with a reduction to 8.0, which is a 71% improvement.",
     "retrieved_slides": [
-      "lecture_01/slide_029.png",
-      "lecture_02/slide_002.png",
-      "lecture_01/slide_017.png"
+      "lecture_01/slide_042.png",
+      "lecture_19/slide_060.png",
+      "lecture_19/slide_059.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0032",
-    "predicted_answer": "The provided context does not include specific information about the positioning of the words 'man' and 'woman' relative to each other in word vector space.",
+    "predicted_answer": "The provided context does not specify the exact number of words that have a co-occurrence count of 0 with 'enjoy'.",
     "retrieved_slides": [
-      "lecture_04/slide_076.png",
-      "lecture_02/slide_002.png",
-      "lecture_03/slide_010.png"
+      "lecture_03/slide_032.png",
+      "lecture_03/slide_007.png",
+      "lecture_03/slide_030.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs224n_q0033",
+    "predicted_answer": "The provided context does not contain information about the correlation score of SVD-L changing from 6B to 42B for the WS353 dataset.",
+    "retrieved_slides": [
+      "lecture_13/slide_076.png",
+      "lecture_12/slide_076.png",
+      "lecture_14/slide_043.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0034",
+    "predicted_answer": "The context provided does not include a specific table with word probabilities, so I cannot determine which word has the lowest probability.",
+    "retrieved_slides": [
+      "lecture_03/slide_011.png",
+      "lecture_05/slide_039.png",
+      "lecture_05/slide_003.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0035",
+    "predicted_answer": "The context provided does not contain specific information about the training cost (FLOPs) for the EN-DE dataset or any comparison of models based on this criterion.",
+    "retrieved_slides": [
+      "lecture_08/slide_052.png",
+      "lecture_15/slide_060.png",
+      "lecture_14/slide_060.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0036",
+    "predicted_answer": "I'm sorry, but the provided context does not contain information about the specific unit test that failed in the Post PR stage in the SWE-bench dataset.",
+    "retrieved_slides": [
+      "lecture_17/slide_061.png",
+      "lecture_11/slide_040.png",
+      "lecture_12/slide_071.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0037",
+    "predicted_answer": "The provided context does not contain information about any method's score on the RTE dataset.",
+    "retrieved_slides": [
+      "lecture_12/slide_045.png",
+      "lecture_16/slide_034.png",
+      "lecture_17/slide_023.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0038",
+    "predicted_answer": "Flan-T5 has the highest performance gain according to the BIG-bench + MMLU.",
+    "retrieved_slides": [
+      "lecture_09/slide_018.png",
+      "lecture_19/slide_029.png",
+      "lecture_05/slide_039.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0039",
+    "predicted_answer": "The context does not provide specific ROUGE R-2 scores for different summarization methods, so it is not possible to determine which method has the lowest score based on the provided information.",
+    "retrieved_slides": [
+      "lecture_10/slide_016.png",
+      "lecture_05/slide_052.png",
+      "lecture_06/slide_015.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0040",
+    "predicted_answer": "The provided text context does not contain information about a model with the highest ROUGE-L score when enhanced with MemGPT.",
+    "retrieved_slides": [
+      "lecture_12/slide_045.png",
+      "lecture_09/slide_033.png",
+      "lecture_01/slide_004.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0041",
+    "predicted_answer": "The provided context does not contain information about which architecture has the highest score for the MATH task.",
+    "retrieved_slides": [
+      "lecture_12/slide_045.png",
+      "lecture_04/slide_020.png",
+      "lecture_14/slide_043.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0042",
+    "predicted_answer": "GLUE and MMLU.",
+    "retrieved_slides": [
+      "lecture_13/slide_030.png",
+      "lecture_12/slide_031.png",
+      "lecture_13/slide_031.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0043",
+    "predicted_answer": "The provided context does not contain information about the average accuracy of the 'instructive' category templates.",
+    "retrieved_slides": [
+      "lecture_06/slide_023.png",
+      "lecture_06/slide_024.png",
+      "lecture_12/slide_043.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0044",
+    "predicted_answer": "The provided text context does not contain information regarding the difference in accuracy between the templates 'Let's think step by step' and 'Let's think'. Therefore, I cannot provide an answer based on the given context.",
+    "retrieved_slides": [
+      "lecture_11/slide_035.png",
+      "lecture_06/slide_064.png",
+      "lecture_07/slide_004.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0045",
+    "predicted_answer": "Books (Project Gutenberg) have the longest typical document length, with 50,000 \u2013 100,000+ tokens.",
+    "retrieved_slides": [
+      "lecture_16/slide_038.png",
+      "lecture_04/slide_013.png",
+      "lecture_01/slide_018.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0046",
+    "predicted_answer": "The provided context does not specify the exact number of S&P 500 earnings calls that cited 'AI' in Q2 2023. It only mentions that more than 40% of S&P 500 companies have cited AI on earnings calls for the fifth straight quarter.",
+    "retrieved_slides": [
+      "lecture_01/slide_049.png",
+      "lecture_11/slide_056.png",
+      "lecture_16/slide_038.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0047",
+    "predicted_answer": "The context provided does not include information about a color gradient in a chart, so I cannot determine what the color gradient represents based on the given text.",
+    "retrieved_slides": [
+      "lecture_04/slide_050.png",
+      "lecture_05/slide_003.png",
+      "lecture_05/slide_045.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0048",
+    "predicted_answer": "The provided context does not include specific information about how the words 'man', 'woman', and 'king' are represented in the graph.",
+    "retrieved_slides": [
+      "lecture_05/slide_019.png",
+      "lecture_03/slide_011.png",
+      "lecture_17/slide_005.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0049",
+    "predicted_answer": "The provided context does not specify which word has the highest attention weight.",
+    "retrieved_slides": [
+      "lecture_03/slide_011.png",
+      "lecture_06/slide_037.png",
+      "lecture_01/slide_029.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0050",
+    "predicted_answer": "The provided context does not include any information about the relationship between compute and validation loss or any chart related to it.",
+    "retrieved_slides": [
+      "lecture_07/slide_046.png",
+      "lecture_05/slide_026.png",
+      "lecture_14/slide_038.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0051",
+    "predicted_answer": "The context provided does not include information about a graph or specify which model achieved the highest average percentage.",
+    "retrieved_slides": [
+      "lecture_05/slide_039.png",
+      "lecture_12/slide_012.png",
+      "lecture_13/slide_011.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0052",
+    "predicted_answer": "The provided context does not include specific information about the 'random insertion' task or the parameter size at which it achieves approximately 60% accuracy.",
+    "retrieved_slides": [
+      "lecture_10/slide_058.png",
+      "lecture_05/slide_003.png",
+      "lecture_17/slide_017.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0053",
+    "predicted_answer": "The provided context does not contain information about a 0-shot graph or any specific model related to hallucination in such a graph. Therefore, I cannot determine which model has the highest hallucination in the 0-shot graph based on the given text.",
+    "retrieved_slides": [
+      "lecture_16/slide_034.png",
+      "lecture_17/slide_023.png",
+      "lecture_03/slide_011.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0054",
+    "predicted_answer": "The provided context does not contain information comparing the performance between GPT-3 and UnifiedQA. Therefore, it is not possible to determine which subject shows the least difference in performance between these two models based on the given text.",
+    "retrieved_slides": [
+      "lecture_10/slide_051.png",
+      "lecture_12/slide_045.png",
+      "lecture_10/slide_054.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0055",
+    "predicted_answer": "The provided context does not contain information about the performance comparison between GPT-3 and UnifiedQA. Therefore, I cannot determine which subject shows the least performance difference between them based on the given text.",
+    "retrieved_slides": [
+      "lecture_10/slide_051.png",
+      "lecture_10/slide_054.png",
+      "lecture_12/slide_045.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0056",
+    "predicted_answer": "The provided text context does not contain information about the closing stock price of Nvidia on January 27, 2025.",
+    "retrieved_slides": [
+      "lecture_08/slide_016.png",
+      "lecture_19/slide_001.png",
+      "lecture_05/slide_017.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0057",
+    "predicted_answer": "The provided text context does not contain information about the looping fraction for the Phi-4 model.",
+    "retrieved_slides": [
+      "lecture_17/slide_007.png",
+      "lecture_18/slide_010.png",
+      "lecture_10/slide_041.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0058",
+    "predicted_answer": "The context provided does not include information about Figure 2 or any specific distributions related to it. Therefore, I cannot determine which distribution is closest to the target distribution in Figure 2 based on the given text.",
+    "retrieved_slides": [
+      "lecture_16/slide_011.png",
+      "lecture_14/slide_015.png",
+      "lecture_15/slide_015.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0059",
+    "predicted_answer": "The provided context does not include any information about a chart or the average number of tokens for different languages. Therefore, I cannot answer the question based on the given text.",
+    "retrieved_slides": [
+      "lecture_05/slide_039.png",
+      "lecture_17/slide_023.png",
+      "lecture_15/slide_060.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0060",
+    "predicted_answer": "The provided context does not contain any information about 'Creative thinking' or 'Technological literacy,' nor does it provide any data to calculate a percentage difference between them.",
+    "retrieved_slides": [
+      "lecture_06/slide_064.png",
+      "lecture_07/slide_004.png",
+      "lecture_11/slide_026.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0061",
+    "predicted_answer": "The provided context does not mention a 'Bottleneck' or provide a diagram, so I cannot determine the purpose of the 'Bottleneck' based on the given information.",
+    "retrieved_slides": [
+      "lecture_14/slide_038.png",
+      "lecture_15/slide_038.png",
+      "lecture_02/slide_002.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0062",
+    "predicted_answer": "The provided text context does not mention any instructors. Therefore, there are no instructors listed on the slide.",
+    "retrieved_slides": [
+      "lecture_10/slide_028.png",
+      "lecture_17/slide_005.png",
+      "lecture_05/slide_025.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0063",
+    "predicted_answer": "The pairs of words that have a vertical relationship in the visualization are \"hat\" and \"learn,\" as they are common words that map directly to themselves in the subword vocabulary.",
+    "retrieved_slides": [
+      "lecture_03/slide_011.png",
+      "lecture_01/slide_029.png",
+      "lecture_08/slide_007.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0064",
     "predicted_answer": "The purpose of using the Jacobian form is to make the chain rule easy for computing derivatives, while the shape convention is used to make implementing stochastic gradient descent (SGD) easy.",
     "retrieved_slides": [
       "lecture_04/slide_054.png",
@@ -330,157 +640,337 @@
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0034",
-    "predicted_answer": "The provided context does not include any information about a diagram with an arrow pointing from z to the function f. Therefore, I cannot answer the question based on the given lecture slides.",
+    "question_id": "cs224n_q0065",
+    "predicted_answer": "The use of Recurrent Neural Networks (RNNs) in language modeling is motivated by their ability to lead to most of modern NLP, making it the most important concept in the class.",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_01/slide_039.png",
-      "lecture_01/slide_044.png"
+      "lecture_05/slide_059.png",
+      "lecture_05/slide_002.png",
+      "lecture_05/slide_001.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0035",
-    "predicted_answer": "The context provided does not include any information about an image below the name 'James Allen'. Therefore, I cannot answer the question based on the given text.",
+    "question_id": "cs224n_q0066",
+    "predicted_answer": "According to the diagram on the slide, the words \"We looked at the Milky Way\" can be looked at.",
     "retrieved_slides": [
-      "lecture_04/slide_056.png",
-      "lecture_01/slide_050.png",
-      "lecture_03/slide_017.png"
+      "lecture_17/slide_007.png",
+      "lecture_17/slide_005.png",
+      "lecture_17/slide_075.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0036",
-    "predicted_answer": "The context does not provide a specific formula for vector differences in the GloVe model. It mentions encoding meaning components in vector differences but does not detail the formula.",
+    "question_id": "cs224n_q0067",
+    "predicted_answer": "The sections of the lecture plan are all the same length.",
     "retrieved_slides": [
-      "lecture_03/slide_037.png",
+      "lecture_18/slide_002.png",
+      "lecture_18/slide_021.png",
+      "lecture_18/slide_033.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0068",
+    "predicted_answer": "The names highlighted in red on the right side of the slide are \"Dell\u2019Acqua et al. 2023\" and \"Mollick 2023.\"",
+    "retrieved_slides": [
+      "lecture_18/slide_027.png",
+      "lecture_01/slide_055.png",
+      "lecture_01/slide_028.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0069",
+    "predicted_answer": "The context provided does not include information about a 'Supervised (287K)' method or how it is labeled in a table.",
+    "retrieved_slides": [
+      "lecture_17/slide_064.png",
+      "lecture_08/slide_004.png",
+      "lecture_08/slide_043.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0070",
+    "predicted_answer": "The provided context does not contain any information about BERTB(0) or BERTR(q, 0), so I cannot determine the relationship between them based on the lecture slides.",
+    "retrieved_slides": [
       "lecture_04/slide_054.png",
+      "lecture_06/slide_024.png",
+      "lecture_11/slide_026.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0071",
+    "predicted_answer": "The context provided does not contain any information about a score associated with the response 'Heck yes!'.",
+    "retrieved_slides": [
+      "lecture_12/slide_045.png",
+      "lecture_15/slide_006.png",
+      "lecture_15/slide_039.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0072",
+    "predicted_answer": "The context provided does not specify components involved in the Collection Phase.",
+    "retrieved_slides": [
+      "lecture_19/slide_006.png",
+      "lecture_19/slide_010.png",
       "lecture_03/slide_036.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0037",
-    "predicted_answer": "The expression for the partial derivative of \\( h \\) with respect to \\( z \\) is \\( \\delta \\).",
+    "question_id": "cs224n_q0073",
+    "predicted_answer": "The context provided does not mention any category that includes examples marked with visual patterns.",
     "retrieved_slides": [
-      "lecture_04/slide_051.png",
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_049.png"
+      "lecture_11/slide_045.png",
+      "lecture_12/slide_010.png",
+      "lecture_13/slide_009.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0038",
-    "predicted_answer": "The right image on the slide shows the shape convention for the gradient, indicating that the shape of the gradient is the same as the shape of the parameters, specifically an n by m matrix.",
+    "question_id": "cs224n_q0074",
+    "predicted_answer": "exams, minds, laptops, books",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_041.png",
-      "lecture_04/slide_042.png"
+      "lecture_05/slide_003.png",
+      "lecture_17/slide_022.png",
+      "lecture_17/slide_005.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0039",
-    "predicted_answer": "The outside context words in the window of size 2 are \"crises,\" \"banking,\" \"turning,\" and \"problems.\"",
+    "question_id": "cs224n_q0075",
+    "predicted_answer": "The provided context does not contain specific information about the speedups of the Suffix (linear) baseline across the three benchmarks.",
     "retrieved_slides": [
-      "lecture_03/slide_012.png",
-      "lecture_03/slide_013.png",
-      "lecture_03/slide_016.png"
+      "lecture_10/slide_051.png",
+      "lecture_08/slide_039.png",
+      "lecture_08/slide_024.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0040",
-    "predicted_answer": "The provided context does not contain information about specific word pairs or their human mean similarity scores. Therefore, I cannot determine which word pair has the highest human mean similarity score based on the given text.",
+    "question_id": "cs224n_q0076",
+    "predicted_answer": "I'm sorry, but the provided text context does not contain any information about an image or the name 'James Allen'.",
+    "retrieved_slides": [
+      "lecture_04/slide_056.png",
+      "lecture_13/slide_018.png",
+      "lecture_12/slide_019.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0077",
+    "predicted_answer": "The context provided does not include any information about an interaction shown on the right side of an image. Therefore, I cannot answer the question based on the given text.",
+    "retrieved_slides": [
+      "lecture_08/slide_052.png",
+      "lecture_18/slide_027.png",
+      "lecture_08/slide_016.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0078",
+    "predicted_answer": "The provided context does not contain information about the correlation scores in the WS353 category or any specific model related to it.",
+    "retrieved_slides": [
+      "lecture_12/slide_045.png",
+      "lecture_09/slide_033.png",
+      "lecture_14/slide_043.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0079",
+    "predicted_answer": "The relationship between \u2202s/\u2202b, \u2202s/\u2202h, \u2202h/\u2202z, and \u2202z/\u2202b involves the chain rule for derivatives. The derivatives are related through the chain rule, which allows the computation of the derivative of a composite function. Specifically, \u2202s/\u2202b can be expressed in terms of the other derivatives as follows: \u2202s/\u2202b = (\u2202s/\u2202h) * (\u2202h/\u2202z) * (\u2202z/\u2202b). This relationship highlights how changes in b affect s through intermediate variables h and z.",
+    "retrieved_slides": [
+      "lecture_11/slide_026.png",
+      "lecture_04/slide_054.png",
+      "lecture_19/slide_064.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0080",
+    "predicted_answer": "The provided context does not include a specific table with word probabilities, so it is not possible to determine which word has the highest probability.",
     "retrieved_slides": [
       "lecture_03/slide_011.png",
-      "lecture_03/slide_026.png",
-      "lecture_01/slide_029.png"
+      "lecture_05/slide_003.png",
+      "lecture_14/slide_015.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0041",
-    "predicted_answer": "The diagram at the bottom of the slide likely represents the process of computing derivatives with respect to a matrix, specifically illustrating the use of Jacobians and the shape convention to determine the appropriate shape of the gradient. It emphasizes the choice between using the Jacobian form and reshaping at the end or consistently following the shape convention throughout.",
+    "question_id": "cs224n_q0081",
+    "predicted_answer": "The gradient of J with respect to h(1) is expressed using the chain rule, which involves the local gradient of each node and the upstream gradient.",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_055.png",
-      "lecture_04/slide_041.png"
+      "lecture_04/slide_035.png",
+      "lecture_04/slide_062.png",
+      "lecture_04/slide_063.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0042",
-    "predicted_answer": "The probability notation used for the word 'banking' is P(w), where w represents the word 'banking'.",
+    "question_id": "cs224n_q0082",
+    "predicted_answer": "The slide does not provide information about 'Task Category' or list any task categories.",
     "retrieved_slides": [
-      "lecture_03/slide_027.png",
+      "lecture_14/slide_045.png",
+      "lecture_15/slide_045.png",
+      "lecture_14/slide_044.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0083",
+    "predicted_answer": "The pretrained encoder predicts the word for the masked token using the \"Masked LM\" objective, where it learns to predict the original word that was replaced by the [MASK] token.",
+    "retrieved_slides": [
+      "lecture_08/slide_027.png",
+      "lecture_08/slide_026.png",
+      "lecture_08/slide_010.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0084",
+    "predicted_answer": "The input sequence for the pretraining step shown in the diagram is \\( w_1, \\ldots, w_T \\).",
+    "retrieved_slides": [
+      "lecture_08/slide_036.png",
+      "lecture_08/slide_043.png",
+      "lecture_08/slide_035.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0085",
+    "predicted_answer": "The provided text context does not include any information about the adapter fusion process or its components.",
+    "retrieved_slides": [
+      "lecture_19/slide_011.png",
+      "lecture_19/slide_037.png",
+      "lecture_19/slide_050.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0086",
+    "predicted_answer": "The sequence of actions taken to find out what other device can control the Front Row software is as follows:\n\n1. Thought 1: I need to search Apple Remote and find the program it was originally designed to interact with.\n2. Act 1: Search[Apple Remote]\n3. Thought 2: Apple Remote was originally designed to control the Front Row media center program. I need to search Front Row next and find what other device can control it.\n4. Act 2: Search[Front Row]\n5. Thought 3: Front Row is not found. I need to search Front Row (software).\n6. Act 3: Search[Front Row (software)]\n7. Thought 4: Front Row (software) is controlled by an Apple Remote or the keyboard function keys.\n8. Act 4: Finish[keyboard function keys]",
+    "retrieved_slides": [
+      "lecture_11/slide_036.png",
+      "lecture_11/slide_035.png",
+      "lecture_08/slide_009.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0087",
+    "predicted_answer": "The provided context does not specify which of the four MNLI models had the lowest accuracy in the 'Non-entailed' condition when syntactic heuristics fail.",
+    "retrieved_slides": [
+      "lecture_12/slide_023.png",
+      "lecture_13/slide_022.png",
+      "lecture_12/slide_022.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0088",
+    "predicted_answer": "The model \"Taylor\" and \"Swift\" appear in the same position across all sections in the context of RoPE: Rotary Position Embedding.",
+    "retrieved_slides": [
+      "lecture_16/slide_047.png",
+      "lecture_11/slide_056.png",
+      "lecture_19/slide_029.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0089",
+    "predicted_answer": "The provided context does not include any information about DAPO or its token-level loss.",
+    "retrieved_slides": [
+      "lecture_14/slide_046.png",
+      "lecture_15/slide_046.png",
+      "lecture_14/slide_044.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0090",
+    "predicted_answer": "The provided context does not contain information about rearranging an equation or isolating an inner square root term. Therefore, I cannot provide an answer based on the given lecture slides.",
+    "retrieved_slides": [
+      "lecture_14/slide_027.png",
+      "lecture_15/slide_027.png",
+      "lecture_04/slide_054.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0091",
+    "predicted_answer": "The SOTA 1.5B Reasoning Model shows the greatest improvement in performance across all tasks.",
+    "retrieved_slides": [
+      "lecture_19/slide_029.png",
+      "lecture_19/slide_060.png",
+      "lecture_19/slide_059.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0092",
+    "predicted_answer": "I'm sorry, but the provided text context does not contain any information about a map or regions represented by colors. Therefore, I cannot answer the question based on the given context.",
+    "retrieved_slides": [
       "lecture_03/slide_011.png",
-      "lecture_04/slide_018.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs224n_q0043",
-    "predicted_answer": "The derivative of \\( s \\) with respect to \\( b \\) using the chain rule is expressed as the product of the upstream gradient \\( \\delta \\) and the local input signal \\( x \\).",
-    "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_051.png",
+      "lecture_01/slide_029.png",
       "lecture_03/slide_004.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0044",
-    "predicted_answer": "The provided text context does not specify the number of vectors used in the encoder section.",
+    "question_id": "cs224n_q0093",
+    "predicted_answer": "The provided context does not contain information about a heatmap or model pair similarity scores. Therefore, I cannot determine which model pair has the highest similarity score.",
     "retrieved_slides": [
-      "lecture_03/slide_032.png",
-      "lecture_03/slide_010.png",
-      "lecture_02/slide_009.png"
+      "lecture_12/slide_045.png",
+      "lecture_17/slide_023.png",
+      "lecture_05/slide_039.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0045",
-    "predicted_answer": "The context provided does not specify the operation performed to obtain 'z' in the diagram.",
+    "question_id": "cs224n_q0094",
+    "predicted_answer": "The provided context does not include any information about a chart or specific training methods related to overall average accuracy. Therefore, I cannot determine which training method shows the highest overall average accuracy based on the given slides.",
     "retrieved_slides": [
-      "lecture_04/slide_051.png",
+      "lecture_05/slide_026.png",
+      "lecture_06/slide_023.png",
+      "lecture_10/slide_036.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0095",
+    "predicted_answer": "The context does not provide specific details about the diagram on the right side of the slide. It only mentions that a diagram will be shown to illustrate the concept of attention in solving the bottleneck problem by focusing on a particular part of the source sequence during each step of the decoder.",
+    "retrieved_slides": [
+      "lecture_06/slide_022.png",
       "lecture_04/slide_050.png",
-      "lecture_04/slide_058.png"
+      "lecture_05/slide_003.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0046",
-    "predicted_answer": "The provided text context does not include any specific example labeling words as 'LOC'.",
+    "question_id": "cs224n_q0096",
+    "predicted_answer": "The provided context does not mention 'Selective parameters' or provide a diagram, so I cannot answer the question based on the given information.",
     "retrieved_slides": [
-      "lecture_01/slide_005.png",
-      "lecture_03/slide_010.png",
-      "lecture_04/slide_013.png"
+      "lecture_12/slide_071.png",
+      "lecture_13/slide_071.png",
+      "lecture_02/slide_002.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0047",
-    "predicted_answer": "The Jacobian of \\( f(z) \\) with respect to \\( z \\) is represented as an \\( m \\times n \\) matrix of partial derivatives.",
+    "question_id": "cs224n_q0097",
+    "predicted_answer": "The provided context does not contain information about the relationship between 'king' and 'queen' in a visualization.",
     "retrieved_slides": [
-      "lecture_04/slide_023.png",
       "lecture_04/slide_054.png",
-      "lecture_04/slide_051.png"
+      "lecture_06/slide_024.png",
+      "lecture_11/slide_026.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0048",
-    "predicted_answer": "The provided text context does not contain any information about a blue line graph or its function. Therefore, I cannot answer the question based on the given context.",
-    "retrieved_slides": [
-      "lecture_03/slide_004.png",
-      "lecture_01/slide_050.png",
-      "lecture_01/slide_017.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs224n_q0049",
+    "question_id": "cs224n_q0098",
     "predicted_answer": "The provided context does not include a specific equation representing the computation of 'z' in the graph.",
     "retrieved_slides": [
       "lecture_04/slide_058.png",
@@ -490,262 +980,522 @@
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0050",
-    "predicted_answer": "The provided text context does not contain information about computing the value of s in a diagram.",
+    "question_id": "cs224n_q0099",
+    "predicted_answer": "The provided context does not include any information about a diagram or an arrow labeled 'W'. Therefore, I cannot answer what the arrow labeled 'W' represents.",
     "retrieved_slides": [
-      "lecture_02/slide_002.png",
-      "lecture_02/slide_009.png",
-      "lecture_02/slide_019.png"
+      "lecture_17/slide_064.png",
+      "lecture_05/slide_003.png",
+      "lecture_06/slide_069.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0051",
-    "predicted_answer": "The provided context does not contain information about specific word pairs or their human mean similarity scores. Therefore, I cannot determine which word pair has the lowest human mean similarity score based on the given text.",
+    "question_id": "cs224n_q0100",
+    "predicted_answer": "The provided context does not contain any information about an orange arrow or a diagram. Therefore, I cannot answer the question based on the given lecture slides.",
     "retrieved_slides": [
-      "lecture_03/slide_011.png",
-      "lecture_03/slide_026.png",
-      "lecture_01/slide_029.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs224n_q0052",
-    "predicted_answer": "\ud835\udeff is the upstream gradient (\"error signal\") at \ud835\udc67.",
-    "retrieved_slides": [
-      "lecture_01/slide_034.png",
-      "lecture_04/slide_071.png",
-      "lecture_04/slide_051.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs224n_q0053",
-    "predicted_answer": "The derivative of \\( s \\) with respect to \\( b \\) is expressed as \\( \\delta \\), where \\( \\delta \\) is the upstream gradient or \"error signal\" at \\( z \\).",
-    "retrieved_slides": [
-      "lecture_04/slide_051.png",
+      "lecture_05/slide_003.png",
       "lecture_04/slide_050.png",
-      "lecture_04/slide_049.png"
+      "lecture_09/slide_060.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0054",
-    "predicted_answer": "The provided text context does not mention the significance of the year 1980 in the timeline.",
+    "question_id": "cs224n_q0101",
+    "predicted_answer": "The provided context does not contain specific information about which model has the lowest training cost in the EN-DE test set.",
     "retrieved_slides": [
-      "lecture_02/slide_002.png",
+      "lecture_16/slide_055.png",
+      "lecture_07/slide_047.png",
+      "lecture_12/slide_071.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0102",
+    "predicted_answer": "The provided context does not include any information about the 'Pile-CC' and 'Bibliotik' sections or a diagram comparing their sizes. Therefore, I cannot provide an answer based on the given text.",
+    "retrieved_slides": [
+      "lecture_19/slide_083.png",
+      "lecture_17/slide_023.png",
+      "lecture_19/slide_049.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0103",
+    "predicted_answer": "The provided text context does not include information about what 'SFT' stands for in the context of Step 1.",
+    "retrieved_slides": [
+      "lecture_05/slide_003.png",
       "lecture_04/slide_050.png",
-      "lecture_04/slide_054.png"
+      "lecture_17/slide_004.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0055",
-    "predicted_answer": "The provided context does not contain information about ACE scores or models related to ACE scores. Therefore, I cannot determine which model has the lowest ACE score based on the given lecture slides.",
+    "question_id": "cs224n_q0104",
+    "predicted_answer": "The provided context does not include specific details about the MultiNLI-matched chart or the performance of different methods as the number of trainable parameters increases. Therefore, I cannot determine which method shows a decrease in performance based on the given information.",
     "retrieved_slides": [
-      "lecture_03/slide_011.png",
-      "lecture_01/slide_004.png",
-      "lecture_01/slide_029.png"
+      "lecture_10/slide_049.png",
+      "lecture_10/slide_062.png",
+      "lecture_11/slide_006.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0056",
-    "predicted_answer": "The provided text context does not contain information about the correlation score of SVD-L or the WS353 dataset. Therefore, I cannot answer the question based on the given context.",
+    "question_id": "cs224n_q0105",
+    "predicted_answer": "The provided text context does not contain information about the accuracy of Gorilla in the 0-shot graph.",
     "retrieved_slides": [
-      "lecture_04/slide_035.png",
-      "lecture_04/slide_076.png",
-      "lecture_04/slide_021.png"
+      "lecture_07/slide_036.png",
+      "lecture_12/slide_071.png",
+      "lecture_13/slide_071.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0057",
-    "predicted_answer": "The provided context does not mention 'Selective parameters' or provide a diagram related to them. Therefore, I cannot determine their role based on the given information.",
+    "question_id": "cs224n_q0106",
+    "predicted_answer": "The provided context does not contain information about the condition for BP to be equal to 1.",
     "retrieved_slides": [
-      "lecture_02/slide_002.png",
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_054.png"
+      "lecture_05/slide_039.png",
+      "lecture_08/slide_024.png",
+      "lecture_08/slide_025.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0058",
-    "predicted_answer": "The context does not provide a specific answer for the Jacobian of \\( s \\) with respect to \\( h \\). However, it suggests that the Jacobian form is useful for computing answers, even though the shape convention is typically followed for assignments. Therefore, the Jacobian would be structured based on the relationship between \\( s \\) and \\( h \\), considering the number of outputs and inputs involved.",
+    "question_id": "cs224n_q0107",
+    "predicted_answer": "The provided text context does not contain information about the win-rate of any model against 'mistral-7b-instruct'.",
     "retrieved_slides": [
-      "lecture_04/slide_051.png",
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_054.png"
+      "lecture_16/slide_034.png",
+      "lecture_17/slide_023.png",
+      "lecture_19/slide_021.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0059",
-    "predicted_answer": "Local gradients are represented as multiple local gradients for multiple inputs in the diagram.",
+    "question_id": "cs224n_q0108",
+    "predicted_answer": "The provided context does not include a diagram or specific strings to evaluate. Therefore, I cannot determine which string follows the same set of rules according to a diagram. Please provide more information or clarify the question.",
     "retrieved_slides": [
-      "lecture_04/slide_066.png",
-      "lecture_04/slide_076.png",
-      "lecture_04/slide_062.png"
+      "lecture_07/slide_048.png",
+      "lecture_07/slide_047.png",
+      "lecture_05/slide_039.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0060",
-    "predicted_answer": "The context provided does not include specific information about the derivative of \\( s \\) with respect to \\( h \\). Therefore, I cannot provide an answer based on the given lecture slides.",
+    "question_id": "cs224n_q0109",
+    "predicted_answer": "The mathematical expression used to illustrate the probability issue in vanilla sampling is the example stating that when generating 30 tokens in a row, the chance of only generating from the top 95% probability zone is as low as 21%.",
     "retrieved_slides": [
-      "lecture_04/slide_051.png",
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_049.png"
+      "lecture_14/slide_015.png",
+      "lecture_15/slide_015.png",
+      "lecture_09/slide_030.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0061",
-    "predicted_answer": "The Jacobian for the elementwise activation function is defined as an n by n matrix, where the function has n outputs and n inputs.",
+    "question_id": "cs224n_q0110",
+    "predicted_answer": "The provided context does not specify which token has a higher probability assigned by the target model compared to the draft model.",
     "retrieved_slides": [
-      "lecture_04/slide_026.png",
-      "lecture_04/slide_054.png",
-      "lecture_04/slide_055.png"
+      "lecture_16/slide_014.png",
+      "lecture_16/slide_012.png",
+      "lecture_14/slide_015.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0062",
-    "predicted_answer": "The local gradient in the diagram is the gradient of a node's output with respect to its input.",
+    "question_id": "cs224n_q0111",
+    "predicted_answer": "The provided text context does not contain information about the TyDiQA SelectP score for CANINE-C + n-grams.",
     "retrieved_slides": [
-      "lecture_04/slide_051.png",
-      "lecture_04/slide_062.png",
-      "lecture_04/slide_063.png"
+      "lecture_15/slide_006.png",
+      "lecture_12/slide_045.png",
+      "lecture_14/slide_043.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0063",
-    "predicted_answer": "The provided context does not contain information about expressing 'h' in terms of 'z'. Please refer to the relevant lecture slides or materials for specific details on this topic.",
+    "question_id": "cs224n_q0112",
+    "predicted_answer": "The provided context does not contain information about Harmlessness Elo or any related graph. Therefore, I cannot answer which method shows the highest Harmlessness Elo based on the given text.",
     "retrieved_slides": [
-      "lecture_03/slide_004.png",
-      "lecture_02/slide_002.png",
-      "lecture_03/slide_033.png"
+      "lecture_05/slide_039.png",
+      "lecture_17/slide_023.png",
+      "lecture_14/slide_045.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0064",
-    "predicted_answer": "The provided text context does not specify the number of main components in the noisy channel model.",
+    "question_id": "cs224n_q0113",
+    "predicted_answer": "The provided text context does not specify which dataset shows the most improvement in accuracy for OpenThoughts3 as the dataset size increases.",
     "retrieved_slides": [
-      "lecture_01/slide_034.png",
-      "lecture_03/slide_036.png",
-      "lecture_03/slide_037.png"
+      "lecture_19/slide_072.png",
+      "lecture_06/slide_068.png",
+      "lecture_07/slide_008.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0065",
-    "predicted_answer": "The provided text context does not contain information about the correlation scores for the RW dataset or any specific models related to it. Therefore, I cannot determine which model has the highest correlation score for the RW dataset based on the given context.",
+    "question_id": "cs224n_q0114",
+    "predicted_answer": "The provided context does not include any information about a hierarchical relationship diagram or who is shown in it.",
     "retrieved_slides": [
-      "lecture_04/slide_035.png",
-      "lecture_03/slide_011.png",
-      "lecture_01/slide_029.png"
+      "lecture_06/slide_022.png",
+      "lecture_05/slide_053.png",
+      "lecture_06/slide_016.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0066",
-    "predicted_answer": "The context provided does not include specific information about a '+' node or its operation in a diagram. Therefore, I cannot determine what operation the '+' node performs based solely on the given text.",
+    "question_id": "cs224n_q0115",
+    "predicted_answer": "The provided context does not include any information about the relationship between FLOPS and training loss.",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_01/slide_004.png",
-      "lecture_04/slide_065.png"
+      "lecture_05/slide_039.png",
+      "lecture_05/slide_026.png",
+      "lecture_14/slide_038.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0067",
-    "predicted_answer": "The highlighted text in the orange box represents a quote by Warren Weaver from 1955, where he discusses the idea of treating the problem of translation as a problem in cryptography.",
+    "question_id": "cs224n_q0116",
+    "predicted_answer": "The section \"Language models with neural nets: Recurrent Neural Networks (RNNs)\" is allocated the most time, with 25 minutes.",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_080.png",
-      "lecture_01/slide_004.png"
+      "lecture_05/slide_059.png",
+      "lecture_05/slide_002.png",
+      "lecture_14/slide_045.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0068",
+    "question_id": "cs224n_q0117",
     "predicted_answer": "The provided context does not contain information about specific word pairs or their human mean similarity scores. Therefore, I cannot determine which word pair has the highest human mean similarity score based on the given text.",
     "retrieved_slides": [
       "lecture_03/slide_011.png",
-      "lecture_03/slide_026.png",
+      "lecture_17/slide_023.png",
+      "lecture_13/slide_041.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0118",
+    "predicted_answer": "The matrices used to transform e(t) to h(t) are the weight matrices Q, K, and V, each in \u211d\u1d48\u02e3\u1d48.",
+    "retrieved_slides": [
+      "lecture_18/slide_032.png",
+      "lecture_06/slide_042.png",
+      "lecture_10/slide_049.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0119",
+    "predicted_answer": "The provided text context does not contain information about BLEU scores or specific models evaluated on the EN-FR dataset. Therefore, I cannot determine which model has the highest BLEU score on the EN-FR dataset based on the given context.",
+    "retrieved_slides": [
+      "lecture_12/slide_045.png",
+      "lecture_16/slide_034.png",
+      "lecture_09/slide_033.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0120",
+    "predicted_answer": "The context does not specify a room for office hours on Tuesday at 9:00 AM. Office hours are held in 3-hour blocks from Monday to Saturday, but specific times and rooms are not provided in the text. You may need to check the course website or contact the course staff for detailed information.",
+    "retrieved_slides": [
+      "lecture_03/slide_003.png",
+      "lecture_02/slide_003.png",
       "lecture_01/slide_029.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0069",
-    "predicted_answer": "The provided context does not include specific information about a decoder or its output in a diagram. Therefore, I cannot provide an answer based on the given lecture slides.",
+    "question_id": "cs224n_q0121",
+    "predicted_answer": "The context does not provide specific types of data used for training the foundation model. However, it mentions that GPT-3 was trained on 300 billion tokens of text, implying that text data is used for training.",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_049.png",
-      "lecture_01/slide_004.png"
+      "lecture_07/slide_046.png",
+      "lecture_19/slide_009.png",
+      "lecture_08/slide_052.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0070",
-    "predicted_answer": "The context provided does not include any information about a diagram on the right, so I cannot determine what it illustrates.",
+    "question_id": "cs224n_q0122",
+    "predicted_answer": "The context provided does not specify which model is labeled with the highest estimated computing resources used.",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_04/slide_049.png",
-      "lecture_01/slide_004.png"
+      "lecture_17/slide_064.png",
+      "lecture_08/slide_004.png",
+      "lecture_17/slide_023.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0071",
-    "predicted_answer": "The expression \\( \\nabla_{\\theta} J_t(\\theta) \\) represents the gradient of the function \\( J_t \\) with respect to the parameters \\( \\theta \\). According to the shape convention mentioned in the slides, the shape of this gradient is the same as the shape of the parameters \\( \\theta \\).",
+    "question_id": "cs224n_q0123",
+    "predicted_answer": "The provided context does not contain information about a model showing the highest Macro-F1 score in classification with demos using gold labels.",
     "retrieved_slides": [
-      "lecture_04/slide_050.png",
-      "lecture_03/slide_009.png",
-      "lecture_04/slide_076.png"
+      "lecture_12/slide_045.png",
+      "lecture_14/slide_043.png",
+      "lecture_04/slide_013.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0072",
-    "predicted_answer": "The provided text context does not include any information about how neurons are connected in a diagram.",
+    "question_id": "cs224n_q0124",
+    "predicted_answer": "The components involved in the reasoning process of an agent according to the diagram are the LLM Core, Planning & Reasoning (including ReAct, CoT, Reflexion, etc.), Memory (episodic, semantic, procedural, etc.), and Tools (such as Retrieval, Calculator, Code, Search, Read/Write Memory).",
     "retrieved_slides": [
-      "lecture_01/slide_011.png",
-      "lecture_02/slide_002.png",
-      "lecture_02/slide_009.png"
+      "lecture_11/slide_030.png",
+      "lecture_11/slide_029.png",
+      "lecture_14/slide_051.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0073",
-    "predicted_answer": "The dimensionality of the expression \\( \\frac{\\partial s}{\\partial \\mathbf{W}} \\) is n by m.",
+    "question_id": "cs224n_q0125",
+    "predicted_answer": "The provided context does not contain information about the adversarial benchmark process or its first step.",
     "retrieved_slides": [
-      "lecture_04/slide_055.png",
+      "lecture_13/slide_019.png",
+      "lecture_12/slide_020.png",
+      "lecture_06/slide_044.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0126",
+    "predicted_answer": "The provided context does not specify which model has the lowest win-rate against 'gpt-4-turbo'.",
+    "retrieved_slides": [
+      "lecture_16/slide_034.png",
+      "lecture_19/slide_021.png",
+      "lecture_19/slide_031.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0127",
+    "predicted_answer": "The expression \\( \\hat{y}_t = \\argmax_{w \\in V} P(y_t = w|y_{<t}) \\) represents the process of selecting the word \\( \\hat{y}_t \\) from the vocabulary \\( V \\) that has the highest probability given the previous words \\( y_{<t} \\). This is typically used in language models for predicting the next word in a sequence.",
+    "retrieved_slides": [
+      "lecture_19/slide_060.png",
+      "lecture_17/slide_006.png",
+      "lecture_17/slide_005.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0128",
+    "predicted_answer": "The context provided does not specify a component responsible for 'Reasoning Prompts' in the left process.",
+    "retrieved_slides": [
+      "lecture_01/slide_029.png",
+      "lecture_14/slide_045.png",
+      "lecture_15/slide_045.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0129",
+    "predicted_answer": "The provided context does not include the mathematical expression for Forward KL.",
+    "retrieved_slides": [
       "lecture_04/slide_076.png",
-      "lecture_04/slide_050.png"
+      "lecture_10/slide_061.png",
+      "lecture_11/slide_005.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0074",
-    "predicted_answer": "The formula for the softmax function as shown on the slide is:\n\n\\[\n\\text{softmax } x_i = \\frac{\\exp(x_i)}{\\sum_{j=1}^{n} \\exp(x_j)} = p_i\n\\]",
+    "question_id": "cs224n_q0130",
+    "predicted_answer": "The token pair \"_ + p\" has the highest frequency in the table, with a frequency of 4.",
     "retrieved_slides": [
-      "lecture_04/slide_055.png",
-      "lecture_03/slide_017.png",
-      "lecture_04/slide_080.png"
+      "lecture_17/slide_023.png",
+      "lecture_17/slide_033.png",
+      "lecture_17/slide_034.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs224n_q0075",
-    "predicted_answer": "The expression for the partial derivative of \\( h \\) with respect to \\( z \\) is \\( \\delta \\).",
+    "question_id": "cs224n_q0131",
+    "predicted_answer": "The context provided does not specify any skills with a percentage of 47%.",
     "retrieved_slides": [
-      "lecture_04/slide_051.png",
+      "lecture_11/slide_045.png",
+      "lecture_01/slide_029.png",
+      "lecture_11/slide_050.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0132",
+    "predicted_answer": "The SOTA 1.5B Reasoning Model shows the highest performance in the chart.",
+    "retrieved_slides": [
+      "lecture_12/slide_045.png",
+      "lecture_10/slide_054.png",
+      "lecture_19/slide_029.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0133",
+    "predicted_answer": "The source sentence in the diagram is \"<START> he hit me with a pie\".",
+    "retrieved_slides": [
+      "lecture_05/slide_058.png",
+      "lecture_06/slide_021.png",
+      "lecture_05/slide_055.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0134",
+    "predicted_answer": "The main topic depicted in the left section of the image is \"What kinds of things does pretraining teach?\"",
+    "retrieved_slides": [
+      "lecture_08/slide_054.png",
+      "lecture_05/slide_008.png",
+      "lecture_04/slide_018.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0135",
+    "predicted_answer": "The provided context does not specify which word has a co-occurrence count of 1 with 'deep'.",
+    "retrieved_slides": [
+      "lecture_03/slide_032.png",
+      "lecture_03/slide_036.png",
+      "lecture_03/slide_011.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0136",
+    "predicted_answer": "The provided context does not contain information about the role of \u2202s/\u2202z in a diagram. Please refer to the relevant lecture slides or materials for specific details on this topic.",
+    "retrieved_slides": [
+      "lecture_12/slide_071.png",
+      "lecture_13/slide_071.png",
+      "lecture_02/slide_002.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0137",
+    "predicted_answer": "The provided context does not mention anything about conditioning on 'today the price'. Therefore, I cannot provide an answer based on the given lecture slides.",
+    "retrieved_slides": [
+      "lecture_14/slide_038.png",
+      "lecture_15/slide_038.png",
+      "lecture_11/slide_029.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0138",
+    "predicted_answer": "The provided context does not contain information about ROUGE-L scores or any specific models related to ROUGE-L. Therefore, I cannot determine which model has the highest ROUGE-L score based on the given text.",
+    "retrieved_slides": [
+      "lecture_16/slide_034.png",
+      "lecture_17/slide_023.png",
+      "lecture_03/slide_011.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0139",
+    "predicted_answer": "The provided text context does not mention any dataset used for the English-French translation task.",
+    "retrieved_slides": [
+      "lecture_19/slide_072.png",
+      "lecture_16/slide_021.png",
+      "lecture_13/slide_015.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0140",
+    "predicted_answer": "The provided text context does not contain information about the price of 'Love Knocked'.",
+    "retrieved_slides": [
+      "lecture_05/slide_016.png",
+      "lecture_05/slide_017.png",
+      "lecture_12/slide_071.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0141",
+    "predicted_answer": "The provided context does not mention a diagram labeled 'SFT' or its role in Step 1.",
+    "retrieved_slides": [
+      "lecture_06/slide_022.png",
+      "lecture_17/slide_064.png",
+      "lecture_05/slide_049.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0142",
+    "predicted_answer": "The context does not provide specific details about the diagram on the right side of the slide. It only mentions that a diagram will be shown to illustrate the concept of attention before showing equations.",
+    "retrieved_slides": [
+      "lecture_06/slide_022.png",
       "lecture_04/slide_050.png",
-      "lecture_04/slide_049.png"
+      "lecture_05/slide_003.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0143",
+    "predicted_answer": "The provided context does not mention Klaus Mueller or any activity related to him.",
+    "retrieved_slides": [
+      "lecture_05/slide_039.png",
+      "lecture_18/slide_008.png",
+      "lecture_15/slide_027.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0144",
+    "predicted_answer": "The provided text context does not contain information about the performance difference between Expert Human Validators and Non-Expert Human Validators.",
+    "retrieved_slides": [
+      "lecture_12/slide_049.png",
+      "lecture_13/slide_048.png",
+      "lecture_13/slide_053.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0145",
+    "predicted_answer": "The provided context does not include information about a COPA example or the premise 'My body cast a shadow over the grass.' Therefore, I cannot provide an answer based on the given lecture slides.",
+    "retrieved_slides": [
+      "lecture_19/slide_009.png",
+      "lecture_08/slide_014.png",
+      "lecture_10/slide_037.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0146",
+    "predicted_answer": "The provided text context does not contain information about the opening stock price of Nvidia on January 27, 2025.",
+    "retrieved_slides": [
+      "lecture_08/slide_016.png",
+      "lecture_19/slide_001.png",
+      "lecture_05/slide_017.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0147",
+    "predicted_answer": "The context provided does not contain any information about a diagram or specific rules related to the strings 'FDMUC', 'FDQMQFC', and 'FQMQUC'. Therefore, I cannot determine which string follows the same set of rules as these strings based on the given text.",
+    "retrieved_slides": [
+      "lecture_07/slide_048.png",
+      "lecture_07/slide_047.png",
+      "lecture_14/slide_015.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0148",
+    "predicted_answer": "The provided text context does not contain information about the performance comparison between T5-Large and T5-Small in the XSum task.",
+    "retrieved_slides": [
+      "lecture_11/slide_027.png",
+      "lecture_13/slide_076.png",
+      "lecture_12/slide_076.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0149",
+    "predicted_answer": "The token pair \"_ + p\" is merged first according to the Merge List.",
+    "retrieved_slides": [
+      "lecture_17/slide_023.png",
+      "lecture_17/slide_032.png",
+      "lecture_17/slide_036.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs224n_q0150",
+    "predicted_answer": "The provided text context does not contain information about job projections or net declines. Therefore, I cannot answer the question based on the given context.",
+    "retrieved_slides": [
+      "lecture_01/slide_029.png",
+      "lecture_06/slide_024.png",
+      "lecture_07/slide_020.png"
     ],
     "baseline": "text_only"
   }

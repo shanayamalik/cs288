@@ -2,666 +2,6 @@
   "per_question": [
     {
       "question_id": "cs601_q0001",
-      "question": "What type of machine might not halt according to the slide?",
-      "gold_answer": "Nondeterministic Turing machine",
-      "predicted_answer": "A nondeterministic Turing machine might not halt according to the slide.",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_019.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_019.png",
-        "lecture_14/slide_111.png",
-        "lecture_07/slide_045.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.5
-      }
-    },
-    {
-      "question_id": "cs601_q0002",
-      "question": "What type of grammar is described as 'seemingly somewhere in between' context-free and context-sensitive grammars?",
-      "gold_answer": "Mildly context-sensitive grammar (e.g., TAG, CCG, etc.)",
-      "predicted_answer": "Mildly context-sensitive grammar (TAG, CCG, etc.)",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_020.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_020.png",
-        "lecture_02/slide_019.png",
-        "lecture_02/slide_018.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.923076923076923
-      }
-    },
-    {
-      "question_id": "cs601_q0003",
-      "question": "Which headline could imply a humorous misunderstanding about food?",
-      "gold_answer": "Kids Make Nutritious Snacks",
-      "predicted_answer": "\"Trump Declares All Owls Are Bachelors, Orders Owl-Themed Bachelor Party Menu\"",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_01/slide_007.png"
-      ],
-      "retrieved_slides": [
-        "lecture_19/slide_040.png",
-        "lecture_13/slide_074.png",
-        "lecture_18/slide_103.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0004",
-      "question": "Which model allows for the generation of sentences by rolling dice?",
-      "gold_answer": "Trained 3-gram model",
-      "predicted_answer": "The trained 3-gram model allows for the generation of sentences by rolling dice.",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_006.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_006.png",
-        "lecture_02/slide_007.png",
-        "lecture_18/slide_042.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.42857142857142855
-      }
-    },
-    {
-      "question_id": "cs601_q0005",
-      "question": "What are the possible sources of ambiguity mentioned in the slide?",
-      "gold_answer": "The particular coffee, the donut store, the situation.",
-      "predicted_answer": "The possible sources of ambiguity mentioned in the slide include determining what the \"minimum changes\" are in counterfactual scenarios, as it is \"rather slippery\" to figure out. Additionally, there is ambiguity in reasoning about what would tend to happen if you didn\u2019t pay the rent, which seems to require probabilistic reasoning and involves defining conditional probabilities even when the probability of the condition is zero.",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_01/slide_021.png"
-      ],
-      "retrieved_slides": [
-        "lecture_13/slide_044.png",
-        "lecture_13/slide_045.png",
-        "lecture_13/slide_046.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0006",
-      "question": "What are the two forms of strings allowed in the formal language equivalent mentioned?",
-      "gold_answer": "The forms are a x* b and c x* d.",
-      "predicted_answer": "The two forms of strings allowed in the formal language equivalent mentioned are \"a x* b\" and \"c x* d\".",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_010.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_010.png",
-        "lecture_01/slide_004.png",
-        "lecture_02/slide_008.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.6399999999999999
-      }
-    },
-    {
-      "question_id": "cs601_q0007",
-      "question": "What is the implied question in the text regarding John's thoughts?",
-      "gold_answer": "That's how often he thought it?",
-      "predicted_answer": "The context does not provide information about John's thoughts or any implied question regarding them.",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_01/slide_018.png"
-      ],
-      "retrieved_slides": [
-        "lecture_18/slide_067.png",
-        "lecture_19/slide_043.png",
-        "lecture_10/slide_056.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0008",
-      "question": "What is the example of an unrestricted grammar rule?",
-      "gold_answer": "The example is 'L S R \u2192 X Y S'.",
-      "predicted_answer": "The example of an unrestricted grammar rule is:  \nS[head=thrill, tense=pres, \u2026] \uf0e0 NP[head=plan, num=1, animate=no\u2026] VP[head=thrill, tense=pres, num=1, \u2026]",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_018.png"
-      ],
-      "retrieved_slides": [
-        "lecture_07/slide_016.png",
-        "lecture_10/slide_064.png",
-        "lecture_18/slide_021.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.15384615384615383
-      }
-    },
-    {
-      "question_id": "cs601_q0009",
-      "question": "What does the smallest box in the diagram represent?",
-      "gold_answer": "Training sentences",
-      "predicted_answer": "The context does not provide specific information about what the smallest box in the diagram represents.",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_006.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_008.png",
-        "lecture_12/slide_020.png",
-        "lecture_12/slide_002.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0010",
-      "question": "Which model is represented by the largest box in the diagram?",
-      "gold_answer": "Trained 50-gram model",
-      "predicted_answer": "The 50-gram model is represented by the largest box in the diagram.",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_006.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_008.png",
-        "lecture_12/slide_020.png",
-        "lecture_13/slide_044.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.3333333333333333
-      }
-    },
-    {
-      "question_id": "cs601_q0011",
-      "question": "What are the components of the noun phrase (NP) in the tree diagram?",
-      "gold_answer": "Det, N\u2019, Noun",
-      "predicted_answer": "The provided context does not specify the components of a noun phrase (NP) in a tree diagram.",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_017.png"
-      ],
-      "retrieved_slides": [
-        "lecture_10/slide_056.png",
-        "lecture_07/slide_002.png",
-        "lecture_07/slide_045.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.125
-      }
-    },
-    {
-      "question_id": "cs601_q0012",
-      "question": "What is the example of a context-sensitive grammar rule on the slide?",
-      "gold_answer": "The example is 'S \u2192 N V S // L_R'.",
-      "predicted_answer": "The example of a context-sensitive grammar rule on the slide is: S \uf0e0 N V S  // L _ R",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_018.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_018.png",
-        "lecture_08/slide_017.png",
-        "lecture_08/slide_018.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.5217391304347827
-      }
-    },
-    {
-      "question_id": "cs601_q0013",
-      "question": "What is the structure of the tree diagram on the left side of the slide?",
-      "gold_answer": "S \u2192 NP VP .",
-      "predicted_answer": "The tree diagram on the left side of the slide is a syntactic structure representing the sentence \"Time flies like an arrow.\" It includes the following components: \n\n- S (Sentence)\n  - NP (Noun Phrase)\n    - N (Noun)\n  - VP (Verb Phrase)\n    - V (Verb)\n    - PP (Prepositional Phrase)\n      - P (Preposition)\n      - NP (Noun Phrase)\n        - D (Determiner)\n        - N (Noun)",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_017.png"
-      ],
-      "retrieved_slides": [
-        "lecture_17/slide_060.png",
-        "lecture_10/slide_056.png",
-        "lecture_14/slide_132.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.125
-      }
-    },
-    {
-      "question_id": "cs601_q0014",
-      "question": "What is the relationship between 'deficit' and 'current' in the diagram?",
-      "gold_answer": "MOD",
-      "predicted_answer": "The provided context does not mention 'deficit' or 'current,' so I cannot determine their relationship based on the lecture slides.",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_025.png"
-      ],
-      "retrieved_slides": [
-        "lecture_14/slide_082.png",
-        "lecture_08/slide_042.png",
-        "lecture_10/slide_056.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0015",
-      "question": "Which English sentence is both good English and a good match to the input?",
-      "gold_answer": "Jon appeared on TV.",
-      "predicted_answer": "Jon appeared on TV.",
-      "category": "table",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_03/slide_009.png"
-      ],
-      "retrieved_slides": [
-        "lecture_03/slide_010.png",
-        "lecture_03/slide_009.png",
-        "lecture_18/slide_014.png"
-      ],
-      "scores": {
-        "exact_match": 1.0,
-        "token_f1": 1.0
-      }
-    },
-    {
-      "question_id": "cs601_q0016",
-      "question": "Which sentence is marked as a good match to the input but not good English?",
-      "gold_answer": "TV appeared on Jon.",
-      "predicted_answer": "\"TV appeared on Jon.\"",
-      "category": "table",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_03/slide_009.png"
-      ],
-      "retrieved_slides": [
-        "lecture_03/slide_010.png",
-        "lecture_03/slide_009.png",
-        "lecture_16/slide_067.png"
-      ],
-      "scores": {
-        "exact_match": 1.0,
-        "token_f1": 1.0
-      }
-    },
-    {
-      "question_id": "cs601_q0017",
-      "question": "Which sentence is a good match to the input but not good English?",
-      "gold_answer": "TV appeared on Jon.",
-      "predicted_answer": "\"Appeared on Jon TV.\"",
-      "category": "table",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_03/slide_009.png"
-      ],
-      "retrieved_slides": [
-        "lecture_03/slide_010.png",
-        "lecture_03/slide_009.png",
-        "lecture_16/slide_067.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 1.0
-      }
-    },
-    {
-      "question_id": "cs601_q0018",
-      "question": "How many sentences are marked as good English according to the n-gram column?",
-      "gold_answer": "Four sentences are marked as good English.",
-      "predicted_answer": "The provided text context does not specify the number of sentences marked as good English according to the n-gram column.",
-      "category": "table",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_03/slide_009.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_009.png",
-        "lecture_09/slide_099.png",
-        "lecture_17/slide_110.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.4166666666666667
-      }
-    },
-    {
-      "question_id": "cs601_q0019",
-      "question": "Which sentence in the 'Huge set of choices' is not related to the translation task?",
-      "gold_answer": "Jon is happy today.",
-      "predicted_answer": "The sentence \"The to swallow Wanda has been Otto plan thrilling\" is not related to the translation task.",
-      "category": "layout_aware",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_03/slide_010.png"
-      ],
-      "retrieved_slides": [
-        "lecture_16/slide_067.png",
-        "lecture_18/slide_058.png",
-        "lecture_13/slide_043.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.10526315789473685
-      }
-    },
-    {
-      "question_id": "cs601_q0020",
-      "question": "How many sentences are marked with a question mark?",
-      "gold_answer": "Three sentences are marked with a question mark.",
-      "predicted_answer": "There are three sentences marked with a question mark.",
-      "category": "layout_aware",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_002.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_009.png",
-        "lecture_19/slide_047.png",
-        "lecture_14/slide_180.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.9333333333333333
-      }
-    },
-    {
-      "question_id": "cs601_q0021",
-      "question": "What is the example given for a context-free grammar?",
-      "gold_answer": "The example given is 'S \u2192 N V S'.",
-      "predicted_answer": "The example given for a context-free grammar is:  \n- S \u2192 NP VP  \n- VP \u2192 VerbT NP  \n- NP \u2192 Det N'  \n- NP \u2192 Proper  \n- N' \u2192 Noun  \n- N' \u2192 N' PP  \n- PP \u2192 Prep NP",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_018.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_013.png",
-        "lecture_10/slide_056.png",
-        "lecture_13/slide_074.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.3
-      }
-    },
-    {
-      "question_id": "cs601_q0022",
-      "question": "What is the probability ratio for choosing between 'NP \u2192 Det N\u2019' and 'NP \u2192 Proper'?",
-      "gold_answer": "20:1 odds ratio.",
-      "predicted_answer": "The provided text context does not contain any information related to probabilities or grammar rules such as 'NP \u2192 Det N' or 'NP \u2192 Proper'. Therefore, I cannot determine the probability ratio for choosing between these two grammar rules based on the given context.",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_016.png"
-      ],
-      "retrieved_slides": [
-        "lecture_14/slide_005.png",
-        "lecture_14/slide_006.png",
-        "lecture_08/slide_032.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.04545454545454545
-      }
-    },
-    {
-      "question_id": "cs601_q0023",
-      "question": "What visual element is used to represent training sentences?",
-      "gold_answer": "A blue abstract shape is used to represent training sentences.",
-      "predicted_answer": "The context provided does not specify a visual element used to represent training sentences.",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_008.png"
-      ],
-      "retrieved_slides": [
-        "lecture_14/slide_074.png",
-        "lecture_04/slide_032.png",
-        "lecture_04/slide_031.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.4761904761904762
-      }
-    },
-    {
-      "question_id": "cs601_q0024",
-      "question": "What is the function of 'in September' in the sentence according to the diagram?",
-      "gold_answer": "COMP",
-      "predicted_answer": "The provided context does not include any information about a sentence diagram or the function of 'in September' within a sentence. Therefore, I cannot determine the function of 'in September' based on the given lecture slides.",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_025.png"
-      ],
-      "retrieved_slides": [
-        "lecture_09/slide_016.png",
-        "lecture_13/slide_043.png",
-        "lecture_16/slide_067.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0025",
-      "question": "What sentence is generated by the tree diagram?",
-      "gold_answer": "Papa ate the caviar with a spoon",
-      "predicted_answer": "The sentence generated by the tree diagram is \"Every nation wants Don to love Mel.\"",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_021.png"
-      ],
-      "retrieved_slides": [
-        "lecture_14/slide_095.png",
-        "lecture_09/slide_006.png",
-        "lecture_19/slide_060.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0026",
-      "question": "Which word is the subject of the sentence according to the dependency diagram?",
-      "gold_answer": "He",
-      "predicted_answer": "The word \"He\" is the subject of the sentence according to the dependency diagram.",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_025.png"
-      ],
-      "retrieved_slides": [
-        "lecture_18/slide_054.png",
-        "lecture_18/slide_059.png",
-        "lecture_18/slide_058.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.18181818181818182
-      }
-    },
-    {
-      "question_id": "cs601_q0027",
-      "question": "What is the root of the sentence in the dependency diagram?",
-      "gold_answer": "reckons",
-      "predicted_answer": "The root of the sentence in the dependency diagram is \"reckons.\"",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_025.png"
-      ],
-      "retrieved_slides": [
-        "lecture_18/slide_054.png",
-        "lecture_18/slide_059.png",
-        "lecture_02/slide_025.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.2222222222222222
-      }
-    },
-    {
-      "question_id": "cs601_q0028",
-      "question": "What does the 'NP' node expand into according to the tree diagram?",
-      "gold_answer": "NP expands into Det N'.",
-      "predicted_answer": "The 'NP' node expands into 'N' and 'PP' according to the tree diagram.",
-      "category": "image_diagram",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_016.png"
-      ],
-      "retrieved_slides": [
-        "lecture_08/slide_013.png",
-        "lecture_13/slide_003.png",
-        "lecture_14/slide_132.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.5000000000000001
-      }
-    },
-    {
-      "question_id": "cs601_q0029",
-      "question": "What does the black rectangle represent in the diagram?",
-      "gold_answer": "The black rectangle represents the 'Training sentences'.",
-      "predicted_answer": "The black rectangle represents the bias weights in the diagram.",
-      "category": "image_diagram",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_007.png"
-      ],
-      "retrieved_slides": [
-        "lecture_14/slide_029.png",
-        "lecture_14/slide_030.png",
-        "lecture_14/slide_020.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.5
-      }
-    },
-    {
-      "question_id": "cs601_q0030",
-      "question": "What is the transformation rule for a noun phrase (NP) involving a determiner (Det)?",
-      "gold_answer": "NP \u2192 Det N\u2019",
-      "predicted_answer": "The transformation rule for a noun phrase (NP) involving a determiner (Det) is not explicitly provided in the given context. However, based on the structure of the rewrite rules, a possible transformation could be NP -> Det Noun, where an NP can be made of a Det next to a Noun.",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_014.png"
-      ],
-      "retrieved_slides": [
-        "lecture_08/slide_044.png",
-        "lecture_15/slide_023.png",
-        "lecture_15/slide_024.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.09090909090909091
-      }
-    },
-    {
-      "question_id": "cs601_q0031",
-      "question": "What is the correct English translation for 'Jon est apparu \u00e0 la t\u00e9l\u00e9vision' according to the slide?",
-      "gold_answer": "Jon appeared on TV.",
-      "predicted_answer": "Jon appeared on TV.",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_03/slide_010.png"
-      ],
-      "retrieved_slides": [
-        "lecture_03/slide_009.png",
-        "lecture_03/slide_010.png",
-        "lecture_18/slide_014.png"
-      ],
-      "scores": {
-        "exact_match": 1.0,
-        "token_f1": 1.0
-      }
-    },
-    {
-      "question_id": "cs601_q0032",
-      "question": "According to the grammar rules, what can a 'VP' expand into?",
-      "gold_answer": "A 'VP' can expand into 'V NP' or 'VP PP'.",
-      "predicted_answer": "The provided text context does not specify the grammar rules for what a 'VP' can expand into.",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_02/slide_022.png"
-      ],
-      "retrieved_slides": [
-        "lecture_11/slide_043.png",
-        "lecture_10/slide_004.png",
-        "lecture_09/slide_016.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.34782608695652173
-      }
-    },
-    {
-      "question_id": "cs601_q0033",
-      "question": "Which headline suggests a potential misunderstanding involving a legal setting?",
-      "gold_answer": "Juvenile Court to Try Shooting Defendant",
-      "predicted_answer": "Draft Feedback misunderstanding",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_01/slide_007.png"
-      ],
-      "retrieved_slides": [
-        "lecture_19/slide_040.png",
-        "lecture_17/slide_109.png",
-        "lecture_14/slide_149.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0034",
       "question": "Why did John find it difficult to continue getting coffee?",
       "gold_answer": "It turned out to be too expensive there.",
       "predicted_answer": "John found it difficult to continue getting coffee because it turned out to be too expensive at the donut store.",
@@ -681,99 +21,759 @@
       }
     },
     {
-      "question_id": "cs601_q0035",
-      "question": "According to the grammar rules, how is a 'VP' defined?",
-      "gold_answer": "VP \u2192 VerbT NP",
-      "predicted_answer": "The provided text context does not specify how a 'VP' (verb phrase) is defined according to the grammar rules.",
+      "question_id": "cs601_q0002",
+      "question": "What are the two forms of strings allowed in the formal language equivalent mentioned?",
+      "gold_answer": "The forms are a x* b and c x* d.",
+      "predicted_answer": "The two forms of strings allowed in the formal language equivalent mentioned are \"a x* b\" and \"c x* d\".",
       "category": "text_only",
       "difficulty": "medium",
       "evidence_slides": [
-        "lecture_02/slide_017.png"
+        "lecture_02/slide_010.png"
       ],
       "retrieved_slides": [
-        "lecture_11/slide_043.png",
-        "lecture_10/slide_004.png",
-        "lecture_10/slide_079.png"
+        "lecture_02/slide_010.png",
+        "lecture_01/slide_004.png",
+        "lecture_02/slide_008.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.1
+        "token_f1": 0.6399999999999999
+      }
+    },
+    {
+      "question_id": "cs601_q0003",
+      "question": "What is the correct English translation for 'Jon est apparu \u00e0 la t\u00e9l\u00e9vision' according to the slide?",
+      "gold_answer": "Jon appeared on TV.",
+      "predicted_answer": "Jon appeared on TV.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_010.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_009.png",
+        "lecture_03/slide_010.png",
+        "lecture_18/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0004",
+      "question": "What is the significance of the counts from the Brown corpus?",
+      "gold_answer": "They provide empirical data for calculating probabilities in the notation.",
+      "predicted_answer": "The counts from the Brown corpus are used to naively estimate the parameters of the trigram generator model. These counts help define the basic probabilities for the trigram model, which are essential for calculating the probability of sequences like \"horses\" in the context of the language model.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_026.png"
+      ],
+      "retrieved_slides": [
+        "lecture_04/slide_028.png",
+        "lecture_04/slide_027.png",
+        "lecture_04/slide_039.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1702127659574468
+      }
+    },
+    {
+      "question_id": "cs601_q0005",
+      "question": "How is the probability p(A=a | B=b) maximized according to the slide?",
+      "gold_answer": "It is maximized by p(A=a) p(B=b | A=a) / p(B=b).",
+      "predicted_answer": "The probability \\( p(A=a | B=b) \\) is maximized by using the formula \\( p(A=a) p(B=b | A=a) / \\sum_{a'} p(A=a') p(B=b | A=a') \\).",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_008.png"
+      ],
+      "retrieved_slides": [
+        "lecture_05/slide_008.png",
+        "lecture_06/slide_022.png",
+        "lecture_06/slide_034.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.6
+      }
+    },
+    {
+      "question_id": "cs601_q0006",
+      "question": "What is suggested as a way to make a better guess for a rare context's event rate?",
+      "gold_answer": "Aggregating the rare context with other contexts.",
+      "predicted_answer": "Aggregating the rare context with other contexts (all contexts or similar contexts) is suggested as a way to make a better guess for a rare context's event rate. This is another form of backoff.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_046.png"
+      ],
+      "retrieved_slides": [
+        "lecture_06/slide_046.png",
+        "lecture_06/slide_057.png",
+        "lecture_13/slide_030.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.33333333333333337
+      }
+    },
+    {
+      "question_id": "cs601_q0007",
+      "question": "How does the slide suggest enriching the interfaces of tree coordinates?",
+      "gold_answer": "By using the notation S[attributes...] = NP[attributes...] VP[attributes...]",
+      "predicted_answer": "The slide suggests enriching the interfaces of tree coordinates by using parse tree paths as classification features.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_002.png"
+      ],
+      "retrieved_slides": [
+        "lecture_13/slide_049.png",
+        "lecture_18/slide_064.png",
+        "lecture_18/slide_065.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19047619047619044
+      }
+    },
+    {
+      "question_id": "cs601_q0008",
+      "question": "What is the ambiguity mentioned in the fifth pass?",
+      "gold_answer": "507 is ambiguous only because VP 17 is.",
+      "predicted_answer": "The ambiguity mentioned in the fifth pass is related to parsing the sentence \"Time flies like an arrow.\"",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_021.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_016.png",
+        "lecture_08/slide_048.png",
+        "lecture_08/slide_047.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09090909090909091
+      }
+    },
+    {
+      "question_id": "cs601_q0009",
+      "question": "What is the significance of completing A in the context of Earley's Algorithm?",
+      "gold_answer": "It can be attached to hypotheses immediately preceding the A.",
+      "predicted_answer": "The provided text context does not contain any information about Earley's Algorithm or the significance of completing A in that context. Therefore, I cannot provide an answer based on the given lecture slides.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_09/slide_004.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_019.png",
+        "lecture_06/slide_033.png",
+        "lecture_12/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0010",
+      "question": "How is chart[X,start,end] updated in the algorithm?",
+      "gold_answer": "chart[X,start,end] \u2295= semiring_weight(R) \u2297 chart[Y,start,mid] \u2297 chart[Z,mid,end]",
+      "predicted_answer": "Chart[X,start,end] is updated in the algorithm by adding the product of relevant components, such as np(I,J) * vp(J,K) for s(I,K), or prep(I,J) * np(J,K) for pp(I,K), to the current value of chart[X,start,end]. If the entry np(3,5) is updated, other related entries like pp(2,5) are also updated by adding the product of the relevant components. If an entry wasn't already in the chart, it would be added upon calculation.",
+      "category": "text_only",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_10/slide_076.png"
+      ],
+      "retrieved_slides": [
+        "lecture_13/slide_038.png",
+        "lecture_06/slide_034.png",
+        "lecture_10/slide_063.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.03076923076923077
+      }
+    },
+    {
+      "question_id": "cs601_q0011",
+      "question": "What is the condition for iterative deepening?",
+      "gold_answer": "Throw x away if p(x) < 10^-200.",
+      "predicted_answer": "The condition for iterative deepening is to throw x away if p(x)*q(x) < 10^-200, and to lower this threshold if a parse is not obtained.",
+      "category": "text_only",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_11/slide_030.png"
+      ],
+      "retrieved_slides": [
+        "lecture_16/slide_069.png",
+        "lecture_11/slide_035.png",
+        "lecture_12/slide_015.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.35714285714285715
+      }
+    },
+    {
+      "question_id": "cs601_q0012",
+      "question": "How does the slide suggest expressing 'study the apple on the towel' using PCFG?",
+      "gold_answer": "VP[head=study] \u2192 VP[head=study] PP[head=on]",
+      "predicted_answer": "The slide does not provide information on expressing 'study the apple on the towel' using PCFG.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_002.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_016.png",
+        "lecture_12/slide_018.png",
+        "lecture_12/slide_019.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0013",
+      "question": "How does the logical expression change when 'every booth' is used instead of 'a booth'?",
+      "gold_answer": "The expression changes from 'exists(booth, location(e))' to 'all(booth, \u03bbb location(e,b))'.",
+      "predicted_answer": "The provided context does not contain information about logical expressions or the specific change when 'every booth' is used instead of 'a booth'. Please provide relevant context or details related to logical expressions for an accurate answer.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_035.png"
+      ],
+      "retrieved_slides": [
+        "lecture_04/slide_002.png",
+        "lecture_18/slide_008.png",
+        "lecture_04/slide_044.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.047619047619047616
+      }
+    },
+    {
+      "question_id": "cs601_q0014",
+      "question": "What is the problem with the sequence 'tell V/1 me NP/1 VP/2 in P/1 20 Det/1 minutes N/1 NP/2 VP/2 ...'?",
+      "gold_answer": "No rule VP -> P NP.",
+      "predicted_answer": "The problem with the sequence 'tell V/1 me NP/1 VP/2 in P/1 20 Det/1 minutes N/1 NP/2 VP/2 ...' is that there is no rule for VP to transition to VP VP, which makes the sequence invalid.",
+      "category": "text_only",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_127.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_126.png",
+        "lecture_14/slide_127.png",
+        "lecture_14/slide_131.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.15789473684210525
+      }
+    },
+    {
+      "question_id": "cs601_q0015",
+      "question": "Why do we divide the column by Z=0.99?",
+      "gold_answer": "To ensure the probabilities sum to 1.",
+      "predicted_answer": "The provided context does not contain information about dividing a column by Z=0.99. Therefore, I cannot provide an answer based on the given lecture slides.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_007.png"
+      ],
+      "retrieved_slides": [
+        "lecture_09/slide_015.png",
+        "lecture_18/slide_105.png",
+        "lecture_16/slide_032.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0016",
+      "question": "What does the smallest box in the diagram represent?",
+      "gold_answer": "Training sentences",
+      "predicted_answer": "The context does not provide specific information about what the smallest box in the diagram represents.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_006.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_008.png",
+        "lecture_12/slide_020.png",
+        "lecture_12/slide_002.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0017",
+      "question": "What is the approximate value of p(Wi = horses | Ti = t) * p(Ti = t, i=1)?",
+      "gold_answer": "2.4e-5",
+      "predicted_answer": "The approximate value of \\( p(Wi = \\text{horses} | Ti = t) * p(Ti = t, i=1) \\) is \\( 2.4e-5 \\).",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_04/slide_042.png"
+      ],
+      "retrieved_slides": [
+        "lecture_04/slide_042.png",
+        "lecture_04/slide_040.png",
+        "lecture_10/slide_067.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.15384615384615385
+      }
+    },
+    {
+      "question_id": "cs601_q0018",
+      "question": "How are the probabilities for different languages represented in the slide?",
+      "gold_answer": "They are represented as p_english(SENT=x), p_polish(SENT=x), p_xhosa(SENT=x).",
+      "predicted_answer": "The slide does not provide specific details on how probabilities for different languages are represented. It discusses the use of probabilities in generating trees and strings, and the importance of smoothing and backing off in probabilistic models, but it does not mention language-specific probability representation.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_004.png"
+      ],
+      "retrieved_slides": [
+        "lecture_06/slide_034.png",
+        "lecture_04/slide_001.png",
+        "lecture_10/slide_056.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.08163265306122448
+      }
+    },
+    {
+      "question_id": "cs601_q0019",
+      "question": "What is the mathematical expression for the total probability?",
+      "gold_answer": "(\u221e+3)/(\u221e+3)",
+      "predicted_answer": "The provided context does not include a specific mathematical expression for the total probability.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_012.png"
+      ],
+      "retrieved_slides": [
+        "lecture_13/slide_009.png",
+        "lecture_17/slide_045.png",
+        "lecture_13/slide_010.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0020",
+      "question": "What is the relationship between 'thrilling' and 'Otto' in the sentence structure?",
+      "gold_answer": "'Thrilling' is the verb acting on the noun phrase 'Otto'.",
+      "predicted_answer": "The provided context does not contain any information about the relationship between 'thrilling' and 'Otto' in a sentence structure.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_007.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_082.png",
+        "lecture_08/slide_042.png",
+        "lecture_02/slide_010.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.16666666666666666
+      }
+    },
+    {
+      "question_id": "cs601_q0021",
+      "question": "What does the red box labeled 'constit(s,0,5)' represent in the diagram?",
+      "gold_answer": "It represents ambiguity in the parse forest.",
+      "predicted_answer": "The context provided does not include information about a red box labeled 'constit(s,0,5)' in a diagram. Therefore, I cannot provide an answer based on the given text.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_048.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_008.png",
+        "lecture_13/slide_020.png",
+        "lecture_12/slide_020.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07142857142857144
+      }
+    },
+    {
+      "question_id": "cs601_q0022",
+      "question": "What is the result of attaching D to A \u2192 B C . D E?",
+      "gold_answer": "It gives A \u2192 B C D . E.",
+      "predicted_answer": "The result of attaching D to A \u2192 B C . D E is A \u2192 B C D . E.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_09/slide_004.png"
+      ],
+      "retrieved_slides": [
+        "lecture_09/slide_003.png",
+        "lecture_09/slide_004.png",
+        "lecture_09/slide_021.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.43478260869565216
+      }
+    },
+    {
+      "question_id": "cs601_q0023",
+      "question": "What mathematical operation is used to combine chart values in the second loop?",
+      "gold_answer": "The operation used is '\u2295= semiring_weight(R) \u2297 chart[Y,start,mid] \u2297 chart[Z,mid,end]'.",
+      "predicted_answer": "The mathematical operation used to combine chart values in the second loop is addition.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_10/slide_077.png"
+      ],
+      "retrieved_slides": [
+        "lecture_08/slide_018.png",
+        "lecture_04/slide_037.png",
+        "lecture_10/slide_063.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.28571428571428575
+      }
+    },
+    {
+      "question_id": "cs601_q0024",
+      "question": "What does the arrow labeled '3NP5 10' indicate in the diagram?",
+      "gold_answer": "It indicates a prioritized agenda of pending constituents.",
+      "predicted_answer": "The provided context does not contain any information about an arrow labeled '3NP5 10' in a diagram. Therefore, I cannot provide an answer based on the given lecture slides.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_032.png"
+      ],
+      "retrieved_slides": [
+        "lecture_06/slide_016.png",
+        "lecture_07/slide_051.png",
+        "lecture_14/slide_042.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0025",
+      "question": "What components are labeled in the diagram on the left?",
+      "gold_answer": "EyeCamera, IR Lightsource, Vertical Eyeposition Adjust, Headband",
+      "predicted_answer": "The components labeled in the diagram on the left are \"VP,\" \"S,\" and \"NP.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_075.png",
+        "lecture_14/slide_054.png",
+        "lecture_16/slide_068.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0026",
+      "question": "What is the semantic representation for the VP_inf subtree?",
+      "gold_answer": "\u03bbx \u03bbe act(e,loving), lover(e,x), lovee(e,M)",
+      "predicted_answer": "The semantic representation for the VP_inf subtree is built by looking up the semantics for each word and then building the semantics for each constituent, working from the bottom up using the syntax tree as a \"recipe.\"",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_059.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_080.png",
+        "lecture_13/slide_049.png",
+        "lecture_14/slide_155.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0027",
+      "question": "What is the sequence of hidden states for the word 'Don'?",
+      "gold_answer": "h_0, h_1, h_2, h_3, h_4",
+      "predicted_answer": "The sequence of hidden states for the word 'Don' is not explicitly provided in the context. However, it is mentioned that cloze design trains left-to-right and right-to-left hidden states that work together in predicting the cloze word, which is related to the BERT model.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_107.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_118.png",
+        "lecture_17/slide_034.png",
+        "lecture_17/slide_035.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0028",
+      "question": "What is the product of all the edge weights on one path H, H, H?",
+      "gold_answer": "0.5 * 0.7 * 0.7 * 0.7 = 0.1715",
+      "predicted_answer": "The product of all the edge weights on one path H, H, H is calculated as follows: \\( p(H|Start) \\times p(2|H) \\times p(H|H) \\times p(3|H) \\times p(H|H) \\times p(3|H) = 0.5 \\times 0.2 \\times 0.8 \\times 0.7 \\times 0.8 \\times 0.7 = 0.03136 \\).",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_15/slide_011.png"
+      ],
+      "retrieved_slides": [
+        "lecture_15/slide_011.png",
+        "lecture_12/slide_016.png",
+        "lecture_12/slide_020.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1395348837209302
+      }
+    },
+    {
+      "question_id": "cs601_q0029",
+      "question": "How are the constituents visually connected in the diagram?",
+      "gold_answer": "The constituents are connected through lines forming a hierarchical structure.",
+      "predicted_answer": "The constituents in the diagram are visually connected using a dependency tree structure, where each word is the head of a whole connected subgraph.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_16/slide_013.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_059.png",
+        "lecture_18/slide_057.png",
+        "lecture_13/slide_038.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2962962962962963
+      }
+    },
+    {
+      "question_id": "cs601_q0030",
+      "question": "What is the sequence of transitions shown in the diagram from BOS to EOS?",
+      "gold_answer": "BOS -> N -> V -> V -> EOS",
+      "predicted_answer": "The sequence of transitions shown in the diagram from BOS to EOS is BOS -> N -> V -> EOS.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_112.png"
+      ],
+      "retrieved_slides": [
+        "lecture_17/slide_034.png",
+        "lecture_18/slide_050.png",
+        "lecture_04/slide_033.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4
+      }
+    },
+    {
+      "question_id": "cs601_q0031",
+      "question": "How many sentences are marked as good English according to the n-gram column?",
+      "gold_answer": "Four sentences are marked as good English.",
+      "predicted_answer": "The provided context does not specify the number of sentences marked as good English according to the n-gram column.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_009.png",
+        "lecture_09/slide_099.png",
+        "lecture_17/slide_110.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.43478260869565216
+      }
+    },
+    {
+      "question_id": "cs601_q0032",
+      "question": "What is the probability p(x) for outcome A?",
+      "gold_answer": "1/4",
+      "predicted_answer": "The provided context does not specify the probability p(x) for outcome A. It only discusses the concept of random variables and how they relate to outcomes, as well as a comparison of probabilities for text in different languages. To determine p(x) for a specific outcome, additional information about the distribution or model being used would be necessary.",
+      "category": "table",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_04/slide_050.png"
+      ],
+      "retrieved_slides": [
+        "lecture_04/slide_033.png",
+        "lecture_04/slide_034.png",
+        "lecture_04/slide_019.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0033",
+      "question": "What is the likelihood probability for a sentence given the language is Xhosa?",
+      "gold_answer": "0.00005",
+      "predicted_answer": "The provided text context does not contain specific information about calculating the likelihood probability for a sentence in the Xhosa language. The slides discuss general concepts related to probability in parsing and speech recognition, as well as issues with n-gram models and the Inside-Outside algorithm, but do not address Xhosa specifically.",
+      "category": "table",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_05/slide_017.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_056.png",
+        "lecture_02/slide_010.png",
+        "lecture_16/slide_066.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0034",
+      "question": "What is the smoothed probability for 'xyd'?",
+      "gold_answer": "201/326",
+      "predicted_answer": "The provided context does not contain specific information about the string 'xyd' or its occurrence in the training data. Therefore, it is not possible to determine the smoothed probability for 'xyd' based on the given lecture slides.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_007.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_056.png",
+        "lecture_04/slide_002.png",
+        "lecture_06/slide_042.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0035",
+      "question": "What is the infinitive form of the verb 'eat' in the progressive aspect?",
+      "gold_answer": "to be eating",
+      "predicted_answer": "The infinitive form of the verb 'eat' in the progressive aspect is \"to be eating.\"",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_023.png"
+      ],
+      "retrieved_slides": [
+        "lecture_07/slide_023.png",
+        "lecture_02/slide_010.png",
+        "lecture_09/slide_015.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4
       }
     },
     {
       "question_id": "cs601_q0036",
-      "question": "Why did John find the donut store problematic?",
-      "gold_answer": "He found it too expensive.",
-      "predicted_answer": "John found the donut store problematic because it turned out to be too expensive there.",
-      "category": "text_only",
+      "question": "What is the start position for the end position 4 in the table?",
+      "gold_answer": "The start position for the end position 4 is 4.",
+      "predicted_answer": "The start position for the end position 4 in the table is 0.",
+      "category": "table",
       "difficulty": "medium",
       "evidence_slides": [
-        "lecture_01/slide_015.png"
+        "lecture_08/slide_032.png"
       ],
       "retrieved_slides": [
-        "lecture_01/slide_021.png",
-        "lecture_01/slide_015.png",
-        "lecture_01/slide_012.png"
+        "lecture_08/slide_033.png",
+        "lecture_08/slide_034.png",
+        "lecture_08/slide_032.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.4210526315789473
+        "token_f1": 0.7777777777777777
       }
     },
     {
       "question_id": "cs601_q0037",
-      "question": "How is 'NP' defined in the context-free grammar?",
-      "gold_answer": "NP \u2192 Det N\u2019 or NP \u2192 Proper",
-      "predicted_answer": "In the context-free grammar, 'NP' is defined as either 'Det N\u2019' or 'Proper'.",
-      "category": "text_only",
-      "difficulty": "medium",
+      "question": "What is the grammatical structure of the phrase 'Papa ate the caviar with' according to the table?",
+      "gold_answer": "0 ROOT . S",
+      "predicted_answer": "The provided context does not include a table or specific information about the grammatical structure of the phrase \"Papa ate the caviar with.\" Therefore, based on the available context, I cannot determine the grammatical structure of that phrase.",
+      "category": "table",
+      "difficulty": "hard",
       "evidence_slides": [
-        "lecture_02/slide_015.png"
+        "lecture_09/slide_059.png"
       ],
       "retrieved_slides": [
-        "lecture_02/slide_013.png",
-        "lecture_13/slide_018.png",
-        "lecture_13/slide_020.png"
+        "lecture_07/slide_045.png",
+        "lecture_17/slide_110.png",
+        "lecture_08/slide_021.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.5
+        "token_f1": 0.0
       }
     },
     {
       "question_id": "cs601_q0038",
-      "question": "Which phrase is most probable: 'by the way, are they\u2019re likely to', 'by the way, are there likely to', or 'by the way, are their likely to'?",
-      "gold_answer": "by the way, are they\u2019re likely to",
-      "predicted_answer": "'by the way, are there likely to'",
-      "category": "text_only",
-      "difficulty": "medium",
+      "question": "Which cell contains the highest value for 'S'?",
+      "gold_answer": "Row 0, Column 4 with a value of 27.",
+      "predicted_answer": "The provided context does not contain any information about a cell with the highest value for 'S'. The slides discuss tasks related to probability in parsing and speech recognition, decoding paths, and predicting properties of prefixes, but there is no mention of a specific cell or value for 'S'.",
+      "category": "table",
+      "difficulty": "hard",
       "evidence_slides": [
-        "lecture_03/slide_006.png"
+        "lecture_10/slide_028.png"
       ],
       "retrieved_slides": [
-        "lecture_03/slide_006.png",
-        "lecture_13/slide_074.png",
-        "lecture_17/slide_123.png"
+        "lecture_10/slide_056.png",
+        "lecture_14/slide_136.png",
+        "lecture_14/slide_102.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.8333333333333334
+        "token_f1": 0.11538461538461538
       }
     },
     {
       "question_id": "cs601_q0039",
-      "question": "What example is given to illustrate the ambiguity in the story?",
-      "gold_answer": "Mozart composed music.",
-      "predicted_answer": "The example given to illustrate the ambiguity is \"Put the apple on the towel in the box.\"",
-      "category": "text_only",
+      "question": "What is the value at the intersection of 'flies' and '3' in the table?",
+      "gold_answer": "NP 10",
+      "predicted_answer": "The provided context does not contain any information about a table or specific values related to 'flies' and '3'. Therefore, I cannot determine the value at the intersection of 'flies' and '3' in the table based on the given text.",
+      "category": "table",
       "difficulty": "medium",
       "evidence_slides": [
-        "lecture_01/slide_017.png"
+        "lecture_11/slide_031.png"
       ],
       "retrieved_slides": [
+        "lecture_10/slide_067.png",
         "lecture_10/slide_056.png",
-        "lecture_12/slide_016.png",
-        "lecture_17/slide_022.png"
+        "lecture_09/slide_016.png"
       ],
       "scores": {
         "exact_match": 0.0,
@@ -782,37 +782,257 @@
     },
     {
       "question_id": "cs601_q0040",
-      "question": "What turned out to be too expensive for John?",
-      "gold_answer": "The coffee at the donut store.",
-      "predicted_answer": "The coffee turned out to be too expensive for John.",
-      "category": "text_only",
+      "question": "Which product had the highest sales in March?",
+      "gold_answer": "Grommets",
+      "predicted_answer": "Grommets had the highest sales in March with 10 units sold.",
+      "category": "table",
       "difficulty": "medium",
       "evidence_slides": [
-        "lecture_01/slide_021.png"
+        "lecture_15/slide_003.png"
       ],
       "retrieved_slides": [
-        "lecture_01/slide_022.png",
-        "lecture_01/slide_012.png",
-        "lecture_01/slide_011.png"
+        "lecture_10/slide_056.png",
+        "lecture_16/slide_044.png",
+        "lecture_15/slide_004.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.15384615384615383
+        "token_f1": 0.18181818181818182
       }
     },
     {
       "question_id": "cs601_q0041",
-      "question": "What is the probability of the rule 'NP \u2192 Det N\u2019'?",
-      "gold_answer": "20",
-      "predicted_answer": "The provided context does not contain specific information about the probability of the rule 'NP \u2192 Det N'. The context discusses general concepts of probability in parsing and generation but does not provide details on specific rules or their probabilities.",
-      "category": "text_only",
-      "difficulty": "medium",
+      "question": "Which cells contain the label 'NP'?",
+      "gold_answer": "(0, 0), (0, 1), (0, 4), (1, 1), (3, 4)",
+      "predicted_answer": "The cells containing the label 'NP' are the ones labeled as \"NP\" in the substructure diagram under \"3. Cross-rule substructures\". Specifically, these are the cells at the top of the diagram labeled as \"NP\" and the one under \"S\" labeled as \"NP\".",
+      "category": "table",
+      "difficulty": "hard",
       "evidence_slides": [
-        "lecture_02/slide_017.png"
+        "lecture_16/slide_038.png"
       ],
       "retrieved_slides": [
-        "lecture_14/slide_005.png",
+        "lecture_06/slide_061.png",
+        "lecture_06/slide_060.png",
+        "lecture_17/slide_054.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.04545454545454545
+      }
+    },
+    {
+      "question_id": "cs601_q0042",
+      "question": "What is the minimum weight parse for the entire sentence?",
+      "gold_answer": "S with weight 22",
+      "predicted_answer": "The context provided does not directly address how to find the minimum weight parse for an entire sentence. However, it mentions that CKY no longer works for finding the best parse when considering additional \"non-local\" features. Instead, an approximate \"reranking\" algorithm is suggested, where a simplified model is used to find a parse forest, and then the best parses are re-scored using the full model. Therefore, the minimum weight parse would likely be determined through this reranking process, using the full model to evaluate the top parses extracted by the simplified model.",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_011.png"
+      ],
+      "retrieved_slides": [
+        "lecture_16/slide_075.png",
+        "lecture_17/slide_092.png",
+        "lecture_13/slide_049.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.024096385542168672
+      }
+    },
+    {
+      "question_id": "cs601_q0043",
+      "question": "Which system has higher accuracy on spam?",
+      "gold_answer": "System 1",
+      "predicted_answer": "System 1 has higher accuracy on spam with 99.99%.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_18/slide_023.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_023.png",
+        "lecture_02/slide_002.png",
+        "lecture_07/slide_023.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3636363636363636
+      }
+    },
+    {
+      "question_id": "cs601_q0044",
+      "question": "How many novels can be processed with 1 million tokens using the ada v2 model?",
+      "gold_answer": "8 novels.",
+      "predicted_answer": "1 million tokens can process about 8 novels using the ada v2 model.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_19/slide_023.png"
+      ],
+      "retrieved_slides": [
+        "lecture_19/slide_019.png",
+        "lecture_19/slide_018.png",
+        "lecture_06/slide_044.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2857142857142857
+      }
+    },
+    {
+      "question_id": "cs601_q0045",
+      "question": "Which English sentence is both good English and a good match to the input?",
+      "gold_answer": "Jon appeared on TV.",
+      "predicted_answer": "Jon appeared on TV.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_010.png",
+        "lecture_03/slide_009.png",
+        "lecture_18/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0046",
+      "question": "Which line in the chart has the lowest RMSE value?",
+      "gold_answer": "\"ors\" (RMSE=0.0068)",
+      "predicted_answer": "The provided text context does not contain any information about a chart or RMSE values. Therefore, I cannot answer the question based on the given context.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_058.png",
+        "lecture_18/slide_010.png",
+        "lecture_11/slide_042.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0047",
+      "question": "What is the significance of the purple bars in the chart?",
+      "gold_answer": "The purple bars represent the total number of types, T.",
+      "predicted_answer": "The provided text context does not mention purple bars or a chart, so I cannot determine the significance of the purple bars in the chart based on the given information.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_039.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_056.png",
+        "lecture_02/slide_008.png",
+        "lecture_04/slide_044.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1875
+      }
+    },
+    {
+      "question_id": "cs601_q0048",
+      "question": "How does the probability of eye movement change for the 'Relatum-target' category from '5 hearts that is' to 'clubs'?",
+      "gold_answer": "It decreases initially and then increases sharply.",
+      "predicted_answer": "In the 'Relatum-target' category, the probability of eye movement increases from '5 hearts that is' to 'clubs'.",
+      "category": "chart_graph",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_12/slide_015.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_015.png",
+        "lecture_12/slide_013.png",
+        "lecture_12/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09090909090909091
+      }
+    },
+    {
+      "question_id": "cs601_q0049",
+      "question": "What does the graph of \u03c3(x) illustrate about its behavior for x < 0?",
+      "gold_answer": "\u03c3(x) is approximately 0 if x < 0.",
+      "predicted_answer": "The provided context does not contain information about the graph of \u03c3(x) or its behavior for x < 0. Therefore, I cannot answer the question based on the given lecture slides.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_042.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_078.png",
+        "lecture_06/slide_016.png",
+        "lecture_13/slide_013.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.18181818181818182
+      }
+    },
+    {
+      "question_id": "cs601_q0050",
+      "question": "How does the probability of p(Observations) change with each iteration in the bar chart?",
+      "gold_answer": "The probability decreases with each iteration.",
+      "predicted_answer": "The provided context does not contain information about a bar chart or how the probability of p(Observations) changes with each iteration. Therefore, I cannot answer the question based on the given lecture slides.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_021.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_020.png",
+        "lecture_18/slide_008.png",
+        "lecture_13/slide_073.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.24242424242424243
+      }
+    },
+    {
+      "question_id": "cs601_q0051",
+      "question": "How does the precision change as recall increases according to the graph?",
+      "gold_answer": "Precision decreases as recall increases.",
+      "predicted_answer": "As recall increases, precision generally decreases according to the graph. This is because moving from high precision to high recall involves keeping more messages, which may include more bad messages, thus reducing precision.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_18/slide_024.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_026.png",
+        "lecture_18/slide_025.png",
+        "lecture_18/slide_024.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2702702702702703
+      }
+    },
+    {
+      "question_id": "cs601_q0052",
+      "question": "What is the approximate probability value at the peak of the 'hor' line?",
+      "gold_answer": "Approximately 0.30",
+      "predicted_answer": "The provided context does not contain any information about a 'hor' line or its probability value. Therefore, I cannot provide an answer based on the given text.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_025.png"
+      ],
+      "retrieved_slides": [
         "lecture_10/slide_067.png",
+        "lecture_16/slide_075.png",
         "lecture_10/slide_056.png"
       ],
       "scores": {
@@ -821,339 +1041,119 @@
       }
     },
     {
-      "question_id": "cs601_q0042",
-      "question": "Why did John think getting a coffee was good?",
-      "gold_answer": "He thought a coffee was good every few hours.",
-      "predicted_answer": "John thought getting a coffee was good every few hours.",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_01/slide_014.png"
-      ],
-      "retrieved_slides": [
-        "lecture_01/slide_021.png",
-        "lecture_01/slide_019.png",
-        "lecture_01/slide_011.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.823529411764706
-      }
-    },
-    {
-      "question_id": "cs601_q0043",
-      "question": "Which phrase is most probable: 'I think they\u2019re okay', 'I think there okay', or 'I think their okay'?",
-      "gold_answer": "I think they\u2019re okay",
-      "predicted_answer": "I think they\u2019re okay",
-      "category": "text_only",
-      "difficulty": "medium",
-      "evidence_slides": [
-        "lecture_03/slide_006.png"
-      ],
-      "retrieved_slides": [
-        "lecture_03/slide_006.png",
-        "lecture_13/slide_073.png",
-        "lecture_13/slide_074.png"
-      ],
-      "scores": {
-        "exact_match": 1.0,
-        "token_f1": 1.0
-      }
-    },
-    {
-      "question_id": "cs601_q0044",
-      "question": "What is a strictly local grammar according to the slide?",
-      "gold_answer": "A strictly local grammar is a set of legal n-grams.",
-      "predicted_answer": "A strictly local grammar is defined as a set of legal n-grams.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_018.png"
-      ],
-      "retrieved_slides": [
-        "lecture_17/slide_110.png",
-        "lecture_02/slide_019.png",
-        "lecture_09/slide_016.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.888888888888889
-      }
-    },
-    {
-      "question_id": "cs601_q0045",
-      "question": "What is the rule for expanding 'S' in the context-free grammar provided?",
-      "gold_answer": "S \u2192 NP VP .",
-      "predicted_answer": "The context provided does not specify a rule for expanding 'S' in the context-free grammar.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_016.png"
-      ],
-      "retrieved_slides": [
-        "lecture_08/slide_038.png",
-        "lecture_08/slide_017.png",
-        "lecture_08/slide_018.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.125
-      }
-    },
-    {
-      "question_id": "cs601_q0046",
-      "question": "Why did John find the coffee to be problematic?",
-      "gold_answer": "It turned out to be too expensive.",
-      "predicted_answer": "John found the coffee to be problematic because it turned out to be too expensive at the donut store.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_01/slide_012.png"
-      ],
-      "retrieved_slides": [
-        "lecture_01/slide_021.png",
-        "lecture_01/slide_020.png",
-        "lecture_01/slide_019.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.5833333333333334
-      }
-    },
-    {
-      "question_id": "cs601_q0047",
-      "question": "What is the context-free grammar rule for 'S'?",
-      "gold_answer": "S \u2192 NP VP .",
-      "predicted_answer": "The context-free grammar rule for 'S' is \\( S \\rightarrow N V S \\).",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_015.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_019.png",
-        "lecture_02/slide_018.png",
-        "lecture_16/slide_043.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.13333333333333333
-      }
-    },
-    {
-      "question_id": "cs601_q0048",
-      "question": "What does x* mean in the context of the formal language equivalent?",
-      "gold_answer": "x* means '0 or more x's'.",
-      "predicted_answer": "In the context of the formal language equivalent, x* means \"0 or more x's.\"",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_010.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_010.png",
-        "lecture_09/slide_015.png",
-        "lecture_02/slide_011.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.6666666666666666
-      }
-    },
-    {
-      "question_id": "cs601_q0049",
-      "question": "What is the main topic of the slide?",
-      "gold_answer": "Ambiguity",
-      "predicted_answer": "The main topic of the slide is \"Phrase Types to Identify for Information Extraction (IE).\"",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_023.png"
-      ],
-      "retrieved_slides": [
-        "lecture_03/slide_005.png",
-        "lecture_03/slide_004.png",
-        "lecture_18/slide_073.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0050",
-      "question": "What is the suggested action if you do not want to stay for questions?",
-      "gold_answer": "Please leave quickly and quietly.",
-      "predicted_answer": "If you do not want to stay for questions, the suggested action is to leave quickly and quietly.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_01/slide_026.png"
-      ],
-      "retrieved_slides": [
-        "lecture_01/slide_026.png",
-        "lecture_17/slide_135.png",
-        "lecture_13/slide_008.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.3636363636363636
-      }
-    },
-    {
-      "question_id": "cs601_q0051",
-      "question": "Which lexical category does 'king' belong to according to the lexical rules?",
-      "gold_answer": "Noun",
-      "predicted_answer": "The provided context does not include specific lexical rules or information about the lexical category of 'king'. Therefore, I cannot determine which lexical category 'king' belongs to based on the given lecture slides.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_014.png"
-      ],
-      "retrieved_slides": [
-        "lecture_09/slide_099.png",
-        "lecture_08/slide_044.png",
-        "lecture_04/slide_044.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0052",
-      "question": "What does the non-terminal 'N' represent in the grammar?",
-      "gold_answer": "N \u2192 Mary",
-      "predicted_answer": "The provided text context does not contain information about a non-terminal 'N' or any grammar-related details. Therefore, I cannot provide an answer based on the given context.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_012.png"
-      ],
-      "retrieved_slides": [
-        "lecture_14/slide_091.png",
-        "lecture_06/slide_016.png",
-        "lecture_18/slide_105.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.07692307692307691
-      }
-    },
-    {
       "question_id": "cs601_q0053",
-      "question": "What are the four levels of language mentioned on the slide?",
-      "gold_answer": "Phonetics/phonology/morphology, Syntax, Semantics, Pragmatics",
-      "predicted_answer": "The four levels of language mentioned on the slide are phonetics/phonology/morphology, syntax, semantics, and pragmatics.",
-      "category": "text_only",
+      "question": "What is the significance of the purple color in the bar chart?",
+      "gold_answer": "The purple color in the bar chart represents novel types.",
+      "predicted_answer": "The provided context does not mention a bar chart or the significance of the purple color in a bar chart. Therefore, I cannot provide an answer based on the given lecture slides.",
+      "category": "chart_graph",
       "difficulty": "easy",
       "evidence_slides": [
-        "lecture_01/slide_009.png"
+        "lecture_06/slide_041.png"
       ],
       "retrieved_slides": [
-        "lecture_01/slide_009.png",
-        "lecture_02/slide_008.png",
-        "lecture_14/slide_120.png"
+        "lecture_12/slide_020.png",
+        "lecture_18/slide_063.png",
+        "lecture_10/slide_056.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.47058823529411764
+        "token_f1": 0.30303030303030304
       }
     },
     {
       "question_id": "cs601_q0054",
-      "question": "What did John think was good every few hours?",
-      "gold_answer": "A coffee.",
-      "predicted_answer": "A coffee.",
-      "category": "text_only",
-      "difficulty": "easy",
+      "question": "How does the probability of eye movement change for 'Alternative' between the first and second points?",
+      "gold_answer": "It decreases from 0.5 to 0.3.",
+      "predicted_answer": "The probability of eye movement for 'Alternative' increases from 0.1 to 0.3 between the first and second points.",
+      "category": "chart_graph",
+      "difficulty": "hard",
       "evidence_slides": [
-        "lecture_01/slide_020.png"
+        "lecture_12/slide_014.png"
       ],
       "retrieved_slides": [
-        "lecture_01/slide_021.png",
-        "lecture_01/slide_022.png",
-        "lecture_01/slide_011.png"
+        "lecture_12/slide_015.png",
+        "lecture_12/slide_013.png",
+        "lecture_12/slide_014.png"
       ],
       "scores": {
-        "exact_match": 1.0,
-        "token_f1": 1.0
+        "exact_match": 0.0,
+        "token_f1": 0.2727272727272727
       }
     },
     {
       "question_id": "cs601_q0055",
-      "question": "What is the relationship between context-sensitive grammar and linear bounded automaton?",
-      "gold_answer": "A context-sensitive grammar corresponds to a linear bounded automaton.",
-      "predicted_answer": "A context-sensitive grammar corresponds to a linear bounded automaton.",
-      "category": "text_only",
-      "difficulty": "easy",
+      "question": "How does the perplexity change over 10 iterations?",
+      "gold_answer": "The perplexity decreases over 10 iterations.",
+      "predicted_answer": "The provided context does not contain information about perplexity or how it changes over iterations. Therefore, I cannot answer the question based on the given lecture slides.",
+      "category": "chart_graph",
+      "difficulty": "medium",
       "evidence_slides": [
-        "lecture_02/slide_019.png"
+        "lecture_15/slide_020.png"
       ],
       "retrieved_slides": [
-        "lecture_02/slide_019.png",
-        "lecture_02/slide_020.png",
-        "lecture_14/slide_082.png"
+        "lecture_06/slide_016.png",
+        "lecture_18/slide_008.png",
+        "lecture_13/slide_073.png"
       ],
       "scores": {
-        "exact_match": 1.0,
-        "token_f1": 1.0
+        "exact_match": 0.0,
+        "token_f1": 0.20689655172413793
       }
     },
     {
       "question_id": "cs601_q0056",
-      "question": "How long do you have to complete the task?",
-      "gold_answer": "Two weeks.",
-      "predicted_answer": "The provided text context does not specify a time limit for completing the task.",
-      "category": "text_only",
+      "question": "What does the graph on the slide compare?",
+      "gold_answer": "The graph compares precision versus recall of good (non-spam) email.",
+      "predicted_answer": "The graph on the slide compares the timing of processing the sentence \"Put the apple on the towel in the box\" in one-referent and two-referent contexts.",
+      "category": "chart_graph",
       "difficulty": "easy",
       "evidence_slides": [
-        "lecture_02/slide_013.png"
+        "lecture_18/slide_026.png"
       ],
       "retrieved_slides": [
-        "lecture_03/slide_007.png",
-        "lecture_06/slide_016.png",
-        "lecture_16/slide_064.png"
+        "lecture_18/slide_075.png",
+        "lecture_12/slide_018.png",
+        "lecture_12/slide_019.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.0
+        "token_f1": 0.21428571428571427
       }
     },
     {
       "question_id": "cs601_q0057",
-      "question": "What is one example of a topic 1 sample?",
-      "gold_answer": "In the beginning God created \u2026",
-      "predicted_answer": "\"In the beginning God created \u2026\"",
-      "category": "text_only",
+      "question": "What does the dashed line represent in the chart?",
+      "gold_answer": "Dashed lines show backoff probabilities.",
+      "predicted_answer": "The provided text context does not contain any information about a chart or a dashed line. Therefore, I cannot answer what the dashed line represents in the chart.",
+      "category": "chart_graph",
       "difficulty": "easy",
       "evidence_slides": [
-        "lecture_03/slide_004.png"
+        "lecture_04/slide_025.png"
       ],
       "retrieved_slides": [
-        "lecture_18/slide_002.png",
-        "lecture_03/slide_004.png",
-        "lecture_18/slide_021.png"
+        "lecture_14/slide_091.png",
+        "lecture_06/slide_016.png",
+        "lecture_18/slide_010.png"
       ],
       "scores": {
-        "exact_match": 1.0,
-        "token_f1": 1.0
+        "exact_match": 0.0,
+        "token_f1": 0.07142857142857142
       }
     },
     {
       "question_id": "cs601_q0058",
-      "question": "What is the topic of the slide?",
-      "gold_answer": "Contextual Spelling Correction",
-      "predicted_answer": "The topic of the slide is \"Text Categorization.\"",
-      "category": "text_only",
+      "question": "What sample size corresponds to the histogram with the smoothest distribution?",
+      "gold_answer": "2000000",
+      "predicted_answer": "A sample size of 30 or more corresponds to the histogram with the smoothest distribution.",
+      "category": "chart_graph",
       "difficulty": "easy",
       "evidence_slides": [
-        "lecture_03/slide_006.png"
+        "lecture_06/slide_017.png"
       ],
       "retrieved_slides": [
-        "lecture_03/slide_004.png",
-        "lecture_18/slide_002.png",
-        "lecture_14/slide_111.png"
+        "lecture_06/slide_018.png",
+        "lecture_03/slide_003.png",
+        "lecture_13/slide_070.png"
       ],
       "scores": {
         "exact_match": 0.0,
@@ -1162,258 +1162,118 @@
     },
     {
       "question_id": "cs601_q0059",
-      "question": "What should students agree on by the end of the course?",
-      "gold_answer": "Students should agree that language is subtle & interesting.",
-      "predicted_answer": "Students should agree that language is subtle and interesting.",
-      "category": "text_only",
-      "difficulty": "easy",
+      "question": "What is the probability of eye movement for the 'Miscellaneous' category at the word 'below'?",
+      "gold_answer": "0.1",
+      "predicted_answer": "The probability of eye movement for the 'Miscellaneous' category at the word 'below' is 0.2.",
+      "category": "chart_graph",
+      "difficulty": "medium",
       "evidence_slides": [
-        "lecture_01/slide_004.png"
+        "lecture_12/slide_013.png"
       ],
       "retrieved_slides": [
-        "lecture_13/slide_074.png",
-        "lecture_01/slide_004.png",
-        "lecture_18/slide_066.png"
+        "lecture_12/slide_015.png",
+        "lecture_12/slide_013.png",
+        "lecture_12/slide_014.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.9411764705882353
+        "token_f1": 0.0
       }
     },
     {
       "question_id": "cs601_q0060",
-      "question": "What is the main topic of the slide?",
-      "gold_answer": "Machine Translation",
-      "predicted_answer": "The main topic of the slide is \"Topic Segmentation,\" which involves breaking a large document or media stream into indexable chunks.",
-      "category": "text_only",
+      "question": "What is the approximate sample size of the histogram in the bottom right corner?",
+      "gold_answer": "The sample size is approximately 60,000.",
+      "predicted_answer": "The provided context does not contain any information about a histogram or its sample size. Therefore, I cannot determine the approximate sample size of the histogram in the bottom right corner based on the given text.",
+      "category": "chart_graph",
       "difficulty": "easy",
       "evidence_slides": [
-        "lecture_03/slide_009.png"
+        "lecture_06/slide_018.png"
       ],
       "retrieved_slides": [
-        "lecture_03/slide_005.png",
-        "lecture_03/slide_004.png",
-        "lecture_18/slide_073.png"
+        "lecture_16/slide_075.png",
+        "lecture_17/slide_061.png",
+        "lecture_18/slide_018.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.0
+        "token_f1": 0.1142857142857143
       }
     },
     {
       "question_id": "cs601_q0061",
-      "question": "What is the main question posed on the slide?",
-      "gold_answer": "But can't GPT-4 read/write that?",
-      "predicted_answer": "The main question posed on the slide is: \"How can semantic roles feed into further tasks?\"",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_01/slide_023.png"
-      ],
-      "retrieved_slides": [
-        "lecture_19/slide_043.png",
-        "lecture_18/slide_073.png",
-        "lecture_18/slide_067.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0062",
-      "question": "What does the slide suggest we consider at the phonetics/phonology/morphology level?",
-      "gold_answer": "What words (or subwords) are we dealing with?",
-      "predicted_answer": "The slide does not provide any specific suggestions related to the phonetics/phonology/morphology level.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_01/slide_009.png"
-      ],
-      "retrieved_slides": [
-        "lecture_18/slide_063.png",
-        "lecture_09/slide_015.png",
-        "lecture_17/slide_005.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0063",
-      "question": "What does the slide suggest as a possible solution to rule out bad sentences?",
-      "gold_answer": "Using 4-grams, 5-grams, ... 50-grams.",
-      "predicted_answer": "The slide suggests using a top-down (goal-directed) parser as a possible solution to rule out bad sentences. This approach involves starting to build a constituent based on the needs of the left context rather than the input, preventing the construction of constituents that cannot be used, such as building \"spoon\" as a verb when there's no context to use a verb there.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_005.png"
-      ],
-      "retrieved_slides": [
-        "lecture_09/slide_015.png",
-        "lecture_16/slide_070.png",
-        "lecture_13/slide_045.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.03571428571428572
-      }
-    },
-    {
-      "question_id": "cs601_q0064",
-      "question": "What does the non-terminal 'V' represent in the grammar?",
-      "gold_answer": "V \u2192 likes",
-      "predicted_answer": "The provided text context does not contain information about a non-terminal 'V' or any specific grammar. Therefore, I cannot provide an answer based on the given lecture slides.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_012.png"
-      ],
-      "retrieved_slides": [
-        "lecture_14/slide_091.png",
-        "lecture_06/slide_016.png",
-        "lecture_18/slide_105.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.07407407407407407
-      }
-    },
-    {
-      "question_id": "cs601_q0065",
-      "question": "What was the issue John faced with buying coffee?",
-      "gold_answer": "It turned out to be too expensive.",
-      "predicted_answer": "The issue John faced with buying coffee was that it turned out to be too expensive at the donut store.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_01/slide_020.png"
-      ],
-      "retrieved_slides": [
-        "lecture_01/slide_022.png",
-        "lecture_01/slide_021.png",
-        "lecture_14/slide_152.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.56
-      }
-    },
-    {
-      "question_id": "cs601_q0066",
-      "question": "What is the main topic of the slide?",
-      "gold_answer": "Probabilistic Context-Free Grammar: Randomly Sampling a Sentence",
-      "predicted_answer": "The main topic of the slide is \"Topic Segmentation,\" which involves breaking a large document or media stream into indexable chunks.",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_021.png"
-      ],
-      "retrieved_slides": [
-        "lecture_03/slide_005.png",
-        "lecture_03/slide_004.png",
-        "lecture_18/slide_073.png"
-      ],
-      "scores": {
-        "exact_match": 0.0,
-        "token_f1": 0.0
-      }
-    },
-    {
-      "question_id": "cs601_q0067",
-      "question": "What is the main topic of the slide?",
-      "gold_answer": "Word trigrams: A good model of English?",
-      "predicted_answer": "The main topic of the slide is \"Topic Segmentation,\" which involves breaking a large document or media stream into indexable chunks.",
-      "category": "text_only",
+      "question": "How many sentences are marked with a question mark?",
+      "gold_answer": "Three sentences are marked with a question mark.",
+      "predicted_answer": "There are four sentences marked with a question mark.",
+      "category": "layout_aware",
       "difficulty": "easy",
       "evidence_slides": [
         "lecture_02/slide_002.png"
       ],
       "retrieved_slides": [
-        "lecture_03/slide_005.png",
-        "lecture_03/slide_004.png",
-        "lecture_18/slide_073.png"
+        "lecture_02/slide_009.png",
+        "lecture_19/slide_047.png",
+        "lecture_14/slide_180.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.08333333333333333
+        "token_f1": 0.7999999999999999
       }
     },
     {
-      "question_id": "cs601_q0068",
-      "question": "What did John think was good every few hours?",
-      "gold_answer": "A coffee",
-      "predicted_answer": "A coffee.",
-      "category": "text_only",
-      "difficulty": "easy",
+      "question_id": "cs601_q0062",
+      "question": "Which sentence in the 'Huge set of choices' is not related to the translation task?",
+      "gold_answer": "Jon is happy today.",
+      "predicted_answer": "The sentence \"The to swallow Wanda has been Otto plan thrilling\" is not related to the translation task.",
+      "category": "layout_aware",
+      "difficulty": "medium",
       "evidence_slides": [
-        "lecture_01/slide_017.png"
+        "lecture_03/slide_010.png"
       ],
       "retrieved_slides": [
-        "lecture_01/slide_021.png",
-        "lecture_01/slide_022.png",
-        "lecture_01/slide_011.png"
-      ],
-      "scores": {
-        "exact_match": 1.0,
-        "token_f1": 1.0
-      }
-    },
-    {
-      "question_id": "cs601_q0069",
-      "question": "What is the sequence of letters useful for solving cryptograms?",
-      "gold_answer": "ETAOINSHRDLU",
-      "predicted_answer": "ETAOINSHRDLU",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_01/slide_024.png"
-      ],
-      "retrieved_slides": [
-        "lecture_04/slide_033.png",
-        "lecture_10/slide_056.png",
-        "lecture_01/slide_024.png"
-      ],
-      "scores": {
-        "exact_match": 1.0,
-        "token_f1": 1.0
-      }
-    },
-    {
-      "question_id": "cs601_q0070",
-      "question": "What is the initial rule for a sentence in the context-free grammar?",
-      "gold_answer": "S \u2192 N V N",
-      "predicted_answer": "The initial rule for a sentence in the context-free grammar is \\( S \\rightarrow NP \\ VP \\).",
-      "category": "text_only",
-      "difficulty": "easy",
-      "evidence_slides": [
-        "lecture_02/slide_012.png"
-      ],
-      "retrieved_slides": [
-        "lecture_02/slide_013.png",
         "lecture_16/slide_067.png",
-        "lecture_07/slide_002.png"
+        "lecture_18/slide_058.png",
+        "lecture_13/slide_043.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.11764705882352941
+        "token_f1": 0.10526315789473685
       }
     },
     {
-      "question_id": "cs601_q0071",
-      "question": "What is the French sentence provided on the slide?",
-      "gold_answer": "Jon est apparu \u00e0 la t\u00e9l\u00e9vision.",
-      "predicted_answer": "The slide does not provide a French sentence.",
-      "category": "text_only",
-      "difficulty": "easy",
+      "question_id": "cs601_q0063",
+      "question": "What are the counts from the Brown corpus for the probability p(h | BOS, BOS)?",
+      "gold_answer": "The counts are 4470/52108.",
+      "predicted_answer": "The counts from the Brown corpus for the probability \\( p(h | BOS, BOS) \\) are 4470/52108.",
+      "category": "layout_aware",
+      "difficulty": "medium",
       "evidence_slides": [
-        "lecture_03/slide_009.png"
+        "lecture_04/slide_027.png"
       ],
       "retrieved_slides": [
-        "lecture_17/slide_032.png",
-        "lecture_09/slide_006.png",
-        "lecture_19/slide_042.png"
+        "lecture_04/slide_027.png",
+        "lecture_04/slide_028.png",
+        "lecture_06/slide_002.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.42857142857142855
+      }
+    },
+    {
+      "question_id": "cs601_q0064",
+      "question": "What does the 'likelihood' box contain in terms of probabilities?",
+      "gold_answer": "p(SOUND=uhh | MEAN=gimme), p(SOUND=uhh | MEAN=changeme), p(SOUND=uhh | MEAN=loveme)",
+      "predicted_answer": "The provided text context does not contain specific information about what the 'likelihood' box contains in terms of probabilities.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_011.png"
+      ],
+      "retrieved_slides": [
+        "lecture_13/slide_018.png",
+        "lecture_02/slide_008.png",
+        "lecture_13/slide_020.png"
       ],
       "scores": {
         "exact_match": 0.0,
@@ -1421,39 +1281,59 @@
       }
     },
     {
-      "question_id": "cs601_q0072",
-      "question": "What activity did the narrator stop doing during freshman year?",
-      "gold_answer": "Smoking",
-      "predicted_answer": "The narrator stopped smoking during freshman year.",
-      "category": "text_only",
-      "difficulty": "easy",
+      "question_id": "cs601_q0065",
+      "question": "What is the relationship between smoothing and the balance between bias and variance?",
+      "gold_answer": "Increasing smoothing increases bias and decreases variance.",
+      "predicted_answer": "Smoothing affects the balance between bias and variance by reducing variance. With no smoothing (\u03bb=0), there is a risk of overfitting, where the model memorizes the training data, leading to high variance. More smoothing (large \u03bb>0) increases bias but reduces variance, potentially leading to underfitting, where the model ignores the training data. The goal is to find the right amount of smoothing to balance bias and variance effectively.",
+      "category": "layout_aware",
+      "difficulty": "hard",
       "evidence_slides": [
-        "lecture_01/slide_014.png"
+        "lecture_06/slide_021.png"
       ],
       "retrieved_slides": [
-        "lecture_06/slide_016.png",
-        "lecture_15/slide_013.png",
-        "lecture_01/slide_014.png"
+        "lecture_14/slide_082.png",
+        "lecture_06/slide_021.png",
+        "lecture_08/slide_042.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.2857142857142857
+        "token_f1": 0.14925373134328357
       }
     },
     {
-      "question_id": "cs601_q0073",
-      "question": "What does the slide indicate about context-sensitive grammar?",
-      "gold_answer": "A context-sensitive grammar is a set of context-sensitive rules.",
-      "predicted_answer": "The slide does not provide specific information about context-sensitive grammar.",
-      "category": "text_only",
-      "difficulty": "easy",
+      "question_id": "cs601_q0066",
+      "question": "Compare the present and past forms of the verb 'eat' in the perfect progressive aspect.",
+      "gold_answer": "Present: has been eating, Past: had been eating",
+      "predicted_answer": "The present perfect progressive form of the verb 'eat' is \"has been eating\" or \"have been eating,\" while the past perfect progressive form is \"had been eating.\"",
+      "category": "layout_aware",
+      "difficulty": "hard",
       "evidence_slides": [
-        "lecture_02/slide_018.png"
+        "lecture_07/slide_023.png"
       ],
       "retrieved_slides": [
-        "lecture_06/slide_016.png",
-        "lecture_09/slide_099.png",
-        "lecture_07/slide_051.png"
+        "lecture_07/slide_035.png",
+        "lecture_07/slide_032.png",
+        "lecture_07/slide_039.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5
+      }
+    },
+    {
+      "question_id": "cs601_q0067",
+      "question": "Which words in the sentence correspond to the 'Det' category?",
+      "gold_answer": "\"the\" and \"a\"",
+      "predicted_answer": "The words \"The\" and \"Every\" correspond to the 'Det' category.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_016.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_058.png",
+        "lecture_18/slide_059.png",
+        "lecture_14/slide_168.png"
       ],
       "scores": {
         "exact_match": 0.0,
@@ -1461,72 +1341,1697 @@
       }
     },
     {
-      "question_id": "cs601_q0074",
-      "question": "What is the context-free grammar rule for a sentence (S) in the syntactic rules?",
-      "gold_answer": "S \u2192 NP VP .",
-      "predicted_answer": "The context-free grammar rule for a sentence (S) in the syntactic rules is: S \u2192 NP VP.",
-      "category": "text_only",
-      "difficulty": "easy",
+      "question_id": "cs601_q0068",
+      "question": "What is the syntactic structure for the phrase 'ate the'?",
+      "gold_answer": "1 V ate . 2 Det the .",
+      "predicted_answer": "The provided context does not include specific information about the syntactic structure for the phrase 'ate the'.",
+      "category": "layout_aware",
+      "difficulty": "hard",
       "evidence_slides": [
-        "lecture_02/slide_014.png"
+        "lecture_09/slide_046.png"
       ],
       "retrieved_slides": [
-        "lecture_07/slide_002.png",
-        "lecture_08/slide_045.png",
-        "lecture_02/slide_013.png"
+        "lecture_07/slide_045.png",
+        "lecture_18/slide_059.png",
+        "lecture_07/slide_051.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.4444444444444445
+        "token_f1": 0.1111111111111111
+      }
+    },
+    {
+      "question_id": "cs601_q0069",
+      "question": "What elements are involved in the goal formula for the Viterbi algorithm?",
+      "gold_answer": "The elements are start_symbol, 0, and sentence_length.",
+      "predicted_answer": "The provided context does not specify the elements involved in the goal formula for the Viterbi algorithm.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_069.png"
+      ],
+      "retrieved_slides": [
+        "lecture_16/slide_068.png",
+        "lecture_16/slide_060.png",
+        "lecture_16/slide_075.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.10526315789473684
+      }
+    },
+    {
+      "question_id": "cs601_q0070",
+      "question": "How does the complexity of the sentences change as you move down the slide?",
+      "gold_answer": "The sentences become more complex with additional layers of embedding.",
+      "predicted_answer": "The complexity of the sentences increases as you move down the slide, progressing from 3-gram to 4-gram to 50-gram models.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_039.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_008.png",
+        "lecture_18/slide_008.png",
+        "lecture_06/slide_016.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.15384615384615383
+      }
+    },
+    {
+      "question_id": "cs601_q0071",
+      "question": "How are the nodes 'VP_stem' and 'VP_inf' related in the syntactic tree?",
+      "gold_answer": "The 'VP_stem' node is a parent of the 'VP_inf' node.",
+      "predicted_answer": "The provided text context does not contain information about the nodes 'VP_stem' and 'VP_inf' or their relationship in a syntactic tree.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_061.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_058.png",
+        "lecture_13/slide_038.png",
+        "lecture_14/slide_118.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.16
+      }
+    },
+    {
+      "question_id": "cs601_q0072",
+      "question": "What features are used as input to compute the gold features?",
+      "gold_answer": "The red features: Asian, Black, educated, female, income.",
+      "predicted_answer": "The red features are used as input to compute the gold features.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_043.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_043.png",
+        "lecture_14/slide_036.png",
+        "lecture_17/slide_091.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.23529411764705882
+      }
+    },
+    {
+      "question_id": "cs601_q0073",
+      "question": "Compare the trends of 'Ice Creams' and 'p(H)' over the diary days.",
+      "gold_answer": "'Ice Creams' fluctuates while 'p(H)' increases and then stabilizes.",
+      "predicted_answer": "The provided context does not include any information about 'Ice Creams' or 'p(H)' trends over the diary days. Therefore, I cannot compare these trends based on the given lecture slides.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_15/slide_020.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_016.png",
+        "lecture_15/slide_013.png",
+        "lecture_05/slide_005.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.16666666666666666
+      }
+    },
+    {
+      "question_id": "cs601_q0074",
+      "question": "What is the non-terminal in cell (0, 1) with the highest probability?",
+      "gold_answer": "S with probability 2^-8",
+      "predicted_answer": "The provided context does not contain specific information about the non-terminal in cell (0, 1) with the highest probability.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_040.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_056.png",
+        "lecture_17/slide_029.png",
+        "lecture_17/slide_030.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2
       }
     },
     {
       "question_id": "cs601_q0075",
-      "question": "What is a context-free grammar according to the slide?",
-      "gold_answer": "A context-free grammar is a set of context-free rewrite rules.",
-      "predicted_answer": "A context-free grammar is defined as a set of context-free rewrite rules.",
-      "category": "text_only",
-      "difficulty": "easy",
+      "question": "What does the tag 'P' represent in the sentence 'Time flies like an arrow'?",
+      "gold_answer": "The tag 'P' represents the word 'like'.",
+      "predicted_answer": "The tag 'P' represents the preposition in the sentence 'Time flies like an arrow'.",
+      "category": "layout_aware",
+      "difficulty": "medium",
       "evidence_slides": [
-        "lecture_02/slide_020.png"
+        "lecture_17/slide_075.png"
       ],
       "retrieved_slides": [
-        "lecture_02/slide_019.png",
-        "lecture_02/slide_017.png",
-        "lecture_09/slide_016.png"
+        "lecture_17/slide_074.png",
+        "lecture_17/slide_075.png",
+        "lecture_17/slide_076.png"
       ],
       "scores": {
         "exact_match": 0.0,
-        "token_f1": 0.888888888888889
+        "token_f1": 0.5333333333333333
+      }
+    },
+    {
+      "question_id": "cs601_q0076",
+      "question": "What is the structure of the tree diagram on the left side of the slide?",
+      "gold_answer": "S \u2192 NP VP .",
+      "predicted_answer": "The tree diagram on the left side of the slide represents the sentence \"Time flies like an arrow\" and is structured as follows: \n\n- The root is labeled as 'S' (Sentence).\n- It branches into 'NP' (Noun Phrase) and 'VP' (Verb Phrase).\n- The 'NP' consists of a single 'N' (Noun).\n- The 'VP' branches into 'V' (Verb) and 'PP' (Prepositional Phrase).\n- The 'PP' further branches into 'P' (Preposition) and 'NP' (Noun Phrase).\n- The 'NP' under 'PP' branches into 'D' (Determiner) and 'N' (Noun).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "retrieved_slides": [
+        "lecture_17/slide_060.png",
+        "lecture_10/slide_056.png",
+        "lecture_14/slide_132.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0821917808219178
+      }
+    },
+    {
+      "question_id": "cs601_q0077",
+      "question": "Which sentence is a good match to the input but not good English?",
+      "gold_answer": "TV appeared on Jon.",
+      "predicted_answer": "\"Appeared on Jon TV.\"",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_010.png",
+        "lecture_03/slide_009.png",
+        "lecture_16/slide_067.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0078",
+      "question": "What is the probability of the word 'horses' according to the model?",
+      "gold_answer": "The probability p(W_i = horses) is approximately 7.2e-5.",
+      "predicted_answer": "The provided context does not contain specific information about the probability of the word 'horses' according to the model.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_040.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_056.png",
+        "lecture_14/slide_216.png",
+        "lecture_04/slide_045.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19047619047619044
+      }
+    },
+    {
+      "question_id": "cs601_q0079",
+      "question": "What does 'a priori' refer to in the context of this slide?",
+      "gold_answer": "It refers to the prior probabilities p(LANG=english), p(LANG=polish), and p(LANG=xhosa).",
+      "predicted_answer": "The context provided does not mention 'a priori,' so I cannot provide an answer based on the given lecture slides.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_005.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_111.png",
+        "lecture_07/slide_001.png",
+        "lecture_09/slide_015.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0080",
+      "question": "What mathematical expression represents the goal of maximizing p(training data|\u03b8) on the slide?",
+      "gold_answer": "(\u03a0\u1d62\u207f p_\u03b8(y\u1d62 | x\u1d62)) \u00b7 p_prior(\u03b8)",
+      "predicted_answer": "The mathematical expression representing the goal of maximizing p(training data|\u03b8) on the slide is p(training data|\u03b8) \u00b7 pprior(\u03b8).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_053.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_067.png",
+        "lecture_06/slide_052.png",
+        "lecture_06/slide_053.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2
+      }
+    },
+    {
+      "question_id": "cs601_q0081",
+      "question": "How are the elements 'thrilling Otto' and 'eating Otto' structurally similar?",
+      "gold_answer": "Both follow the pattern [tense=prog, head=thrill/eat] [head=Otto].",
+      "predicted_answer": "The elements 'thrilling Otto' and 'eating Otto' are structurally similar in that they both involve a verb ('thrilling' or 'eating') modifying a noun ('Otto'). This structure can be represented in a lambda-term format where the verb acts upon the noun, similar to the examples given in the lecture slides, such as \uf06cg (Modified-by(bogus, expert))(g) or \uf06cg (bogus(expert))(g).",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_07/slide_043.png"
+      ],
+      "retrieved_slides": [
+        "lecture_13/slide_038.png",
+        "lecture_02/slide_009.png",
+        "lecture_06/slide_034.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.03636363636363636
+      }
+    },
+    {
+      "question_id": "cs601_q0082",
+      "question": "How many passes are shown in the diagram?",
+      "gold_answer": "Four passes",
+      "predicted_answer": "The context does not provide specific information about the number of passes shown in the diagram.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_022.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_050.png",
+        "lecture_12/slide_020.png",
+        "lecture_14/slide_175.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.13333333333333336
+      }
+    },
+    {
+      "question_id": "cs601_q0083",
+      "question": "How many different grammatical labels are associated with the word 'ate'?",
+      "gold_answer": "3 (V ate ., VP ate ., V . ate)",
+      "predicted_answer": "The provided text context does not contain information about grammatical labels associated with the word 'ate'.",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_058.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_094.png",
+        "lecture_14/slide_093.png",
+        "lecture_14/slide_073.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09523809523809523
+      }
+    },
+    {
+      "question_id": "cs601_q0084",
+      "question": "How is the value 'S 22' in the table derived?",
+      "gold_answer": "By multiplying the probabilities to get 2^-22.",
+      "predicted_answer": "The context provided does not contain information about a value 'S 22' in a table, so I cannot determine how it is derived based on the given lecture slides.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_10/slide_053.png"
+      ],
+      "retrieved_slides": [
+        "lecture_09/slide_014.png",
+        "lecture_18/slide_050.png",
+        "lecture_06/slide_022.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0085",
+      "question": "What is the predicted structure for the word 'ate' according to the slide?",
+      "gold_answer": "VP . V NP",
+      "predicted_answer": "The provided context does not specify the predicted structure for the word 'ate'.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_012.png"
+      ],
+      "retrieved_slides": [
+        "lecture_17/slide_110.png",
+        "lecture_14/slide_130.png",
+        "lecture_14/slide_072.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0086",
+      "question": "Which card is below the eight of clubs?",
+      "gold_answer": "The five of hearts is below the eight of clubs.",
+      "predicted_answer": "The five of hearts is below the eight of clubs.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_012.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_012.png",
+        "lecture_12/slide_015.png",
+        "lecture_12/slide_011.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0087",
+      "question": "What is the formula for replacing the time variable with an event variable?",
+      "gold_answer": "\u2203e past(e), act(e,swallowing), swallower(e,Gilly), exists(goldfish, swallowee(e)), exists(booth, location(e)), ...",
+      "predicted_answer": "The formula for replacing the time variable with an event variable is:  \n\\[ \\exists e \\, \\text{past}(e), \\, \\text{act}(e,\\text{swallowing}), \\, \\text{swallower}(e,\\text{Gilly}), \\, \\text{exists}(\\text{goldfish}, \\text{swallowee}(e)), \\, \\text{exists}(\\text{booth}, \\text{location}(e)), \\ldots \\]  \nThis replaces the time variable \\( t \\) with an event variable \\( e \\) to specify various properties of the event.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_030.png"
+      ],
+      "retrieved_slides": [
+        "lecture_13/slide_030.png",
+        "lecture_13/slide_063.png",
+        "lecture_10/slide_056.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0088",
+      "question": "What is the output when the input is [1, 1, 1] according to the diagram?",
+      "gold_answer": "The output is represented by '?'.",
+      "predicted_answer": "The provided context does not contain a diagram or specific information about the output for the input [1, 1, 1]. Therefore, I cannot determine the output based on the given text.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_041.png"
+      ],
+      "retrieved_slides": [
+        "lecture_09/slide_016.png",
+        "lecture_18/slide_098.png",
+        "lecture_14/slide_078.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06896551724137932
+      }
+    },
+    {
+      "question_id": "cs601_q0089",
+      "question": "How is \u00e2 calculated on Day 3 for the path ending at C?",
+      "gold_answer": "\u00e2 is calculated as max(0.008*0.08, 0.056*0.01) = 0.00064.",
+      "predicted_answer": "On Day 3, for the path ending at C, the \u03b1 probability is calculated as follows:\n\n\u03b1 = (0.009 * 0.07) + (0.063 * 0.56) = 0.03591.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_031.png"
+      ],
+      "retrieved_slides": [
+        "lecture_15/slide_011.png",
+        "lecture_17/slide_033.png",
+        "lecture_15/slide_009.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2222222222222222
+      }
+    },
+    {
+      "question_id": "cs601_q0090",
+      "question": "What does the graph on the right represent in the context of Hidden Markov Models?",
+      "gold_answer": "The graph likely represents the result of the E step.",
+      "predicted_answer": "The context provided does not include a description or depiction of a graph related to Hidden Markov Models. Therefore, I cannot determine what the graph on the right represents in the context of Hidden Markov Models based solely on the given text.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_16/slide_006.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_121.png",
+        "lecture_15/slide_001.png",
+        "lecture_12/slide_020.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14285714285714285
+      }
+    },
+    {
+      "question_id": "cs601_q0091",
+      "question": "What is the structure of the parse tree for the sentence 'Time flies like an arrow'?",
+      "gold_answer": "S -> N V P D N",
+      "predicted_answer": "The structure of the parse tree for the sentence 'Time flies like an arrow' is as follows:\n\n- S\n  - NP\n    - N (Time)\n  - VP\n    - V (flies)\n    - PP\n      - P (like)\n      - NP\n        - D (an)\n        - N (arrow)",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_031.png"
+      ],
+      "retrieved_slides": [
+        "lecture_17/slide_060.png",
+        "lecture_10/slide_056.png",
+        "lecture_17/slide_074.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3636363636363636
+      }
+    },
+    {
+      "question_id": "cs601_q0092",
+      "question": "What is the equivalent class URL shown in the diagram?",
+      "gold_answer": "http://www.w4.org/2002/07/owl#equivalentClass",
+      "predicted_answer": "The provided text context does not include any information about an equivalent class URL or a diagram. Therefore, I cannot provide an answer based on the given context.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_18/slide_077.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_020.png",
+        "lecture_18/slide_050.png",
+        "lecture_12/slide_011.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0093",
+      "question": "Compare the cost of processing 1K tokens to 1M tokens using the ada v2 model.",
+      "gold_answer": "1K tokens cost $0.0001, while 1M tokens cost $0.10.",
+      "predicted_answer": "The context does not provide specific information about the cost of processing 1K tokens using the ada v2 model. However, it mentions that training on 1M tokens for 4 epochs would cost $100. Without additional details on the cost structure for 1K tokens, a direct comparison cannot be made.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_19/slide_023.png"
+      ],
+      "retrieved_slides": [
+        "lecture_19/slide_026.png",
+        "lecture_19/slide_019.png",
+        "lecture_14/slide_189.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.22641509433962262
+      }
+    },
+    {
+      "question_id": "cs601_q0094",
+      "question": "What is the root of the sentence in the dependency diagram?",
+      "gold_answer": "reckons",
+      "predicted_answer": "The root of the sentence in the dependency diagram is \"reckons.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_054.png",
+        "lecture_18/slide_059.png",
+        "lecture_02/slide_025.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2222222222222222
+      }
+    },
+    {
+      "question_id": "cs601_q0095",
+      "question": "Which sentence is marked as a good match to the input but not good English?",
+      "gold_answer": "TV appeared on Jon.",
+      "predicted_answer": "\"TV appeared on Jon.\"",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_03/slide_010.png",
+        "lecture_03/slide_009.png",
+        "lecture_16/slide_067.png"
+      ],
+      "scores": {
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      }
+    },
+    {
+      "question_id": "cs601_q0096",
+      "question": "What are the two outputs related to the definition of p?",
+      "gold_answer": "Generate random text and find event probabilities",
+      "predicted_answer": "The context provided does not contain information about the definition of \"p\" or its related outputs.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_029.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_058.png",
+        "lecture_13/slide_006.png",
+        "lecture_14/slide_083.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0097",
+      "question": "What is the formula for p(e | f) in terms of p(f | e) according to Bayes' Theorem?",
+      "gold_answer": "p(e | f) = p(e) p(f | e) / p(f)",
+      "predicted_answer": "According to Bayes' Theorem, the formula for \\( p(e | f) \\) in terms of \\( p(f | e) \\) is:\n\n\\[ p(e | f) = \\frac{p(f | e) \\cdot p(e)}{p(f)} \\]",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_020.png"
+      ],
+      "retrieved_slides": [
+        "lecture_05/slide_020.png",
+        "lecture_05/slide_019.png",
+        "lecture_04/slide_026.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3846153846153846
+      }
+    },
+    {
+      "question_id": "cs601_q0098",
+      "question": "How is the trigram model's parameter p(s | s, e) estimated from the Brown corpus?",
+      "gold_answer": "2044/21250",
+      "predicted_answer": "The trigram model's parameter \\( p(s | s, e) \\) is estimated from the Brown corpus by taking the count of the trigram (s, e, s), which is 2044, and dividing it by the count of the bigram (s, e), which is 21250. Thus, \\( p(s | s, e) \\approx \\frac{2044}{21250} \\).",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_002.png"
+      ],
+      "retrieved_slides": [
+        "lecture_06/slide_002.png",
+        "lecture_04/slide_027.png",
+        "lecture_04/slide_026.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0099",
+      "question": "What is the head verb of the sentence according to the tree diagram?",
+      "gold_answer": "thrill",
+      "predicted_answer": "The head verb of the sentence according to the tree diagram is \"want.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_039.png"
+      ],
+      "retrieved_slides": [
+        "lecture_09/slide_006.png",
+        "lecture_10/slide_056.png",
+        "lecture_14/slide_095.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0100",
+      "question": "What does the label 'rewrites(vp,v,advp)' indicate in the diagram?",
+      "gold_answer": "It indicates a rewrite rule in the parse forest.",
+      "predicted_answer": "The provided context does not include any information about the label 'rewrites(vp,v,advp)'. Therefore, I cannot provide an answer based on the given lecture slides.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_048.png"
+      ],
+      "retrieved_slides": [
+        "lecture_06/slide_016.png",
+        "lecture_07/slide_051.png",
+        "lecture_14/slide_042.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0101",
+      "question": "How many prepositional phrases are used in column 10?",
+      "gold_answer": "Two prepositional phrases: 'in his bed' and 'with a spoon'.",
+      "predicted_answer": "The provided context does not specify the number of prepositional phrases used in column 10.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_094.png"
+      ],
+      "retrieved_slides": [
+        "lecture_09/slide_015.png",
+        "lecture_01/slide_009.png",
+        "lecture_09/slide_093.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.27272727272727276
+      }
+    },
+    {
+      "question_id": "cs601_q0102",
+      "question": "What is the value associated with 'PP' in the table?",
+      "gold_answer": "2^-12",
+      "predicted_answer": "The value associated with 'PP' in the table is 'with'.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_058.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_056.png",
+        "lecture_18/slide_064.png",
+        "lecture_18/slide_065.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0103",
+      "question": "What is represented by the orange circles in the diagram?",
+      "gold_answer": "The orange circles represent states in the DFA.",
+      "predicted_answer": "The provided text context does not include any information about orange circles in a diagram. Therefore, I cannot determine what the orange circles represent based on the given lecture slides.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_020.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_155.png",
+        "lecture_13/slide_074.png",
+        "lecture_10/slide_056.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.25
+      }
+    },
+    {
+      "question_id": "cs601_q0104",
+      "question": "What does the arrow labeled 'A' point to?",
+      "gold_answer": "An apple on a towel",
+      "predicted_answer": "The provided context does not contain any information about an arrow labeled 'A'. Therefore, I cannot determine what the arrow labeled 'A' points to based on the given lecture slides.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_019.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_012.png",
+        "lecture_12/slide_022.png",
+        "lecture_18/slide_078.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07407407407407407
+      }
+    },
+    {
+      "question_id": "cs601_q0105",
+      "question": "What does the lambda expression \u03bbx \u03bbe act(e, loving), lover(e, x), lovee(e, M) represent in the context of the slide?",
+      "gold_answer": "It represents the semantic interpretation of the VP_inf.",
+      "predicted_answer": "The lambda expression \u03bbx \u03bbe act(e, loving), lover(e, x), lovee(e, M) represents an anonymous function that describes an event (e) of loving, where x is the lover and M is the lovee. It defines the behavior of the function without naming it, similar to the example of \u03bbp p*p in the slides.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_060.png"
+      ],
+      "retrieved_slides": [
+        "lecture_13/slide_013.png",
+        "lecture_13/slide_070.png",
+        "lecture_17/slide_118.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.12244897959183673
+      }
+    },
+    {
+      "question_id": "cs601_q0106",
+      "question": "How does the softmax output change as T decreases from 5 to 1/5?",
+      "gold_answer": "The probabilities become more different, approaching one-hot.",
+      "predicted_answer": "As the softmax temperature T decreases from 5 to 1/5, the output distribution becomes more concentrated around the lowest-energy structure. At high temperatures, many different structures are found, but as T approaches 0, the protein is usually found in its lowest-energy shape, indicating that the softmax output becomes more peaked and less varied.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_17/slide_110.png",
+        "lecture_18/slide_098.png",
+        "lecture_14/slide_099.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07407407407407407
+      }
+    },
+    {
+      "question_id": "cs601_q0107",
+      "question": "Which month had the highest total probability of sales?",
+      "gold_answer": "March with a probability of 0.126",
+      "predicted_answer": "The provided text context does not contain any information about sales or months. Therefore, I cannot determine which month had the highest total probability of sales based on the given lecture slides.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_005.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_056.png",
+        "lecture_17/slide_029.png",
+        "lecture_17/slide_030.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1176470588235294
+      }
+    },
+    {
+      "question_id": "cs601_q0108",
+      "question": "Which rule has the highest exponent value in the list on the right?",
+      "gold_answer": "2^-6 S \u2192 Vst NP",
+      "predicted_answer": "The provided context does not include any information about exponent values or a list on the right. Therefore, I cannot determine which rule has the highest exponent value.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_042.png"
+      ],
+      "retrieved_slides": [
+        "lecture_08/slide_017.png",
+        "lecture_08/slide_018.png",
+        "lecture_08/slide_019.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0109",
+      "question": "Identify the components used in calculating the path weight for the word 'flies'.",
+      "gold_answer": "\u03b8_N,V, \u03b8_V,flies, \u03b8_V,flies,i=2, \u03b8_capitalized N,V, \u03b8_x,...",
+      "predicted_answer": "The components used in calculating the path weight for the word 'flies' would be the total score of its arcs along the path that transduces the upper string to the best lower string.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_071.png"
+      ],
+      "retrieved_slides": [
+        "lecture_17/slide_033.png",
+        "lecture_12/slide_016.png",
+        "lecture_18/slide_043.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0110",
+      "question": "How is the test data presented in the slide?",
+      "gold_answer": "The test data includes contexts with unknown senses of 'plant'.",
+      "predicted_answer": "The test data is sealed up until the test happens to simulate real-world conditions and is used only to evaluate the final system(s). It should not influence system development, and all results should be reported on it.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_18/slide_032.png"
+      ],
+      "retrieved_slides": [
+        "lecture_04/slide_044.png",
+        "lecture_06/slide_023.png",
+        "lecture_18/slide_008.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09302325581395347
+      }
+    },
+    {
+      "question_id": "cs601_q0111",
+      "question": "What should be omitted if the draft is a top-level post?",
+      "gold_answer": "The original post, replies, and final reply should be omitted.",
+      "predicted_answer": "The persona should be omitted if the draft is a top-level post.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_19/slide_041.png"
+      ],
+      "retrieved_slides": [
+        "lecture_19/slide_041.png",
+        "lecture_19/slide_043.png",
+        "lecture_04/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4444444444444444
+      }
+    },
+    {
+      "question_id": "cs601_q0112",
+      "question": "What is the example of a context-sensitive grammar rule on the slide?",
+      "gold_answer": "The example is 'S \u2192 N V S // L_R'.",
+      "predicted_answer": "The example of a context-sensitive grammar rule on the slide is: \\( S \\rightarrow N \\, V \\, S \\, // \\, L \\, \\_ \\, R \\).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_02/slide_018.png",
+        "lecture_08/slide_017.png",
+        "lecture_08/slide_018.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5217391304347827
+      }
+    },
+    {
+      "question_id": "cs601_q0113",
+      "question": "What is the probability of Valentine given Epitaph is yes?",
+      "gold_answer": "The probability is 1/3.",
+      "predicted_answer": "The provided context does not contain specific information about the probability of Valentine given Epitaph is yes. The slides discuss probabilities in the context of adding conjuncts and how it affects probability estimates, but they do not provide specific probabilities or formulas for calculating the probability of Valentine given Epitaph.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_04/slide_011.png",
+        "lecture_04/slide_010.png",
+        "lecture_10/slide_056.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.08333333333333334
+      }
+    },
+    {
+      "question_id": "cs601_q0114",
+      "question": "What does the posterior odds ratio compare?",
+      "gold_answer": "p(hoof | pos) / p(\u00achoof | pos)",
+      "predicted_answer": "The posterior odds ratio compares the relative probabilities of having hoof-and-mouth disease versus not having it after considering the evidence (i.e., the positive test result).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_05/slide_014.png",
+        "lecture_05/slide_015.png",
+        "lecture_05/slide_013.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0115",
+      "question": "What is the formula for calculating p\u0302(baby | see the)?",
+      "gold_answer": "count(see the baby) + \u03bbV (1/V)",
+      "predicted_answer": "The formula for calculating \\( p\u0302(baby | see the) \\) is:\n\n\\[\np\u0302(baby | see the) = \\frac{(count(see\\ the\\ baby) + \\lambda V \\cdot p\u0302(baby | the))}{(count(see\\ the) + \\lambda V)}\n\\]",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_032.png"
+      ],
+      "retrieved_slides": [
+        "lecture_06/slide_031.png",
+        "lecture_06/slide_032.png",
+        "lecture_06/slide_030.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19047619047619047
+      }
+    },
+    {
+      "question_id": "cs601_q0116",
+      "question": "What is the head of the verb phrase 'been thrilling Otto'?",
+      "gold_answer": "thrill",
+      "predicted_answer": "The head of the verb phrase 'been thrilling Otto' is 'thrilling'.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_013.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_057.png",
+        "lecture_18/slide_056.png",
+        "lecture_07/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0117",
+      "question": "What is the relationship between 'end' and 'width' in the pseudocode?",
+      "gold_answer": "Width is iterated from 2 to 'end'.",
+      "predicted_answer": "The provided context does not contain any information about 'end' and 'width' in pseudocode. Therefore, I cannot determine the relationship between them based on the given lecture slides.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_041.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_082.png",
+        "lecture_08/slide_042.png",
+        "lecture_10/slide_056.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.125
+      }
+    },
+    {
+      "question_id": "cs601_q0118",
+      "question": "What is the syntactic structure for the entire sentence 'Papa ate the caviar with a spoon'?",
+      "gold_answer": "0 ROOT . S",
+      "predicted_answer": "The syntactic structure for the sentence \"Papa ate the caviar with a spoon\" is as follows:\n\nS\n\u251c\u2500\u2500 NP (Papa)\n\u2514\u2500\u2500 VP\n    \u251c\u2500\u2500 V (ate)\n    \u251c\u2500\u2500 NP\n    \u2502   \u251c\u2500\u2500 Det (the)\n    \u2502   \u2514\u2500\u2500 N (caviar)\n    \u2514\u2500\u2500 PP\n        \u251c\u2500\u2500 P (with)\n        \u2514\u2500\u2500 NP\n            \u251c\u2500\u2500 Det (a)\n            \u2514\u2500\u2500 N (spoon)",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_077.png"
+      ],
+      "retrieved_slides": [
+        "lecture_08/slide_022.png",
+        "lecture_08/slide_002.png",
+        "lecture_08/slide_003.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.044444444444444446
+      }
+    },
+    {
+      "question_id": "cs601_q0119",
+      "question": "Which rule has the highest score in the cell (0, 2)?",
+      "gold_answer": "S with a score of 13",
+      "predicted_answer": "The provided context does not contain specific information about the scores of rules in any particular cell, including cell (0, 2). Therefore, it is not possible to determine which rule has the highest score in that cell based on the given text.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_009.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_056.png",
+        "lecture_17/slide_045.png",
+        "lecture_17/slide_043.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09302325581395349
+      }
+    },
+    {
+      "question_id": "cs601_q0120",
+      "question": "Which row contains the text '0 NP . Det N'?",
+      "gold_answer": "The third row from the top.",
+      "predicted_answer": "The row containing the text '0 NP . Det N' is row 0.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_005.png"
+      ],
+      "retrieved_slides": [
+        "lecture_11/slide_011.png",
+        "lecture_09/slide_046.png",
+        "lecture_09/slide_045.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14285714285714288
+      }
+    },
+    {
+      "question_id": "cs601_q0121",
+      "question": "Which category has the highest probability of eye movement at the word 'below'?",
+      "gold_answer": "Target",
+      "predicted_answer": "The \"Relatum-alternative\" category has the highest probability of eye movement at the word 'below' in the Mid disambiguation condition.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_013.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_015.png",
+        "lecture_12/slide_013.png",
+        "lecture_12/slide_014.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0122",
+      "question": "What does the lambda expression '\u03bbx \u03bbe act(e,loving), lover(e,x), lovee(e,M)' represent in the context of the diagram?",
+      "gold_answer": "It represents the semantic interpretation of the VP_inf node.",
+      "predicted_answer": "The lambda expression '\u03bbx \u03bbe act(e,loving), lover(e,x), lovee(e,M)' represents an anonymous function that describes an event of loving, where 'x' is the lover and 'M' (Mel) is the lovee. It captures the behavior of the function without naming it, focusing on the relationship between the lover and the lovee in the context of the loving event.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_061.png"
+      ],
+      "retrieved_slides": [
+        "lecture_13/slide_063.png",
+        "lecture_13/slide_060.png",
+        "lecture_13/slide_013.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1176470588235294
+      }
+    },
+    {
+      "question_id": "cs601_q0123",
+      "question": "What is the equation shown on the slide?",
+      "gold_answer": "y\u0305 = [1, x\u0305]W",
+      "predicted_answer": "The context provided does not include any specific equation from the lecture slides.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_038.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_020.png",
+        "lecture_12/slide_011.png",
+        "lecture_18/slide_050.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0124",
+      "question": "How is the conditional probability p(widget|Jan) calculated?",
+      "gold_answer": "0.005/0.099",
+      "predicted_answer": "The provided context does not contain specific information about calculating the conditional probability p(widget|Jan).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_007.png"
+      ],
+      "retrieved_slides": [
+        "lecture_15/slide_009.png",
+        "lecture_10/slide_067.png",
+        "lecture_06/slide_022.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0125",
+      "question": "How many paths are highlighted in the diagram?",
+      "gold_answer": "Four paths are highlighted.",
+      "predicted_answer": "The context does not provide a specific diagram with highlighted paths, so it is not possible to determine the number of highlighted paths from the provided text.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_15/slide_013.png",
+        "lecture_13/slide_038.png",
+        "lecture_06/slide_044.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14814814814814817
+      }
+    },
+    {
+      "question_id": "cs601_q0126",
+      "question": "Which hidden states are used in the calculation involving 'Aux'?",
+      "gold_answer": "The hidden states h^2_4 and h^2_6 are used.",
+      "predicted_answer": "The calculation involving 'Aux' uses both left-to-right and right-to-left hidden states.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_114.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_118.png",
+        "lecture_13/slide_044.png",
+        "lecture_18/slide_050.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3529411764705882
+      }
+    },
+    {
+      "question_id": "cs601_q0127",
+      "question": "Which two words form the noun phrase (NP) under the root 'S'?",
+      "gold_answer": "The plan",
+      "predicted_answer": "The two words that form the noun phrase (NP) under the root 'S' are \"Wanda\" and \"Otto.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_18/slide_057.png"
+      ],
+      "retrieved_slides": [
+        "lecture_13/slide_038.png",
+        "lecture_12/slide_016.png",
+        "lecture_18/slide_058.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0128",
+      "question": "What activity is depicted in the top-left corner of the image?",
+      "gold_answer": "Taking a walk in the park",
+      "predicted_answer": "The provided text context does not contain any information about an image or an activity depicted in the top-left corner of an image. Therefore, I cannot answer the question based on the given context.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_19/slide_058.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_056.png",
+        "lecture_02/slide_008.png",
+        "lecture_16/slide_068.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06451612903225806
+      }
+    },
+    {
+      "question_id": "cs601_q0129",
+      "question": "What does the 'NP' node expand into according to the tree diagram?",
+      "gold_answer": "NP expands into Det N'.",
+      "predicted_answer": "The 'NP' node expands into 'N' and 'PP' according to the tree diagram.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_016.png"
+      ],
+      "retrieved_slides": [
+        "lecture_08/slide_013.png",
+        "lecture_13/slide_003.png",
+        "lecture_14/slide_132.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5000000000000001
+      }
+    },
+    {
+      "question_id": "cs601_q0130",
+      "question": "How does the slide visually distinguish between different parts of the mathematical expression?",
+      "gold_answer": "Different parts of the expression are distinguished by color.",
+      "predicted_answer": "The slide visually distinguishes different parts of the mathematical expression by using different symbols and logical operators, such as \"\uf022\" for universal quantification, \"^\" for conjunction, and \"\uf0e8\" for implication.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_024.png"
+      ],
+      "retrieved_slides": [
+        "lecture_07/slide_025.png",
+        "lecture_13/slide_009.png",
+        "lecture_06/slide_034.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2857142857142857
+      }
+    },
+    {
+      "question_id": "cs601_q0131",
+      "question": "What is the prior odds ratio for hoof-and-mouth disease?",
+      "gold_answer": "0.001 / 0.999",
+      "predicted_answer": "The prior odds ratio for hoof-and-mouth disease is 1:999.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_014.png"
+      ],
+      "retrieved_slides": [
+        "lecture_05/slide_014.png",
+        "lecture_05/slide_015.png",
+        "lecture_05/slide_017.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0132",
+      "question": "What humorous question is posed by the character in the image?",
+      "gold_answer": "Hey, don\u2019t they teach estimation over in the stats department?",
+      "predicted_answer": "The humorous question posed by the character in the image is: \"By the way, what do you think of the First Lady\u2019s college course?\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_008.png"
+      ],
+      "retrieved_slides": [
+        "lecture_19/slide_047.png",
+        "lecture_13/slide_074.png",
+        "lecture_19/slide_043.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07142857142857142
+      }
+    },
+    {
+      "question_id": "cs601_q0133",
+      "question": "What is the head of the sentence according to the diagram?",
+      "gold_answer": "thrill",
+      "predicted_answer": "The head of the sentence according to the diagram is \"plan.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_032.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_057.png",
+        "lecture_18/slide_066.png",
+        "lecture_16/slide_067.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0134",
+      "question": "What does the green arrow labeled 'root of parse' indicate in the chart?",
+      "gold_answer": "It indicates where to start following backpointers.",
+      "predicted_answer": "The provided text context does not mention a green arrow labeled 'root of parse' or provide any information about a chart with such an arrow. Therefore, I cannot answer the question based on the given context.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_028.png"
+      ],
+      "retrieved_slides": [
+        "lecture_06/slide_016.png",
+        "lecture_07/slide_051.png",
+        "lecture_14/slide_042.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0135",
+      "question": "What is the sequence of labels for the sentence 'Papa ate the . '?",
+      "gold_answer": "NP VP Det .",
+      "predicted_answer": "The sequence of labels for the sentence 'Papa ate the .' is: NP V Det.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_045.png"
+      ],
+      "retrieved_slides": [
+        "lecture_04/slide_033.png",
+        "lecture_17/slide_034.png",
+        "lecture_09/slide_045.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.28571428571428575
+      }
+    },
+    {
+      "question_id": "cs601_q0136",
+      "question": "What rule is used for 'S' at position 0, 'arrow' 5?",
+      "gold_answer": "S 22",
+      "predicted_answer": "The context provided does not specify a rule for 'S' at position 0, 'arrow' 5.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_033.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_049.png",
+        "lecture_17/slide_112.png",
+        "lecture_17/slide_113.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.13333333333333336
+      }
+    },
+    {
+      "question_id": "cs601_q0137",
+      "question": "What is the highlighted text in the row labeled '0 NP . NP PP' under column '1'?",
+      "gold_answer": "VP . V NP",
+      "predicted_answer": "The provided context does not contain any information about a row labeled '0 NP . NP PP' under column '1'.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_004.png"
+      ],
+      "retrieved_slides": [
+        "lecture_09/slide_089.png",
+        "lecture_09/slide_094.png",
+        "lecture_09/slide_095.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1
+      }
+    },
+    {
+      "question_id": "cs601_q0138",
+      "question": "Which card is located above the eight of clubs?",
+      "gold_answer": "The five of hearts",
+      "predicted_answer": "The slides do not provide information about a card located above the eight of clubs. They only mention a five of hearts below the eight of clubs.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_011.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_011.png",
+        "lecture_12/slide_012.png",
+        "lecture_12/slide_015.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.24000000000000002
+      }
+    },
+    {
+      "question_id": "cs601_q0139",
+      "question": "What is the logical expression that incorporates tense for 'Gilly swallowed a goldfish'?",
+      "gold_answer": "\u2203t past(t) AND exists(goldfish, \u03bbg swallow(t,Gilly,g))",
+      "predicted_answer": "The logical expression that incorporates tense for 'Gilly swallowed a goldfish' is:\n\n\uf024t past(t) AND exists(goldfish, \uf06cg swallow(t,Gilly,g))",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_028.png"
+      ],
+      "retrieved_slides": [
+        "lecture_13/slide_028.png",
+        "lecture_13/slide_032.png",
+        "lecture_13/slide_026.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.36363636363636365
+      }
+    },
+    {
+      "question_id": "cs601_q0140",
+      "question": "What are the components of the Alarm function as shown on the slide?",
+      "gold_answer": "The components are delay='20 minutes' and content='turn off the rice'.",
+      "predicted_answer": "The provided text context does not contain information about the components of the Alarm function.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_130.png"
+      ],
+      "retrieved_slides": [
+        "lecture_12/slide_020.png",
+        "lecture_18/slide_050.png",
+        "lecture_12/slide_011.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1
+      }
+    },
+    {
+      "question_id": "cs601_q0141",
+      "question": "What is the sequence of tags and words shown in the probability model?",
+      "gold_answer": "Start PN Verb Det (Bill directed a ...)",
+      "predicted_answer": "The sequence of tags and words shown in the probability model is: \n\nStart (PN) - Bill (Verb) - directed (Det) - a (Noun) - cortege (Prep) - of (Noun) - autos (Pr) - thr",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_027.png"
+      ],
+      "retrieved_slides": [
+        "lecture_15/slide_026.png",
+        "lecture_10/slide_056.png",
+        "lecture_04/slide_033.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4
+      }
+    },
+    {
+      "question_id": "cs601_q0142",
+      "question": "Which words are associated with VP locations?",
+      "gold_answer": "Time, flies, like, an, arrow",
+      "predicted_answer": "The words \"bit\" and \"swallow\" are associated with VP locations.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_026.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_064.png",
+        "lecture_18/slide_065.png",
+        "lecture_18/slide_058.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0143",
+      "question": "What is the path score from (0, 0) to (3, 3) using the highlighted path?",
+      "gold_answer": "1.3",
+      "predicted_answer": "The context provided does not include specific details about the highlighted path or its arcs, so it is not possible to determine the path score from (0, 0) to (3, 3) using the highlighted path.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_033.png"
+      ],
+      "retrieved_slides": [
+        "lecture_17/slide_033.png",
+        "lecture_17/slide_045.png",
+        "lecture_17/slide_043.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0144",
+      "question": "What is the relationship between Paul Schuster and Dresden in the diagram?",
+      "gold_answer": "Paul Schuster has a birthPlace relationship with Dresden.",
+      "predicted_answer": "The provided context does not mention Paul Schuster or Dresden, so there is no information available to determine their relationship from the lecture slides.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_18/slide_077.png"
+      ],
+      "retrieved_slides": [
+        "lecture_04/slide_036.png",
+        "lecture_14/slide_082.png",
+        "lecture_08/slide_042.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.27586206896551724
+      }
+    },
+    {
+      "question_id": "cs601_q0145",
+      "question": "What is the price difference between the input and cached input for the gpt-4o model?",
+      "gold_answer": "$1.25",
+      "predicted_answer": "The provided context does not contain information about the price difference between the input and cached input for the gpt-4o model.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_19/slide_018.png"
+      ],
+      "retrieved_slides": [
+        "lecture_17/slide_097.png",
+        "lecture_03/slide_004.png",
+        "lecture_19/slide_026.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0146",
+      "question": "What is the relationship between 'deficit' and 'current' in the diagram?",
+      "gold_answer": "MOD",
+      "predicted_answer": "The provided context does not mention 'deficit' or 'current,' so I cannot determine their relationship based on the given lecture slides.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_082.png",
+        "lecture_08/slide_042.png",
+        "lecture_10/slide_056.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0147",
+      "question": "What is the relationship between 'param values' and the Trigram Model?",
+      "gold_answer": "'Param values' are inputs to the Trigram Model.",
+      "predicted_answer": "The relationship between 'param values' and the Trigram Model is that the Trigram Model uses parameter values to estimate the probability of a letter or word based on the previous two letters or words. The model assumes that the context provided by the two preceding elements is sufficient to predict the next element, and it uses parameter values derived from training data to make these predictions. These parameter values are essentially the probabilities calculated from the frequency of occurrences in the training data, as illustrated by the example probabilities given in the lecture slides.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_029.png"
+      ],
+      "retrieved_slides": [
+        "lecture_14/slide_082.png",
+        "lecture_02/slide_010.png",
+        "lecture_04/slide_024.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.13953488372093026
+      }
+    },
+    {
+      "question_id": "cs601_q0148",
+      "question": "What does the expression 'p( hoof | pos ) / p(\u00achoof | pos)' represent?",
+      "gold_answer": "It represents the posterior odds ratio.",
+      "predicted_answer": "The expression 'p( hoof | pos ) / p(\u00achoof | pos)' represents the posterior odds ratio in favor of hoof-and-mouth disease given a positive test result.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_015.png"
+      ],
+      "retrieved_slides": [
+        "lecture_05/slide_015.png",
+        "lecture_05/slide_014.png",
+        "lecture_04/slide_002.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3333333333333333
+      }
+    },
+    {
+      "question_id": "cs601_q0149",
+      "question": "What is the original count for 'xyd' and its corresponding smoothed probability?",
+      "gold_answer": "Original count is 2, and the smoothed probability is 1/26.",
+      "predicted_answer": "The provided context does not contain information about 'xyd' or its corresponding smoothed probability.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_015.png"
+      ],
+      "retrieved_slides": [
+        "lecture_18/slide_059.png",
+        "lecture_14/slide_132.png",
+        "lecture_19/slide_047.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.18181818181818185
+      }
+    },
+    {
+      "question_id": "cs601_q0150",
+      "question": "What is the value of 'tense' in the top-left diagram?",
+      "gold_answer": "pres",
+      "predicted_answer": "The provided context does not contain any information about a 'tense' or a top-left diagram. Therefore, I cannot determine the value of 'tense' from the given text.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_052.png"
+      ],
+      "retrieved_slides": [
+        "lecture_10/slide_067.png",
+        "lecture_10/slide_056.png",
+        "lecture_02/slide_008.png"
+      ],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
       }
     }
   ],
   "summary": {
     "overall": {
-      "count": 75,
-      "exact_match": 0.12,
-      "token_f1": 0.3761
+      "count": 150,
+      "exact_match": 0.0267,
+      "token_f1": 0.1864
     },
     "per_category": {
       "text_only": {
-        "count": 53,
-        "exact_match": 0.1321,
-        "token_f1": 0.3825
+        "count": 15,
+        "exact_match": 0.0667,
+        "token_f1": 0.2758
       },
       "image_diagram": {
-        "count": 16,
-        "exact_match": 0.0,
-        "token_f1": 0.2178
+        "count": 59,
+        "exact_match": 0.0169,
+        "token_f1": 0.1472
       },
       "table": {
-        "count": 4,
-        "exact_match": 0.5,
-        "token_f1": 0.8542
+        "count": 27,
+        "exact_match": 0.0741,
+        "token_f1": 0.2384
+      },
+      "chart_graph": {
+        "count": 16,
+        "exact_match": 0.0,
+        "token_f1": 0.1347
       },
       "layout_aware": {
-        "count": 2,
+        "count": 33,
         "exact_match": 0.0,
-        "token_f1": 0.5193
+        "token_f1": 0.1984
       }
     }
   }

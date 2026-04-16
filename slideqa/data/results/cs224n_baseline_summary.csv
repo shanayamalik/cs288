@@ -1,7 +1,7 @@
 category,n,text_only_exact_match,text_only_token_f1,zero_shot_vlm_exact_match,zero_shot_vlm_token_f1
-text_only,7,0.0000,0.2735,0.0000,0.3524
-image_diagram,40,0.0000,0.0880,0.0250,0.3001
-table,13,0.0000,0.0404,0.0000,0.4845
-chart_graph,7,0.0000,0.1828,0.0000,0.4639
-layout_aware,8,0.0000,0.0882,0.1250,0.4844
-OVERALL,75,0.0000,0.1059,0.0267,0.3719
+text_only,15,0.0667,0.2824,0.0667,0.5277
+image_diagram,57,0.0000,0.0623,0.0351,0.3931
+table,27,0.0000,0.1230,0.0370,0.3645
+chart_graph,28,0.0000,0.0871,0.0714,0.3822
+layout_aware,23,0.0000,0.0636,0.0435,0.3581
+OVERALL,150,0.0067,0.1001,0.0467,0.3940

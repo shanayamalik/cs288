@@ -1,30 +1,22 @@
 [
   {
     "question_id": "cs288_q0001",
-    "predicted_answer": "Typical language models are not sufficient to handle long-range dependencies.",
+    "predicted_answer": "The total planned duration for the 'Course logistics' and 'First lecture (n-gram LM!)' sections is 50 minutes.",
     "retrieved_slides": [
-      "lecture_02/slide_016.png"
+      "lecture_01/slide_005.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
     "question_id": "cs288_q0002",
-    "predicted_answer": "The components of the Final Project and their respective percentages are:\n\n- Abstract: 5%\n- Midpoint report: 5%\n- Presentation: 10%\n- Final report: 20%",
+    "predicted_answer": "According to the slide, interpolation smoothing works by using a combination of different granularities of n-grams.",
     "retrieved_slides": [
-      "lecture_01/slide_049.png"
+      "lecture_02/slide_039.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
     "question_id": "cs288_q0003",
-    "predicted_answer": "Sewon Min has experience working at Meta and Google.",
-    "retrieved_slides": [
-      "lecture_01/slide_003.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0004",
     "predicted_answer": "The Ruby script is for preprocessing Twitter data.",
     "retrieved_slides": [
       "lecture_03/slide_023.png"
@@ -32,47 +24,111 @@
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0005",
-    "predicted_answer": "Newswire collections: 500M+ words.",
+    "question_id": "cs288_q0004",
+    "predicted_answer": "The training loss function mentioned on the slide is the negative log likelihood, given by:\n\n\\[\n\\min_{\\mathbf{W}^{(1)}, \\mathbf{W}^{(2)}, \\mathbf{W}^{(o)}} - \\sum_{(x,y) \\in \\mathcal{D}} \\log \\hat{y}_y\n\\]",
     "retrieved_slides": [
-      "lecture_01/slide_018.png"
+      "lecture_04/slide_049.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0005",
+    "predicted_answer": "The loss function \\( \\mathcal{L}(\\theta) \\) is defined as:\n\n\\[\n\\mathcal{L}(\\theta) = - \\sum_{t=1}^{T} \\log (\\hat{y}_t(y_t))\n\\]\n\nThis represents the negative log likelihood of the predicted outputs.",
+    "retrieved_slides": [
+      "lecture_05/slide_024.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
     "question_id": "cs288_q0006",
-    "predicted_answer": "The output of the word embedding process is a function \\( f : V \\rightarrow \\mathbb{R}^d \\), where each word is represented by a low-dimensional, real-valued vector.",
+    "predicted_answer": "In the context of machine translation, fluency means that the translation should be fluent text in the target language.",
     "retrieved_slides": [
-      "lecture_03/slide_022.png"
+      "lecture_06/slide_007.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
     "question_id": "cs288_q0007",
-    "predicted_answer": "The Brown corpus is described as having 1M words of tagged \"balanced\" text.",
+    "predicted_answer": "When increasing model size, \\(d_{ff}\\) is typically scaled more rapidly than \\(d\\).",
     "retrieved_slides": [
-      "lecture_01/slide_018.png"
+      "lecture_07/slide_122.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
     "question_id": "cs288_q0008",
-    "predicted_answer": "The expression in the box represents the loss function for skip-gram with negative sampling (SGNS). It combines the log probability of the true context word with the expected log probabilities of negative samples. The first term, \\(-\\log(\\sigma(\\mathbf{u}_t \\cdot \\mathbf{v}_c))\\), is for the positive example, and the second term, \\(-\\sum_{i=1}^{K} \\mathbb{E}_{j \\sim P(w)} \\log(\\sigma(-\\mathbf{u}_t \\cdot \\mathbf{v}_j))\\), accounts for the negative samples, where \\(P(w)\\) is the sampling distribution based on word frequency.",
+    "predicted_answer": "The slide suggests that in-context learning involves a forward pass without gradient updates, using few-shot prompting. It requires feeding a small number of examples (e.g., 32) to the model.",
     "retrieved_slides": [
-      "lecture_03/slide_060.png"
+      "lecture_08/slide_077.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
     "question_id": "cs288_q0009",
-    "predicted_answer": "The formula used for the skip-gram model on this slide is:\n\n\\[ P(w_{t+j} | w_t) = \\frac{\\exp(\\mathbf{v}_{w_{t+j}}^\\top \\mathbf{v}_{w_t})}{\\sum_{w' \\in V} \\exp(\\mathbf{v}_{w'}^\\top \\mathbf{v}_{w_t})} \\]",
+    "predicted_answer": "Model-based filtering varies from cheap, bi-gram based filtering to LLM-based filtering.",
     "retrieved_slides": [
-      "lecture_03/slide_065.png"
+      "lecture_09/slide_073.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
     "question_id": "cs288_q0010",
+    "predicted_answer": "The first author of the paper listed on the slide is Long Ouyang.",
+    "retrieved_slides": [
+      "lecture_10/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0011",
+    "predicted_answer": "The purpose of the beam search with \\( n = 3 \\) is to explore and generate sequences by maintaining the top 3 most probable candidates at each step. It evaluates possible continuations of each sequence and selects the top candidates based on their probabilities, allowing for efficient exploration of the search space while limiting the number of sequences considered.",
+    "retrieved_slides": [
+      "lecture_11/slide_040.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0012",
+    "predicted_answer": "The questions associated with the VQA dataset include:\n\n- What color are her eyes?\n- What is the mustache made of?\n- How many slices of pizza are there?\n- Is this a vegetarian pizza?\n- Is this person expecting company?\n- What is just under the tree?\n- Does it appear to be rainy?\n- Does this person have 20/20 vision?",
+    "retrieved_slides": [
+      "lecture_12/slide_058.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0013",
+    "predicted_answer": "Denver\u2019s Executive Vice President of Football Operations and General Manager.",
+    "retrieved_slides": [
+      "lecture_13/slide_024.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0014",
+    "predicted_answer": "The case study \"DeepSeekMoE (January 2024)\" has the first layer as dense.",
+    "retrieved_slides": [
+      "lecture_14/slide_022.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0015",
+    "predicted_answer": "The hierarchical relationship shown is: clothing > outerwear > coat > jacket > jean jacket.",
+    "retrieved_slides": [
+      "lecture_15/slide_019.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0016",
+    "predicted_answer": "The translation example on the slide demonstrates machine translation, showing how a sentence in English is translated into Chinese (Simplified).",
+    "retrieved_slides": [
+      "lecture_01/slide_032.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0017",
     "predicted_answer": "The correct answer is B) \\(|V|\\).",
     "retrieved_slides": [
       "lecture_02/slide_026.png"
@@ -80,87 +136,111 @@
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0011",
-    "predicted_answer": "In the CBOW model diagram, the function applied to the input words is \"SUM.\"",
-    "retrieved_slides": [
-      "lecture_03/slide_062.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0012",
-    "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is mathematically defined as:\n\n\\[\n\\text{Perplexity} = P(w_1, w_2, \\ldots, w_n)^{-1/n}\n\\]",
-    "retrieved_slides": [
-      "lecture_02/slide_033.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0013",
-    "predicted_answer": "The formula used is:\n\n\\[ w_3 = \\arg \\max_{w \\in V} P(w \\mid w_1, w_2) \\]",
-    "retrieved_slides": [
-      "lecture_02/slide_018.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0014",
-    "predicted_answer": "The probability of the sentence \"<s> I like strawberries </s>\" using the bigram model is \\( \\frac{1}{9} \\).",
-    "retrieved_slides": [
-      "lecture_02/slide_012.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0015",
-    "predicted_answer": "The valence score for 'courageous' is 8.05.",
-    "retrieved_slides": [
-      "lecture_03/slide_005.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0016",
-    "predicted_answer": "The word pairs \"the, telescope,\" \"the, manual,\" \"the, afternoon,\" \"the, country,\" and \"the, street\" each have a Count\\*(x) of 0.5.",
-    "retrieved_slides": [
-      "lecture_02/slide_048.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0017",
-    "predicted_answer": "The probability of the bigram 'want to' according to the table is 0.00042.",
-    "retrieved_slides": [
-      "lecture_02/slide_044.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
     "question_id": "cs288_q0018",
-    "predicted_answer": "The word \"norway\" has the highest cosine distance to \"sweden\" according to the table.",
+    "predicted_answer": "The formula used for the skip-gram model on this slide is:\n\n\\[ P(w_{t+j} | w_t) = \\frac{\\exp(\\mathbf{v}_{w_{t+j}}^\\top \\mathbf{v}_{w_t})}{\\sum_{w' \\in V} \\exp(\\mathbf{v}_{w'}^\\top \\mathbf{v}_{w_t})} \\]",
     "retrieved_slides": [
-      "lecture_03/slide_024.png"
+      "lecture_03/slide_065.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
     "question_id": "cs288_q0019",
-    "predicted_answer": "The bigram \"eat lunch\" has a count of 42.",
+    "predicted_answer": "The components involved in calculating \\( \\mathbf{y} \\) are \\( \\mathbf{W}^{(o)} \\) and \\( \\mathbf{h}_2 \\).",
     "retrieved_slides": [
-      "lecture_02/slide_042.png"
+      "lecture_04/slide_049.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
     "question_id": "cs288_q0020",
-    "predicted_answer": "The word pair \"vanish/disappear\" has the highest similarity score of 9.8 according to SimLex-999.",
+    "predicted_answer": "The loss function used is the negative log likelihood:\n\n\\[\n\\mathcal{L}(\\theta) = - \\sum_{t=1}^{T-1} \\log (\\hat{y}_t(x_{t+1}))\n\\]",
     "retrieved_slides": [
-      "lecture_03/slide_005.png"
+      "lecture_05/slide_025.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
     "question_id": "cs288_q0021",
+    "predicted_answer": "The encoder LSTMs use 8 layers.",
+    "retrieved_slides": [
+      "lecture_06/slide_069.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0022",
+    "predicted_answer": "The mathematical expression used to calculate the weight for each query-key pair is:\n\n\\[\n\\alpha_{i,j} = \\text{softmax}\\left(\\frac{q_i \\cdot k_j}{\\sqrt{d_k}}\\right)\n\\]",
+    "retrieved_slides": [
+      "lecture_07/slide_020.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0023",
+    "predicted_answer": "Positive",
+    "retrieved_slides": [
+      "lecture_08/slide_090.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0024",
+    "predicted_answer": "The equation used to jointly fit \\( N \\) (number of parameters) and \\( D \\) (number of tokens) is:\n\n\\[\n\\hat{L}(N, D) \\triangleq E + \\frac{A}{N^\\alpha} + \\frac{B}{D^\\beta}\n\\]\n\nwhere \\( E \\) denotes irreducible loss.",
+    "retrieved_slides": [
+      "lecture_09/slide_019.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0025",
+    "predicted_answer": "The mathematical expression for the reward model's loss function is:\n\n\\[\nL(\\theta) = -\\frac{1}{\\binom{K}{2}} E_{(x, y_w, y_l) \\sim D} [\\log (\\sigma(r_\\theta(x, y_w) - r_\\theta(x, y_l)))]\n\\]",
+    "retrieved_slides": [
+      "lecture_10/slide_020.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0026",
+    "predicted_answer": "The mathematical expression used for length normalization is:\n\n\\[\np(\\bar{x}) \\propto \\frac{1}{|\\bar{x}|^\\alpha} \\sum_{i=1}^{|\\bar{x}|} \\log p(x_i \\mid x_1, \\ldots, x_{i-1})\n\\]",
+    "retrieved_slides": [
+      "lecture_11/slide_046.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0027",
+    "predicted_answer": "The classes with no examples where they are both the target and predicted class are TO, DT, NNP, PP, VB, VBN, and CD.",
+    "retrieved_slides": [
+      "lecture_12/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0028",
+    "predicted_answer": "End-to-end backpropagation in the RAG model is achieved through both the query encoder \\( q \\) and the generator \\( p_\\theta \\).",
+    "retrieved_slides": [
+      "lecture_13/slide_036.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0029",
+    "predicted_answer": "Both models use a \"Sigmoid Gate\" for attention.",
+    "retrieved_slides": [
+      "lecture_14/slide_041.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0030",
+    "predicted_answer": "The outputs of the text and image encoders are combined by calculating the dot product between the image encoding \\( I_1 \\) and each text encoding \\( T_1, T_2, T_3, \\ldots, T_N \\). This results in a series of scores \\( I_1 \\cdot T_1, I_1 \\cdot T_2, I_1 \\cdot T_3, \\ldots, I_1 \\cdot T_N \\), which are used to determine the best match.",
+    "retrieved_slides": [
+      "lecture_15/slide_044.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0031",
     "predicted_answer": "In Vaswani et al., the norm position is \"Post-norm,\" while in Llama models, it is \"Pre-norm.\"",
     "retrieved_slides": [
       "lecture_01/slide_034.png"
@@ -168,423 +248,15 @@
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0022",
-    "predicted_answer": "The graph on the slide represents the weighting function \\( f \\), which gives more importance to more common pairs but is capped at a certain point.",
-    "retrieved_slides": [
-      "lecture_03/slide_067.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0023",
-    "predicted_answer": "Unigrams reach a higher fraction seen according to the chart.",
-    "retrieved_slides": [
-      "lecture_01/slide_019.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0024",
-    "predicted_answer": "BERT-Large had 340 million parameters, according to the graph.",
-    "retrieved_slides": [
-      "lecture_01/slide_028.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0025",
-    "predicted_answer": "The graph shows an increasing trend in model size over time, with model sizes growing from millions to billions of parameters between 2018 and 2022.",
-    "retrieved_slides": [
-      "lecture_01/slide_028.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0026",
-    "predicted_answer": "The largest model mentioned on the graph is Megatron-Turing NLG, with a size of 530 billion parameters.",
-    "retrieved_slides": [
-      "lecture_01/slide_028.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0027",
-    "predicted_answer": "According to the chart, training loss decreases as FLOPS increase.",
-    "retrieved_slides": [
-      "lecture_01/slide_034.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0028",
-    "predicted_answer": "GPT-3 (Zero-Shot) has the lowest test perplexity on the chart, with a perplexity of 20.5.",
-    "retrieved_slides": [
-      "lecture_02/slide_034.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0029",
-    "predicted_answer": "The example at the bottom of the slide illustrates how context words surrounding the word \"banking\" can represent its meaning. It demonstrates the concept of distributional semantics, where words that occur in similar contexts tend to have similar meanings.",
-    "retrieved_slides": [
-      "lecture_03/slide_054.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0030",
-    "predicted_answer": "The pairs compared in the 'Country-Capital' diagram are:\n\n- Spain - Madrid\n- Italy - Rome\n- Germany - Berlin\n- Turkey - Ankara\n- Russia - Moscow\n- Canada - Ottawa\n- Japan - Tokyo\n- Vietnam - Hanoi\n- China - Beijing",
-    "retrieved_slides": [
-      "lecture_03/slide_025.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0031",
-    "predicted_answer": "The guest lecture by Gopala Anumanchipalli on \"Speech\" is scheduled last on April 23.",
-    "retrieved_slides": [
-      "lecture_01/slide_050.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
     "question_id": "cs288_q0032",
-    "predicted_answer": "Assignment 1 is worth 15%, while the Presentation component of the Final Project is worth 10%. Assignment 1 has a higher percentage by 5%.",
-    "retrieved_slides": [
-      "lecture_01/slide_049.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0033",
-    "predicted_answer": "On the SCWS dataset, SVD-L (42B) scores 58.3, while CBOW* (100B) scores 59.4. CBOW* performs slightly better than SVD-L on this dataset.",
-    "retrieved_slides": [
-      "lecture_03/slide_075.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0034",
-    "predicted_answer": "The word highlighted in pink is \"banking.\"",
-    "retrieved_slides": [
-      "lecture_03/slide_010.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0035",
-    "predicted_answer": "The perplexity values are as follows: Unigram model has a perplexity of 962, bigram model has a perplexity of 170, and trigram model has a perplexity of 109.",
-    "retrieved_slides": [
-      "lecture_02/slide_034.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0036",
-    "predicted_answer": "The mathematical expression used is:\n\n\\[\n\\arg\\max_{w \\in V} \\cos(e(w), e(w^*))\n\\]\n\nwhere \\( w^* = \\text{\"sweden\"} \\).",
-    "retrieved_slides": [
-      "lecture_03/slide_024.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0037",
-    "predicted_answer": "Some autocomplete suggestions shown are:\n\n- how is the weather in new york\n- how is the weather in new zealand\n- how is the weather in new orleans\n- how is the weather in new jersey\n- how is the weather in new orleans in february\n- how is the weather in new york in march",
-    "retrieved_slides": [
-      "lecture_02/slide_005.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0038",
-    "predicted_answer": "The word \"awful\" shifted from 'solemn' in the 1850s to 'horrible' in the 1900s.",
-    "retrieved_slides": [
-      "lecture_03/slide_027.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0039",
-    "predicted_answer": "The vector representation for the word \"cat\" is:\n\n\\[\n\\begin{pmatrix}\n-0.224 \\\\\n0.130 \\\\\n-0.290 \\\\\n0.276\n\\end{pmatrix}\n\\]",
-    "retrieved_slides": [
-      "lecture_03/slide_029.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0040",
-    "predicted_answer": "The condition for the weights in the linear interpolation equation is that the sum of the weights \\(\\lambda_i\\) must equal 1: \\(\\sum_i \\lambda_i = 1\\).",
-    "retrieved_slides": [
-      "lecture_02/slide_045.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0041",
-    "predicted_answer": "The formula for the max likelihood estimate for bigrams before smoothing is:\n\n\\[\nP(w_i \\mid w_{i-1}) = \\frac{C(w_{i-1}, w_i)}{C(w_{i-1})}\n\\]",
-    "retrieved_slides": [
-      "lecture_02/slide_041.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0042",
-    "predicted_answer": "The missing probability mass is calculated using the formula:\n\n\\[\n\\alpha(w_{i-1}) = 1 - \\sum_{w} \\frac{\\text{Count}^*(w_{i-1}, w)}{\\text{Count}(w_{i-1})}\n\\]\n\nFor the example given with \"the,\" it is calculated as:\n\n\\[\n\\alpha(\\text{the}) = 1 - \\frac{43}{48} = \\frac{5}{48}\n\\]",
-    "retrieved_slides": [
-      "lecture_02/slide_048.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0043",
-    "predicted_answer": "Cosine similarity is mathematically expressed as:\n\n\\[\n\\cos(\\mathbf{u}, \\mathbf{v}) = \\frac{\\mathbf{u} \\cdot \\mathbf{v}}{\\|\\mathbf{u}\\| \\|\\mathbf{v}\\|}\n\\]\n\nThis can be expanded to:\n\n\\[\n\\cos(\\mathbf{u}, \\mathbf{v}) = \\frac{\\sum_{i=1}^{|V|} u_i v_i}{\\sqrt{\\sum_{i=1}^{|V|} u_i^2} \\sqrt{\\sum_{i=1}^{|V|} v_i^2}}\n\\]",
-    "retrieved_slides": [
-      "lecture_03/slide_014.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0044",
-    "predicted_answer": "The probability notation used for a sequence of words is \\( P(w_1, w_2, w_3, \\ldots, w_n) \\).",
-    "retrieved_slides": [
-      "lecture_02/slide_003.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0045",
-    "predicted_answer": "The probability expression for \\( y = 1 \\) given \\( t \\) and \\( c \\) is \\( P(y = 1 \\mid t, c) = \\sigma(\\mathbf{u}_t \\cdot \\mathbf{v}_c) \\).",
-    "retrieved_slides": [
-      "lecture_03/slide_060.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0046",
-    "predicted_answer": "The perplexity of the GPT-3 model as shown in the slide is 20.5.",
-    "retrieved_slides": [
-      "lecture_02/slide_034.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0047",
-    "predicted_answer": "The formula for cos(u, v) represents the cosine similarity between two count vectors \\( \\mathbf{u} \\) and \\( \\mathbf{v} \\). It measures the cosine of the angle between the two vectors, indicating their similarity.",
-    "retrieved_slides": [
-      "lecture_03/slide_015.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0048",
-    "predicted_answer": "The bigram \"want to\" has the highest probability in the table, with a probability of 0.26.",
+    "predicted_answer": "The probability of the bigram 'want to' is 0.00042.",
     "retrieved_slides": [
       "lecture_02/slide_044.png"
     ],
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0049",
-    "predicted_answer": "1.75 GB",
-    "retrieved_slides": [
-      "lecture_03/slide_069.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0050",
-    "predicted_answer": "The diagrams depict a transformation of word embeddings from English to Spanish, showing how similar words in different languages can be aligned in a vector space.",
-    "retrieved_slides": [
-      "lecture_03/slide_026.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0051",
-    "predicted_answer": "The purpose of the Google search example on the slide is to illustrate the concept of information retrieval in AI fields.",
-    "retrieved_slides": [
-      "lecture_01/slide_032.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0052",
-    "predicted_answer": "The sample space includes finite pieces of English text such as \"It was the best of times, it was the worst of times,\" \"Hey 'sup,\" \"green sentences, loaded with vitamins,\" \"911 how can I help you,\" and \"Call me Ishmael.\"",
-    "retrieved_slides": [
-      "lecture_02/slide_003.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0053",
-    "predicted_answer": "The pairs generated from the word 'banking' for training data are:\n\n- (banking, turning)\n- (banking, into)\n- (banking, crises)\n- (banking, as)",
-    "retrieved_slides": [
-      "lecture_03/slide_033.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0054",
-    "predicted_answer": "The diagram on the left represents the architecture of a transformer model, showing components like input embedding, positional encoding, masked multi-head attention, feed forward layers, and output probabilities through softmax.",
-    "retrieved_slides": [
-      "lecture_01/slide_034.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0055",
-    "predicted_answer": "An image of an industrial plant with smokestacks is used to represent the industrialization theme.",
-    "retrieved_slides": [
-      "lecture_01/slide_030.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0056",
-    "predicted_answer": "The vector \\( v_{\\text{cat}} \\) represents the word \"cat\" as a low-dimensional, real-valued vector in the context of word embeddings.",
-    "retrieved_slides": [
-      "lecture_03/slide_022.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0057",
-    "predicted_answer": "The formula for \\( P(k|t) \\) given on the slide is:\n\n\\[\nP(k|t) = \\frac{\\exp(\\mathbf{u}_t \\cdot \\mathbf{v}_k)}{\\sum_{j \\in V} \\exp(\\mathbf{u}_t \\cdot \\mathbf{v}_j)}\n\\]",
-    "retrieved_slides": [
-      "lecture_03/slide_049.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0058",
-    "predicted_answer": "The word most similar to 'simple' according to the output is 'straightforward'.",
-    "retrieved_slides": [
-      "lecture_03/slide_070.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0059",
-    "predicted_answer": "The expression \\( \\frac{\\partial}{\\partial x_i} \\exp\\left(\\sum_{k=1}^{n} w_i x_i\\right) \\) is simplified to \\( \\exp\\left(\\sum_{k=1}^{n} w_i x_i\\right) w_i \\).",
-    "retrieved_slides": [
-      "lecture_03/slide_046.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0060",
-    "predicted_answer": "In the diagram, 'publication' is a more general term connected to 'book,' indicating that a book is a type of publication.",
-    "retrieved_slides": [
-      "lecture_03/slide_006.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0061",
-    "predicted_answer": "The size of the GloVe vectors trained on Twitter data is 1.42 GB.",
-    "retrieved_slides": [
-      "lecture_03/slide_069.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0062",
-    "predicted_answer": "The messaging app example suggests that language models are used for predictive text or autocomplete, offering word suggestions like \"best,\" \"most,\" and \"same\" as the user types.",
-    "retrieved_slides": [
-      "lecture_02/slide_005.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0063",
-    "predicted_answer": "The mathematical expression used to calculate cosine similarity is:\n\n\\[\n\\cos(\\mathbf{u}, \\mathbf{v}) = \\frac{\\mathbf{u} \\cdot \\mathbf{v}}{\\|\\mathbf{u}\\| \\|\\mathbf{v}\\|}\n\\]\n\nThis can also be expressed as:\n\n\\[\n\\cos(\\mathbf{u}, \\mathbf{v}) = \\frac{\\sum_{i=1}^{|V|} u_i v_i}{\\sqrt{\\sum_{i=1}^{|V|} u_i^2} \\sqrt{\\sum_{i=1}^{|V|} v_i^2}}\n\\]",
-    "retrieved_slides": [
-      "lecture_03/slide_074.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0064",
-    "predicted_answer": "The bigram \"i want\" has the highest count in the table, with a count of 828.",
-    "retrieved_slides": [
-      "lecture_02/slide_043.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0065",
-    "predicted_answer": "The value of \u03b1(the) according to the slide is \\( \\frac{5}{48} \\).",
-    "retrieved_slides": [
-      "lecture_02/slide_048.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0066",
-    "predicted_answer": "The arrows in the diagram indicate the semantic shift of words over time. They show how the meanings of the words \"gay,\" \"broadcast,\" and \"awful\" have changed from one time period to another, as represented by their proximity to different related words in each decade.",
-    "retrieved_slides": [
-      "lecture_03/slide_027.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0067",
-    "predicted_answer": "The search query being partially completed is \"how is the weather in new\".",
-    "retrieved_slides": [
-      "lecture_02/slide_005.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0068",
-    "predicted_answer": "The vector representation for the word \"cat\" is:\n\n\\[\n\\begin{pmatrix}\n-0.224 \\\\\n0.130 \\\\\n-0.290 \\\\\n0.276 \\\\\n\\end{pmatrix}\n\\]",
-    "retrieved_slides": [
-      "lecture_03/slide_017.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0069",
-    "predicted_answer": "The function \\( f \\) is expanded as \\( f = x_1 a_1 + x_2 a_2 + \\ldots + x_n a_n \\).",
-    "retrieved_slides": [
-      "lecture_03/slide_045.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0070",
-    "predicted_answer": "The graph in the inset box suggests that larger language model training data sizes (in words) improve the quality of an Arabic-English statistical machine translation system.",
-    "retrieved_slides": [
-      "lecture_01/slide_025.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0071",
-    "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is calculated as:\n\n\\[ \\text{Perplexity} = P(w_1, w_2, \\ldots, w_n)^{-1/n} \\]\n\nThis can also be expressed as:\n\n\\[ \\text{ppl}(S) = 2^x \\]\n\nwhere \n\n\\[ x = -\\frac{1}{n} \\log_2 P(w_1, \\ldots, w_n) = -\\frac{1}{n} \\sum_{i=1}^{n} \\log_2 P(w_i | w_1 \\ldots w_{i-1}) \\]\n\nThis expression for \\( x \\) represents the cross-entropy.",
-    "retrieved_slides": [
-      "lecture_02/slide_025.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0072",
-    "predicted_answer": "The analogy used to illustrate the Male-Female property in word embeddings is \"man - woman \u2248 king - queen.\"",
-    "retrieved_slides": [
-      "lecture_03/slide_055.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0073",
-    "predicted_answer": "The joint probability distribution of words represents how likely a given sequence of words (phrase, sentence, paragraph, or document) is.",
-    "retrieved_slides": [
-      "lecture_02/slide_003.png"
-    ],
-    "baseline": "zero_shot_vlm"
-  },
-  {
-    "question_id": "cs288_q0074",
+    "question_id": "cs288_q0033",
     "predicted_answer": "The count vector value for 'digital' in the 'computer' column is 1670.",
     "retrieved_slides": [
       "lecture_03/slide_053.png"
@@ -592,10 +264,938 @@
     "baseline": "zero_shot_vlm"
   },
   {
-    "question_id": "cs288_q0075",
-    "predicted_answer": "The GloVe model with a size of 42B achieved the highest score on the RG dataset, with a score of 83.6.",
+    "question_id": "cs288_q0034",
+    "predicted_answer": "The variable associated with the presence of exclamation marks in the document is \\( x_5 \\).",
     "retrieved_slides": [
-      "lecture_03/slide_075.png"
+      "lecture_04/slide_021.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0035",
+    "predicted_answer": "The purpose of the 'ner' (Named Entity Recognizer) component is to detect and label named entities in the text.",
+    "retrieved_slides": [
+      "lecture_05/slide_008.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0036",
+    "predicted_answer": "The French-English language pair has the most English words in the corpus, with 50,196,035 words.",
+    "retrieved_slides": [
+      "lecture_06/slide_011.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0037",
+    "predicted_answer": "The model with the lowest final loss is \"RMS Norm\" with a final loss of 1.821.",
+    "retrieved_slides": [
+      "lecture_07/slide_147.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0038",
+    "predicted_answer": "The score difference between the highest and lowest performing systems on the CoLA task is 60.5 - 35.0 = 25.5.",
+    "retrieved_slides": [
+      "lecture_08/slide_061.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0039",
+    "predicted_answer": "The datasets that have 'Common Crawl' as a source are:\n\n1. C4\n2. Pile\n3. RedPajama v1\n4. RefinedWeb\n5. Dolma\n6. OpenWebMath\n7. RedPajama v2\n8. FineWeb\n9. DCLM",
+    "retrieved_slides": [
+      "lecture_09/slide_048.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0040",
+    "predicted_answer": "Filipino and Bangladeshi, each with 22%.",
+    "retrieved_slides": [
+      "lecture_10/slide_024.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0041",
+    "predicted_answer": "The combined probability of the prefix \"in the\" is \\(0.3 \\times 0.15 = 0.045\\).",
+    "retrieved_slides": [
+      "lecture_11/slide_036.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0042",
+    "predicted_answer": "The difference in the number of training examples between RTE and WNLI is 1,866 (2,500 for RTE and 634 for WNLI).",
+    "retrieved_slides": [
+      "lecture_12/slide_083.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0043",
+    "predicted_answer": "The DPR retriever has the highest score for TriviaQA in the Top-100 category, with a score of 85.0.",
+    "retrieved_slides": [
+      "lecture_13/slide_066.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0044",
+    "predicted_answer": "The difference in total parameters between OLMoE (6.9B) and DeepSeek-V3 (671B) is 664.1 billion parameters.",
+    "retrieved_slides": [
+      "lecture_14/slide_022.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0045",
+    "predicted_answer": "Listeners R2 and R3 both have the attribute \"glasses\" according to the table on the left.",
+    "retrieved_slides": [
+      "lecture_15/slide_065.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0046",
+    "predicted_answer": "According to the chart, training loss decreases as FLOPS increase.",
+    "retrieved_slides": [
+      "lecture_01/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0047",
+    "predicted_answer": "GPT-3 (Zero-Shot) has the lowest test perplexity on the chart, with a perplexity of 20.5.",
+    "retrieved_slides": [
+      "lecture_02/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0048",
+    "predicted_answer": "The graph on the slide represents the weighting function \\( f \\), which gives more importance to more common pairs but is capped at a certain point.",
+    "retrieved_slides": [
+      "lecture_03/slide_067.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0049",
+    "predicted_answer": "The GRU model shows faster convergence in terms of epochs on the Nottingham Dataset.",
+    "retrieved_slides": [
+      "lecture_05/slide_064.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0050",
+    "predicted_answer": "The heatmap on the slide represents a 128-dimensional positional encoding, illustrating how sinusoidal encoding values vary across different positions and dimensions. The color gradient indicates the embedding values, with red and blue showing different magnitudes.",
+    "retrieved_slides": [
+      "lecture_07/slide_051.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0051",
+    "predicted_answer": "The accuracy of the 'Babbage' model with 4 in-context examples is approximately 95.3%.",
+    "retrieved_slides": [
+      "lecture_08/slide_093.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0052",
+    "predicted_answer": "For models with \\(10^3\\) parameters, the test loss decreases as the number of tokens processed increases.",
+    "retrieved_slides": [
+      "lecture_09/slide_013.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0053",
+    "predicted_answer": "In the 'Sentence Completion' category, the dataset associated with the highest performance is \"HellaSwag.\"",
+    "retrieved_slides": [
+      "lecture_10/slide_032.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0054",
+    "predicted_answer": "The probability of 's' given the context \\( x_1, \\ldots, x_{i-1} \\) is 80.",
+    "retrieved_slides": [
+      "lecture_11/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0055",
+    "predicted_answer": "The benchmarks represented by lines with markers in the graph are MNIST, ImageNet, GLUE, SQuAD 1.1, SQuAD 2.0, and Switchboard.",
+    "retrieved_slides": [
+      "lecture_12/slide_085.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0056",
+    "predicted_answer": "The smart speaker use case with the highest frequency of being 'ever tried' is \"Ask a question\" at 84.0%.",
+    "retrieved_slides": [
+      "lecture_13/slide_006.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0057",
+    "predicted_answer": "The KV cache size for Full Attention at a context length of 60,000 tokens is approximately 25 GB.",
+    "retrieved_slides": [
+      "lecture_14/slide_039.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0058",
+    "predicted_answer": "The domain \"i.pining.com\" contributes the highest percentage of documents in the LAION-2B-en dataset.",
+    "retrieved_slides": [
+      "lecture_15/slide_047.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0059",
+    "predicted_answer": "The solve rate for '10@k with filtering + clustering' increases as the sample budget increases.",
+    "retrieved_slides": [
+      "lecture_16/slide_021.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0060",
+    "predicted_answer": "The \"Captioner + Mixtral\" model shows the least improvement in success rate from round 0 to round 3.",
+    "retrieved_slides": [
+      "lecture_17/slide_032.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0061",
+    "predicted_answer": "The guest lecture by Gopala Anumanchipalli on \"Speech\" is scheduled last on April 23.",
+    "retrieved_slides": [
+      "lecture_01/slide_050.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0062",
+    "predicted_answer": "The probability of the sentence \"<s> I like strawberries </s>\" corresponds to option (C) 2/9.",
+    "retrieved_slides": [
+      "lecture_02/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0063",
+    "predicted_answer": "The example at the bottom of the slide illustrates how context words surrounding the word \"banking\" can represent its meaning. It demonstrates the concept of distributional semantics, where words occurring in similar contexts tend to have similar meanings.",
+    "retrieved_slides": [
+      "lecture_03/slide_054.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0064",
+    "predicted_answer": "The output of the neural network for the sentence \"I don't like this movie\" is a thumbs down emoji (\ud83d\udc4e).",
+    "retrieved_slides": [
+      "lecture_04/slide_003.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0065",
+    "predicted_answer": "The attention values for the word \"the\" are \\(-0.05\\) and \\(0.02\\).",
+    "retrieved_slides": [
+      "lecture_06/slide_066.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0066",
+    "predicted_answer": "After running attn() over each head, the outputs are concatenated and then multiplied by \\( W^O \\) to change the shape.",
+    "retrieved_slides": [
+      "lecture_07/slide_037.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0067",
+    "predicted_answer": "The '[SEP]' token in the input embeddings is used to separate two segments of text.",
+    "retrieved_slides": [
+      "lecture_08/slide_040.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0068",
+    "predicted_answer": "Chinchilla outperforms GPT-3 on the BoolQ dataset, achieving 83.7% compared to GPT-3's 60.5%.",
+    "retrieved_slides": [
+      "lecture_09/slide_022.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0069",
+    "predicted_answer": "There are four types of classifiers selectable in the RewardBench interface: Seq. Classifiers, DPO, Custom Classifiers, and Generative.",
+    "retrieved_slides": [
+      "lecture_10/slide_052.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0070",
+    "predicted_answer": "The top 3 continuations that should be kept are:\n\n1. \"the list\" with a probability of \\(0.4 \\times 0.3\\)\n2. \"the look\" with a probability of \\(0.3 \\times 0.2\\)\n3. \"in the\" with a probability of \\(0.3 \\times 0.15\\)",
+    "retrieved_slides": [
+      "lecture_11/slide_035.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0071",
+    "predicted_answer": "For 'Healthcare Practitioners and Technical', the benchmark effort is 29, while the real-world employment is 9.2 million.",
+    "retrieved_slides": [
+      "lecture_12/slide_089.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0072",
+    "predicted_answer": "The \"Natural Questions\" condition shows a greater difference in accuracy between 'Parametric-only (11B)' and 'DPR (0.3B)'.",
+    "retrieved_slides": [
+      "lecture_13/slide_072.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0073",
+    "predicted_answer": "The components shared between the Original Dense Block and the Upcycled MoE Block are the \"Layer Norm\" and \"Attention\" modules.",
+    "retrieved_slides": [
+      "lecture_14/slide_020.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0074",
+    "predicted_answer": "R1 has no specific attribute associated with it in the table.",
+    "retrieved_slides": [
+      "lecture_15/slide_062.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0075",
+    "predicted_answer": "The three different final answers derived from sampling a diverse set of reasoning paths are $18, $26, and $18.",
+    "retrieved_slides": [
+      "lecture_16/slide_013.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0076",
+    "predicted_answer": "The largest model mentioned on the graph is Megatron-Turing NLG, with a size of 530 billion parameters.",
+    "retrieved_slides": [
+      "lecture_01/slide_028.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0077",
+    "predicted_answer": "The perplexity of the GPT-3 model as shown in the slide is 20.5.",
+    "retrieved_slides": [
+      "lecture_02/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0078",
+    "predicted_answer": "The expression in the box represents the loss function for Skip-gram with Negative Sampling (SGNS). It combines the log probability of a true context word with the expected log probability of negative samples. The first term, \\(-\\log(\\sigma(\\mathbf{u}_t \\cdot \\mathbf{v}_c))\\), is for the positive example, and the second term, \\(-\\sum_{i=1}^{K} \\mathbb{E}_{j \\sim P(w)} \\log(\\sigma(-\\mathbf{u}_t \\cdot \\mathbf{v}_j))\\), is for the negative samples, where \\(P(w)\\) is the distribution for sampling negative words.",
+    "retrieved_slides": [
+      "lecture_03/slide_060.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0079",
+    "predicted_answer": "There are two nodes in the first hidden layer of the neural network diagram.",
+    "retrieved_slides": [
+      "lecture_04/slide_048.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0080",
+    "predicted_answer": "In the example sentence, 'Part of speech' information is represented using tags above each word, such as NNP, RB, VBD, IN, etc.",
+    "retrieved_slides": [
+      "lecture_05/slide_008.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0081",
+    "predicted_answer": "The translation direction \"Chinese \u2192 English\" has the lowest GNMT score of 4.263.",
+    "retrieved_slides": [
+      "lecture_06/slide_018.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0082",
+    "predicted_answer": "The matrix representation for RoPE(x, i) is:\n\n\\[\n\\begin{pmatrix}\n\\cos(i\\theta) & -\\sin(i\\theta) \\\\\n\\sin(i\\theta) & \\cos(i\\theta)\n\\end{pmatrix}\n\\]\n\nwhere \\(\\theta = 10000^{-\\frac{2i}{d}}\\).",
+    "retrieved_slides": [
+      "lecture_07/slide_137.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0083",
+    "predicted_answer": "BERT-Large used less compute for training compared to GPT-3 Small.",
+    "retrieved_slides": [
+      "lecture_08/slide_075.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0084",
+    "predicted_answer": "The sequence of steps in the data curation process is: Acquisition, Linearization, Filtering.",
+    "retrieved_slides": [
+      "lecture_09/slide_068.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0085",
+    "predicted_answer": "The \"Winograd (acc)\" task shows the least improvement across models as indicated by the graphs.",
+    "retrieved_slides": [
+      "lecture_10/slide_026.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0086",
+    "predicted_answer": "The combined probability of the prefixes 'the list' and 'and the' is \\(0.12 + 0.12 = 0.24\\).",
+    "retrieved_slides": [
+      "lecture_11/slide_041.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0087",
+    "predicted_answer": "For Dow Jones Newswire stories, the number of tokens tagged for Part-of-Speech is 3,065,706, and for Skeletal Parsing, it is 1,061,166.",
+    "retrieved_slides": [
+      "lecture_12/slide_062.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0088",
+    "predicted_answer": "BM25 outperforms DPR in the Top-20 SQuAD category.",
+    "retrieved_slides": [
+      "lecture_13/slide_066.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0089",
+    "predicted_answer": "The decode throughput for Qwen3-Next-80B-A3B increases significantly compared to Qwen3-32B as the context length increases.",
+    "retrieved_slides": [
+      "lecture_14/slide_040.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0090",
+    "predicted_answer": "The similarity between text and images is represented by the dot product between the text encoding \\( T_1 \\) and each image encoding \\( I_1, I_2, \\ldots, I_N \\). The results are shown as \\( I_1 \\cdot T_1, I_2 \\cdot T_1, \\ldots, I_N \\cdot T_1 \\).",
+    "retrieved_slides": [
+      "lecture_15/slide_045.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0091",
+    "predicted_answer": "The \"misleading\" category has the lowest accuracy, with a template accuracy of 9.3.",
+    "retrieved_slides": [
+      "lecture_16/slide_009.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0092",
+    "predicted_answer": "The model \"DigiRL-2\" shows the highest success rate in the graph.",
+    "retrieved_slides": [
+      "lecture_17/slide_041.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0093",
+    "predicted_answer": "The purpose of the Google search example on the slide is to illustrate the concept of information retrieval in AI fields.",
+    "retrieved_slides": [
+      "lecture_01/slide_032.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0094",
+    "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is mathematically defined as:\n\n\\[\n\\text{Perplexity} = P(w_1, w_2, \\ldots, w_n)^{-1/n}\n\\]",
+    "retrieved_slides": [
+      "lecture_02/slide_033.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0095",
+    "predicted_answer": "The outside context words are organized with two words before and two words after the center word \"into\" in the window of size 2. The words are \"problems\" and \"turning\" before, and \"banking\" and \"crises\" after.",
+    "retrieved_slides": [
+      "lecture_03/slide_032.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0096",
+    "predicted_answer": "The word with the embedding vector \\((0.290, -0.441, 0.762, 0.982)\\) is \"language\".",
+    "retrieved_slides": [
+      "lecture_04/slide_003.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0097",
+    "predicted_answer": "The 1-D output \\( y_t \\) is calculated as \\( y_t = C_t h_t \\).",
+    "retrieved_slides": [
+      "lecture_05/slide_066.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0098",
+    "predicted_answer": "The arrow from \\( h_3 \\) to \\( h^{enc} \\) represents the transformation of the final hidden state \\( h_3 \\) into the encoded representation \\( h^{enc} \\) of the input sentence in the Seq2Seq encoder.",
+    "retrieved_slides": [
+      "lecture_06/slide_027.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0099",
+    "predicted_answer": "The mathematical expression for GELU(x) is \\( \\text{GELU}(x) = x \\times \\Phi(x) \\), where \\( \\Phi(x) \\) is the Cumulative Distribution Function for the Gaussian Distribution.",
+    "retrieved_slides": [
+      "lecture_07/slide_152.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0100",
+    "predicted_answer": "Transformers Decoder architectures use autoregressive language models as their pretraining objective.",
+    "retrieved_slides": [
+      "lecture_08/slide_064.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0101",
+    "predicted_answer": "The model size of GPT-3 is 117 times larger than GPT-2.",
+    "retrieved_slides": [
+      "lecture_09/slide_015.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0102",
+    "predicted_answer": "The training stages are visually differentiated by using different colored boxes for each stage: Pre-training, Mid-training, and Post-training are in blue boxes, while Reasoning model training is in a purple box.",
+    "retrieved_slides": [
+      "lecture_10/slide_056.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0103",
+    "predicted_answer": "The probability \\( p(X_i = w \\mid x_1, \\ldots, x_{i-1}) \\) is calculated using the softmax function:\n\n\\[\np(X_i = w \\mid x_1, \\ldots, x_{i-1}) = \\frac{\\exp(s(w))}{\\sum_{w' \\in \\mathcal{V}} \\exp(s(w'))}\n\\]\n\nwhere \\( s(w) \\) is the score for each word type, calculated as \\( s(w) = f(w \\mid x_1, \\ldots, x_{i-1}; \\theta) \\).",
+    "retrieved_slides": [
+      "lecture_11/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0104",
+    "predicted_answer": "The underlined text in the reference sentence highlights the bigrams, which are pairs of consecutive words. This is significant for evaluating the BLEU score, as it involves comparing n-grams (like bigrams) between the reference and candidate sentences to assess their similarity.",
+    "retrieved_slides": [
+      "lecture_12/slide_030.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0105",
+    "predicted_answer": "Paragraph 1 contains information about an animal.",
+    "retrieved_slides": [
+      "lecture_13/slide_028.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0106",
+    "predicted_answer": "The main components depicted in the Gated DeltaNet diagram are:\n\n- Linear layer\n- RMSNorm\n- Gated Delta Rule\n- L2 Norm\n- Convolution (Conv)\n- SLU Gate",
+    "retrieved_slides": [
+      "lecture_14/slide_036.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0107",
+    "predicted_answer": "There are two people in the images of the sled dogs.",
+    "retrieved_slides": [
+      "lecture_15/slide_033.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0108",
+    "predicted_answer": "The trajectory in the decision-making section is evaluated using a \"Rule/LM Heuristic\" which identifies hallucinations.",
+    "retrieved_slides": [
+      "lecture_16/slide_026.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0109",
+    "predicted_answer": "Seven operations in the SoS+ diagram result in a cross mark.",
+    "retrieved_slides": [
+      "lecture_17/slide_068.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0110",
+    "predicted_answer": "The graph in the inset box suggests that more data improves the quality of an Arabic-English statistical machine translation system.",
+    "retrieved_slides": [
+      "lecture_01/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0111",
+    "predicted_answer": "The missing probability mass is calculated using the formula:\n\n\\[\n\\alpha(w_{i-1}) = 1 - \\sum_{w} \\frac{\\text{Count}^*(w_{i-1}, w)}{\\text{Count}(w_{i-1})}\n\\]\n\nFor the example given with \"the,\" it is calculated as:\n\n\\[\n\\alpha(\\text{the}) = 1 - \\frac{43}{48} = \\frac{5}{48}\n\\]",
+    "retrieved_slides": [
+      "lecture_02/slide_048.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0112",
+    "predicted_answer": "In the CBOW model diagram, the function applied to the input words is \"SUM.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_062.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0113",
+    "predicted_answer": "The variable \\( x_3 \\) represents the presence of the word 'no' in the document.",
+    "retrieved_slides": [
+      "lecture_04/slide_022.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0114",
+    "predicted_answer": "The word \"seashells\" is tagged as a plural noun (NNS).",
+    "retrieved_slides": [
+      "lecture_05/slide_005.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0115",
+    "predicted_answer": "The two components involved in finding the best target sentence according to Bayes' rule are:\n\n1. **Translation model**: \\( P(\\mathbf{w}^{(s)} \\mid \\mathbf{w}^{(t)}) \\) - Models whether the target sentence reflects the linguistic content of the source language (adequacy). Learned from parallel data.\n\n2. **Language model**: \\( P(\\mathbf{w}^{(t)}) \\) - Models how fluent the target sentence is (fluency). Can be learned from monolingual data.",
+    "retrieved_slides": [
+      "lecture_06/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0116",
+    "predicted_answer": "The NLTK tokenizer splits the input \"I'm\" into [\"I\", \"'m\"].",
+    "retrieved_slides": [
+      "lecture_07/slide_095.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0117",
+    "predicted_answer": "Llama 4 has the largest context length, with 10,000,000 tokens.",
+    "retrieved_slides": [
+      "lecture_08/slide_110.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0118",
+    "predicted_answer": "The sequence of stages in the data curation process is: Acquisition \u2192 Linearization \u2192 Filtering.",
+    "retrieved_slides": [
+      "lecture_09/slide_063.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0119",
+    "predicted_answer": "The diagram suggests that after explaining the moon landing to a 6-year-old, a response is generated: \"Some people went to the moon...\"",
+    "retrieved_slides": [
+      "lecture_10/slide_030.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0120",
+    "predicted_answer": "The probability of the prefix 'the look' in the current beam candidates table is \\(0.3 \\times 0.2\\).",
+    "retrieved_slides": [
+      "lecture_11/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0121",
+    "predicted_answer": "The diagram on the slide represents a syntactic (constituency) parse tree, which is used to illustrate the hierarchical structure of a sentence according to its grammatical constituents.",
+    "retrieved_slides": [
+      "lecture_12/slide_017.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0122",
+    "predicted_answer": "The mathematical expression representing the encoding of \\( z_i \\) is \\( z_i = \\text{Enc}(z_i) \\in \\mathbb{R}^h \\).",
+    "retrieved_slides": [
+      "lecture_13/slide_050.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0123",
+    "predicted_answer": "The diagram indicates that MiniMax initially used linear attention but then went back to full attention.",
+    "retrieved_slides": [
+      "lecture_14/slide_035.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0124",
+    "predicted_answer": "The color highlighted by the arrow is dark purple.",
+    "retrieved_slides": [
+      "lecture_15/slide_059.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0125",
+    "predicted_answer": "Janet sells 7 eggs according to the greedy decode reasoning path.",
+    "retrieved_slides": [
+      "lecture_16/slide_013.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0126",
+    "predicted_answer": "The formula used to calculate the answer is:\n\n\\[ \\text{answer} = \\text{loaves\\_baked} - \\text{loaves\\_sold\\_morning} - \\text{loaves\\_sold\\_afternoon} + \\text{loaves\\_returned} \\]",
+    "retrieved_slides": [
+      "lecture_17/slide_021.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0127",
+    "predicted_answer": "An image of an industrial plant or refinery is used to represent the industrialization theme.",
+    "retrieved_slides": [
+      "lecture_01/slide_030.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0128",
+    "predicted_answer": "The search query being partially completed is \"how is the weather in new\".",
+    "retrieved_slides": [
+      "lecture_02/slide_005.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0129",
+    "predicted_answer": "The expression \\( \\frac{\\partial}{\\partial x_i} \\exp\\left(\\sum_{k=1}^{n} w_i x_i\\right) \\) is simplified to \\( \\exp\\left(\\sum_{k=1}^{n} w_i x_i\\right) w_i \\).",
+    "retrieved_slides": [
+      "lecture_03/slide_046.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0130",
+    "predicted_answer": "The formula for the softmax function as shown on the slide is:\n\n\\[\n\\text{softmax}(\\mathbf{y})_k = \\frac{\\exp(y_k)}{\\sum_{j=1}^{C} \\exp(y_j)}\n\\]",
+    "retrieved_slides": [
+      "lecture_04/slide_049.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0131",
+    "predicted_answer": "In the training process, the output \\( \\hat{y}_t \\) is calculated using the softmax function applied to \\( \\mathbf{W}_o \\mathbf{h}_t \\). Specifically, \\( \\hat{y}_t = \\text{softmax}(\\mathbf{W}_o \\mathbf{h}_t) \\), where \\( \\mathbf{W}_o \\) is a weight matrix and \\( \\mathbf{h}_t \\) is the hidden state at time \\( t \\).",
+    "retrieved_slides": [
+      "lecture_05/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0132",
+    "predicted_answer": "The French-English language pair has the highest number of sentences in the parallel corpus, with 2,007,723 sentences.",
+    "retrieved_slides": [
+      "lecture_06/slide_011.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0133",
+    "predicted_answer": "\"Add & Normalize\" is mentioned twice in the diagram.",
+    "retrieved_slides": [
+      "lecture_07/slide_059.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0134",
+    "predicted_answer": "Julie read a total of 36 pages yesterday and today.",
+    "retrieved_slides": [
+      "lecture_08/slide_084.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0135",
+    "predicted_answer": "The dataset with the largest token size is \"Matrix\" with 4.7T tokens.",
+    "retrieved_slides": [
+      "lecture_09/slide_047.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0136",
+    "predicted_answer": "The models marked as using a \"Merge of DPO models\" are \"abideen/NexoNimbus-7B\" and \"samir-fama/SamiGPT-v1\".",
+    "retrieved_slides": [
+      "lecture_10/slide_050.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0137",
+    "predicted_answer": "The mathematical expression at the bottom of the slide represents the sum of probabilities of the top-k tokens, denoted as \\(\\sum_{x \\in \\mathcal{K}} p(X_i \\mid x_1, \\ldots, x_{i-1})\\). This sum is used to renormalize the remaining probabilities after setting the probabilities of all other tokens to zero.",
+    "retrieved_slides": [
+      "lecture_11/slide_051.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0138",
+    "predicted_answer": "The metric with the highest correlation with human judgment for the en\u2194zh language pair is \\( R_{\\text{BERT}} \\) with a score of .990/.976.",
+    "retrieved_slides": [
+      "lecture_12/slide_034.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0139",
+    "predicted_answer": "The OPT-125M model shows the greatest improvement in perplexity with retrieval, decreasing from 17.4 to 13.7.",
+    "retrieved_slides": [
+      "lecture_13/slide_081.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0140",
+    "predicted_answer": "The Qwen3-Next-80B-A3B model has the highest normalized prefill throughput at 128K sequence length.",
+    "retrieved_slides": [
+      "lecture_14/slide_040.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0141",
+    "predicted_answer": "There are 4 balloons in the left image, and they are all of different colors.",
+    "retrieved_slides": [
+      "lecture_15/slide_037.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0142",
+    "predicted_answer": "Multiplication is used to calculate the total earnings per day.",
+    "retrieved_slides": [
+      "lecture_16/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0143",
+    "predicted_answer": "The blue person is unable to achieve their goal of getting the suitcase directly because they are too short to reach it.",
+    "retrieved_slides": [
+      "lecture_17/slide_012.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0144",
+    "predicted_answer": "Unigrams reach a higher fraction seen according to the chart.",
+    "retrieved_slides": [
+      "lecture_01/slide_019.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0145",
+    "predicted_answer": "The word pairs \"the, telescope,\" \"the, manual,\" \"the, afternoon,\" \"the, country,\" and \"the, street\" each have a Count\\*(x) of 0.5.",
+    "retrieved_slides": [
+      "lecture_02/slide_048.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0146",
+    "predicted_answer": "The vector representation for the word \"cat\" is:\n\n\\[\n\\begin{pmatrix}\n-0.224 \\\\\n0.130 \\\\\n-0.290 \\\\\n0.276\n\\end{pmatrix}\n\\]",
+    "retrieved_slides": [
+      "lecture_03/slide_029.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0147",
+    "predicted_answer": "The probability \\( P(Y = 1|x) \\) calculated on the slide is 0.69.",
+    "retrieved_slides": [
+      "lecture_04/slide_025.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0148",
+    "predicted_answer": "The RNN-LDA LM model has the lowest perplexity score of 113.7.",
+    "retrieved_slides": [
+      "lecture_05/slide_028.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0149",
+    "predicted_answer": "The formula for dot-product attention is:\n\n\\[ g(h_i^{enc}, h_t^{dec}) = (h_t^{dec})^T h_i^{enc} \\in \\mathbb{R} \\]",
+    "retrieved_slides": [
+      "lecture_06/slide_065.png"
+    ],
+    "baseline": "zero_shot_vlm"
+  },
+  {
+    "question_id": "cs288_q0150",
+    "predicted_answer": "There are seven classes in the 'Architecture' section.",
+    "retrieved_slides": [
+      "lecture_07/slide_002.png"
     ],
     "baseline": "zero_shot_vlm"
   }
