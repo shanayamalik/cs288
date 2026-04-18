@@ -57,6 +57,43 @@ def encode_image_b64(image_path: Path) -> str:
     return base64.b64encode(image_path.read_bytes()).decode("utf-8")
 
 
+import re
+
+def _safe_json_loads(raw: str) -> list[dict]:
+    """Parse JSON from VLM output, handling common issues like bad escapes and trailing commas."""
+    # Try as-is first
+    for attempt_raw in [raw]:
+        try:
+            return json.loads(attempt_raw)
+        except json.JSONDecodeError:
+            pass
+
+    # Fix 1: invalid \escape sequences (e.g. \frac, \theta)
+    fixed = re.sub(r'\\(?!["\\/bfnrtu])', r'\\\\', raw)
+    try:
+        return json.loads(fixed)
+    except json.JSONDecodeError:
+        pass
+
+    # Fix 2: trailing commas before ] or }
+    fixed = re.sub(r',\s*([}\]])', r'\1', fixed)
+    try:
+        return json.loads(fixed)
+    except json.JSONDecodeError:
+        pass
+
+    # Fix 3: try extracting just the JSON array from the response
+    match = re.search(r'\[.*\]', fixed, re.DOTALL)
+    if match:
+        try:
+            return json.loads(match.group())
+        except json.JSONDecodeError:
+            pass
+
+    # Give up — raise the original error
+    return json.loads(raw)
+
+
 def call_openai(image_path: Path, model: str = "gpt-4o", base_url: str = None) -> list[dict]:
     """Send a slide image to an OpenAI-compatible vision API and return parsed QA pairs."""
     import os
@@ -92,7 +129,7 @@ def call_openai(image_path: Path, model: str = "gpt-4o", base_url: str = None) -
         raw = raw.split("\n", 1)[1]
         if raw.endswith("```"):
             raw = raw[: raw.rfind("```")]
-    return json.loads(raw)
+    return _safe_json_loads(raw)
 
 
 def call_gemini(image_path: Path, model: str = "gemini-2.0-flash") -> list[dict]:
@@ -111,7 +148,7 @@ def call_gemini(image_path: Path, model: str = "gemini-2.0-flash") -> list[dict]
         raw = raw.split("\n", 1)[1]
         if raw.endswith("```"):
             raw = raw[: raw.rfind("```")]
-    return json.loads(raw)
+    return _safe_json_loads(raw)
 
 
 OPENROUTER_BASE = "https://openrouter.ai/api/v1"

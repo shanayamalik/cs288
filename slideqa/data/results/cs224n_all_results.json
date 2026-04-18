@@ -1,69 +1,69 @@
 {
   "text_only": {
     "overall": {
-      "count": 75,
-      "exact_match": 0.0,
-      "token_f1": 0.1059
+      "count": 150,
+      "exact_match": 0.0067,
+      "token_f1": 0.1001
     },
     "per_category": {
       "text_only": {
-        "count": 7,
-        "exact_match": 0.0,
-        "token_f1": 0.2735
+        "count": 15,
+        "exact_match": 0.0667,
+        "token_f1": 0.2824
       },
       "image_diagram": {
-        "count": 40,
+        "count": 57,
         "exact_match": 0.0,
-        "token_f1": 0.088
+        "token_f1": 0.0623
       },
       "table": {
-        "count": 13,
+        "count": 27,
         "exact_match": 0.0,
-        "token_f1": 0.0404
+        "token_f1": 0.123
       },
       "chart_graph": {
-        "count": 7,
+        "count": 28,
         "exact_match": 0.0,
-        "token_f1": 0.1828
+        "token_f1": 0.0871
       },
       "layout_aware": {
-        "count": 8,
+        "count": 23,
         "exact_match": 0.0,
-        "token_f1": 0.0882
+        "token_f1": 0.0636
       }
     }
   },
   "zero_shot_vlm": {
     "overall": {
-      "count": 75,
-      "exact_match": 0.0267,
-      "token_f1": 0.3719
+      "count": 150,
+      "exact_match": 0.0467,
+      "token_f1": 0.394
     },
     "per_category": {
       "text_only": {
-        "count": 7,
-        "exact_match": 0.0,
-        "token_f1": 0.3524
+        "count": 15,
+        "exact_match": 0.0667,
+        "token_f1": 0.5277
       },
       "image_diagram": {
-        "count": 40,
-        "exact_match": 0.025,
-        "token_f1": 0.3001
+        "count": 57,
+        "exact_match": 0.0351,
+        "token_f1": 0.3931
       },
       "table": {
-        "count": 13,
-        "exact_match": 0.0,
-        "token_f1": 0.4845
+        "count": 27,
+        "exact_match": 0.037,
+        "token_f1": 0.3645
       },
       "chart_graph": {
-        "count": 7,
-        "exact_match": 0.0,
-        "token_f1": 0.4639
+        "count": 28,
+        "exact_match": 0.0714,
+        "token_f1": 0.3822
       },
       "layout_aware": {
-        "count": 8,
-        "exact_match": 0.125,
-        "token_f1": 0.4844
+        "count": 23,
+        "exact_match": 0.0435,
+        "token_f1": 0.3581
       }
     }
   }

@@ -1,116 +1,936 @@
 [
   {
     "question_id": "cs288_q0001",
-    "predicted_answer": "The limitation of typical language models mentioned on the slide is that there are no public details on how frontier models are built.",
+    "predicted_answer": "The total planned duration for the 'Course logistics' and 'First lecture (n-gram LM!)' sections is 50 minutes.",
     "retrieved_slides": [
-      "lecture_01/slide_043.png",
-      "lecture_02/slide_021.png",
-      "lecture_01/slide_031.png"
+      "lecture_01/slide_005.png",
+      "lecture_07/slide_084.png",
+      "lecture_08/slide_037.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0002",
-    "predicted_answer": "The provided context does not specify the components of the Final Project or their respective percentages. It only outlines the milestones and due dates for the project. For more detailed information, you would need to refer to the course website.",
+    "predicted_answer": "The provided context does not include information on interpolation smoothing. Therefore, I cannot answer how interpolation smoothing works based on the given slides.",
     "retrieved_slides": [
-      "lecture_01/slide_047.png",
-      "lecture_01/slide_043.png",
-      "lecture_02/slide_017.png"
+      "lecture_12/slide_053.png",
+      "lecture_02/slide_036.png",
+      "lecture_09/slide_076.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0003",
-    "predicted_answer": "Sewon Min has experience working at Meta and Google.",
+    "predicted_answer": "The provided context does not mention a Ruby script, so I cannot determine its purpose based on the given information.",
     "retrieved_slides": [
-      "lecture_01/slide_040.png",
-      "lecture_01/slide_030.png",
-      "lecture_01/slide_003.png"
+      "lecture_12/slide_070.png",
+      "lecture_15/slide_047.png",
+      "lecture_07/slide_084.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0004",
-    "predicted_answer": "The provided text context does not mention a Ruby script, so I cannot provide an answer about its purpose.",
+    "predicted_answer": "The training loss function mentioned on the slide is cross entropy loss for logistic regression.",
     "retrieved_slides": [
-      "lecture_03/slide_012.png",
-      "lecture_03/slide_031.png",
-      "lecture_03/slide_046.png"
+      "lecture_04/slide_030.png",
+      "lecture_15/slide_047.png",
+      "lecture_08/slide_058.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0005",
-    "predicted_answer": "Newswire collections are an example of a corpus with 500M+ words.",
+    "predicted_answer": "The loss function \\( L(\\theta) \\) in the training process is defined using cross entropy loss for logistic regression, which is convex and ensures that gradient descent can find the global minimum. Additionally, in the context of training with a generative language modeling objective, loss is applied to each individual token in the sequence.",
     "retrieved_slides": [
-      "lecture_01/slide_018.png",
-      "lecture_02/slide_002.png",
-      "lecture_02/slide_017.png"
+      "lecture_04/slide_030.png",
+      "lecture_08/slide_058.png",
+      "lecture_07/slide_043.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0006",
-    "predicted_answer": "The output of the word embedding process is vectors that represent a word's context.",
+    "predicted_answer": "The provided lecture slides do not contain information about the meaning of fluency in the context of machine translation.",
     "retrieved_slides": [
-      "lecture_03/slide_042.png",
-      "lecture_03/slide_031.png",
-      "lecture_03/slide_012.png"
+      "lecture_07/slide_144.png",
+      "lecture_03/slide_012.png",
+      "lecture_08/slide_104.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0007",
-    "predicted_answer": "Brown corpus",
+    "predicted_answer": "The provided context does not contain specific information about the scaling of 'd_ff' compared to 'd' when increasing model size.",
     "retrieved_slides": [
-      "lecture_01/slide_018.png",
-      "lecture_01/slide_022.png",
-      "lecture_03/slide_043.png"
+      "lecture_09/slide_028.png",
+      "lecture_09/slide_056.png",
+      "lecture_11/slide_044.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0008",
-    "predicted_answer": "The expression in the box, \"2 \u00d7 |V| \u00d7 d,\" represents the number of parameters in the model, where each word in the vocabulary has two d-dimensional vectors.",
+    "predicted_answer": "The slide suggests that the method of learning involves building the tokenizer and vocabulary directly from data without using predefined rules, a process also referred to as \"training.\"",
     "retrieved_slides": [
-      "lecture_03/slide_003.png",
-      "lecture_03/slide_080.png",
-      "lecture_03/slide_042.png"
+      "lecture_12/slide_090.png",
+      "lecture_07/slide_105.png",
+      "lecture_12/slide_100.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0009",
-    "predicted_answer": "The slide does not provide a specific formula for the skip-gram model.",
+    "predicted_answer": "Model-based filtering varies from cheap, bi-gram based filtering to LLM-based filtering.",
     "retrieved_slides": [
-      "lecture_03/slide_041.png",
-      "lecture_01/slide_040.png",
-      "lecture_03/slide_063.png"
+      "lecture_09/slide_076.png",
+      "lecture_09/slide_073.png",
+      "lecture_09/slide_070.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0010",
-    "predicted_answer": "The correct answer for the perplexity of the test corpus given the k-gram model probability is \\(|V|\\).",
+    "predicted_answer": "Robin Jia",
     "retrieved_slides": [
-      "lecture_02/slide_026.png",
-      "lecture_02/slide_027.png",
-      "lecture_02/slide_025.png"
+      "lecture_13/slide_048.png",
+      "lecture_13/slide_064.png",
+      "lecture_13/slide_023.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0011",
-    "predicted_answer": "The context does not provide specific details about the function applied to the input words in the CBOW model diagram.",
+    "predicted_answer": "The purpose of the beam search with n = 3 is to iteratively generate and maintain the top 3 most probable sequences (or prefixes) by expanding each prefix with potential candidates and selecting the top 3 based on their probabilities. This process helps in efficiently exploring the search space to find the most likely sequences.",
     "retrieved_slides": [
-      "lecture_03/slide_063.png",
-      "lecture_03/slide_041.png",
-      "lecture_03/slide_059.png"
+      "lecture_11/slide_040.png",
+      "lecture_11/slide_039.png",
+      "lecture_11/slide_043.png"
     ],
     "baseline": "text_only"
   },
   {
     "question_id": "cs288_q0012",
+    "predicted_answer": "The provided context does not mention the VQA dataset or the kind of questions associated with it.",
+    "retrieved_slides": [
+      "lecture_12/slide_070.png",
+      "lecture_17/slide_028.png",
+      "lecture_15/slide_012.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0013",
+    "predicted_answer": "John Elway is currently Denver\u2019s Executive Vice President of Football Operations and General Manager.",
+    "retrieved_slides": [
+      "lecture_13/slide_023.png",
+      "lecture_13/slide_024.png",
+      "lecture_12/slide_100.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0014",
+    "predicted_answer": "The context does not provide information about any case study having the first layer as dense.",
+    "retrieved_slides": [
+      "lecture_07/slide_054.png",
+      "lecture_06/slide_002.png",
+      "lecture_14/slide_002.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0015",
+    "predicted_answer": "The hierarchical relationship shown in the text on the slide is between different types of attention mechanisms in sequence-to-sequence models. Encoder-decoder cross attention involves attention between the input and target sequences, while self-attention occurs within the same sequence.",
+    "retrieved_slides": [
+      "lecture_15/slide_002.png",
+      "lecture_15/slide_040.png",
+      "lecture_07/slide_084.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0016",
+    "predicted_answer": "The translation example on the slide demonstrates machine translation, specifically translating a sentence from English to German using a large language model.",
+    "retrieved_slides": [
+      "lecture_12/slide_026.png",
+      "lecture_08/slide_104.png",
+      "lecture_10/slide_004.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0017",
+    "predicted_answer": "The correct answer for the perplexity of the test corpus given the k-gram model probability is \\( |V| \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_026.png",
+      "lecture_02/slide_027.png",
+      "lecture_05/slide_038.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0018",
+    "predicted_answer": "The formula for the skip-gram model is not provided in the given context from the lecture slides.",
+    "retrieved_slides": [
+      "lecture_12/slide_092.png",
+      "lecture_03/slide_041.png",
+      "lecture_03/slide_063.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0019",
+    "predicted_answer": "The components involved in calculating y according to the slide are the gradient with respect to y, \\( u_t \\), and \\( v_k \\) for all \\( k \\in V \\).",
+    "retrieved_slides": [
+      "lecture_03/slide_059.png",
+      "lecture_07/slide_015.png",
+      "lecture_17/slide_010.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0020",
+    "predicted_answer": "The context does not specify the loss function used in the training of the recurrent neural network.",
+    "retrieved_slides": [
+      "lecture_04/slide_030.png",
+      "lecture_03/slide_041.png",
+      "lecture_08/slide_058.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0021",
+    "predicted_answer": "In practice, using 2 to 4 layers is common for encoder LSTMs.",
+    "retrieved_slides": [
+      "lecture_16/slide_006.png",
+      "lecture_04/slide_042.png",
+      "lecture_05/slide_034.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0022",
+    "predicted_answer": "The mathematical expression used to calculate the weight for each query-key pair is \\(\\alpha_{i,j} = \\text{softmax} \\left(\\frac{q_i \\cdot k_j}{\\sqrt{d_k}}\\right)\\).",
+    "retrieved_slides": [
+      "lecture_07/slide_019.png",
+      "lecture_07/slide_020.png",
+      "lecture_03/slide_061.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0023",
+    "predicted_answer": "Positive",
+    "retrieved_slides": [
+      "lecture_08/slide_076.png",
+      "lecture_08/slide_091.png",
+      "lecture_08/slide_095.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0024",
+    "predicted_answer": "The equation used to jointly fit N (# params) and D (# tokens) is not explicitly provided in the context from the lecture slides.",
+    "retrieved_slides": [
+      "lecture_09/slide_014.png",
+      "lecture_09/slide_019.png",
+      "lecture_04/slide_031.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0025",
+    "predicted_answer": "The mathematical expression for the reward model's loss function is \\( L(\u03d5) = E(x,y)\u223c\u03c0RL_\u03d5 [r\u03b7(x, y)] \\).",
+    "retrieved_slides": [
+      "lecture_10/slide_022.png",
+      "lecture_17/slide_028.png",
+      "lecture_08/slide_058.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0026",
+    "predicted_answer": "The provided context does not include information about a mathematical expression used for length normalization.",
+    "retrieved_slides": [
+      "lecture_15/slide_058.png",
+      "lecture_09/slide_060.png",
+      "lecture_16/slide_028.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0027",
+    "predicted_answer": "The classes with no examples where they are both the target and predicted class are VBN, VBD, and CD.",
+    "retrieved_slides": [
+      "lecture_06/slide_030.png",
+      "lecture_12/slide_009.png",
+      "lecture_12/slide_096.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0028",
+    "predicted_answer": "The provided text context does not contain specific information on how end-to-end backpropagation is achieved in the RAG model.",
+    "retrieved_slides": [
+      "lecture_10/slide_046.png",
+      "lecture_13/slide_083.png",
+      "lecture_03/slide_044.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0029",
+    "predicted_answer": "Cross-attention is used in both models for attention.",
+    "retrieved_slides": [
+      "lecture_04/slide_016.png",
+      "lecture_07/slide_084.png",
+      "lecture_16/slide_028.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0030",
+    "predicted_answer": "The outputs of the text and image encoders are combined by ensuring that the similarity between their embeddings is high for an image with its corresponding caption, and low for any other image-caption pairs that are not attested. This results in \"aligned\" embedding functions where the embeddings of the image and caption for a known pair should be interchangeable.",
+    "retrieved_slides": [
+      "lecture_04/slide_042.png",
+      "lecture_12/slide_090.png",
+      "lecture_15/slide_041.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0031",
+    "predicted_answer": "The norm position differs between Vaswani et al. and Llama models in that Vaswani et al. use post-norm, while Llama models use pre-norm.",
+    "retrieved_slides": [
+      "lecture_07/slide_168.png",
+      "lecture_01/slide_034.png",
+      "lecture_07/slide_169.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0032",
+    "predicted_answer": "The provided context does not contain any information about the bigram 'want to'. Therefore, the probability of the bigram 'want to' cannot be determined from the given text.",
+    "retrieved_slides": [
+      "lecture_11/slide_040.png",
+      "lecture_02/slide_012.png",
+      "lecture_11/slide_041.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0033",
+    "predicted_answer": "The provided context does not contain specific information about the count vector value for 'digital' in the 'computer' column.",
+    "retrieved_slides": [
+      "lecture_03/slide_019.png",
+      "lecture_03/slide_012.png",
+      "lecture_04/slide_059.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0034",
+    "predicted_answer": "The provided context does not mention any variable associated with the presence of exclamation marks in the document.",
+    "retrieved_slides": [
+      "lecture_04/slide_006.png",
+      "lecture_11/slide_034.png",
+      "lecture_12/slide_072.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0035",
+    "predicted_answer": "The provided text context does not contain information about the 'ner' component or its purpose.",
+    "retrieved_slides": [
+      "lecture_08/slide_016.png",
+      "lecture_13/slide_025.png",
+      "lecture_13/slide_026.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0036",
+    "predicted_answer": "The provided context does not contain information about language pairs or the number of English words in any corpus. Therefore, it is not possible to determine which language pair has the most English words in the corpus based on the given text.",
+    "retrieved_slides": [
+      "lecture_01/slide_022.png",
+      "lecture_05/slide_012.png",
+      "lecture_12/slide_028.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0037",
+    "predicted_answer": "The provided text context does not include a table or specific information about which model has the lowest final loss. Therefore, I cannot determine which model has the lowest final loss based on the given context.",
+    "retrieved_slides": [
+      "lecture_04/slide_030.png",
+      "lecture_10/slide_048.png",
+      "lecture_08/slide_058.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0038",
+    "predicted_answer": "The provided text context does not contain information about the score difference between the highest and lowest performing systems on the CoLA task.",
+    "retrieved_slides": [
+      "lecture_07/slide_060.png",
+      "lecture_07/slide_084.png",
+      "lecture_13/slide_080.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0039",
+    "predicted_answer": "The 'CommonCrawl' dataset is mentioned as a source in the context of GPT-3 training datasets.",
+    "retrieved_slides": [
+      "lecture_09/slide_044.png",
+      "lecture_07/slide_006.png",
+      "lecture_04/slide_039.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0040",
+    "predicted_answer": "The provided text context does not contain information about the nationality of the labelers.",
+    "retrieved_slides": [
+      "lecture_11/slide_029.png",
+      "lecture_06/slide_066.png",
+      "lecture_11/slide_044.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0041",
+    "predicted_answer": "The combined probability of the prefix 'in the' is 0.02 * 0.15 = 0.003.",
+    "retrieved_slides": [
+      "lecture_11/slide_040.png",
+      "lecture_11/slide_034.png",
+      "lecture_11/slide_041.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0042",
+    "predicted_answer": "The provided text context does not contain information about the difference in the number of training examples between RTE and WNLI.",
+    "retrieved_slides": [
+      "lecture_07/slide_060.png",
+      "lecture_07/slide_084.png",
+      "lecture_13/slide_024.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0043",
+    "predicted_answer": "The provided context does not contain information about which retriever has the highest score for TriviaQA in the Top-100 category.",
+    "retrieved_slides": [
+      "lecture_13/slide_043.png",
+      "lecture_13/slide_038.png",
+      "lecture_06/slide_009.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0044",
+    "predicted_answer": "The difference in total parameters between OLMoE and DeepSeek-V3 is 664.1 billion parameters (671B for DeepSeek-V3 minus 6.9B for OLMoE).",
+    "retrieved_slides": [
+      "lecture_14/slide_013.png",
+      "lecture_07/slide_060.png",
+      "lecture_14/slide_022.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0045",
+    "predicted_answer": "The provided context does not contain any information about listeners R2 and R3 or any table on the left. Therefore, I cannot answer the question based on the given text.",
+    "retrieved_slides": [
+      "lecture_07/slide_011.png",
+      "lecture_07/slide_029.png",
+      "lecture_14/slide_019.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0046",
+    "predicted_answer": "The provided context does not include a chart or specific information about how training loss changes with increasing FLOPS.",
+    "retrieved_slides": [
+      "lecture_09/slide_028.png",
+      "lecture_04/slide_030.png",
+      "lecture_08/slide_058.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0047",
+    "predicted_answer": "The context provided does not include specific information about the models or their test perplexity values on the chart. Therefore, I cannot determine which model has the lowest test perplexity based on the given information.",
+    "retrieved_slides": [
+      "lecture_02/slide_026.png",
+      "lecture_02/slide_027.png",
+      "lecture_05/slide_029.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0048",
+    "predicted_answer": "The provided context does not include any information about a graph on a slide. Therefore, I cannot answer the question about what the graph represents.",
+    "retrieved_slides": [
+      "lecture_12/slide_100.png",
+      "lecture_08/slide_037.png",
+      "lecture_12/slide_094.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0049",
+    "predicted_answer": "The provided context does not contain information about model convergence on the Nottingham Dataset.",
+    "retrieved_slides": [
+      "lecture_09/slide_075.png",
+      "lecture_05/slide_063.png",
+      "lecture_07/slide_164.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0050",
+    "predicted_answer": "The provided context does not include any information about a heatmap or its representation. Therefore, I cannot provide an answer based on the given lecture slides.",
+    "retrieved_slides": [
+      "lecture_12/slide_100.png",
+      "lecture_08/slide_037.png",
+      "lecture_12/slide_094.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0051",
+    "predicted_answer": "The provided context does not mention the 'Babbage' model or its accuracy with 4 in-context examples.",
+    "retrieved_slides": [
+      "lecture_08/slide_096.png",
+      "lecture_12/slide_010.png",
+      "lecture_05/slide_004.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0052",
+    "predicted_answer": "The provided context does not contain specific information about how test loss changes with the number of tokens processed for models with 10^3 parameters.",
+    "retrieved_slides": [
+      "lecture_08/slide_058.png",
+      "lecture_09/slide_030.png",
+      "lecture_12/slide_056.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0053",
+    "predicted_answer": "The provided context does not contain information about datasets associated with performance in the 'Sentence Completion' category.",
+    "retrieved_slides": [
+      "lecture_12/slide_092.png",
+      "lecture_10/slide_043.png",
+      "lecture_08/slide_111.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0054",
+    "predicted_answer": "The probability of 's' given the context \\( x_1, \\ldots, x_{i-1} \\) is determined by a language model, which is a probabilistic model of a sequence of words. It involves calculating the joint probability distribution of words in the sequence.",
+    "retrieved_slides": [
+      "lecture_03/slide_031.png",
+      "lecture_02/slide_003.png",
+      "lecture_03/slide_063.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0055",
+    "predicted_answer": "The provided text context does not include specific information about which benchmarks are represented by lines with markers in the graph.",
+    "retrieved_slides": [
+      "lecture_03/slide_013.png",
+      "lecture_08/slide_111.png",
+      "lecture_12/slide_085.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0056",
+    "predicted_answer": "The provided text context does not contain information about smart speaker use cases or their frequency of being 'ever tried.' Therefore, I cannot answer the question based on the given context.",
+    "retrieved_slides": [
+      "lecture_08/slide_012.png",
+      "lecture_06/slide_030.png",
+      "lecture_15/slide_035.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0057",
+    "predicted_answer": "The KV cache size for Full Attention at a context length of 60,000 tokens grows linearly with the sequence length. Therefore, it would be proportional to the number of tokens, which is 60,000. However, the exact size would depend on the dimensions of the keys and values, which are not specified in the provided context.",
+    "retrieved_slides": [
+      "lecture_14/slide_025.png",
+      "lecture_07/slide_162.png",
+      "lecture_07/slide_123.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0058",
+    "predicted_answer": "The provided context does not contain information about the LAION-2B-en dataset or the domains contributing to it.",
+    "retrieved_slides": [
+      "lecture_04/slide_006.png",
+      "lecture_11/slide_044.png",
+      "lecture_11/slide_045.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0059",
+    "predicted_answer": "The provided context does not contain information about the solve rate trend for '10@k with filtering + clustering' as the sample budget increases.",
+    "retrieved_slides": [
+      "lecture_16/slide_003.png",
+      "lecture_10/slide_010.png",
+      "lecture_12/slide_100.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0060",
+    "predicted_answer": "The model \"Captioner + Mixtral\" shows the least improvement in success rate from round 0 to round 3.",
+    "retrieved_slides": [
+      "lecture_17/slide_032.png",
+      "lecture_17/slide_039.png",
+      "lecture_15/slide_004.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0061",
+    "predicted_answer": "The last guest lecture is scheduled for Class #26.",
+    "retrieved_slides": [
+      "lecture_07/slide_002.png",
+      "lecture_01/slide_005.png",
+      "lecture_08/slide_025.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0062",
+    "predicted_answer": "The probability of the sentence \"<s> I like strawberries </s>\" is (D) 1/9.",
+    "retrieved_slides": [
+      "lecture_02/slide_012.png",
+      "lecture_02/slide_011.png",
+      "lecture_06/slide_006.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0063",
+    "predicted_answer": "The example at the bottom of the slide illustrates two works, \"DataComp-LM\" by Li et al. 2024 and \"FineWeb\" by Penedo et al. 2024, which focus on developing the next generation of training sets for language models and refining web data for high-quality text data at scale, respectively.",
+    "retrieved_slides": [
+      "lecture_12/slide_094.png",
+      "lecture_12/slide_100.png",
+      "lecture_09/slide_053.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0064",
+    "predicted_answer": "The provided context does not specify the output of the neural network for the sentence 'I don't like this movie'.",
+    "retrieved_slides": [
+      "lecture_08/slide_033.png",
+      "lecture_06/slide_006.png",
+      "lecture_06/slide_022.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0065",
+    "predicted_answer": "The provided context does not specify the attention values for the word 'the'. It only describes the general process of computing attention scores, taking the softmax to get attention distribution, and using this distribution to compute a weighted sum of values. For specific attention values, additional information about the input sequence and the model's computations would be needed.",
+    "retrieved_slides": [
+      "lecture_07/slide_013.png",
+      "lecture_07/slide_014.png",
+      "lecture_07/slide_016.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0066",
+    "predicted_answer": "After running attn() over each head, the outputs are concatenated and then multiplied by a weight matrix \\( W_o \\) to change the shape.",
+    "retrieved_slides": [
+      "lecture_07/slide_057.png",
+      "lecture_07/slide_037.png",
+      "lecture_07/slide_038.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0067",
+    "predicted_answer": "The provided context does not mention the '[SEP]' token or its purpose in input embeddings. Therefore, I cannot provide an answer based on the given information.",
+    "retrieved_slides": [
+      "lecture_07/slide_084.png",
+      "lecture_07/slide_131.png",
+      "lecture_07/slide_049.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0068",
+    "predicted_answer": "The provided text context does not contain information about the performance of Chinchilla or GPT-3 on the BoolQ dataset.",
+    "retrieved_slides": [
+      "lecture_08/slide_079.png",
+      "lecture_08/slide_080.png",
+      "lecture_08/slide_092.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0069",
+    "predicted_answer": "The provided context does not specify the number of types of classifiers selectable in the RewardBench interface.",
+    "retrieved_slides": [
+      "lecture_04/slide_012.png",
+      "lecture_12/slide_002.png",
+      "lecture_16/slide_028.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0070",
+    "predicted_answer": "The top 3 continuations that should be kept according to the beam search criteria are \"the list,\" \"the look,\" and \"the parents.\"",
+    "retrieved_slides": [
+      "lecture_11/slide_031.png",
+      "lecture_11/slide_033.png",
+      "lecture_11/slide_035.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0071",
+    "predicted_answer": "The provided context does not contain information related to 'Healthcare Practitioners and Technical' or any comparison of benchmark effort and real-world employment for this category. The slides focus on statistical machine translation and scaling laws in machine learning.",
+    "retrieved_slides": [
+      "lecture_06/slide_015.png",
+      "lecture_06/slide_023.png",
+      "lecture_09/slide_026.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0072",
+    "predicted_answer": "The provided context does not contain information about the accuracy differences between 'Parametric-only (11B)' and 'DPR (0.3B)'.",
+    "retrieved_slides": [
+      "lecture_07/slide_060.png",
+      "lecture_13/slide_042.png",
+      "lecture_09/slide_078.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0073",
+    "predicted_answer": "The provided context does not contain specific information about the components shared between the Original Dense Block and the Upcycled MoE Block.",
+    "retrieved_slides": [
+      "lecture_14/slide_013.png",
+      "lecture_14/slide_019.png",
+      "lecture_14/slide_022.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0074",
+    "predicted_answer": "The provided context does not contain any information about \"R1\" or its associated attributes.",
+    "retrieved_slides": [
+      "lecture_08/slide_111.png",
+      "lecture_08/slide_062.png",
+      "lecture_07/slide_073.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0075",
+    "predicted_answer": "The provided context does not specify the three different final answers derived from sampling a diverse set of reasoning paths.",
+    "retrieved_slides": [
+      "lecture_17/slide_028.png",
+      "lecture_10/slide_010.png",
+      "lecture_16/slide_035.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0076",
+    "predicted_answer": "The provided context does not mention any specific models or their sizes. Therefore, I cannot provide an answer based on the given information.",
+    "retrieved_slides": [
+      "lecture_16/slide_035.png",
+      "lecture_17/slide_006.png",
+      "lecture_12/slide_094.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0077",
+    "predicted_answer": "The provided text context does not include information about the perplexity of the GPT-3 model.",
+    "retrieved_slides": [
+      "lecture_02/slide_026.png",
+      "lecture_12/slide_100.png",
+      "lecture_05/slide_029.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0078",
+    "predicted_answer": "The expression in the box represents the output of a Referring Expression (Refex) Resolution process, which is the region of the image corresponding to the referent described by the natural language referring expression \"The leftmost person using sunglasses.\"",
+    "retrieved_slides": [
+      "lecture_15/slide_028.png",
+      "lecture_15/slide_029.png",
+      "lecture_15/slide_030.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0079",
+    "predicted_answer": "The provided context does not specify the number of nodes in the first hidden layer of the neural network diagram.",
+    "retrieved_slides": [
+      "lecture_07/slide_054.png",
+      "lecture_08/slide_033.png",
+      "lecture_04/slide_042.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0080",
+    "predicted_answer": "The provided context does not include information on how 'Part of speech' information is represented in the example sentence.",
+    "retrieved_slides": [
+      "lecture_03/slide_003.png",
+      "lecture_03/slide_013.png",
+      "lecture_12/slide_039.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0081",
+    "predicted_answer": "The provided text context does not contain information about GNMT scores or specific translation directions. Therefore, I cannot determine which translation direction has the lowest GNMT score based on the given slides.",
+    "retrieved_slides": [
+      "lecture_05/slide_039.png",
+      "lecture_06/slide_007.png",
+      "lecture_01/slide_032.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0082",
+    "predicted_answer": "The provided text context does not contain information about the matrix representation for RoPE(x, i).",
+    "retrieved_slides": [
+      "lecture_03/slide_019.png",
+      "lecture_06/slide_030.png",
+      "lecture_15/slide_012.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0083",
+    "predicted_answer": "The provided text context does not contain specific information about the compute used for training BERT-Large and GPT-3 Small. Therefore, I cannot provide a comparison based on the given lecture slides.",
+    "retrieved_slides": [
+      "lecture_12/slide_092.png",
+      "lecture_07/slide_098.png",
+      "lecture_03/slide_041.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0084",
+    "predicted_answer": "The provided context does not include information about the sequence of steps in the data curation process or any related diagram.",
+    "retrieved_slides": [
+      "lecture_07/slide_016.png",
+      "lecture_07/slide_028.png",
+      "lecture_05/slide_040.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0085",
+    "predicted_answer": "The provided context does not include any graphs or specific tasks to determine which task shows the least improvement across models. Therefore, I cannot answer the question based on the given information.",
+    "retrieved_slides": [
+      "lecture_15/slide_004.png",
+      "lecture_08/slide_111.png",
+      "lecture_16/slide_030.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0086",
+    "predicted_answer": "The combined probability of the prefixes 'the list' and 'and the' is 0.12 + 0.12 = 0.24.",
+    "retrieved_slides": [
+      "lecture_11/slide_040.png",
+      "lecture_11/slide_042.png",
+      "lecture_11/slide_041.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0087",
+    "predicted_answer": "The provided context does not contain specific information about the number of tokens tagged for Part-of-Speech and Skeletal Parsing for Dow Jones Newswire stories.",
+    "retrieved_slides": [
+      "lecture_01/slide_018.png",
+      "lecture_04/slide_038.png",
+      "lecture_08/slide_111.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0088",
+    "predicted_answer": "BM25 outperforms DPR on SQuAD.",
+    "retrieved_slides": [
+      "lecture_13/slide_066.png",
+      "lecture_13/slide_086.png",
+      "lecture_09/slide_076.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0089",
+    "predicted_answer": "The provided context does not contain specific information about the decode throughput trend for Qwen3-Next-80B-A3B compared to Qwen3-32B as context length increases.",
+    "retrieved_slides": [
+      "lecture_03/slide_038.png",
+      "lecture_07/slide_123.png",
+      "lecture_12/slide_100.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0090",
+    "predicted_answer": "The similarity between text and images in the diagram is represented by embedding functions for images (\\( \\phi(I) \\)) and text (\\( \\phi(x) \\)), where the goal is to have high similarity between the embeddings of an image and its corresponding caption, and low similarity for non-attested image-caption pairs.",
+    "retrieved_slides": [
+      "lecture_15/slide_041.png",
+      "lecture_15/slide_047.png",
+      "lecture_13/slide_044.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0091",
+    "predicted_answer": "The context provided does not include a table or specific accuracy data for different categories. Therefore, it is not possible to determine which category has the lowest accuracy based on the given information.",
+    "retrieved_slides": [
+      "lecture_06/slide_030.png",
+      "lecture_08/slide_076.png",
+      "lecture_08/slide_091.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0092",
+    "predicted_answer": "The context provided does not include any information about a graph or specific models showing success rates. Therefore, I cannot determine which model shows the highest success rate based on the given text.",
+    "retrieved_slides": [
+      "lecture_17/slide_026.png",
+      "lecture_16/slide_015.png",
+      "lecture_12/slide_042.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0093",
+    "predicted_answer": "The purpose of the Google search example on the slide is to illustrate the process of curating real questions from the Google search engine, which are then paired with Wikipedia articles as part of the crowdsourcing QA process for Natural Questions.",
+    "retrieved_slides": [
+      "lecture_12/slide_070.png",
+      "lecture_09/slide_053.png",
+      "lecture_01/slide_045.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0094",
     "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is mathematically defined as \\( P(w_1, w_2, \\ldots, w_n)^{-1/n} \\), where \\( ppl(S) = 2^x \\) and \\( x = -\\frac{1}{n} \\sum_{i=1}^{n} \\log_2 P(w_i|w_1 \\ldots w_{i-1}) \\).",
     "retrieved_slides": [
       "lecture_02/slide_025.png",
@@ -120,632 +940,562 @@
     "baseline": "text_only"
   },
   {
-    "question_id": "cs288_q0013",
-    "predicted_answer": "The formula used to predict the next word given a context of two words is \\( w_3 = \\arg \\max_{w \\in V} P(w|w_1, w_2) \\).",
+    "question_id": "cs288_q0095",
+    "predicted_answer": "The outside context words are organized in a fixed window of size 2m, where m = 2 in the example, meaning the window size is 4.",
     "retrieved_slides": [
-      "lecture_02/slide_018.png",
-      "lecture_03/slide_063.png",
-      "lecture_03/slide_031.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0014",
-    "predicted_answer": "The probability of the sentence \"<s> I like strawberries </s>\" using the bigram model is \\( \\frac{1}{9} \\).",
-    "retrieved_slides": [
-      "lecture_02/slide_012.png",
-      "lecture_02/slide_011.png",
-      "lecture_03/slide_015.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0015",
-    "predicted_answer": "I'm sorry, the provided context does not contain information about the valence score for 'courageous'.",
-    "retrieved_slides": [
-      "lecture_01/slide_038.png",
-      "lecture_01/slide_008.png",
-      "lecture_03/slide_046.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0016",
-    "predicted_answer": "The word pair with a Count*(x) of 0.5 is any pair for which Count(x) is 1, because Count*(x) is defined as Count(x) - 0.5.",
-    "retrieved_slides": [
-      "lecture_02/slide_048.png",
-      "lecture_03/slide_060.png",
-      "lecture_01/slide_022.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0017",
-    "predicted_answer": "To calculate the probability of the bigram 'want to' using the raw bigram counts with add-one smoothing, you would need the specific counts from the matrix. However, since the counts are not provided in the context, the exact probability cannot be determined from the given information.",
-    "retrieved_slides": [
-      "lecture_03/slide_031.png",
-      "lecture_02/slide_012.png",
-      "lecture_02/slide_043.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0018",
-    "predicted_answer": "The provided context does not include a table or any specific words related to 'sweden' or their cosine distances. Therefore, I cannot determine which word has the highest cosine distance to 'sweden' based on the given information.",
-    "retrieved_slides": [
-      "lecture_03/slide_014.png",
-      "lecture_02/slide_009.png",
-      "lecture_02/slide_017.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0019",
-    "predicted_answer": "The provided text context does not specify any bigram with a count of 42.",
-    "retrieved_slides": [
-      "lecture_02/slide_048.png",
       "lecture_03/slide_012.png",
-      "lecture_01/slide_022.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0020",
-    "predicted_answer": "The lecture slides do not provide the specific word pair with the highest similarity score according to SimLex-999.",
-    "retrieved_slides": [
-      "lecture_03/slide_060.png",
-      "lecture_03/slide_014.png",
-      "lecture_03/slide_075.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0021",
-    "predicted_answer": "The norm position differs between Vaswani et al. and Llama models in that Vaswani et al. use a post-norm position, while Llama models use a pre-norm position.",
-    "retrieved_slides": [
-      "lecture_01/slide_034.png",
-      "lecture_03/slide_077.png",
-      "lecture_03/slide_003.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0022",
-    "predicted_answer": "The provided context does not include any information about a graph on the slide. Therefore, I cannot answer what the graph represents based on the given text.",
-    "retrieved_slides": [
-      "lecture_03/slide_080.png",
-      "lecture_01/slide_051.png",
+      "lecture_03/slide_031.png",
       "lecture_03/slide_042.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs288_q0023",
-    "predicted_answer": "The context provided does not include any specific chart or information about word pairs reaching a higher fraction seen. Therefore, I cannot answer the question based on the given text.",
+    "question_id": "cs288_q0096",
+    "predicted_answer": "The provided context does not contain information about specific words and their corresponding embedding vectors. Therefore, it is not possible to determine which word has the embedding vector (0.290, -0.441, 0.762, 0.982) based on the given lecture slides.",
     "retrieved_slides": [
-      "lecture_03/slide_060.png",
-      "lecture_02/slide_009.png",
-      "lecture_03/slide_049.png"
+      "lecture_04/slide_059.png",
+      "lecture_06/slide_030.png",
+      "lecture_03/slide_042.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs288_q0024",
-    "predicted_answer": "The context provided does not include information about a model with 340 million parameters. Therefore, I cannot answer the question based on the given lecture slides.",
+    "question_id": "cs288_q0097",
+    "predicted_answer": "The provided context does not contain specific information about how the 1-D output \\( y_t \\) is calculated in the state-space model. The slides mention topics related to reinforcement learning, model training, and encoder-decoder transformers, but do not provide details on state-space models or the calculation of \\( y_t \\).",
     "retrieved_slides": [
-      "lecture_01/slide_022.png",
+      "lecture_10/slide_046.png",
       "lecture_03/slide_044.png",
+      "lecture_07/slide_082.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0098",
+    "predicted_answer": "The provided context does not include any information about an arrow from h3 to h_enc or any related diagram. Therefore, I cannot answer what the arrow represents based solely on the given text.",
+    "retrieved_slides": [
+      "lecture_12/slide_100.png",
+      "lecture_12/slide_094.png",
+      "lecture_12/slide_074.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0099",
+    "predicted_answer": "The context provided does not contain information about the mathematical expression for GELU(x).",
+    "retrieved_slides": [
+      "lecture_15/slide_028.png",
+      "lecture_15/slide_029.png",
+      "lecture_15/slide_030.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0100",
+    "predicted_answer": "Transformers Decoder architectures use autoregressive language models as their pretraining objective. Examples include GPT-2, GPT-3, and Llama.",
+    "retrieved_slides": [
+      "lecture_08/slide_021.png",
+      "lecture_08/slide_022.png",
+      "lecture_08/slide_023.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0101",
+    "predicted_answer": "The context does not provide specific information about the model size of GPT-2, so it is not possible to determine how many times larger the model size of GPT-3 is compared to GPT-2 based solely on the provided text.",
+    "retrieved_slides": [
+      "lecture_08/slide_111.png",
+      "lecture_03/slide_042.png",
+      "lecture_07/slide_119.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0102",
+    "predicted_answer": "The training stages are visually differentiated by listing them in a sequence: Pre-training, Mid-training, and Post-training. Each stage is accompanied by bullet points describing its specific goals.",
+    "retrieved_slides": [
+      "lecture_10/slide_056.png",
+      "lecture_10/slide_055.png",
+      "lecture_15/slide_025.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0103",
+    "predicted_answer": "The probability \\( p(Xi = w | x1, \\ldots, xi-1) \\) is calculated using the formula:\n\n\\[ p(Xi = w | x1, \\ldots, xi-1) = \\frac{\\exp(s(w)/\\tau)}{\\sum_{w' \\in V} \\exp(s(w')/\\tau)} \\]\n\nwhere \\( s(w) \\) is the logit for word \\( w \\), \\( \\tau \\) is the temperature parameter controlling the smoothness of the distribution, and \\( V \\) is the vocabulary.",
+    "retrieved_slides": [
+      "lecture_11/slide_013.png",
+      "lecture_11/slide_014.png",
+      "lecture_11/slide_052.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0104",
+    "predicted_answer": "The underlined text in the reference sentence, \"The most natural form of language use is dialogue,\" represents the set of n-grams in sequence, which is used in BLEU evaluation to compare system outputs against the reference.",
+    "retrieved_slides": [
+      "lecture_12/slide_028.png",
+      "lecture_12/slide_027.png",
+      "lecture_12/slide_029.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0105",
+    "predicted_answer": "Paragraph 1 contains information about an animal.",
+    "retrieved_slides": [
+      "lecture_09/slide_033.png",
+      "lecture_01/slide_040.png",
+      "lecture_13/slide_028.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0106",
+    "predicted_answer": "The main components depicted in the Gated DeltaNet diagram are the recurrent delta-rule memory update, the shared memory state updated at each token, and the gating mechanism for adaptive memory control.",
+    "retrieved_slides": [
+      "lecture_14/slide_036.png",
+      "lecture_14/slide_038.png",
+      "lecture_15/slide_026.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0107",
+    "predicted_answer": "The provided text context does not contain any information about images of sled dogs or the number of people in them.",
+    "retrieved_slides": [
+      "lecture_01/slide_031.png",
+      "lecture_17/slide_023.png",
+      "lecture_16/slide_015.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0108",
+    "predicted_answer": "The trajectory in the decision-making section is evaluated by assigning it a reward, which is part of the process to optimize the policy to maximize the reward. This involves sampling a trajectory from the current policy and using a reward function to assess its performance.",
+    "retrieved_slides": [
+      "lecture_17/slide_028.png",
+      "lecture_12/slide_090.png",
+      "lecture_06/slide_013.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0109",
+    "predicted_answer": "The provided context does not contain information about the SoS+ diagram or the number of operations resulting in a cross mark.",
+    "retrieved_slides": [
+      "lecture_07/slide_084.png",
+      "lecture_16/slide_034.png",
+      "lecture_17/slide_005.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0110",
+    "predicted_answer": "The graph in the inset box suggests that data scaling is very important for translation quality, as even large models like GPT-3 did not properly scale the data. This implies that increasing the size of the training data can improve the performance of statistical machine translation models.",
+    "retrieved_slides": [
+      "lecture_12/slide_090.png",
+      "lecture_09/slide_033.png",
+      "lecture_06/slide_013.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0111",
+    "predicted_answer": "The missing probability mass is calculated by subtracting the discounted count from the original count for a given word. Specifically, it is defined as Count*(x) = Count(x) - 0.5. This missing mass is then divided among words for which the count is zero, using the formula \u03b1(wi\u22121) = 1 \u2212 \u2211w Count*(wi\u22121, w) / Count(wi\u22121).",
+    "retrieved_slides": [
+      "lecture_02/slide_048.png",
+      "lecture_02/slide_047.png",
+      "lecture_15/slide_002.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0112",
+    "predicted_answer": "The provided context does not specify the function applied to the input words in the CBOW model diagram.",
+    "retrieved_slides": [
+      "lecture_07/slide_084.png",
+      "lecture_03/slide_063.png",
+      "lecture_17/slide_028.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0113",
+    "predicted_answer": "The provided context does not contain information about a variable representing the presence of the word 'no' in the document.",
+    "retrieved_slides": [
+      "lecture_04/slide_006.png",
+      "lecture_03/slide_044.png",
+      "lecture_06/slide_030.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0114",
+    "predicted_answer": "The provided text context does not include a diagram or specify which word is tagged as a plural noun.",
+    "retrieved_slides": [
+      "lecture_03/slide_003.png",
+      "lecture_07/slide_016.png",
+      "lecture_07/slide_028.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0115",
+    "predicted_answer": "The two components involved in finding the best target sentence according to Bayes' rule are the translation model, which models whether the target sentence reflects the linguistic content of the source language (adequacy), and the language model, which models how fluent the target sentence is (fluency).",
+    "retrieved_slides": [
+      "lecture_06/slide_012.png",
+      "lecture_06/slide_013.png",
+      "lecture_07/slide_084.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0116",
+    "predicted_answer": "The NLTK tokenizer handles the input 'I'm' by splitting it into [\"I\", \"'m\"].",
+    "retrieved_slides": [
+      "lecture_07/slide_095.png",
+      "lecture_07/slide_105.png",
+      "lecture_12/slide_100.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0117",
+    "predicted_answer": "Llama 3 has the largest context length with 128,000 tokens.",
+    "retrieved_slides": [
+      "lecture_08/slide_110.png",
+      "lecture_08/slide_102.png",
       "lecture_02/slide_009.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs288_q0025",
-    "predicted_answer": "The trend shown in the graph regarding model size over time is that the model size has increased significantly, by a factor of 10^3 to 10^5 in parameters.",
+    "question_id": "cs288_q0118",
+    "predicted_answer": "The provided context does not include information about the sequence of stages in the data curation process.",
     "retrieved_slides": [
-      "lecture_03/slide_031.png",
-      "lecture_03/slide_042.png",
-      "lecture_01/slide_028.png"
+      "lecture_07/slide_016.png",
+      "lecture_07/slide_028.png",
+      "lecture_07/slide_084.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs288_q0026",
-    "predicted_answer": "The provided context does not mention a specific model size or a graph with model sizes. Therefore, I cannot determine the largest model mentioned or its size based on the given information.",
+    "question_id": "cs288_q0119",
+    "predicted_answer": "The provided context does not contain any information or diagram related to explaining the moon landing to a 6-year-old. Therefore, I cannot provide an answer based on the given lecture slides.",
     "retrieved_slides": [
-      "lecture_03/slide_063.png",
-      "lecture_03/slide_031.png",
+      "lecture_08/slide_099.png",
+      "lecture_12/slide_093.png",
+      "lecture_12/slide_094.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0120",
+    "predicted_answer": "The probability of the prefix 'the look' in the current beam candidates table is 0.06.",
+    "retrieved_slides": [
+      "lecture_11/slide_038.png",
+      "lecture_11/slide_039.png",
+      "lecture_11/slide_034.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0121",
+    "predicted_answer": "The context provided does not include a diagram or any description of a diagram on the slide. Therefore, I cannot determine what the diagram represents based on the given information.",
+    "retrieved_slides": [
+      "lecture_12/slide_100.png",
+      "lecture_08/slide_037.png",
+      "lecture_12/slide_094.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0122",
+    "predicted_answer": "The provided context does not include any information about a mathematical expression representing the encoding of \\( z_i \\).",
+    "retrieved_slides": [
+      "lecture_15/slide_028.png",
+      "lecture_15/slide_029.png",
+      "lecture_15/slide_030.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0123",
+    "predicted_answer": "The provided context does not include any information about MiniMax's attention style or a diagram related to it. Therefore, I cannot provide an answer based on the given lecture slides.",
+    "retrieved_slides": [
+      "lecture_07/slide_084.png",
+      "lecture_12/slide_100.png",
+      "lecture_07/slide_015.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0124",
+    "predicted_answer": "The color of the Killing Curse in Harry Potter is green.",
+    "retrieved_slides": [
+      "lecture_13/slide_080.png",
+      "lecture_13/slide_079.png",
+      "lecture_15/slide_027.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0125",
+    "predicted_answer": "The provided context does not contain any information about Janet selling eggs or a greedy decode reasoning path. Therefore, I cannot answer the question based on the given lecture slides.",
+    "retrieved_slides": [
+      "lecture_16/slide_006.png",
+      "lecture_16/slide_038.png",
+      "lecture_17/slide_009.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0126",
+    "predicted_answer": "The formula used to calculate the answer involves computing an attention distribution using the query and key, followed by a weighted sum using the attention distribution and values.",
+    "retrieved_slides": [
+      "lecture_07/slide_015.png",
+      "lecture_16/slide_028.png",
+      "lecture_08/slide_090.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0127",
+    "predicted_answer": "The provided text context does not mention any specific visual element used to represent the industrialization theme in the lecture slides.",
+    "retrieved_slides": [
+      "lecture_01/slide_029.png",
+      "lecture_05/slide_002.png",
+      "lecture_15/slide_058.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0128",
+    "predicted_answer": "Queries of 8 words or more issued to the Google search engine by multiple users in a short period of time.",
+    "retrieved_slides": [
+      "lecture_12/slide_070.png",
+      "lecture_07/slide_015.png",
+      "lecture_12/slide_102.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0129",
+    "predicted_answer": "The provided context does not contain information related to the expression \\( \\frac{\\partial}{\\partial x_i} \\exp(\\sum_{k=1}^{n} w_i x_i) \\) or its simplification. The context is focused on Referring Expression (Refex) Resolution, which involves visual observation and natural language referring expressions to identify regions in an image.",
+    "retrieved_slides": [
+      "lecture_15/slide_028.png",
+      "lecture_15/slide_029.png",
+      "lecture_15/slide_030.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0130",
+    "predicted_answer": "The provided context does not include the formula for the softmax function.",
+    "retrieved_slides": [
+      "lecture_17/slide_028.png",
+      "lecture_15/slide_041.png",
+      "lecture_12/slide_100.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0131",
+    "predicted_answer": "The provided context does not include specific details on how the output \\( \\hat{y}_t \\) is calculated in the training process.",
+    "retrieved_slides": [
+      "lecture_07/slide_082.png",
+      "lecture_07/slide_083.png",
+      "lecture_03/slide_041.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0132",
+    "predicted_answer": "The provided text context does not contain information about which language pair has the highest number of sentences in the parallel corpus.",
+    "retrieved_slides": [
+      "lecture_01/slide_022.png",
+      "lecture_13/slide_042.png",
+      "lecture_06/slide_013.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0133",
+    "predicted_answer": "The provided text context does not contain any information about 'Add & Normalize' or a diagram mentioning it. Therefore, I cannot determine how many times 'Add & Normalize' is mentioned.",
+    "retrieved_slides": [
+      "lecture_04/slide_020.png",
+      "lecture_16/slide_006.png",
+      "lecture_07/slide_169.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0134",
+    "predicted_answer": "Julie read 12 pages yesterday and 24 pages today. So she read a total of 12 + 24 = 36 pages. The answer is 36.",
+    "retrieved_slides": [
+      "lecture_08/slide_084.png",
+      "lecture_08/slide_094.png",
+      "lecture_08/slide_083.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0135",
+    "predicted_answer": "The provided text context does not contain information about datasets or their token sizes. Therefore, I cannot determine which dataset has the largest token size based on the given information.",
+    "retrieved_slides": [
+      "lecture_06/slide_030.png",
+      "lecture_07/slide_073.png",
+      "lecture_07/slide_121.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0136",
+    "predicted_answer": "The context provided does not specify any models marked as using a 'Merge of DPO models'.",
+    "retrieved_slides": [
+      "lecture_10/slide_050.png",
+      "lecture_16/slide_031.png",
+      "lecture_08/slide_018.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0137",
+    "predicted_answer": "The provided context does not include any mathematical expression at the bottom of the slide, so I cannot determine what it represents.",
+    "retrieved_slides": [
+      "lecture_12/slide_094.png",
+      "lecture_15/slide_028.png",
+      "lecture_15/slide_029.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0138",
+    "predicted_answer": "The provided text context does not specify which metric has the highest correlation with human judgment for the en\u2194zh language pair.",
+    "retrieved_slides": [
+      "lecture_12/slide_034.png",
+      "lecture_16/slide_003.png",
+      "lecture_10/slide_043.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0139",
+    "predicted_answer": "The provided text context does not specify which model size shows the greatest improvement in perplexity with retrieval.",
+    "retrieved_slides": [
+      "lecture_05/slide_029.png",
+      "lecture_05/slide_028.png",
       "lecture_02/slide_026.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs288_q0027",
-    "predicted_answer": "The provided context does not include any information about training loss or FLOPS. Therefore, I cannot answer the question based on the given lecture slides.",
+    "question_id": "cs288_q0140",
+    "predicted_answer": "The provided context does not contain information about normalized prefill throughput or any specific model performance at a 128K sequence length. Therefore, I cannot answer the question based on the given text.",
     "retrieved_slides": [
-      "lecture_03/slide_038.png",
-      "lecture_02/slide_024.png",
-      "lecture_03/slide_003.png"
+      "lecture_11/slide_029.png",
+      "lecture_11/slide_044.png",
+      "lecture_11/slide_045.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs288_q0028",
-    "predicted_answer": "The context provided does not include a chart or specific models to compare for test perplexity. Therefore, I cannot determine which model has the lowest test perplexity based on the given information.",
+    "question_id": "cs288_q0141",
+    "predicted_answer": "The left image has 4 balloons, and they are all of different colors.",
+    "retrieved_slides": [
+      "lecture_15/slide_037.png",
+      "lecture_12/slide_090.png",
+      "lecture_04/slide_016.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0142",
+    "predicted_answer": "The provided context does not contain information about calculating total earnings per day.",
+    "retrieved_slides": [
+      "lecture_14/slide_022.png",
+      "lecture_15/slide_013.png",
+      "lecture_15/slide_014.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0143",
+    "predicted_answer": "The blue person is unable to achieve their goal directly because they are too short to reach the suitcase themselves.",
+    "retrieved_slides": [
+      "lecture_15/slide_007.png",
+      "lecture_17/slide_013.png",
+      "lecture_15/slide_009.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0144",
+    "predicted_answer": "The word pair \"it\" reaches a higher fraction seen according to the chart.",
+    "retrieved_slides": [
+      "lecture_03/slide_060.png",
+      "lecture_16/slide_003.png",
+      "lecture_04/slide_020.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0145",
+    "predicted_answer": "The word pair \"the, \" has a Count*(x) of 0.5.",
+    "retrieved_slides": [
+      "lecture_02/slide_048.png",
+      "lecture_07/slide_073.png",
+      "lecture_07/slide_121.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0146",
+    "predicted_answer": "The vector representation for the word 'cat' would be computed using the hidden states of the LSTMs from both the forward and backward language models in ELMo. However, the specific vector values for 'cat' are not provided in the context.",
+    "retrieved_slides": [
+      "lecture_08/slide_011.png",
+      "lecture_03/slide_004.png",
+      "lecture_15/slide_047.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0147",
+    "predicted_answer": "The probability \\( P(Y = 1|x) \\) is calculated as \\( \\sigma(w \\cdot x + b) = \\frac{1}{1 + e^{-(w \\cdot x + b)}} \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_032.png",
+      "lecture_11/slide_041.png",
+      "lecture_04/slide_024.png"
+    ],
+    "baseline": "text_only"
+  },
+  {
+    "question_id": "cs288_q0148",
+    "predicted_answer": "The context provided does not include specific perplexity scores for different models on the Penn Treebank dataset, so I cannot determine which model has the lowest perplexity score based on the given information.",
     "retrieved_slides": [
       "lecture_02/slide_026.png",
       "lecture_02/slide_027.png",
-      "lecture_02/slide_046.png"
+      "lecture_05/slide_029.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs288_q0029",
-    "predicted_answer": "The example at the bottom of the slide illustrates that modern language models (LMs), such as GPT-2, can handle much longer contexts when predicting the probability of a sequence of words.",
+    "question_id": "cs288_q0149",
+    "predicted_answer": "The formula for dot-product attention is \\( g(h_{\\text{enc}_i}, h_{\\text{dec}_t}) = h_{\\text{dec}_t} \\cdot h_{\\text{enc}_i} \\).",
     "retrieved_slides": [
-      "lecture_03/slide_080.png",
-      "lecture_03/slide_003.png",
-      "lecture_02/slide_017.png"
+      "lecture_07/slide_084.png",
+      "lecture_06/slide_066.png",
+      "lecture_16/slide_028.png"
     ],
     "baseline": "text_only"
   },
   {
-    "question_id": "cs288_q0030",
-    "predicted_answer": "The provided text context does not contain information about a 'Country-Capital' diagram or the pairs compared in it.",
+    "question_id": "cs288_q0150",
+    "predicted_answer": "The provided text context does not specify the number of classes in the 'Architecture' section.",
     "retrieved_slides": [
-      "lecture_01/slide_027.png",
-      "lecture_03/slide_043.png",
-      "lecture_02/slide_017.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0031",
-    "predicted_answer": "The guest lecture scheduled last is by Gopala Anumanchipalli on April 23, titled \u201cSpeech.\u201d",
-    "retrieved_slides": [
-      "lecture_01/slide_005.png",
-      "lecture_01/slide_050.png",
-      "lecture_02/slide_029.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0032",
-    "predicted_answer": "The context does not provide specific percentage weights for Assignment 1 or the Presentation component of the Final Project. Therefore, a comparison cannot be made based on the provided information.",
-    "retrieved_slides": [
-      "lecture_01/slide_047.png",
-      "lecture_01/slide_041.png",
-      "lecture_03/slide_049.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0033",
-    "predicted_answer": "The provided text context does not contain specific information about the performance comparison between SVD-L and CBOW* on the SCWS dataset. Therefore, I cannot provide an answer based on the given context.",
-    "retrieved_slides": [
-      "lecture_01/slide_025.png",
-      "lecture_03/slide_049.png",
-      "lecture_03/slide_063.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0034",
-    "predicted_answer": "The word highlighted in pink in the examples is \"a.\"",
-    "retrieved_slides": [
-      "lecture_03/slide_012.png",
-      "lecture_03/slide_031.png",
-      "lecture_01/slide_008.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0035",
-    "predicted_answer": "The context does not provide specific perplexity values for unigram, bigram, and trigram models, so a direct comparison cannot be made. However, generally, as the order of the n-gram model increases (from unigram to bigram to trigram), the model can capture more context, potentially leading to lower perplexity values if the model is well-trained.",
-    "retrieved_slides": [
-      "lecture_03/slide_015.png",
-      "lecture_02/slide_026.png",
-      "lecture_02/slide_025.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0036",
-    "predicted_answer": "The provided text context does not specify a particular mathematical expression used to find the most similar word to 'sweden'. However, it implies that word meaning can be represented in vectors, suggesting that a common approach might involve comparing vector representations to find similarity, such as using cosine similarity or another vector similarity measure.",
-    "retrieved_slides": [
-      "lecture_03/slide_054.png",
-      "lecture_03/slide_009.png",
-      "lecture_03/slide_004.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0037",
-    "predicted_answer": "The provided text context does not include any information about autocomplete suggestions in a Google search example.",
-    "retrieved_slides": [
-      "lecture_03/slide_005.png",
-      "lecture_02/slide_038.png",
-      "lecture_01/slide_045.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0038",
-    "predicted_answer": "The provided text context does not contain information about a word whose meaning shifted from 'solemn' in the 1850s to 'horrible' in the 1900s.",
-    "retrieved_slides": [
-      "lecture_03/slide_004.png",
-      "lecture_03/slide_003.png",
-      "lecture_03/slide_013.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0039",
-    "predicted_answer": "The vector representation for the word 'cat' would be a row vector from the word-word co-occurrence matrix, where each entry corresponds to the co-occurrence count of 'cat' with context words (4 words to the left and 4 words to the right). This vector is likely to be high-dimensional and sparse, with most entries being 0s.",
-    "retrieved_slides": [
-      "lecture_03/slide_004.png",
-      "lecture_03/slide_038.png",
-      "lecture_03/slide_013.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0040",
-    "predicted_answer": "The condition for the weights in the linear interpolation equation is that the sum of the weights \\( \\lambda_i \\) must equal 1.",
-    "retrieved_slides": [
-      "lecture_02/slide_045.png",
-      "lecture_03/slide_041.png",
-      "lecture_01/slide_008.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0041",
-    "predicted_answer": "The formula for the max likelihood estimate for bigrams before smoothing is \\( P(w_i|w_{i-1}) = \\frac{C(w_{i-1}, w_i)}{C(w_{i-1})} \\).",
-    "retrieved_slides": [
-      "lecture_02/slide_041.png",
-      "lecture_02/slide_009.png",
-      "lecture_03/slide_080.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0042",
-    "predicted_answer": "The missing probability mass is calculated as \\( \\alpha(wi\u22121) = 1 \u2212 \\frac{\\sum_{w} \\text{Count}^* (wi\u22121, w)}{\\text{Count}(wi\u22121)} \\).",
-    "retrieved_slides": [
-      "lecture_02/slide_048.png",
-      "lecture_02/slide_047.png",
-      "lecture_02/slide_039.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0043",
-    "predicted_answer": "Cosine similarity is mathematically expressed as:\n\n\\[ \\cos(u, v) = \\frac{u \\cdot v}{\\|u\\|\\|v\\|} \\]\n\nwhere \\( u \\cdot v \\) is the dot product of vectors \\( u \\) and \\( v \\), and \\(\\|u\\|\\) and \\(\\|v\\|\\) are the magnitudes (or norms) of vectors \\( u \\) and \\( v \\), respectively.",
-    "retrieved_slides": [
-      "lecture_03/slide_014.png",
-      "lecture_03/slide_015.png",
-      "lecture_03/slide_075.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0044",
-    "predicted_answer": "The probability notation used for a sequence of words is \\( P(w_1, w_2, w_3, \\ldots, w_n) \\).",
-    "retrieved_slides": [
-      "lecture_02/slide_009.png",
-      "lecture_02/slide_003.png",
-      "lecture_03/slide_031.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0045",
-    "predicted_answer": "The probability expression for \\( y = 1 \\) given \\( t \\) and \\( c \\) is represented as:\n\n\\[ P(w_{t+j} | w_t) = \\frac{\\exp(u_{w_t} \\cdot v_{w_{t+j}})}{\\sum_{k \\in V} \\exp(u_{w_t} \\cdot v_k)} \\]",
-    "retrieved_slides": [
-      "lecture_03/slide_037.png",
-      "lecture_03/slide_036.png",
-      "lecture_03/slide_059.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0046",
-    "predicted_answer": "The perplexity of the GPT-3 model as shown in the slide is 20.5.",
-    "retrieved_slides": [
-      "lecture_02/slide_026.png",
-      "lecture_02/slide_028.png",
-      "lecture_02/slide_027.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0047",
-    "predicted_answer": "The formula for cos(u, v) represents the cosine similarity, which is a common similarity metric that measures the cosine of the angle between two vectors. The larger the cosine similarity, the more similar the two vectors are.",
-    "retrieved_slides": [
-      "lecture_03/slide_015.png",
-      "lecture_03/slide_014.png",
-      "lecture_03/slide_074.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0048",
-    "predicted_answer": "The bigram \"I like\" has the highest probability in the table, as it is used in the calculation of the probability for the sentence \"<s> I like strawberries </s>\" with a probability of 1.",
-    "retrieved_slides": [
-      "lecture_02/slide_009.png",
-      "lecture_02/slide_043.png",
-      "lecture_02/slide_012.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0049",
-    "predicted_answer": "The provided text context does not contain information about the download size of the GloVe vectors trained on Common Crawl with 42B tokens.",
-    "retrieved_slides": [
-      "lecture_03/slide_063.png",
-      "lecture_03/slide_014.png",
-      "lecture_03/slide_042.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0050",
-    "predicted_answer": "The transformation depicted in the diagrams is turning unlabeled text into supervised learning data by using each word to predict other words in its context, as described in the Skip-gram model.",
-    "retrieved_slides": [
-      "lecture_03/slide_031.png",
-      "lecture_03/slide_012.png",
-      "lecture_01/slide_038.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0051",
-    "predicted_answer": "The provided context does not mention a Google search example on the slide, so I cannot determine its purpose based on the given information.",
-    "retrieved_slides": [
-      "lecture_01/slide_045.png",
-      "lecture_03/slide_080.png",
-      "lecture_03/slide_063.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0052",
-    "predicted_answer": "The sample space includes all words in the vocabulary \\( V \\), as indicated by the probability distribution \\( P(w \\mid a) \\) defined over \\( V \\).",
-    "retrieved_slides": [
-      "lecture_03/slide_012.png",
-      "lecture_03/slide_031.png",
-      "lecture_03/slide_046.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0053",
-    "predicted_answer": "The provided context does not contain specific information about pairs generated from the word 'banking' for training data.",
-    "retrieved_slides": [
-      "lecture_01/slide_013.png",
-      "lecture_01/slide_031.png",
-      "lecture_03/slide_041.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0054",
-    "predicted_answer": "The context provided does not include a description or details about a diagram on the left. Therefore, I cannot determine what the diagram represents based on the given information.",
-    "retrieved_slides": [
-      "lecture_03/slide_013.png",
-      "lecture_03/slide_080.png",
-      "lecture_03/slide_042.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0055",
-    "predicted_answer": "The lecture slides do not provide a specific visual element used to represent the industrialization theme.",
-    "retrieved_slides": [
-      "lecture_01/slide_029.png",
-      "lecture_03/slide_012.png",
-      "lecture_01/slide_031.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0056",
-    "predicted_answer": "The vector \\( v_{\\text{cat}} \\) represents the context word vector for the word \"cat\" in the vocabulary.",
-    "retrieved_slides": [
-      "lecture_03/slide_003.png",
-      "lecture_03/slide_038.png",
-      "lecture_03/slide_042.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0057",
-    "predicted_answer": "The formula for \\( P(k|t) \\) given on the slide is:\n\n\\[ P(k|t) = \\frac{\\exp (u_t \\cdot v_k)}{\\sum_{j \\in V} \\exp (u_t \\cdot v_j)} \\]",
-    "retrieved_slides": [
-      "lecture_03/slide_063.png",
-      "lecture_03/slide_049.png",
-      "lecture_03/slide_031.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0058",
-    "predicted_answer": "The provided context does not include specific output data or results that indicate which word is most similar to 'simple'. Therefore, I cannot determine the most similar word to 'simple' based on the given lecture slides.",
-    "retrieved_slides": [
-      "lecture_03/slide_054.png",
-      "lecture_03/slide_009.png",
-      "lecture_03/slide_060.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0059",
-    "predicted_answer": "The expression \\( \\frac{\\partial}{\\partial x_i} \\exp(\\sum_{k=1}^{n} w_i x_i) \\) is simplified to \\( w_i \\exp(\\sum_{k=1}^{n} w_i x_i) \\).",
-    "retrieved_slides": [
-      "lecture_01/slide_031.png",
-      "lecture_01/slide_041.png",
-      "lecture_02/slide_023.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0060",
-    "predicted_answer": "The provided context does not include any information about a diagram or the relationship between 'book' and 'publication'. Therefore, I cannot provide an answer based on the given text.",
-    "retrieved_slides": [
-      "lecture_03/slide_015.png",
-      "lecture_01/slide_008.png",
-      "lecture_03/slide_012.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0061",
-    "predicted_answer": "The provided text context does not specify the size of the GloVe vectors trained on Twitter data.",
-    "retrieved_slides": [
-      "lecture_03/slide_063.png",
-      "lecture_03/slide_042.png",
-      "lecture_03/slide_020.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0062",
-    "predicted_answer": "The provided context does not include any information about a messaging app example. Therefore, I cannot answer the question based on the given lecture slides.",
-    "retrieved_slides": [
-      "lecture_03/slide_031.png",
-      "lecture_03/slide_012.png",
-      "lecture_01/slide_038.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0063",
-    "predicted_answer": "The mathematical expression used to calculate cosine similarity is:\n\n\\[ \\cos(u, v) = \\frac{u \\cdot v}{\\|u\\|\\|v\\|} = \\frac{\\sum_{i=1}^{|V|} u_i v_i}{\\sqrt{\\sum_{i=1}^{|V|} u_i^2} \\sqrt{\\sum_{i=1}^{|V|} v_i^2}} \\]",
-    "retrieved_slides": [
-      "lecture_03/slide_015.png",
-      "lecture_03/slide_014.png",
-      "lecture_03/slide_061.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0064",
-    "predicted_answer": "The context provided does not include specific bigram counts or a table listing them, so it is not possible to determine which bigram has the highest count.",
-    "retrieved_slides": [
-      "lecture_02/slide_043.png",
-      "lecture_03/slide_012.png",
-      "lecture_03/slide_019.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0065",
-    "predicted_answer": "The provided context does not contain any information about the value of \u03b1(the).",
-    "retrieved_slides": [
-      "lecture_03/slide_046.png",
-      "lecture_03/slide_019.png",
-      "lecture_01/slide_038.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0066",
-    "predicted_answer": "The provided context does not mention any arrows in a diagram, so I cannot determine their significance based on the given information.",
-    "retrieved_slides": [
-      "lecture_03/slide_012.png",
-      "lecture_03/slide_031.png",
-      "lecture_03/slide_046.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0067",
-    "predicted_answer": "The provided context does not contain any information about a Google search example or a search query being partially completed.",
-    "retrieved_slides": [
-      "lecture_01/slide_045.png",
-      "lecture_03/slide_031.png",
-      "lecture_02/slide_038.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0068",
-    "predicted_answer": "The vector representation for the word 'cat' would be a row vector from the word-word co-occurrence matrix, which represents the co-occurrence counts of 'cat' with context words (4 words to the left and 4 words to the right). This vector is likely to be very high-dimensional and sparse, with most entries being 0s.",
-    "retrieved_slides": [
-      "lecture_03/slide_004.png",
-      "lecture_03/slide_038.png",
-      "lecture_03/slide_013.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0069",
-    "predicted_answer": "The function \\( f \\) is expanded in terms of its components as \\( f = \\exp(w \\cdot x) \\).",
-    "retrieved_slides": [
-      "lecture_03/slide_031.png",
-      "lecture_03/slide_046.png",
-      "lecture_03/slide_063.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0070",
-    "predicted_answer": "The provided context does not contain any information about a graph related to data size and translation quality. Therefore, I cannot answer the question based on the given lecture slides.",
-    "retrieved_slides": [
-      "lecture_03/slide_042.png",
-      "lecture_03/slide_031.png",
-      "lecture_03/slide_080.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0071",
-    "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is calculated as \\( P(w_1, w_2, \\ldots, w_n)^{-1/n} \\), where \\( ppl(S) = 2^x \\) and \\( x = -\\frac{1}{n} \\sum_{i=1}^{n} \\log_2 P(w_i|w_1 \\ldots w_{i-1}) \\).",
-    "retrieved_slides": [
-      "lecture_02/slide_025.png",
-      "lecture_02/slide_033.png",
-      "lecture_02/slide_038.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0072",
-    "predicted_answer": "The provided text context does not include an analogy used to illustrate the Male-Female property in word embeddings.",
-    "retrieved_slides": [
-      "lecture_03/slide_043.png",
-      "lecture_03/slide_066.png",
-      "lecture_03/slide_041.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0073",
-    "predicted_answer": "The joint probability distribution of words represents the likelihood of a given sequence of words, such as a phrase, sentence, paragraph, or even a document.",
-    "retrieved_slides": [
-      "lecture_02/slide_003.png",
-      "lecture_03/slide_031.png",
-      "lecture_03/slide_003.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0074",
-    "predicted_answer": "The provided context does not include specific information about the count vector value for 'digital' in the 'computer' column.",
-    "retrieved_slides": [
-      "lecture_03/slide_019.png",
-      "lecture_03/slide_012.png",
-      "lecture_03/slide_046.png"
-    ],
-    "baseline": "text_only"
-  },
-  {
-    "question_id": "cs288_q0075",
-    "predicted_answer": "The provided context does not contain information about the RG dataset or any specific model and size combination that achieved the highest score on it.",
-    "retrieved_slides": [
-      "lecture_02/slide_045.png",
-      "lecture_01/slide_028.png",
-      "lecture_02/slide_032.png"
+      "lecture_05/slide_010.png",
+      "lecture_16/slide_006.png",
+      "lecture_04/slide_011.png"
     ],
     "baseline": "text_only"
   }

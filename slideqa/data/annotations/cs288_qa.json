@@ -1,12 +1,29 @@
 [
   {
     "question_id": "cs288_q0001",
-    "question": "What is the limitation of typical language models mentioned on the slide?",
-    "answer": "Typical LMs are not sufficient to handle long-range dependencies.",
+    "question": "What is the total planned duration for the 'Course logistics' and 'First lecture (n-gram LM!)' sections?",
+    "answer": "50 minutes",
     "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_02/slide_016.png"
+      "lecture_01/slide_005.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0002",
+    "question": "How does interpolation smoothing work according to the slide?",
+    "answer": "Interpolation uses a combination of different granularities of n-grams.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_039.png"
     ],
     "course": "cs288",
     "lecture": "lecture_02",
@@ -17,41 +34,7 @@
     }
   },
   {
-    "question_id": "cs288_q0002",
-    "question": "What are the components of the Final Project and their respective percentages?",
-    "answer": "Abstract: 5%, Midpoint report: 5%, Presentation: 10%, Final report: 20%",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_049.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
     "question_id": "cs288_q0003",
-    "question": "Which instructor has experience working at Meta and Google?",
-    "answer": "Sewon Min",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_003.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0004",
     "question": "What is the purpose of the Ruby script mentioned in the slide?",
     "answer": "For preprocessing Twitter data",
     "category": "text_only",
@@ -68,16 +51,33 @@
     }
   },
   {
-    "question_id": "cs288_q0005",
-    "question": "What is an example of a corpus with 500M+ words?",
-    "answer": "Newswire collections.",
+    "question_id": "cs288_q0004",
+    "question": "What is the training loss function mentioned on the slide?",
+    "answer": "The training loss function is to minimize -\u03a3_{(x,y)\u2208D} log \u0177_y.",
     "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_01/slide_018.png"
+      "lecture_04/slide_049.png"
     ],
     "course": "cs288",
-    "lecture": "lecture_01",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0005",
+    "question": "How is the loss function L(\u03b8) defined in the training process?",
+    "answer": "L(\u03b8) is defined as -\u03a3\u209c=\u2081\u1d40 log(y\u0302\u209c(y\u209c)).",
+    "category": "text_only",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_05/slide_024.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_05",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -86,15 +86,15 @@
   },
   {
     "question_id": "cs288_q0006",
-    "question": "What is the output of the word embedding process?",
-    "answer": "f : V \u2192 \u211d^d",
+    "question": "What does fluency mean in the context of machine translation?",
+    "answer": "Translation should be fluent text in the target language.",
     "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_03/slide_022.png"
+      "lecture_06/slide_007.png"
     ],
     "course": "cs288",
-    "lecture": "lecture_03",
+    "lecture": "lecture_06",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -103,12 +103,165 @@
   },
   {
     "question_id": "cs288_q0007",
-    "question": "Which corpus is described as having 1M words of tagged 'balanced' text?",
-    "answer": "Brown corpus.",
+    "question": "How does the scaling of 'd_ff' compare to 'd' when increasing model size?",
+    "answer": "People typically scale d_ff more rapidly than d.",
     "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_01/slide_018.png"
+      "lecture_07/slide_122.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0008",
+    "question": "What does the slide suggest about the method of learning?",
+    "answer": "It suggests a form of few-shot prompting.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_077.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0009",
+    "question": "What does model-based filtering vary from and to?",
+    "answer": "Varies from cheap, bi-gram based filtering to LLM-based filtering.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_073.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0010",
+    "question": "Who is the first author of the paper listed on the slide?",
+    "answer": "Long Ouyang",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_012.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0011",
+    "question": "What is the purpose of the beam search with n = 3?",
+    "answer": "To keep generating with a new beam.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_040.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0012",
+    "question": "What kind of questions are associated with the VQA dataset?",
+    "answer": "Questions about colors, objects, and actions in images.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_058.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0013",
+    "question": "What role does John Elway currently hold according to the slide?",
+    "answer": "Denver\u2019s Executive Vice President of Football Operations and General Manager",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_024.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0014",
+    "question": "Which case study has the first layer as dense?",
+    "answer": "DeepSeekMoE",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_022.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0015",
+    "question": "What is the hierarchical relationship shown in the text on the slide?",
+    "answer": "clothing > outerwear > coat > jacket > jean jacket",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_019.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0016",
+    "question": "What does the translation example on the slide demonstrate?",
+    "answer": "It demonstrates machine translation from English to Chinese (Simplified).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_032.png"
     ],
     "course": "cs288",
     "lecture": "lecture_01",
@@ -119,41 +272,7 @@
     }
   },
   {
-    "question_id": "cs288_q0008",
-    "question": "What does the expression in the box represent?",
-    "answer": "It represents the loss function for skip-gram with negative sampling.",
-    "category": "image_diagram",
-    "difficulty": "hard",
-    "evidence_slides": [
-      "lecture_03/slide_060.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0009",
-    "question": "What is the formula used for the skip-gram model on this slide?",
-    "answer": "P(w_{t+j} | w_t) = \\frac{\\exp(\\mathbf{v}_{w_{t+j}}^T \\mathbf{v}_{w_t})}{\\sum_{w' \\in V} \\exp(\\mathbf{v}_{w'}^T \\mathbf{v}_{w_t})}",
-    "category": "image_diagram",
-    "difficulty": "hard",
-    "evidence_slides": [
-      "lecture_03/slide_065.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0010",
+    "question_id": "cs288_q0017",
     "question": "What is the correct answer for the perplexity of the test corpus given the k-gram model probability?",
     "answer": "A) 2^|V|",
     "category": "image_diagram",
@@ -170,132 +289,13 @@
     }
   },
   {
-    "question_id": "cs288_q0011",
-    "question": "In the CBOW model diagram, what is the function applied to the input words?",
-    "answer": "SUM",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_062.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0012",
-    "question": "How is perplexity mathematically defined for a test corpus with words w1, w2, ..., wn?",
-    "answer": "Perplexity is defined as P(w1, w2, ..., wn)^(-1/n).",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_033.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0013",
-    "question": "What is the formula used to predict the next word given a context of two words?",
-    "answer": "w3 = arg max P(w | w1, w2)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_018.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0014",
-    "question": "Using the bigram model, what is the probability of the sentence '<s> I like strawberries </s>'?",
-    "answer": "1/9",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_012.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0015",
-    "question": "What is the valence score for 'courageous'?",
-    "answer": "8.05",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_005.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0016",
-    "question": "Which word pair has a Count*(x) of 0.5?",
-    "answer": "the, telescope; the, manual; the, afternoon; the, country; the, street",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_048.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0017",
-    "question": "What is the probability of the bigram 'want to' according to the table?",
-    "answer": "0.00042",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_044.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
     "question_id": "cs288_q0018",
-    "question": "Which word has the highest cosine distance to 'sweden' according to the table?",
-    "answer": "norway",
-    "category": "table",
-    "difficulty": "medium",
+    "question": "What is the formula used for the skip-gram model on this slide?",
+    "answer": "P(w_{t+j} | w_t) = \\frac{\\exp(\\mathbf{v}_{w_{t+j}}^T \\mathbf{v}_{w_t})}{\\sum_{w' \\in V} \\exp(\\mathbf{v}_{w'}^T \\mathbf{v}_{w_t})}",
+    "category": "image_diagram",
+    "difficulty": "hard",
     "evidence_slides": [
-      "lecture_03/slide_024.png"
+      "lecture_03/slide_065.png"
     ],
     "course": "cs288",
     "lecture": "lecture_03",
@@ -307,15 +307,15 @@
   },
   {
     "question_id": "cs288_q0019",
-    "question": "Which bigram has a count of 42?",
-    "answer": "eat lunch",
-    "category": "table",
+    "question": "What are the components involved in calculating y according to the slide?",
+    "answer": "y is calculated as W^(o)h_2.",
+    "category": "image_diagram",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_02/slide_042.png"
+      "lecture_04/slide_049.png"
     ],
     "course": "cs288",
-    "lecture": "lecture_02",
+    "lecture": "lecture_04",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -324,15 +324,15 @@
   },
   {
     "question_id": "cs288_q0020",
-    "question": "Which word pair has the highest similarity score according to SimLex-999?",
-    "answer": "vanish/disappear with a score of 9.8",
-    "category": "table",
-    "difficulty": "medium",
+    "question": "What is the loss function used in the training of the recurrent neural network?",
+    "answer": "\u2112(\u03b8) = -\u2211(from t=1 to T-1) log(y\u0302\u209c(x\u209c\u208a\u2081))",
+    "category": "image_diagram",
+    "difficulty": "hard",
     "evidence_slides": [
-      "lecture_03/slide_005.png"
+      "lecture_05/slide_025.png"
     ],
     "course": "cs288",
-    "lecture": "lecture_03",
+    "lecture": "lecture_05",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -341,6 +341,176 @@
   },
   {
     "question_id": "cs288_q0021",
+    "question": "How many layers are used in the encoder LSTMs?",
+    "answer": "8 layers",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_069.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0022",
+    "question": "What mathematical expression is used to calculate the weight for each query-key pair?",
+    "answer": "\u03b1_i,j = softmax((q_i \u00b7 k_j) / \u221ad_k)",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_07/slide_020.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0023",
+    "question": "What is the sentiment of the review: 'The company anticipated its operating profit to improve.'?",
+    "answer": "Positive",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_090.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0024",
+    "question": "What is the equation used to jointly fit N and D?",
+    "answer": "L\u0302(N, D) = E + A/N^\u03b1 + B/D^\u03b2",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_09/slide_019.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0025",
+    "question": "What is the mathematical expression for the reward model's loss function?",
+    "answer": "L(\u03b8) = -1/(K choose 2) E[(x,yw,yl)~D][log(\u03c3(r_\u03b8(x, yw) - r_\u03b8(x, yl)))]",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_020.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0026",
+    "question": "What mathematical expression is used for length normalization?",
+    "answer": "p(\\bar{x}) \\propto \\frac{1}{|\\bar{x}|^\\alpha} \\sum_{i=1}^{|\\bar{x}|} \\log p(x_i | x_1, \\ldots, x_{i-1})",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_11/slide_046.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0027",
+    "question": "Which classes have no examples where they are both the target and predicted class?",
+    "answer": "TO, DT, NNS, NNP, PP, VB, VBN, VBD, CD",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_12/slide_009.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0028",
+    "question": "How is end-to-end backpropagation achieved in the RAG model?",
+    "answer": "End-to-end backpropagation is achieved through q and p\u03b8.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_036.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0029",
+    "question": "What component is used in both models for attention?",
+    "answer": "Both models use 'Gated Delta Attention' or 'Gated Attention'.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_041.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0030",
+    "question": "How are the outputs of the text and image encoders combined in the diagram?",
+    "answer": "They are combined as I1\u00b7T1, I1\u00b7T2, I1\u00b7T3, ..., I1\u00b7TN.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_15/slide_044.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0031",
     "question": "How does the norm position differ between Vaswani et al. and Llama models?",
     "answer": "Vaswani et al. uses post-norm, while Llama uses pre-norm.",
     "category": "table",
@@ -357,451 +527,9 @@
     }
   },
   {
-    "question_id": "cs288_q0022",
-    "question": "What does the graph on the slide represent?",
-    "answer": "The graph represents the behavior of the weighting function f.",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_067.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0023",
-    "question": "Which type of word pair reaches a higher fraction seen according to the chart?",
-    "answer": "Unigrams reach a higher fraction seen than bigrams.",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_019.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0024",
-    "question": "Which model had 340 million parameters, according to the graph?",
-    "answer": "BERT-Large.",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_028.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0025",
-    "question": "What is the trend shown in the graph regarding model size over time?",
-    "answer": "The model size has been increasing exponentially over time.",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_028.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0026",
-    "question": "What is the largest model mentioned on the graph, and what is its size?",
-    "answer": "Megatron-Turing NLG with 530 billion parameters.",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_028.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0027",
-    "question": "According to the chart, how does training loss change with increasing FLOPS?",
-    "answer": "Training loss decreases as FLOPS increase.",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_034.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0028",
-    "question": "Which model has the lowest test perplexity on the chart?",
-    "answer": "GPT-3 (Zero-Shot) with a perplexity of 20.5",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_034.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0029",
-    "question": "What does the example at the bottom of the slide illustrate?",
-    "answer": "It illustrates how context words can represent the word 'banking'.",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_054.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0030",
-    "question": "Which pairs are compared in the 'Country-Capital' diagram?",
-    "answer": "Pairs like Spain-Madrid, Italy-Rome, Germany-Berlin, etc.",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_025.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0031",
-    "question": "Which guest lecture is scheduled last?",
-    "answer": "Gopala Anumanchipalli on April 23",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_050.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
     "question_id": "cs288_q0032",
-    "question": "Compare the percentage of Assignment 1 to the Presentation component of the Final Project.",
-    "answer": "Assignment 1 is 15%, while the Presentation is 10%.",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_049.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0033",
-    "question": "Compare the performance of SVD-L and CBOW* on the SCWS dataset.",
-    "answer": "SVD-L (42B) scored 58.3, while CBOW* (100B) scored 59.4.",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_075.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0034",
-    "question": "What word is highlighted in pink in the examples?",
-    "answer": "banking",
-    "category": "layout_aware",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_03/slide_010.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0035",
-    "question": "Compare the perplexity values of unigram, bigram, and trigram models.",
-    "answer": "Unigram: 962, Bigram: 170, Trigram: 109",
-    "category": "layout_aware",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_034.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0036",
-    "question": "What mathematical expression is used to find the most similar word to 'sweden'?",
-    "answer": "arg max_{w\u2208V} cos(e(w), e(w*))",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_024.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0037",
-    "question": "What are some of the autocomplete suggestions shown in the Google search example?",
-    "answer": "new york, new zealand, new orleans, new jersey",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_005.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0038",
-    "question": "Which word's meaning shifted from 'solemn' in the 1850s to 'horrible' in the 1900s?",
-    "answer": "Awful",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_027.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0039",
-    "question": "What is the vector representation for the word 'cat'?",
-    "answer": "(-0.224, 0.130, -0.290, 0.276)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_029.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0040",
-    "question": "What is the condition for the weights in the linear interpolation equation?",
-    "answer": "The sum of the weights \u03bbi is equal to 1.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_045.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0041",
-    "question": "What is the formula for the max likelihood estimate for bigrams before smoothing?",
-    "answer": "P(w_i | w_{i-1}) = C(w_{i-1}, w_i) / C(w_{i-1})",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_041.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0042",
-    "question": "How is the missing probability mass calculated?",
-    "answer": "\u03b1(w_{i-1}) = 1 - \u03a3 (Count*(w_{i-1}, w) / Count(w_{i-1}))",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_048.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0043",
-    "question": "How is cosine similarity mathematically expressed?",
-    "answer": "cos(u, v) = (u \u00b7 v) / (||u|| ||v||)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_014.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0044",
-    "question": "What is the probability notation used for a sequence of words?",
-    "answer": "Pr[w1w2w2...wn]",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_003.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0045",
-    "question": "What is the probability expression for y = 1 given t and c?",
-    "answer": "P(y = 1 | t, c) = \u03c3(u_t \u00b7 v_c)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_060.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0046",
-    "question": "What is the perplexity of the GPT-3 model as shown in the slide?",
-    "answer": "20.5",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_034.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0047",
-    "question": "What does the formula for cos(u, v) represent?",
-    "answer": "Cosine similarity between vectors u and v.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_015.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0048",
-    "question": "Which bigram has the highest probability in the table?",
-    "answer": "want to",
+    "question": "What is the probability of the bigram 'want to' according to the table?",
+    "answer": "0.00042",
     "category": "table",
     "difficulty": "medium",
     "evidence_slides": [
@@ -816,432 +544,7 @@
     }
   },
   {
-    "question_id": "cs288_q0049",
-    "question": "What is the download size of the GloVe vectors trained on Common Crawl with 42B tokens?",
-    "answer": "1.75 GB",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_069.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0050",
-    "question": "What transformation is depicted in the diagrams?",
-    "answer": "The transformation of word embeddings from English to Spanish.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_026.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0051",
-    "question": "What is the purpose of the Google search example on the slide?",
-    "answer": "It illustrates information retrieval.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_032.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0052",
-    "question": "What is included in the sample space according to the diagram?",
-    "answer": "Finite pieces of English text.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_003.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0053",
-    "question": "What pairs are generated from the word 'banking' for training data?",
-    "answer": "(banking, turning), (banking, into), (banking, crises), (banking, as)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_033.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0054",
-    "question": "What does the diagram on the left represent?",
-    "answer": "The diagram represents a transformer model architecture.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_034.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0055",
-    "question": "What visual element is used to represent the industrialization theme?",
-    "answer": "An image of an industrial facility with smokestacks.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_030.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0056",
-    "question": "What does the vector v_cat represent?",
-    "answer": "v_cat is a vector representation of the word 'cat'.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_022.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0057",
-    "question": "What is the formula for P(k|t) given on the slide?",
-    "answer": "P(k|t) = exp(u_t \u00b7 v_k) / \u03a3_j\u2208V exp(u_t \u00b7 v_j)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_049.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0058",
-    "question": "Which word is most similar to 'simple' according to the output?",
-    "answer": "'straightforward' with a similarity score of 0.7460169196128845",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_070.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0059",
-    "question": "How is the expression \\( \\frac{\\partial}{\\partial x_i} \\exp(\\sum_{k=1}^{n} w_i x_i) \\) simplified?",
-    "answer": "\\( \\exp(\\sum_{k=1}^{n} w_i x_i) w_i \\)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_046.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0060",
-    "question": "What is the relationship between 'book' and 'publication' in the diagram?",
-    "answer": "Publication is a related concept to 'book'.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_006.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0061",
-    "question": "What is the size of the GloVe vectors trained on Twitter data?",
-    "answer": "1.42 GB",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_069.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0062",
-    "question": "What is being suggested in the messaging app example?",
-    "answer": "best, most, same",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_005.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0063",
-    "question": "What mathematical expression is used to calculate cosine similarity?",
-    "answer": "cos(u, v) = (u \u00b7 v) / (||u|| ||v||)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_074.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0064",
-    "question": "Which bigram has the highest count in the table?",
-    "answer": "'i want' with a count of 828",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_043.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0065",
-    "question": "What is the value of \u03b1(the) according to the slide?",
-    "answer": "\u03b1(the) = 5/48",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_048.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0066",
-    "question": "What is the significance of the arrows in the diagram?",
-    "answer": "The arrows indicate the semantic shift of words over time.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_027.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0067",
-    "question": "What search query is being partially completed in the Google search example?",
-    "answer": "how is the weather in new",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_005.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0068",
-    "question": "What is the vector representation for the word 'cat'?",
-    "answer": "The vector representation for 'cat' is (-0.224, 0.130, -0.290, 0.276).",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_017.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0069",
-    "question": "How is the function f expanded in terms of its components?",
-    "answer": "f = x\u2081a\u2081 + x\u2082a\u2082 + ... + x\u2099a\u2099",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_045.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0070",
-    "question": "What does the graph in the inset box suggest about data size and translation quality?",
-    "answer": "More data is better data.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_025.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0071",
-    "question": "How is perplexity calculated for a test corpus with words?",
-    "answer": "Perplexity is calculated as P(w1, w2, ..., wn)^(-1/n).",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_025.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0072",
-    "question": "What analogy is used to illustrate the Male-Female property in word embeddings?",
-    "answer": "v_man - v_woman \u2248 v_king - v_queen",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_055.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0073",
-    "question": "What does the joint probability distribution of words represent?",
-    "answer": "P(w1, w2, w3, ..., wn)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_003.png"
-    ],
-    "course": "cs288",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs288_q0074",
+    "question_id": "cs288_q0033",
     "question": "What is the count vector value for 'digital' in the 'computer' column?",
     "answer": "1670",
     "category": "table",
@@ -1258,16 +561,1988 @@
     }
   },
   {
-    "question_id": "cs288_q0075",
-    "question": "Which model and size combination achieved the highest score on the RG dataset?",
-    "answer": "GloVe 42B",
+    "question_id": "cs288_q0034",
+    "question": "Which variable is associated with the presence of exclamation marks in the document?",
+    "answer": "x5",
     "category": "table",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_03/slide_075.png"
+      "lecture_04/slide_021.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0035",
+    "question": "What is the purpose of the 'ner' component?",
+    "answer": "Detect and label named entities.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_008.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0036",
+    "question": "Which language pair has the most English words in the corpus?",
+    "answer": "French-English with 50,196,035 English words",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_011.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0037",
+    "question": "Which model has the lowest final loss according to the table?",
+    "answer": "RMS Norm has the lowest final loss of 1.821.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_147.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0038",
+    "question": "What is the score difference between the highest and lowest performing systems on the CoLA task?",
+    "answer": "The difference is 25.5 (60.5 - 35.0).",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_08/slide_061.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0039",
+    "question": "Which datasets have 'Common Crawl' as a source?",
+    "answer": "C4, Pile, RefinedWeb, OpenWebMath, RedPajama v2, FineWeb, DCLM",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_09/slide_048.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0040",
+    "question": "Which nationality had the highest representation among the labelers?",
+    "answer": "Filipino and Bangladeshi, both at 22%",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_024.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0041",
+    "question": "What is the combined probability of the prefix 'in the'?",
+    "answer": "0.3 * 0.15",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_036.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0042",
+    "question": "What is the difference in the number of training examples between RTE and WNLI?",
+    "answer": "1,866 examples",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_083.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0043",
+    "question": "Which retriever has the highest score for TriviaQA in the Top-100 category?",
+    "answer": "DPR",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_066.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0044",
+    "question": "What is the difference in total parameters between OLMoE and DeepSeek-V3?",
+    "answer": "664.1B Total",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_022.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0045",
+    "question": "What attribute is shared by listeners R2 and R3 according to the table on the left?",
+    "answer": "Glasses",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_065.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0046",
+    "question": "According to the chart, how does training loss change with increasing FLOPS?",
+    "answer": "Training loss decreases as FLOPS increase.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_034.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0047",
+    "question": "Which model has the lowest test perplexity on the chart?",
+    "answer": "GPT-3 (Zero-Shot) with a perplexity of 20.5",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_034.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0048",
+    "question": "What does the graph on the slide represent?",
+    "answer": "The graph represents the behavior of the weighting function f.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_067.png"
     ],
     "course": "cs288",
     "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0049",
+    "question": "Which model shows faster convergence in terms of epochs on the Nottingham Dataset?",
+    "answer": "GRU train",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_064.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0050",
+    "question": "What does the heatmap on the slide represent?",
+    "answer": "128-Dimensional Positional Encoding Heatmap",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_051.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0051",
+    "question": "What is the accuracy of the 'Babbage' model with 4 in-context examples?",
+    "answer": "Approximately 95.3%",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_093.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0052",
+    "question": "How does test loss change with the number of tokens processed for models with 10^3 parameters?",
+    "answer": "Test loss decreases as the number of tokens processed increases.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_013.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0053",
+    "question": "Which dataset is associated with the highest performance in the 'Sentence Completion' category?",
+    "answer": "HellaSwag",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_032.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0054",
+    "question": "What is the probability of 's' given the context x_1, ..., x_{i-1}?",
+    "answer": "The probability of 's' is 80.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_025.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0055",
+    "question": "Which benchmarks are represented by lines with markers in the graph?",
+    "answer": "MNIST, ImageNet, SQuAD 2.0, GLUE, SQuAD 1.1, Switchboard",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_085.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0056",
+    "question": "Which smart speaker use case has the highest frequency of being 'ever tried'?",
+    "answer": "Ask a question",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_006.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0057",
+    "question": "What is the KV cache size for Full Attention at a context length of 60,000 tokens?",
+    "answer": "Approximately 25 GB",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_039.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0058",
+    "question": "Which domain contributes the highest percentage of documents in the LAION-2B-en dataset?",
+    "answer": "i.pining.com",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_047.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0059",
+    "question": "What is the solve rate trend for '10@k with filtering + clustering' as the sample budget increases?",
+    "answer": "The solve rate increases as the sample budget increases.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_021.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0060",
+    "question": "Which model shows the least improvement in success rate from round 0 to round 3?",
+    "answer": "Captioner + Mixtural",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_17/slide_032.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0061",
+    "question": "Which guest lecture is scheduled last?",
+    "answer": "Gopala Anumanchipalli on April 23",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_050.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0062",
+    "question": "Which option corresponds to the probability of the sentence '<s> I like strawberries </s>'?",
+    "answer": "(D) 1/9",
+    "category": "layout_aware",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_012.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0063",
+    "question": "What does the example at the bottom of the slide illustrate?",
+    "answer": "It illustrates how context words can represent the word 'banking'.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_054.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0064",
+    "question": "What is the output of the neural network for the sentence 'I don't like this movie'?",
+    "answer": "Thumbs down emoji",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_003.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0065",
+    "question": "What are the attention values for the word 'the'?",
+    "answer": "-0.05 + 0.02",
+    "category": "layout_aware",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_06/slide_066.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0066",
+    "question": "What operation is performed after running attn() over each head in the diagram?",
+    "answer": "The outputs are concatenated and then multiplied by W^O.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_07/slide_037.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0067",
+    "question": "What is the purpose of the '[SEP]' token in the input embeddings?",
+    "answer": "To separate two segments",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_08/slide_040.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0068",
+    "question": "Compare the performance of Chinchilla and GPT-3 on the BoolQ dataset.",
+    "answer": "Chinchilla has a performance of 83.7%, while GPT-3 has 60.5%.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_09/slide_022.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0069",
+    "question": "How many types of classifiers are selectable in the RewardBench interface?",
+    "answer": "Four types: Seq. Classifiers, DPO, Custom Classifiers, and Generative.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_052.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0070",
+    "question": "What are the top 3 continuations that should be kept according to the beam search criteria?",
+    "answer": "'the list', 'the look', 'in the'",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_11/slide_035.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0071",
+    "question": "Compare the benchmark effort and real-world employment for 'Healthcare Practitioners and Technical'.",
+    "answer": "Benchmark Effort: 29, Real-World Employment: 9.2M",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_12/slide_089.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0072",
+    "question": "Which condition shows a greater difference in accuracy between 'Parametric-only (11B)' and 'DPR (0.3B)'?",
+    "answer": "Natural Questions",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_072.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0073",
+    "question": "What components are shared between the Original Dense Block and the Upcycled MoE Block?",
+    "answer": "Layer Norm and Attention components are shared.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_020.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0074",
+    "question": "Which attribute is associated with R1?",
+    "answer": "R1 has no additional attributes like hat, glasses, or mustache.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_062.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0075",
+    "question": "What are the three different final answers derived from sampling a diverse set of reasoning paths?",
+    "answer": "$18, $26, and $18",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_013.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0076",
+    "question": "What is the largest model mentioned on the graph, and what is its size?",
+    "answer": "Megatron-Turing NLG with 530 billion parameters.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_028.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0077",
+    "question": "What is the perplexity of the GPT-3 model as shown in the slide?",
+    "answer": "20.5",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_034.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0078",
+    "question": "What does the expression in the box represent?",
+    "answer": "It represents the loss function for skip-gram with negative sampling.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_03/slide_060.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0079",
+    "question": "How many nodes are there in the first hidden layer of the neural network diagram?",
+    "answer": "There are two nodes in the first hidden layer.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_048.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0080",
+    "question": "How is 'Part of speech' information represented in the example sentence?",
+    "answer": "Using tags like NNP, VBD, etc.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_008.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0081",
+    "question": "Which translation direction has the lowest GNMT score?",
+    "answer": "Chinese to English with a score of 4.263.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_018.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0082",
+    "question": "What is the matrix representation for RoPE(x, i)?",
+    "answer": "RoPE(x, i) = [cos(i\u03b8) -sin(i\u03b8); sin(i\u03b8) cos(i\u03b8)] * [x1; x2]",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_07/slide_137.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0083",
+    "question": "Compare the compute used for training BERT-Large and GPT-3 Small.",
+    "answer": "BERT-Large used less compute than GPT-3 Small.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_08/slide_075.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0084",
+    "question": "What is the sequence of steps in the data curation process as shown in the diagram?",
+    "answer": "Acquisition \u2192 Linearization \u2192 Filtering",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_068.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0085",
+    "question": "Which task shows the least improvement across models as indicated by the graphs?",
+    "answer": "The Winograd (accuracy) task shows the least improvement.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_026.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0086",
+    "question": "What is the combined probability of the prefixes 'the list' and 'and the'?",
+    "answer": "0.24",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_11/slide_041.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0087",
+    "question": "Compare the number of tokens tagged for Part-of-Speech and Skeletal Parsing for Dow Jones Newswire stories.",
+    "answer": "3,065,706 tokens for Part-of-Speech and 1,061,166 tokens for Skeletal Parsing.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_12/slide_062.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0088",
+    "question": "In which category does BM25 outperform DPR?",
+    "answer": "BM25 outperforms DPR in the SQuAD Top-20 category.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_066.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0089",
+    "question": "How does the decode throughput trend for Qwen3-Next-80B-A3B compare to Qwen3-32B as context length increases?",
+    "answer": "Qwen3-Next-80B-A3B shows a significant increase, while Qwen3-32B remains relatively flat.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_040.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0090",
+    "question": "How is the similarity between text and images represented in the diagram?",
+    "answer": "Through the dot products I1\u00b7T1, I2\u00b7T1, ..., IN\u00b7T1",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_15/slide_045.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0091",
+    "question": "Which category has the lowest accuracy according to the table?",
+    "answer": "misleading",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_009.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0092",
+    "question": "Which model shows the highest success rate in the graph?",
+    "answer": "DigiRL-2",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_17/slide_041.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0093",
+    "question": "What is the purpose of the Google search example on the slide?",
+    "answer": "It illustrates information retrieval.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_032.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0094",
+    "question": "How is perplexity mathematically defined for a test corpus with words w1, w2, ..., wn?",
+    "answer": "Perplexity is defined as P(w1, w2, ..., wn)^(-1/n).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_033.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0095",
+    "question": "How are the outside context words organized in the window of size 2?",
+    "answer": "The outside context words are 'problems', 'turning', 'banking', and 'crises'.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_032.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0096",
+    "question": "Which word has the embedding vector (0.290, -0.441, 0.762, 0.982)?",
+    "answer": "language",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_003.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0097",
+    "question": "How is the 1-D output y_t calculated in the state-space model?",
+    "answer": "y_t = C_t h_t",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_066.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0098",
+    "question": "What does the arrow from h3 to h_enc represent?",
+    "answer": "It represents the transition to the encoded representation.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_027.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0099",
+    "question": "What is the mathematical expression for GELU(x)?",
+    "answer": "GELU(x) = x \u00d7 \u03a6(x)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_152.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0100",
+    "question": "Which architectures use autoregressive language models as their pretraining objective?",
+    "answer": "Transformers Decoder",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_064.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0101",
+    "question": "How many times larger is the model size of GPT-3 compared to GPT-2?",
+    "answer": "117 times larger",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_015.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0102",
+    "question": "How are the training stages visually differentiated?",
+    "answer": "They are differentiated by color and spatial layout.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_056.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0103",
+    "question": "How is the probability p(Xi = w | x1, ..., xi-1) calculated?",
+    "answer": "By using the softmax function: exp(s(w)) / \u03a3w'\u2208V exp(s(w')).",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_11/slide_012.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0104",
+    "question": "What is the significance of the underlined text in the reference sentence?",
+    "answer": "The underlined text indicates a bigram in the reference sentence.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_030.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0105",
+    "question": "Which paragraph contains information about an animal?",
+    "answer": "Paragraph 1",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_028.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0106",
+    "question": "What are the main components depicted in the Gated DeltaNet diagram?",
+    "answer": "Linear, RMSNorm, Gated Delta Rule, L2 Norm, Conv, SLU Gate",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_036.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0107",
+    "question": "How many people are there in the images of the sled dogs?",
+    "answer": "There are two, and only two, people.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_033.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0108",
+    "question": "How is the trajectory in the decision-making section evaluated?",
+    "answer": "Using internal/external evaluation.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_026.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0109",
+    "question": "How many operations in the SoS+ diagram result in a cross mark?",
+    "answer": "Five operations",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_17/slide_068.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0110",
+    "question": "What does the graph in the inset box suggest about data size and translation quality?",
+    "answer": "More data is better data.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_025.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0111",
+    "question": "How is the missing probability mass calculated?",
+    "answer": "\u03b1(w_{i-1}) = 1 - \u03a3 (Count*(w_{i-1}, w) / Count(w_{i-1}))",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_048.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0112",
+    "question": "In the CBOW model diagram, what is the function applied to the input words?",
+    "answer": "SUM",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_062.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0113",
+    "question": "Which variable represents the presence of the word 'no' in the document?",
+    "answer": "x3",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_022.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0114",
+    "question": "In the diagram, which word is tagged as a plural noun?",
+    "answer": "seashells",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_005.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0115",
+    "question": "What are the two components involved in finding the best target sentence according to Bayes' rule?",
+    "answer": "P(w^(s) | w^(t)) and P(w^(t)).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_012.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0116",
+    "question": "How does the NLTK tokenizer handle the input 'I'm'?",
+    "answer": "The NLTK tokenizer splits 'I'm' into ['I', ''m'].",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_095.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0117",
+    "question": "Which generation of Llama has the largest context length?",
+    "answer": "Llama 4 with 10,000,000 (?) tokens",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_110.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0118",
+    "question": "What is the sequence of stages in the data curation process as shown in the diagram?",
+    "answer": "Acquisition, Linearization, Filtering",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_063.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0119",
+    "question": "What does the diagram suggest happens after explaining the moon landing to a 6 year old?",
+    "answer": "Some people went to the moon...",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_030.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0120",
+    "question": "What is the probability of the prefix 'the look' in the current beam candidates table?",
+    "answer": "0.06",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_034.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0121",
+    "question": "What does the diagram on the slide represent?",
+    "answer": "A syntactic (constituency) parse tree from the Penn Treebank.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_017.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0122",
+    "question": "What mathematical expression represents the encoding of z_i?",
+    "answer": "z_i = Enc(z_i) \u2208 \u211d^h",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_050.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0123",
+    "question": "What does the diagram indicate about MiniMax's attention style?",
+    "answer": "MiniMax went back to full attention.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_035.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0124",
+    "question": "Which color is highlighted by the arrow?",
+    "answer": "Dark purple",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_059.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0125",
+    "question": "How many eggs does Janet sell according to the greedy decode reasoning path?",
+    "answer": "She sells 7 eggs.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_013.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0126",
+    "question": "What is the formula used to calculate the answer?",
+    "answer": "answer = loaves_baked - loaves_sold_morning - loaves_sold_afternoon + loaves_returned",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_17/slide_021.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0127",
+    "question": "What visual element is used to represent the industrialization theme?",
+    "answer": "An image of an industrial facility with smokestacks.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_030.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0128",
+    "question": "What search query is being partially completed in the Google search example?",
+    "answer": "how is the weather in new",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_005.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0129",
+    "question": "How is the expression \\( \\frac{\\partial}{\\partial x_i} \\exp(\\sum_{k=1}^{n} w_i x_i) \\) simplified?",
+    "answer": "\\( \\exp(\\sum_{k=1}^{n} w_i x_i) w_i \\)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_046.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0130",
+    "question": "What is the formula for the softmax function as shown on the slide?",
+    "answer": "softmax(y)_k = exp(y_k) / \u03a3_{j=1}^C exp(y_j)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_049.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0131",
+    "question": "How is the output y\u0302\u209c calculated in the training process?",
+    "answer": "y\u0302\u209c = softmax(W\u2092h\u209c) \u2208 \u211d|V|",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_025.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0132",
+    "question": "Which language pair has the highest number of sentences in the parallel corpus?",
+    "answer": "French-English with 2,007,723 sentences",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_011.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0133",
+    "question": "How many times is 'Add & Normalize' mentioned in the diagram?",
+    "answer": "Twice",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_059.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0134",
+    "question": "How many pages did Julie read in total yesterday and today?",
+    "answer": "36 pages",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_084.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0135",
+    "question": "Which dataset has the largest token size?",
+    "answer": "RedPajama v1 with 1.2T tokens",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_047.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0136",
+    "question": "Which models are marked as using a 'Merge of DPO models'?",
+    "answer": "abideen/NexoNimbus-7B and samir-fama/SamiGPT-v1",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_050.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0137",
+    "question": "What does the mathematical expression at the bottom of the slide represent?",
+    "answer": "It represents the renormalization by dividing remaining probabilities.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_051.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0138",
+    "question": "Which metric has the highest correlation with human judgment for the en\u2194zh language pair?",
+    "answer": "R_BERT with a correlation of .990/.976",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_034.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0139",
+    "question": "Which model size shows the greatest improvement in perplexity with retrieval?",
+    "answer": "OPT-1.3B",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_081.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0140",
+    "question": "Which model has the highest normalized prefill throughput at 128K sequence length?",
+    "answer": "Qwen3-Next-80B-A3B",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_040.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0141",
+    "question": "How many balloons are in the left image and what is notable about them?",
+    "answer": "The left image has 4 balloons of all different colors.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_037.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0142",
+    "question": "What mathematical operation is used to calculate the total earnings per day?",
+    "answer": "Multiplication (7 * $2 = $14)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_012.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0143",
+    "question": "Why is the blue person unable to achieve their goal directly?",
+    "answer": "The blue person is too short to reach the suitcase.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_17/slide_012.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0144",
+    "question": "Which type of word pair reaches a higher fraction seen according to the chart?",
+    "answer": "Unigrams reach a higher fraction seen than bigrams.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_019.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0145",
+    "question": "Which word pair has a Count*(x) of 0.5?",
+    "answer": "the, telescope; the, manual; the, afternoon; the, country; the, street",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_048.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0146",
+    "question": "What is the vector representation for the word 'cat'?",
+    "answer": "(-0.224, 0.130, -0.290, 0.276)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_029.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0147",
+    "question": "What is the probability P(Y = 1|x) calculated on the slide?",
+    "answer": "0.69",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_025.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0148",
+    "question": "Which model has the lowest perplexity score?",
+    "answer": "RNN-LDA LM with a perplexity of 113.7.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_028.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0149",
+    "question": "What is the formula for dot-product attention?",
+    "answer": "g(h_i^enc, h_t^dec) = (h_t^dec)^T h_i^enc \u2208 \u211d",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_065.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs288_q0150",
+    "question": "How many classes are part of the 'Architecture' section?",
+    "answer": "7 classes",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_002.png"
+    ],
+    "course": "cs288",
+    "lecture": "lecture_07",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",

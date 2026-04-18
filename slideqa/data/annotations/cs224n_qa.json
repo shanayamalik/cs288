@@ -1,6 +1,40 @@
 [
   {
     "question_id": "cs224n_q0001",
+    "question": "What new ideas were introduced from EE & ASR during the statistical revolution of the 1990s?",
+    "answer": "Probabilistic modeling, corpus statistics, supervised learning, empirical evaluation.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_035.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0002",
+    "question": "What are the two types of parses shown in the middle section?",
+    "answer": "High-probability parse and Low-probability parse",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_012.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0003",
     "question": "What is the total time allocated for Lecture 2?",
     "answer": "53 minutes",
     "category": "text_only",
@@ -17,605 +51,10 @@
     }
   },
   {
-    "question_id": "cs224n_q0002",
-    "question": "What is the role of the function f in the equation h = f(Wx + b)?",
-    "answer": "f is some element-wise non-linear function, e.g., logistic, tanh, ReLU.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_014.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0003",
-    "question": "What is the relationship between downstream gradient, upstream gradient, and local gradient?",
-    "answer": "[downstream gradient] = [upstream gradient] x [local gradient]",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_064.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
     "question_id": "cs224n_q0004",
-    "question": "Where can additional important information about the class be found?",
-    "answer": "On the class webpage at http://cs224n.stanford.edu/ or http://www.stanford.edu/class/cs224n/",
+    "question": "What does h, z \u2208 \u211d\u207f signify?",
+    "answer": "h and z are vectors in n-dimensional real space.",
     "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_003.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0005",
-    "question": "Why is the softmax function considered to have a 'weird name'?",
-    "answer": "Because it returns a distribution.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_017.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0006",
-    "question": "When do office hours start?",
-    "answer": "Thursday",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_003.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0007",
-    "question": "According to the slide, how should NLP systems be designed?",
-    "answer": "NLP systems need not be designed as physical symbol systems.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_040.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0008",
-    "question": "What is the relationship between \u2202s/\u2202b, \u2202s/\u2202h, \u2202h/\u2202z, and \u2202z/\u2202b?",
-    "answer": "\u2202s/\u2202b = (\u2202s/\u2202h)(\u2202h/\u2202z)(\u2202z/\u2202b)",
-    "category": "image_diagram",
-    "difficulty": "hard",
-    "evidence_slides": [
-      "lecture_04/slide_044.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0009",
-    "question": "What is the significance of the structure labeled 'mBERT' on the right side of the slide?",
-    "answer": "It symbolizes the complexity or hierarchy of the mBERT model.",
-    "category": "image_diagram",
-    "difficulty": "hard",
-    "evidence_slides": [
-      "lecture_02/slide_016.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0010",
-    "question": "Which two words are directly connected to 'emperor'?",
-    "answer": "duke and king",
-    "category": "image_diagram",
-    "difficulty": "hard",
-    "evidence_slides": [
-      "lecture_04/slide_006.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0011",
-    "question": "What is the formula for cross entropy as given on the slide?",
-    "answer": "H(p, q) = -\u2211(from c=1 to C) p(c) log q(c)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_018.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0012",
-    "question": "What does the notation (\u2202f/\u2202x)ij represent?",
-    "answer": "(\u2202f/\u2202x)ij = \u2202fi/\u2202xj",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_023.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0013",
-    "question": "What are the components of the input vector x?",
-    "answer": "x = [x_museums, x_in, x_Paris, x_are, x_amazing]",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_034.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0014",
-    "question": "What are the variables h and z classified as?",
-    "answer": "h, z \u2208 \u211d\u207f",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_026.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0015",
-    "question": "How many words have a co-occurrence count of 0 with 'enjoy'?",
-    "answer": "Five words (like, deep, learning, NLP, .)",
-    "category": "table",
-    "difficulty": "hard",
-    "evidence_slides": [
-      "lecture_03/slide_031.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0016",
-    "question": "Which model has the highest correlation score in the WS353 category?",
-    "answer": "GloVe with a size of 42B",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_042.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0017",
-    "question": "Which model has the highest score in the MUC7 column?",
-    "answer": "GloVe with a score of 82.2.",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_043.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0018",
-    "question": "Which model has the lowest correlation score in the RW category?",
-    "answer": "SVD with a score of 25.6",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_042.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0019",
-    "question": "Which word has a co-occurrence count of 1 with 'deep'?",
-    "answer": "like",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_031.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0020",
-    "question": "Which two models have the same ACE score?",
-    "answer": "CW and HPCA both have an ACE score of 81.7.",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_009.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0021",
-    "question": "Which model and size combination has the highest overall correlation score in the MC dataset?",
-    "answer": "GloVe 42B with a score of 83.6",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_008.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0022",
-    "question": "What is the relationship between FLOPS and training loss according to the chart?",
-    "answer": "As FLOPS increase, the training loss generally decreases.",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_018.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0023",
-    "question": "How are the words 'man', 'woman', and 'king' represented in the graph?",
-    "answer": "They are represented as points with vectors indicating relationships.",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_039.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0024",
-    "question": "Which type of MT shows the most improvement from 2013 to 2016?",
-    "answer": "Neural MT",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_047.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0025",
-    "question": "How many S&P 500 earnings calls cited 'AI' in Q2 2023?",
-    "answer": "Approximately 250 earnings calls cited 'AI' in Q2 2023.",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_049.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0026",
-    "question": "What is the approximate BLEU score for Phrase-based SMT in 2013?",
-    "answer": "Approximately 20.3",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_047.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0027",
-    "question": "What does the color gradient in the chart represent?",
-    "answer": "Different model sizes, ranging from 75M to 10B parameters.",
-    "category": "chart_graph",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_018.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0028",
-    "question": "What does the y-axis represent in the chart on the left?",
-    "answer": "Training loss",
-    "category": "chart_graph",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_018.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0029",
-    "question": "Which pairs of words have a vertical relationship in the visualization?",
-    "answer": "niece-aunt, sister-brother, heir-heiress, countess-duchess, empress-emperor",
-    "category": "layout_aware",
-    "difficulty": "hard",
-    "evidence_slides": [
-      "lecture_03/slide_040.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0030",
-    "question": "What is the purpose of the 'Bottleneck' in the diagram?",
-    "answer": "It represents the transition point between the encoder and decoder.",
-    "category": "layout_aware",
-    "difficulty": "hard",
-    "evidence_slides": [
-      "lecture_01/slide_046.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0031",
-    "question": "Which section of the lecture is allocated the most time?",
-    "answer": "Word2vec objective function gradients (25 mins)",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_044.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0032",
-    "question": "How are the words 'man' and 'woman' positioned relative to each other?",
-    "answer": "They are positioned vertically with 'woman' above 'man'.",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_006.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0033",
-    "question": "What is the purpose of using the Jacobian form and shape convention according to the side note?",
-    "answer": "Use Jacobian to compute; Use shape convention to format.",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_055.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0034",
-    "question": "What does the arrow pointing from z to the function f represent in the diagram?",
-    "answer": "The arrow represents the input z to the function f.",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_064.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0035",
-    "question": "Who is shown in the image below the name 'James Allen'?",
-    "answer": "C. Ray Perrault",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_022.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0036",
-    "question": "What is the formula for vector differences in this context?",
-    "answer": "w_x \u00b7 (w_a \u2212 w_b) = log (P(x|a) / P(x|b))",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_037.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0037",
-    "question": "What is the expression for the partial derivative of h with respect to z?",
-    "answer": "\u2202h/\u2202z",
-    "category": "image_diagram",
     "difficulty": "medium",
     "evidence_slides": [
       "lecture_04/slide_025.png"
@@ -629,16 +68,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0038",
-    "question": "What does the right image on the slide show?",
-    "answer": "The internal structure of the Mark I Perceptron.",
-    "category": "image_diagram",
+    "question_id": "cs224n_q0005",
+    "question": "What type of task is 'Iroh went into the kitchen to make some tea. Standing next to Iroh, Zuko pondered his destiny. Zuko left the ______.'?",
+    "answer": "Some reasoning \u2013 this is harder",
+    "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_01/slide_014.png"
+      "lecture_05/slide_008.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_01",
+    "lecture": "lecture_05",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -646,16 +85,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0039",
-    "question": "What are the outside context words in the window of size 2?",
-    "answer": "problems, turning, banking, crises",
-    "category": "image_diagram",
+    "question_id": "cs224n_q0006",
+    "question": "What is the dimensionality of the matrix after the transpose operation in multi-head self-attention?",
+    "answer": "The dimensionality is \\( \\mathbb{R}^{h \\times n \\times d/h} \\).",
+    "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_03/slide_012.png"
+      "lecture_06/slide_058.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_03",
+    "lecture": "lecture_06",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -663,16 +102,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0040",
-    "question": "Which word pair has the highest human mean similarity score?",
-    "answer": "tiger and tiger",
-    "category": "table",
+    "question_id": "cs224n_q0007",
+    "question": "What challenge is posed by the two distinct internal mechanisms of current time in language models?",
+    "answer": "The challenge is updating 'current time' in a language model.",
+    "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_03/slide_041.png"
+      "lecture_07/slide_030.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_03",
+    "lecture": "lecture_07",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -680,16 +119,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0041",
-    "question": "What does the diagram at the bottom of the slide represent?",
-    "answer": "A computation graph for forward propagation",
-    "category": "image_diagram",
+    "question_id": "cs224n_q0008",
+    "question": "What is the next number in the sequence 1, 1, 2, 3, 5, 8, 13, 21?",
+    "answer": "34",
+    "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_04/slide_059.png"
+      "lecture_08/slide_017.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_04",
+    "lecture": "lecture_08",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -697,16 +136,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0042",
-    "question": "What is the probability notation used for the word 'banking'?",
-    "answer": "P(w_{t+1} | w_t)",
-    "category": "image_diagram",
+    "question_id": "cs224n_q0009",
+    "question": "What is the total duration of all topics listed in the lecture plan?",
+    "answer": "75 mins",
+    "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_03/slide_012.png"
+      "lecture_09/slide_002.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_03",
+    "lecture": "lecture_09",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -714,16 +153,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0043",
-    "question": "How is the derivative of s with respect to b expressed using the chain rule?",
-    "answer": "\u2202s/\u2202b = (\u2202s/\u2202h)(\u2202h/\u2202z)(\u2202z/\u2202b)",
-    "category": "image_diagram",
-    "difficulty": "medium",
+    "question_id": "cs224n_q0010",
+    "question": "What does 'DPO' stand for in the context of the slide?",
+    "answer": "The slide does not provide an explicit definition for 'DPO'.",
+    "category": "text_only",
+    "difficulty": "hard",
     "evidence_slides": [
-      "lecture_04/slide_037.png"
+      "lecture_10/slide_007.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_04",
+    "lecture": "lecture_10",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -731,16 +170,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0044",
-    "question": "How many vectors are used in the encoder section?",
-    "answer": "Four vectors",
-    "category": "image_diagram",
-    "difficulty": "medium",
+    "question_id": "cs224n_q0011",
+    "question": "What is the total number of gems in the treasure chest?",
+    "answer": "595 gems",
+    "category": "text_only",
+    "difficulty": "hard",
     "evidence_slides": [
-      "lecture_01/slide_045.png"
+      "lecture_11/slide_041.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_01",
+    "lecture": "lecture_11",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -748,16 +187,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0045",
-    "question": "What operation is performed to obtain 'z' in the diagram?",
-    "answer": "z = Wx + b",
-    "category": "image_diagram",
-    "difficulty": "medium",
+    "question_id": "cs224n_q0012",
+    "question": "How many contributors are listed in the 'Dataset Contributors' section?",
+    "answer": "There are 100 contributors listed.",
+    "category": "text_only",
+    "difficulty": "hard",
     "evidence_slides": [
-      "lecture_04/slide_060.png"
+      "lecture_12/slide_013.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_04",
+    "lecture": "lecture_12",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -765,16 +204,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0046",
-    "question": "In the example, which words are labeled as 'LOC'?",
-    "answer": "Hilton Hotel, Paris",
-    "category": "image_diagram",
-    "difficulty": "medium",
+    "question_id": "cs224n_q0013",
+    "question": "Which universities are associated with the authors of the MMLU-Pro benchmark?",
+    "answer": "University of Waterloo, University of Toronto, Carnegie Mellon University",
+    "category": "text_only",
+    "difficulty": "hard",
     "evidence_slides": [
-      "lecture_04/slide_010.png"
+      "lecture_13/slide_005.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_04",
+    "lecture": "lecture_13",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -782,16 +221,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0047",
-    "question": "How is the Jacobian of f(z) with respect to z represented?",
-    "answer": "diag(f'(z))",
-    "category": "image_diagram",
+    "question_id": "cs224n_q0014",
+    "question": "What are the components of the 'PPO & GRPO & DAPO' session?",
+    "answer": "PPO: dissecting the complexity, GRPO, DAPO",
+    "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_04/slide_043.png"
+      "lecture_14/slide_022.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_04",
+    "lecture": "lecture_14",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -799,16 +238,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0048",
-    "question": "Which function is represented by a blue line graph that starts at zero and increases linearly?",
-    "answer": "ReLU (Rectified Linear Unit)",
-    "category": "image_diagram",
+    "question_id": "cs224n_q0015",
+    "question": "What are the key questions addressed in 'The nature of reasoning' section?",
+    "answer": "What works, why it works, and when it fails",
+    "category": "text_only",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_04/slide_015.png"
+      "lecture_15/slide_036.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_04",
+    "lecture": "lecture_15",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -816,262 +255,7 @@
     }
   },
   {
-    "question_id": "cs224n_q0049",
-    "question": "What equation represents the computation of 'z' in the graph?",
-    "answer": "z = Wx + b",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_057.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0050",
-    "question": "How is the value of s computed in the diagram?",
-    "answer": "s is computed as u^T h.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_058.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0051",
-    "question": "Which word pair has the lowest human mean similarity score?",
-    "answer": "stock and jaguar",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_007.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0052",
-    "question": "What mathematical expression represents the upstream gradient?",
-    "answer": "\u03b4 = \u2202s/\u2202h \u2202h/\u2202z = u^T \u2218 f'(z)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_048.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0053",
-    "question": "How is the derivative of s with respect to b expressed?",
-    "answer": "\u2202s/\u2202b = u^T diag(f'(z)) I",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_044.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0054",
-    "question": "What is the significance of the year 1980 in the timeline?",
-    "answer": "ARPA Speech Understanding Research (SUR) project (Lea).",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_031.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0055",
-    "question": "Which model has the lowest ACE score?",
-    "answer": "SVD with a score of 77.3.",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_043.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0056",
-    "question": "How does the correlation score of SVD-L change from 6B to 42B for the WS353 dataset?",
-    "answer": "The score increases from 65.7 to 74.0.",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_008.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0057",
-    "question": "What is the role of 'Selective parameters' in the diagram?",
-    "answer": "Selective parameters are part of the selection mechanism.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_017.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0058",
-    "question": "What is the Jacobian of s with respect to h?",
-    "answer": "u^T",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_043.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0059",
-    "question": "How are local gradients represented in the diagram?",
-    "answer": "Local gradients are represented by \u2202z/\u2202W and \u2202z/\u2202x.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_066.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0060",
-    "question": "What is the derivative of s with respect to h?",
-    "answer": "u^T",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_042.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0061",
-    "question": "What is the definition of the Jacobian for the elementwise activation function?",
-    "answer": "(\u2202h/\u2202z)_ij = \u2202h_i/\u2202z_j = \u2202/\u2202z_j f(z_i)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_027.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0062",
-    "question": "What is the local gradient in the diagram?",
-    "answer": "The local gradient is represented as \u2202h/\u2202z.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_062.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0063",
-    "question": "How is 'h' expressed in terms of 'z'?",
-    "answer": "h = f(z)",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_036.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_04",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0064",
+    "question_id": "cs224n_q0016",
     "question": "How many main components are there in the noisy channel model?",
     "answer": "Five",
     "category": "image_diagram",
@@ -1088,9 +272,281 @@
     }
   },
   {
-    "question_id": "cs224n_q0065",
-    "question": "Which model has the highest correlation score for the RW dataset?",
-    "answer": "GloVe 42B with a score of 47.8",
+    "question_id": "cs224n_q0017",
+    "question": "What is the significance of the structure labeled 'mBERT' on the right side of the slide?",
+    "answer": "It symbolizes the complexity or hierarchy of the mBERT model.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_02/slide_016.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0018",
+    "question": "Which words are considered outside context words in the window of size 2?",
+    "answer": "problems, turning, banking, crises",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_016.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0019",
+    "question": "Which two words are directly connected to 'emperor'?",
+    "answer": "duke and king",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_04/slide_006.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0020",
+    "question": "Which companies are depicted as having adopted NMT by 2018?",
+    "answer": "Microsoft, Systran, Google, Facebook, Baidu, NetEase, Tencent, Sogou",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_052.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0021",
+    "question": "What does the expression 'output_\u2113 = softmax(XQ_\u2113K_\u2113^TX^T) * XV_\u2113' represent?",
+    "answer": "It represents the self-attention function before scaling.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_06/slide_059.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0022",
+    "question": "Which corpus is listed first in the 'Top Ten LDC Corpora' section?",
+    "answer": "LDC93S1 TIMIT Acoustic-Phonetic Continuous Speech Corpus",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_040.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0023",
+    "question": "Which category occupies the largest space in the composition of the pile?",
+    "answer": "Academic",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_020.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0024",
+    "question": "What is the equation shown at the bottom of the slide?",
+    "answer": "R(s) = RM_\u03d5(s) - \u03b2 log(p_\u03b8^RL(s) / p^PT(s))",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_09/slide_051.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0025",
+    "question": "What does the mathematical expression on the slide represent?",
+    "answer": "The conditional language modeling objective to be maximized during fine-tuning.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_045.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0026",
+    "question": "How many keystrokes are needed to type the numbers from 1 to 500?",
+    "answer": "1392",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_11/slide_033.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0027",
+    "question": "What mathematical expression represents Shannon entropy on the slide?",
+    "answer": "H(X) = -\u2211 (from i=1 to n) p_i log p_i",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_043.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0028",
+    "question": "What does the diagram on the slide represent?",
+    "answer": "A syntactic structure tree from the Penn Treebank.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_003.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0029",
+    "question": "What is the mathematical expression for GRPO's sample-level loss?",
+    "answer": "The expression is \\( \\frac{1}{G} \\sum_i \\frac{1}{|o_i|} \\sum_t \\mathcal{L}_{i,t} \\).",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_049.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0030",
+    "question": "What does B_t represent in the beam search algorithm?",
+    "answer": "B_t = top-k_h\u2208B_{t-1},y\u2208V{(h \u2218 y, score(h \u2218 y))}",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_15/slide_006.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0031",
+    "question": "Which approach shows the greatest improvement in WER on the RT03S FSH dataset?",
+    "answer": "Deep Learning (Saon et al. 2017) with a 71% improvement.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_042.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0032",
+    "question": "How many words have a co-occurrence count of 0 with 'enjoy'?",
+    "answer": "Five words (like, deep, learning, NLP, .)",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_03/slide_031.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0033",
+    "question": "How does the correlation score of SVD-L change from 6B to 42B for the WS353 dataset?",
+    "answer": "The score increases from 65.7 to 74.0.",
     "category": "table",
     "difficulty": "medium",
     "evidence_slides": [
@@ -1105,16 +561,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0066",
-    "question": "What operation does the '+' node perform in the diagram?",
-    "answer": "The '+' node adds the values from x and y.",
-    "category": "image_diagram",
+    "question_id": "cs224n_q0034",
+    "question": "Which word has the lowest probability according to the table?",
+    "answer": "is",
+    "category": "table",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_04/slide_069.png"
+      "lecture_05/slide_016.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_04",
+    "lecture": "lecture_05",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -1122,13 +578,200 @@
     }
   },
   {
-    "question_id": "cs224n_q0067",
-    "question": "What does the highlighted text in the orange box represent?",
-    "answer": "These words will represent laptops",
-    "category": "layout_aware",
+    "question_id": "cs224n_q0035",
+    "question": "Which model has the lowest training cost (FLOPs) for the EN-DE dataset?",
+    "answer": "MoE [32]",
+    "category": "table",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_01/slide_044.png"
+      "lecture_06/slide_067.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0036",
+    "question": "Which unit test failed in the Post PR stage in the SWE-bench dataset?",
+    "answer": "vstack_struct_col",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_043.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0037",
+    "question": "Which method has the highest score on the RTE dataset?",
+    "answer": "Multi-task BiLSTM + Attn [64] with a score of 61.7",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_044.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0038",
+    "question": "Which model has the highest performance gain according to the BIG-bench + MMLU?",
+    "answer": "The Flan-T5-XXL model has the highest performance gain of +26.6.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_018.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0039",
+    "question": "Which summarization method has the lowest ROUGE R-2 score?",
+    "answer": "Random-3",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_016.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0040",
+    "question": "Which model has the highest ROUGE-L score when enhanced with MemGPT?",
+    "answer": "GPT-4 Turbo with MemGPT",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_052.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0041",
+    "question": "Which architecture has the highest score for the MATH task?",
+    "answer": "Qwen3-235B-A22B Base with a score of 71.84",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_12/slide_005.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0042",
+    "question": "Name two example tasks or benchmarks for multiple-choice QA.",
+    "answer": "GLUE, MMLU",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_031.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0043",
+    "question": "What is the average accuracy of the 'instructive' category templates?",
+    "answer": "67.0",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_059.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0044",
+    "question": "What is the difference in accuracy between the templates 'Let's think step by step' and 'Let's think'?",
+    "answer": "21.2",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_059.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0045",
+    "question": "Which source type has the longest typical document length?",
+    "answer": "Books (Project Gutenberg) with 50,000 \u2013 100,000+ tokens",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_038.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0046",
+    "question": "How many S&P 500 earnings calls cited 'AI' in Q2 2023?",
+    "answer": "Approximately 250 earnings calls cited 'AI' in Q2 2023.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_049.png"
     ],
     "course": "cs224n",
     "lecture": "lecture_01",
@@ -1139,7 +782,1197 @@
     }
   },
   {
+    "question_id": "cs224n_q0047",
+    "question": "What does the color gradient in the chart represent?",
+    "answer": "Different model sizes, ranging from 75M to 10B parameters.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0048",
+    "question": "How are the words 'man', 'woman', and 'king' represented in the graph?",
+    "answer": "They are represented as points with vectors indicating relationships.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_039.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0049",
+    "question": "Which word has the highest attention weight?",
+    "answer": "Stanford",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_041.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0050",
+    "question": "What is the relationship between compute and validation loss as shown in the chart?",
+    "answer": "As compute increases, validation loss generally decreases.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_050.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0051",
+    "question": "Which model achieved the highest average percentage according to the graph?",
+    "answer": "Leeroo (5-shot)",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_016.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0052",
+    "question": "At which parameter size does the 'random insertion' task achieve approximately 60% accuracy?",
+    "answer": "13B",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_022.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0053",
+    "question": "Which model has the highest hallucination in the 0-shot graph?",
+    "answer": "LLAMA.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_058.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0054",
+    "question": "Which subject shows the least difference in performance between GPT-3 and UnifiedQA?",
+    "answer": "College Chemistry",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_12/slide_009.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0055",
+    "question": "Which subject shows the least performance difference between GPT-3 and UnifiedQA?",
+    "answer": "College Chemistry",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_008.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0056",
+    "question": "What was the closing stock price of Nvidia on January 27, 2025?",
+    "answer": "$118.42",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_023.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0057",
+    "question": "What is the looping fraction for the Phi-4 model?",
+    "answer": "The looping fraction for the Phi-4 model is 0.01.",
+    "category": "chart_graph",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_15/slide_012.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0058",
+    "question": "Which distribution is closest to the target distribution in Figure 2?",
+    "answer": "The Reverse KLD (ours) is closest to the target distribution.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_16/slide_032.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0059",
+    "question": "Which language has the highest average number of tokens according to the chart?",
+    "answer": "Tibetan has the highest average number of tokens.",
+    "category": "chart_graph",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_17/slide_071.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0060",
+    "question": "What is the percentage difference between 'Creative thinking' and 'Technological literacy'?",
+    "answer": "6%",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_18/slide_041.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0061",
+    "question": "What is the purpose of the 'Bottleneck' in the diagram?",
+    "answer": "It represents the transition point between the encoder and decoder.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_01/slide_046.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0062",
+    "question": "How many instructors are listed on the slide?",
+    "answer": "Two",
+    "category": "layout_aware",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_02/slide_004.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0063",
+    "question": "Which pairs of words have a vertical relationship in the visualization?",
+    "answer": "niece-aunt, sister-brother, heir-heiress, countess-duchess, empress-emperor",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_03/slide_040.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0064",
+    "question": "What is the purpose of using the Jacobian form and shape convention according to the side note?",
+    "answer": "Use Jacobian to compute; Use shape convention to format.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_055.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0065",
+    "question": "What motivates the use of Recurrent Neural Networks (RNNs) in language modeling?",
+    "answer": "Language Modeling",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_002.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0066",
+    "question": "Which words can be looked at according to the diagram on the slide?",
+    "answer": "[START], The, chef",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_050.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0067",
+    "question": "Which section of the lecture plan is the longest?",
+    "answer": "Model pretraining three ways (25 mins)",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_002.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
     "question_id": "cs224n_q0068",
+    "question": "Which names are highlighted in red on the right side of the slide?",
+    "answer": "Percy Liang, Danny Hernandez, My Thai, Yi Yang, Yushi Wang",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_017.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0069",
+    "question": "How is the 'Supervised (287K)' method labeled in the table?",
+    "answer": "Seq2Seq + Attn",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_016.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0070",
+    "question": "What is the relationship between BERTB(0) and BERTR(q, 0) in the diagram?",
+    "answer": "BERTB(0) provides input to BERTR(q, 0) for further processing.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_11/slide_019.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0071",
+    "question": "What score is associated with the response 'Heck yes!'?",
+    "answer": "0.61",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_037.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0072",
+    "question": "Which components are involved in the Collection Phase?",
+    "answer": "Target Label, Context, Writer, Hypothesis, Prediction",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_023.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0073",
+    "question": "Which category includes examples marked with visual patterns?",
+    "answer": "Visual Pattern",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_065.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0074",
+    "question": "What words are associated with the peaked distribution in the diagram?",
+    "answer": "hot, warm, cooling, on, heating, fresh, cold, warming, burning, cooking",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_016.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0075",
+    "question": "How do the speedups of the Suffix (linear) baseline compare across the three benchmarks?",
+    "answer": "Spec-Bench: 2.4x, AgenticSQL: 2.7x, SWE-Bench: 1.0x",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_16/slide_017.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0076",
+    "question": "Who is shown in the image below the name 'James Allen'?",
+    "answer": "C. Ray Perrault",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_022.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0077",
+    "question": "What is the interaction shown on the right side of the image?",
+    "answer": "A conversation with ELIZA, an early chatbot program.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_010.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0078",
+    "question": "Which model has the highest correlation score in the WS353 category?",
+    "answer": "GloVe with a size of 42B",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_042.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0079",
+    "question": "What is the relationship between \u2202s/\u2202b, \u2202s/\u2202h, \u2202h/\u2202z, and \u2202z/\u2202b?",
+    "answer": "\u2202s/\u2202b = (\u2202s/\u2202h)(\u2202h/\u2202z)(\u2202z/\u2202b)",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_04/slide_044.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0080",
+    "question": "Which word has the highest probability in the table?",
+    "answer": "the",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_017.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0081",
+    "question": "How is the gradient of J with respect to h(1) expressed?",
+    "answer": "\u2202J(4)/\u2202h(1) = (\u2202h(2)/\u2202h(1)) \u00d7 (\u2202h(3)/\u2202h(2)) \u00d7 (\u2202J(4)/\u2202h(3))",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_06/slide_006.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0082",
+    "question": "Which task categories are listed under 'Task Category' on the slide?",
+    "answer": "conditional-text-generation, text-classification, structure-prediction, sequence-modeling, question-answering, text-scoring",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_041.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0083",
+    "question": "What word does the pretrained encoder predict for the masked token?",
+    "answer": "make/brew/craft",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_031.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0084",
+    "question": "What is the input sequence for the pretraining step shown in the diagram?",
+    "answer": "Iroh goes to make tasty tea",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_010.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0085",
+    "question": "What are the components involved in the adapter fusion process as shown in the right diagram?",
+    "answer": "Frozen Layer, Adapter Fusion, Feature Adapter, and Feature Adapters Pool.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_064.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0086",
+    "question": "What is the sequence of actions taken to find out what other device can control the Front Row software?",
+    "answer": "Search[Apple Remote], Search[Front Row], Search[Front Row (software)], Finish[keyboard function keys]",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_11/slide_036.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0087",
+    "question": "Which model had the lowest accuracy in the 'Non-entailed' condition when syntactic heuristics fail?",
+    "answer": "BERT had the lowest accuracy.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_12/slide_023.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0088",
+    "question": "Which model appears in the same position across all sections?",
+    "answer": "Yi-34b",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_068.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0089",
+    "question": "What is the mathematical expression for DAPO's token-level loss?",
+    "answer": "The expression is \\( \\frac{1}{\\sum_i |o_i|} \\sum_i \\sum_t \\mathcal{L}_{i,t} \\).",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_049.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0090",
+    "question": "What is the rearranged form of the equation after isolating the inner square root term?",
+    "answer": "(a - x\u00b2)\u00b2 = a + x",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_025.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0091",
+    "question": "Which model size shows the greatest improvement in performance across all tasks?",
+    "answer": "T5-Large (800M)",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_16/slide_031.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0092",
+    "question": "Which region is represented by the color purple on the map?",
+    "answer": "Africa",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_17/slide_065.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0093",
+    "question": "Which model pair has the highest similarity score according to the heatmap?",
+    "answer": "qwen-max-2025-01-25 and qwen-plus-2025-01-25 with a score of 0.90.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_18/slide_032.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0094",
+    "question": "Which training method shows the highest overall average accuracy according to the chart?",
+    "answer": "Base + RLP",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_19/slide_059.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_19",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0095",
+    "question": "What does the diagram on the right side of the slide represent?",
+    "answer": "The diagram represents a spectrogram with words indicated by arrows.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_042.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0096",
+    "question": "What is the role of 'Selective parameters' in the diagram?",
+    "answer": "Selective parameters are part of the selection mechanism.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_017.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0097",
+    "question": "What is the relationship between 'king' and 'queen' in the visualization?",
+    "answer": "They are connected by a dashed line, indicating a relationship.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_040.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0098",
+    "question": "What equation represents the computation of 'z' in the graph?",
+    "answer": "z = Wx + b",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_057.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0099",
+    "question": "What does the arrow labeled 'W' represent in the diagram?",
+    "answer": "The weight matrix used in the neural network layers.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_043.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0100",
+    "question": "What does the orange arrow indicate in the diagram?",
+    "answer": "Encoding of the source sentence.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_021.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0101",
+    "question": "Which model has the lowest training cost in the EN-DE test set?",
+    "answer": "ConvS2S",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_007.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0102",
+    "question": "Compare the size of the 'Pile-CC' and 'Bibliotik' sections in the diagram.",
+    "answer": "Pile-CC is larger than Bibliotik.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_020.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0103",
+    "question": "What does 'SFT' stand for in the context of Step 1?",
+    "answer": "Supervised Fine-Tuning.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_039.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0104",
+    "question": "In the MultiNLI-matched chart, which method shows a decrease in performance as the number of trainable parameters increases?",
+    "answer": "PrefixEmbed",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_051.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0105",
+    "question": "What is the accuracy of Gorilla in the 0-shot graph?",
+    "answer": "Approximately 90.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_058.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0106",
+    "question": "What is the condition for BP to be equal to 1?",
+    "answer": "BP = 1 if |c| > |r|.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_046.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0107",
+    "question": "Which model has the highest win-rate against 'mistral-7b-instruct'?",
+    "answer": "gpt-4-turbo with a win-rate of 0.90",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_058.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0108",
+    "question": "Which string follows the same set of rules according to the diagram?",
+    "answer": "FZABQC",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_068.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0109",
+    "question": "What is the mathematical expression used to illustrate the probability issue in vanilla sampling?",
+    "answer": "(0.95)^30 \u2248 0.2146387639",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_015.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0110",
+    "question": "Which token has a higher probability assigned by the target model compared to the draft model?",
+    "answer": "'dogs'",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_007.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0111",
+    "question": "What is the TyDiQA SelectP score for CANINE-C + n-grams?",
+    "answer": "68.1",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_17/slide_072.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0112",
+    "question": "Which method shows the highest Harmlessness Elo according to the graph?",
+    "answer": "Constitutional RL (Pareto Improvement)",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_18/slide_049.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0113",
+    "question": "Which dataset shows the most improvement in accuracy for OpenThoughts3 as the dataset size increases?",
+    "answer": "LiveCodeBench",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_19/slide_072.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_19",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0114",
+    "question": "Who is shown in the hierarchical relationship diagram on the slide?",
+    "answer": "Seymour Papert, Terry Winograd, Stuart Shieber",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_01/slide_025.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_01",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0115",
+    "question": "What is the relationship between FLOPS and training loss according to the chart?",
+    "answer": "As FLOPS increase, the training loss generally decreases.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_018.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0116",
+    "question": "Which section of the lecture is allocated the most time?",
+    "answer": "Word2vec objective function gradients (25 mins)",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_044.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0117",
     "question": "Which word pair has the highest human mean similarity score?",
     "answer": "tiger and tiger",
     "category": "table",
@@ -1156,9 +1989,264 @@
     }
   },
   {
-    "question_id": "cs224n_q0069",
-    "question": "What does the decoder output in the diagram?",
-    "answer": "The protests escalated over the weekend",
+    "question_id": "cs224n_q0118",
+    "question": "Which matrices are used to transform e(t) to h(t)?",
+    "answer": "The matrices used are We and Wh.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_030.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0119",
+    "question": "Which model has the highest BLEU score on the EN-FR dataset?",
+    "answer": "ConvS2S Ensemble [9]",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_067.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0120",
+    "question": "Which room is used for office hours on Tuesday at 9:00 AM?",
+    "answer": "Huang Basement",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_014.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0121",
+    "question": "What types of data are used for training the foundation model?",
+    "answer": "Text, Images, Speech, Structured Data, 3D Signals",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_004.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0122",
+    "question": "Which model is labeled with the highest estimated computing resources used?",
+    "answer": "PaLM (540B)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_003.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0123",
+    "question": "Which model shows the highest Macro-F1 score in classification with demos using gold labels?",
+    "answer": "GPT-3 (175B)",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_031.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0124",
+    "question": "What are the components involved in the reasoning process of an agent according to the diagram?",
+    "answer": "Sensors, inner monologue, actuators, percepts, actions, environment.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_060.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0125",
+    "question": "What is the first step in the adversarial benchmark process?",
+    "answer": "Step 1: Write examples",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_024.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0126",
+    "question": "Which model has the lowest win-rate against 'gpt-4-turbo'?",
+    "answer": "mistral-7b-instruct with a win-rate of 0.14",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_058.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0127",
+    "question": "What does the expression \\( \\hat{y}_t = \\argmax_{w \\in V} P(y_t = w|y_{<t}) \\) represent?",
+    "answer": "This expression represents the greedy decoding process.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_005.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0128",
+    "question": "Which component is responsible for 'Reasoning Prompts' in the left process?",
+    "answer": "RL",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_024.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0129",
+    "question": "What is the mathematical expression for Forward KL?",
+    "answer": "KL(p || q) = E_{x~p} [log(p(x)/q(x))] = \u03a3_x p(x) log(p(x)/q(x))",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_029.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0130",
+    "question": "Which token pair has the highest frequency in the table?",
+    "answer": "p + er",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_17/slide_042.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0131",
+    "question": "Which skills have the same percentage of 47%?",
+    "answer": "Talent management and Service orientation and customer service",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_18/slide_041.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0132",
+    "question": "Which model shows the highest performance in the chart?",
+    "answer": "PrismMath-7B",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_19/slide_048.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_19",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0133",
+    "question": "What is the source sentence in the diagram?",
+    "answer": "Die Proteste waren am Wochenende eskaliert <EOS>",
     "category": "image_diagram",
     "difficulty": "medium",
     "evidence_slides": [
@@ -1173,13 +2261,30 @@
     }
   },
   {
-    "question_id": "cs224n_q0070",
-    "question": "What does the diagram on the right illustrate?",
-    "answer": "The diagram illustrates the Skip-gram model.",
+    "question_id": "cs224n_q0134",
+    "question": "What is the main topic depicted in the left section of the image?",
+    "answer": "Turing Test",
     "category": "image_diagram",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_03/slide_011.png"
+      "lecture_02/slide_010.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0135",
+    "question": "Which word has a co-occurrence count of 1 with 'deep'?",
+    "answer": "like",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_031.png"
     ],
     "course": "cs224n",
     "lecture": "lecture_03",
@@ -1190,47 +2295,13 @@
     }
   },
   {
-    "question_id": "cs224n_q0071",
-    "question": "What does the expression \\( \\nabla_{\\theta} J_t(\\theta) \\) represent in the context of this slide?",
-    "answer": "It represents a sparse gradient vector.",
+    "question_id": "cs224n_q0136",
+    "question": "What is the role of \u2202s/\u2202z in the diagram?",
+    "answer": "\u2202s/\u2202z is the upstream gradient.",
     "category": "image_diagram",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_03/slide_028.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0072",
-    "question": "How are the neurons connected in the diagram?",
-    "answer": "The neurons are connected through axons and terminal buttons.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_011.png"
-    ],
-    "course": "cs224n",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs224n_q0073",
-    "question": "What is the dimensionality of the expression \\( \\frac{\\partial s}{\\partial \\mathbf{W}} \\)?",
-    "answer": "[n \\times m]",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_04/slide_052.png"
+      "lecture_04/slide_066.png"
     ],
     "course": "cs224n",
     "lecture": "lecture_04",
@@ -1241,16 +2312,16 @@
     }
   },
   {
-    "question_id": "cs224n_q0074",
-    "question": "What is the formula for the softmax function as shown on the slide?",
-    "answer": "softmax(xi) = exp(xi) / \u03a3nj=1 exp(xj) = pi",
+    "question_id": "cs224n_q0137",
+    "question": "What is the purpose of conditioning on 'today the price'?",
+    "answer": "To get a probability distribution for the next word.",
     "category": "image_diagram",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_03/slide_017.png"
+      "lecture_05/slide_016.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_03",
+    "lecture": "lecture_05",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -1258,16 +2329,220 @@
     }
   },
   {
-    "question_id": "cs224n_q0075",
-    "question": "What is the expression for the partial derivative of h with respect to z?",
-    "answer": "\u2202h/\u2202z",
+    "question_id": "cs224n_q0138",
+    "question": "Which model has the highest ROUGE-L score?",
+    "answer": "Transformer-DMCA, MoE-256, L = 7500",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_068.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0139",
+    "question": "What dataset is used for the English-French translation task?",
+    "answer": "The dataset used is WMT2014 English-French.",
     "category": "image_diagram",
     "difficulty": "medium",
     "evidence_slides": [
-      "lecture_04/slide_026.png"
+      "lecture_07/slide_032.png"
     ],
     "course": "cs224n",
-    "lecture": "lecture_04",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0140",
+    "question": "What is the price of 'Love Knocked'?",
+    "answer": "$5.99",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_021.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0141",
+    "question": "What is the role of the diagram labeled 'SFT' in Step 1?",
+    "answer": "It represents the process of fine-tuning GPT-3 with supervised learning.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_036.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0142",
+    "question": "What does the diagram on the right side of the slide represent?",
+    "answer": "The diagram represents function composition.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_059.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0143",
+    "question": "What activity is Klaus Mueller engaged in according to the central reflection box?",
+    "answer": "Klaus Mueller is engaging in research activities",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_049.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0144",
+    "question": "What was the performance difference between Expert Human Validators and Non-Expert Human Validators?",
+    "answer": "59.3",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_012.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0145",
+    "question": "In the COPA example, what is the correct alternative for the premise 'My body cast a shadow over the grass'?",
+    "answer": "Alternative 1: The sun was rising.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_006.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0146",
+    "question": "What was the opening stock price of Nvidia on January 27, 2025?",
+    "answer": "$124.57",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_023.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0147",
+    "question": "In the diagram, which string follows the same set of rules as 'FDMUC', 'FDQMQFC', and 'FQMQUC'?",
+    "answer": "FZABQC",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_068.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0148",
+    "question": "How does the performance of T5-Large compare to T5-Small in the XSum task?",
+    "answer": "T5-Large shows higher performance than T5-Small.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_031.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0149",
+    "question": "Which token pair is merged first according to the Merge List?",
+    "answer": "_ + p",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_17/slide_044.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs224n_q0150",
+    "question": "Which job is projected to have the fastest net decline?",
+    "answer": "Postal Service Clerks",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_18/slide_040.png"
+    ],
+    "course": "cs224n",
+    "lecture": "lecture_18",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",

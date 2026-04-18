@@ -1,567 +1,6 @@
 [
   {
     "question_id": "cs601_q0001",
-    "question": "What type of machine might not halt according to the slide?",
-    "answer": "Nondeterministic Turing machine",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_019.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0002",
-    "question": "What type of grammar is described as 'seemingly somewhere in between' context-free and context-sensitive grammars?",
-    "answer": "Mildly context-sensitive grammar (e.g., TAG, CCG, etc.)",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_020.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0003",
-    "question": "Which headline could imply a humorous misunderstanding about food?",
-    "answer": "Kids Make Nutritious Snacks",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_007.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0004",
-    "question": "Which model allows for the generation of sentences by rolling dice?",
-    "answer": "Trained 3-gram model",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_006.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0005",
-    "question": "What are the possible sources of ambiguity mentioned in the slide?",
-    "answer": "The particular coffee, the donut store, the situation.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_021.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0006",
-    "question": "What are the two forms of strings allowed in the formal language equivalent mentioned?",
-    "answer": "The forms are a x* b and c x* d.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_010.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0007",
-    "question": "What is the implied question in the text regarding John's thoughts?",
-    "answer": "That's how often he thought it?",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_018.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0008",
-    "question": "What is the example of an unrestricted grammar rule?",
-    "answer": "The example is 'L S R \u2192 X Y S'.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_018.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0009",
-    "question": "What does the smallest box in the diagram represent?",
-    "answer": "Training sentences",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_006.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0010",
-    "question": "Which model is represented by the largest box in the diagram?",
-    "answer": "Trained 50-gram model",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_006.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0011",
-    "question": "What are the components of the noun phrase (NP) in the tree diagram?",
-    "answer": "Det, N\u2019, Noun",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_017.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0012",
-    "question": "What is the example of a context-sensitive grammar rule on the slide?",
-    "answer": "The example is 'S \u2192 N V S // L_R'.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_018.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0013",
-    "question": "What is the structure of the tree diagram on the left side of the slide?",
-    "answer": "S \u2192 NP VP .",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_017.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0014",
-    "question": "What is the relationship between 'deficit' and 'current' in the diagram?",
-    "answer": "MOD",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_025.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0015",
-    "question": "Which English sentence is both good English and a good match to the input?",
-    "answer": "Jon appeared on TV.",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_009.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0016",
-    "question": "Which sentence is marked as a good match to the input but not good English?",
-    "answer": "TV appeared on Jon.",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_009.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0017",
-    "question": "Which sentence is a good match to the input but not good English?",
-    "answer": "TV appeared on Jon.",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_009.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0018",
-    "question": "How many sentences are marked as good English according to the n-gram column?",
-    "answer": "Four sentences are marked as good English.",
-    "category": "table",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_009.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0019",
-    "question": "Which sentence in the 'Huge set of choices' is not related to the translation task?",
-    "answer": "Jon is happy today.",
-    "category": "layout_aware",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_010.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0020",
-    "question": "How many sentences are marked with a question mark?",
-    "answer": "Three sentences are marked with a question mark.",
-    "category": "layout_aware",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_002.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0021",
-    "question": "What is the example given for a context-free grammar?",
-    "answer": "The example given is 'S \u2192 N V S'.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_018.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0022",
-    "question": "What is the probability ratio for choosing between 'NP \u2192 Det N\u2019' and 'NP \u2192 Proper'?",
-    "answer": "20:1 odds ratio.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_016.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0023",
-    "question": "What visual element is used to represent training sentences?",
-    "answer": "A blue abstract shape is used to represent training sentences.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_008.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0024",
-    "question": "What is the function of 'in September' in the sentence according to the diagram?",
-    "answer": "COMP",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_025.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0025",
-    "question": "What sentence is generated by the tree diagram?",
-    "answer": "Papa ate the caviar with a spoon",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_021.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0026",
-    "question": "Which word is the subject of the sentence according to the dependency diagram?",
-    "answer": "He",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_025.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0027",
-    "question": "What is the root of the sentence in the dependency diagram?",
-    "answer": "reckons",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_025.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0028",
-    "question": "What does the 'NP' node expand into according to the tree diagram?",
-    "answer": "NP expands into Det N'.",
-    "category": "image_diagram",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_016.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0029",
-    "question": "What does the black rectangle represent in the diagram?",
-    "answer": "The black rectangle represents the 'Training sentences'.",
-    "category": "image_diagram",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_007.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0030",
-    "question": "What is the transformation rule for a noun phrase (NP) involving a determiner (Det)?",
-    "answer": "NP \u2192 Det N\u2019",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_014.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0031",
-    "question": "What is the correct English translation for 'Jon est apparu \u00e0 la t\u00e9l\u00e9vision' according to the slide?",
-    "answer": "Jon appeared on TV.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_010.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0032",
-    "question": "According to the grammar rules, what can a 'VP' expand into?",
-    "answer": "A 'VP' can expand into 'V NP' or 'VP PP'.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_022.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0033",
-    "question": "Which headline suggests a potential misunderstanding involving a legal setting?",
-    "answer": "Juvenile Court to Try Shooting Defendant",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_007.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0034",
     "question": "Why did John find it difficult to continue getting coffee?",
     "answer": "It turned out to be too expensive there.",
     "category": "text_only",
@@ -578,232 +17,11 @@
     }
   },
   {
-    "question_id": "cs601_q0035",
-    "question": "According to the grammar rules, how is a 'VP' defined?",
-    "answer": "VP \u2192 VerbT NP",
+    "question_id": "cs601_q0002",
+    "question": "What are the two forms of strings allowed in the formal language equivalent mentioned?",
+    "answer": "The forms are a x* b and c x* d.",
     "category": "text_only",
     "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_017.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0036",
-    "question": "Why did John find the donut store problematic?",
-    "answer": "He found it too expensive.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_015.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0037",
-    "question": "How is 'NP' defined in the context-free grammar?",
-    "answer": "NP \u2192 Det N\u2019 or NP \u2192 Proper",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_015.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0038",
-    "question": "Which phrase is most probable: 'by the way, are they\u2019re likely to', 'by the way, are there likely to', or 'by the way, are their likely to'?",
-    "answer": "by the way, are they\u2019re likely to",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_006.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0039",
-    "question": "What example is given to illustrate the ambiguity in the story?",
-    "answer": "Mozart composed music.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_017.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0040",
-    "question": "What turned out to be too expensive for John?",
-    "answer": "The coffee at the donut store.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_021.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0041",
-    "question": "What is the probability of the rule 'NP \u2192 Det N\u2019'?",
-    "answer": "20",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_02/slide_017.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0042",
-    "question": "Why did John think getting a coffee was good?",
-    "answer": "He thought a coffee was good every few hours.",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_01/slide_014.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0043",
-    "question": "Which phrase is most probable: 'I think they\u2019re okay', 'I think there okay', or 'I think their okay'?",
-    "answer": "I think they\u2019re okay",
-    "category": "text_only",
-    "difficulty": "medium",
-    "evidence_slides": [
-      "lecture_03/slide_006.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_03",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0044",
-    "question": "What is a strictly local grammar according to the slide?",
-    "answer": "A strictly local grammar is a set of legal n-grams.",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_018.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0045",
-    "question": "What is the rule for expanding 'S' in the context-free grammar provided?",
-    "answer": "S \u2192 NP VP .",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_016.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0046",
-    "question": "Why did John find the coffee to be problematic?",
-    "answer": "It turned out to be too expensive.",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_01/slide_012.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0047",
-    "question": "What is the context-free grammar rule for 'S'?",
-    "answer": "S \u2192 NP VP .",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_015.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0048",
-    "question": "What does x* mean in the context of the formal language equivalent?",
-    "answer": "x* means '0 or more x's'.",
-    "category": "text_only",
-    "difficulty": "easy",
     "evidence_slides": [
       "lecture_02/slide_010.png"
     ],
@@ -816,149 +34,13 @@
     }
   },
   {
-    "question_id": "cs601_q0049",
-    "question": "What is the main topic of the slide?",
-    "answer": "Ambiguity",
+    "question_id": "cs601_q0003",
+    "question": "What is the correct English translation for 'Jon est apparu \u00e0 la t\u00e9l\u00e9vision' according to the slide?",
+    "answer": "Jon appeared on TV.",
     "category": "text_only",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "evidence_slides": [
-      "lecture_02/slide_023.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0050",
-    "question": "What is the suggested action if you do not want to stay for questions?",
-    "answer": "Please leave quickly and quietly.",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_01/slide_026.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0051",
-    "question": "Which lexical category does 'king' belong to according to the lexical rules?",
-    "answer": "Noun",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_014.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0052",
-    "question": "What does the non-terminal 'N' represent in the grammar?",
-    "answer": "N \u2192 Mary",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_012.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0053",
-    "question": "What are the four levels of language mentioned on the slide?",
-    "answer": "Phonetics/phonology/morphology, Syntax, Semantics, Pragmatics",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_01/slide_009.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0054",
-    "question": "What did John think was good every few hours?",
-    "answer": "A coffee.",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_01/slide_020.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0055",
-    "question": "What is the relationship between context-sensitive grammar and linear bounded automaton?",
-    "answer": "A context-sensitive grammar corresponds to a linear bounded automaton.",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_019.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0056",
-    "question": "How long do you have to complete the task?",
-    "answer": "Two weeks.",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_013.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0057",
-    "question": "What is one example of a topic 1 sample?",
-    "answer": "In the beginning God created \u2026",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_03/slide_004.png"
+      "lecture_03/slide_010.png"
     ],
     "course": "cs601",
     "lecture": "lecture_03",
@@ -969,16 +51,16 @@
     }
   },
   {
-    "question_id": "cs601_q0058",
-    "question": "What is the topic of the slide?",
-    "answer": "Contextual Spelling Correction",
+    "question_id": "cs601_q0004",
+    "question": "What is the significance of the counts from the Brown corpus?",
+    "answer": "They provide empirical data for calculating probabilities in the notation.",
     "category": "text_only",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "evidence_slides": [
-      "lecture_03/slide_006.png"
+      "lecture_04/slide_026.png"
     ],
     "course": "cs601",
-    "lecture": "lecture_03",
+    "lecture": "lecture_04",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -986,16 +68,16 @@
     }
   },
   {
-    "question_id": "cs601_q0059",
-    "question": "What should students agree on by the end of the course?",
-    "answer": "Students should agree that language is subtle & interesting.",
+    "question_id": "cs601_q0005",
+    "question": "How is the probability p(A=a | B=b) maximized according to the slide?",
+    "answer": "It is maximized by p(A=a) p(B=b | A=a) / p(B=b).",
     "category": "text_only",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "evidence_slides": [
-      "lecture_01/slide_004.png"
+      "lecture_05/slide_008.png"
     ],
     "course": "cs601",
-    "lecture": "lecture_01",
+    "lecture": "lecture_05",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -1003,11 +85,436 @@
     }
   },
   {
-    "question_id": "cs601_q0060",
-    "question": "What is the main topic of the slide?",
-    "answer": "Machine Translation",
+    "question_id": "cs601_q0006",
+    "question": "What is suggested as a way to make a better guess for a rare context's event rate?",
+    "answer": "Aggregating the rare context with other contexts.",
     "category": "text_only",
-    "difficulty": "easy",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_046.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0007",
+    "question": "How does the slide suggest enriching the interfaces of tree coordinates?",
+    "answer": "By using the notation S[attributes...] = NP[attributes...] VP[attributes...]",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_002.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0008",
+    "question": "What is the ambiguity mentioned in the fifth pass?",
+    "answer": "507 is ambiguous only because VP 17 is.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_021.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0009",
+    "question": "What is the significance of completing A in the context of Earley's Algorithm?",
+    "answer": "It can be attached to hypotheses immediately preceding the A.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_004.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0010",
+    "question": "How is chart[X,start,end] updated in the algorithm?",
+    "answer": "chart[X,start,end] \u2295= semiring_weight(R) \u2297 chart[Y,start,mid] \u2297 chart[Z,mid,end]",
+    "category": "text_only",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_076.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0011",
+    "question": "What is the condition for iterative deepening?",
+    "answer": "Throw x away if p(x) < 10^-200.",
+    "category": "text_only",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_11/slide_030.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0012",
+    "question": "How does the slide suggest expressing 'study the apple on the towel' using PCFG?",
+    "answer": "VP[head=study] \u2192 VP[head=study] PP[head=on]",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_002.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0013",
+    "question": "How does the logical expression change when 'every booth' is used instead of 'a booth'?",
+    "answer": "The expression changes from 'exists(booth, location(e))' to 'all(booth, \u03bbb location(e,b))'.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_035.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0014",
+    "question": "What is the problem with the sequence 'tell V/1 me NP/1 VP/2 in P/1 20 Det/1 minutes N/1 NP/2 VP/2 ...'?",
+    "answer": "No rule VP -> P NP.",
+    "category": "text_only",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_127.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0015",
+    "question": "Why do we divide the column by Z=0.99?",
+    "answer": "To ensure the probabilities sum to 1.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_007.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0016",
+    "question": "What does the smallest box in the diagram represent?",
+    "answer": "Training sentences",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_006.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0017",
+    "question": "What is the approximate value of p(Wi = horses | Ti = t) * p(Ti = t, i=1)?",
+    "answer": "2.4e-5",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_04/slide_042.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0018",
+    "question": "How are the probabilities for different languages represented in the slide?",
+    "answer": "They are represented as p_english(SENT=x), p_polish(SENT=x), p_xhosa(SENT=x).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_004.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0019",
+    "question": "What is the mathematical expression for the total probability?",
+    "answer": "(\u221e+3)/(\u221e+3)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_012.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0020",
+    "question": "What is the relationship between 'thrilling' and 'Otto' in the sentence structure?",
+    "answer": "'Thrilling' is the verb acting on the noun phrase 'Otto'.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_007.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0021",
+    "question": "What does the red box labeled 'constit(s,0,5)' represent in the diagram?",
+    "answer": "It represents ambiguity in the parse forest.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_048.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0022",
+    "question": "What is the result of attaching D to A \u2192 B C . D E?",
+    "answer": "It gives A \u2192 B C D . E.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_09/slide_004.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0023",
+    "question": "What mathematical operation is used to combine chart values in the second loop?",
+    "answer": "The operation used is '\u2295= semiring_weight(R) \u2297 chart[Y,start,mid] \u2297 chart[Z,mid,end]'.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_077.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0024",
+    "question": "What does the arrow labeled '3NP5 10' indicate in the diagram?",
+    "answer": "It indicates a prioritized agenda of pending constituents.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_032.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0025",
+    "question": "What components are labeled in the diagram on the left?",
+    "answer": "EyeCamera, IR Lightsource, Vertical Eyeposition Adjust, Headband",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0026",
+    "question": "What is the semantic representation for the VP_inf subtree?",
+    "answer": "\u03bbx \u03bbe act(e,loving), lover(e,x), lovee(e,M)",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_059.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0027",
+    "question": "What is the sequence of hidden states for the word 'Don'?",
+    "answer": "h_0, h_1, h_2, h_3, h_4",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_107.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0028",
+    "question": "What is the product of all the edge weights on one path H, H, H?",
+    "answer": "0.5 * 0.7 * 0.7 * 0.7 = 0.1715",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_15/slide_011.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0029",
+    "question": "How are the constituents visually connected in the diagram?",
+    "answer": "The constituents are connected through lines forming a hierarchical structure.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_16/slide_013.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0030",
+    "question": "What is the sequence of transitions shown in the diagram from BOS to EOS?",
+    "answer": "BOS -> N -> V -> V -> EOS",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_17/slide_112.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0031",
+    "question": "How many sentences are marked as good English according to the n-gram column?",
+    "answer": "Four sentences are marked as good English.",
+    "category": "table",
+    "difficulty": "medium",
     "evidence_slides": [
       "lecture_03/slide_009.png"
     ],
@@ -1020,112 +527,503 @@
     }
   },
   {
+    "question_id": "cs601_q0032",
+    "question": "What is the probability p(x) for outcome A?",
+    "answer": "1/4",
+    "category": "table",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_04/slide_050.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0033",
+    "question": "What is the likelihood probability for a sentence given the language is Xhosa?",
+    "answer": "0.00005",
+    "category": "table",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_05/slide_017.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0034",
+    "question": "What is the smoothed probability for 'xyd'?",
+    "answer": "201/326",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_007.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0035",
+    "question": "What is the infinitive form of the verb 'eat' in the progressive aspect?",
+    "answer": "to be eating",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_023.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0036",
+    "question": "What is the start position for the end position 4 in the table?",
+    "answer": "The start position for the end position 4 is 4.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_032.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0037",
+    "question": "What is the grammatical structure of the phrase 'Papa ate the caviar with' according to the table?",
+    "answer": "0 ROOT . S",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_09/slide_059.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0038",
+    "question": "Which cell contains the highest value for 'S'?",
+    "answer": "Row 0, Column 4 with a value of 27.",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_028.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0039",
+    "question": "What is the value at the intersection of 'flies' and '3' in the table?",
+    "answer": "NP 10",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_031.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0040",
+    "question": "Which product had the highest sales in March?",
+    "answer": "Grommets",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_003.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0041",
+    "question": "Which cells contain the label 'NP'?",
+    "answer": "(0, 0), (0, 1), (0, 4), (1, 1), (3, 4)",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_16/slide_038.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0042",
+    "question": "What is the minimum weight parse for the entire sentence?",
+    "answer": "S with weight 22",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_17/slide_011.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0043",
+    "question": "Which system has higher accuracy on spam?",
+    "answer": "System 1",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_18/slide_023.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0044",
+    "question": "How many novels can be processed with 1 million tokens using the ada v2 model?",
+    "answer": "8 novels.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_19/slide_023.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_19",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0045",
+    "question": "Which English sentence is both good English and a good match to the input?",
+    "answer": "Jon appeared on TV.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0046",
+    "question": "Which line in the chart has the lowest RMSE value?",
+    "answer": "\"ors\" (RMSE=0.0068)",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_025.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0047",
+    "question": "What is the significance of the purple bars in the chart?",
+    "answer": "The purple bars represent the total number of types, T.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_039.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0048",
+    "question": "How does the probability of eye movement change for the 'Relatum-target' category from '5 hearts that is' to 'clubs'?",
+    "answer": "It decreases initially and then increases sharply.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_12/slide_015.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0049",
+    "question": "What does the graph of \u03c3(x) illustrate about its behavior for x < 0?",
+    "answer": "\u03c3(x) is approximately 0 if x < 0.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_042.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0050",
+    "question": "How does the probability of p(Observations) change with each iteration in the bar chart?",
+    "answer": "The probability decreases with each iteration.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_021.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0051",
+    "question": "How does the precision change as recall increases according to the graph?",
+    "answer": "Precision decreases as recall increases.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_18/slide_024.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0052",
+    "question": "What is the approximate probability value at the peak of the 'hor' line?",
+    "answer": "Approximately 0.30",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_025.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0053",
+    "question": "What is the significance of the purple color in the bar chart?",
+    "answer": "The purple color in the bar chart represents novel types.",
+    "category": "chart_graph",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_06/slide_041.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0054",
+    "question": "How does the probability of eye movement change for 'Alternative' between the first and second points?",
+    "answer": "It decreases from 0.5 to 0.3.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_12/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0055",
+    "question": "How does the perplexity change over 10 iterations?",
+    "answer": "The perplexity decreases over 10 iterations.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_020.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0056",
+    "question": "What does the graph on the slide compare?",
+    "answer": "The graph compares precision versus recall of good (non-spam) email.",
+    "category": "chart_graph",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_18/slide_026.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0057",
+    "question": "What does the dashed line represent in the chart?",
+    "answer": "Dashed lines show backoff probabilities.",
+    "category": "chart_graph",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_04/slide_025.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0058",
+    "question": "What sample size corresponds to the histogram with the smoothest distribution?",
+    "answer": "2000000",
+    "category": "chart_graph",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_06/slide_017.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0059",
+    "question": "What is the probability of eye movement for the 'Miscellaneous' category at the word 'below'?",
+    "answer": "0.1",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_013.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0060",
+    "question": "What is the approximate sample size of the histogram in the bottom right corner?",
+    "answer": "The sample size is approximately 60,000.",
+    "category": "chart_graph",
+    "difficulty": "easy",
+    "evidence_slides": [
+      "lecture_06/slide_018.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
     "question_id": "cs601_q0061",
-    "question": "What is the main question posed on the slide?",
-    "answer": "But can't GPT-4 read/write that?",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_01/slide_023.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0062",
-    "question": "What does the slide suggest we consider at the phonetics/phonology/morphology level?",
-    "answer": "What words (or subwords) are we dealing with?",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_01/slide_009.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0063",
-    "question": "What does the slide suggest as a possible solution to rule out bad sentences?",
-    "answer": "Using 4-grams, 5-grams, ... 50-grams.",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_005.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0064",
-    "question": "What does the non-terminal 'V' represent in the grammar?",
-    "answer": "V \u2192 likes",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_012.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0065",
-    "question": "What was the issue John faced with buying coffee?",
-    "answer": "It turned out to be too expensive.",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_01/slide_020.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_01",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0066",
-    "question": "What is the main topic of the slide?",
-    "answer": "Probabilistic Context-Free Grammar: Randomly Sampling a Sentence",
-    "category": "text_only",
-    "difficulty": "easy",
-    "evidence_slides": [
-      "lecture_02/slide_021.png"
-    ],
-    "course": "cs601",
-    "lecture": "lecture_02",
-    "requires_multi_slide": false,
-    "metadata": {
-      "annotator": "llm_openrouter/gpt-4o",
-      "curation": "auto_filtered"
-    }
-  },
-  {
-    "question_id": "cs601_q0067",
-    "question": "What is the main topic of the slide?",
-    "answer": "Word trigrams: A good model of English?",
-    "category": "text_only",
+    "question": "How many sentences are marked with a question mark?",
+    "answer": "Three sentences are marked with a question mark.",
+    "category": "layout_aware",
     "difficulty": "easy",
     "evidence_slides": [
       "lecture_02/slide_002.png"
@@ -1139,16 +1037,118 @@
     }
   },
   {
-    "question_id": "cs601_q0068",
-    "question": "What did John think was good every few hours?",
-    "answer": "A coffee",
-    "category": "text_only",
-    "difficulty": "easy",
+    "question_id": "cs601_q0062",
+    "question": "Which sentence in the 'Huge set of choices' is not related to the translation task?",
+    "answer": "Jon is happy today.",
+    "category": "layout_aware",
+    "difficulty": "medium",
     "evidence_slides": [
-      "lecture_01/slide_017.png"
+      "lecture_03/slide_010.png"
     ],
     "course": "cs601",
-    "lecture": "lecture_01",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0063",
+    "question": "What are the counts from the Brown corpus for the probability p(h | BOS, BOS)?",
+    "answer": "The counts are 4470/52108.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_027.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0064",
+    "question": "What does the 'likelihood' box contain in terms of probabilities?",
+    "answer": "p(SOUND=uhh | MEAN=gimme), p(SOUND=uhh | MEAN=changeme), p(SOUND=uhh | MEAN=loveme)",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_011.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0065",
+    "question": "What is the relationship between smoothing and the balance between bias and variance?",
+    "answer": "Increasing smoothing increases bias and decreases variance.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_06/slide_021.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0066",
+    "question": "Compare the present and past forms of the verb 'eat' in the perfect progressive aspect.",
+    "answer": "Present: has been eating, Past: had been eating",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_07/slide_023.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0067",
+    "question": "Which words in the sentence correspond to the 'Det' category?",
+    "answer": "\"the\" and \"a\"",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_016.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0068",
+    "question": "What is the syntactic structure for the phrase 'ate the'?",
+    "answer": "1 V ate . 2 Det the .",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_09/slide_046.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_09",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -1157,15 +1157,15 @@
   },
   {
     "question_id": "cs601_q0069",
-    "question": "What is the sequence of letters useful for solving cryptograms?",
-    "answer": "ETAOINSHRDLU",
-    "category": "text_only",
-    "difficulty": "easy",
+    "question": "What elements are involved in the goal formula for the Viterbi algorithm?",
+    "answer": "The elements are start_symbol, 0, and sentence_length.",
+    "category": "layout_aware",
+    "difficulty": "medium",
     "evidence_slides": [
-      "lecture_01/slide_024.png"
+      "lecture_10/slide_069.png"
     ],
     "course": "cs601",
-    "lecture": "lecture_01",
+    "lecture": "lecture_10",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -1174,12 +1174,114 @@
   },
   {
     "question_id": "cs601_q0070",
-    "question": "What is the initial rule for a sentence in the context-free grammar?",
-    "answer": "S \u2192 N V N",
-    "category": "text_only",
-    "difficulty": "easy",
+    "question": "How does the complexity of the sentences change as you move down the slide?",
+    "answer": "The sentences become more complex with additional layers of embedding.",
+    "category": "layout_aware",
+    "difficulty": "medium",
     "evidence_slides": [
-      "lecture_02/slide_012.png"
+      "lecture_11/slide_039.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0071",
+    "question": "How are the nodes 'VP_stem' and 'VP_inf' related in the syntactic tree?",
+    "answer": "The 'VP_stem' node is a parent of the 'VP_inf' node.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_13/slide_061.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0072",
+    "question": "What features are used as input to compute the gold features?",
+    "answer": "The red features: Asian, Black, educated, female, income.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_043.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0073",
+    "question": "Compare the trends of 'Ice Creams' and 'p(H)' over the diary days.",
+    "answer": "'Ice Creams' fluctuates while 'p(H)' increases and then stabilizes.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_15/slide_020.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0074",
+    "question": "What is the non-terminal in cell (0, 1) with the highest probability?",
+    "answer": "S with probability 2^-8",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_040.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0075",
+    "question": "What does the tag 'P' represent in the sentence 'Time flies like an arrow'?",
+    "answer": "The tag 'P' represents the word 'like'.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_17/slide_075.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0076",
+    "question": "What is the structure of the tree diagram on the left side of the slide?",
+    "answer": "S \u2192 NP VP .",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_017.png"
     ],
     "course": "cs601",
     "lecture": "lecture_02",
@@ -1190,11 +1292,11 @@
     }
   },
   {
-    "question_id": "cs601_q0071",
-    "question": "What is the French sentence provided on the slide?",
-    "answer": "Jon est apparu \u00e0 la t\u00e9l\u00e9vision.",
-    "category": "text_only",
-    "difficulty": "easy",
+    "question_id": "cs601_q0077",
+    "question": "Which sentence is a good match to the input but not good English?",
+    "answer": "TV appeared on Jon.",
+    "category": "table",
+    "difficulty": "medium",
     "evidence_slides": [
       "lecture_03/slide_009.png"
     ],
@@ -1207,16 +1309,16 @@
     }
   },
   {
-    "question_id": "cs601_q0072",
-    "question": "What activity did the narrator stop doing during freshman year?",
-    "answer": "Smoking",
-    "category": "text_only",
-    "difficulty": "easy",
+    "question_id": "cs601_q0078",
+    "question": "What is the probability of the word 'horses' according to the model?",
+    "answer": "The probability p(W_i = horses) is approximately 7.2e-5.",
+    "category": "image_diagram",
+    "difficulty": "medium",
     "evidence_slides": [
-      "lecture_01/slide_014.png"
+      "lecture_04/slide_040.png"
     ],
     "course": "cs601",
-    "lecture": "lecture_01",
+    "lecture": "lecture_04",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
@@ -1224,11 +1326,572 @@
     }
   },
   {
-    "question_id": "cs601_q0073",
-    "question": "What does the slide indicate about context-sensitive grammar?",
-    "answer": "A context-sensitive grammar is a set of context-sensitive rules.",
-    "category": "text_only",
-    "difficulty": "easy",
+    "question_id": "cs601_q0079",
+    "question": "What does 'a priori' refer to in the context of this slide?",
+    "answer": "It refers to the prior probabilities p(LANG=english), p(LANG=polish), and p(LANG=xhosa).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_005.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0080",
+    "question": "What mathematical expression represents the goal of maximizing p(training data|\u03b8) on the slide?",
+    "answer": "(\u03a0\u1d62\u207f p_\u03b8(y\u1d62 | x\u1d62)) \u00b7 p_prior(\u03b8)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_053.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0081",
+    "question": "How are the elements 'thrilling Otto' and 'eating Otto' structurally similar?",
+    "answer": "Both follow the pattern [tense=prog, head=thrill/eat] [head=Otto].",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_07/slide_043.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0082",
+    "question": "How many passes are shown in the diagram?",
+    "answer": "Four passes",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_022.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0083",
+    "question": "How many different grammatical labels are associated with the word 'ate'?",
+    "answer": "3 (V ate ., VP ate ., V . ate)",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_09/slide_058.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0084",
+    "question": "How is the value 'S 22' in the table derived?",
+    "answer": "By multiplying the probabilities to get 2^-22.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_10/slide_053.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0085",
+    "question": "What is the predicted structure for the word 'ate' according to the slide?",
+    "answer": "VP . V NP",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_012.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0086",
+    "question": "Which card is below the eight of clubs?",
+    "answer": "The five of hearts is below the eight of clubs.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_012.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0087",
+    "question": "What is the formula for replacing the time variable with an event variable?",
+    "answer": "\u2203e past(e), act(e,swallowing), swallower(e,Gilly), exists(goldfish, swallowee(e)), exists(booth, location(e)), ...",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_030.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0088",
+    "question": "What is the output when the input is [1, 1, 1] according to the diagram?",
+    "answer": "The output is represented by '?'.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_041.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0089",
+    "question": "How is \u00e2 calculated on Day 3 for the path ending at C?",
+    "answer": "\u00e2 is calculated as max(0.008*0.08, 0.056*0.01) = 0.00064.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_031.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0090",
+    "question": "What does the graph on the right represent in the context of Hidden Markov Models?",
+    "answer": "The graph likely represents the result of the E step.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_16/slide_006.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0091",
+    "question": "What is the structure of the parse tree for the sentence 'Time flies like an arrow'?",
+    "answer": "S -> N V P D N",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_17/slide_031.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0092",
+    "question": "What is the equivalent class URL shown in the diagram?",
+    "answer": "http://www.w4.org/2002/07/owl#equivalentClass",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_18/slide_077.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0093",
+    "question": "Compare the cost of processing 1K tokens to 1M tokens using the ada v2 model.",
+    "answer": "1K tokens cost $0.0001, while 1M tokens cost $0.10.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_19/slide_023.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_19",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0094",
+    "question": "What is the root of the sentence in the dependency diagram?",
+    "answer": "reckons",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_025.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0095",
+    "question": "Which sentence is marked as a good match to the input but not good English?",
+    "answer": "TV appeared on Jon.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_03/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_03",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0096",
+    "question": "What are the two outputs related to the definition of p?",
+    "answer": "Generate random text and find event probabilities",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_029.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0097",
+    "question": "What is the formula for p(e | f) in terms of p(f | e) according to Bayes' Theorem?",
+    "answer": "p(e | f) = p(e) p(f | e) / p(f)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_020.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0098",
+    "question": "How is the trigram model's parameter p(s | s, e) estimated from the Brown corpus?",
+    "answer": "2044/21250",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_002.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0099",
+    "question": "What is the head verb of the sentence according to the tree diagram?",
+    "answer": "thrill",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_039.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0100",
+    "question": "What does the label 'rewrites(vp,v,advp)' indicate in the diagram?",
+    "answer": "It indicates a rewrite rule in the parse forest.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_048.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0101",
+    "question": "How many prepositional phrases are used in column 10?",
+    "answer": "Two prepositional phrases: 'in his bed' and 'with a spoon'.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_09/slide_094.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0102",
+    "question": "What is the value associated with 'PP' in the table?",
+    "answer": "2^-12",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_058.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0103",
+    "question": "What is represented by the orange circles in the diagram?",
+    "answer": "The orange circles represent states in the DFA.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_020.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0104",
+    "question": "What does the arrow labeled 'A' point to?",
+    "answer": "An apple on a towel",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_019.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0105",
+    "question": "What does the lambda expression \u03bbx \u03bbe act(e, loving), lover(e, x), lovee(e, M) represent in the context of the slide?",
+    "answer": "It represents the semantic interpretation of the VP_inf.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_060.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0106",
+    "question": "How does the softmax output change as T decreases from 5 to 1/5?",
+    "answer": "The probabilities become more different, approaching one-hot.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_14/slide_025.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0107",
+    "question": "Which month had the highest total probability of sales?",
+    "answer": "March with a probability of 0.126",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_005.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0108",
+    "question": "Which rule has the highest exponent value in the list on the right?",
+    "answer": "2^-6 S \u2192 Vst NP",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_042.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0109",
+    "question": "Identify the components used in calculating the path weight for the word 'flies'.",
+    "answer": "\u03b8_N,V, \u03b8_V,flies, \u03b8_V,flies,i=2, \u03b8_capitalized N,V, \u03b8_x,...",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_17/slide_071.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0110",
+    "question": "How is the test data presented in the slide?",
+    "answer": "The test data includes contexts with unknown senses of 'plant'.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_18/slide_032.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0111",
+    "question": "What should be omitted if the draft is a top-level post?",
+    "answer": "The original post, replies, and final reply should be omitted.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_19/slide_041.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_19",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0112",
+    "question": "What is the example of a context-sensitive grammar rule on the slide?",
+    "answer": "The example is 'S \u2192 N V S // L_R'.",
+    "category": "image_diagram",
+    "difficulty": "medium",
     "evidence_slides": [
       "lecture_02/slide_018.png"
     ],
@@ -1241,13 +1904,285 @@
     }
   },
   {
-    "question_id": "cs601_q0074",
-    "question": "What is the context-free grammar rule for a sentence (S) in the syntactic rules?",
-    "answer": "S \u2192 NP VP .",
-    "category": "text_only",
-    "difficulty": "easy",
+    "question_id": "cs601_q0113",
+    "question": "What is the probability of Valentine given Epitaph is yes?",
+    "answer": "The probability is 1/3.",
+    "category": "image_diagram",
+    "difficulty": "medium",
     "evidence_slides": [
-      "lecture_02/slide_014.png"
+      "lecture_04/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0114",
+    "question": "What does the posterior odds ratio compare?",
+    "answer": "p(hoof | pos) / p(\u00achoof | pos)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0115",
+    "question": "What is the formula for calculating p\u0302(baby | see the)?",
+    "answer": "count(see the baby) + \u03bbV (1/V)",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_032.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0116",
+    "question": "What is the head of the verb phrase 'been thrilling Otto'?",
+    "answer": "thrill",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_013.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0117",
+    "question": "What is the relationship between 'end' and 'width' in the pseudocode?",
+    "answer": "Width is iterated from 2 to 'end'.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_041.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0118",
+    "question": "What is the syntactic structure for the entire sentence 'Papa ate the caviar with a spoon'?",
+    "answer": "0 ROOT . S",
+    "category": "table",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_09/slide_077.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0119",
+    "question": "Which rule has the highest score in the cell (0, 2)?",
+    "answer": "S with a score of 13",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_009.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0120",
+    "question": "Which row contains the text '0 NP . Det N'?",
+    "answer": "The third row from the top.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_005.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0121",
+    "question": "Which category has the highest probability of eye movement at the word 'below'?",
+    "answer": "Target",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_013.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0122",
+    "question": "What does the lambda expression '\u03bbx \u03bbe act(e,loving), lover(e,x), lovee(e,M)' represent in the context of the diagram?",
+    "answer": "It represents the semantic interpretation of the VP_inf node.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_061.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0123",
+    "question": "What is the equation shown on the slide?",
+    "answer": "y\u0305 = [1, x\u0305]W",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_038.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0124",
+    "question": "How is the conditional probability p(widget|Jan) calculated?",
+    "answer": "0.005/0.099",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_007.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0125",
+    "question": "How many paths are highlighted in the diagram?",
+    "answer": "Four paths are highlighted.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0126",
+    "question": "Which hidden states are used in the calculation involving 'Aux'?",
+    "answer": "The hidden states h^2_4 and h^2_6 are used.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_17/slide_114.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0127",
+    "question": "Which two words form the noun phrase (NP) under the root 'S'?",
+    "answer": "The plan",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_18/slide_057.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0128",
+    "question": "What activity is depicted in the top-left corner of the image?",
+    "answer": "Taking a walk in the park",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_19/slide_058.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_19",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0129",
+    "question": "What does the 'NP' node expand into according to the tree diagram?",
+    "answer": "NP expands into Det N'.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_016.png"
     ],
     "course": "cs601",
     "lecture": "lecture_02",
@@ -1258,16 +2193,356 @@
     }
   },
   {
-    "question_id": "cs601_q0075",
-    "question": "What is a context-free grammar according to the slide?",
-    "answer": "A context-free grammar is a set of context-free rewrite rules.",
-    "category": "text_only",
-    "difficulty": "easy",
+    "question_id": "cs601_q0130",
+    "question": "How does the slide visually distinguish between different parts of the mathematical expression?",
+    "answer": "Different parts of the expression are distinguished by color.",
+    "category": "layout_aware",
+    "difficulty": "medium",
     "evidence_slides": [
-      "lecture_02/slide_020.png"
+      "lecture_04/slide_024.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0131",
+    "question": "What is the prior odds ratio for hoof-and-mouth disease?",
+    "answer": "0.001 / 0.999",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_014.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0132",
+    "question": "What humorous question is posed by the character in the image?",
+    "answer": "Hey, don\u2019t they teach estimation over in the stats department?",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_008.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0133",
+    "question": "What is the head of the sentence according to the diagram?",
+    "answer": "thrill",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_032.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_07",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0134",
+    "question": "What does the green arrow labeled 'root of parse' indicate in the chart?",
+    "answer": "It indicates where to start following backpointers.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_08/slide_028.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_08",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0135",
+    "question": "What is the sequence of labels for the sentence 'Papa ate the . '?",
+    "answer": "NP VP Det .",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_09/slide_045.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_09",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0136",
+    "question": "What rule is used for 'S' at position 0, 'arrow' 5?",
+    "answer": "S 22",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_10/slide_033.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_10",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0137",
+    "question": "What is the highlighted text in the row labeled '0 NP . NP PP' under column '1'?",
+    "answer": "VP . V NP",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_11/slide_004.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_11",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0138",
+    "question": "Which card is located above the eight of clubs?",
+    "answer": "The five of hearts",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_12/slide_011.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_12",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0139",
+    "question": "What is the logical expression that incorporates tense for 'Gilly swallowed a goldfish'?",
+    "answer": "\u2203t past(t) AND exists(goldfish, \u03bbg swallow(t,Gilly,g))",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_13/slide_028.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_13",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0140",
+    "question": "What are the components of the Alarm function as shown on the slide?",
+    "answer": "The components are delay='20 minutes' and content='turn off the rice'.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_14/slide_130.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_14",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0141",
+    "question": "What is the sequence of tags and words shown in the probability model?",
+    "answer": "Start PN Verb Det (Bill directed a ...)",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_15/slide_027.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_15",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0142",
+    "question": "Which words are associated with VP locations?",
+    "answer": "Time, flies, like, an, arrow",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_16/slide_026.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_16",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0143",
+    "question": "What is the path score from (0, 0) to (3, 3) using the highlighted path?",
+    "answer": "1.3",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "evidence_slides": [
+      "lecture_17/slide_033.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_17",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0144",
+    "question": "What is the relationship between Paul Schuster and Dresden in the diagram?",
+    "answer": "Paul Schuster has a birthPlace relationship with Dresden.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_18/slide_077.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_18",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0145",
+    "question": "What is the price difference between the input and cached input for the gpt-4o model?",
+    "answer": "$1.25",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_19/slide_018.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_19",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0146",
+    "question": "What is the relationship between 'deficit' and 'current' in the diagram?",
+    "answer": "MOD",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_02/slide_025.png"
     ],
     "course": "cs601",
     "lecture": "lecture_02",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0147",
+    "question": "What is the relationship between 'param values' and the Trigram Model?",
+    "answer": "'Param values' are inputs to the Trigram Model.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_04/slide_029.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_04",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0148",
+    "question": "What does the expression 'p( hoof | pos ) / p(\u00achoof | pos)' represent?",
+    "answer": "It represents the posterior odds ratio.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_05/slide_015.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_05",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0149",
+    "question": "What is the original count for 'xyd' and its corresponding smoothed probability?",
+    "answer": "Original count is 2, and the smoothed probability is 1/26.",
+    "category": "table",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_06/slide_015.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_06",
+    "requires_multi_slide": false,
+    "metadata": {
+      "annotator": "llm_openrouter/gpt-4o",
+      "curation": "auto_filtered"
+    }
+  },
+  {
+    "question_id": "cs601_q0150",
+    "question": "What is the value of 'tense' in the top-left diagram?",
+    "answer": "pres",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "evidence_slides": [
+      "lecture_07/slide_052.png"
+    ],
+    "course": "cs601",
+    "lecture": "lecture_07",
     "requires_multi_slide": false,
     "metadata": {
       "annotator": "llm_openrouter/gpt-4o",
