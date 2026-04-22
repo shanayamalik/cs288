@@ -27,6 +27,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from baselines.text_only import run_text_only_baseline
 from baselines.zero_shot_vlm import run_zero_shot_vlm_baseline
+from baselines.closed_book import run_closed_book_baseline
 from evaluate import evaluate, print_results_table
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -143,7 +144,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run SlideQA baselines and evaluate")
     parser.add_argument("--course", required=True)
     parser.add_argument("--model", default="openai/gpt-4o", help="OpenRouter model for all baselines")
-    parser.add_argument("--only", choices=["text_only", "zero_shot_vlm"], help="Run only one baseline")
+    parser.add_argument("--only", choices=["text_only", "zero_shot_vlm", "closed_book"], help="Run only one baseline")
     parser.add_argument("--rate-limit", type=float, default=1.5, help="Seconds between API calls")
     args = parser.parse_args()
 
@@ -182,6 +183,31 @@ def main():
         # Save detailed results
         with open(RESULTS_DIR / f"{args.course}_text_only_details.json", "w") as f:
             json.dump(text_results, f, indent=2)
+
+    # ── Closed-book baseline ──
+    if args.only is None or args.only == "closed_book":
+        logger.info("=" * 50)
+        logger.info("Running CLOSED-BOOK baseline (question only, no context)")
+        logger.info("=" * 50)
+        cb_preds_path = RESULTS_DIR / f"{args.course}_closed_book_preds.json"
+
+        if cb_preds_path.exists():
+            logger.info(f"Loading cached predictions from {cb_preds_path}")
+            with open(cb_preds_path) as f:
+                cb_preds = json.load(f)
+        else:
+            cb_preds = run_closed_book_baseline(
+                qa_pairs, args.course, model=args.model, rate_limit=args.rate_limit
+            )
+            save_predictions(cb_preds, cb_preds_path)
+
+        cb_results = evaluate(qa_pairs, cb_preds)
+        print_results_table(cb_results, "Closed-Book (No Context)")
+        all_results["closed_book"] = cb_results
+
+        # Save detailed results
+        with open(RESULTS_DIR / f"{args.course}_closed_book_details.json", "w") as f:
+            json.dump(cb_results, f, indent=2)
 
     # ── Zero-shot VLM baseline ──
     if args.only is None or args.only == "zero_shot_vlm":

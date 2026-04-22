@@ -1,0 +1,2438 @@
+{
+  "per_question": [
+    {
+      "question_id": "cs601_q0001",
+      "question": "Why did John find it difficult to continue getting coffee?",
+      "gold_answer": "It turned out to be too expensive there.",
+      "predicted_answer": "Without specific context from the lecture material, it's unclear why John found it difficult to continue getting coffee. Possible reasons could include logistical issues, personal preferences, or external constraints.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_014.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.11111111111111112
+      }
+    },
+    {
+      "question_id": "cs601_q0002",
+      "question": "What are the two forms of strings allowed in the formal language equivalent mentioned?",
+      "gold_answer": "The forms are a x* b and c x* d.",
+      "predicted_answer": "The two forms of strings allowed in the formal language equivalent are typically \"terminal symbols\" and \"non-terminal symbols.\" Terminal symbols are the basic symbols from which strings are formed, while non-terminal symbols are used to define the structure and rules of the language.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_010.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.13043478260869565
+      }
+    },
+    {
+      "question_id": "cs601_q0003",
+      "question": "What is the correct English translation for 'Jon est apparu \u00e0 la t\u00e9l\u00e9vision' according to the slide?",
+      "gold_answer": "Jon appeared on TV.",
+      "predicted_answer": "Jon appeared on television.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_010.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.75
+      }
+    },
+    {
+      "question_id": "cs601_q0004",
+      "question": "What is the significance of the counts from the Brown corpus?",
+      "gold_answer": "They provide empirical data for calculating probabilities in the notation.",
+      "predicted_answer": "The counts from the Brown Corpus are significant because they provide empirical data on word frequency and usage patterns in American English from the 1960s. This information is crucial for developing statistical models in natural language processing, such as language modeling, part-of-speech tagging, and syntactic parsing, as it helps in understanding language structure and informing probabilistic approaches.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_026.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1904761904761905
+      }
+    },
+    {
+      "question_id": "cs601_q0005",
+      "question": "How is the probability p(A=a | B=b) maximized according to the slide?",
+      "gold_answer": "It is maximized by p(A=a) p(B=b | A=a) / p(B=b).",
+      "predicted_answer": "The probability \\( p(A=a | B=b) \\) is maximized by choosing \\( a \\) such that the conditional probability \\( p(A=a | B=b) \\) is the highest among all possible values of \\( A \\) given \\( B=b \\). This typically involves finding the value of \\( a \\) that maximizes the likelihood of observing \\( A=a \\) when \\( B=b \\) is known.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_008.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.18181818181818182
+      }
+    },
+    {
+      "question_id": "cs601_q0006",
+      "question": "What is suggested as a way to make a better guess for a rare context's event rate?",
+      "gold_answer": "Aggregating the rare context with other contexts.",
+      "predicted_answer": "A suggested way to make a better guess for a rare context's event rate is to use smoothing techniques, such as Laplace smoothing or back-off models, which adjust the probability estimates to account for unseen events by redistributing some probability mass from more frequent events.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_046.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0851063829787234
+      }
+    },
+    {
+      "question_id": "cs601_q0007",
+      "question": "How does the slide suggest enriching the interfaces of tree coordinates?",
+      "gold_answer": "By using the notation S[attributes...] = NP[attributes...] VP[attributes...]",
+      "predicted_answer": "The slide suggests enriching the interfaces of tree coordinates by incorporating additional linguistic information, such as syntactic or semantic annotations, to enhance the representation and analysis of the tree structures.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_002.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0625
+      }
+    },
+    {
+      "question_id": "cs601_q0008",
+      "question": "What is the ambiguity mentioned in the fifth pass?",
+      "gold_answer": "507 is ambiguous only because VP 17 is.",
+      "predicted_answer": "The ambiguity in the fifth pass typically refers to syntactic or semantic ambiguity in natural language processing, where a sentence or phrase can be interpreted in multiple ways. Without specific context from the lecture material, it's difficult to pinpoint the exact ambiguity, but it often involves issues like word sense disambiguation, structural ambiguity, or anaphora resolution.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_021.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0009",
+      "question": "What is the significance of completing A in the context of Earley's Algorithm?",
+      "gold_answer": "It can be attached to hypotheses immediately preceding the A.",
+      "predicted_answer": "In Earley's Algorithm, completing a state A refers to the process of recognizing that a non-terminal A has been successfully parsed according to the grammar rules. This allows the algorithm to update the parse state by moving the dot past A in the parse chart, enabling further parsing steps and potentially completing higher-level non-terminals that depend on A.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_09/slide_004.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.03703703703703704
+      }
+    },
+    {
+      "question_id": "cs601_q0010",
+      "question": "How is chart[X,start,end] updated in the algorithm?",
+      "gold_answer": "chart[X,start,end] \u2295= semiring_weight(R) \u2297 chart[Y,start,mid] \u2297 chart[Z,mid,end]",
+      "predicted_answer": "In a chart parsing algorithm, `chart[X, start, end]` is updated by adding a new entry when a rule in the grammar is applied successfully. This typically involves checking if a sequence of constituents matches a production rule, and if so, recording the non-terminal `X` spanning from `start` to `end` in the chart. This update is done by combining existing entries in the chart that cover subparts of the input, ensuring that the new entry reflects a valid parse according to the grammar rules.",
+      "category": "text_only",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_10/slide_076.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0011",
+      "question": "What is the condition for iterative deepening?",
+      "gold_answer": "Throw x away if p(x) < 10^-200.",
+      "predicted_answer": "The condition for iterative deepening is that it combines the benefits of depth-first and breadth-first search by repeatedly applying depth-limited search with increasing depth limits until a solution is found. It is typically used when the search space is large and the depth of the solution is unknown.",
+      "category": "text_only",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_11/slide_030.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0012",
+      "question": "How does the slide suggest expressing 'study the apple on the towel' using PCFG?",
+      "gold_answer": "VP[head=study] \u2192 VP[head=study] PP[head=on]",
+      "predicted_answer": "The slide likely suggests expressing 'study the apple on the towel' using a Probabilistic Context-Free Grammar (PCFG) by breaking down the sentence into its constituent parts and assigning probabilities to each production rule. This involves creating a parse tree where each node represents a grammatical structure, such as a noun phrase (NP) or prepositional phrase (PP), and each branch represents a probabilistic rule that generates the structure. The sentence could be parsed as:\n\n1. S -> VP (Verb Phrase)\n2. VP -> V NP PP (Verb, Noun Phrase, Prepositional Phrase)\n3. V -> 'study'\n4. NP -> Det N (Determiner, Noun)\n5. Det -> 'the'\n6. N -> 'apple'\n7. PP -> P NP (Preposition, Noun Phrase)\n8. P -> 'on'\n9. NP -> Det N\n10. Det -> 'the'\n11. N -> 'towel'\n\nEach rule would have an associated probability based on its likelihood in the language model.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_002.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0013",
+      "question": "How does the logical expression change when 'every booth' is used instead of 'a booth'?",
+      "gold_answer": "The expression changes from 'exists(booth, location(e))' to 'all(booth, \u03bbb location(e,b))'.",
+      "predicted_answer": "When 'every booth' is used instead of 'a booth', the logical expression changes from existential quantification to universal quantification. 'A booth' implies the existence of at least one booth that satisfies a condition (\u2203x), while 'every booth' implies that all booths satisfy the condition (\u2200x).",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_035.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.16666666666666666
+      }
+    },
+    {
+      "question_id": "cs601_q0014",
+      "question": "What is the problem with the sequence 'tell V/1 me NP/1 VP/2 in P/1 20 Det/1 minutes N/1 NP/2 VP/2 ...'?",
+      "gold_answer": "No rule VP -> P NP.",
+      "predicted_answer": "The problem with the sequence is that it contains incorrect syntactic annotations. The tags like \"V/1\", \"NP/1\", \"VP/2\", etc., are meant to indicate syntactic categories and their hierarchical relationships, but the sequence appears to have mismatched or inconsistent annotations, particularly with the use of indices (e.g., \"NP/1\", \"VP/2\") that do not clearly establish a coherent structure or relationship between the elements. This can lead to confusion in parsing or understanding the intended syntactic structure.",
+      "category": "text_only",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_127.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0015",
+      "question": "Why do we divide the column by Z=0.99?",
+      "gold_answer": "To ensure the probabilities sum to 1.",
+      "predicted_answer": "Dividing a column by \\( Z = 0.99 \\) is likely a normalization step to scale the values within a specific range, often to prevent numerical instability or to ensure that the values are within a desired range for further processing. This could be part of a probability distribution normalization where the sum should be close to 1, or to prevent values from reaching extreme magnitudes in computations.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_007.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.15873015873015872
+      }
+    },
+    {
+      "question_id": "cs601_q0016",
+      "question": "What does the smallest box in the diagram represent?",
+      "gold_answer": "Training sentences",
+      "predicted_answer": "I'm sorry, I can't provide an answer without seeing the diagram. Could you provide more context or details about the diagram?",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_006.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0017",
+      "question": "What is the approximate value of p(Wi = horses | Ti = t) * p(Ti = t, i=1)?",
+      "gold_answer": "2.4e-5",
+      "predicted_answer": "The approximate value of \\( p(W_i = \\text{horses} \\mid T_i = t) \\times p(T_i = t, i=1) \\) cannot be determined without specific data or context. These probabilities depend on the particular model and dataset being used. Typically, you would need the conditional probability of the word \"horses\" given the tag \\( t \\), and the joint probability of the tag \\( t \\) at position \\( i=1 \\).",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_04/slide_042.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0018",
+      "question": "How are the probabilities for different languages represented in the slide?",
+      "gold_answer": "They are represented as p_english(SENT=x), p_polish(SENT=x), p_xhosa(SENT=x).",
+      "predicted_answer": "The probabilities for different languages are typically represented using a probability distribution, often visualized as a bar chart or a table, where each language is associated with a probability value indicating its likelihood.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_004.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.17142857142857143
+      }
+    },
+    {
+      "question_id": "cs601_q0019",
+      "question": "What is the mathematical expression for the total probability?",
+      "gold_answer": "(\u221e+3)/(\u221e+3)",
+      "predicted_answer": "The mathematical expression for the total probability is given by:\n\n\\[ P(A) = \\sum_{i} P(A \\cap B_i) = \\sum_{i} P(A \\mid B_i) P(B_i) \\]\n\nwhere \\( \\{B_i\\} \\) is a partition of the sample space.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_012.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0020",
+      "question": "What is the relationship between 'thrilling' and 'Otto' in the sentence structure?",
+      "gold_answer": "'Thrilling' is the verb acting on the noun phrase 'Otto'.",
+      "predicted_answer": "In a sentence structure, 'thrilling' is likely an adjective describing a noun, while 'Otto' is likely a proper noun or subject. The relationship is that 'thrilling' could be describing an action or characteristic associated with 'Otto'.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_007.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2105263157894737
+      }
+    },
+    {
+      "question_id": "cs601_q0021",
+      "question": "What does the red box labeled 'constit(s,0,5)' represent in the diagram?",
+      "gold_answer": "It represents ambiguity in the parse forest.",
+      "predicted_answer": "The red box labeled 'constit(s,0,5)' likely represents a constituent in a syntactic parse tree, covering the span from position 0 to position 5 in the sentence 's'. It indicates a substructure or phrase within the sentence that is treated as a single unit in the parse.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_048.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.18604651162790697
+      }
+    },
+    {
+      "question_id": "cs601_q0022",
+      "question": "What is the result of attaching D to A \u2192 B C . D E?",
+      "gold_answer": "It gives A \u2192 B C D . E.",
+      "predicted_answer": "Attaching D to the production A \u2192 B C . D E results in the production A \u2192 B C D . E. This means that the dot moves past D, indicating that D has been processed in the sequence.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_09/slide_004.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.25641025641025644
+      }
+    },
+    {
+      "question_id": "cs601_q0023",
+      "question": "What mathematical operation is used to combine chart values in the second loop?",
+      "gold_answer": "The operation used is '\u2295= semiring_weight(R) \u2297 chart[Y,start,mid] \u2297 chart[Z,mid,end]'.",
+      "predicted_answer": "In the context of NLP course lecture material, particularly in parsing algorithms like the CKY algorithm, the mathematical operation used to combine chart values in the second loop is typically the summation or addition of probabilities or scores. This operation aggregates the values from different parse trees or derivations to compute the total probability or score for a given non-terminal in the chart.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_10/slide_077.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09523809523809525
+      }
+    },
+    {
+      "question_id": "cs601_q0024",
+      "question": "What does the arrow labeled '3NP5 10' indicate in the diagram?",
+      "gold_answer": "It indicates a prioritized agenda of pending constituents.",
+      "predicted_answer": "I'm sorry, I can't provide a specific answer without more context or details about the diagram. The label '3NP5 10' could refer to a variety of things depending on the context, such as a node or connection in a network, a step in a process, or a reference to a specific concept in NLP. Please provide more information or clarify the context for a more accurate answer.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_032.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.03278688524590164
+      }
+    },
+    {
+      "question_id": "cs601_q0025",
+      "question": "What components are labeled in the diagram on the left?",
+      "gold_answer": "EyeCamera, IR Lightsource, Vertical Eyeposition Adjust, Headband",
+      "predicted_answer": "I'm sorry, I can't see the diagram you're referring to. However, common components in NLP diagrams might include text preprocessing, tokenization, embedding layers, neural network architectures (like RNNs, LSTMs, or Transformers), attention mechanisms, and output layers. If you can provide more context or details, I might be able to give a more specific answer.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_009.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0026",
+      "question": "What is the semantic representation for the VP_inf subtree?",
+      "gold_answer": "\u03bbx \u03bbe act(e,loving), lover(e,x), lovee(e,M)",
+      "predicted_answer": "The semantic representation for the VP_inf (verb phrase with an infinitive) subtree typically involves capturing the action or state described by the verb in its infinitive form, along with its arguments and any modifiers. This can be represented using predicate logic or lambda calculus, where the verb is treated as a predicate and its arguments are variables or constants. For example, for the VP_inf \"to eat an apple,\" the semantic representation might be something like: \u03bbx.eat(x, apple).",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_059.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0027",
+      "question": "What is the sequence of hidden states for the word 'Don'?",
+      "gold_answer": "h_0, h_1, h_2, h_3, h_4",
+      "predicted_answer": "The sequence of hidden states for the word 'Don' would depend on the specific model and context in which it is being processed. In a typical RNN or LSTM model, each character or token in 'Don' would be processed sequentially, updating the hidden state at each step. However, without specific model details or context, it's not possible to provide the exact sequence of hidden states.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_107.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0028",
+      "question": "What is the product of all the edge weights on one path H, H, H?",
+      "gold_answer": "0.5 * 0.7 * 0.7 * 0.7 = 0.1715",
+      "predicted_answer": "The product of all the edge weights on the path H, H, H would depend on the specific weights assigned to the edges in the graph. Without specific values for these edge weights, it's impossible to calculate the product. If each edge weight is known, you would multiply them together to get the product.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_15/slide_011.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0029",
+      "question": "How are the constituents visually connected in the diagram?",
+      "gold_answer": "The constituents are connected through lines forming a hierarchical structure.",
+      "predicted_answer": "In a diagram representing constituents in NLP, they are typically visually connected using tree structures. Nodes represent constituents, and branches or lines connect these nodes to show hierarchical relationships, with the root node at the top and leaf nodes at the bottom.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_16/slide_013.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.21739130434782608
+      }
+    },
+    {
+      "question_id": "cs601_q0030",
+      "question": "What is the sequence of transitions shown in the diagram from BOS to EOS?",
+      "gold_answer": "BOS -> N -> V -> V -> EOS",
+      "predicted_answer": "The sequence of transitions from BOS (Beginning of Sequence) to EOS (End of Sequence) typically involves processing each token in the input text sequentially. This often includes tokenization, embedding, applying a model (like an RNN, Transformer, etc.) to generate hidden states, and finally decoding to produce the output sequence, ending with EOS. The exact sequence can vary depending on the specific NLP model or architecture being used.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_112.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06153846153846154
+      }
+    },
+    {
+      "question_id": "cs601_q0031",
+      "question": "How many sentences are marked as good English according to the n-gram column?",
+      "gold_answer": "Four sentences are marked as good English.",
+      "predicted_answer": "I'm sorry, I don't have access to specific course materials or datasets, so I can't provide an exact number of sentences marked as good English according to the n-gram column. You would need to refer to the specific dataset or lecture material for that information.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2040816326530612
+      }
+    },
+    {
+      "question_id": "cs601_q0032",
+      "question": "What is the probability p(x) for outcome A?",
+      "gold_answer": "1/4",
+      "predicted_answer": "The probability \\( p(x) \\) for outcome A depends on the specific probability distribution or model being used. Without additional context or details about the distribution or data, it is not possible to provide an exact probability.",
+      "category": "table",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_04/slide_050.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0033",
+      "question": "What is the likelihood probability for a sentence given the language is Xhosa?",
+      "gold_answer": "0.00005",
+      "predicted_answer": "The likelihood probability for a sentence given the language is Xhosa would be calculated using a language model trained on Xhosa text. This involves determining the probability of the sentence based on the model's learned distribution of word sequences in Xhosa. The exact probability would depend on the specific language model and the sentence in question.",
+      "category": "table",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_05/slide_017.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0034",
+      "question": "What is the smoothed probability for 'xyd'?",
+      "gold_answer": "201/326",
+      "predicted_answer": "The smoothed probability for 'xyd' would depend on the specific smoothing technique being used (e.g., Laplace smoothing, Good-Turing smoothing, etc.) and the context or dataset in which 'xyd' appears. Generally, smoothing is applied to assign a non-zero probability to unseen events in a language model. Without specific details, it's not possible to provide an exact probability.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_007.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0035",
+      "question": "What is the infinitive form of the verb 'eat' in the progressive aspect?",
+      "gold_answer": "to be eating",
+      "predicted_answer": "The infinitive form of the verb 'eat' in the progressive aspect is \"to be eating.\"",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_023.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.4
+      }
+    },
+    {
+      "question_id": "cs601_q0036",
+      "question": "What is the start position for the end position 4 in the table?",
+      "gold_answer": "The start position for the end position 4 is 4.",
+      "predicted_answer": "I'm sorry, but I need more context or information about the table to provide an accurate answer. Could you please provide additional details or clarify the question?",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_032.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0037",
+      "question": "What is the grammatical structure of the phrase 'Papa ate the caviar with' according to the table?",
+      "gold_answer": "0 ROOT . S",
+      "predicted_answer": "The phrase \"Papa ate the caviar with\" consists of the following grammatical structure:\n\n- \"Papa\" is the subject (noun).\n- \"ate\" is the verb (past tense).\n- \"the caviar\" is the direct object (noun phrase).\n- \"with\" is a preposition, typically introducing a prepositional phrase, but in this case, it is incomplete without an object following it.",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_059.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0038",
+      "question": "Which cell contains the highest value for 'S'?",
+      "gold_answer": "Row 0, Column 4 with a value of 27.",
+      "predicted_answer": "Without specific data or context about the cells and their values for 'S', I cannot determine which cell contains the highest value. Please provide more information or context.",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_10/slide_028.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.058823529411764705
+      }
+    },
+    {
+      "question_id": "cs601_q0039",
+      "question": "What is the value at the intersection of 'flies' and '3' in the table?",
+      "gold_answer": "NP 10",
+      "predicted_answer": "I'm sorry, I can't provide the value at the intersection of 'flies' and '3' without more context or a specific table reference. Could you provide more details or clarify the table you're referring to?",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_031.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0040",
+      "question": "Which product had the highest sales in March?",
+      "gold_answer": "Grommets",
+      "predicted_answer": "I'm sorry, I don't have access to specific sales data for March. You would need to refer to the relevant sales reports or databases to find this information.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_003.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0041",
+      "question": "Which cells contain the label 'NP'?",
+      "gold_answer": "(0, 0), (0, 1), (0, 4), (1, 1), (3, 4)",
+      "predicted_answer": "In the context of NLP, 'NP' typically stands for \"Noun Phrase.\" Cells containing the label 'NP' would be those in a syntactic parse tree or a similar structure that identifies noun phrases within a sentence.",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_16/slide_038.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0042",
+      "question": "What is the minimum weight parse for the entire sentence?",
+      "gold_answer": "S with weight 22",
+      "predicted_answer": "The minimum weight parse for a sentence refers to the parse tree with the lowest total weight, where weight typically represents the cost or likelihood of a particular syntactic structure. To determine this, you would use a parsing algorithm like the CKY algorithm for probabilistic context-free grammars (PCFGs) or another suitable method, depending on the grammar and weights provided. Without specific details about the sentence, grammar, and weights, it's not possible to provide an exact answer.",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_011.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.057971014492753624
+      }
+    },
+    {
+      "question_id": "cs601_q0043",
+      "question": "Which system has higher accuracy on spam?",
+      "gold_answer": "System 1",
+      "predicted_answer": "The system with higher accuracy on spam is the one that correctly identifies a greater proportion of spam and non-spam messages. Without specific system names or data, I can't determine which one has higher accuracy.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_18/slide_023.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.058823529411764705
+      }
+    },
+    {
+      "question_id": "cs601_q0044",
+      "question": "How many novels can be processed with 1 million tokens using the ada v2 model?",
+      "gold_answer": "8 novels.",
+      "predicted_answer": "The number of novels that can be processed with 1 million tokens using the ada v2 model depends on the average length of a novel in tokens. If we assume an average novel contains about 70,000 to 100,000 words, and considering that 1 token is approximately 4 characters or 0.75 words, a novel might be around 100,000 to 150,000 tokens. Therefore, 1 million tokens could process approximately 6 to 10 novels.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_19/slide_023.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.029850746268656723
+      }
+    },
+    {
+      "question_id": "cs601_q0045",
+      "question": "Which English sentence is both good English and a good match to the input?",
+      "gold_answer": "Jon appeared on TV.",
+      "predicted_answer": "To provide an accurate answer, I would need to know the specific input sentence you're referring to. Could you please provide the input sentence?",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0046",
+      "question": "Which line in the chart has the lowest RMSE value?",
+      "gold_answer": "\"ors\" (RMSE=0.0068)",
+      "predicted_answer": "I'm sorry, I cannot see the chart you are referring to. Please provide more context or details about the chart for me to assist you better.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0047",
+      "question": "What is the significance of the purple bars in the chart?",
+      "gold_answer": "The purple bars represent the total number of types, T.",
+      "predicted_answer": "I'm sorry, I can't provide an answer without more context or a description of the chart. Could you provide additional details about the chart or its contents?",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_039.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06451612903225806
+      }
+    },
+    {
+      "question_id": "cs601_q0048",
+      "question": "How does the probability of eye movement change for the 'Relatum-target' category from '5 hearts that is' to 'clubs'?",
+      "gold_answer": "It decreases initially and then increases sharply.",
+      "predicted_answer": "The probability of eye movement for the 'Relatum-target' category typically increases when transitioning from '5 hearts that is' to 'clubs'. This is because the shift in focus from one card suit to another often requires additional cognitive processing, leading to increased attention and eye movement towards the new target category.",
+      "category": "chart_graph",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_12/slide_015.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07547169811320756
+      }
+    },
+    {
+      "question_id": "cs601_q0049",
+      "question": "What does the graph of \u03c3(x) illustrate about its behavior for x < 0?",
+      "gold_answer": "\u03c3(x) is approximately 0 if x < 0.",
+      "predicted_answer": "The graph of the sigmoid function, \u03c3(x), for x < 0 illustrates that it approaches 0 as x decreases. The function is S-shaped, and for negative values of x, it asymptotically approaches 0 but never actually reaches it.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_042.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.24390243902439024
+      }
+    },
+    {
+      "question_id": "cs601_q0050",
+      "question": "How does the probability of p(Observations) change with each iteration in the bar chart?",
+      "gold_answer": "The probability decreases with each iteration.",
+      "predicted_answer": "In the context of an NLP course, if the bar chart represents the probability of observations in an iterative process like the Expectation-Maximization (EM) algorithm, the probability \\( p(\\text{Observations}) \\) typically increases or remains the same with each iteration. This is because the algorithm is designed to maximize the likelihood of the observed data, refining the model parameters to better fit the data with each iteration.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_021.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14285714285714285
+      }
+    },
+    {
+      "question_id": "cs601_q0051",
+      "question": "How does the precision change as recall increases according to the graph?",
+      "gold_answer": "Precision decreases as recall increases.",
+      "predicted_answer": "As recall increases, precision typically decreases. This is because increasing recall often involves retrieving more relevant items, but also more irrelevant ones, which can lower precision.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_18/slide_024.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.32258064516129037
+      }
+    },
+    {
+      "question_id": "cs601_q0052",
+      "question": "What is the approximate probability value at the peak of the 'hor' line?",
+      "gold_answer": "Approximately 0.30",
+      "predicted_answer": "I'm sorry, but I need more context or details about the 'hor' line to provide an accurate answer. Could you please provide additional information or clarify the context?",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0053",
+      "question": "What is the significance of the purple color in the bar chart?",
+      "gold_answer": "The purple color in the bar chart represents novel types.",
+      "predicted_answer": "The significance of the purple color in the bar chart would depend on the context provided in the lecture material. Typically, colors in a bar chart are used to differentiate between categories or data series. If purple is used, it likely represents a specific category or data set that is being highlighted or compared against others. Without specific context, it's not possible to determine its exact significance.",
+      "category": "chart_graph",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_06/slide_041.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.17647058823529416
+      }
+    },
+    {
+      "question_id": "cs601_q0054",
+      "question": "How does the probability of eye movement change for 'Alternative' between the first and second points?",
+      "gold_answer": "It decreases from 0.5 to 0.3.",
+      "predicted_answer": "I'm sorry, but I don't have specific data on eye movement probabilities for the term 'Alternative' between two points. Eye movement studies typically require empirical data collection and analysis, which would be specific to the study in question.",
+      "category": "chart_graph",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_12/slide_014.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.04761904761904762
+      }
+    },
+    {
+      "question_id": "cs601_q0055",
+      "question": "How does the perplexity change over 10 iterations?",
+      "gold_answer": "The perplexity decreases over 10 iterations.",
+      "predicted_answer": "Perplexity typically decreases over 10 iterations as the model learns and improves its predictions.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_020.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5555555555555556
+      }
+    },
+    {
+      "question_id": "cs601_q0056",
+      "question": "What does the graph on the slide compare?",
+      "gold_answer": "The graph compares precision versus recall of good (non-spam) email.",
+      "predicted_answer": "I'm sorry, I can't see the slide or the graph you're referring to. Could you provide more context or details about the graph?",
+      "category": "chart_graph",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_18/slide_026.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06896551724137932
+      }
+    },
+    {
+      "question_id": "cs601_q0057",
+      "question": "What does the dashed line represent in the chart?",
+      "gold_answer": "Dashed lines show backoff probabilities.",
+      "predicted_answer": "I'm sorry, I can't provide a specific answer without seeing the chart. Could you provide more context or details about the chart?",
+      "category": "chart_graph",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_04/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0058",
+      "question": "What sample size corresponds to the histogram with the smoothest distribution?",
+      "gold_answer": "2000000",
+      "predicted_answer": "The histogram with the smoothest distribution typically corresponds to a larger sample size. Larger sample sizes tend to better approximate the underlying probability distribution, resulting in a smoother histogram.",
+      "category": "chart_graph",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_06/slide_017.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0059",
+      "question": "What is the probability of eye movement for the 'Miscellaneous' category at the word 'below'?",
+      "gold_answer": "0.1",
+      "predicted_answer": "I'm sorry, but I don't have specific data on eye movement probabilities for the 'Miscellaneous' category at the word 'below'. This would typically require empirical data from eye-tracking studies.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_013.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0060",
+      "question": "What is the approximate sample size of the histogram in the bottom right corner?",
+      "gold_answer": "The sample size is approximately 60,000.",
+      "predicted_answer": "I'm sorry, I cannot see the histogram you are referring to. Could you provide more context or details?",
+      "category": "chart_graph",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_06/slide_018.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0061",
+      "question": "How many sentences are marked with a question mark?",
+      "gold_answer": "Three sentences are marked with a question mark.",
+      "predicted_answer": "Sentences that are questions are typically marked with a question mark. However, without specific text to analyze, I cannot determine the exact number of sentences marked with a question mark.",
+      "category": "layout_aware",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_002.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.35294117647058826
+      }
+    },
+    {
+      "question_id": "cs601_q0062",
+      "question": "Which sentence in the 'Huge set of choices' is not related to the translation task?",
+      "gold_answer": "Jon is happy today.",
+      "predicted_answer": "Without the specific sentences from the 'Huge set of choices', I can't identify which one is unrelated to the translation task. However, generally, sentences not related to translation tasks might focus on topics like sentiment analysis, topic modeling, or text classification.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_010.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.04761904761904762
+      }
+    },
+    {
+      "question_id": "cs601_q0063",
+      "question": "What are the counts from the Brown corpus for the probability p(h | BOS, BOS)?",
+      "gold_answer": "The counts are 4470/52108.",
+      "predicted_answer": "The Brown corpus does not provide direct counts for specific sequences like p(h | BOS, BOS) because it is a collection of text data rather than a pre-computed probability model. To calculate this probability, you would need to preprocess the corpus to count occurrences of 'h' following two beginning-of-sentence markers (BOS, BOS) and divide by the total number of occurrences of (BOS, BOS) in the corpus.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_027.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.03225806451612903
+      }
+    },
+    {
+      "question_id": "cs601_q0064",
+      "question": "What does the 'likelihood' box contain in terms of probabilities?",
+      "gold_answer": "p(SOUND=uhh | MEAN=gimme), p(SOUND=uhh | MEAN=changeme), p(SOUND=uhh | MEAN=loveme)",
+      "predicted_answer": "The 'likelihood' box contains the probabilities of the observed data given different parameter values or hypotheses. It represents how likely the observed data is under various assumptions.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_011.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0065",
+      "question": "What is the relationship between smoothing and the balance between bias and variance?",
+      "gold_answer": "Increasing smoothing increases bias and decreases variance.",
+      "predicted_answer": "Smoothing in NLP is a technique used to handle the problem of zero probabilities in language models by adjusting probability estimates. It affects the balance between bias and variance: smoothing increases bias by assuming a more uniform distribution of probabilities, but it reduces variance by making the model less sensitive to fluctuations in the training data. This trade-off helps improve the model's generalization to unseen data.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_06/slide_021.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.15151515151515152
+      }
+    },
+    {
+      "question_id": "cs601_q0066",
+      "question": "Compare the present and past forms of the verb 'eat' in the perfect progressive aspect.",
+      "gold_answer": "Present: has been eating, Past: had been eating",
+      "predicted_answer": "Present perfect progressive: \"have been eating\"  \nPast perfect progressive: \"had been eating\"",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_07/slide_023.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.7000000000000001
+      }
+    },
+    {
+      "question_id": "cs601_q0067",
+      "question": "Which words in the sentence correspond to the 'Det' category?",
+      "gold_answer": "\"the\" and \"a\"",
+      "predicted_answer": "The words in the sentence that correspond to the 'Det' (determiner) category are typically articles and demonstratives such as \"the,\" \"a,\" \"an,\" \"this,\" \"that,\" \"these,\" and \"those.\"",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_016.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0909090909090909
+      }
+    },
+    {
+      "question_id": "cs601_q0068",
+      "question": "What is the syntactic structure for the phrase 'ate the'?",
+      "gold_answer": "1 V ate . 2 Det the .",
+      "predicted_answer": "The phrase \"ate the\" consists of a verb (\"ate\") followed by a determiner (\"the\"). In syntactic terms, \"ate\" is the head of a verb phrase (VP), and \"the\" is part of a noun phrase (NP) that typically follows the verb to form a complete VP with an object. However, without a noun following \"the,\" the phrase is incomplete and lacks a full syntactic structure.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_046.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.03773584905660377
+      }
+    },
+    {
+      "question_id": "cs601_q0069",
+      "question": "What elements are involved in the goal formula for the Viterbi algorithm?",
+      "gold_answer": "The elements are start_symbol, 0, and sentence_length.",
+      "predicted_answer": "The goal formula for the Viterbi algorithm involves elements such as the state transition probabilities, the observation likelihoods (emission probabilities), and the initial state probabilities. The algorithm aims to find the most probable sequence of hidden states that results in a given sequence of observed events.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_069.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09090909090909091
+      }
+    },
+    {
+      "question_id": "cs601_q0070",
+      "question": "How does the complexity of the sentences change as you move down the slide?",
+      "gold_answer": "The sentences become more complex with additional layers of embedding.",
+      "predicted_answer": "The complexity of the sentences typically increases as you move down the slide, often starting with simple sentences and progressing to more complex structures to illustrate different NLP concepts.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_039.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.28571428571428575
+      }
+    },
+    {
+      "question_id": "cs601_q0071",
+      "question": "How are the nodes 'VP_stem' and 'VP_inf' related in the syntactic tree?",
+      "gold_answer": "The 'VP_stem' node is a parent of the 'VP_inf' node.",
+      "predicted_answer": "In a syntactic tree, 'VP_stem' and 'VP_inf' typically represent different forms or aspects of a verb phrase (VP). 'VP_stem' refers to the base form of the verb, while 'VP_inf' refers to the infinitive form. They are related as different morphological forms of the verb within the verb phrase structure, often serving different syntactic functions or appearing in different grammatical contexts.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_061.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1
+      }
+    },
+    {
+      "question_id": "cs601_q0072",
+      "question": "What features are used as input to compute the gold features?",
+      "gold_answer": "The red features: Asian, Black, educated, female, income.",
+      "predicted_answer": "Gold features in NLP typically refer to the true, annotated features used for training models. The input features used to compute gold features can vary depending on the task but generally include raw text data, such as words, phrases, or sentences, along with their linguistic annotations like part-of-speech tags, named entity labels, or syntactic structures.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_043.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.03389830508474577
+      }
+    },
+    {
+      "question_id": "cs601_q0073",
+      "question": "Compare the trends of 'Ice Creams' and 'p(H)' over the diary days.",
+      "gold_answer": "'Ice Creams' fluctuates while 'p(H)' increases and then stabilizes.",
+      "predicted_answer": "To compare the trends of 'Ice Creams' and 'p(H)' over the diary days, you would typically analyze how each variable changes over time. 'Ice Creams' might represent the number of ice creams consumed, while 'p(H)' could denote the probability of a certain event, such as hot weather. You would look for patterns, such as whether ice cream consumption increases on days with higher 'p(H)' values, indicating a correlation between hot weather and ice cream consumption. Without specific data, it's not possible to provide a detailed comparison, but generally, you would expect 'Ice Creams' to increase with higher 'p(H)' if 'p(H)' represents favorable conditions for ice cream consumption.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_15/slide_020.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.11009174311926605
+      }
+    },
+    {
+      "question_id": "cs601_q0074",
+      "question": "What is the non-terminal in cell (0, 1) with the highest probability?",
+      "gold_answer": "S with probability 2^-8",
+      "predicted_answer": "I'm sorry, I can't determine the non-terminal in cell (0, 1) with the highest probability without specific details from the lecture material or context about the parsing table or chart being referenced.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_040.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.125
+      }
+    },
+    {
+      "question_id": "cs601_q0075",
+      "question": "What does the tag 'P' represent in the sentence 'Time flies like an arrow'?",
+      "gold_answer": "The tag 'P' represents the word 'like'.",
+      "predicted_answer": "In the sentence \"Time flies like an arrow,\" the tag 'P' typically represents a preposition. In this context, 'like' is the preposition.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_17/slide_075.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3636363636363636
+      }
+    },
+    {
+      "question_id": "cs601_q0076",
+      "question": "What is the structure of the tree diagram on the left side of the slide?",
+      "gold_answer": "S \u2192 NP VP .",
+      "predicted_answer": "I'm sorry, I can't see the slide or the tree diagram you're referring to. However, tree diagrams in NLP often represent syntactic structures, such as parse trees, which show the hierarchical relationship between words in a sentence. They typically have a root node, branches for different syntactic categories (like NP for noun phrase, VP for verb phrase), and leaf nodes representing the words themselves.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_017.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06451612903225806
+      }
+    },
+    {
+      "question_id": "cs601_q0077",
+      "question": "Which sentence is a good match to the input but not good English?",
+      "gold_answer": "TV appeared on Jon.",
+      "predicted_answer": "The sentence is likely grammatically incorrect or awkwardly phrased but semantically similar to the input.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0078",
+      "question": "What is the probability of the word 'horses' according to the model?",
+      "gold_answer": "The probability p(W_i = horses) is approximately 7.2e-5.",
+      "predicted_answer": "The probability of the word 'horses' according to a language model depends on the specific model and the context in which 'horses' appears. Language models calculate probabilities based on training data and context, so without additional information about the model or context, it's impossible to provide an exact probability.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_040.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.08333333333333333
+      }
+    },
+    {
+      "question_id": "cs601_q0079",
+      "question": "What does 'a priori' refer to in the context of this slide?",
+      "gold_answer": "It refers to the prior probabilities p(LANG=english), p(LANG=polish), and p(LANG=xhosa).",
+      "predicted_answer": "In the context of NLP, 'a priori' refers to knowledge or assumptions that are known or assumed before observing the data. It often involves pre-existing beliefs or theoretical frameworks that guide the analysis or interpretation of linguistic data.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_005.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.13953488372093023
+      }
+    },
+    {
+      "question_id": "cs601_q0080",
+      "question": "What mathematical expression represents the goal of maximizing p(training data|\u03b8) on the slide?",
+      "gold_answer": "(\u03a0\u1d62\u207f p_\u03b8(y\u1d62 | x\u1d62)) \u00b7 p_prior(\u03b8)",
+      "predicted_answer": "The mathematical expression representing the goal of maximizing \\( p(\\text{training data}|\\theta) \\) is typically the likelihood function, which can be expressed as:\n\n\\[ \\mathcal{L}(\\theta) = p(\\text{training data}|\\theta) \\]\n\nIn practice, this is often done by maximizing the log-likelihood:\n\n\\[ \\log \\mathcal{L}(\\theta) = \\log p(\\text{training data}|\\theta) \\]",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_053.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0081",
+      "question": "How are the elements 'thrilling Otto' and 'eating Otto' structurally similar?",
+      "gold_answer": "Both follow the pattern [tense=prog, head=thrill/eat] [head=Otto].",
+      "predicted_answer": "Both \"thrilling Otto\" and \"eating Otto\" are structurally similar as they consist of a verb followed by a noun. In both cases, \"Otto\" is the noun being acted upon by the verb \"thrilling\" or \"eating.\" This structure is typical of verb phrases where the verb directly affects the noun.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_07/slide_043.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.04081632653061224
+      }
+    },
+    {
+      "question_id": "cs601_q0082",
+      "question": "How many passes are shown in the diagram?",
+      "gold_answer": "Four passes",
+      "predicted_answer": "I'm sorry, I can't see the diagram. Could you provide more context or describe the diagram?",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_022.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0083",
+      "question": "How many different grammatical labels are associated with the word 'ate'?",
+      "gold_answer": "3 (V ate ., VP ate ., V . ate)",
+      "predicted_answer": "The word \"ate\" is typically associated with one grammatical label: it is the past tense of the verb \"eat.\"",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_058.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.08695652173913043
+      }
+    },
+    {
+      "question_id": "cs601_q0084",
+      "question": "How is the value 'S 22' in the table derived?",
+      "gold_answer": "By multiplying the probabilities to get 2^-22.",
+      "predicted_answer": "I'm sorry, I can't determine how the value 'S 22' is derived without additional context or information about the table and its contents. Please provide more details or specify the context in which 'S 22' appears.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_10/slide_053.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0085",
+      "question": "What is the predicted structure for the word 'ate' according to the slide?",
+      "gold_answer": "VP . V NP",
+      "predicted_answer": "The predicted structure for the word 'ate' is likely a verb structure, typically consisting of a root or base form. In linguistic terms, it might be represented as a past tense form of the verb 'eat'.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_012.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0086",
+      "question": "Which card is below the eight of clubs?",
+      "gold_answer": "The five of hearts is below the eight of clubs.",
+      "predicted_answer": "In a standard deck of cards, there is no specific card that is always below the eight of clubs, as the arrangement of cards can vary. If you are referring to a specific card trick or arrangement, additional context would be needed to provide an accurate answer.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_012.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.24
+      }
+    },
+    {
+      "question_id": "cs601_q0087",
+      "question": "What is the formula for replacing the time variable with an event variable?",
+      "gold_answer": "\u2203e past(e), act(e,swallowing), swallower(e,Gilly), exists(goldfish, swallowee(e)), exists(booth, location(e)), ...",
+      "predicted_answer": "The formula for replacing the time variable with an event variable typically involves using event-based modeling techniques, such as point processes or survival analysis. In these contexts, time is often replaced by counting processes or hazard functions that model the occurrence of events over time. However, without specific context or a particular model in mind, a general formula cannot be provided.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_030.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0088",
+      "question": "What is the output when the input is [1, 1, 1] according to the diagram?",
+      "gold_answer": "The output is represented by '?'.",
+      "predicted_answer": "I'm sorry, I can't provide the output without seeing the specific diagram you're referring to. Could you provide more details or describe the diagram?",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_041.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.08
+      }
+    },
+    {
+      "question_id": "cs601_q0089",
+      "question": "How is \u00e2 calculated on Day 3 for the path ending at C?",
+      "gold_answer": "\u00e2 is calculated as max(0.008*0.08, 0.056*0.01) = 0.00064.",
+      "predicted_answer": "To calculate \u00e2 (alpha) on Day 3 for the path ending at C, you would typically use the forward algorithm in a Hidden Markov Model (HMM) context. This involves summing over all possible paths that could lead to state C on Day 3, considering the transition probabilities from previous states to C and the emission probability of the observed event at Day 3 given state C. If specific probabilities or observations are provided in your course material, you would apply those values to compute the exact alpha value.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_031.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.022727272727272728
+      }
+    },
+    {
+      "question_id": "cs601_q0090",
+      "question": "What does the graph on the right represent in the context of Hidden Markov Models?",
+      "gold_answer": "The graph likely represents the result of the E step.",
+      "predicted_answer": "In the context of Hidden Markov Models (HMMs), the graph on the right typically represents the state transition diagram. This diagram illustrates the states of the model, the possible transitions between these states, and the probabilities associated with each transition. It may also include emission probabilities, which show the likelihood of observing a particular output from each state.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_16/slide_006.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.10909090909090909
+      }
+    },
+    {
+      "question_id": "cs601_q0091",
+      "question": "What is the structure of the parse tree for the sentence 'Time flies like an arrow'?",
+      "gold_answer": "S -> N V P D N",
+      "predicted_answer": "The parse tree for the sentence \"Time flies like an arrow\" can be structured as follows:\n\n- S (Sentence)\n  - NP (Noun Phrase)\n    - N (Noun): Time\n  - VP (Verb Phrase)\n    - V (Verb): flies\n    - PP (Prepositional Phrase)\n      - P (Preposition): like\n      - NP (Noun Phrase)\n        - Det (Determiner): an\n        - N (Noun): arrow\n\nThis structure assumes \"Time\" is the subject, \"flies\" is the verb, and \"like an arrow\" is a prepositional phrase modifying the verb.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_031.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.15625000000000003
+      }
+    },
+    {
+      "question_id": "cs601_q0092",
+      "question": "What is the equivalent class URL shown in the diagram?",
+      "gold_answer": "http://www.w4.org/2002/07/owl#equivalentClass",
+      "predicted_answer": "I'm sorry, I don't have access to specific diagrams or course materials. If you can provide more context or details about the diagram, I might be able to help.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_18/slide_077.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0093",
+      "question": "Compare the cost of processing 1K tokens to 1M tokens using the ada v2 model.",
+      "gold_answer": "1K tokens cost $0.0001, while 1M tokens cost $0.10.",
+      "predicted_answer": "The cost of processing 1K tokens using the ada v2 model is significantly lower than processing 1M tokens. While exact pricing can vary, typically, the cost scales linearly with the number of tokens. Therefore, processing 1M tokens would be approximately 1,000 times more expensive than processing 1K tokens. For precise pricing, refer to the latest pricing details from the model provider.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_19/slide_023.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.21874999999999994
+      }
+    },
+    {
+      "question_id": "cs601_q0094",
+      "question": "What is the root of the sentence in the dependency diagram?",
+      "gold_answer": "reckons",
+      "predicted_answer": "The root of a sentence in a dependency diagram is typically the main verb or the main action of the sentence. It is the word that all other words are directly or indirectly connected to in the structure of the sentence.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0095",
+      "question": "Which sentence is marked as a good match to the input but not good English?",
+      "gold_answer": "TV appeared on Jon.",
+      "predicted_answer": "The sentence marked as a good match to the input but not good English is: \"He go to store yesterday.\"",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_009.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0096",
+      "question": "What are the two outputs related to the definition of p?",
+      "gold_answer": "Generate random text and find event probabilities",
+      "predicted_answer": "The two outputs related to the definition of p in the context of NLP typically refer to the probability distribution over possible outcomes and the predicted class or token based on that distribution.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_029.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.05714285714285715
+      }
+    },
+    {
+      "question_id": "cs601_q0097",
+      "question": "What is the formula for p(e | f) in terms of p(f | e) according to Bayes' Theorem?",
+      "gold_answer": "p(e | f) = p(e) p(f | e) / p(f)",
+      "predicted_answer": "According to Bayes' Theorem, the formula for \\( p(e | f) \\) in terms of \\( p(f | e) \\) is:\n\n\\[ p(e | f) = \\frac{p(f | e) \\cdot p(e)}{p(f)} \\]",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_020.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3846153846153846
+      }
+    },
+    {
+      "question_id": "cs601_q0098",
+      "question": "How is the trigram model's parameter p(s | s, e) estimated from the Brown corpus?",
+      "gold_answer": "2044/21250",
+      "predicted_answer": "The trigram model's parameter \\( p(s | s, e) \\) is estimated from the Brown corpus by calculating the maximum likelihood estimate (MLE). This involves counting the occurrences of the trigram \\( (e, s, s) \\) and dividing it by the count of the preceding bigram \\( (e, s) \\). Mathematically, it is expressed as:\n\n\\[ p(s | s, e) = \\frac{\\text{Count}(e, s, s)}{\\text{Count}(e, s)} \\]\n\nThis gives the probability of the word \\( s \\) occurring after the sequence \\( (e, s) \\).",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_002.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0099",
+      "question": "What is the head verb of the sentence according to the tree diagram?",
+      "gold_answer": "thrill",
+      "predicted_answer": "The head verb of a sentence in a tree diagram is typically the main verb that serves as the central action or state of the sentence. It is the verb that other elements of the sentence depend on or modify.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_039.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0100",
+      "question": "What does the label 'rewrites(vp,v,advp)' indicate in the diagram?",
+      "gold_answer": "It indicates a rewrite rule in the parse forest.",
+      "predicted_answer": "The label 'rewrites(vp,v,advp)' in the diagram indicates a production rule in a context-free grammar where a verb phrase (vp) is composed of a verb (v) followed by an adverbial phrase (advp).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_048.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19354838709677416
+      }
+    },
+    {
+      "question_id": "cs601_q0101",
+      "question": "How many prepositional phrases are used in column 10?",
+      "gold_answer": "Two prepositional phrases: 'in his bed' and 'with a spoon'.",
+      "predicted_answer": "I'm sorry, I cannot determine the number of prepositional phrases in column 10 without specific text or data from that column.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_094.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.20689655172413793
+      }
+    },
+    {
+      "question_id": "cs601_q0102",
+      "question": "What is the value associated with 'PP' in the table?",
+      "gold_answer": "2^-12",
+      "predicted_answer": "I'm sorry, I don't have access to specific tables or course materials. If 'PP' refers to a concept in NLP, it could stand for \"Perplexity,\" which is a measurement of how well a probability model predicts a sample. If you have more context or details about the table, I might be able to provide a more accurate answer.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_058.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0103",
+      "question": "What is represented by the orange circles in the diagram?",
+      "gold_answer": "The orange circles represent states in the DFA.",
+      "predicted_answer": "I'm sorry, I can't see the diagram you're referring to. Could you provide more context or describe the diagram?",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_020.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0104",
+      "question": "What does the arrow labeled 'A' point to?",
+      "gold_answer": "An apple on a towel",
+      "predicted_answer": "I'm sorry, I can't determine what the arrow labeled 'A' points to without additional context or a visual reference.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_019.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0105",
+      "question": "What does the lambda expression \u03bbx \u03bbe act(e, loving), lover(e, x), lovee(e, M) represent in the context of the slide?",
+      "gold_answer": "It represents the semantic interpretation of the VP_inf.",
+      "predicted_answer": "The lambda expression \u03bbx \u03bbe act(e, loving), lover(e, x), lovee(e, M) represents a semantic representation in natural language processing. It describes an event 'e' of 'loving' where 'x' is the lover and 'M' is the lovee. This expression is used to model the meaning of sentences involving actions and their participants.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_060.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1568627450980392
+      }
+    },
+    {
+      "question_id": "cs601_q0106",
+      "question": "How does the softmax output change as T decreases from 5 to 1/5?",
+      "gold_answer": "The probabilities become more different, approaching one-hot.",
+      "predicted_answer": "As the temperature \\( T \\) decreases from 5 to 1/5, the softmax output becomes more peaked. At higher temperatures (e.g., \\( T = 5 \\)), the output probabilities are more evenly distributed, making the model more uncertain. As \\( T \\) decreases, the distribution becomes sharper, concentrating more probability mass on the largest logits, thus making the model more confident in its predictions.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07142857142857142
+      }
+    },
+    {
+      "question_id": "cs601_q0107",
+      "question": "Which month had the highest total probability of sales?",
+      "gold_answer": "March with a probability of 0.126",
+      "predicted_answer": "I'm sorry, I cannot determine which month had the highest total probability of sales without specific data or context related to the sales figures.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_005.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14814814814814814
+      }
+    },
+    {
+      "question_id": "cs601_q0108",
+      "question": "Which rule has the highest exponent value in the list on the right?",
+      "gold_answer": "2^-6 S \u2192 Vst NP",
+      "predicted_answer": "I'm sorry, but I need more context or information about the list you are referring to in order to provide an accurate answer. Could you please provide the list or more details?",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_042.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0109",
+      "question": "Identify the components used in calculating the path weight for the word 'flies'.",
+      "gold_answer": "\u03b8_N,V, \u03b8_V,flies, \u03b8_V,flies,i=2, \u03b8_capitalized N,V, \u03b8_x,...",
+      "predicted_answer": "In calculating the path weight for the word \"flies\" in a natural language processing context, components typically involved might include:\n\n1. **Word Embeddings**: Numerical representations of the word \"flies\" that capture semantic meaning.\n2. **Contextual Information**: Surrounding words or phrases that provide context for \"flies.\"\n3. **Part-of-Speech Tagging**: Identifying the grammatical role of \"flies\" (e.g., noun or verb).\n4. **Dependency Parsing**: Analyzing the syntactic structure and relationships involving \"flies.\"\n5. **Semantic Similarity**: Measures of similarity between \"flies\" and other words or concepts.\n6. **Frequency and Co-occurrence**: Statistical data on how often \"flies\" appears and with which other words.\n\nThese components help determine the path weight by assessing the semantic and syntactic relevance of \"flies\" within a given text.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_071.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0110",
+      "question": "How is the test data presented in the slide?",
+      "gold_answer": "The test data includes contexts with unknown senses of 'plant'.",
+      "predicted_answer": "The test data is typically presented in the slide as a separate dataset used to evaluate the performance of the NLP model, often shown in comparison to training and validation datasets. It may include examples, metrics, or visualizations like confusion matrices or performance graphs.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_18/slide_032.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.125
+      }
+    },
+    {
+      "question_id": "cs601_q0111",
+      "question": "What should be omitted if the draft is a top-level post?",
+      "gold_answer": "The original post, replies, and final reply should be omitted.",
+      "predicted_answer": "If the draft is a top-level post, introductory or background information that assumes prior context from another post should be omitted.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_19/slide_041.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2857142857142857
+      }
+    },
+    {
+      "question_id": "cs601_q0112",
+      "question": "What is the example of a context-sensitive grammar rule on the slide?",
+      "gold_answer": "The example is 'S \u2192 N V S // L_R'.",
+      "predicted_answer": "An example of a context-sensitive grammar rule is: \u03b1A\u03b2 \u2192 \u03b1\u03b3\u03b2, where A is a non-terminal, \u03b1 and \u03b2 are strings of terminals and/or non-terminals, and \u03b3 is a non-empty string.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_018.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1764705882352941
+      }
+    },
+    {
+      "question_id": "cs601_q0113",
+      "question": "What is the probability of Valentine given Epitaph is yes?",
+      "gold_answer": "The probability is 1/3.",
+      "predicted_answer": "To determine the probability of Valentine given Epitaph is yes, you would typically need a probabilistic model or dataset that provides the necessary conditional probabilities. Without specific data or context, it's not possible to provide an exact probability. If this is part of a specific model or dataset discussed in your NLP course, you would need to refer to that material for the precise probability value.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_014.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06349206349206349
+      }
+    },
+    {
+      "question_id": "cs601_q0114",
+      "question": "What does the posterior odds ratio compare?",
+      "gold_answer": "p(hoof | pos) / p(\u00achoof | pos)",
+      "predicted_answer": "The posterior odds ratio compares the odds of a hypothesis being true after considering new evidence to the odds of it being true before considering the evidence.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_014.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0115",
+      "question": "What is the formula for calculating p\u0302(baby | see the)?",
+      "gold_answer": "count(see the baby) + \u03bbV (1/V)",
+      "predicted_answer": "The formula for calculating \\( \\hat{p}(\\text{baby} \\mid \\text{see the}) \\) in the context of language modeling, specifically using a bigram model, is:\n\n\\[ \\hat{p}(\\text{baby} \\mid \\text{see the}) = \\frac{\\text{Count}(\\text{see the baby})}{\\text{Count}(\\text{see the})} \\]\n\nThis formula represents the probability of the word \"baby\" following the sequence \"see the\" based on observed counts in a corpus.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_032.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.04878048780487805
+      }
+    },
+    {
+      "question_id": "cs601_q0116",
+      "question": "What is the head of the verb phrase 'been thrilling Otto'?",
+      "gold_answer": "thrill",
+      "predicted_answer": "The head of the verb phrase 'been thrilling Otto' is 'thrilling'.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_013.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0117",
+      "question": "What is the relationship between 'end' and 'width' in the pseudocode?",
+      "gold_answer": "Width is iterated from 2 to 'end'.",
+      "predicted_answer": "In pseudocode, 'end' often represents the final position or boundary of a sequence or operation, while 'width' typically refers to the size or extent of a segment within that sequence. The relationship between them can involve calculations where 'end' is determined by adding 'width' to a starting position, or 'width' is derived from the difference between a starting and ending position.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_041.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.16666666666666669
+      }
+    },
+    {
+      "question_id": "cs601_q0118",
+      "question": "What is the syntactic structure for the entire sentence 'Papa ate the caviar with a spoon'?",
+      "gold_answer": "0 ROOT . S",
+      "predicted_answer": "The syntactic structure of the sentence \"Papa ate the caviar with a spoon\" can be broken down as follows:\n\n- Sentence (S)\n  - Noun Phrase (NP): \"Papa\"\n  - Verb Phrase (VP)\n    - Verb (V): \"ate\"\n    - Noun Phrase (NP): \"the caviar\"\n    - Prepositional Phrase (PP)\n      - Preposition (P): \"with\"\n      - Noun Phrase (NP): \"a spoon\"",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_077.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.04545454545454545
+      }
+    },
+    {
+      "question_id": "cs601_q0119",
+      "question": "Which rule has the highest score in the cell (0, 2)?",
+      "gold_answer": "S with a score of 13",
+      "predicted_answer": "Without specific details about the scoring system or the rules being referred to in the cell (0, 2), I cannot accurately determine which rule has the highest score. Typically, this would require access to the specific lecture material or data being analyzed.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_009.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.047619047619047616
+      }
+    },
+    {
+      "question_id": "cs601_q0120",
+      "question": "Which row contains the text '0 NP . Det N'?",
+      "gold_answer": "The third row from the top.",
+      "predicted_answer": "I'm sorry, I cannot determine which row contains the text '0 NP . Det N' without additional context or access to the specific lecture material or dataset you are referring to.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_005.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0625
+      }
+    },
+    {
+      "question_id": "cs601_q0121",
+      "question": "Which category has the highest probability of eye movement at the word 'below'?",
+      "gold_answer": "Target",
+      "predicted_answer": "In NLP, eye movement probabilities at specific words can vary based on context and the type of text being read. Generally, words like 'below' might have higher eye movement probabilities in categories involving instructions, spatial descriptions, or technical documents where positioning or referencing is important. However, without specific data or context, it's difficult to definitively state which category has the highest probability.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_013.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0122",
+      "question": "What does the lambda expression '\u03bbx \u03bbe act(e,loving), lover(e,x), lovee(e,M)' represent in the context of the diagram?",
+      "gold_answer": "It represents the semantic interpretation of the VP_inf node.",
+      "predicted_answer": "The lambda expression '\u03bbx \u03bbe act(e,loving), lover(e,x), lovee(e,M)' represents a semantic representation in natural language processing. It describes an event 'e' of 'loving' where 'x' is the lover and 'M' is the lovee. This expression is used to capture the roles and relationships in the action of loving, with 'x' being the variable for the lover and 'M' being a specific entity that is loved.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_061.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1290322580645161
+      }
+    },
+    {
+      "question_id": "cs601_q0123",
+      "question": "What is the equation shown on the slide?",
+      "gold_answer": "y\u0305 = [1, x\u0305]W",
+      "predicted_answer": "I'm unable to see the slide or its content. However, common equations in NLP course materials might include those related to language models, such as the probability of a sequence of words, P(w1, w2, ..., wn), or equations related to word embeddings, like cosine similarity. If you can provide more context or details, I might be able to give a more specific answer.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_038.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0124",
+      "question": "How is the conditional probability p(widget|Jan) calculated?",
+      "gold_answer": "0.005/0.099",
+      "predicted_answer": "The conditional probability \\( p(\\text{widget}|\\text{Jan}) \\) is calculated using the formula:\n\n\\[ p(\\text{widget}|\\text{Jan}) = \\frac{p(\\text{widget} \\cap \\text{Jan})}{p(\\text{Jan})} \\]\n\nwhere \\( p(\\text{widget} \\cap \\text{Jan}) \\) is the joint probability of both events occurring, and \\( p(\\text{Jan}) \\) is the probability of the event \"Jan\" occurring.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_007.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0125",
+      "question": "How many paths are highlighted in the diagram?",
+      "gold_answer": "Four paths are highlighted.",
+      "predicted_answer": "I'm sorry, I can't see the diagram. Could you provide more context or describe the diagram?",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_014.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0126",
+      "question": "Which hidden states are used in the calculation involving 'Aux'?",
+      "gold_answer": "The hidden states h^2_4 and h^2_6 are used.",
+      "predicted_answer": "In the context of NLP, particularly in sequence models like RNNs or LSTMs, the hidden states used in calculations involving 'Aux' (auxiliary tasks or auxiliary losses) typically refer to the hidden states of the model at each time step. These hidden states capture the contextual information of the input sequence and are used to improve the model's performance on the main task by providing additional training signals through auxiliary tasks.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_114.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14492753623188404
+      }
+    },
+    {
+      "question_id": "cs601_q0127",
+      "question": "Which two words form the noun phrase (NP) under the root 'S'?",
+      "gold_answer": "The plan",
+      "predicted_answer": "To accurately identify the noun phrase (NP) under the root 'S', I would need the specific sentence or context in which this structure appears. Generally, a noun phrase consists of a noun and its modifiers, but without the sentence, I can't specify which two words form the NP. If you provide the sentence, I can help identify the NP.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_18/slide_057.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0128",
+      "question": "What activity is depicted in the top-left corner of the image?",
+      "gold_answer": "Taking a walk in the park",
+      "predicted_answer": "I'm sorry, I can't see images. Could you provide a description or more context about the image?",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_19/slide_058.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0129",
+      "question": "What does the 'NP' node expand into according to the tree diagram?",
+      "gold_answer": "NP expands into Det N'.",
+      "predicted_answer": "The 'NP' (Noun Phrase) node typically expands into a determiner (Det) followed by a noun (N), but it can also include adjectives (Adj), prepositional phrases (PP), or other modifiers. The exact expansion can vary depending on the specific sentence structure.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_016.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.25
+      }
+    },
+    {
+      "question_id": "cs601_q0130",
+      "question": "How does the slide visually distinguish between different parts of the mathematical expression?",
+      "gold_answer": "Different parts of the expression are distinguished by color.",
+      "predicted_answer": "The slide likely uses different colors, fonts, or styles (such as bold or italics) to visually distinguish between different parts of the mathematical expression. It may also use spacing or grouping with brackets to clarify the structure.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_024.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19047619047619047
+      }
+    },
+    {
+      "question_id": "cs601_q0131",
+      "question": "What is the prior odds ratio for hoof-and-mouth disease?",
+      "gold_answer": "0.001 / 0.999",
+      "predicted_answer": "The prior odds ratio for hoof-and-mouth disease would depend on the specific context and population being studied. In general, the prior odds ratio is a measure used in Bayesian statistics to represent the odds of an event occurring before considering new evidence. For hoof-and-mouth disease, this would require specific epidemiological data. Without such data, it's not possible to provide an exact prior odds ratio.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_014.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0132",
+      "question": "What humorous question is posed by the character in the image?",
+      "gold_answer": "Hey, don\u2019t they teach estimation over in the stats department?",
+      "predicted_answer": "I'm sorry, I can't see images. Could you provide more context or describe the image?",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_008.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0133",
+      "question": "What is the head of the sentence according to the diagram?",
+      "gold_answer": "thrill",
+      "predicted_answer": "The head of a sentence in a syntactic diagram is typically the main verb or the root of the sentence.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_032.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0134",
+      "question": "What does the green arrow labeled 'root of parse' indicate in the chart?",
+      "gold_answer": "It indicates where to start following backpointers.",
+      "predicted_answer": "The green arrow labeled 'root of parse' in the chart indicates the root node of the syntactic parse tree, which represents the main verb or the central syntactic element of the sentence.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_028.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0625
+      }
+    },
+    {
+      "question_id": "cs601_q0135",
+      "question": "What is the sequence of labels for the sentence 'Papa ate the . '?",
+      "gold_answer": "NP VP Det .",
+      "predicted_answer": "The sequence of labels for the sentence 'Papa ate the .' would typically be a sequence of part-of-speech (POS) tags. For this sentence, the sequence could be: \n\n- Papa: NNP (Proper Noun, Singular)\n- ate: VBD (Verb, Past Tense)\n- the: DT (Determiner)\n- .: . (Punctuation)\n\nSo, the sequence of labels is: NNP VBD DT .",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_045.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0136",
+      "question": "What rule is used for 'S' at position 0, 'arrow' 5?",
+      "gold_answer": "S 22",
+      "predicted_answer": "In the context of NLP and grammar rules, 'S' at position 0, 'arrow' 5 likely refers to a production rule in a context-free grammar where 'S' is the start symbol. The rule could be something like S -> \u03b1, where \u03b1 is a sequence of symbols derived from position 5 in the grammar's list of production rules. Without specific details, it's difficult to provide the exact rule, but it generally involves expanding 'S' into a sequence of other symbols or terminal strings.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_033.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.02702702702702703
+      }
+    },
+    {
+      "question_id": "cs601_q0137",
+      "question": "What is the highlighted text in the row labeled '0 NP . NP PP' under column '1'?",
+      "gold_answer": "VP . V NP",
+      "predicted_answer": "The highlighted text in the row labeled '0 NP . NP PP' under column '1' is likely a specific phrase or term related to a syntactic structure or rule in natural language processing, but without the actual document or table, I cannot provide the exact text.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_004.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.047619047619047616
+      }
+    },
+    {
+      "question_id": "cs601_q0138",
+      "question": "Which card is located above the eight of clubs?",
+      "gold_answer": "The five of hearts",
+      "predicted_answer": "I'm sorry, but I cannot determine which card is located above the eight of clubs without additional context or information about the specific arrangement of the cards.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_011.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07407407407407407
+      }
+    },
+    {
+      "question_id": "cs601_q0139",
+      "question": "What is the logical expression that incorporates tense for 'Gilly swallowed a goldfish'?",
+      "gold_answer": "\u2203t past(t) AND exists(goldfish, \u03bbg swallow(t,Gilly,g))",
+      "predicted_answer": "The logical expression incorporating tense for \"Gilly swallowed a goldfish\" can be represented as:\n\nPast(swallow(Gilly, goldfish))",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_028.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0140",
+      "question": "What are the components of the Alarm function as shown on the slide?",
+      "gold_answer": "The components are delay='20 minutes' and content='turn off the rice'.",
+      "predicted_answer": "The components of the Alarm function typically include:\n\n1. **Trigger**: The condition or event that initiates the alarm.\n2. **Notification**: The method or medium through which the alarm is communicated (e.g., sound, message, alert).\n3. **Response**: The action taken once the alarm is triggered, which may involve predefined procedures or user intervention.\n4. **Reset**: The process to deactivate or silence the alarm once the issue is resolved or acknowledged.\n\nNote: The specific components may vary depending on the context or system described in the lecture material.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_130.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.024999999999999998
+      }
+    },
+    {
+      "question_id": "cs601_q0141",
+      "question": "What is the sequence of tags and words shown in the probability model?",
+      "gold_answer": "Start PN Verb Det (Bill directed a ...)",
+      "predicted_answer": "In a probability model for NLP, the sequence of tags and words is typically represented as a sequence of word-tag pairs, where each word in a sentence is associated with a corresponding part-of-speech (POS) tag. This sequence is used to calculate the probability of a particular tagging given the words, often using models like Hidden Markov Models (HMMs) or Conditional Random Fields (CRFs).",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_027.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0142",
+      "question": "Which words are associated with VP locations?",
+      "gold_answer": "Time, flies, like, an, arrow",
+      "predicted_answer": "Words associated with VP (verb phrase) locations typically include verbs and their complements, such as prepositions and adverbs that indicate direction, place, or manner. Examples include \"in,\" \"on,\" \"at,\" \"by,\" \"near,\" \"above,\" \"below,\" \"through,\" \"around,\" \"toward,\" \"away,\" \"here,\" \"there,\" \"everywhere,\" \"inside,\" \"outside,\" \"up,\" \"down,\" \"across,\" \"along,\" \"behind,\" \"beside,\" \"between,\" \"beyond,\" \"under,\" \"over,\" \"within,\" and \"without.\"",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_026.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0143",
+      "question": "What is the path score from (0, 0) to (3, 3) using the highlighted path?",
+      "gold_answer": "1.3",
+      "predicted_answer": "To accurately determine the path score from (0, 0) to (3, 3) using the highlighted path, I would need specific information about the path and the scoring system used in the lecture material. Typically, path scores in NLP contexts might involve summing weights or probabilities along a path in a graph or matrix. Without specific details, I can't provide an exact score. If you have a diagram or specific values, please share them for a more precise answer.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_033.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0144",
+      "question": "What is the relationship between Paul Schuster and Dresden in the diagram?",
+      "gold_answer": "Paul Schuster has a birthPlace relationship with Dresden.",
+      "predicted_answer": "Paul Schuster is associated with Dresden as his place of residence or origin in the diagram.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_18/slide_077.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.36363636363636365
+      }
+    },
+    {
+      "question_id": "cs601_q0145",
+      "question": "What is the price difference between the input and cached input for the gpt-4o model?",
+      "gold_answer": "$1.25",
+      "predicted_answer": "I'm sorry, but as of my last update, there is no specific information available about a \"gpt-4o\" model or its pricing details, including any price differences between input and cached input.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_19/slide_018.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0146",
+      "question": "What is the relationship between 'deficit' and 'current' in the diagram?",
+      "gold_answer": "MOD",
+      "predicted_answer": "The relationship between 'deficit' and 'current' in the diagram likely refers to the concept of \"current account deficit\" in economics, where the current account measures a country's trade balance, net income, and direct payments. A deficit indicates that a country is importing more goods, services, and capital than it is exporting.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs601_q0147",
+      "question": "What is the relationship between 'param values' and the Trigram Model?",
+      "gold_answer": "'Param values' are inputs to the Trigram Model.",
+      "predicted_answer": "In a Trigram Model, 'param values' typically refer to the parameters that represent the probabilities of sequences of three words occurring together. These parameters are estimated from training data and are used to predict the likelihood of a word given the two preceding words.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_029.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.26666666666666666
+      }
+    },
+    {
+      "question_id": "cs601_q0148",
+      "question": "What does the expression 'p( hoof | pos ) / p(\u00achoof | pos)' represent?",
+      "gold_answer": "It represents the posterior odds ratio.",
+      "predicted_answer": "The expression 'p( hoof | pos ) / p(\u00achoof | pos)' represents the likelihood ratio in the context of Bayesian probability. It compares the probability of the word \"hoof\" given a certain part of speech (pos) to the probability of not having \"hoof\" given the same part of speech. This ratio is often used in statistical language models to assess how likely a word is to appear in a given context compared to not appearing.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_015.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09090909090909091
+      }
+    },
+    {
+      "question_id": "cs601_q0149",
+      "question": "What is the original count for 'xyd' and its corresponding smoothed probability?",
+      "gold_answer": "Original count is 2, and the smoothed probability is 1/26.",
+      "predicted_answer": "I'm sorry, but I don't have specific information about 'xyd' or its original count and smoothed probability without additional context. If 'xyd' refers to a term or event in a dataset, you would typically calculate its original count by counting its occurrences in the dataset. The smoothed probability would depend on the smoothing technique used, such as Laplace smoothing, which adjusts the probability to account for unseen events.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_015.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1408450704225352
+      }
+    },
+    {
+      "question_id": "cs601_q0150",
+      "question": "What is the value of 'tense' in the top-left diagram?",
+      "gold_answer": "pres",
+      "predicted_answer": "I'm sorry, I can't provide the value of 'tense' in the top-left diagram without more context or a visual reference. Could you provide more details or describe the diagram?",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_052.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    }
+  ],
+  "summary": {
+    "overall": {
+      "count": 150,
+      "exact_match": 0.0,
+      "token_f1": 0.0895
+    },
+    "per_category": {
+      "text_only": {
+        "count": 15,
+        "exact_match": 0.0,
+        "token_f1": 0.1249
+      },
+      "image_diagram": {
+        "count": 59,
+        "exact_match": 0.0,
+        "token_f1": 0.0723
+      },
+      "table": {
+        "count": 27,
+        "exact_match": 0.0,
+        "token_f1": 0.0507
+      },
+      "chart_graph": {
+        "count": 16,
+        "exact_match": 0.0,
+        "token_f1": 0.1061
+      },
+      "layout_aware": {
+        "count": 33,
+        "exact_match": 0.0,
+        "token_f1": 0.128
+      }
+    }
+  }
+}
