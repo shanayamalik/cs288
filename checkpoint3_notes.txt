@@ -1,0 +1,141 @@
+SLIDEQA — CHECKPOINT 3 / FINAL REPORT NOTES
+============================================
+
+This file tracks what has been implemented and what still needs to be done,
+so you know exactly what to present and include in the final report.
+
+=============================================================================
+WHAT IS DONE (can present / write about now)
+=============================================================================
+
+DATASET
+-------
+- 3 courses: CS 288 (Berkeley), CS 601 (JHU), CS 224N (Stanford)
+- 55 total lectures, ~3,772 slides processed
+- 5 question categories: text_only (TO), image_diagram (ID), table (TB),
+  chart_graph (CG), layout_aware (LA)
+- 150 curated QA pairs per course (450 total), lecture-balanced
+- Automated pipeline: PDF → slide images → VLM draft generation → auto-filter → curation
+- QA draft pool: ~16,930 total drafts across 3 courses
+
+BASELINES (DONE, results in slideqa/data/results/)
+---------------------------------------------------
+- Text-Only (BM25 + GPT-4o, no vision) — lower bound
+- Oracle VLM (correct slide image + GPT-4o) — upper bound
+
+  Course       | Text-Only F1 | Oracle VLM F1 | VLM Advantage
+  -------------|--------------|---------------|---------------
+  CS 288       |       0.1426 |        0.3771 |         2.64x
+  CS 601       |       0.1864 |        0.3725 |         2.00x
+  CS 224N      |       0.1001 |        0.3940 |         3.94x
+
+PER-CATEGORY BREAKDOWN (DONE, results in slideqa/data/results/)
+---------------------------------------------------------------
+- Script: slideqa/src/category_breakdown.py
+- Output: all_courses_category_breakdown.csv, category_avg_breakdown.csv
+- Macro-averaged across all 3 courses:
+
+  Category      | N   | Text-Only F1 | Oracle VLM F1
+  --------------|-----|--------------|---------------
+  text_only     |  45 |       0.2557 |        0.4653
+  image_diagram | 176 |       0.1135 |        0.3412
+  table         |  82 |       0.1648 |        0.3864
+  chart_graph   |  65 |       0.1118 |        0.3999
+  layout_aware  |  82 |       0.1424 |        0.3978
+  OVERALL       | 450 |       0.1430 |        0.3812
+
+- Key finding: image_diagram shows the largest VLM gap, especially on
+  CS 224N (text-only F1=0.062 vs VLM=0.393 — 6x gap).
+- text_only questions are where text-only retrieval is closest to the VLM.
+
+=============================================================================
+WHAT IS IN PROGRESS / STILL TO DO
+=============================================================================
+
+[ ] CLOSED-BOOK BASELINE
+    - GPT-4o answers with question only (no slide, no retrieved text)
+    - Measures what the model knows from pretraining alone
+    - Needed to contextualize how much retrieval helps
+    - Will be added as a 4th column in results tables
+
+[ ] LM-AS-JUDGE EVALUATION
+    - GSI flagged that EM is near zero everywhere (answers avg 5-6 words,
+      often full sentences, not short spans like SQuAD)
+    - Plan: re-score all cached predictions with GPT-4o as judge (1-5 scale)
+    - No re-retrieval needed — works off cached predicted_answer vs gold_answer
+    - Already partially stubbed in evaluate.py (llm_judge_score function exists)
+    - Will replace EM as primary metric in the report; F1 stays as secondary
+
+[ ] COLPALI RAG PIPELINE
+    - The main engineering contribution
+    - Step 1: build_index.py — embed all slide images with ColPali,
+      save FAISS index per course
+    - Step 2: colpali_rag.py — embed query → retrieve top-k slides →
+      GPT-4o answers with top-1 retrieved image
+    - Step 3: update run_baselines.py to include as 3rd baseline
+    - Expected to land between text-only and oracle VLM
+    - Also compute Recall@k (retrieval accuracy)
+
+[ ] DEMO INTERFACE
+    - Needed for video demo
+    - Likely Streamlit (already used in annotate.py)
+    - Should show: question input → retrieved slide(s) → generated answer
+    - Ideally lets you toggle between baselines (text-only vs ColPali RAG vs oracle)
+
+[ ] VIDEO DEMO
+    - Walk through the interface, show a few example questions per category
+    - Show retrieval working (ColPali finding the right slide)
+    - Show where text-only fails but VLM succeeds
+
+=============================================================================
+NOTES FOR THE FINAL REPORT (GSI FEEDBACK FROM CHECKPOINT 2)
+=============================================================================
+
+1. ADD EXAMPLE QUESTIONS
+   - Include 1-2 examples per category in the report
+   - Show the question, gold answer, text-only prediction, VLM prediction
+   - Good candidates: cases where text-only fails but VLM succeeds (ID, TB, CG)
+
+2. PER-CATEGORY BREAKDOWN TABLE [DONE — data ready]
+   - Add a table in the results section breaking down EM and F1 by category
+   - Use the macro-averaged breakdown from category_avg_breakdown.csv
+   - Highlight the image_diagram gap on CS 224N as a key finding
+
+3. LM-AS-JUDGE [IN PROGRESS]
+   - GSI noted EM/F1 gap is suspicious for long answers
+   - Once judge scores are ready, make judge score the primary metric
+   - Keep token F1 as secondary
+   - Report judge scores alongside EM and F1
+
+4. CLOSED-BOOK BASELINE [IN PROGRESS]
+   - Add as a baseline row in the results table
+   - Helps readers understand: how much does any retrieval help?
+   - Expected to be the lowest of all 4 baselines
+
+5. COLPALI RAG BASELINE [IN PROGRESS]
+   - The main system being evaluated
+   - Report: overall F1, per-category F1, Recall@1, Recall@5
+   - Discussion: where does retrieval help most? where does it fail?
+
+=============================================================================
+RESULT FILES LOCATION
+=============================================================================
+
+slideqa/data/results/
+  cs288_baseline_summary.csv               # per-category, both baselines
+  cs601_baseline_summary.csv
+  cs224n_baseline_summary.csv
+  all_courses_category_breakdown.csv        # all courses x categories
+  category_avg_breakdown.csv               # macro-averaged across courses
+  cs288_text_only_details.json             # per-question scores
+  cs288_zero_shot_vlm_details.json
+  cs601_text_only_details.json
+  cs601_zero_shot_vlm_details.json
+  cs224n_text_only_details.json
+  cs224n_zero_shot_vlm_details.json
+  cs288_text_only_preds.json               # cached predictions (don't delete)
+  cs288_zero_shot_vlm_preds.json
+  cs601_text_only_preds.json
+  cs601_zero_shot_vlm_preds.json
+  cs224n_text_only_preds.json
+  cs224n_zero_shot_vlm_preds.json
