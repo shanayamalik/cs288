@@ -1,0 +1,1952 @@
+[
+  {
+    "question_id": "cs288_q0001",
+    "question": "What is the total planned duration for the 'Course logistics' and 'First lecture (n-gram LM!)' sections?",
+    "gold_answer": "50 minutes",
+    "predicted_answer": "The total planned duration for the 'Course logistics' and 'First lecture (n-gram LM!)' sections is 50 minutes.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.23529411764705882,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0002",
+    "question": "How does interpolation smoothing work according to the slide?",
+    "gold_answer": "Interpolation uses a combination of different granularities of n-grams.",
+    "predicted_answer": "The provided context does not include information on interpolation smoothing. Therefore, I cannot answer how interpolation smoothing works based on the given slides.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.06896551724137931,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0003",
+    "question": "What is the purpose of the Ruby script mentioned in the slide?",
+    "gold_answer": "For preprocessing Twitter data",
+    "predicted_answer": "The provided context does not mention a Ruby script, so I cannot determine its purpose based on the given information.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0004",
+    "question": "What is the training loss function mentioned on the slide?",
+    "gold_answer": "The training loss function is to minimize -\u03a3_{(x,y)\u2208D} log \u0177_y.",
+    "predicted_answer": "The training loss function mentioned on the slide is cross entropy loss for logistic regression.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3636363636363637,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs288_q0005",
+    "question": "How is the loss function L(\u03b8) defined in the training process?",
+    "gold_answer": "L(\u03b8) is defined as -\u03a3\u209c=\u2081\u1d40 log(y\u0302\u209c(y\u209c)).",
+    "predicted_answer": "The loss function \\( L(\\theta) \\) in the training process is defined using cross entropy loss for logistic regression, which is convex and ensures that gradient descent can find the global minimum. Additionally, in the context of training with a generative language modeling objective, loss is applied to each individual token in the sequence.",
+    "category": "text_only",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.07692307692307691,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0006",
+    "question": "What does fluency mean in the context of machine translation?",
+    "gold_answer": "Translation should be fluent text in the target language.",
+    "predicted_answer": "The provided lecture slides do not contain information about the meaning of fluency in the context of machine translation.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.16666666666666666,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0007",
+    "question": "How does the scaling of 'd_ff' compare to 'd' when increasing model size?",
+    "gold_answer": "People typically scale d_ff more rapidly than d.",
+    "predicted_answer": "The provided context does not contain specific information about the scaling of 'd_ff' compared to 'd' when increasing model size.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.15384615384615383,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0008",
+    "question": "What does the slide suggest about the method of learning?",
+    "gold_answer": "It suggests a form of few-shot prompting.",
+    "predicted_answer": "The slide suggests that the method of learning involves building the tokenizer and vocabulary directly from data without using predefined rules, a process also referred to as \"training.\"",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.13333333333333333,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0009",
+    "question": "What does model-based filtering vary from and to?",
+    "gold_answer": "Varies from cheap, bi-gram based filtering to LLM-based filtering.",
+    "predicted_answer": "Model-based filtering varies from cheap, bi-gram based filtering to LLM-based filtering.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.9,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0010",
+    "question": "Who is the first author of the paper listed on the slide?",
+    "gold_answer": "Long Ouyang",
+    "predicted_answer": "Robin Jia",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0011",
+    "question": "What is the purpose of the beam search with n = 3?",
+    "gold_answer": "To keep generating with a new beam.",
+    "predicted_answer": "The purpose of the beam search with n = 3 is to iteratively generate and maintain the top 3 most probable sequences (or prefixes) by expanding each prefix with potential candidates and selecting the top 3 based on their probabilities. This process helps in efficiently exploring the search space to find the most likely sequences.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1111111111111111,
+      "llm_judge": 3
+    }
+  },
+  {
+    "question_id": "cs288_q0012",
+    "question": "What kind of questions are associated with the VQA dataset?",
+    "gold_answer": "Questions about colors, objects, and actions in images.",
+    "predicted_answer": "The provided context does not mention the VQA dataset or the kind of questions associated with it.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.09090909090909091,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0013",
+    "question": "What role does John Elway currently hold according to the slide?",
+    "gold_answer": "Denver\u2019s Executive Vice President of Football Operations and General Manager",
+    "predicted_answer": "John Elway is currently Denver\u2019s Executive Vice President of Football Operations and General Manager.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.8333333333333333,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0014",
+    "question": "Which case study has the first layer as dense?",
+    "gold_answer": "DeepSeekMoE",
+    "predicted_answer": "The context does not provide information about any case study having the first layer as dense.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0015",
+    "question": "What is the hierarchical relationship shown in the text on the slide?",
+    "gold_answer": "clothing > outerwear > coat > jacket > jean jacket",
+    "predicted_answer": "The hierarchical relationship shown in the text on the slide is between different types of attention mechanisms in sequence-to-sequence models. Encoder-decoder cross attention involves attention between the input and target sequences, while self-attention occurs within the same sequence.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0016",
+    "question": "What does the translation example on the slide demonstrate?",
+    "gold_answer": "It demonstrates machine translation from English to Chinese (Simplified).",
+    "predicted_answer": "The translation example on the slide demonstrates machine translation, specifically translating a sentence from English to German using a large language model.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.4444444444444444,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0017",
+    "question": "What is the correct answer for the perplexity of the test corpus given the k-gram model probability?",
+    "gold_answer": "A) 2^|V|",
+    "predicted_answer": "The correct answer for the perplexity of the test corpus given the k-gram model probability is \\( |V| \\).",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0018",
+    "question": "What is the formula used for the skip-gram model on this slide?",
+    "gold_answer": "P(w_{t+j} | w_t) = \\frac{\\exp(\\mathbf{v}_{w_{t+j}}^T \\mathbf{v}_{w_t})}{\\sum_{w' \\in V} \\exp(\\mathbf{v}_{w'}^T \\mathbf{v}_{w_t})}",
+    "predicted_answer": "The formula for the skip-gram model is not provided in the given context from the lecture slides.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.09523809523809525,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0019",
+    "question": "What are the components involved in calculating y according to the slide?",
+    "gold_answer": "y is calculated as W^(o)h_2.",
+    "predicted_answer": "The components involved in calculating y according to the slide are the gradient with respect to y, \\( u_t \\), and \\( v_k \\) for all \\( k \\in V \\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.07407407407407407,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0020",
+    "question": "What is the loss function used in the training of the recurrent neural network?",
+    "gold_answer": "\u2112(\u03b8) = -\u2211(from t=1 to T-1) log(y\u0302\u209c(x\u209c\u208a\u2081))",
+    "predicted_answer": "The context does not specify the loss function used in the training of the recurrent neural network.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0021",
+    "question": "How many layers are used in the encoder LSTMs?",
+    "gold_answer": "8 layers",
+    "predicted_answer": "In practice, using 2 to 4 layers is common for encoder LSTMs.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.14285714285714285,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0022",
+    "question": "What mathematical expression is used to calculate the weight for each query-key pair?",
+    "gold_answer": "\u03b1_i,j = softmax((q_i \u00b7 k_j) / \u221ad_k)",
+    "predicted_answer": "The mathematical expression used to calculate the weight for each query-key pair is \\(\\alpha_{i,j} = \\text{softmax} \\left(\\frac{q_i \\cdot k_j}{\\sqrt{d_k}}\\right)\\).",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0023",
+    "question": "What is the sentiment of the review: 'The company anticipated its operating profit to improve.'?",
+    "gold_answer": "Positive",
+    "predicted_answer": "Positive",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0024",
+    "question": "What is the equation used to jointly fit N and D?",
+    "gold_answer": "L\u0302(N, D) = E + A/N^\u03b1 + B/D^\u03b2",
+    "predicted_answer": "The equation used to jointly fit N (# params) and D (# tokens) is not explicitly provided in the context from the lecture slides.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.08333333333333333,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0025",
+    "question": "What is the mathematical expression for the reward model's loss function?",
+    "gold_answer": "L(\u03b8) = -1/(K choose 2) E[(x,yw,yl)~D][log(\u03c3(r_\u03b8(x, yw) - r_\u03b8(x, yl)))]",
+    "predicted_answer": "The mathematical expression for the reward model's loss function is \\( L(\u03d5) = E(x,y)\u223c\u03c0RL_\u03d5 [r\u03b7(x, y)] \\).",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0026",
+    "question": "What mathematical expression is used for length normalization?",
+    "gold_answer": "p(\\bar{x}) \\propto \\frac{1}{|\\bar{x}|^\\alpha} \\sum_{i=1}^{|\\bar{x}|} \\log p(x_i | x_1, \\ldots, x_{i-1})",
+    "predicted_answer": "The provided context does not include information about a mathematical expression used for length normalization.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0027",
+    "question": "Which classes have no examples where they are both the target and predicted class?",
+    "gold_answer": "TO, DT, NNS, NNP, PP, VB, VBN, VBD, CD",
+    "predicted_answer": "The classes with no examples where they are both the target and predicted class are VBN, VBD, and CD.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.23076923076923078,
+      "llm_judge": 3
+    }
+  },
+  {
+    "question_id": "cs288_q0028",
+    "question": "How is end-to-end backpropagation achieved in the RAG model?",
+    "gold_answer": "End-to-end backpropagation is achieved through q and p\u03b8.",
+    "predicted_answer": "The provided text context does not contain specific information on how end-to-end backpropagation is achieved in the RAG model.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.31999999999999995,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0029",
+    "question": "What component is used in both models for attention?",
+    "gold_answer": "Both models use 'Gated Delta Attention' or 'Gated Attention'.",
+    "predicted_answer": "Cross-attention is used in both models for attention.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.35294117647058826,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0030",
+    "question": "How are the outputs of the text and image encoders combined in the diagram?",
+    "gold_answer": "They are combined as I1\u00b7T1, I1\u00b7T2, I1\u00b7T3, ..., I1\u00b7TN.",
+    "predicted_answer": "The outputs of the text and image encoders are combined by ensuring that the similarity between their embeddings is high for an image with its corresponding caption, and low for any other image-caption pairs that are not attested. This results in \"aligned\" embedding functions where the embeddings of the image and caption for a known pair should be interchangeable.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.06666666666666668,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0031",
+    "question": "How does the norm position differ between Vaswani et al. and Llama models?",
+    "gold_answer": "Vaswani et al. uses post-norm, while Llama uses pre-norm.",
+    "predicted_answer": "The norm position differs between Vaswani et al. and Llama models in that Vaswani et al. use post-norm, while Llama models use pre-norm.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.45161290322580644,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0032",
+    "question": "What is the probability of the bigram 'want to' according to the table?",
+    "gold_answer": "0.00042",
+    "predicted_answer": "The provided context does not contain any information about the bigram 'want to'. Therefore, the probability of the bigram 'want to' cannot be determined from the given text.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0033",
+    "question": "What is the count vector value for 'digital' in the 'computer' column?",
+    "gold_answer": "1670",
+    "predicted_answer": "The provided context does not contain specific information about the count vector value for 'digital' in the 'computer' column.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0034",
+    "question": "Which variable is associated with the presence of exclamation marks in the document?",
+    "gold_answer": "x5",
+    "predicted_answer": "The provided context does not mention any variable associated with the presence of exclamation marks in the document.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0035",
+    "question": "What is the purpose of the 'ner' component?",
+    "gold_answer": "Detect and label named entities.",
+    "predicted_answer": "The provided text context does not contain information about the 'ner' component or its purpose.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0036",
+    "question": "Which language pair has the most English words in the corpus?",
+    "gold_answer": "French-English with 50,196,035 English words",
+    "predicted_answer": "The provided context does not contain information about language pairs or the number of English words in any corpus. Therefore, it is not possible to determine which language pair has the most English words in the corpus based on the given text.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.09523809523809523,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0037",
+    "question": "Which model has the lowest final loss according to the table?",
+    "gold_answer": "RMS Norm has the lowest final loss of 1.821.",
+    "predicted_answer": "The provided text context does not include a table or specific information about which model has the lowest final loss. Therefore, I cannot determine which model has the lowest final loss based on the given context.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.20512820512820512,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0038",
+    "question": "What is the score difference between the highest and lowest performing systems on the CoLA task?",
+    "gold_answer": "The difference is 25.5 (60.5 - 35.0).",
+    "predicted_answer": "The provided text context does not contain information about the score difference between the highest and lowest performing systems on the CoLA task.",
+    "category": "table",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.08333333333333333,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0039",
+    "question": "Which datasets have 'Common Crawl' as a source?",
+    "gold_answer": "C4, Pile, RefinedWeb, OpenWebMath, RedPajama v2, FineWeb, DCLM",
+    "predicted_answer": "The 'CommonCrawl' dataset is mentioned as a source in the context of GPT-3 training datasets.",
+    "category": "table",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0040",
+    "question": "Which nationality had the highest representation among the labelers?",
+    "gold_answer": "Filipino and Bangladeshi, both at 22%",
+    "predicted_answer": "The provided text context does not contain information about the nationality of the labelers.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0041",
+    "question": "What is the combined probability of the prefix 'in the'?",
+    "gold_answer": "0.3 * 0.15",
+    "predicted_answer": "The combined probability of the prefix 'in the' is 0.02 * 0.15 = 0.003.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1818181818181818,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0042",
+    "question": "What is the difference in the number of training examples between RTE and WNLI?",
+    "gold_answer": "1,866 examples",
+    "predicted_answer": "The provided text context does not contain information about the difference in the number of training examples between RTE and WNLI.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.09999999999999999,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0043",
+    "question": "Which retriever has the highest score for TriviaQA in the Top-100 category?",
+    "gold_answer": "DPR",
+    "predicted_answer": "The provided context does not contain information about which retriever has the highest score for TriviaQA in the Top-100 category.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0044",
+    "question": "What is the difference in total parameters between OLMoE and DeepSeek-V3?",
+    "gold_answer": "664.1B Total",
+    "predicted_answer": "The difference in total parameters between OLMoE and DeepSeek-V3 is 664.1 billion parameters (671B for DeepSeek-V3 minus 6.9B for OLMoE).",
+    "category": "table",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.09523809523809525,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0045",
+    "question": "What attribute is shared by listeners R2 and R3 according to the table on the left?",
+    "gold_answer": "Glasses",
+    "predicted_answer": "The provided context does not contain any information about listeners R2 and R3 or any table on the left. Therefore, I cannot answer the question based on the given text.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0046",
+    "question": "According to the chart, how does training loss change with increasing FLOPS?",
+    "gold_answer": "Training loss decreases as FLOPS increase.",
+    "predicted_answer": "The provided context does not include a chart or specific information about how training loss changes with increasing FLOPS.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2608695652173913,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0047",
+    "question": "Which model has the lowest test perplexity on the chart?",
+    "gold_answer": "GPT-3 (Zero-Shot) with a perplexity of 20.5",
+    "predicted_answer": "The context provided does not include specific information about the models or their test perplexity values on the chart. Therefore, I cannot determine which model has the lowest test perplexity based on the given information.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.05555555555555555,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0048",
+    "question": "What does the graph on the slide represent?",
+    "gold_answer": "The graph represents the behavior of the weighting function f.",
+    "predicted_answer": "The provided context does not include any information about a graph on a slide. Therefore, I cannot answer the question about what the graph represents.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.14814814814814817,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0049",
+    "question": "Which model shows faster convergence in terms of epochs on the Nottingham Dataset?",
+    "gold_answer": "GRU train",
+    "predicted_answer": "The provided context does not contain information about model convergence on the Nottingham Dataset.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0050",
+    "question": "What does the heatmap on the slide represent?",
+    "gold_answer": "128-Dimensional Positional Encoding Heatmap",
+    "predicted_answer": "The provided context does not include any information about a heatmap or its representation. Therefore, I cannot provide an answer based on the given lecture slides.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.07692307692307693,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0051",
+    "question": "What is the accuracy of the 'Babbage' model with 4 in-context examples?",
+    "gold_answer": "Approximately 95.3%",
+    "predicted_answer": "The provided context does not mention the 'Babbage' model or its accuracy with 4 in-context examples.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0052",
+    "question": "How does test loss change with the number of tokens processed for models with 10^3 parameters?",
+    "gold_answer": "Test loss decreases as the number of tokens processed increases.",
+    "predicted_answer": "The provided context does not contain specific information about how test loss changes with the number of tokens processed for models with 10^3 parameters.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3870967741935484,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0053",
+    "question": "Which dataset is associated with the highest performance in the 'Sentence Completion' category?",
+    "gold_answer": "HellaSwag",
+    "predicted_answer": "The provided context does not contain information about datasets associated with performance in the 'Sentence Completion' category.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0054",
+    "question": "What is the probability of 's' given the context x_1, ..., x_{i-1}?",
+    "gold_answer": "The probability of 's' is 80.",
+    "predicted_answer": "The probability of 's' given the context \\( x_1, \\ldots, x_{i-1} \\) is determined by a language model, which is a probabilistic model of a sequence of words. It involves calculating the joint probability distribution of words in the sequence.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0055",
+    "question": "Which benchmarks are represented by lines with markers in the graph?",
+    "gold_answer": "MNIST, ImageNet, SQuAD 2.0, GLUE, SQuAD 1.1, Switchboard",
+    "predicted_answer": "The provided text context does not include specific information about which benchmarks are represented by lines with markers in the graph.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0056",
+    "question": "Which smart speaker use case has the highest frequency of being 'ever tried'?",
+    "gold_answer": "Ask a question",
+    "predicted_answer": "The provided text context does not contain information about smart speaker use cases or their frequency of being 'ever tried.' Therefore, I cannot answer the question based on the given context.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.06666666666666667,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0057",
+    "question": "What is the KV cache size for Full Attention at a context length of 60,000 tokens?",
+    "gold_answer": "Approximately 25 GB",
+    "predicted_answer": "The KV cache size for Full Attention at a context length of 60,000 tokens grows linearly with the sequence length. Therefore, it would be proportional to the number of tokens, which is 60,000. However, the exact size would depend on the dimensions of the keys and values, which are not specified in the provided context.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0058",
+    "question": "Which domain contributes the highest percentage of documents in the LAION-2B-en dataset?",
+    "gold_answer": "i.pining.com",
+    "predicted_answer": "The provided context does not contain information about the LAION-2B-en dataset or the domains contributing to it.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0059",
+    "question": "What is the solve rate trend for '10@k with filtering + clustering' as the sample budget increases?",
+    "gold_answer": "The solve rate increases as the sample budget increases.",
+    "predicted_answer": "The provided context does not contain information about the solve rate trend for '10@k with filtering + clustering' as the sample budget increases.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.46153846153846156,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0060",
+    "question": "Which model shows the least improvement in success rate from round 0 to round 3?",
+    "gold_answer": "Captioner + Mixtural",
+    "predicted_answer": "The model \"Captioner + Mixtral\" shows the least improvement in success rate from round 0 to round 3.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.11764705882352941,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0061",
+    "question": "Which guest lecture is scheduled last?",
+    "gold_answer": "Gopala Anumanchipalli on April 23",
+    "predicted_answer": "The last guest lecture is scheduled for Class #26.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0062",
+    "question": "Which option corresponds to the probability of the sentence '<s> I like strawberries </s>'?",
+    "gold_answer": "(D) 1/9",
+    "predicted_answer": "The probability of the sentence \"<s> I like strawberries </s>\" is (D) 1/9.",
+    "category": "layout_aware",
+    "difficulty": "easy",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3076923076923077,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0063",
+    "question": "What does the example at the bottom of the slide illustrate?",
+    "gold_answer": "It illustrates how context words can represent the word 'banking'.",
+    "predicted_answer": "The example at the bottom of the slide illustrates two works, \"DataComp-LM\" by Li et al. 2024 and \"FineWeb\" by Penedo et al. 2024, which focus on developing the next generation of training sets for language models and refining web data for high-quality text data at scale, respectively.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.03773584905660377,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0064",
+    "question": "What is the output of the neural network for the sentence 'I don't like this movie'?",
+    "gold_answer": "Thumbs down emoji",
+    "predicted_answer": "The provided context does not specify the output of the neural network for the sentence 'I don't like this movie'.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0065",
+    "question": "What are the attention values for the word 'the'?",
+    "gold_answer": "-0.05 + 0.02",
+    "predicted_answer": "The provided context does not specify the attention values for the word 'the'. It only describes the general process of computing attention scores, taking the softmax to get attention distribution, and using this distribution to compute a weighted sum of values. For specific attention values, additional information about the input sequence and the model's computations would be needed.",
+    "category": "layout_aware",
+    "difficulty": "easy",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0066",
+    "question": "What operation is performed after running attn() over each head in the diagram?",
+    "gold_answer": "The outputs are concatenated and then multiplied by W^O.",
+    "predicted_answer": "After running attn() over each head, the outputs are concatenated and then multiplied by a weight matrix \\( W_o \\) to change the shape.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5925925925925926,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0067",
+    "question": "What is the purpose of the '[SEP]' token in the input embeddings?",
+    "gold_answer": "To separate two segments",
+    "predicted_answer": "The provided context does not mention the '[SEP]' token or its purpose in input embeddings. Therefore, I cannot provide an answer based on the given information.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0068",
+    "question": "Compare the performance of Chinchilla and GPT-3 on the BoolQ dataset.",
+    "gold_answer": "Chinchilla has a performance of 83.7%, while GPT-3 has 60.5%.",
+    "predicted_answer": "The provided text context does not contain information about the performance of Chinchilla or GPT-3 on the BoolQ dataset.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.32,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0069",
+    "question": "How many types of classifiers are selectable in the RewardBench interface?",
+    "gold_answer": "Four types: Seq. Classifiers, DPO, Custom Classifiers, and Generative.",
+    "predicted_answer": "The provided context does not specify the number of types of classifiers selectable in the RewardBench interface.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.17391304347826086,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0070",
+    "question": "What are the top 3 continuations that should be kept according to the beam search criteria?",
+    "gold_answer": "'the list', 'the look', 'in the'",
+    "predicted_answer": "The top 3 continuations that should be kept according to the beam search criteria are \"the list,\" \"the look,\" and \"the parents.\"",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs288_q0071",
+    "question": "Compare the benchmark effort and real-world employment for 'Healthcare Practitioners and Technical'.",
+    "gold_answer": "Benchmark Effort: 29, Real-World Employment: 9.2M",
+    "predicted_answer": "The provided context does not contain information related to 'Healthcare Practitioners and Technical' or any comparison of benchmark effort and real-world employment for this category. The slides focus on statistical machine translation and scaling laws in machine learning.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1904761904761905,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0072",
+    "question": "Which condition shows a greater difference in accuracy between 'Parametric-only (11B)' and 'DPR (0.3B)'?",
+    "gold_answer": "Natural Questions",
+    "predicted_answer": "The provided context does not contain information about the accuracy differences between 'Parametric-only (11B)' and 'DPR (0.3B)'.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0073",
+    "question": "What components are shared between the Original Dense Block and the Upcycled MoE Block?",
+    "gold_answer": "Layer Norm and Attention components are shared.",
+    "predicted_answer": "The provided context does not contain specific information about the components shared between the Original Dense Block and the Upcycled MoE Block.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.24,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0074",
+    "question": "Which attribute is associated with R1?",
+    "gold_answer": "R1 has no additional attributes like hat, glasses, or mustache.",
+    "predicted_answer": "The provided context does not contain any information about \"R1\" or its associated attributes.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2608695652173913,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0075",
+    "question": "What are the three different final answers derived from sampling a diverse set of reasoning paths?",
+    "gold_answer": "$18, $26, and $18",
+    "predicted_answer": "The provided context does not specify the three different final answers derived from sampling a diverse set of reasoning paths.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0076",
+    "question": "What is the largest model mentioned on the graph, and what is its size?",
+    "gold_answer": "Megatron-Turing NLG with 530 billion parameters.",
+    "predicted_answer": "The provided context does not mention any specific models or their sizes. Therefore, I cannot provide an answer based on the given information.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0077",
+    "question": "What is the perplexity of the GPT-3 model as shown in the slide?",
+    "gold_answer": "20.5",
+    "predicted_answer": "The provided text context does not include information about the perplexity of the GPT-3 model.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0078",
+    "question": "What does the expression in the box represent?",
+    "gold_answer": "It represents the loss function for skip-gram with negative sampling.",
+    "predicted_answer": "The expression in the box represents the output of a Referring Expression (Refex) Resolution process, which is the region of the image corresponding to the referent described by the natural language referring expression \"The leftmost person using sunglasses.\"",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.05263157894736842,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0079",
+    "question": "How many nodes are there in the first hidden layer of the neural network diagram?",
+    "gold_answer": "There are two nodes in the first hidden layer.",
+    "predicted_answer": "The provided context does not specify the number of nodes in the first hidden layer of the neural network diagram.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.4166666666666667,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0080",
+    "question": "How is 'Part of speech' information represented in the example sentence?",
+    "gold_answer": "Using tags like NNP, VBD, etc.",
+    "predicted_answer": "The provided context does not include information on how 'Part of speech' information is represented in the example sentence.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0081",
+    "question": "Which translation direction has the lowest GNMT score?",
+    "gold_answer": "Chinese to English with a score of 4.263.",
+    "predicted_answer": "The provided text context does not contain information about GNMT scores or specific translation directions. Therefore, I cannot determine which translation direction has the lowest GNMT score based on the given slides.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.05555555555555555,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0082",
+    "question": "What is the matrix representation for RoPE(x, i)?",
+    "gold_answer": "RoPE(x, i) = [cos(i\u03b8) -sin(i\u03b8); sin(i\u03b8) cos(i\u03b8)] * [x1; x2]",
+    "predicted_answer": "The provided text context does not contain information about the matrix representation for RoPE(x, i).",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1904761904761905,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0083",
+    "question": "Compare the compute used for training BERT-Large and GPT-3 Small.",
+    "gold_answer": "BERT-Large used less compute than GPT-3 Small.",
+    "predicted_answer": "The provided text context does not contain specific information about the compute used for training BERT-Large and GPT-3 Small. Therefore, I cannot provide a comparison based on the given lecture slides.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2941176470588235,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0084",
+    "question": "What is the sequence of steps in the data curation process as shown in the diagram?",
+    "gold_answer": "Acquisition \u2192 Linearization \u2192 Filtering",
+    "predicted_answer": "The provided context does not include information about the sequence of steps in the data curation process or any related diagram.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0085",
+    "question": "Which task shows the least improvement across models as indicated by the graphs?",
+    "gold_answer": "The Winograd (accuracy) task shows the least improvement.",
+    "predicted_answer": "The provided context does not include any graphs or specific tasks to determine which task shows the least improvement across models. Therefore, I cannot answer the question based on the given information.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.23529411764705882,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0086",
+    "question": "What is the combined probability of the prefixes 'the list' and 'and the'?",
+    "gold_answer": "0.24",
+    "predicted_answer": "The combined probability of the prefixes 'the list' and 'and the' is 0.12 + 0.12 = 0.24.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.16666666666666669,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0087",
+    "question": "Compare the number of tokens tagged for Part-of-Speech and Skeletal Parsing for Dow Jones Newswire stories.",
+    "gold_answer": "3,065,706 tokens for Part-of-Speech and 1,061,166 tokens for Skeletal Parsing.",
+    "predicted_answer": "The provided context does not contain specific information about the number of tokens tagged for Part-of-Speech and Skeletal Parsing for Dow Jones Newswire stories.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.4375,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0088",
+    "question": "In which category does BM25 outperform DPR?",
+    "gold_answer": "BM25 outperforms DPR in the SQuAD Top-20 category.",
+    "predicted_answer": "BM25 outperforms DPR on SQuAD.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666666,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs288_q0089",
+    "question": "How does the decode throughput trend for Qwen3-Next-80B-A3B compare to Qwen3-32B as context length increases?",
+    "gold_answer": "Qwen3-Next-80B-A3B shows a significant increase, while Qwen3-32B remains relatively flat.",
+    "predicted_answer": "The provided context does not contain specific information about the decode throughput trend for Qwen3-Next-80B-A3B compared to Qwen3-32B as context length increases.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.13793103448275865,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0090",
+    "question": "How is the similarity between text and images represented in the diagram?",
+    "gold_answer": "Through the dot products I1\u00b7T1, I2\u00b7T1, ..., IN\u00b7T1",
+    "predicted_answer": "The similarity between text and images in the diagram is represented by embedding functions for images (\\( \\phi(I) \\)) and text (\\( \\phi(x) \\)), where the goal is to have high similarity between the embeddings of an image and its corresponding caption, and low similarity for non-attested image-caption pairs.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0091",
+    "question": "Which category has the lowest accuracy according to the table?",
+    "gold_answer": "misleading",
+    "predicted_answer": "The context provided does not include a table or specific accuracy data for different categories. Therefore, it is not possible to determine which category has the lowest accuracy based on the given information.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0092",
+    "question": "Which model shows the highest success rate in the graph?",
+    "gold_answer": "DigiRL-2",
+    "predicted_answer": "The context provided does not include any information about a graph or specific models showing success rates. Therefore, I cannot determine which model shows the highest success rate based on the given text.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0093",
+    "question": "What is the purpose of the Google search example on the slide?",
+    "gold_answer": "It illustrates information retrieval.",
+    "predicted_answer": "The purpose of the Google search example on the slide is to illustrate the process of curating real questions from the Google search engine, which are then paired with Wikipedia articles as part of the crowdsourcing QA process for Natural Questions.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0094",
+    "question": "How is perplexity mathematically defined for a test corpus with words w1, w2, ..., wn?",
+    "gold_answer": "Perplexity is defined as P(w1, w2, ..., wn)^(-1/n).",
+    "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is mathematically defined as \\( P(w_1, w_2, \\ldots, w_n)^{-1/n} \\), where \\( ppl(S) = 2^x \\) and \\( x = -\\frac{1}{n} \\sum_{i=1}^{n} \\log_2 P(w_i|w_1 \\ldots w_{i-1}) \\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3888888888888889,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0095",
+    "question": "How are the outside context words organized in the window of size 2?",
+    "gold_answer": "The outside context words are 'problems', 'turning', 'banking', and 'crises'.",
+    "predicted_answer": "The outside context words are organized in a fixed window of size 2m, where m = 2 in the example, meaning the window size is 4.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.26666666666666666,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0096",
+    "question": "Which word has the embedding vector (0.290, -0.441, 0.762, 0.982)?",
+    "gold_answer": "language",
+    "predicted_answer": "The provided context does not contain information about specific words and their corresponding embedding vectors. Therefore, it is not possible to determine which word has the embedding vector (0.290, -0.441, 0.762, 0.982) based on the given lecture slides.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0097",
+    "question": "How is the 1-D output y_t calculated in the state-space model?",
+    "gold_answer": "y_t = C_t h_t",
+    "predicted_answer": "The provided context does not contain specific information about how the 1-D output \\( y_t \\) is calculated in the state-space model. The slides mention topics related to reinforcement learning, model training, and encoder-decoder transformers, but do not provide details on state-space models or the calculation of \\( y_t \\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.04545454545454545,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0098",
+    "question": "What does the arrow from h3 to h_enc represent?",
+    "gold_answer": "It represents the transition to the encoded representation.",
+    "predicted_answer": "The provided context does not include any information about an arrow from h3 to h_enc or any related diagram. Therefore, I cannot answer what the arrow represents based solely on the given text.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1142857142857143,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0099",
+    "question": "What is the mathematical expression for GELU(x)?",
+    "gold_answer": "GELU(x) = x \u00d7 \u03a6(x)",
+    "predicted_answer": "The context provided does not contain information about the mathematical expression for GELU(x).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.13333333333333333,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0100",
+    "question": "Which architectures use autoregressive language models as their pretraining objective?",
+    "gold_answer": "Transformers Decoder",
+    "predicted_answer": "Transformers Decoder architectures use autoregressive language models as their pretraining objective. Examples include GPT-2, GPT-3, and Llama.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.21052631578947367,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0101",
+    "question": "How many times larger is the model size of GPT-3 compared to GPT-2?",
+    "gold_answer": "117 times larger",
+    "predicted_answer": "The context does not provide specific information about the model size of GPT-2, so it is not possible to determine how many times larger the model size of GPT-3 is compared to GPT-2 based solely on the provided text.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.10526315789473684,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0102",
+    "question": "How are the training stages visually differentiated?",
+    "gold_answer": "They are differentiated by color and spatial layout.",
+    "predicted_answer": "The training stages are visually differentiated by listing them in a sequence: Pre-training, Mid-training, and Post-training. Each stage is accompanied by bullet points describing its specific goals.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.24242424242424243,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0103",
+    "question": "How is the probability p(Xi = w | x1, ..., xi-1) calculated?",
+    "gold_answer": "By using the softmax function: exp(s(w)) / \u03a3w'\u2208V exp(s(w')).",
+    "predicted_answer": "The probability \\( p(Xi = w | x1, \\ldots, xi-1) \\) is calculated using the formula:\n\n\\[ p(Xi = w | x1, \\ldots, xi-1) = \\frac{\\exp(s(w)/\\tau)}{\\sum_{w' \\in V} \\exp(s(w')/\\tau)} \\]\n\nwhere \\( s(w) \\) is the logit for word \\( w \\), \\( \\tau \\) is the temperature parameter controlling the smoothness of the distribution, and \\( V \\) is the vocabulary.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.044444444444444446,
+      "llm_judge": 3
+    }
+  },
+  {
+    "question_id": "cs288_q0104",
+    "question": "What is the significance of the underlined text in the reference sentence?",
+    "gold_answer": "The underlined text indicates a bigram in the reference sentence.",
+    "predicted_answer": "The underlined text in the reference sentence, \"The most natural form of language use is dialogue,\" represents the set of n-grams in sequence, which is used in BLEU evaluation to compare system outputs against the reference.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2631578947368421,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0105",
+    "question": "Which paragraph contains information about an animal?",
+    "gold_answer": "Paragraph 1",
+    "predicted_answer": "Paragraph 1 contains information about an animal.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0106",
+    "question": "What are the main components depicted in the Gated DeltaNet diagram?",
+    "gold_answer": "Linear, RMSNorm, Gated Delta Rule, L2 Norm, Conv, SLU Gate",
+    "predicted_answer": "The main components depicted in the Gated DeltaNet diagram are the recurrent delta-rule memory update, the shared memory state updated at each token, and the gating mechanism for adaptive memory control.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.05555555555555555,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0107",
+    "question": "How many people are there in the images of the sled dogs?",
+    "gold_answer": "There are two, and only two, people.",
+    "predicted_answer": "The provided text context does not contain any information about images of sled dogs or the number of people in them.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.07692307692307693,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0108",
+    "question": "How is the trajectory in the decision-making section evaluated?",
+    "gold_answer": "Using internal/external evaluation.",
+    "predicted_answer": "The trajectory in the decision-making section is evaluated by assigning it a reward, which is part of the process to optimize the policy to maximize the reward. This involves sampling a trajectory from the current policy and using a reward function to assess its performance.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.05128205128205128,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0109",
+    "question": "How many operations in the SoS+ diagram result in a cross mark?",
+    "gold_answer": "Five operations",
+    "predicted_answer": "The provided context does not contain information about the SoS+ diagram or the number of operations resulting in a cross mark.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.10526315789473684,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0110",
+    "question": "What does the graph in the inset box suggest about data size and translation quality?",
+    "gold_answer": "More data is better data.",
+    "predicted_answer": "The graph in the inset box suggests that data scaling is very important for translation quality, as even large models like GPT-3 did not properly scale the data. This implies that increasing the size of the training data can improve the performance of statistical machine translation models.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.13043478260869565,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs288_q0111",
+    "question": "How is the missing probability mass calculated?",
+    "gold_answer": "\u03b1(w_{i-1}) = 1 - \u03a3 (Count*(w_{i-1}, w) / Count(w_{i-1}))",
+    "predicted_answer": "The missing probability mass is calculated by subtracting the discounted count from the original count for a given word. Specifically, it is defined as Count*(x) = Count(x) - 0.5. This missing mass is then divided among words for which the count is zero, using the formula \u03b1(wi\u22121) = 1 \u2212 \u2211w Count*(wi\u22121, w) / Count(wi\u22121).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0784313725490196,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs288_q0112",
+    "question": "In the CBOW model diagram, what is the function applied to the input words?",
+    "gold_answer": "SUM",
+    "predicted_answer": "The provided context does not specify the function applied to the input words in the CBOW model diagram.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0113",
+    "question": "Which variable represents the presence of the word 'no' in the document?",
+    "gold_answer": "x3",
+    "predicted_answer": "The provided context does not contain information about a variable representing the presence of the word 'no' in the document.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0114",
+    "question": "In the diagram, which word is tagged as a plural noun?",
+    "gold_answer": "seashells",
+    "predicted_answer": "The provided text context does not include a diagram or specify which word is tagged as a plural noun.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0115",
+    "question": "What are the two components involved in finding the best target sentence according to Bayes' rule?",
+    "gold_answer": "P(w^(s) | w^(t)) and P(w^(t)).",
+    "predicted_answer": "The two components involved in finding the best target sentence according to Bayes' rule are the translation model, which models whether the target sentence reflects the linguistic content of the source language (adequacy), and the language model, which models how fluent the target sentence is (fluency).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.04761904761904762,
+      "llm_judge": 3
+    }
+  },
+  {
+    "question_id": "cs288_q0116",
+    "question": "How does the NLTK tokenizer handle the input 'I'm'?",
+    "gold_answer": "The NLTK tokenizer splits 'I'm' into ['I', ''m'].",
+    "predicted_answer": "The NLTK tokenizer handles the input 'I'm' by splitting it into [\"I\", \"'m\"].",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666665,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0117",
+    "question": "Which generation of Llama has the largest context length?",
+    "gold_answer": "Llama 4 with 10,000,000 (?) tokens",
+    "predicted_answer": "Llama 3 has the largest context length with 128,000 tokens.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.42857142857142855,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0118",
+    "question": "What is the sequence of stages in the data curation process as shown in the diagram?",
+    "gold_answer": "Acquisition, Linearization, Filtering",
+    "predicted_answer": "The provided context does not include information about the sequence of stages in the data curation process.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0119",
+    "question": "What does the diagram suggest happens after explaining the moon landing to a 6 year old?",
+    "gold_answer": "Some people went to the moon...",
+    "predicted_answer": "The provided context does not contain any information or diagram related to explaining the moon landing to a 6-year-old. Therefore, I cannot provide an answer based on the given lecture slides.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.12903225806451613,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0120",
+    "question": "What is the probability of the prefix 'the look' in the current beam candidates table?",
+    "gold_answer": "0.06",
+    "predicted_answer": "The probability of the prefix 'the look' in the current beam candidates table is 0.06.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.16666666666666669,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0121",
+    "question": "What does the diagram on the slide represent?",
+    "gold_answer": "A syntactic (constituency) parse tree from the Penn Treebank.",
+    "predicted_answer": "The context provided does not include a diagram or any description of a diagram on the slide. Therefore, I cannot determine what the diagram represents based on the given information.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0122",
+    "question": "What mathematical expression represents the encoding of z_i?",
+    "gold_answer": "z_i = Enc(z_i) \u2208 \u211d^h",
+    "predicted_answer": "The provided context does not include any information about a mathematical expression representing the encoding of \\( z_i \\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.11111111111111112,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0123",
+    "question": "What does the diagram indicate about MiniMax's attention style?",
+    "gold_answer": "MiniMax went back to full attention.",
+    "predicted_answer": "The provided context does not include any information about MiniMax's attention style or a diagram related to it. Therefore, I cannot provide an answer based on the given lecture slides.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.125,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0124",
+    "question": "Which color is highlighted by the arrow?",
+    "gold_answer": "Dark purple",
+    "predicted_answer": "The color of the Killing Curse in Harry Potter is green.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0125",
+    "question": "How many eggs does Janet sell according to the greedy decode reasoning path?",
+    "gold_answer": "She sells 7 eggs.",
+    "predicted_answer": "The provided context does not contain any information about Janet selling eggs or a greedy decode reasoning path. Therefore, I cannot answer the question based on the given lecture slides.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.06666666666666668,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0126",
+    "question": "What is the formula used to calculate the answer?",
+    "gold_answer": "answer = loaves_baked - loaves_sold_morning - loaves_sold_afternoon + loaves_returned",
+    "predicted_answer": "The formula used to calculate the answer involves computing an attention distribution using the query and key, followed by a weighted sum using the attention distribution and values.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.07407407407407407,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0127",
+    "question": "What visual element is used to represent the industrialization theme?",
+    "gold_answer": "An image of an industrial facility with smokestacks.",
+    "predicted_answer": "The provided text context does not mention any specific visual element used to represent the industrialization theme in the lecture slides.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0128",
+    "question": "What search query is being partially completed in the Google search example?",
+    "gold_answer": "how is the weather in new",
+    "predicted_answer": "Queries of 8 words or more issued to the Google search engine by multiple users in a short period of time.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.08333333333333333,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0129",
+    "question": "How is the expression \\( \\frac{\\partial}{\\partial x_i} \\exp(\\sum_{k=1}^{n} w_i x_i) \\) simplified?",
+    "gold_answer": "\\( \\exp(\\sum_{k=1}^{n} w_i x_i) w_i \\)",
+    "predicted_answer": "The provided context does not contain information related to the expression \\( \\frac{\\partial}{\\partial x_i} \\exp(\\sum_{k=1}^{n} w_i x_i) \\) or its simplification. The context is focused on Referring Expression (Refex) Resolution, which involves visual observation and natural language referring expressions to identify regions in an image.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.13953488372093026,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0130",
+    "question": "What is the formula for the softmax function as shown on the slide?",
+    "gold_answer": "softmax(y)_k = exp(y_k) / \u03a3_{j=1}^C exp(y_j)",
+    "predicted_answer": "The provided context does not include the formula for the softmax function.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0131",
+    "question": "How is the output y\u0302\u209c calculated in the training process?",
+    "gold_answer": "y\u0302\u209c = softmax(W\u2092h\u209c) \u2208 \u211d|V|",
+    "predicted_answer": "The provided context does not include specific details on how the output \\( \\hat{y}_t \\) is calculated in the training process.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0132",
+    "question": "Which language pair has the highest number of sentences in the parallel corpus?",
+    "gold_answer": "French-English with 2,007,723 sentences",
+    "predicted_answer": "The provided text context does not contain information about which language pair has the highest number of sentences in the parallel corpus.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.08695652173913043,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0133",
+    "question": "How many times is 'Add & Normalize' mentioned in the diagram?",
+    "gold_answer": "Twice",
+    "predicted_answer": "The provided text context does not contain any information about 'Add & Normalize' or a diagram mentioning it. Therefore, I cannot determine how many times 'Add & Normalize' is mentioned.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0134",
+    "question": "How many pages did Julie read in total yesterday and today?",
+    "gold_answer": "36 pages",
+    "predicted_answer": "Julie read 12 pages yesterday and 24 pages today. So she read a total of 12 + 24 = 36 pages. The answer is 36.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.17391304347826084,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0135",
+    "question": "Which dataset has the largest token size?",
+    "gold_answer": "RedPajama v1 with 1.2T tokens",
+    "predicted_answer": "The provided text context does not contain information about datasets or their token sizes. Therefore, I cannot determine which dataset has the largest token size based on the given information.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0136",
+    "question": "Which models are marked as using a 'Merge of DPO models'?",
+    "gold_answer": "abideen/NexoNimbus-7B and samir-fama/SamiGPT-v1",
+    "predicted_answer": "The context provided does not specify any models marked as using a 'Merge of DPO models'.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0137",
+    "question": "What does the mathematical expression at the bottom of the slide represent?",
+    "gold_answer": "It represents the renormalization by dividing remaining probabilities.",
+    "predicted_answer": "The provided context does not include any mathematical expression at the bottom of the slide, so I cannot determine what it represents.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.15384615384615385,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0138",
+    "question": "Which metric has the highest correlation with human judgment for the en\u2194zh language pair?",
+    "gold_answer": "R_BERT with a correlation of .990/.976",
+    "predicted_answer": "The provided text context does not specify which metric has the highest correlation with human judgment for the en\u2194zh language pair.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1739130434782609,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0139",
+    "question": "Which model size shows the greatest improvement in perplexity with retrieval?",
+    "gold_answer": "OPT-1.3B",
+    "predicted_answer": "The provided text context does not specify which model size shows the greatest improvement in perplexity with retrieval.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0140",
+    "question": "Which model has the highest normalized prefill throughput at 128K sequence length?",
+    "gold_answer": "Qwen3-Next-80B-A3B",
+    "predicted_answer": "The provided context does not contain information about normalized prefill throughput or any specific model performance at a 128K sequence length. Therefore, I cannot answer the question based on the given text.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0141",
+    "question": "How many balloons are in the left image and what is notable about them?",
+    "gold_answer": "The left image has 4 balloons of all different colors.",
+    "predicted_answer": "The left image has 4 balloons, and they are all of different colors.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.8571428571428571,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0142",
+    "question": "What mathematical operation is used to calculate the total earnings per day?",
+    "gold_answer": "Multiplication (7 * $2 = $14)",
+    "predicted_answer": "The provided context does not contain information about calculating total earnings per day.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0143",
+    "question": "Why is the blue person unable to achieve their goal directly?",
+    "gold_answer": "The blue person is too short to reach the suitcase.",
+    "predicted_answer": "The blue person is unable to achieve their goal directly because they are too short to reach the suitcase themselves.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6153846153846153,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs288_q0144",
+    "question": "Which type of word pair reaches a higher fraction seen according to the chart?",
+    "gold_answer": "Unigrams reach a higher fraction seen than bigrams.",
+    "predicted_answer": "The word pair \"it\" reaches a higher fraction seen according to the chart.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3529411764705882,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0145",
+    "question": "Which word pair has a Count*(x) of 0.5?",
+    "gold_answer": "the, telescope; the, manual; the, afternoon; the, country; the, street",
+    "predicted_answer": "The word pair \"the, \" has a Count*(x) of 0.5.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0146",
+    "question": "What is the vector representation for the word 'cat'?",
+    "gold_answer": "(-0.224, 0.130, -0.290, 0.276)",
+    "predicted_answer": "The vector representation for the word 'cat' would be computed using the hidden states of the LSTMs from both the forward and backward language models in ELMo. However, the specific vector values for 'cat' are not provided in the context.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0147",
+    "question": "What is the probability P(Y = 1|x) calculated on the slide?",
+    "gold_answer": "0.69",
+    "predicted_answer": "The probability \\( P(Y = 1|x) \\) is calculated as \\( \\sigma(w \\cdot x + b) = \\frac{1}{1 + e^{-(w \\cdot x + b)}} \\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs288_q0148",
+    "question": "Which model has the lowest perplexity score?",
+    "gold_answer": "RNN-LDA LM with a perplexity of 113.7.",
+    "predicted_answer": "The context provided does not include specific perplexity scores for different models on the Penn Treebank dataset, so I cannot determine which model has the lowest perplexity score based on the given information.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.05714285714285715,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs288_q0149",
+    "question": "What is the formula for dot-product attention?",
+    "gold_answer": "g(h_i^enc, h_t^dec) = (h_t^dec)^T h_i^enc \u2208 \u211d",
+    "predicted_answer": "The formula for dot-product attention is \\( g(h_{\\text{enc}_i}, h_{\\text{dec}_t}) = h_{\\text{dec}_t} \\cdot h_{\\text{enc}_i} \\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs288_q0150",
+    "question": "How many classes are part of the 'Architecture' section?",
+    "gold_answer": "7 classes",
+    "predicted_answer": "The provided text context does not specify the number of classes in the 'Architecture' section.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.14285714285714285,
+      "llm_judge": 1
+    }
+  }
+]
