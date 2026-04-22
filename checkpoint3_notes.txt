@@ -18,14 +18,15 @@ DATASET
 
 BASELINES (DONE, results in slideqa/data/results/)
 ---------------------------------------------------
-- Text-Only (BM25 + GPT-4o, no vision) — lower bound
+- Closed-Book (question only, no context) — lowest bound
+- Text-Only (BM25 + GPT-4o, no vision)
 - Oracle VLM (correct slide image + GPT-4o) — upper bound
 
-  Course       | Text-Only F1 | Oracle VLM F1 | VLM Advantage
-  -------------|--------------|---------------|---------------
-  CS 288       |       0.1426 |        0.3771 |         2.64x
-  CS 601       |       0.1864 |        0.3725 |         2.00x
-  CS 224N      |       0.1001 |        0.3940 |         3.94x
+  Course       | Closed-Book F1 | Text-Only F1 | Oracle VLM F1
+  -------------|----------------|--------------|---------------
+  CS 288       |         0.0884 |       0.1426 |        0.3771
+  CS 601       |         0.0895 |       0.1864 |        0.3725
+  CS 224N      |         0.0774 |       0.1001 |        0.3940
 
 PER-CATEGORY BREAKDOWN (DONE, results in slideqa/data/results/)
 ---------------------------------------------------------------
@@ -46,33 +47,36 @@ PER-CATEGORY BREAKDOWN (DONE, results in slideqa/data/results/)
   CS 224N (text-only F1=0.062 vs VLM=0.393 — 6x gap).
 - text_only questions are where text-only retrieval is closest to the VLM.
 
+LM-AS-JUDGE (DONE, results in slideqa/data/results/)
+----------------------------------------------------
+- Script: slideqa/src/run_judge.py
+- GPT-4o scores each prediction on a 1-5 scale vs gold answer
+- All 3 courses × 3 baselines scored (900 judge calls total)
+- Incremental caching: safe to interrupt and resume
+
+  Course   | closed_book | text_only | zero_shot_vlm
+  ---------|-------------|-----------|---------------
+  CS 288   |       2.087 |     1.793 |         4.700
+  CS 601   |       2.033 |     2.113 |         4.420
+  CS 224N  |       1.807 |     1.533 |         4.600
+
+- Key finding: judge scores confirm oracle VLM is strongly superior.
+  closed_book outscores text_only on CS 288 and CS 224N — retrieval
+  is actually hurting when the retrieved context is wrong.
+
 =============================================================================
 WHAT IS IN PROGRESS / STILL TO DO
 =============================================================================
 
-[ ] CLOSED-BOOK BASELINE
-    - GPT-4o answers with question only (no slide, no retrieved text)
-    - Measures what the model knows from pretraining alone
-    - Needed to contextualize how much retrieval helps
-    - Will be added as a 4th column in results tables
-
-[ ] LM-AS-JUDGE EVALUATION
-    - GSI flagged that EM is near zero everywhere (answers avg 5-6 words,
-      often full sentences, not short spans like SQuAD)
-    - Plan: re-score all cached predictions with GPT-4o as judge (1-5 scale)
-    - No re-retrieval needed — works off cached predicted_answer vs gold_answer
-    - Already partially stubbed in evaluate.py (llm_judge_score function exists)
-    - Will replace EM as primary metric in the report; F1 stays as secondary
-
-[ ] COLPALI RAG PIPELINE
-    - The main engineering contribution
-    - Step 1: build_index.py — embed all slide images with ColPali,
-      save FAISS index per course
-    - Step 2: colpali_rag.py — embed query → retrieve top-k slides →
-      GPT-4o answers with top-1 retrieved image
-    - Step 3: update run_baselines.py to include as 3rd baseline
+[~] COLPALI RAG PIPELINE (in progress)
+    - Scripts written: slideqa/src/build_index.py, slideqa/src/baselines/colpali_rag.py
+    - run_baselines.py updated to include colpali_rag as --only option
+    - Step 1: build_index.py — RUNNING NOW (cs288 indexing, ~2.5 hrs per course)
+      Saves embeddings.npy (N_slides, 1031, 128) + slide_ids.json per course
+    - Step 2: colpali_rag.py — ready, waiting for index
+    - Step 3: run with: python run_baselines.py --course cs288 --only colpali_rag
     - Expected to land between text-only and oracle VLM
-    - Also compute Recall@k (retrieval accuracy)
+    - Also computes Recall@5 after each run
 
 [ ] DEMO INTERFACE
     - Needed for video demo
@@ -99,16 +103,15 @@ NOTES FOR THE FINAL REPORT (GSI FEEDBACK FROM CHECKPOINT 2)
    - Use the macro-averaged breakdown from category_avg_breakdown.csv
    - Highlight the image_diagram gap on CS 224N as a key finding
 
-3. LM-AS-JUDGE [IN PROGRESS]
-   - GSI noted EM/F1 gap is suspicious for long answers
-   - Once judge scores are ready, make judge score the primary metric
-   - Keep token F1 as secondary
-   - Report judge scores alongside EM and F1
+3. LM-AS-JUDGE [DONE]
+   - Judge scores computed for all 3 courses × 3 baselines
+   - Make judge score the primary metric in report; keep token F1 as secondary
+   - oracle VLM ~4.5/5, closed_book ~2.0/5, text_only ~1.8/5
 
-4. CLOSED-BOOK BASELINE [IN PROGRESS]
-   - Add as a baseline row in the results table
-   - Helps readers understand: how much does any retrieval help?
-   - Expected to be the lowest of all 4 baselines
+4. CLOSED-BOOK BASELINE [DONE]
+   - Added as baseline row; F1 ~0.08 across all courses (lowest)
+   - Interesting: closed_book > text_only on judge scale for CS 288 and CS 224N
+   - Suggests BM25 retrieval sometimes retrieves irrelevant context that hurts
 
 5. COLPALI RAG BASELINE [IN PROGRESS]
    - The main system being evaluated
@@ -120,20 +123,19 @@ RESULT FILES LOCATION
 =============================================================================
 
 slideqa/data/results/
-  cs288_baseline_summary.csv               # per-category, both baselines
+  cs288_baseline_summary.csv               # per-category, all baselines
   cs601_baseline_summary.csv
   cs224n_baseline_summary.csv
   all_courses_category_breakdown.csv        # all courses x categories
   category_avg_breakdown.csv               # macro-averaged across courses
-  cs288_text_only_details.json             # per-question scores
-  cs288_zero_shot_vlm_details.json
-  cs601_text_only_details.json
-  cs601_zero_shot_vlm_details.json
-  cs224n_text_only_details.json
-  cs224n_zero_shot_vlm_details.json
-  cs288_text_only_preds.json               # cached predictions (don't delete)
-  cs288_zero_shot_vlm_preds.json
-  cs601_text_only_preds.json
-  cs601_zero_shot_vlm_preds.json
-  cs224n_text_only_preds.json
-  cs224n_zero_shot_vlm_preds.json
+  all_courses_judge_summary.csv            # judge scores, all 3 courses x 3 baselines
+  {course}_{baseline}_details.json         # per-question EM/F1 scores
+  {course}_{baseline}_preds.json           # cached predictions (don't delete)
+  {course}_{baseline}_judge_scores.json    # per-question judge scores (cache)
+  {course}_{baseline}_judge_details.json   # per-question judge details
+
+  Baselines: text_only, zero_shot_vlm, closed_book, colpali_rag (pending)
+
+slideqa/data/colpali_index/
+  {course}/embeddings.npy                  # (N_slides, 1031, 128) float32
+  {course}/slide_ids.json                  # list of slide IDs, index-aligned
