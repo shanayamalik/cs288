@@ -1,9 +1,7 @@
 SLIDEQA — CHECKPOINT 3 / FINAL REPORT NOTES
 ============================================
 
-This file tracks what has been implemented and what still needs to be done,
-so you know exactly what to present and include in the final report.
-
+This file tracks what has been implemented and what still needs to be done.
 =============================================================================
 WHAT IS DONE (can present / write about now)
 =============================================================================
