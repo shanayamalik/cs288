@@ -1,0 +1,7 @@
+category,total_n,text_only_exact_match_avg,text_only_token_f1_avg,zero_shot_vlm_exact_match_avg,zero_shot_vlm_token_f1_avg
+text_only,45,0.0445,0.2557,0.0667,0.4653
+image_diagram,176,0.0112,0.1135,0.0229,0.3412
+table,82,0.0247,0.1648,0.0247,0.3864
+chart_graph,65,0.0000,0.1118,0.0238,0.3999
+layout_aware,82,0.0000,0.1424,0.0448,0.3978
+OVERALL (macro-avg),450,0.0134,0.1430,0.0333,0.3812
