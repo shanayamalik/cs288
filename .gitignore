@@ -2,6 +2,9 @@
 slideqa/data/slides/**/*.png
 slideqa/data/text/**/*.txt
 
+# ColPali embeddings (~700 MB each, regenerate with build_index.py)
+slideqa/data/colpali_index/**/*.npy
+
 # NOTE: PDFs are tracked so teammates can run the pipeline.
 # If the repo gets too large, consider Git LFS for PDFs.
 

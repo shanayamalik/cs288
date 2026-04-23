@@ -1,0 +1,1802 @@
+[
+  {
+    "question_id": "cs601_q0001",
+    "predicted_answer": "John found it difficult to continue getting coffee because it turned out to be too expensive at the donut store.",
+    "retrieved_slides": [
+      "lecture_01/slide_019.png",
+      "lecture_01/slide_018.png",
+      "lecture_01/slide_014.png",
+      "lecture_01/slide_012.png",
+      "lecture_01/slide_017.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0002",
+    "predicted_answer": "The two forms of strings allowed are \\( a \\, x^* \\, b \\) and \\( c \\, x^* \\, d \\).",
+    "retrieved_slides": [
+      "lecture_02/slide_010.png",
+      "lecture_04/slide_037.png",
+      "lecture_08/slide_044.png",
+      "lecture_04/slide_034.png",
+      "lecture_10/slide_075.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0003",
+    "predicted_answer": "The correct English translation is \"Jon appeared on TV.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png",
+      "lecture_03/slide_010.png",
+      "lecture_18/slide_033.png",
+      "lecture_14/slide_152.png",
+      "lecture_13/slide_010.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0004",
+    "predicted_answer": "The counts from the Brown Corpus illustrate the frequency of novel events, specifically focusing on word occurrences. The slide highlights:\n\n- **Singletons (N\u2081)**: Words that occur once.\n- **Doubletons (N\u2082)**: Words that occur twice.\n- Other frequencies (N\u2083, N\u2084, etc.) show words occurring more frequently.\n\nThe slide emphasizes the number of types (unique words) and tokens (total word occurrences) in the corpus, with a focus on how often words appear, including those that never occur (N\u2080). This analysis helps understand the distribution of word frequencies in a large text corpus.",
+    "retrieved_slides": [
+      "lecture_06/slide_039.png",
+      "lecture_04/slide_039.png",
+      "lecture_04/slide_020.png",
+      "lecture_04/slide_028.png",
+      "lecture_04/slide_022.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0005",
+    "predicted_answer": "The probability \\( p(A=a | B=b) \\) is maximized by maximizing the product \\( p(A=a) \\times p(B=b | A=a) \\).",
+    "retrieved_slides": [
+      "lecture_05/slide_008.png",
+      "lecture_05/slide_010.png",
+      "lecture_05/slide_017.png",
+      "lecture_16/slide_043.png",
+      "lecture_05/slide_003.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0006",
+    "predicted_answer": "To make a better guess for a rare context's event rate, it is suggested to aggregate the context with other contexts (all contexts or similar contexts). This is another form of backoff.",
+    "retrieved_slides": [
+      "lecture_06/slide_046.png",
+      "lecture_06/slide_035.png",
+      "lecture_04/slide_051.png",
+      "lecture_06/slide_038.png",
+      "lecture_01/slide_024.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0007",
+    "predicted_answer": "The slide suggests enriching the interfaces of tree coordinates by adding attributes: \\( S[\\text{attributes...}] = NP[\\text{attributes...}] \\, VP[\\text{attributes...}] \\).",
+    "retrieved_slides": [
+      "lecture_07/slide_002.png",
+      "lecture_18/slide_064.png",
+      "lecture_04/slide_038.png",
+      "lecture_18/slide_065.png",
+      "lecture_13/slide_024.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0008",
+    "predicted_answer": "The ambiguity mentioned in the fifth pass is due to the VP 1 7 being ambiguous. There are two different ways to build the ambiguous S 0 7 because VP 1 7 is ambiguous.",
+    "retrieved_slides": [
+      "lecture_08/slide_021.png",
+      "lecture_01/slide_010.png",
+      "lecture_01/slide_008.png",
+      "lecture_01/slide_007.png",
+      "lecture_10/slide_002.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0009",
+    "predicted_answer": "In the context of Earley's Algorithm, completing \\( A \\) signifies that a complete constituent has been formed, which can then be attached to hypotheses immediately preceding the \\( A \\). This allows the algorithm to incrementally build and verify structures as it processes the input from left to right.",
+    "retrieved_slides": [
+      "lecture_09/slide_004.png",
+      "lecture_09/slide_003.png",
+      "lecture_09/slide_001.png",
+      "lecture_10/slide_087.png",
+      "lecture_11/slide_024.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0010",
+    "predicted_answer": "In the algorithm, `chart[X,start,end]` is updated using the following formula:\n\n\\[ \\text{chart}[X,\\text{start},\\text{end}] \\min= \\text{weight}(R) + \\text{chart}[Y,\\text{start},\\text{mid}] + \\text{chart}[Z,\\text{mid},\\text{end}] \\]\n\nThis update occurs for each rule \\( R \\) of the form \\( X \\rightarrow Y \\, Z \\).",
+    "retrieved_slides": [
+      "lecture_10/slide_074.png",
+      "lecture_10/slide_073.png",
+      "lecture_10/slide_075.png",
+      "lecture_10/slide_076.png",
+      "lecture_10/slide_077.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0011",
+    "predicted_answer": "The condition for iterative deepening is to throw \\( x \\) away if \\( p(x) < 10^{-200} \\) and lower this threshold if a parse is not obtained.",
+    "retrieved_slides": [
+      "lecture_11/slide_027.png",
+      "lecture_11/slide_025.png",
+      "lecture_11/slide_026.png",
+      "lecture_11/slide_028.png",
+      "lecture_16/slide_070.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0012",
+    "predicted_answer": "The slide suggests expressing \"study the apple on the towel\" using PCFG as:\n\n- VP[head=study] \u2192 VP[head=study] PP[head=on]",
+    "retrieved_slides": [
+      "lecture_12/slide_002.png",
+      "lecture_12/slide_016.png",
+      "lecture_12/slide_018.png",
+      "lecture_12/slide_019.png",
+      "lecture_12/slide_017.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0013",
+    "predicted_answer": "When 'every booth' is used instead of 'a booth', the logical expression changes from using an existential quantifier for the booth to a universal quantifier. Specifically, it changes from:\n\n- \\(\\exists\\) booth (existential quantifier for 'a booth')\n\nto:\n\n- \\(\\forall\\) booth (universal quantifier for 'every booth') \n\nThis means the expression now requires the event to occur in every booth, rather than just one.",
+    "retrieved_slides": [
+      "lecture_13/slide_034.png",
+      "lecture_13/slide_035.png",
+      "lecture_13/slide_032.png",
+      "lecture_13/slide_030.png",
+      "lecture_13/slide_060.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0014",
+    "predicted_answer": "The problem with the sequence 'tell V/1 me NP/1 VP/2 in P/1 20 Det/1 minutes N/1 NP/2 VP/2 ...' is that it requires a large or infinite tagset to handle all possible tree structures, as each word token needs to be tagged with multiple operations to indicate the end of multiple constituents. This complexity makes parsing as tagging difficult.",
+    "retrieved_slides": [
+      "lecture_14/slide_131.png",
+      "lecture_14/slide_126.png",
+      "lecture_14/slide_128.png",
+      "lecture_14/slide_127.png",
+      "lecture_14/slide_125.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0015",
+    "predicted_answer": "We divide the column by \\( Z = 0.99 \\) to normalize the probabilities so that they sum to 1. This is necessary to calculate the conditional probabilities given that a sale occurred in January.",
+    "retrieved_slides": [
+      "lecture_15/slide_007.png",
+      "lecture_06/slide_058.png",
+      "lecture_06/slide_060.png",
+      "lecture_06/slide_051.png",
+      "lecture_06/slide_059.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0016",
+    "predicted_answer": "The smallest box in the diagram represents the \"Training sentences.\"",
+    "retrieved_slides": [
+      "lecture_02/slide_006.png",
+      "lecture_14/slide_055.png",
+      "lecture_14/slide_052.png",
+      "lecture_02/slide_007.png",
+      "lecture_14/slide_162.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0017",
+    "predicted_answer": "The approximate value is \\(2.4 \\times 10^{-5}\\).",
+    "retrieved_slides": [
+      "lecture_04/slide_042.png",
+      "lecture_04/slide_040.png",
+      "lecture_04/slide_043.png",
+      "lecture_14/slide_144.png",
+      "lecture_14/slide_151.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0018",
+    "predicted_answer": "The probabilities for different languages are represented as prior probabilities. They are shown as:\n\n- \\( p(\\text{LANG}=\\text{english}) = 0.7 \\)\n- \\( p(\\text{LANG}=\\text{polish}) = 0.2 \\)\n- \\( p(\\text{LANG}=\\text{xhosa}) = 0.1 \\)\n\nThese probabilities are derived from a simple model using a single die whose sides represent the languages of the world.",
+    "retrieved_slides": [
+      "lecture_05/slide_006.png",
+      "lecture_05/slide_002.png",
+      "lecture_05/slide_004.png",
+      "lecture_04/slide_019.png",
+      "lecture_04/slide_027.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0019",
+    "predicted_answer": "The mathematical expression for the total probability is \\( p(\\text{SENT}=x) = 0.000020 \\).",
+    "retrieved_slides": [
+      "lecture_05/slide_007.png",
+      "lecture_16/slide_054.png",
+      "lecture_06/slide_042.png",
+      "lecture_15/slide_013.png",
+      "lecture_10/slide_079.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0020",
+    "predicted_answer": "In the sentence structure, 'thrilling' is the verb that connects to the noun phrase 'Otto'.",
+    "retrieved_slides": [
+      "lecture_18/slide_057.png",
+      "lecture_07/slide_025.png",
+      "lecture_07/slide_007.png",
+      "lecture_07/slide_028.png",
+      "lecture_07/slide_033.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0021",
+    "predicted_answer": "The red box labeled 'constit(s,0,5)' represents an ambiguity in the parse forest when parsing the sentence \"Time flies like an arrow.\"",
+    "retrieved_slides": [
+      "lecture_08/slide_048.png",
+      "lecture_11/slide_027.png",
+      "lecture_11/slide_026.png",
+      "lecture_07/slide_052.png",
+      "lecture_08/slide_047.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0022",
+    "predicted_answer": "The result of attaching D to \\( A \\rightarrow B C . D E \\) is \\( A \\rightarrow B C D . E \\).",
+    "retrieved_slides": [
+      "lecture_09/slide_004.png",
+      "lecture_09/slide_018.png",
+      "lecture_09/slide_021.png",
+      "lecture_09/slide_019.png",
+      "lecture_09/slide_020.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0023",
+    "predicted_answer": "The mathematical operation used to combine chart values in the second loop is addition.",
+    "retrieved_slides": [
+      "lecture_08/slide_019.png",
+      "lecture_08/slide_018.png",
+      "lecture_10/slide_077.png",
+      "lecture_10/slide_074.png",
+      "lecture_10/slide_076.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0024",
+    "predicted_answer": "The arrow labeled '3NP5 10' indicates the movement of a constituent from the prioritized agenda of pending constituents into the chart of good constituents. It shows that the constituent 'NP' spanning from position 3 to 5 with a priority of 10 is being added to the chart.",
+    "retrieved_slides": [
+      "lecture_11/slide_032.png",
+      "lecture_11/slide_033.png",
+      "lecture_10/slide_063.png",
+      "lecture_11/slide_034.png",
+      "lecture_10/slide_011.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0025",
+    "predicted_answer": "The components labeled in the diagram on the left are:\n\n- \\( \\tilde{y} = \\text{softmax}([1, \\vec{h}]W) \\)\n- \\( W \\in \\mathbb{R}^{7 \\times 3} \\)\n- \\( \\vec{h} = \\vec{x}V \\)\n- \\( V \\in \\mathbb{R}^{6 \\times 6} \\)\n- \\( \\vec{x} \\in \\mathbb{R}^5 \\)\n- One-hot word vector (0,0,0,1,0)",
+    "retrieved_slides": [
+      "lecture_14/slide_088.png",
+      "lecture_14/slide_086.png",
+      "lecture_14/slide_089.png",
+      "lecture_12/slide_009.png",
+      "lecture_14/slide_087.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0026",
+    "predicted_answer": "The semantic representation for the VP_inf subtree is \\( \\lambda e' \\, \\text{act}(e', \\text{loving}) \\).",
+    "retrieved_slides": [
+      "lecture_13/slide_064.png",
+      "lecture_13/slide_058.png",
+      "lecture_13/slide_059.png",
+      "lecture_13/slide_057.png",
+      "lecture_13/slide_063.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0027",
+    "predicted_answer": "The sequence of hidden states for the word 'Don' is \\( h^1_4 \\) and \\( h^2_4 \\).",
+    "retrieved_slides": [
+      "lecture_14/slide_118.png",
+      "lecture_14/slide_116.png",
+      "lecture_14/slide_113.png",
+      "lecture_14/slide_114.png",
+      "lecture_14/slide_112.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0028",
+    "predicted_answer": "The product of all the edge weights on the path H, H, H is \\(0.1 \\times 0.56 \\times 0.56 = 0.03136\\).",
+    "retrieved_slides": [
+      "lecture_15/slide_011.png",
+      "lecture_17/slide_103.png",
+      "lecture_14/slide_136.png",
+      "lecture_17/slide_033.png",
+      "lecture_17/slide_102.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0029",
+    "predicted_answer": "The constituents are visually connected by blue lines that form a hierarchical tree structure, linking the words \"coal,\" \"energy,\" \"expert,\" and \"witness\" in pairs and groups.",
+    "retrieved_slides": [
+      "lecture_16/slide_014.png",
+      "lecture_16/slide_015.png",
+      "lecture_07/slide_033.png",
+      "lecture_07/slide_028.png",
+      "lecture_16/slide_016.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0030",
+    "predicted_answer": "The sequence of transitions shown in the diagram from BOS to EOS is:\n\nBOS \u2192 Every \u2192 nation \u2192 wants \u2192 Joe \u2192 to \u2192 love \u2192 Jill \u2192 EOS",
+    "retrieved_slides": [
+      "lecture_17/slide_115.png",
+      "lecture_17/slide_113.png",
+      "lecture_14/slide_148.png",
+      "lecture_14/slide_144.png",
+      "lecture_14/slide_106.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0031",
+    "predicted_answer": "Four sentences are marked as good English according to the n-gram column.",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png",
+      "lecture_04/slide_018.png",
+      "lecture_03/slide_010.png",
+      "lecture_02/slide_009.png",
+      "lecture_02/slide_005.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0032",
+    "predicted_answer": "The probability p(x) for outcome A is \\( \\frac{1}{2} \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_048.png",
+      "lecture_04/slide_049.png",
+      "lecture_04/slide_047.png",
+      "lecture_04/slide_050.png",
+      "lecture_05/slide_008.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0033",
+    "predicted_answer": "The likelihood probability for a sentence given the language is Xhosa is \\( p(\\text{SENT}=x \\mid \\text{LANG}=\\text{xhosa}) \\).",
+    "retrieved_slides": [
+      "lecture_05/slide_009.png",
+      "lecture_05/slide_005.png",
+      "lecture_05/slide_006.png",
+      "lecture_05/slide_004.png",
+      "lecture_05/slide_017.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0034",
+    "predicted_answer": "The slide does not provide a specific smoothed probability for 'xyd'. It discusses the issue of estimating probabilities when certain sequences are absent in the training data, suggesting that absence might be due to bad luck. To find the smoothed probability, a smoothing technique like Laplace smoothing would need to be applied, but the slide does not specify this calculation.",
+    "retrieved_slides": [
+      "lecture_06/slide_004.png",
+      "lecture_06/slide_005.png",
+      "lecture_06/slide_014.png",
+      "lecture_06/slide_015.png",
+      "lecture_06/slide_006.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0035",
+    "predicted_answer": "The infinitive form of the verb 'eat' in the progressive aspect is \"to be eating.\"",
+    "retrieved_slides": [
+      "lecture_07/slide_023.png",
+      "lecture_07/slide_043.png",
+      "lecture_07/slide_042.png",
+      "lecture_07/slide_031.png",
+      "lecture_07/slide_027.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0036",
+    "predicted_answer": "The start position for the end position 4 in the table is 2.",
+    "retrieved_slides": [
+      "lecture_08/slide_032.png",
+      "lecture_08/slide_033.png",
+      "lecture_08/slide_025.png",
+      "lecture_08/slide_034.png",
+      "lecture_08/slide_028.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0037",
+    "predicted_answer": "According to the table, the grammatical structure of the phrase \"Papa ate the caviar with\" is:\n\n- NP \u2192 Papa\n- VP \u2192 V NP\n  - V \u2192 ate\n  - NP \u2192 Det N\n    - Det \u2192 the\n    - N \u2192 caviar\n- PP \u2192 P\n  - P \u2192 with\n\nThis structure forms part of a sentence (S \u2192 NP VP) but is incomplete without a following noun phrase (NP) to complete the prepositional phrase (PP).",
+    "retrieved_slides": [
+      "lecture_09/slide_022.png",
+      "lecture_08/slide_016.png",
+      "lecture_02/slide_024.png",
+      "lecture_08/slide_002.png",
+      "lecture_08/slide_021.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0038",
+    "predicted_answer": "The cell containing the highest value for 'S' is the topmost cell in the diagram.",
+    "retrieved_slides": [
+      "lecture_16/slide_019.png",
+      "lecture_07/slide_032.png",
+      "lecture_07/slide_035.png",
+      "lecture_07/slide_029.png",
+      "lecture_07/slide_030.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0039",
+    "predicted_answer": "The value at the intersection of 'flies' and '3' in the table is \"NP 4\" and \"VP 4\".",
+    "retrieved_slides": [
+      "lecture_10/slide_006.png",
+      "lecture_10/slide_035.png",
+      "lecture_10/slide_019.png",
+      "lecture_10/slide_009.png",
+      "lecture_10/slide_015.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0040",
+    "predicted_answer": "Grommets had the highest sales in March with 10 units.",
+    "retrieved_slides": [
+      "lecture_15/slide_003.png",
+      "lecture_15/slide_004.png",
+      "lecture_15/slide_005.png",
+      "lecture_15/slide_007.png",
+      "lecture_15/slide_006.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0041",
+    "predicted_answer": "The cell labeled 'NP' is the one on the left, below the cell labeled 'S'.",
+    "retrieved_slides": [
+      "lecture_14/slide_052.png",
+      "lecture_14/slide_058.png",
+      "lecture_14/slide_054.png",
+      "lecture_14/slide_057.png",
+      "lecture_10/slide_037.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0042",
+    "predicted_answer": "The minimum weight parse for the entire sentence is \\( p(S) \\).",
+    "retrieved_slides": [
+      "lecture_11/slide_029.png",
+      "lecture_08/slide_045.png",
+      "lecture_10/slide_004.png",
+      "lecture_17/slide_008.png",
+      "lecture_17/slide_094.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0043",
+    "predicted_answer": "System 1 has higher accuracy on spam (99.99%).",
+    "retrieved_slides": [
+      "lecture_18/slide_023.png",
+      "lecture_17/slide_123.png",
+      "lecture_17/slide_005.png",
+      "lecture_17/slide_017.png",
+      "lecture_18/slide_026.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0044",
+    "predicted_answer": "Eight novels can be processed with 1 million tokens using the ada v2 model.",
+    "retrieved_slides": [
+      "lecture_19/slide_023.png",
+      "lecture_19/slide_024.png",
+      "lecture_19/slide_018.png",
+      "lecture_19/slide_019.png",
+      "lecture_19/slide_026.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0045",
+    "predicted_answer": "\"Jon appeared on TV.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png",
+      "lecture_03/slide_010.png",
+      "lecture_09/slide_006.png",
+      "lecture_02/slide_005.png",
+      "lecture_02/slide_002.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0046",
+    "predicted_answer": "The line labeled \"ors\" has the lowest RMSE value of 0.0068.",
+    "retrieved_slides": [
+      "lecture_04/slide_025.png",
+      "lecture_18/slide_026.png",
+      "lecture_18/slide_024.png",
+      "lecture_06/slide_042.png",
+      "lecture_18/slide_025.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0047",
+    "predicted_answer": "The purple bars in the chart represent the total number of types (T) for each frequency category.",
+    "retrieved_slides": [
+      "lecture_06/slide_039.png",
+      "lecture_06/slide_041.png",
+      "lecture_15/slide_019.png",
+      "lecture_06/slide_042.png",
+      "lecture_15/slide_021.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0048",
+    "predicted_answer": "The probability of eye movement for the 'Relatum-target' category starts at around 0.3 at '5 hearts that is', increases slightly to about 0.35 at 'below', and then decreases to around 0.1 by 'clubs'.",
+    "retrieved_slides": [
+      "lecture_12/slide_013.png",
+      "lecture_12/slide_015.png",
+      "lecture_12/slide_014.png",
+      "lecture_12/slide_011.png",
+      "lecture_12/slide_012.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0049",
+    "predicted_answer": "The graph of \\( \\sigma(x) \\) illustrates that for \\( x < 0 \\), \\( \\sigma(x) \\approx 0 \\).",
+    "retrieved_slides": [
+      "lecture_14/slide_042.png",
+      "lecture_14/slide_029.png",
+      "lecture_14/slide_158.png",
+      "lecture_17/slide_101.png",
+      "lecture_17/slide_099.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0050",
+    "predicted_answer": "The probability of p(Observations) increases with each iteration in the bar chart.",
+    "retrieved_slides": [
+      "lecture_15/slide_020.png",
+      "lecture_15/slide_019.png",
+      "lecture_15/slide_021.png",
+      "lecture_06/slide_007.png",
+      "lecture_16/slide_002.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0051",
+    "predicted_answer": "As recall increases, precision decreases according to the graph.",
+    "retrieved_slides": [
+      "lecture_18/slide_024.png",
+      "lecture_18/slide_025.png",
+      "lecture_18/slide_026.png",
+      "lecture_18/slide_027.png",
+      "lecture_18/slide_053.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0052",
+    "predicted_answer": "The approximate probability value at the peak of the 'hor' line is 0.3.",
+    "retrieved_slides": [
+      "lecture_17/slide_023.png",
+      "lecture_04/slide_024.png",
+      "lecture_14/slide_114.png",
+      "lecture_04/slide_039.png",
+      "lecture_04/slide_040.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0053",
+    "predicted_answer": "The purple color in the bar chart represents the novel types (T) that were seen for the first time in the corpus.",
+    "retrieved_slides": [
+      "lecture_06/slide_041.png",
+      "lecture_06/slide_039.png",
+      "lecture_15/slide_019.png",
+      "lecture_15/slide_021.png",
+      "lecture_15/slide_020.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0054",
+    "predicted_answer": "The probability of eye movement for 'Alternative' increases between the first and second points.",
+    "retrieved_slides": [
+      "lecture_12/slide_013.png",
+      "lecture_12/slide_014.png",
+      "lecture_12/slide_015.png",
+      "lecture_15/slide_030.png",
+      "lecture_08/slide_028.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0055",
+    "predicted_answer": "The perplexity decreases over 10 iterations, starting above 3.2 and ending below 2.7.",
+    "retrieved_slides": [
+      "lecture_15/slide_019.png",
+      "lecture_15/slide_020.png",
+      "lecture_15/slide_021.png",
+      "lecture_15/slide_017.png",
+      "lecture_04/slide_051.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0056",
+    "predicted_answer": "The graph on the slide compares the precision and recall of good (non-spam) email for two different systems.",
+    "retrieved_slides": [
+      "lecture_18/slide_026.png",
+      "lecture_18/slide_024.png",
+      "lecture_18/slide_025.png",
+      "lecture_12/slide_013.png",
+      "lecture_12/slide_014.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0057",
+    "predicted_answer": "The dashed line represents the \"Alternative\" in the chart.",
+    "retrieved_slides": [
+      "lecture_12/slide_014.png",
+      "lecture_12/slide_013.png",
+      "lecture_04/slide_025.png",
+      "lecture_18/slide_025.png",
+      "lecture_12/slide_015.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0058",
+    "predicted_answer": "The histogram with the smoothest distribution corresponds to a sample size of 60,000.",
+    "retrieved_slides": [
+      "lecture_06/slide_018.png",
+      "lecture_06/slide_017.png",
+      "lecture_06/slide_028.png",
+      "lecture_06/slide_019.png",
+      "lecture_06/slide_020.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0059",
+    "predicted_answer": "The probability of eye movement for the 'Miscellaneous' category at the word 'below' is approximately 0.1.",
+    "retrieved_slides": [
+      "lecture_12/slide_013.png",
+      "lecture_12/slide_014.png",
+      "lecture_12/slide_015.png",
+      "lecture_12/slide_012.png",
+      "lecture_04/slide_015.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0060",
+    "predicted_answer": "The approximate sample size of the histogram in the bottom right corner is 60,000.",
+    "retrieved_slides": [
+      "lecture_06/slide_018.png",
+      "lecture_06/slide_017.png",
+      "lecture_15/slide_020.png",
+      "lecture_15/slide_019.png",
+      "lecture_06/slide_020.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0061",
+    "predicted_answer": "One sentence is marked with a question mark.",
+    "retrieved_slides": [
+      "lecture_17/slide_032.png",
+      "lecture_02/slide_002.png",
+      "lecture_19/slide_002.png",
+      "lecture_17/slide_001.png",
+      "lecture_10/slide_077.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0062",
+    "predicted_answer": "\"Jon is happy today.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_010.png",
+      "lecture_19/slide_012.png",
+      "lecture_13/slide_010.png",
+      "lecture_02/slide_009.png",
+      "lecture_18/slide_014.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0063",
+    "predicted_answer": "The counts from the Brown corpus for the probability \\( p(h \\mid BOS, BOS) \\) are 4470/52108.",
+    "retrieved_slides": [
+      "lecture_04/slide_027.png",
+      "lecture_04/slide_028.png",
+      "lecture_04/slide_039.png",
+      "lecture_06/slide_002.png",
+      "lecture_04/slide_026.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0064",
+    "predicted_answer": "The 'likelihood' box contains the following probabilities:\n\n- \\( p(SENT=x \\mid LANG=english) \\)\n- \\( p(SENT=x \\mid LANG=polish) \\)\n- \\( p(SENT=x \\mid LANG=xhosa) \\)",
+    "retrieved_slides": [
+      "lecture_05/slide_005.png",
+      "lecture_05/slide_010.png",
+      "lecture_05/slide_009.png",
+      "lecture_05/slide_011.png",
+      "lecture_05/slide_014.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0065",
+    "predicted_answer": "The slide illustrates that smoothing reduces variance but increases bias. With no smoothing (\\(\\lambda=0\\)), there is high variance and low bias, leading to overfitting. As smoothing increases (small \\(\\lambda>0\\)), variance decreases and bias increases. With more smoothing (large \\(\\lambda>0\\)), variance is minimized but bias is high, leading to underfitting. The goal is to find a balance where both bias and variance are minimized.",
+    "retrieved_slides": [
+      "lecture_06/slide_021.png",
+      "lecture_06/slide_020.png",
+      "lecture_06/slide_028.png",
+      "lecture_06/slide_019.png",
+      "lecture_06/slide_014.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0066",
+    "predicted_answer": "In the perfect progressive aspect, the present form of the verb \"eat\" is \"has been eating,\" while the past form is \"had been eating.\" The present perfect progressive indicates an action that started in the past and continues into the present, whereas the past perfect progressive indicates an action that was ongoing in the past before another past action.",
+    "retrieved_slides": [
+      "lecture_07/slide_031.png",
+      "lecture_07/slide_027.png",
+      "lecture_07/slide_023.png",
+      "lecture_07/slide_042.png",
+      "lecture_13/slide_048.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0067",
+    "predicted_answer": "The words \"the\" and \"a\" correspond to the 'Det' category.",
+    "retrieved_slides": [
+      "lecture_09/slide_026.png",
+      "lecture_13/slide_066.png",
+      "lecture_07/slide_013.png",
+      "lecture_13/slide_065.png",
+      "lecture_07/slide_012.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0068",
+    "predicted_answer": "The syntactic structure for the phrase \"ate the\" is \"1 V . ate 2 Det . the\".",
+    "retrieved_slides": [
+      "lecture_09/slide_045.png",
+      "lecture_02/slide_023.png",
+      "lecture_09/slide_064.png",
+      "lecture_09/slide_053.png",
+      "lecture_02/slide_022.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0069",
+    "predicted_answer": "The elements involved in the goal formula for the Viterbi algorithm are:\n\n- `phrase(start_symbol, 0, sentence_length)`",
+    "retrieved_slides": [
+      "lecture_10/slide_070.png",
+      "lecture_10/slide_069.png",
+      "lecture_14/slide_146.png",
+      "lecture_17/slide_041.png",
+      "lecture_17/slide_097.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0070",
+    "predicted_answer": "The complexity of the sentences decreases as you move down the slide. The top section contains more complex sentences explaining NLP and computational linguistics, while the bottom section lists simpler, bullet-pointed topics related to discovering linguistic structure.",
+    "retrieved_slides": [
+      "lecture_18/slide_089.png",
+      "lecture_13/slide_012.png",
+      "lecture_06/slide_027.png",
+      "lecture_18/slide_069.png",
+      "lecture_09/slide_006.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0071",
+    "predicted_answer": "In the syntactic tree, the node 'VP_stem' is a child of 'VP_inf'. The 'VP_stem' node represents the verb stem \"love,\" while 'VP_inf' includes the infinitive marker \"to\" and the verb phrase.",
+    "retrieved_slides": [
+      "lecture_13/slide_062.png",
+      "lecture_13/slide_067.png",
+      "lecture_13/slide_056.png",
+      "lecture_13/slide_057.png",
+      "lecture_08/slide_014.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0072",
+    "predicted_answer": "The features used as input to compute the gold features are \"Asian,\" \"Black,\" \"Educated,\" \"Female,\" and \"Income.\"",
+    "retrieved_slides": [
+      "lecture_14/slide_036.png",
+      "lecture_14/slide_043.png",
+      "lecture_17/slide_034.png",
+      "lecture_17/slide_035.png",
+      "lecture_06/slide_050.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0073",
+    "predicted_answer": "The trend for 'Ice Creams' shows frequent fluctuations, with values generally ranging between 2 and 3.5. In contrast, 'p(H)' also fluctuates but remains at lower values, mostly between 0 and 1. The 'Ice Creams' trend is more variable and higher overall compared to 'p(H)'.",
+    "retrieved_slides": [
+      "lecture_15/slide_021.png",
+      "lecture_15/slide_019.png",
+      "lecture_15/slide_020.png",
+      "lecture_15/slide_013.png",
+      "lecture_15/slide_011.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0074",
+    "predicted_answer": "The non-terminal in cell (0, 1) with the highest probability is \"R\".",
+    "retrieved_slides": [
+      "lecture_14/slide_024.png",
+      "lecture_16/slide_073.png",
+      "lecture_16/slide_067.png",
+      "lecture_18/slide_030.png",
+      "lecture_16/slide_074.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0075",
+    "predicted_answer": "In the sentence \"Time flies like an arrow,\" the tag 'P' represents the word \"like.\"",
+    "retrieved_slides": [
+      "lecture_17/slide_077.png",
+      "lecture_17/slide_075.png",
+      "lecture_17/slide_078.png",
+      "lecture_17/slide_076.png",
+      "lecture_17/slide_074.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0076",
+    "predicted_answer": "The tree diagram represents the sentence \"Time flies like an arrow\" with the following structure:\n\n- S (Sentence)\n  - NP (Noun Phrase)\n    - N (Noun): \"Time\"\n  - VP (Verb Phrase)\n    - V (Verb): \"flies\"\n    - PP (Prepositional Phrase)\n      - P (Preposition): \"like\"\n      - NP (Noun Phrase)\n        - D (Determiner): \"an\"\n        - N (Noun): \"arrow\"",
+    "retrieved_slides": [
+      "lecture_17/slide_050.png",
+      "lecture_13/slide_040.png",
+      "lecture_08/slide_003.png",
+      "lecture_17/slide_047.png",
+      "lecture_07/slide_051.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0077",
+    "predicted_answer": "\"In Jon appeared TV.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png",
+      "lecture_02/slide_005.png",
+      "lecture_02/slide_004.png",
+      "lecture_02/slide_002.png",
+      "lecture_03/slide_010.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0078",
+    "predicted_answer": "The probability of the word 'horses' according to the model is approximately \\(7.2 \\times 10^{-5}\\).",
+    "retrieved_slides": [
+      "lecture_04/slide_040.png",
+      "lecture_04/slide_042.png",
+      "lecture_04/slide_027.png",
+      "lecture_04/slide_039.png",
+      "lecture_04/slide_018.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0079",
+    "predicted_answer": "In the context of this slide, 'a priori' refers to the prior probabilities \\( p(A = a1) \\), \\( p(A = a2) \\), and \\( p(A = a3) \\). These are the initial probabilities of different hypotheses \\( A \\) before considering the evidence \\( B \\).",
+    "retrieved_slides": [
+      "lecture_05/slide_010.png",
+      "lecture_05/slide_009.png",
+      "lecture_05/slide_011.png",
+      "lecture_05/slide_005.png",
+      "lecture_04/slide_019.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0080",
+    "predicted_answer": "The mathematical expression representing the goal of maximizing \\( p(\\text{training data}|\\theta) \\) on the slide is:\n\n\\[\n\\prod_{i=1}^{n} p_{\\vec{\\theta}}(y_i \\mid x_i)\n\\]",
+    "retrieved_slides": [
+      "lecture_06/slide_052.png",
+      "lecture_06/slide_053.png",
+      "lecture_14/slide_133.png",
+      "lecture_14/slide_021.png",
+      "lecture_06/slide_030.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0081",
+    "predicted_answer": "The elements \"thrilling Otto\" and \"eating Otto\" are structurally similar because both consist of a verb followed by a noun phrase (NP). In each case, the verb (\"thrilling\" or \"eating\") is directly followed by the noun \"Otto,\" forming a verb phrase (VP) structure.",
+    "retrieved_slides": [
+      "lecture_07/slide_010.png",
+      "lecture_07/slide_009.png",
+      "lecture_07/slide_007.png",
+      "lecture_07/slide_008.png",
+      "lecture_07/slide_011.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0082",
+    "predicted_answer": "Five passes are shown in the diagram.",
+    "retrieved_slides": [
+      "lecture_08/slide_021.png",
+      "lecture_08/slide_020.png",
+      "lecture_10/slide_081.png",
+      "lecture_10/slide_083.png",
+      "lecture_10/slide_082.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0083",
+    "predicted_answer": "The word \"ate\" is associated with one grammatical label: V (verb).",
+    "retrieved_slides": [
+      "lecture_09/slide_022.png",
+      "lecture_09/slide_005.png",
+      "lecture_09/slide_070.png",
+      "lecture_09/slide_056.png",
+      "lecture_09/slide_065.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0084",
+    "predicted_answer": "The value 'S 2\u207b\u00b2\u00b2' in the table is derived using the rule \\(2^{-2}\\) \\(S \\rightarrow S \\, PP\\). This rule is applied to the entries 'S 2\u207b\u00b2\u2077' and 'PP 2\u207b\u00b9\u00b2' in the table, resulting in the combined probability of \\(2^{-22}\\).",
+    "retrieved_slides": [
+      "lecture_16/slide_039.png",
+      "lecture_16/slide_040.png",
+      "lecture_16/slide_041.png",
+      "lecture_10/slide_058.png",
+      "lecture_10/slide_026.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0085",
+    "predicted_answer": "The predicted structure for the word \"ate\" is \"1 V . ate\".",
+    "retrieved_slides": [
+      "lecture_11/slide_008.png",
+      "lecture_11/slide_013.png",
+      "lecture_11/slide_014.png",
+      "lecture_09/slide_042.png",
+      "lecture_11/slide_006.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0086",
+    "predicted_answer": "The card below the eight of clubs is the five of hearts.",
+    "retrieved_slides": [
+      "lecture_12/slide_015.png",
+      "lecture_12/slide_014.png",
+      "lecture_12/slide_013.png",
+      "lecture_12/slide_012.png",
+      "lecture_12/slide_011.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0087",
+    "predicted_answer": "The formula for replacing the time variable with an event variable is:\n\n\u2203e past(e), act(e,swallowing), swallower(e,Gilly), exists(goldfish, swallowee(e)), exists(booth, location(e)), ...",
+    "retrieved_slides": [
+      "lecture_13/slide_030.png",
+      "lecture_17/slide_041.png",
+      "lecture_17/slide_013.png",
+      "lecture_13/slide_047.png",
+      "lecture_17/slide_034.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0088",
+    "predicted_answer": "The diagram describes the CKY algorithm, which is a recognizer. The output is \"yes\" or \"no\" based on whether the input string can be recognized by the grammar. It doesn't specify the output for a specific input like [1, 1, 1]. The output would depend on the grammar being used.",
+    "retrieved_slides": [
+      "lecture_08/slide_029.png",
+      "lecture_14/slide_031.png",
+      "lecture_14/slide_045.png",
+      "lecture_18/slide_034.png",
+      "lecture_14/slide_030.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0089",
+    "predicted_answer": "On Day 3 for the path ending at C, \\( \\alpha \\) is calculated as follows:\n\n\\[ \\alpha = 0.009 \\times 0.08 + 0.063 \\times 0.01 = 0.00135 \\]",
+    "retrieved_slides": [
+      "lecture_15/slide_011.png",
+      "lecture_16/slide_035.png",
+      "lecture_15/slide_031.png",
+      "lecture_15/slide_013.png",
+      "lecture_15/slide_010.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0090",
+    "predicted_answer": "The graph on the right represents the iterative process of the Expectation-Maximization (EM) algorithm used in Hidden Markov Models. It shows how the probabilities are adjusted during the E step and M step to improve the model's parameters based on the initial guess.",
+    "retrieved_slides": [
+      "lecture_16/slide_006.png",
+      "lecture_16/slide_004.png",
+      "lecture_16/slide_005.png",
+      "lecture_15/slide_010.png",
+      "lecture_14/slide_161.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0091",
+    "predicted_answer": "The slide shows multiple parse trees for the sentence \"Time flies like an arrow,\" each with a different structure:\n\n1. **First Tree:**\n   - S (Sentence)\n     - N (Noun): \"Time\"\n     - VP (Verb Phrase)\n       - V (Verb): \"flies\"\n       - PP (Prepositional Phrase)\n         - P (Preposition): \"like\"\n         - NP (Noun Phrase)\n           - D (Determiner): \"an\"\n           - N (Noun): \"arrow\"\n\n2. **Second Tree:**\n   - S (Sentence)\n     - VP (Verb Phrase)\n       - V (Verb): \"Time\"\n       - NP (Noun Phrase)\n         - N (Noun): \"flies\"\n         - PP (Prepositional Phrase)\n           - P (Preposition): \"like\"\n           - NP (Noun Phrase)\n             - D (Determiner): \"an\"\n             - N (Noun): \"arrow\"\n\n3. **Third Tree:**\n   - S (Sentence)\n     - NP (Noun Phrase)\n       - N (Noun): \"Time\"\n       - N (Noun): \"flies\"\n     - VP (Verb Phrase)\n       - V (Verb):",
+    "retrieved_slides": [
+      "lecture_17/slide_094.png",
+      "lecture_17/slide_021.png",
+      "lecture_17/slide_008.png",
+      "lecture_08/slide_048.png",
+      "lecture_17/slide_031.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0092",
+    "predicted_answer": "The equivalent class URL shown in the diagram is `http://www.w4.org/2002/07/owl#equivalentClass`.",
+    "retrieved_slides": [
+      "lecture_18/slide_077.png",
+      "lecture_17/slide_053.png",
+      "lecture_17/slide_054.png",
+      "lecture_17/slide_052.png",
+      "lecture_18/slide_034.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0093",
+    "predicted_answer": "The cost of processing 1K tokens using the ada v2 model is $0.0001. For 1M tokens, the cost is $0.10.",
+    "retrieved_slides": [
+      "lecture_19/slide_023.png",
+      "lecture_19/slide_026.png",
+      "lecture_19/slide_018.png",
+      "lecture_19/slide_019.png",
+      "lecture_19/slide_024.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0094",
+    "predicted_answer": "The root of the sentence in the dependency diagram is \"ROOT.\"",
+    "retrieved_slides": [
+      "lecture_07/slide_020.png",
+      "lecture_13/slide_068.png",
+      "lecture_13/slide_053.png",
+      "lecture_13/slide_061.png",
+      "lecture_13/slide_057.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0095",
+    "predicted_answer": "\"In Jon appeared TV.\"",
+    "retrieved_slides": [
+      "lecture_03/slide_009.png",
+      "lecture_03/slide_010.png",
+      "lecture_02/slide_002.png",
+      "lecture_02/slide_005.png",
+      "lecture_02/slide_004.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0096",
+    "predicted_answer": "The two outputs related to the definition of \\( p \\) are:\n\n1. \\( p(\\text{win} \\mid \\text{clear}) = \\frac{p(\\text{win, clear})}{p(\\text{clear})} \\)\n2. \\( p \\) measures the total probability of a set of outcomes (an \"event\").",
+    "retrieved_slides": [
+      "lecture_04/slide_008.png",
+      "lecture_04/slide_029.png",
+      "lecture_04/slide_007.png",
+      "lecture_04/slide_030.png",
+      "lecture_04/slide_009.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0097",
+    "predicted_answer": "According to Bayes' Theorem, the formula for \\( p(e | f) \\) is:\n\n\\[ p(e | f) = \\frac{p(e) \\cdot p(f | e)}{p(f)} \\]",
+    "retrieved_slides": [
+      "lecture_05/slide_019.png",
+      "lecture_05/slide_020.png",
+      "lecture_05/slide_014.png",
+      "lecture_15/slide_012.png",
+      "lecture_05/slide_003.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0098",
+    "predicted_answer": "The trigram model's parameter \\( p(s \\mid s, e) \\) is estimated from the Brown corpus as \\( \\frac{2044}{21250} \\).",
+    "retrieved_slides": [
+      "lecture_06/slide_002.png",
+      "lecture_04/slide_039.png",
+      "lecture_04/slide_027.png",
+      "lecture_04/slide_028.png",
+      "lecture_04/slide_021.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0099",
+    "predicted_answer": "The head verb of the sentence according to the tree diagram is \"thrill.\"",
+    "retrieved_slides": [
+      "lecture_07/slide_028.png",
+      "lecture_07/slide_033.png",
+      "lecture_07/slide_025.png",
+      "lecture_07/slide_039.png",
+      "lecture_07/slide_031.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0100",
+    "predicted_answer": "The label 'rewrites(vp,v,advp)' indicates a rule or transformation where a verb phrase (vp) is rewritten or decomposed into a verb (v) and an adverbial phrase (advp).",
+    "retrieved_slides": [
+      "lecture_08/slide_048.png",
+      "lecture_16/slide_011.png",
+      "lecture_16/slide_061.png",
+      "lecture_08/slide_044.png",
+      "lecture_16/slide_034.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0101",
+    "predicted_answer": "Two prepositional phrases are used in column 10.",
+    "retrieved_slides": [
+      "lecture_09/slide_096.png",
+      "lecture_09/slide_094.png",
+      "lecture_09/slide_095.png",
+      "lecture_09/slide_093.png",
+      "lecture_11/slide_008.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0102",
+    "predicted_answer": "The value associated with 'PP' in the table is \\( (4, \\textcolor{magenta}{\\bullet}) \\).",
+    "retrieved_slides": [
+      "lecture_11/slide_023.png",
+      "lecture_11/slide_024.png",
+      "lecture_10/slide_013.png",
+      "lecture_17/slide_062.png",
+      "lecture_10/slide_026.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0103",
+    "predicted_answer": "The orange circles in the diagram represent the selected path of words chosen by the greedy decoder, which always picks the most probable next word.",
+    "retrieved_slides": [
+      "lecture_14/slide_138.png",
+      "lecture_12/slide_011.png",
+      "lecture_14/slide_150.png",
+      "lecture_14/slide_137.png",
+      "lecture_16/slide_070.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0104",
+    "predicted_answer": "The arrow labeled 'A' points to the node labeled 'N'.",
+    "retrieved_slides": [
+      "lecture_17/slide_112.png",
+      "lecture_09/slide_017.png",
+      "lecture_12/slide_017.png",
+      "lecture_17/slide_113.png",
+      "lecture_17/slide_039.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0105",
+    "predicted_answer": "The lambda expression \\( \\lambda x \\lambda e \\, \\text{act}(e, \\text{loving}), \\text{lover}(e, x), \\text{lovee}(e, M) \\) represents a function that takes an individual \\( x \\) and an event \\( e \\) and asserts that \\( e \\) is an act of loving where \\( x \\) is the lover and \\( M \\) is the lovee. This expression is part of the compositional semantics, describing the meaning of the verb phrase \"loves Mel\" in the context of the sentence.",
+    "retrieved_slides": [
+      "lecture_13/slide_055.png",
+      "lecture_13/slide_059.png",
+      "lecture_13/slide_061.png",
+      "lecture_13/slide_060.png",
+      "lecture_13/slide_058.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0106",
+    "predicted_answer": "As \\( T \\) decreases from 5 to 1/5, the softmax output becomes less uniform and more concentrated on the largest logit. At \\( T = 5 \\), the probabilities are more evenly distributed. As \\( T \\) approaches 1/5, the probabilities become more distinct, with one probability approaching 1 and the others approaching 0, resembling a one-hot vector.",
+    "retrieved_slides": [
+      "lecture_14/slide_025.png",
+      "lecture_14/slide_024.png",
+      "lecture_14/slide_042.png",
+      "lecture_14/slide_040.png",
+      "lecture_14/slide_022.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0107",
+    "predicted_answer": "March had the highest total probability of sales with 0.126.",
+    "retrieved_slides": [
+      "lecture_15/slide_005.png",
+      "lecture_15/slide_006.png",
+      "lecture_15/slide_007.png",
+      "lecture_15/slide_004.png",
+      "lecture_06/slide_042.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0108",
+    "predicted_answer": "The rule with the highest exponent value is \"RVEW/VEW.\"",
+    "retrieved_slides": [
+      "lecture_04/slide_015.png",
+      "lecture_17/slide_042.png",
+      "lecture_04/slide_014.png",
+      "lecture_10/slide_053.png",
+      "lecture_14/slide_127.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0109",
+    "predicted_answer": "The path weight for the word \"flies\" is calculated using the components:\n\n- \\( \\theta_{V,N} = \\log p(N \\mid V) \\)\n- \\( \\theta_{N,\\text{flies}} = \\log p(\\text{flies} \\mid N) \\)",
+    "retrieved_slides": [
+      "lecture_17/slide_041.png",
+      "lecture_17/slide_071.png",
+      "lecture_17/slide_040.png",
+      "lecture_17/slide_039.png",
+      "lecture_17/slide_103.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0110",
+    "predicted_answer": "The test data is presented in a table with two rows. Each row has a \"Spelling\" column with \"???\" and a \"Context\" column showing sentences with the word \"aid/aide\" in context:\n\n1. \"... said the longtime aid/aide to the Mayor of St. ...\"\n2. \"... will squander the aid/aide it receives from the ...\"",
+    "retrieved_slides": [
+      "lecture_18/slide_038.png",
+      "lecture_18/slide_035.png",
+      "lecture_18/slide_036.png",
+      "lecture_18/slide_037.png",
+      "lecture_06/slide_023.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0111",
+    "predicted_answer": "If the draft is a top-level post, the section \"Your student is adding to the following thread. ORIGINAL POST: ... REPLY: ... REPLY: ... FINAL REPLY: ...\" should be omitted.",
+    "retrieved_slides": [
+      "lecture_19/slide_041.png",
+      "lecture_19/slide_043.png",
+      "lecture_19/slide_039.png",
+      "lecture_19/slide_042.png",
+      "lecture_19/slide_037.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0112",
+    "predicted_answer": "The example of a context-sensitive grammar rule on the slide is: rewrite(\"VP\", \"V\", \"NP\").",
+    "retrieved_slides": [
+      "lecture_08/slide_044.png",
+      "lecture_07/slide_002.png",
+      "lecture_02/slide_019.png",
+      "lecture_02/slide_020.png",
+      "lecture_02/slide_018.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0113",
+    "predicted_answer": "The probability of Valentine given Epitaph and the weather is clear is represented as \\( \\frac{\\text{VEW}}{\\text{EW}} \\).",
+    "retrieved_slides": [
+      "lecture_04/slide_015.png",
+      "lecture_04/slide_016.png",
+      "lecture_04/slide_010.png",
+      "lecture_04/slide_011.png",
+      "lecture_04/slide_014.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0114",
+    "predicted_answer": "The posterior odds ratio compares the probability of having hoof-and-mouth disease given a positive test result to the probability of not having the disease given a positive test result.",
+    "retrieved_slides": [
+      "lecture_05/slide_014.png",
+      "lecture_05/slide_015.png",
+      "lecture_05/slide_017.png",
+      "lecture_05/slide_018.png",
+      "lecture_14/slide_214.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0115",
+    "predicted_answer": "The formula for calculating \\( \\hat{p}(\\text{baby} \\mid \\text{see the}) \\) is:\n\n\\[\n\\frac{(\\text{count(see the baby)} + \\lambda V \\hat{p}(\\text{baby} \\mid \\text{the}))}{(\\text{count(see the)} + \\lambda V)}\n\\]",
+    "retrieved_slides": [
+      "lecture_06/slide_030.png",
+      "lecture_06/slide_029.png",
+      "lecture_06/slide_032.png",
+      "lecture_06/slide_031.png",
+      "lecture_05/slide_012.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0116",
+    "predicted_answer": "The head of the verb phrase \"been thrilling Otto\" is \"been.\"",
+    "retrieved_slides": [
+      "lecture_07/slide_011.png",
+      "lecture_07/slide_025.png",
+      "lecture_07/slide_007.png",
+      "lecture_18/slide_057.png",
+      "lecture_07/slide_013.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0117",
+    "predicted_answer": "In the pseudocode, the variable `width` iterates from 2 to the value of `end`. This means `width` is always less than or equal to `end`.",
+    "retrieved_slides": [
+      "lecture_08/slide_041.png",
+      "lecture_10/slide_077.png",
+      "lecture_10/slide_074.png",
+      "lecture_10/slide_073.png",
+      "lecture_10/slide_076.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0118",
+    "predicted_answer": "The syntactic structure for the sentence \"Papa ate the caviar with a spoon\" is as follows:\n\n- **S** (Sentence)\n  - **NP** (Noun Phrase)\n    - \"Papa\"\n  - **VP** (Verb Phrase)\n    - **V** (Verb)\n      - \"ate\"\n    - **NP** (Noun Phrase)\n      - **Det** (Determiner)\n        - \"the\"\n      - **N** (Noun)\n        - \"caviar\"\n    - **PP** (Prepositional Phrase)\n      - **P** (Preposition)\n        - \"with\"\n      - **NP** (Noun Phrase)\n        - **Det** (Determiner)\n          - \"a\"\n        - **N** (Noun)\n          - \"spoon\"",
+    "retrieved_slides": [
+      "lecture_02/slide_024.png",
+      "lecture_08/slide_002.png",
+      "lecture_08/slide_003.png",
+      "lecture_02/slide_022.png",
+      "lecture_02/slide_023.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0119",
+    "predicted_answer": "The rule with the highest score in the cell (0, 2) is \"S \u2192 S PP\" with a score of 13.",
+    "retrieved_slides": [
+      "lecture_17/slide_031.png",
+      "lecture_10/slide_054.png",
+      "lecture_10/slide_053.png",
+      "lecture_17/slide_045.png",
+      "lecture_17/slide_044.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0120",
+    "predicted_answer": "The row containing the text '0 NP . Det N' is the third row.",
+    "retrieved_slides": [
+      "lecture_09/slide_029.png",
+      "lecture_09/slide_028.png",
+      "lecture_11/slide_004.png",
+      "lecture_09/slide_030.png",
+      "lecture_11/slide_005.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0121",
+    "predicted_answer": "The \"Target\" category has the highest probability of eye movement at the word \"below.\"",
+    "retrieved_slides": [
+      "lecture_12/slide_013.png",
+      "lecture_12/slide_014.png",
+      "lecture_12/slide_015.png",
+      "lecture_12/slide_012.png",
+      "lecture_13/slide_042.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0122",
+    "predicted_answer": "The lambda expression '\u03bbx \u03bbe act(e,loving), lover(e,x), lovee(e,M)' represents the semantic meaning of the verb phrase \"love Mel\" in the context of the diagram. It describes an event \\( e \\) of loving, where \\( x \\) is the lover and \\( M \\) (Mel) is the lovee.",
+    "retrieved_slides": [
+      "lecture_13/slide_060.png",
+      "lecture_13/slide_061.png",
+      "lecture_13/slide_059.png",
+      "lecture_13/slide_062.png",
+      "lecture_13/slide_055.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0123",
+    "predicted_answer": "The equation shown on the slide is:\n\n\\[ \\text{score}(x, y) = \\sum_k \\theta_k f_k(x, y) \\]",
+    "retrieved_slides": [
+      "lecture_17/slide_022.png",
+      "lecture_05/slide_003.png",
+      "lecture_15/slide_014.png",
+      "lecture_16/slide_046.png",
+      "lecture_17/slide_016.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0124",
+    "predicted_answer": "The conditional probability \\( p(\\text{widget}|\\text{Jan}) \\) is calculated by dividing the joint probability \\( p(\\text{Jan, widget}) = 0.005 \\) by the marginal probability \\( p(\\text{Jan}) = 0.099 \\). So, \\( p(\\text{widget}|\\text{Jan}) = 0.005 / 0.099 \\).",
+    "retrieved_slides": [
+      "lecture_15/slide_007.png",
+      "lecture_15/slide_006.png",
+      "lecture_15/slide_005.png",
+      "lecture_04/slide_040.png",
+      "lecture_04/slide_036.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0125",
+    "predicted_answer": "There are nine paths highlighted in the diagram.",
+    "retrieved_slides": [
+      "lecture_17/slide_038.png",
+      "lecture_15/slide_014.png",
+      "lecture_17/slide_037.png",
+      "lecture_17/slide_102.png",
+      "lecture_17/slide_104.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0126",
+    "predicted_answer": "The hidden states used in the calculation involving 'Aux' are \\( h_5^1 \\) and \\( h_5^2 \\).",
+    "retrieved_slides": [
+      "lecture_14/slide_118.png",
+      "lecture_14/slide_116.png",
+      "lecture_17/slide_114.png",
+      "lecture_14/slide_153.png",
+      "lecture_14/slide_117.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0127",
+    "predicted_answer": "The two words that form the noun phrase (NP) under the root 'S' are \"The plan.\"",
+    "retrieved_slides": [
+      "lecture_07/slide_038.png",
+      "lecture_07/slide_035.png",
+      "lecture_07/slide_020.png",
+      "lecture_07/slide_034.png",
+      "lecture_07/slide_027.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0128",
+    "predicted_answer": "Taking a walk in the park.",
+    "retrieved_slides": [
+      "lecture_19/slide_058.png",
+      "lecture_19/slide_040.png",
+      "lecture_08/slide_001.png",
+      "lecture_19/slide_037.png",
+      "lecture_17/slide_002.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0129",
+    "predicted_answer": "The 'NP' node expands into \"The plan\" according to the tree diagram.",
+    "retrieved_slides": [
+      "lecture_07/slide_039.png",
+      "lecture_07/slide_025.png",
+      "lecture_07/slide_036.png",
+      "lecture_07/slide_031.png",
+      "lecture_07/slide_027.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0130",
+    "predicted_answer": "The slide visually distinguishes different parts of the mathematical expression by using color. The words being conditioned on are in black, while the words being conditioned (the new word in each step) are in red.",
+    "retrieved_slides": [
+      "lecture_10/slide_045.png",
+      "lecture_13/slide_005.png",
+      "lecture_15/slide_012.png",
+      "lecture_10/slide_046.png",
+      "lecture_15/slide_016.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0131",
+    "predicted_answer": "The prior odds ratio for hoof-and-mouth disease is \\( \\frac{20}{999} \\).",
+    "retrieved_slides": [
+      "lecture_05/slide_015.png",
+      "lecture_05/slide_014.png",
+      "lecture_05/slide_012.png",
+      "lecture_05/slide_016.png",
+      "lecture_05/slide_017.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0132",
+    "predicted_answer": "\"Hey, don\u2019t they teach estimation over in the stats department?\"",
+    "retrieved_slides": [
+      "lecture_06/slide_008.png",
+      "lecture_13/slide_015.png",
+      "lecture_06/slide_016.png",
+      "lecture_13/slide_074.png",
+      "lecture_16/slide_018.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0133",
+    "predicted_answer": "The head of the sentence according to the diagram is \"ROOT.\"",
+    "retrieved_slides": [
+      "lecture_07/slide_020.png",
+      "lecture_02/slide_024.png",
+      "lecture_07/slide_033.png",
+      "lecture_07/slide_028.png",
+      "lecture_07/slide_037.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0134",
+    "predicted_answer": "The green arrow labeled \"root of parse\" indicates the starting point for following backpointers in the chart to construct the parse tree.",
+    "retrieved_slides": [
+      "lecture_08/slide_028.png",
+      "lecture_11/slide_034.png",
+      "lecture_11/slide_032.png",
+      "lecture_11/slide_033.png",
+      "lecture_17/slide_094.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0135",
+    "predicted_answer": "The sequence of labels for the sentence \"Papa ate the\" is:\n\n- NP (Papa)\n- VP (ate the)\n  - V (ate)\n  - NP (the)\n    - Det (the)",
+    "retrieved_slides": [
+      "lecture_02/slide_024.png",
+      "lecture_08/slide_016.png",
+      "lecture_08/slide_002.png",
+      "lecture_09/slide_010.png",
+      "lecture_08/slide_022.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0136",
+    "predicted_answer": "The rule used for 'S' at position 0, 'arrow' 5 is \"S \u2192 NP VP\".",
+    "retrieved_slides": [
+      "lecture_11/slide_034.png",
+      "lecture_11/slide_033.png",
+      "lecture_11/slide_032.png",
+      "lecture_10/slide_054.png",
+      "lecture_10/slide_053.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0137",
+    "predicted_answer": "The highlighted text is \"0 NP Papa .\"",
+    "retrieved_slides": [
+      "lecture_09/slide_028.png",
+      "lecture_09/slide_027.png",
+      "lecture_09/slide_026.png",
+      "lecture_09/slide_025.png",
+      "lecture_09/slide_031.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0138",
+    "predicted_answer": "The card located above the eight of clubs is the target card, represented by a heart symbol.",
+    "retrieved_slides": [
+      "lecture_12/slide_015.png",
+      "lecture_12/slide_014.png",
+      "lecture_12/slide_013.png",
+      "lecture_12/slide_012.png",
+      "lecture_12/slide_011.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0139",
+    "predicted_answer": "The logical expression that incorporates tense is:\n\n\u2203t past(t) AND exists(goldfish, swallow(t, Gilly))",
+    "retrieved_slides": [
+      "lecture_13/slide_029.png",
+      "lecture_13/slide_028.png",
+      "lecture_13/slide_025.png",
+      "lecture_13/slide_040.png",
+      "lecture_13/slide_039.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0140",
+    "predicted_answer": "The components of the Alarm function are:\n\n- **Intent**: Alarm\n- **Slot**: delay, content\n- **Filler for delay**: \"20 minutes\"\n- **Filler for content**: \"turn off the rice\"",
+    "retrieved_slides": [
+      "lecture_14/slide_070.png",
+      "lecture_14/slide_130.png",
+      "lecture_14/slide_072.png",
+      "lecture_14/slide_071.png",
+      "lecture_14/slide_124.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0141",
+    "predicted_answer": "The sequence of tags and words shown is:\n\n- Start\n- PN (Bill)\n- Verb (directed)\n- Det (a)\n- Noun (cortege)\n- Prep (of)\n- Noun (autos)\n- Prep (through)",
+    "retrieved_slides": [
+      "lecture_15/slide_026.png",
+      "lecture_04/slide_005.png",
+      "lecture_15/slide_027.png",
+      "lecture_15/slide_028.png",
+      "lecture_04/slide_038.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0142",
+    "predicted_answer": "The words \"flies like\" are associated with VP locations.",
+    "retrieved_slides": [
+      "lecture_16/slide_024.png",
+      "lecture_16/slide_019.png",
+      "lecture_16/slide_021.png",
+      "lecture_16/slide_020.png",
+      "lecture_16/slide_022.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0143",
+    "predicted_answer": "The path score from (0, 0) to (3, 3) using the highlighted path is 1.3.",
+    "retrieved_slides": [
+      "lecture_17/slide_033.png",
+      "lecture_14/slide_136.png",
+      "lecture_08/slide_025.png",
+      "lecture_14/slide_188.png",
+      "lecture_08/slide_026.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0144",
+    "predicted_answer": "In the diagram, Paul Schuster has a relationship with Dresden as his birthplace, indicated by the arrow labeled \"http://schema.org/birthPlace\" pointing from Paul Schuster to Dresden.",
+    "retrieved_slides": [
+      "lecture_18/slide_077.png",
+      "lecture_14/slide_079.png",
+      "lecture_07/slide_003.png",
+      "lecture_07/slide_033.png",
+      "lecture_07/slide_028.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0145",
+    "predicted_answer": "The price difference between the input and cached input for the gpt-4o model is $1.25 ($2.50 for input and $1.25 for cached input).",
+    "retrieved_slides": [
+      "lecture_19/slide_018.png",
+      "lecture_19/slide_019.png",
+      "lecture_19/slide_026.png",
+      "lecture_14/slide_180.png",
+      "lecture_19/slide_077.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0146",
+    "predicted_answer": "The relationship between 'deficit' and 'current' in the diagram is \"MOD\" (modifier).",
+    "retrieved_slides": [
+      "lecture_02/slide_025.png",
+      "lecture_18/slide_054.png",
+      "lecture_09/slide_017.png",
+      "lecture_17/slide_099.png",
+      "lecture_09/slide_020.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0147",
+    "predicted_answer": "The 'param values' are inputs to the Trigram Model, which is defined in terms of parameters like \\(\\theta_{h,o,r}\\) and \\(\\theta_{o,r,s}\\). These parameter values are used to define the probability model.",
+    "retrieved_slides": [
+      "lecture_04/slide_029.png",
+      "lecture_04/slide_030.png",
+      "lecture_04/slide_039.png",
+      "lecture_06/slide_002.png",
+      "lecture_04/slide_027.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0148",
+    "predicted_answer": "The expression 'p( hoof | pos ) / p(\u00achoof | pos)' represents the posterior odds ratio.",
+    "retrieved_slides": [
+      "lecture_05/slide_014.png",
+      "lecture_05/slide_015.png",
+      "lecture_05/slide_012.png",
+      "lecture_05/slide_016.png",
+      "lecture_04/slide_037.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0149",
+    "predicted_answer": "The original count for 'xyd' is 2. The slide does not provide the smoothed probability directly, but it suggests that smoothing should be applied because the absence of 'xyz' might just be bad luck.",
+    "retrieved_slides": [
+      "lecture_06/slide_004.png",
+      "lecture_06/slide_005.png",
+      "lecture_06/slide_009.png",
+      "lecture_06/slide_014.png",
+      "lecture_06/slide_006.png"
+    ],
+    "baseline": "colpali_rag"
+  },
+  {
+    "question_id": "cs601_q0150",
+    "predicted_answer": "The value of 'tense' in the top-left diagram is \"pres\" (present).",
+    "retrieved_slides": [
+      "lecture_07/slide_043.png",
+      "lecture_07/slide_042.png",
+      "lecture_07/slide_052.png",
+      "lecture_07/slide_044.png",
+      "lecture_07/slide_025.png"
+    ],
+    "baseline": "colpali_rag"
+  }
+]

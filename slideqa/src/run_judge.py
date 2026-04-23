@@ -48,7 +48,7 @@ RESULTS_DIR = DATA_DIR / "results"
 ANNOTATIONS_DIR = DATA_DIR / "annotations"
 
 COURSES = ["cs288", "cs601", "cs224n"]
-BASELINES = ["text_only", "zero_shot_vlm", "closed_book"]
+BASELINES = ["text_only", "zero_shot_vlm", "closed_book", "colpali_rag"]
 CATEGORIES = ["text_only", "image_diagram", "table", "chart_graph", "layout_aware"]
 
 OPENROUTER_BASE = "https://openrouter.ai/api/v1"
@@ -244,6 +244,35 @@ def save_judge_summary_csv(all_summaries: dict, baselines: list[str]) -> None:
     logger.info(f"Saved judge summary to {path}")
 
 
+def load_summary_from_details(course: str, baseline: str) -> Optional[dict]:
+    """Reconstruct a summary dict from an existing judge_details.json file."""
+    path = RESULTS_DIR / f"{course}_{baseline}_judge_details.json"
+    if not path.exists():
+        return None
+    with open(path) as f:
+        per_question = json.load(f)
+    if not per_question:
+        return None
+
+    metrics = ["exact_match", "token_f1", "llm_judge"]
+    summary = {"overall": {}, "per_category": {}}
+    summary["overall"]["count"] = len(per_question)
+    for m in metrics:
+        vals = [r["scores"][m] for r in per_question]
+        summary["overall"][m] = round(sum(vals) / len(vals), 4) if vals else 0.0
+
+    for cat in CATEGORIES:
+        cat_qs = [r for r in per_question if r["category"] == cat]
+        if not cat_qs:
+            continue
+        summary["per_category"][cat] = {"count": len(cat_qs)}
+        for m in metrics:
+            vals = [r["scores"][m] for r in cat_qs]
+            summary["per_category"][cat][m] = round(sum(vals) / len(vals), 4) if vals else 0.0
+
+    return summary
+
+
 def main():
     parser = argparse.ArgumentParser(description="Run LLM-as-judge on all cached predictions")
     parser.add_argument("--course", choices=COURSES, default=None, help="Score one course only")
@@ -284,8 +313,16 @@ def main():
                 f"Judge={summary['overall']['llm_judge']:.3f}"
             )
 
+    # Backfill summaries from existing judge_details.json for baselines not in this run
+    for course in COURSES:
+        for baseline in BASELINES:
+            if (course, baseline) not in all_summaries:
+                cached = load_summary_from_details(course, baseline)
+                if cached is not None:
+                    all_summaries[(course, baseline)] = cached
+
     print_judge_table(all_summaries)
-    save_judge_summary_csv(all_summaries, args.baselines)
+    save_judge_summary_csv(all_summaries, BASELINES)
     logger.info("All done!")
 
 
