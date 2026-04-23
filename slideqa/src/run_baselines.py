@@ -27,6 +27,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from baselines.text_only import run_text_only_baseline
 from baselines.zero_shot_vlm import run_zero_shot_vlm_baseline
+from baselines.closed_book import run_closed_book_baseline
+from baselines.colpali_rag import run_colpali_rag_baseline
 from evaluate import evaluate, print_results_table
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -143,7 +145,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run SlideQA baselines and evaluate")
     parser.add_argument("--course", required=True)
     parser.add_argument("--model", default="openai/gpt-4o", help="OpenRouter model for all baselines")
-    parser.add_argument("--only", choices=["text_only", "zero_shot_vlm"], help="Run only one baseline")
+    parser.add_argument("--only", choices=["text_only", "zero_shot_vlm", "closed_book", "colpali_rag"], help="Run only one baseline")
     parser.add_argument("--rate-limit", type=float, default=1.5, help="Seconds between API calls")
     args = parser.parse_args()
 
@@ -183,6 +185,31 @@ def main():
         with open(RESULTS_DIR / f"{args.course}_text_only_details.json", "w") as f:
             json.dump(text_results, f, indent=2)
 
+    # ── Closed-book baseline ──
+    if args.only is None or args.only == "closed_book":
+        logger.info("=" * 50)
+        logger.info("Running CLOSED-BOOK baseline (question only, no context)")
+        logger.info("=" * 50)
+        cb_preds_path = RESULTS_DIR / f"{args.course}_closed_book_preds.json"
+
+        if cb_preds_path.exists():
+            logger.info(f"Loading cached predictions from {cb_preds_path}")
+            with open(cb_preds_path) as f:
+                cb_preds = json.load(f)
+        else:
+            cb_preds = run_closed_book_baseline(
+                qa_pairs, args.course, model=args.model, rate_limit=args.rate_limit
+            )
+            save_predictions(cb_preds, cb_preds_path)
+
+        cb_results = evaluate(qa_pairs, cb_preds)
+        print_results_table(cb_results, "Closed-Book (No Context)")
+        all_results["closed_book"] = cb_results
+
+        # Save detailed results
+        with open(RESULTS_DIR / f"{args.course}_closed_book_details.json", "w") as f:
+            json.dump(cb_results, f, indent=2)
+
     # ── Zero-shot VLM baseline ──
     if args.only is None or args.only == "zero_shot_vlm":
         logger.info("=" * 50)
@@ -207,6 +234,31 @@ def main():
         # Save detailed results
         with open(RESULTS_DIR / f"{args.course}_zero_shot_vlm_details.json", "w") as f:
             json.dump(vlm_results, f, indent=2)
+
+    # ── ColPali RAG baseline ──
+    if args.only is None or args.only == "colpali_rag":
+        logger.info("=" * 50)
+        logger.info("Running COLPALI RAG baseline (learned retrieval + VLM)")
+        logger.info("=" * 50)
+        rag_preds_path = RESULTS_DIR / f"{args.course}_colpali_rag_preds.json"
+
+        if rag_preds_path.exists():
+            logger.info(f"Loading cached predictions from {rag_preds_path}")
+            with open(rag_preds_path) as f:
+                rag_preds = json.load(f)
+        else:
+            rag_preds = run_colpali_rag_baseline(
+                qa_pairs, args.course, model=args.model, rate_limit=args.rate_limit
+            )
+            save_predictions(rag_preds, rag_preds_path)
+
+        rag_results = evaluate(qa_pairs, rag_preds)
+        print_results_table(rag_results, "ColPali RAG (Learned Retrieval + VLM)")
+        all_results["colpali_rag"] = rag_results
+
+        # Save detailed results
+        with open(RESULTS_DIR / f"{args.course}_colpali_rag_details.json", "w") as f:
+            json.dump(rag_results, f, indent=2)
 
     # ── Combined output ──
     if len(all_results) > 1:

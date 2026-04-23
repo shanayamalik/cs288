@@ -1,69 +1,35 @@
 {
-  "text_only": {
+  "colpali_rag": {
     "overall": {
       "count": 150,
-      "exact_match": 0.0067,
-      "token_f1": 0.1426
+      "exact_match": 0.02,
+      "token_f1": 0.2924
     },
     "per_category": {
       "text_only": {
         "count": 15,
         "exact_match": 0.0,
-        "token_f1": 0.2089
+        "token_f1": 0.3192
       },
       "image_diagram": {
         "count": 60,
         "exact_match": 0.0167,
-        "token_f1": 0.1309
+        "token_f1": 0.2324
       },
       "table": {
         "count": 28,
-        "exact_match": 0.0,
-        "token_f1": 0.133
+        "exact_match": 0.0714,
+        "token_f1": 0.3785
       },
       "chart_graph": {
         "count": 21,
         "exact_match": 0.0,
-        "token_f1": 0.1136
+        "token_f1": 0.2946
       },
       "layout_aware": {
         "count": 26,
         "exact_match": 0.0,
-        "token_f1": 0.1652
-      }
-    }
-  },
-  "zero_shot_vlm": {
-    "overall": {
-      "count": 150,
-      "exact_match": 0.0133,
-      "token_f1": 0.3771
-    },
-    "per_category": {
-      "text_only": {
-        "count": 15,
-        "exact_match": 0.0667,
-        "token_f1": 0.4726
-      },
-      "image_diagram": {
-        "count": 60,
-        "exact_match": 0.0167,
-        "token_f1": 0.3241
-      },
-      "table": {
-        "count": 28,
-        "exact_match": 0.0,
-        "token_f1": 0.4157
-      },
-      "chart_graph": {
-        "count": 21,
-        "exact_match": 0.0,
-        "token_f1": 0.406
-      },
-      "layout_aware": {
-        "count": 26,
-        "exact_match": 0.0,
-        "token_f1": 0.3795
+        "token_f1": 0.3207
       }
     }
   }

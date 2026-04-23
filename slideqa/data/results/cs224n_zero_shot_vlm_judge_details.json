@@ -1,0 +1,1952 @@
+[
+  {
+    "question_id": "cs224n_q0001",
+    "question": "What new ideas were introduced from EE & ASR during the statistical revolution of the 1990s?",
+    "gold_answer": "Probabilistic modeling, corpus statistics, supervised learning, empirical evaluation.",
+    "predicted_answer": "The new ideas introduced from EE & ASR during the statistical revolution of the 1990s included probabilistic modeling, corpus statistics, supervised learning, and empirical evaluation.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5517241379310345,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0002",
+    "question": "What are the two types of parses shown in the middle section?",
+    "gold_answer": "High-probability parse and Low-probability parse",
+    "predicted_answer": "The two types of parses shown in the middle section are \"High-probability parse\" and \"Low-probability parse.\"",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5263157894736842,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0003",
+    "question": "What is the total time allocated for Lecture 2?",
+    "gold_answer": "53 minutes",
+    "predicted_answer": "The total time allocated for Lecture 2 is 68 minutes.",
+    "category": "text_only",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1818181818181818,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs224n_q0004",
+    "question": "What does h, z \u2208 \u211d\u207f signify?",
+    "gold_answer": "h and z are vectors in n-dimensional real space.",
+    "predicted_answer": "The notation \\( h, z \\in \\mathbb{R}^n \\) signifies that both \\( h \\) and \\( z \\) are vectors in \\( n \\)-dimensional real space.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5925925925925926,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0005",
+    "question": "What type of task is 'Iroh went into the kitchen to make some tea. Standing next to Iroh, Zuko pondered his destiny. Zuko left the ______.'?",
+    "gold_answer": "Some reasoning \u2013 this is harder",
+    "predicted_answer": "The task is \"some reasoning \u2013 this is harder.\"",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.8571428571428571,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0006",
+    "question": "What is the dimensionality of the matrix after the transpose operation in multi-head self-attention?",
+    "gold_answer": "The dimensionality is \\( \\mathbb{R}^{h \\times n \\times d/h} \\).",
+    "predicted_answer": "The dimensionality of the matrix after the transpose operation in multi-head self-attention is \\( \\mathbb{R}^{h \\times n \\times d/h} \\).",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6363636363636364,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0007",
+    "question": "What challenge is posed by the two distinct internal mechanisms of current time in language models?",
+    "gold_answer": "The challenge is updating 'current time' in a language model.",
+    "predicted_answer": "The two distinct internal mechanisms of current time in language models pose a challenge to updating \"current time\" in a language model.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5185185185185185,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0008",
+    "question": "What is the next number in the sequence 1, 1, 2, 3, 5, 8, 13, 21?",
+    "gold_answer": "34",
+    "predicted_answer": "34",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0009",
+    "question": "What is the total duration of all topics listed in the lecture plan?",
+    "gold_answer": "75 mins",
+    "predicted_answer": "The total duration of all topics listed in the lecture plan is 75 minutes.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.14285714285714285,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0010",
+    "question": "What does 'DPO' stand for in the context of the slide?",
+    "gold_answer": "The slide does not provide an explicit definition for 'DPO'.",
+    "predicted_answer": "The slide does not explicitly define 'DPO.' However, in the context of open-source LLMs, 'DPO' likely refers to a training or optimization method used instead of traditional reinforcement learning.",
+    "category": "text_only",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.23529411764705882,
+      "llm_judge": 3
+    }
+  },
+  {
+    "question_id": "cs224n_q0011",
+    "question": "What is the total number of gems in the treasure chest?",
+    "gold_answer": "595 gems",
+    "predicted_answer": "To find the total number of gems, we need to determine the number of each type of gem:\n\n1. Diamonds: 175\n2. Rubies: 175 + 35 = 210 (since there are 35 fewer rubies than diamonds)\n3. Emeralds: 2 * 210 = 420 (twice the number of rubies)\n\nTotal number of gems = 175 (diamonds) + 210 (rubies) + 420 (emeralds) = 805 gems.",
+    "category": "text_only",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.03636363636363636,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs224n_q0012",
+    "question": "How many contributors are listed in the 'Dataset Contributors' section?",
+    "gold_answer": "There are 100 contributors listed.",
+    "predicted_answer": "There are 100 contributors listed in the 'Dataset Contributors' section.",
+    "category": "text_only",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.7142857142857143,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0013",
+    "question": "Which universities are associated with the authors of the MMLU-Pro benchmark?",
+    "gold_answer": "University of Waterloo, University of Toronto, Carnegie Mellon University",
+    "predicted_answer": "The universities associated with the authors of the MMLU-Pro benchmark are the University of Waterloo, the University of Toronto, and Carnegie Mellon University.",
+    "category": "text_only",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666666,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0014",
+    "question": "What are the components of the 'PPO & GRPO & DAPO' session?",
+    "gold_answer": "PPO: dissecting the complexity, GRPO, DAPO",
+    "predicted_answer": "The components of the 'PPO & GRPO & DAPO' session are:\n\n- PPO: dissecting the complexity\n- GRPO\n- DAPO",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5882352941176471,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0015",
+    "question": "What are the key questions addressed in 'The nature of reasoning' section?",
+    "gold_answer": "What works, why it works, and when it fails",
+    "predicted_answer": "The key questions addressed in \"The nature of reasoning\" section are: What works, why it works, and when it fails.",
+    "category": "text_only",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666666,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0016",
+    "question": "How many main components are there in the noisy channel model?",
+    "gold_answer": "Five",
+    "predicted_answer": "There are five main components in the noisy channel model: Information Source, Transmitter, Noise Source, Receiver, and Destination.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1111111111111111,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0017",
+    "question": "What is the significance of the structure labeled 'mBERT' on the right side of the slide?",
+    "gold_answer": "It symbolizes the complexity or hierarchy of the mBERT model.",
+    "predicted_answer": "The structure labeled \"mBERT\" on the right side of the slide is depicted as a tower, symbolizing the complexity and ambition of the multilingual BERT model. It suggests the model's role in understanding and processing multiple languages, akin to the Tower of Babel, which represents linguistic diversity and the challenges of communication across languages.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.18867924528301885,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs224n_q0018",
+    "question": "Which words are considered outside context words in the window of size 2?",
+    "gold_answer": "problems, turning, banking, crises",
+    "predicted_answer": "The outside context words in the window of size 2 are \"problems,\" \"turning,\" \"banking,\" and \"crises.\"",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.4444444444444445,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0019",
+    "question": "Which two words are directly connected to 'emperor'?",
+    "gold_answer": "duke and king",
+    "predicted_answer": "The two words directly connected to 'emperor' are 'empress' and 'king'.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.30769230769230765,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs224n_q0020",
+    "question": "Which companies are depicted as having adopted NMT by 2018?",
+    "gold_answer": "Microsoft, Systran, Google, Facebook, Baidu, NetEase, Tencent, Sogou",
+    "predicted_answer": "The companies depicted as having adopted NMT by 2018 are Microsoft, Systran, Google, Facebook, Baidu, NetEase, Tencent, and Sogou.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6153846153846153,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0021",
+    "question": "What does the expression 'output_\u2113 = softmax(XQ_\u2113K_\u2113^TX^T) * XV_\u2113' represent?",
+    "gold_answer": "It represents the self-attention function before scaling.",
+    "predicted_answer": "The expression \\( \\text{output}_\\ell = \\text{softmax}(XQ_\\ell K_\\ell^T X^T) * XV_\\ell \\) represents the self-attention mechanism without scaling. It calculates the attention scores using the dot product of queries and keys, applies the softmax function to these scores, and then multiplies the result by the values to produce the output.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.23255813953488372,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0022",
+    "question": "Which corpus is listed first in the 'Top Ten LDC Corpora' section?",
+    "gold_answer": "LDC93S1 TIMIT Acoustic-Phonetic Continuous Speech Corpus",
+    "predicted_answer": "The first corpus listed in the 'Top Ten LDC Corpora' section is \"LDC93S1 TIMIT Acoustic-Phonetic Continuous Speech Corpus.\"",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5454545454545454,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0023",
+    "question": "Which category occupies the largest space in the composition of the pile?",
+    "gold_answer": "Academic",
+    "predicted_answer": "The \"Academic\" category occupies the largest space in the composition of the pile.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.19999999999999998,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0024",
+    "question": "What is the equation shown at the bottom of the slide?",
+    "gold_answer": "R(s) = RM_\u03d5(s) - \u03b2 log(p_\u03b8^RL(s) / p^PT(s))",
+    "predicted_answer": "The equation shown at the bottom of the slide is:\n\n\\[ R(s) = RM_{\\phi}(s) - \\beta \\log \\left( \\frac{p_{\\theta}^{RL}(s)}{p^{PT}(s)} \\right) \\]",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.10526315789473682,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0025",
+    "question": "What does the mathematical expression on the slide represent?",
+    "gold_answer": "The conditional language modeling objective to be maximized during fine-tuning.",
+    "predicted_answer": "The mathematical expression represents the objective of maximizing the conditional language modeling likelihood during full fine-tuning. It involves updating the model parameters \\( \\phi \\) to maximize the sum of the log probabilities of the target sequence \\( y_t \\) given the context \\( x \\) and the previous target tokens \\( y_{<t} \\).",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.30434782608695654,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0026",
+    "question": "How many keystrokes are needed to type the numbers from 1 to 500?",
+    "gold_answer": "1392",
+    "predicted_answer": "1,392 keystrokes are needed to type the numbers from 1 to 500.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.16666666666666669,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0027",
+    "question": "What mathematical expression represents Shannon entropy on the slide?",
+    "gold_answer": "H(X) = -\u2211 (from i=1 to n) p_i log p_i",
+    "predicted_answer": "The mathematical expression for Shannon entropy on the slide is:\n\n\\[ H(X) = -\\sum_{i=1}^{n} p_i \\log p_i \\]",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3636363636363637,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0028",
+    "question": "What does the diagram on the slide represent?",
+    "gold_answer": "A syntactic structure tree from the Penn Treebank.",
+    "predicted_answer": "The diagram on the slide represents a syntactic tree from the Penn Treebank, illustrating the syntactic structure of a sentence with parts of speech and syntactic categories annotated.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.42857142857142855,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0029",
+    "question": "What is the mathematical expression for GRPO's sample-level loss?",
+    "gold_answer": "The expression is \\( \\frac{1}{G} \\sum_i \\frac{1}{|o_i|} \\sum_t \\mathcal{L}_{i,t} \\).",
+    "predicted_answer": "The mathematical expression for GRPO's sample-level loss is:\n\n\\[\n\\frac{1}{G} \\sum_i \\frac{1}{|o_i|} \\sum_t \\mathcal{L}_{i,t}\n\\]",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.7368421052631579,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0030",
+    "question": "What does B_t represent in the beam search algorithm?",
+    "gold_answer": "B_t = top-k_h\u2208B_{t-1},y\u2208V{(h \u2218 y, score(h \u2218 y))}",
+    "predicted_answer": "In the beam search algorithm, \\( B_t \\) represents the set of the top-k most probable partial sequences (hypotheses) at time step \\( t \\). It is derived from the top-k hypotheses in \\( B_{t-1} \\) combined with possible next tokens, maintaining the highest scores.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.04878048780487805,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0031",
+    "question": "Which approach shows the greatest improvement in WER on the RT03S FSH dataset?",
+    "gold_answer": "Deep Learning (Saon et al. 2017) with a 71% improvement.",
+    "predicted_answer": "The approach \"Deep Learning (Saon et al. 2017)\" shows the greatest improvement in WER on the RT03S FSH dataset, with a reduction of 71%.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6206896551724138,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0032",
+    "question": "How many words have a co-occurrence count of 0 with 'enjoy'?",
+    "gold_answer": "Five words (like, deep, learning, NLP, .)",
+    "predicted_answer": "Five words have a co-occurrence count of 0 with 'enjoy': \"like,\" \"deep,\" \"learning,\" \"NLP,\" and \".\"",
+    "category": "table",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0033",
+    "question": "How does the correlation score of SVD-L change from 6B to 42B for the WS353 dataset?",
+    "gold_answer": "The score increases from 65.7 to 74.0.",
+    "predicted_answer": "The correlation score of SVD-L for the WS353 dataset increases from 65.7 at 6B to 74.0 at 42B.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5454545454545454,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0034",
+    "question": "Which word has the lowest probability according to the table?",
+    "gold_answer": "is",
+    "predicted_answer": "The word \"is\" has the lowest probability according to the table, with a probability of 0.031.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.15384615384615385,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0035",
+    "question": "Which model has the lowest training cost (FLOPs) for the EN-DE dataset?",
+    "gold_answer": "MoE [32]",
+    "predicted_answer": "The model with the lowest training cost (FLOPs) for the EN-DE dataset is ConvS2S, with a cost of \\(9.6 \\times 10^{18}\\) FLOPs.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs224n_q0036",
+    "question": "Which unit test failed in the Post PR stage in the SWE-bench dataset?",
+    "gold_answer": "vstack_struct_col",
+    "predicted_answer": "The unit test that failed in the Post PR stage in the SWE-bench dataset is `vstack_struct_col`.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.14285714285714288,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0037",
+    "question": "Which method has the highest score on the RTE dataset?",
+    "gold_answer": "Multi-task BiLSTM + Attn [64] with a score of 61.7",
+    "predicted_answer": "The \"Multi-task BiLSTM + Attn [64]\" method has the highest score on the RTE dataset with a score of 61.7.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6956521739130436,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0038",
+    "question": "Which model has the highest performance gain according to the BIG-bench + MMLU?",
+    "gold_answer": "The Flan-T5-XXL model has the highest performance gain of +26.6.",
+    "predicted_answer": "The Flan-T5-XXL model has the highest performance gain, with an increase of +26.6 according to the BIG-bench + MMLU.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.7272727272727273,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0039",
+    "question": "Which summarization method has the lowest ROUGE R-2 score?",
+    "gold_answer": "Random-3",
+    "predicted_answer": "The summarization method \"Random-3\" has the lowest ROUGE R-2 score of 8.27.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.18181818181818182,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0040",
+    "question": "Which model has the highest ROUGE-L score when enhanced with MemGPT?",
+    "gold_answer": "GPT-4 Turbo with MemGPT",
+    "predicted_answer": "The model \"GPT-4 Turbo\" enhanced with MemGPT has the highest ROUGE-L score of 0.827.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0041",
+    "question": "Which architecture has the highest score for the MATH task?",
+    "gold_answer": "Qwen3-235B-A22B Base with a score of 71.84",
+    "predicted_answer": "The architecture \"Qwen3-235B-A22B Base\" has the highest score for the MATH task with a score of 71.84.",
+    "category": "table",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.631578947368421,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0042",
+    "question": "Name two example tasks or benchmarks for multiple-choice QA.",
+    "gold_answer": "GLUE, MMLU",
+    "predicted_answer": "GLUE and MMLU.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.8,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0043",
+    "question": "What is the average accuracy of the 'instructive' category templates?",
+    "gold_answer": "67.0",
+    "predicted_answer": "The average accuracy of the 'instructive' category templates is 64.7.",
+    "category": "table",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 3
+    }
+  },
+  {
+    "question_id": "cs224n_q0044",
+    "question": "What is the difference in accuracy between the templates 'Let's think step by step' and 'Let's think'?",
+    "gold_answer": "21.2",
+    "predicted_answer": "The difference in accuracy between the templates 'Let's think step by step' (78.7) and 'Let's think' (57.5) is 21.2.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1111111111111111,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0045",
+    "question": "Which source type has the longest typical document length?",
+    "gold_answer": "Books (Project Gutenberg) with 50,000 \u2013 100,000+ tokens",
+    "predicted_answer": "Books (Project Gutenberg) have the longest typical document length, ranging from 50,000 to 100,000+ tokens.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5454545454545454,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0046",
+    "question": "How many S&P 500 earnings calls cited 'AI' in Q2 2023?",
+    "gold_answer": "Approximately 250 earnings calls cited 'AI' in Q2 2023.",
+    "predicted_answer": "In Q2 2023, approximately 250 S&P 500 earnings calls cited 'AI'.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.9,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0047",
+    "question": "What does the color gradient in the chart represent?",
+    "gold_answer": "Different model sizes, ranging from 75M to 10B parameters.",
+    "predicted_answer": "The color gradient in the chart represents different model sizes, ranging from 75 million to 10 billion parameters.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.56,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0048",
+    "question": "How are the words 'man', 'woman', and 'king' represented in the graph?",
+    "gold_answer": "They are represented as points with vectors indicating relationships.",
+    "predicted_answer": "In the graph, the words 'man', 'woman', and 'king' are represented as points in a vector space. Arrows indicate the direction and relationship between these points, illustrating the analogy \"man:woman :: king:?\".",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2285714285714286,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0049",
+    "question": "Which word has the highest attention weight?",
+    "gold_answer": "Stanford",
+    "predicted_answer": "The word \"Stanford\" has the highest attention weight.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2857142857142857,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0050",
+    "question": "What is the relationship between compute and validation loss as shown in the chart?",
+    "gold_answer": "As compute increases, validation loss generally decreases.",
+    "predicted_answer": "The chart shows that as compute (measured in PetaFLOP/s-days) increases, the validation loss generally decreases. This indicates that more computational resources tend to improve model performance, reducing validation loss.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.4117647058823529,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0051",
+    "question": "Which model achieved the highest average percentage according to the graph?",
+    "gold_answer": "Leeroo (5-shot)",
+    "predicted_answer": "The model \"Leeroo (5-shot)\" achieved the highest average percentage according to the graph.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.33333333333333337,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0052",
+    "question": "At which parameter size does the 'random insertion' task achieve approximately 60% accuracy?",
+    "gold_answer": "13B",
+    "predicted_answer": "The 'random insertion' task achieves approximately 60% accuracy at 175 billion parameters.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs224n_q0053",
+    "question": "Which model has the highest hallucination in the 0-shot graph?",
+    "gold_answer": "LLAMA.",
+    "predicted_answer": "In the 0-shot graph, LLAMA has the highest hallucination.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.25,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0054",
+    "question": "Which subject shows the least difference in performance between GPT-3 and UnifiedQA?",
+    "gold_answer": "College Chemistry",
+    "predicted_answer": "The subject \"High School European History\" shows the least difference in performance between GPT-3 and UnifiedQA.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs224n_q0055",
+    "question": "Which subject shows the least performance difference between GPT-3 and UnifiedQA?",
+    "gold_answer": "College Chemistry",
+    "predicted_answer": "The subject \"High School European History\" shows the least performance difference between GPT-3 and UnifiedQA.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs224n_q0056",
+    "question": "What was the closing stock price of Nvidia on January 27, 2025?",
+    "gold_answer": "$118.42",
+    "predicted_answer": "The closing stock price of Nvidia on January 27, 2025, was $118.42.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.16666666666666669,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0057",
+    "question": "What is the looping fraction for the Phi-4 model?",
+    "gold_answer": "The looping fraction for the Phi-4 model is 0.01.",
+    "predicted_answer": "The looping fraction for the Phi-4 model is 0.01.",
+    "category": "chart_graph",
+    "difficulty": "easy",
+    "scores": {
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0058",
+    "question": "Which distribution is closest to the target distribution in Figure 2?",
+    "gold_answer": "The Reverse KLD (ours) is closest to the target distribution.",
+    "predicted_answer": "The reverse KLD (green dashed line) is closest to the target distribution (blue line) in Figure 2.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.608695652173913,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0059",
+    "question": "Which language has the highest average number of tokens according to the chart?",
+    "gold_answer": "Tibetan has the highest average number of tokens.",
+    "predicted_answer": "Tibetan has the highest average number of tokens according to the chart.",
+    "category": "chart_graph",
+    "difficulty": "easy",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.8235294117647058,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0060",
+    "question": "What is the percentage difference between 'Creative thinking' and 'Technological literacy'?",
+    "gold_answer": "6%",
+    "predicted_answer": "The percentage difference between 'Creative thinking' (57%) and 'Technological literacy' (51%) is 6%.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.15384615384615385,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0061",
+    "question": "What is the purpose of the 'Bottleneck' in the diagram?",
+    "gold_answer": "It represents the transition point between the encoder and decoder.",
+    "predicted_answer": "The 'Bottleneck' in the diagram represents the compressed representation of the source sentence created by the encoder. It serves as the intermediary between the encoder and decoder, capturing the essential meaning of the input sentence to be used for generating the translation.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs224n_q0062",
+    "question": "How many instructors are listed on the slide?",
+    "gold_answer": "Two",
+    "predicted_answer": "Two instructors are listed on the slide.",
+    "category": "layout_aware",
+    "difficulty": "easy",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2857142857142857,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0063",
+    "question": "Which pairs of words have a vertical relationship in the visualization?",
+    "gold_answer": "niece-aunt, sister-brother, heir-heiress, countess-duchess, empress-emperor",
+    "predicted_answer": "The pairs of words with a vertical relationship in the visualization are:\n\n- niece / nephew\n- aunt / uncle\n- sister / brother\n- woman / man\n- heiress / heir\n- madam / sir\n- countess / earl\n- duchess / duke\n- empress / emperor\n- queen / king",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 3
+    }
+  },
+  {
+    "question_id": "cs224n_q0064",
+    "question": "What is the purpose of using the Jacobian form and shape convention according to the side note?",
+    "gold_answer": "Use Jacobian to compute; Use shape convention to format.",
+    "predicted_answer": "The purpose of using the Jacobian form is to compute, and the shape convention is used to format.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5833333333333334,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0065",
+    "question": "What motivates the use of Recurrent Neural Networks (RNNs) in language modeling?",
+    "gold_answer": "Language Modeling",
+    "predicted_answer": "Language modeling motivates the use of Recurrent Neural Networks (RNNs).",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3636363636363636,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0066",
+    "question": "Which words can be looked at according to the diagram on the slide?",
+    "gold_answer": "[START], The, chef",
+    "predicted_answer": "According to the diagram, the words that can be looked at are \"[START]\" and \"The.\"",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.14285714285714285,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs224n_q0067",
+    "question": "Which section of the lecture plan is the longest?",
+    "gold_answer": "Model pretraining three ways (25 mins)",
+    "predicted_answer": "The longest section of the lecture plan is \"Model pretraining three ways,\" which is 25 minutes long.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.47619047619047616,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0068",
+    "question": "Which names are highlighted in red on the right side of the slide?",
+    "gold_answer": "Percy Liang, Danny Hernandez, My Thai, Yi Yang, Yushi Wang",
+    "predicted_answer": "The names highlighted in red are \"My Thai\" and \"Yejin Choi.\"",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.20000000000000004,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs224n_q0069",
+    "question": "How is the 'Supervised (287K)' method labeled in the table?",
+    "gold_answer": "Seq2Seq + Attn",
+    "predicted_answer": "The 'Supervised (287K)' method is labeled as \"Seq2Seq + Attn\" in the table.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.33333333333333337,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0070",
+    "question": "What is the relationship between BERTB(0) and BERTR(q, 0) in the diagram?",
+    "gold_answer": "BERTB(0) provides input to BERTR(q, 0) for further processing.",
+    "predicted_answer": "In the diagram, \\( \\text{BERT}_B(0) \\) processes a passage to encode it, and \\( \\text{BERT}_R(q, 0) \\) combines the question with the passage from \\( \\text{BERT}_B(0) \\) for further processing. The top K passages from \\( \\text{BERT}_B(0) \\) are selected for input into \\( \\text{BERT}_R(q, 0) \\).",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.29268292682926833,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs224n_q0071",
+    "question": "What score is associated with the response 'Heck yes!'?",
+    "gold_answer": "0.61",
+    "predicted_answer": "The score associated with the response \"Heck yes!\" is 0.61.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0072",
+    "question": "Which components are involved in the Collection Phase?",
+    "gold_answer": "Target Label, Context, Writer, Hypothesis, Prediction",
+    "predicted_answer": "The components involved in the Collection Phase are:\n\n- Target Label\n- Context\n- Writer\n- Hypothesis\n- Model (for Prediction)\n- Verifier",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5714285714285715,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs224n_q0073",
+    "question": "Which category includes examples marked with visual patterns?",
+    "gold_answer": "Visual Pattern",
+    "predicted_answer": "The category that includes examples marked with visual patterns is \"Visual Pattern.\"",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3076923076923077,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0074",
+    "question": "What words are associated with the peaked distribution in the diagram?",
+    "gold_answer": "hot, warm, cooling, on, heating, fresh, cold, warming, burning, cooking",
+    "predicted_answer": "The words associated with the peaked distribution are: hot, warm, cooling, on, heating, fresh, cold, warming, burning, cooking.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.7692307692307693,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0075",
+    "question": "How do the speedups of the Suffix (linear) baseline compare across the three benchmarks?",
+    "gold_answer": "Spec-Bench: 2.4x, AgenticSQL: 2.7x, SWE-Bench: 1.0x",
+    "predicted_answer": "In the Spec-Bench, the Suffix (linear) baseline has a speedup of 1.4x. In the AgenticSQL Benchmarks, it has a speedup of 2.7x. In the SWE-Bench, it is not applicable (marked with an \"X\").",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.25,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs224n_q0076",
+    "question": "Who is shown in the image below the name 'James Allen'?",
+    "gold_answer": "C. Ray Perrault",
+    "predicted_answer": "C. Ray Perrault",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0077",
+    "question": "What is the interaction shown on the right side of the image?",
+    "gold_answer": "A conversation with ELIZA, an early chatbot program.",
+    "predicted_answer": "The interaction on the right side of the image is a conversation with ELIZA, an early natural language processing computer program. The dialogue includes:\n\n- User: \"i don't know\"\n- ELIZA: \"What does that suggest to you?\"\n- User: \"i'm unintelligent\"\n- ELIZA: \"How long have you been unintelligent?\"\n- User: \"arent you supposed to cheer me up\"\n- ELIZA: \"You're not really talking about me, are you?\"",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.16129032258064516,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0078",
+    "question": "Which model has the highest correlation score in the WS353 category?",
+    "gold_answer": "GloVe with a size of 42B",
+    "predicted_answer": "The GloVe model with a size of 42B has the highest correlation score in the WS353 category, with a score of 75.9.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.45454545454545453,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0079",
+    "question": "What is the relationship between \u2202s/\u2202b, \u2202s/\u2202h, \u2202h/\u2202z, and \u2202z/\u2202b?",
+    "gold_answer": "\u2202s/\u2202b = (\u2202s/\u2202h)(\u2202h/\u2202z)(\u2202z/\u2202b)",
+    "predicted_answer": "The relationship is given by the chain rule:\n\n\\[\n\\frac{\\partial s}{\\partial b} = \\frac{\\partial s}{\\partial h} \\cdot \\frac{\\partial h}{\\partial z} \\cdot \\frac{\\partial z}{\\partial b}\n\\]\n\nThis is expressed as:\n\n\\[\n\\frac{\\partial s}{\\partial b} = u^T \\cdot \\text{diag}(f'(z)) \\cdot I\n\\]",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs224n_q0080",
+    "question": "Which word has the highest probability in the table?",
+    "gold_answer": "the",
+    "predicted_answer": "The word \"the\" has the highest probability in the table, with a probability of 0.072.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0081",
+    "question": "How is the gradient of J with respect to h(1) expressed?",
+    "gold_answer": "\u2202J(4)/\u2202h(1) = (\u2202h(2)/\u2202h(1)) \u00d7 (\u2202h(3)/\u2202h(2)) \u00d7 (\u2202J(4)/\u2202h(3))",
+    "predicted_answer": "The gradient of \\( J^{(4)} \\) with respect to \\( h^{(1)} \\) is expressed as:\n\n\\[\n\\frac{\\partial J^{(4)}}{\\partial h^{(1)}} = \\frac{\\partial h^{(2)}}{\\partial h^{(1)}} \\times \\frac{\\partial h^{(3)}}{\\partial h^{(2)}} \\times \\frac{\\partial J^{(4)}}{\\partial h^{(3)}}\n\\]\n\nThis expression uses the chain rule.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0082",
+    "question": "Which task categories are listed under 'Task Category' on the slide?",
+    "gold_answer": "conditional-text-generation, text-classification, structure-prediction, sequence-modeling, question-answering, text-scoring",
+    "predicted_answer": "The task categories listed under 'Task Category' on the slide are:\n\n- Conditional-text-generation\n- Text-classification\n- Structure-prediction\n- Sequence-modeling\n- Question-answering\n- Text-scoring",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5714285714285715,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0083",
+    "question": "What word does the pretrained encoder predict for the masked token?",
+    "gold_answer": "make/brew/craft",
+    "predicted_answer": "The pretrained encoder predicts \"make/brew/craft\" for the masked token.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.25,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0084",
+    "question": "What is the input sequence for the pretraining step shown in the diagram?",
+    "gold_answer": "Iroh goes to make tasty tea",
+    "predicted_answer": "The input sequence for the pretraining step is \"Iroh goes to make tasty tea\".",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666666,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0085",
+    "question": "What are the components involved in the adapter fusion process as shown in the right diagram?",
+    "gold_answer": "Frozen Layer, Adapter Fusion, Feature Adapter, and Feature Adapters Pool.",
+    "predicted_answer": "The components involved in the adapter fusion process, as shown in the right diagram, are:\n\n1. Frozen Layer\n2. Adapter Fusion\n3. Feature Adapter\n4. Feature Adapters Pool",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5142857142857143,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0086",
+    "question": "What is the sequence of actions taken to find out what other device can control the Front Row software?",
+    "gold_answer": "Search[Apple Remote], Search[Front Row], Search[Front Row (software)], Finish[keyboard function keys]",
+    "predicted_answer": "1. **Search** for \"Apple Remote\" to find the program it was designed to interact with.\n2. **Search** for \"Front Row\" to find what other device can control it.\n3. **Search** for \"Front Row (software)\" after not finding relevant information.\n4. Conclude that \"Front Row (software)\" is controlled by an Apple Remote or the keyboard function keys.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1904761904761905,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0087",
+    "question": "Which model had the lowest accuracy in the 'Non-entailed' condition when syntactic heuristics fail?",
+    "gold_answer": "BERT had the lowest accuracy.",
+    "predicted_answer": "The BERT model had the lowest accuracy in the 'Non-entailed' condition when syntactic heuristics fail.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0088",
+    "question": "Which model appears in the same position across all sections?",
+    "gold_answer": "Yi-34b",
+    "predicted_answer": "The model \"Yi-34b\" appears in the same position across all sections.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.19999999999999998,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0089",
+    "question": "What is the mathematical expression for DAPO's token-level loss?",
+    "gold_answer": "The expression is \\( \\frac{1}{\\sum_i |o_i|} \\sum_i \\sum_t \\mathcal{L}_{i,t} \\).",
+    "predicted_answer": "The mathematical expression for DAPO's token-level loss is:\n\n\\[\n\\frac{1}{\\sum_i |o_i|} \\sum_i \\sum_t \\mathcal{L}_{i,t}\n\\]",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.7368421052631579,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0090",
+    "question": "What is the rearranged form of the equation after isolating the inner square root term?",
+    "gold_answer": "(a - x\u00b2)\u00b2 = a + x",
+    "predicted_answer": "The rearranged form of the equation after isolating the inner square root term is:\n\n\\[\n(a - x^2)^2 = a + x \\implies a^2 - 2ax^2 + (x^2)^2 = a + x \\implies x^4 - 2ax^2 - x + (a^2 - a) = 0\n\\]",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.07692307692307693,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs224n_q0091",
+    "question": "Which model size shows the greatest improvement in performance across all tasks?",
+    "gold_answer": "T5-Large (800M)",
+    "predicted_answer": "The T5-Small (77M) model shows the greatest improvement in performance across all tasks.",
+    "category": "layout_aware",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "llm_judge": 1
+    }
+  },
+  {
+    "question_id": "cs224n_q0092",
+    "question": "Which region is represented by the color purple on the map?",
+    "gold_answer": "Africa",
+    "predicted_answer": "The region represented by the color purple on the map is Africa.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.19999999999999998,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0093",
+    "question": "Which model pair has the highest similarity score according to the heatmap?",
+    "gold_answer": "qwen-max-2025-01-25 and qwen-plus-2025-01-25 with a score of 0.90.",
+    "predicted_answer": "The model pair \"qwen-max-2025-01-25\" and \"qwen-plus-2025-01-25\" has the highest similarity score of 0.90 according to the heatmap.",
+    "category": "image_diagram",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5714285714285714,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0094",
+    "question": "Which training method shows the highest overall average accuracy according to the chart?",
+    "gold_answer": "Base + RLP",
+    "predicted_answer": "The \"Base + RLP\" training method shows the highest overall average accuracy according to the chart.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2857142857142857,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0095",
+    "question": "What does the diagram on the right side of the slide represent?",
+    "gold_answer": "The diagram represents a spectrogram with words indicated by arrows.",
+    "predicted_answer": "The diagram on the right side of the slide represents a spectrogram, which is a visual representation of the spectrum of frequencies in a sound signal as they vary with time. The arrow labeled \"Words\" suggests the transformation from the spectrogram to recognized words in speech recognition.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.22222222222222224,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs224n_q0096",
+    "question": "What is the role of 'Selective parameters' in the diagram?",
+    "gold_answer": "Selective parameters are part of the selection mechanism.",
+    "predicted_answer": "The 'Selective parameters' in the diagram are part of the selection mechanism that determines which input words and delayed parts of the hidden state are used to produce the output. They help in deciding what information is relevant for generating the output at each step.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.30434782608695654,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0097",
+    "question": "What is the relationship between 'king' and 'queen' in the visualization?",
+    "gold_answer": "They are connected by a dashed line, indicating a relationship.",
+    "predicted_answer": "In the visualization, the relationship between 'king' and 'queen' is represented by a vector pointing from 'king' to 'queen'. This indicates a gender-based analogy, where 'queen' is the female counterpart to 'king'.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.11428571428571428,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs224n_q0098",
+    "question": "What equation represents the computation of 'z' in the graph?",
+    "gold_answer": "z = Wx + b",
+    "predicted_answer": "The equation representing the computation of 'z' in the graph is \\( z = Wx + b \\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.42857142857142855,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0099",
+    "question": "What does the arrow labeled 'W' represent in the diagram?",
+    "gold_answer": "The weight matrix used in the neural network layers.",
+    "predicted_answer": "The arrow labeled 'W' represents the weight matrix used in the connections between the layers of the neural network.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666666,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0100",
+    "question": "What does the orange arrow indicate in the diagram?",
+    "gold_answer": "Encoding of the source sentence.",
+    "predicted_answer": "The orange arrow indicates the \"Encoding of the source sentence.\"",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.7272727272727273,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0101",
+    "question": "Which model has the lowest training cost in the EN-DE test set?",
+    "gold_answer": "ConvS2S",
+    "predicted_answer": "The model with the lowest training cost in the EN-DE test set is ConvS2S [9] with \\(9.6 \\times 10^{18}\\) FLOPs.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.1111111111111111,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0102",
+    "question": "Compare the size of the 'Pile-CC' and 'Bibliotik' sections in the diagram.",
+    "gold_answer": "Pile-CC is larger than Bibliotik.",
+    "predicted_answer": "The 'Pile-CC' section is larger than the 'Bibliotik' section in the diagram.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.7142857142857143,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0103",
+    "question": "What does 'SFT' stand for in the context of Step 1?",
+    "gold_answer": "Supervised Fine-Tuning.",
+    "predicted_answer": "In the context of Step 1, 'SFT' stands for \"Supervised Fine-Tuning.\"",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.33333333333333337,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0104",
+    "question": "In the MultiNLI-matched chart, which method shows a decrease in performance as the number of trainable parameters increases?",
+    "gold_answer": "PrefixEmbed",
+    "predicted_answer": "In the MultiNLI-matched chart, the \"PrefixEmbed\" method shows a decrease in performance as the number of trainable parameters increases.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.125,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0105",
+    "question": "What is the accuracy of Gorilla in the 0-shot graph?",
+    "gold_answer": "Approximately 90.",
+    "predicted_answer": "The accuracy of Gorilla in the 0-shot graph is approximately 90.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3636363636363636,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0106",
+    "question": "What is the condition for BP to be equal to 1?",
+    "gold_answer": "BP = 1 if |c| > |r|.",
+    "predicted_answer": "BP is equal to 1 if \\(|c| > |r|\\), where \\(|c|\\) and \\(|r|\\) are the lengths of the candidate and reference, respectively.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.4166666666666667,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0107",
+    "question": "Which model has the highest win-rate against 'mistral-7b-instruct'?",
+    "gold_answer": "gpt-4-turbo with a win-rate of 0.90",
+    "predicted_answer": "The model 'gpt-4-turbo' has the highest win-rate against 'mistral-7b-instruct' with a win-rate of 0.90.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.625,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0108",
+    "question": "Which string follows the same set of rules according to the diagram?",
+    "gold_answer": "FZABQC",
+    "predicted_answer": "The string \"FZABQC\" follows the same set of rules according to the diagram.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.18181818181818182,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0109",
+    "question": "What is the mathematical expression used to illustrate the probability issue in vanilla sampling?",
+    "gold_answer": "(0.95)^30 \u2248 0.2146387639",
+    "predicted_answer": "The mathematical expression used is \\((0.95)^{30} \\approx 0.2146387639\\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.4,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0110",
+    "question": "Which token has a higher probability assigned by the target model compared to the draft model?",
+    "gold_answer": "'dogs'",
+    "predicted_answer": "The token \"dogs\" has a higher probability assigned by the target model compared to the draft model.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.14285714285714288,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0111",
+    "question": "What is the TyDiQA SelectP score for CANINE-C + n-grams?",
+    "gold_answer": "68.1",
+    "predicted_answer": "The TyDiQA SelectP score for CANINE-C + n-grams is 68.1.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0112",
+    "question": "Which method shows the highest Harmlessness Elo according to the graph?",
+    "gold_answer": "Constitutional RL (Pareto Improvement)",
+    "predicted_answer": "The \"Constitutional RL (Pareto Improvement)\" method shows the highest Harmlessness Elo according to the graph.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0113",
+    "question": "Which dataset shows the most improvement in accuracy for OpenThoughts3 as the dataset size increases?",
+    "gold_answer": "LiveCodeBench",
+    "predicted_answer": "The \"LiveCodeBench\" dataset shows the most improvement in accuracy for OpenThoughts3 as the dataset size increases.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.14285714285714288,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0114",
+    "question": "Who is shown in the hierarchical relationship diagram on the slide?",
+    "gold_answer": "Seymour Papert, Terry Winograd, Stuart Shieber",
+    "predicted_answer": "The hierarchical relationship diagram on the slide shows Seymour Papert, Terry Winograd, and Stuart Shieber.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.631578947368421,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0115",
+    "question": "What is the relationship between FLOPS and training loss according to the chart?",
+    "gold_answer": "As FLOPS increase, the training loss generally decreases.",
+    "predicted_answer": "According to the chart, as FLOPS (floating point operations per second) increase, the training loss decreases. This suggests that more computational power leads to better model performance, as indicated by lower training loss.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3157894736842105,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0116",
+    "question": "Which section of the lecture is allocated the most time?",
+    "gold_answer": "Word2vec objective function gradients (25 mins)",
+    "predicted_answer": "The section \"Word2vec objective function gradients\" is allocated the most time, with 25 minutes.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5555555555555556,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0117",
+    "question": "Which word pair has the highest human mean similarity score?",
+    "gold_answer": "tiger and tiger",
+    "predicted_answer": "The word pair \"tiger, tiger\" has the highest human mean similarity score of 10.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.26666666666666666,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0118",
+    "question": "Which matrices are used to transform e(t) to h(t)?",
+    "gold_answer": "The matrices used are We and Wh.",
+    "predicted_answer": "The matrices used to transform \\( e(t) \\) to \\( h(t) \\) are \\( W_e \\) and \\( W_h \\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.7058823529411764,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0119",
+    "question": "Which model has the highest BLEU score on the EN-FR dataset?",
+    "gold_answer": "ConvS2S Ensemble [9]",
+    "predicted_answer": "The ConvS2S Ensemble model has the highest BLEU score on the EN-FR dataset, with a score of 41.29.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.23529411764705882,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0120",
+    "question": "Which room is used for office hours on Tuesday at 9:00 AM?",
+    "gold_answer": "Huang Basement",
+    "predicted_answer": "Huang Basement",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0121",
+    "question": "What types of data are used for training the foundation model?",
+    "gold_answer": "Text, Images, Speech, Structured Data, 3D Signals",
+    "predicted_answer": "The types of data used for training the foundation model are:\n\n- Text\n- Images\n- Speech\n- Structured Data\n- 3D Signals",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6086956521739131,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0122",
+    "question": "Which model is labeled with the highest estimated computing resources used?",
+    "gold_answer": "PaLM (540B)",
+    "predicted_answer": "The model labeled with the highest estimated computing resources used is PaLM (540B).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3076923076923077,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0123",
+    "question": "Which model shows the highest Macro-F1 score in classification with demos using gold labels?",
+    "gold_answer": "GPT-3 (175B)",
+    "predicted_answer": "The GPT-3 (175B) model shows the highest Macro-F1 score in classification with demos using gold labels.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.25,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0124",
+    "question": "What are the components involved in the reasoning process of an agent according to the diagram?",
+    "gold_answer": "Sensors, inner monologue, actuators, percepts, actions, environment.",
+    "predicted_answer": "The components involved in the reasoning process of an agent according to the diagram are \"Inner Monologue\" and \"Reasoning.\"",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.18181818181818182,
+      "llm_judge": 2
+    }
+  },
+  {
+    "question_id": "cs224n_q0125",
+    "question": "What is the first step in the adversarial benchmark process?",
+    "gold_answer": "Step 1: Write examples",
+    "predicted_answer": "The first step in the adversarial benchmark process is to write examples.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.4285714285714285,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0126",
+    "question": "Which model has the lowest win-rate against 'gpt-4-turbo'?",
+    "gold_answer": "mistral-7b-instruct with a win-rate of 0.14",
+    "predicted_answer": "The model with the lowest win-rate against 'gpt-4-turbo' is 'mistral-7b-instruct' with a win-rate of 0.10.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.47058823529411764,
+      "llm_judge": 4
+    }
+  },
+  {
+    "question_id": "cs224n_q0127",
+    "question": "What does the expression \\( \\hat{y}_t = \\argmax_{w \\in V} P(y_t = w|y_{<t}) \\) represent?",
+    "gold_answer": "This expression represents the greedy decoding process.",
+    "predicted_answer": "The expression \\( \\hat{y}_t = \\argmax_{w \\in V} P(y_t = w|y_{<t}) \\) represents greedy decoding. It selects the token \\( \\hat{y}_t \\) that maximizes the local probability at each step from the vocabulary \\( V \\), given the previous tokens \\( y_{<t} \\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.23529411764705882,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0128",
+    "question": "Which component is responsible for 'Reasoning Prompts' in the left process?",
+    "gold_answer": "RL",
+    "predicted_answer": "The component responsible for 'Reasoning Prompts' in the left process is \"RL\" (Reinforcement Learning).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.15384615384615385,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0129",
+    "question": "What is the mathematical expression for Forward KL?",
+    "gold_answer": "KL(p || q) = E_{x~p} [log(p(x)/q(x))] = \u03a3_x p(x) log(p(x)/q(x))",
+    "predicted_answer": "The mathematical expression for Forward KL is:\n\n\\[\nKL(p \\parallel q) = \\mathbb{E}_{x \\sim p} \\left[ \\log \\frac{p(x)}{q(x)} \\right] = \\sum_{x} p(x) \\log \\frac{p(x)}{q(x)}\n\\]",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2222222222222222,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0130",
+    "question": "Which token pair has the highest frequency in the table?",
+    "gold_answer": "p + er",
+    "predicted_answer": "The token pair \"p + er\" has the highest frequency in the table, with a frequency of 2.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.2666666666666667,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0131",
+    "question": "Which skills have the same percentage of 47%?",
+    "gold_answer": "Talent management and Service orientation and customer service",
+    "predicted_answer": "The skills with the same percentage of 47% are \"Talent management\" and \"Service orientation and customer service.\"",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.6956521739130436,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0132",
+    "question": "Which model shows the highest performance in the chart?",
+    "gold_answer": "PrismMath-7B",
+    "predicted_answer": "The PrismMath-7B model shows the highest performance in the chart.",
+    "category": "chart_graph",
+    "difficulty": "hard",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.25,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0133",
+    "question": "What is the source sentence in the diagram?",
+    "gold_answer": "Die Proteste waren am Wochenende eskaliert <EOS>",
+    "predicted_answer": "The source sentence in the diagram is \"Die Proteste waren am Wochenende eskaliert \\<EOS\\>\".",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.7368421052631579,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0134",
+    "question": "What is the main topic depicted in the left section of the image?",
+    "gold_answer": "Turing Test",
+    "predicted_answer": "The main topic depicted in the left section of the image is the Turing Test, illustrated by a group of people and robots around a table labeled \"TURING TEST.\"",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.16,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0135",
+    "question": "Which word has a co-occurrence count of 1 with 'deep'?",
+    "gold_answer": "like",
+    "predicted_answer": "The word 'like' has a co-occurrence count of 1 with 'deep'.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.19999999999999998,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0136",
+    "question": "What is the role of \u2202s/\u2202z in the diagram?",
+    "gold_answer": "\u2202s/\u2202z is the upstream gradient.",
+    "predicted_answer": "In the diagram, \\(\\frac{\\partial s}{\\partial z}\\) represents the upstream gradient. It is the gradient of the loss \\(s\\) with respect to the output \\(z\\) of the node, which is used to compute the downstream gradients for the inputs \\(W\\) and \\(x\\).",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.16216216216216214,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0137",
+    "question": "What is the purpose of conditioning on 'today the price'?",
+    "gold_answer": "To get a probability distribution for the next word.",
+    "predicted_answer": "The purpose of conditioning on \"today the price\" is to generate a probability distribution for the next word in the sequence, allowing the language model to predict and sample the most likely continuation of the text.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.34285714285714286,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0138",
+    "question": "Which model has the highest ROUGE-L score?",
+    "gold_answer": "Transformer-DMCA, MoE-256, L = 7500",
+    "predicted_answer": "The model \"Transformer-DMCA, MoE-256, L = 7500\" has the highest ROUGE-L score of 38.8.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5333333333333333,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0139",
+    "question": "What dataset is used for the English-French translation task?",
+    "gold_answer": "The dataset used is WMT2014 English-French.",
+    "predicted_answer": "The dataset used for the English-French translation task is WMT2014.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.7692307692307693,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0140",
+    "question": "What is the price of 'Love Knocked'?",
+    "gold_answer": "$5.99",
+    "predicted_answer": "$5.99",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0141",
+    "question": "What is the role of the diagram labeled 'SFT' in Step 1?",
+    "gold_answer": "It represents the process of fine-tuning GPT-3 with supervised learning.",
+    "predicted_answer": "The diagram labeled 'SFT' in Step 1 represents the process of fine-tuning GPT-3 with supervised learning using the demonstration data collected.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.5925925925925926,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0142",
+    "question": "What does the diagram on the right side of the slide represent?",
+    "gold_answer": "The diagram represents function composition.",
+    "predicted_answer": "The diagram on the right side of the slide represents \"Function Composition,\" illustrating how different modules or functions are combined, likely in the context of multi-task learning.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.29629629629629634,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0143",
+    "question": "What activity is Klaus Mueller engaged in according to the central reflection box?",
+    "gold_answer": "Klaus Mueller is engaging in research activities",
+    "predicted_answer": "Klaus Mueller is engaging in research activities.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0144",
+    "question": "What was the performance difference between Expert Human Validators and Non-Expert Human Validators?",
+    "gold_answer": "59.3",
+    "predicted_answer": "The performance difference between Expert Human Validators and Non-Expert Human Validators was 59.3%.",
+    "category": "table",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.15384615384615385,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0145",
+    "question": "In the COPA example, what is the correct alternative for the premise 'My body cast a shadow over the grass'?",
+    "gold_answer": "Alternative 1: The sun was rising.",
+    "predicted_answer": "The correct alternative for the premise \"My body cast a shadow over the grass\" is Alternative 1: The sun was rising.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.47619047619047616,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0146",
+    "question": "What was the opening stock price of Nvidia on January 27, 2025?",
+    "gold_answer": "$124.57",
+    "predicted_answer": "The opening stock price of Nvidia on January 27, 2025, was $124.57.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.16666666666666669,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0147",
+    "question": "In the diagram, which string follows the same set of rules as 'FDMUC', 'FDQMQFC', and 'FQMQUC'?",
+    "gold_answer": "FZABQC",
+    "predicted_answer": "The string \"FZABQC\" follows the same set of rules.",
+    "category": "image_diagram",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.25,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0148",
+    "question": "How does the performance of T5-Large compare to T5-Small in the XSum task?",
+    "gold_answer": "T5-Large shows higher performance than T5-Small.",
+    "predicted_answer": "In the XSum task, the performance of T5-Large is significantly better than T5-Small. T5-Large achieves a higher ROUGE-2 score, indicating improved summarization performance.",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.3846153846153846,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0149",
+    "question": "Which token pair is merged first according to the Merge List?",
+    "gold_answer": "_ + p",
+    "predicted_answer": "The token pair \"_ + p\" is merged first according to the Merge List.",
+    "category": "layout_aware",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 0.0,
+      "token_f1": 0.18181818181818182,
+      "llm_judge": 5
+    }
+  },
+  {
+    "question_id": "cs224n_q0150",
+    "question": "Which job is projected to have the fastest net decline?",
+    "gold_answer": "Postal Service Clerks",
+    "predicted_answer": "Postal Service Clerks",
+    "category": "chart_graph",
+    "difficulty": "medium",
+    "scores": {
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "llm_judge": 5
+    }
+  }
+]

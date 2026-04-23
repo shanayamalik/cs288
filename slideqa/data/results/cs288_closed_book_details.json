@@ -1,0 +1,2438 @@
+{
+  "per_question": [
+    {
+      "question_id": "cs288_q0001",
+      "question": "What is the total planned duration for the 'Course logistics' and 'First lecture (n-gram LM!)' sections?",
+      "gold_answer": "50 minutes",
+      "predicted_answer": "The total planned duration for the 'Course logistics' and 'First lecture (n-gram LM!)' sections is 20 minutes for 'Course logistics' and 70 minutes for 'First lecture (n-gram LM!)', totaling 90 minutes.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_005.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06451612903225806
+      }
+    },
+    {
+      "question_id": "cs288_q0002",
+      "question": "How does interpolation smoothing work according to the slide?",
+      "gold_answer": "Interpolation uses a combination of different granularities of n-grams.",
+      "predicted_answer": "Interpolation smoothing works by combining different models or probability estimates to improve the overall performance. It assigns weights to each model or estimate and calculates a weighted average, ensuring that no single model dominates the prediction. This helps in handling cases with sparse data by leveraging information from multiple sources.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_039.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07272727272727272
+      }
+    },
+    {
+      "question_id": "cs288_q0003",
+      "question": "What is the purpose of the Ruby script mentioned in the slide?",
+      "gold_answer": "For preprocessing Twitter data",
+      "predicted_answer": "The purpose of the Ruby script mentioned in the slide is likely to automate a specific task or process related to the NLP course, such as data preprocessing, text analysis, or managing course materials. Without specific details, it's difficult to pinpoint the exact function, but it generally serves to streamline or facilitate an aspect of the course's workflow.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_023.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07407407407407407
+      }
+    },
+    {
+      "question_id": "cs288_q0004",
+      "question": "What is the training loss function mentioned on the slide?",
+      "gold_answer": "The training loss function is to minimize -\u03a3_{(x,y)\u2208D} log \u0177_y.",
+      "predicted_answer": "The training loss function mentioned on the slide is likely to be cross-entropy loss, as it is commonly used in NLP tasks for classification problems.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_049.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3125
+      }
+    },
+    {
+      "question_id": "cs288_q0005",
+      "question": "How is the loss function L(\u03b8) defined in the training process?",
+      "gold_answer": "L(\u03b8) is defined as -\u03a3\u209c=\u2081\u1d40 log(y\u0302\u209c(y\u209c)).",
+      "predicted_answer": "The loss function \\( L(\\theta) \\) in the training process is typically defined as a measure of the difference between the predicted outputs of the model and the actual target values. It quantifies how well the model is performing. Common loss functions include Mean Squared Error (MSE) for regression tasks and Cross-Entropy Loss for classification tasks. The specific definition of \\( L(\\theta) \\) depends on the task and model being used.",
+      "category": "text_only",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_05/slide_024.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09523809523809525
+      }
+    },
+    {
+      "question_id": "cs288_q0006",
+      "question": "What does fluency mean in the context of machine translation?",
+      "gold_answer": "Translation should be fluent text in the target language.",
+      "predicted_answer": "In the context of machine translation, fluency refers to how naturally and smoothly the translated text reads in the target language, maintaining proper grammar, syntax, and style.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_007.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3125
+      }
+    },
+    {
+      "question_id": "cs288_q0007",
+      "question": "How does the scaling of 'd_ff' compare to 'd' when increasing model size?",
+      "gold_answer": "People typically scale d_ff more rapidly than d.",
+      "predicted_answer": "In transformer models, 'd_ff' (the dimension of the feed-forward network) typically scales with 'd' (the model dimension or hidden size) by a factor of 4. This means that as 'd' increases, 'd_ff' is usually set to 4 times 'd'.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_122.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1395348837209302
+      }
+    },
+    {
+      "question_id": "cs288_q0008",
+      "question": "What does the slide suggest about the method of learning?",
+      "gold_answer": "It suggests a form of few-shot prompting.",
+      "predicted_answer": "The slide suggests that the method of learning involves a combination of theoretical understanding and practical application, emphasizing hands-on exercises and real-world examples to reinforce concepts.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_077.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.13793103448275862
+      }
+    },
+    {
+      "question_id": "cs288_q0009",
+      "question": "What does model-based filtering vary from and to?",
+      "gold_answer": "Varies from cheap, bi-gram based filtering to LLM-based filtering.",
+      "predicted_answer": "Model-based filtering varies from rule-based filtering to data-driven filtering.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_09/slide_073.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5555555555555556
+      }
+    },
+    {
+      "question_id": "cs288_q0010",
+      "question": "Who is the first author of the paper listed on the slide?",
+      "gold_answer": "Long Ouyang",
+      "predicted_answer": "I'm sorry, I can't see the slide or the paper you're referring to. Could you provide more details or context?",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_012.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0011",
+      "question": "What is the purpose of the beam search with n = 3?",
+      "gold_answer": "To keep generating with a new beam.",
+      "predicted_answer": "The purpose of beam search with n = 3 is to explore multiple possible sequences in a search space by keeping track of the top 3 most likely sequences at each step, balancing between breadth and depth to find a more optimal solution compared to greedy search.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_040.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.125
+      }
+    },
+    {
+      "question_id": "cs288_q0012",
+      "question": "What kind of questions are associated with the VQA dataset?",
+      "gold_answer": "Questions about colors, objects, and actions in images.",
+      "predicted_answer": "The VQA (Visual Question Answering) dataset is associated with questions that require understanding and reasoning about images. These questions typically involve identifying objects, actions, and attributes within images, as well as answering queries about the scene depicted, such as \"What is the color of the cat?\" or \"How many people are in the image?\"",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_058.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2456140350877193
+      }
+    },
+    {
+      "question_id": "cs288_q0013",
+      "question": "What role does John Elway currently hold according to the slide?",
+      "gold_answer": "Denver\u2019s Executive Vice President of Football Operations and General Manager",
+      "predicted_answer": "I am unsure of John Elway's current role according to the slide, as I do not have access to specific course lecture materials or slides.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_024.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.058823529411764705
+      }
+    },
+    {
+      "question_id": "cs288_q0014",
+      "question": "Which case study has the first layer as dense?",
+      "gold_answer": "DeepSeekMoE",
+      "predicted_answer": "The case study with the first layer as dense is typically a feedforward neural network model used for text classification tasks in NLP.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_022.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0015",
+      "question": "What is the hierarchical relationship shown in the text on the slide?",
+      "gold_answer": "clothing > outerwear > coat > jacket > jean jacket",
+      "predicted_answer": "The hierarchical relationship shown in the text on the slide likely refers to the structure of linguistic elements, such as phonemes, morphemes, words, phrases, and sentences, organized from the smallest to the largest unit in natural language processing.",
+      "category": "text_only",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_019.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0016",
+      "question": "What does the translation example on the slide demonstrate?",
+      "gold_answer": "It demonstrates machine translation from English to Chinese (Simplified).",
+      "predicted_answer": "The translation example on the slide likely demonstrates how machine translation systems work, showcasing the process of converting text from one language to another while preserving meaning and context. It may also illustrate challenges such as handling idiomatic expressions, maintaining grammatical structure, or addressing ambiguities in language.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_032.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.22641509433962262
+      }
+    },
+    {
+      "question_id": "cs288_q0017",
+      "question": "What is the correct answer for the perplexity of the test corpus given the k-gram model probability?",
+      "gold_answer": "A) 2^|V|",
+      "predicted_answer": "The perplexity of a test corpus given a k-gram model probability is calculated as the exponential of the negative average log probability of the test set. Mathematically, it is expressed as:\n\n\\[ \\text{Perplexity} = 2^{-\\frac{1}{N} \\sum_{i=1}^{N} \\log_2 P(w_i | w_{i-k+1}, \\ldots, w_{i-1})} \\]\n\nwhere \\( N \\) is the total number of words in the test corpus, and \\( P(w_i | w_{i-k+1}, \\ldots, w_{i-1}) \\) is the k-gram model probability of the word \\( w_i \\) given its preceding \\( k-1 \\) words.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_02/slide_026.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0018",
+      "question": "What is the formula used for the skip-gram model on this slide?",
+      "gold_answer": "P(w_{t+j} | w_t) = \\frac{\\exp(\\mathbf{v}_{w_{t+j}}^T \\mathbf{v}_{w_t})}{\\sum_{w' \\in V} \\exp(\\mathbf{v}_{w'}^T \\mathbf{v}_{w_t})}",
+      "predicted_answer": "The formula used for the skip-gram model is typically based on maximizing the probability of context words given a target word. It is often represented as:\n\n\\[ \\prod_{-c \\leq j \\leq c, j \\neq 0} P(w_{t+j} | w_t) \\]\n\nwhere \\( w_t \\) is the target word, \\( w_{t+j} \\) are the context words, and \\( c \\) is the context window size. The probability \\( P(w_{t+j} | w_t) \\) is usually modeled using a softmax function.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_065.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0625
+      }
+    },
+    {
+      "question_id": "cs288_q0019",
+      "question": "What are the components involved in calculating y according to the slide?",
+      "gold_answer": "y is calculated as W^(o)h_2.",
+      "predicted_answer": "Without the specific slide, I can provide a general answer: In NLP, calculating a variable like \"y\" often involves components such as input features (e.g., word embeddings), model parameters (e.g., weights and biases), and possibly activation functions. If \"y\" refers to a prediction, it might be calculated using a neural network or statistical model, involving layers, transformations, and possibly a loss function for optimization.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_049.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09523809523809525
+      }
+    },
+    {
+      "question_id": "cs288_q0020",
+      "question": "What is the loss function used in the training of the recurrent neural network?",
+      "gold_answer": "\u2112(\u03b8) = -\u2211(from t=1 to T-1) log(y\u0302\u209c(x\u209c\u208a\u2081))",
+      "predicted_answer": "The loss function commonly used in the training of recurrent neural networks (RNNs) for sequence prediction tasks is the cross-entropy loss.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_05/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0021",
+      "question": "How many layers are used in the encoder LSTMs?",
+      "gold_answer": "8 layers",
+      "predicted_answer": "The number of layers used in encoder LSTMs can vary depending on the specific architecture or implementation. Commonly, 2 to 4 layers are used, but it can be more or less based on the design choice.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_069.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.05714285714285715
+      }
+    },
+    {
+      "question_id": "cs288_q0022",
+      "question": "What mathematical expression is used to calculate the weight for each query-key pair?",
+      "gold_answer": "\u03b1_i,j = softmax((q_i \u00b7 k_j) / \u221ad_k)",
+      "predicted_answer": "The weight for each query-key pair is calculated using the softmax function applied to the dot product of the query and key vectors.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_07/slide_020.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0023",
+      "question": "What is the sentiment of the review: 'The company anticipated its operating profit to improve.'?",
+      "gold_answer": "Positive",
+      "predicted_answer": "Neutral.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_090.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0024",
+      "question": "What is the equation used to jointly fit N and D?",
+      "gold_answer": "L\u0302(N, D) = E + A/N^\u03b1 + B/D^\u03b2",
+      "predicted_answer": "The equation used to jointly fit N (the number of topics) and D (the document-topic distributions) in topic modeling, such as Latent Dirichlet Allocation (LDA), typically involves maximizing the likelihood of the observed data given these parameters. This is often done using variational inference or Gibbs sampling. The specific equation can vary based on the method used, but generally, it involves the Dirichlet distribution for both N and D. If you are referring to a specific model or method, please provide more context for a precise answer.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_019.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.024390243902439025
+      }
+    },
+    {
+      "question_id": "cs288_q0025",
+      "question": "What is the mathematical expression for the reward model's loss function?",
+      "gold_answer": "L(\u03b8) = -1/(K choose 2) E[(x,yw,yl)~D][log(\u03c3(r_\u03b8(x, yw) - r_\u03b8(x, yl)))]",
+      "predicted_answer": "The mathematical expression for a reward model's loss function often depends on the specific context and design of the model. However, a common approach is to use a loss function like the negative log likelihood or mean squared error. For example, if using a preference-based reward model, the loss function could be:\n\n\\[ \\mathcal{L} = -\\sum_{i} \\log \\frac{\\exp(r(x_i^+))}{\\exp(r(x_i^+)) + \\exp(r(x_i^-))} \\]\n\nwhere \\( r(x_i^+) \\) and \\( r(x_i^-) \\) are the reward scores for the preferred and less preferred outputs, respectively. This is a form of pairwise ranking loss.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_10/slide_020.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0026",
+      "question": "What mathematical expression is used for length normalization?",
+      "gold_answer": "p(\\bar{x}) \\propto \\frac{1}{|\\bar{x}|^\\alpha} \\sum_{i=1}^{|\\bar{x}|} \\log p(x_i | x_1, \\ldots, x_{i-1})",
+      "predicted_answer": "Length normalization is often achieved using the L2 norm (Euclidean norm), which is expressed mathematically as:\n\n\\[ \\text{Normalized vector} = \\frac{\\mathbf{v}}{\\|\\mathbf{v}\\|_2} \\]\n\nwhere \\(\\mathbf{v}\\) is the original vector and \\(\\|\\mathbf{v}\\|_2\\) is the L2 norm of the vector, calculated as:\n\n\\[ \\|\\mathbf{v}\\|_2 = \\sqrt{\\sum_{i=1}^{n} v_i^2} \\]\n\nThis ensures that the resulting vector has a unit length.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_11/slide_046.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0027",
+      "question": "Which classes have no examples where they are both the target and predicted class?",
+      "gold_answer": "TO, DT, NNS, NNP, PP, VB, VBN, VBD, CD",
+      "predicted_answer": "Classes that have no examples where they are both the target and predicted class are typically referred to as \"zero-shot\" classes in the context of a confusion matrix. These are classes for which the model has never correctly predicted any instances.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_12/slide_009.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.043478260869565216
+      }
+    },
+    {
+      "question_id": "cs288_q0028",
+      "question": "How is end-to-end backpropagation achieved in the RAG model?",
+      "gold_answer": "End-to-end backpropagation is achieved through q and p\u03b8.",
+      "predicted_answer": "End-to-end backpropagation in the RAG (Retrieval-Augmented Generation) model is achieved by jointly optimizing both the retrieval and generation components. During training, the model retrieves relevant documents from a corpus and generates a response based on these documents. The gradients from the generation loss are backpropagated through both the generator and the retriever, allowing the retriever to be updated based on how well the retrieved documents help the generator produce accurate outputs. This joint optimization enables the model to learn to retrieve more relevant documents over time.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_036.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14814814814814814
+      }
+    },
+    {
+      "question_id": "cs288_q0029",
+      "question": "What component is used in both models for attention?",
+      "gold_answer": "Both models use 'Gated Delta Attention' or 'Gated Attention'.",
+      "predicted_answer": "The component used in both models for attention is the \"attention mechanism,\" specifically the \"dot-product attention\" or \"scaled dot-product attention\" in transformer models.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_041.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.3448275862068966
+      }
+    },
+    {
+      "question_id": "cs288_q0030",
+      "question": "How are the outputs of the text and image encoders combined in the diagram?",
+      "gold_answer": "They are combined as I1\u00b7T1, I1\u00b7T2, I1\u00b7T3, ..., I1\u00b7TN.",
+      "predicted_answer": "The outputs of the text and image encoders are typically combined using a multimodal fusion technique, such as concatenation, attention mechanisms, or a learned transformation, to integrate the information from both modalities for further processing or decision-making.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_15/slide_044.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.15
+      }
+    },
+    {
+      "question_id": "cs288_q0031",
+      "question": "How does the norm position differ between Vaswani et al. and Llama models?",
+      "gold_answer": "Vaswani et al. uses post-norm, while Llama uses pre-norm.",
+      "predicted_answer": "In Vaswani et al.'s Transformer model, layer normalization is applied before the self-attention and feed-forward sub-layers (pre-norm). In contrast, LLaMA models use post-norm, where layer normalization is applied after these sub-layers.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_034.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2564102564102564
+      }
+    },
+    {
+      "question_id": "cs288_q0032",
+      "question": "What is the probability of the bigram 'want to' according to the table?",
+      "gold_answer": "0.00042",
+      "predicted_answer": "I'm sorry, but I don't have access to the specific table you're referring to. To calculate the probability of the bigram 'want to', you would typically divide the frequency of the bigram 'want to' by the frequency of the unigram 'want'. If you provide the frequencies, I can help you with the calculation.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_044.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0033",
+      "question": "What is the count vector value for 'digital' in the 'computer' column?",
+      "gold_answer": "1670",
+      "predicted_answer": "To determine the count vector value for 'digital' in the 'computer' column, you would need a document-term matrix where 'digital' and 'computer' are terms. The count vector value would be the number of times 'digital' appears in documents associated with the 'computer' column. Without specific data, I cannot provide an exact number.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_053.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0034",
+      "question": "Which variable is associated with the presence of exclamation marks in the document?",
+      "gold_answer": "x5",
+      "predicted_answer": "The variable associated with the presence of exclamation marks in a document is typically a feature or token that counts or flags the occurrence of exclamation marks. This can be represented as a binary feature indicating presence or absence, or as a numerical count of exclamation marks within the document.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_021.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0035",
+      "question": "What is the purpose of the 'ner' component?",
+      "gold_answer": "Detect and label named entities.",
+      "predicted_answer": "The purpose of the 'ner' (Named Entity Recognition) component is to identify and classify named entities in text into predefined categories such as people, organizations, locations, dates, and other entities.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_008.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.18181818181818182
+      }
+    },
+    {
+      "question_id": "cs288_q0036",
+      "question": "Which language pair has the most English words in the corpus?",
+      "gold_answer": "French-English with 50,196,035 English words",
+      "predicted_answer": "The language pair with the most English words in a corpus typically depends on the specific corpus being referenced. However, in many multilingual corpora, the English-Spanish pair often has a significant number of English words due to the widespread use and study of both languages.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_011.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1395348837209302
+      }
+    },
+    {
+      "question_id": "cs288_q0037",
+      "question": "Which model has the lowest final loss according to the table?",
+      "gold_answer": "RMS Norm has the lowest final loss of 1.821.",
+      "predicted_answer": "I'm sorry, but I don't have access to the table you're referring to. Could you provide more details or context?",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_147.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0038",
+      "question": "What is the score difference between the highest and lowest performing systems on the CoLA task?",
+      "gold_answer": "The difference is 25.5 (60.5 - 35.0).",
+      "predicted_answer": "The score difference between the highest and lowest performing systems on the CoLA task can vary over time as new models are developed. As of the latest benchmarks, the difference can be significant, often ranging from around 20 to 30 points in terms of the Matthews correlation coefficient, which is commonly used to evaluate performance on CoLA. For precise figures, it's best to consult the latest leaderboard on platforms like the GLUE benchmark website.",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_08/slide_061.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.05633802816901409
+      }
+    },
+    {
+      "question_id": "cs288_q0039",
+      "question": "Which datasets have 'Common Crawl' as a source?",
+      "gold_answer": "C4, Pile, RefinedWeb, OpenWebMath, RedPajama v2, FineWeb, DCLM",
+      "predicted_answer": "Datasets that have 'Common Crawl' as a source include C4 (Colossal Clean Crawled Corpus), OpenWebText, and OSCAR.",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_048.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.08333333333333333
+      }
+    },
+    {
+      "question_id": "cs288_q0040",
+      "question": "Which nationality had the highest representation among the labelers?",
+      "gold_answer": "Filipino and Bangladeshi, both at 22%",
+      "predicted_answer": "I'm sorry, I don't have specific information on the nationality of labelers for NLP course lecture material.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_024.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0041",
+      "question": "What is the combined probability of the prefix 'in the'?",
+      "gold_answer": "0.3 * 0.15",
+      "predicted_answer": "The combined probability of the prefix \"in the\" in a language model is calculated by multiplying the individual probabilities of each word given its preceding context. Specifically, it is P(\"in\") * P(\"the\" | \"in\"). The exact values depend on the specific language model and corpus used for training.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_036.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0042",
+      "question": "What is the difference in the number of training examples between RTE and WNLI?",
+      "gold_answer": "1,866 examples",
+      "predicted_answer": "RTE (Recognizing Textual Entailment) typically has around 2,500 training examples, while WNLI (Winograd NLI) has approximately 635 training examples.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_083.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09523809523809525
+      }
+    },
+    {
+      "question_id": "cs288_q0043",
+      "question": "Which retriever has the highest score for TriviaQA in the Top-100 category?",
+      "gold_answer": "DPR",
+      "predicted_answer": "The retriever with the highest score for TriviaQA in the Top-100 category is often a dense retriever model like DPR (Dense Passage Retrieval) or a more advanced model like ColBERT, depending on the specific implementation and dataset version. However, exact scores can vary based on updates and improvements in models.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_066.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.044444444444444446
+      }
+    },
+    {
+      "question_id": "cs288_q0044",
+      "question": "What is the difference in total parameters between OLMoE and DeepSeek-V3?",
+      "gold_answer": "664.1B Total",
+      "predicted_answer": "I'm sorry, but I don't have specific information on the total parameters for OLMoE and DeepSeek-V3. You may need to refer to the respective research papers or documentation for these models to find detailed parameter counts.",
+      "category": "table",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_022.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.05555555555555555
+      }
+    },
+    {
+      "question_id": "cs288_q0045",
+      "question": "What attribute is shared by listeners R2 and R3 according to the table on the left?",
+      "gold_answer": "Glasses",
+      "predicted_answer": "Without access to the specific table you are referring to, I cannot provide an accurate answer. However, if you can describe the attributes or provide more context, I can try to help further.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_065.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0046",
+      "question": "According to the chart, how does training loss change with increasing FLOPS?",
+      "gold_answer": "Training loss decreases as FLOPS increase.",
+      "predicted_answer": "Training loss typically decreases with increasing FLOPS, as more computational power allows for more complex models and better optimization during training.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_034.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.37037037037037035
+      }
+    },
+    {
+      "question_id": "cs288_q0047",
+      "question": "Which model has the lowest test perplexity on the chart?",
+      "gold_answer": "GPT-3 (Zero-Shot) with a perplexity of 20.5",
+      "predicted_answer": "I'm sorry, I can't see the chart. Could you please provide more details or describe the models listed on the chart?",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_034.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0048",
+      "question": "What does the graph on the slide represent?",
+      "gold_answer": "The graph represents the behavior of the weighting function f.",
+      "predicted_answer": "I'm unable to see the graph on the slide, but typically in NLP course lectures, graphs might represent data distributions, model performance metrics, word embeddings, or training loss over time. If you can provide more context or details about the graph, I can give a more specific answer.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_067.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0392156862745098
+      }
+    },
+    {
+      "question_id": "cs288_q0049",
+      "question": "Which model shows faster convergence in terms of epochs on the Nottingham Dataset?",
+      "gold_answer": "GRU train",
+      "predicted_answer": "The Transformer model typically shows faster convergence in terms of epochs compared to RNN-based models on the Nottingham Dataset.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_064.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0050",
+      "question": "What does the heatmap on the slide represent?",
+      "gold_answer": "128-Dimensional Positional Encoding Heatmap",
+      "predicted_answer": "The heatmap on the slide likely represents the attention weights or the correlation between different elements in a dataset, such as words in a sentence or features in a model. It visually indicates the strength of relationships or importance of elements in the context of NLP tasks.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_051.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.04761904761904762
+      }
+    },
+    {
+      "question_id": "cs288_q0051",
+      "question": "What is the accuracy of the 'Babbage' model with 4 in-context examples?",
+      "gold_answer": "Approximately 95.3%",
+      "predicted_answer": "The accuracy of the 'Babbage' model with 4 in-context examples is approximately 70.2%.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_093.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.15384615384615385
+      }
+    },
+    {
+      "question_id": "cs288_q0052",
+      "question": "How does test loss change with the number of tokens processed for models with 10^3 parameters?",
+      "gold_answer": "Test loss decreases as the number of tokens processed increases.",
+      "predicted_answer": "For models with 10^3 parameters, as the number of tokens processed increases, the test loss typically decreases. This is because the model has more data to learn from, which can improve its ability to generalize. However, the rate of decrease in test loss may be slower compared to larger models, as smaller models have limited capacity to capture complex patterns in the data.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_09/slide_013.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.26865671641791045
+      }
+    },
+    {
+      "question_id": "cs288_q0053",
+      "question": "Which dataset is associated with the highest performance in the 'Sentence Completion' category?",
+      "gold_answer": "HellaSwag",
+      "predicted_answer": "The Microsoft Research Sentence Completion Challenge (MSR SCC) dataset is often associated with high performance in the 'Sentence Completion' category.",
+      "category": "chart_graph",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_10/slide_032.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0054",
+      "question": "What is the probability of 's' given the context x_1, ..., x_{i-1}?",
+      "gold_answer": "The probability of 's' is 80.",
+      "predicted_answer": "The probability of 's' given the context \\( x_1, \\ldots, x_{i-1} \\) is represented as \\( P(s \\mid x_1, \\ldots, x_{i-1}) \\). This probability can be estimated using language models, such as n-gram models, neural networks, or transformers, which consider the preceding context to predict the likelihood of the next word or character.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.163265306122449
+      }
+    },
+    {
+      "question_id": "cs288_q0055",
+      "question": "Which benchmarks are represented by lines with markers in the graph?",
+      "gold_answer": "MNIST, ImageNet, SQuAD 2.0, GLUE, SQuAD 1.1, Switchboard",
+      "predicted_answer": "Without access to the specific graph, I can't provide the exact benchmarks represented by lines with markers. Typically, benchmarks in NLP graphs might include datasets or tasks like GLUE, SuperGLUE, SQuAD, or other standard evaluation metrics. If you have access to the graph, you can look for labels or legends that indicate which benchmarks are represented by lines with markers.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_085.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.061538461538461535
+      }
+    },
+    {
+      "question_id": "cs288_q0056",
+      "question": "Which smart speaker use case has the highest frequency of being 'ever tried'?",
+      "gold_answer": "Ask a question",
+      "predicted_answer": "Music-related tasks typically have the highest frequency of being 'ever tried' on smart speakers.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_006.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0057",
+      "question": "What is the KV cache size for Full Attention at a context length of 60,000 tokens?",
+      "gold_answer": "Approximately 25 GB",
+      "predicted_answer": "The KV cache size for Full Attention at a context length of 60,000 tokens depends on the model's architecture, specifically the number of layers, the number of attention heads, and the dimensionality of each head. Generally, the KV cache size is calculated as:\n\n\\[ \\text{KV cache size} = \\text{number of layers} \\times \\text{number of heads} \\times \\text{context length} \\times \\text{head dimension} \\times 2 \\]\n\nThe factor of 2 accounts for both the key and value vectors. Without specific details about the model's architecture, an exact size cannot be determined.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_039.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0058",
+      "question": "Which domain contributes the highest percentage of documents in the LAION-2B-en dataset?",
+      "gold_answer": "i.pining.com",
+      "predicted_answer": "The domain that contributes the highest percentage of documents in the LAION-2B-en dataset is Pinterest.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_047.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0059",
+      "question": "What is the solve rate trend for '10@k with filtering + clustering' as the sample budget increases?",
+      "gold_answer": "The solve rate increases as the sample budget increases.",
+      "predicted_answer": "The solve rate for '10@k with filtering + clustering' generally increases as the sample budget increases. This is because a larger sample budget allows for more comprehensive filtering and clustering, leading to more accurate and effective solutions.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_021.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.35
+      }
+    },
+    {
+      "question_id": "cs288_q0060",
+      "question": "Which model shows the least improvement in success rate from round 0 to round 3?",
+      "gold_answer": "Captioner + Mixtural",
+      "predicted_answer": "I'm sorry, I don't have specific data on the success rates of models across different rounds. Please provide more context or specify the models you're referring to.",
+      "category": "chart_graph",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_032.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0061",
+      "question": "Which guest lecture is scheduled last?",
+      "gold_answer": "Gopala Anumanchipalli on April 23",
+      "predicted_answer": "I'm sorry, I don't have access to specific course schedules or guest lecture details. Please refer to your course syllabus or contact your instructor for the most accurate information.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_050.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0062",
+      "question": "Which option corresponds to the probability of the sentence '<s> I like strawberries </s>'?",
+      "gold_answer": "(D) 1/9",
+      "predicted_answer": "The probability of the sentence \"<s> I like strawberries </s>\" corresponds to the product of the probabilities of each word given its preceding context, typically calculated using a language model. Specifically, it is P(<s>) * P(I | <s>) * P(like | <s> I) * P(strawberries | <s> I like) * P(</s> | <s> I like strawberries).",
+      "category": "layout_aware",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_02/slide_012.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0063",
+      "question": "What does the example at the bottom of the slide illustrate?",
+      "gold_answer": "It illustrates how context words can represent the word 'banking'.",
+      "predicted_answer": "I'm sorry, I can't see the slide or its content. Could you provide more details or describe the example?",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_054.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0064",
+      "question": "What is the output of the neural network for the sentence 'I don't like this movie'?",
+      "gold_answer": "Thumbs down emoji",
+      "predicted_answer": "The output of a neural network for the sentence \"I don't like this movie\" depends on the specific architecture and task it is designed for. If it's a sentiment analysis model, the output might be a probability distribution indicating negative sentiment. If it's a language model, the output could be a probability distribution over the vocabulary for the next word prediction. Without specific details about the network and task, it's not possible to provide a precise output.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_003.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0065",
+      "question": "What are the attention values for the word 'the'?",
+      "gold_answer": "-0.05 + 0.02",
+      "predicted_answer": "The attention values for the word 'the' depend on the specific context and model being used. In transformer models, attention values are calculated dynamically based on the input sentence and can vary for each occurrence of 'the'. To determine the exact attention values, you would need to examine the attention weights from the model's attention mechanism for the specific input sequence.",
+      "category": "layout_aware",
+      "difficulty": "easy",
+      "evidence_slides": [
+        "lecture_06/slide_066.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0066",
+      "question": "What operation is performed after running attn() over each head in the diagram?",
+      "gold_answer": "The outputs are concatenated and then multiplied by W^O.",
+      "predicted_answer": "After running the attention mechanism (attn()) over each head, the outputs from all the heads are concatenated together. This concatenated output is then typically passed through a linear layer to combine the information from different heads.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_07/slide_037.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.20512820512820512
+      }
+    },
+    {
+      "question_id": "cs288_q0067",
+      "question": "What is the purpose of the '[SEP]' token in the input embeddings?",
+      "gold_answer": "To separate two segments",
+      "predicted_answer": "The '[SEP]' token is used in input embeddings to separate different segments of text, such as distinguishing between two sentences or parts of a document. In models like BERT, it helps the model understand the boundaries between distinct pieces of information within a single input sequence.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_08/slide_040.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.17777777777777776
+      }
+    },
+    {
+      "question_id": "cs288_q0068",
+      "question": "Compare the performance of Chinchilla and GPT-3 on the BoolQ dataset.",
+      "gold_answer": "Chinchilla has a performance of 83.7%, while GPT-3 has 60.5%.",
+      "predicted_answer": "Chinchilla outperforms GPT-3 on the BoolQ dataset. Chinchilla, developed by DeepMind, is optimized for a better balance between model size and training data, leading to improved performance on various benchmarks, including BoolQ, compared to GPT-3.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_09/slide_022.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14285714285714288
+      }
+    },
+    {
+      "question_id": "cs288_q0069",
+      "question": "How many types of classifiers are selectable in the RewardBench interface?",
+      "gold_answer": "Four types: Seq. Classifiers, DPO, Custom Classifiers, and Generative.",
+      "predicted_answer": "The RewardBench interface allows for the selection of three types of classifiers.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_052.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2105263157894737
+      }
+    },
+    {
+      "question_id": "cs288_q0070",
+      "question": "What are the top 3 continuations that should be kept according to the beam search criteria?",
+      "gold_answer": "'the list', 'the look', 'in the'",
+      "predicted_answer": "The top 3 continuations that should be kept according to the beam search criteria are those with the highest cumulative probabilities (or scores) after expanding the current sequences. Beam search maintains a fixed number of top sequences (the beam width) at each step, selecting those with the highest likelihood based on the model's predictions.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_11/slide_035.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0071",
+      "question": "Compare the benchmark effort and real-world employment for 'Healthcare Practitioners and Technical'.",
+      "gold_answer": "Benchmark Effort: 29, Real-World Employment: 9.2M",
+      "predicted_answer": "The benchmark effort for 'Healthcare Practitioners and Technical' roles typically involves extensive education and training, such as medical school, nursing programs, or technical certifications, which can be rigorous and time-consuming. In real-world employment, these roles are in high demand and often offer stable job opportunities, but they can also be high-pressure and require ongoing education to keep up with advancements in the field.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_12/slide_089.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.11940298507462688
+      }
+    },
+    {
+      "question_id": "cs288_q0072",
+      "question": "Which condition shows a greater difference in accuracy between 'Parametric-only (11B)' and 'DPR (0.3B)'?",
+      "gold_answer": "Natural Questions",
+      "predicted_answer": "The condition that shows a greater difference in accuracy between 'Parametric-only (11B)' and 'DPR (0.3B)' is typically the one involving complex or open-domain questions, where the larger model ('Parametric-only (11B)') can leverage its extensive parameters to perform better than the smaller 'DPR (0.3B)' model.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_13/slide_072.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.048780487804878044
+      }
+    },
+    {
+      "question_id": "cs288_q0073",
+      "question": "What components are shared between the Original Dense Block and the Upcycled MoE Block?",
+      "gold_answer": "Layer Norm and Attention components are shared.",
+      "predicted_answer": "Both the Original Dense Block and the Upcycled MoE Block share components such as feedforward neural networks and activation functions. They both utilize layers that process input data through a series of transformations, typically involving linear operations followed by non-linear activations.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_020.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.08888888888888889
+      }
+    },
+    {
+      "question_id": "cs288_q0074",
+      "question": "Which attribute is associated with R1?",
+      "gold_answer": "R1 has no additional attributes like hat, glasses, or mustache.",
+      "predicted_answer": "In the context of NLP course lecture material, \"R1\" could refer to a specific concept, model, or attribute discussed in the course. Without additional context, it's difficult to determine the exact attribute associated with \"R1.\" If \"R1\" refers to a specific model or concept, it would be best to consult the course materials or lecture notes for precise information.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_062.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09523809523809525
+      }
+    },
+    {
+      "question_id": "cs288_q0075",
+      "question": "What are the three different final answers derived from sampling a diverse set of reasoning paths?",
+      "gold_answer": "$18, $26, and $18",
+      "predicted_answer": "The three different final answers derived from sampling a diverse set of reasoning paths are typically: 1) the most probable answer, 2) a diverse or alternative answer, and 3) an outlier or less likely answer. These answers help in understanding the range of possible solutions and the reasoning behind them.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_013.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0425531914893617
+      }
+    },
+    {
+      "question_id": "cs288_q0076",
+      "question": "What is the largest model mentioned on the graph, and what is its size?",
+      "gold_answer": "Megatron-Turing NLG with 530 billion parameters.",
+      "predicted_answer": "I am unable to view graphs or specific course materials, so I cannot provide the exact name or size of the largest model mentioned on a graph. However, as of my last update, some of the largest NLP models include OpenAI's GPT-3 with 175 billion parameters and Google's PaLM with 540 billion parameters. Please refer to the specific graph or course material for the precise information.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_028.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09090909090909091
+      }
+    },
+    {
+      "question_id": "cs288_q0077",
+      "question": "What is the perplexity of the GPT-3 model as shown in the slide?",
+      "gold_answer": "20.5",
+      "predicted_answer": "I'm sorry, I don't have access to specific slides or their content. However, GPT-3's perplexity is not typically disclosed in specific terms as it can vary based on the dataset and context. Generally, perplexity is a measure of how well a probability model predicts a sample and is often used to evaluate language models.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_034.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0078",
+      "question": "What does the expression in the box represent?",
+      "gold_answer": "It represents the loss function for skip-gram with negative sampling.",
+      "predicted_answer": "I'm sorry, but without seeing the specific expression in the box, I can't provide an accurate answer. If you can describe the expression or provide more context, I'll do my best to help.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_03/slide_060.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0079",
+      "question": "How many nodes are there in the first hidden layer of the neural network diagram?",
+      "gold_answer": "There are two nodes in the first hidden layer.",
+      "predicted_answer": "I'm sorry, I can't provide an answer without a specific diagram to reference. Neural network architectures can vary widely, and the number of nodes in the first hidden layer depends on the specific design of the network in question.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_048.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.24390243902439024
+      }
+    },
+    {
+      "question_id": "cs288_q0080",
+      "question": "How is 'Part of speech' information represented in the example sentence?",
+      "gold_answer": "Using tags like NNP, VBD, etc.",
+      "predicted_answer": "In the example sentence, 'Part of speech' information is typically represented using tags that correspond to each word's grammatical category, such as noun (NN), verb (VB), adjective (JJ), etc. These tags are often appended to or associated with each word in the sentence to indicate its role in the sentence structure.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_008.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1111111111111111
+      }
+    },
+    {
+      "question_id": "cs288_q0081",
+      "question": "Which translation direction has the lowest GNMT score?",
+      "gold_answer": "Chinese to English with a score of 4.263.",
+      "predicted_answer": "The translation direction with the lowest GNMT score is typically from a high-resource language to a low-resource language, as GNMT (Google Neural Machine Translation) performs better with languages that have more training data available. However, specific scores can vary based on the languages involved and the data used for evaluation.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_018.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1176470588235294
+      }
+    },
+    {
+      "question_id": "cs288_q0082",
+      "question": "What is the matrix representation for RoPE(x, i)?",
+      "gold_answer": "RoPE(x, i) = [cos(i\u03b8) -sin(i\u03b8); sin(i\u03b8) cos(i\u03b8)] * [x1; x2]",
+      "predicted_answer": "The matrix representation for RoPE (Rotary Position Embedding) involves applying a rotation matrix to the input embeddings. For a given position \\( x \\) and dimension index \\( i \\), RoPE uses a rotation matrix that rotates the embedding vector in the 2D plane formed by dimensions \\( 2i \\) and \\( 2i+1 \\). The rotation angle is typically a function of the position \\( x \\), such as \\( \\theta(x) = x / 10000^{2i/d} \\), where \\( d \\) is the dimensionality of the embeddings. The rotation matrix for each pair of dimensions is:\n\n\\[\n\\begin{bmatrix}\n\\cos(\\theta(x)) & -\\sin(\\theta(x)) \\\\\n\\sin(\\theta(x)) & \\cos(\\theta(x))\n\\end{bmatrix}\n\\]\n\nThis matrix is applied to each pair of dimensions across the embedding vector.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_07/slide_137.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.021739130434782605
+      }
+    },
+    {
+      "question_id": "cs288_q0083",
+      "question": "Compare the compute used for training BERT-Large and GPT-3 Small.",
+      "gold_answer": "BERT-Large used less compute than GPT-3 Small.",
+      "predicted_answer": "BERT-Large and GPT-3 Small differ significantly in their compute requirements. BERT-Large has 24 layers, 340 million parameters, and was trained on a TPU pod with 64 TPUs over 4 days. In contrast, GPT-3 Small, while not officially defined, would be a smaller variant of GPT-3, which in its full version has 175 billion parameters. GPT-3's training involved thousands of GPUs over several weeks. Therefore, even a smaller GPT-3 model would likely require more compute than BERT-Large due to the architecture and training setup differences.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_08/slide_075.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.11494252873563218
+      }
+    },
+    {
+      "question_id": "cs288_q0084",
+      "question": "What is the sequence of steps in the data curation process as shown in the diagram?",
+      "gold_answer": "Acquisition \u2192 Linearization \u2192 Filtering",
+      "predicted_answer": "The sequence of steps in the data curation process typically includes: data collection, data cleaning, data integration, data transformation, data storage, and data dissemination.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_09/slide_068.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0085",
+      "question": "Which task shows the least improvement across models as indicated by the graphs?",
+      "gold_answer": "The Winograd (accuracy) task shows the least improvement.",
+      "predicted_answer": "The task that typically shows the least improvement across models, as indicated by graphs in NLP research, is often the task of \"Natural Language Inference\" (NLI) or \"Semantic Role Labeling\" (SRL). These tasks are complex and require deep understanding of context and semantics, which can be challenging for models to improve significantly upon.",
+      "category": "chart_graph",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_10/slide_026.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14285714285714285
+      }
+    },
+    {
+      "question_id": "cs288_q0086",
+      "question": "What is the combined probability of the prefixes 'the list' and 'and the'?",
+      "gold_answer": "0.24",
+      "predicted_answer": "To determine the combined probability of the prefixes 'the list' and 'and the', you would typically need a language model that provides probabilities for sequences of words. The combined probability would be the product of the individual probabilities of each prefix occurring in the given context. Without specific data or a language model, I can't provide exact probabilities. However, in general, you would calculate it as:\n\nP('the list') * P('and the')\n\nIf you have access to a language model or corpus, you can obtain these probabilities from there.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_11/slide_041.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0087",
+      "question": "Compare the number of tokens tagged for Part-of-Speech and Skeletal Parsing for Dow Jones Newswire stories.",
+      "gold_answer": "3,065,706 tokens for Part-of-Speech and 1,061,166 tokens for Skeletal Parsing.",
+      "predicted_answer": "In Dow Jones Newswire stories, the number of tokens tagged for Part-of-Speech (POS) is typically higher than those tagged for Skeletal Parsing. POS tagging involves assigning a tag to each word in the text, resulting in a tag for every token. Skeletal Parsing, on the other hand, focuses on identifying the basic syntactic structure, which may not require tagging every token, leading to fewer tags overall.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_12/slide_062.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.17142857142857143
+      }
+    },
+    {
+      "question_id": "cs288_q0088",
+      "question": "In which category does BM25 outperform DPR?",
+      "gold_answer": "BM25 outperforms DPR in the SQuAD Top-20 category.",
+      "predicted_answer": "BM25 generally outperforms DPR in scenarios where there is limited training data or when dealing with out-of-domain queries. BM25, being a traditional term-based retrieval method, does not rely on learned representations and can be more robust in such situations.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_066.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.17777777777777778
+      }
+    },
+    {
+      "question_id": "cs288_q0089",
+      "question": "How does the decode throughput trend for Qwen3-Next-80B-A3B compare to Qwen3-32B as context length increases?",
+      "gold_answer": "Qwen3-Next-80B-A3B shows a significant increase, while Qwen3-32B remains relatively flat.",
+      "predicted_answer": "The decode throughput for Qwen3-Next-80B-A3B generally decreases as context length increases, similar to Qwen3-32B. However, Qwen3-Next-80B-A3B, being a larger model, may experience a more pronounced decrease in throughput compared to Qwen3-32B due to its increased complexity and computational demands.",
+      "category": "layout_aware",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_14/slide_040.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.08888888888888888
+      }
+    },
+    {
+      "question_id": "cs288_q0090",
+      "question": "How is the similarity between text and images represented in the diagram?",
+      "gold_answer": "Through the dot products I1\u00b7T1, I2\u00b7T1, ..., IN\u00b7T1",
+      "predicted_answer": "The similarity between text and images is typically represented in the diagram using a shared embedding space where both text and image features are projected. This allows for direct comparison by measuring the distance or similarity between their respective embeddings, often using metrics like cosine similarity.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_15/slide_045.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0091",
+      "question": "Which category has the lowest accuracy according to the table?",
+      "gold_answer": "misleading",
+      "predicted_answer": "I'm sorry, I can't provide an answer without access to the specific table you're referring to. Please provide more details or context.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_009.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0092",
+      "question": "Which model shows the highest success rate in the graph?",
+      "gold_answer": "DigiRL-2",
+      "predicted_answer": "I'm sorry, I can't see the graph. Could you please provide more details or describe the models shown in the graph?",
+      "category": "chart_graph",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_041.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0093",
+      "question": "What is the purpose of the Google search example on the slide?",
+      "gold_answer": "It illustrates information retrieval.",
+      "predicted_answer": "The purpose of the Google search example on the slide is to illustrate how natural language processing is applied in real-world applications to understand and process user queries, improve search relevance, and deliver accurate results.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_032.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0094",
+      "question": "How is perplexity mathematically defined for a test corpus with words w1, w2, ..., wn?",
+      "gold_answer": "Perplexity is defined as P(w1, w2, ..., wn)^(-1/n).",
+      "predicted_answer": "Perplexity for a test corpus with words \\( w_1, w_2, \\ldots, w_n \\) is mathematically defined as:\n\n\\[\n\\text{Perplexity} = 2^{-\\frac{1}{n} \\sum_{i=1}^{n} \\log_2 P(w_i)}\n\\]\n\nwhere \\( P(w_i) \\) is the probability of the word \\( w_i \\) in the model.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_033.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2857142857142857
+      }
+    },
+    {
+      "question_id": "cs288_q0095",
+      "question": "How are the outside context words organized in the window of size 2?",
+      "gold_answer": "The outside context words are 'problems', 'turning', 'banking', and 'crises'.",
+      "predicted_answer": "In a window of size 2, the outside context words are organized as the two words immediately preceding and the two words immediately following the target word in a sentence.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_032.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.30303030303030304
+      }
+    },
+    {
+      "question_id": "cs288_q0096",
+      "question": "Which word has the embedding vector (0.290, -0.441, 0.762, 0.982)?",
+      "gold_answer": "language",
+      "predicted_answer": "I'm sorry, but I cannot determine which word corresponds to the embedding vector (0.290, -0.441, 0.762, 0.982) without access to the specific embedding model or dataset used to generate these vectors. Word embeddings are typically model-specific, and the same vector can represent different words in different models.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_003.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0097",
+      "question": "How is the 1-D output y_t calculated in the state-space model?",
+      "gold_answer": "y_t = C_t h_t",
+      "predicted_answer": "In a state-space model, the 1-D output \\( y_t \\) is typically calculated using the observation equation: \n\n\\[ y_t = Cx_t + v_t \\]\n\nwhere \\( x_t \\) is the state vector at time \\( t \\), \\( C \\) is the observation matrix, and \\( v_t \\) is the observation noise, often assumed to be Gaussian.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_066.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.05
+      }
+    },
+    {
+      "question_id": "cs288_q0098",
+      "question": "What does the arrow from h3 to h_enc represent?",
+      "gold_answer": "It represents the transition to the encoded representation.",
+      "predicted_answer": "The arrow from \\( h_3 \\) to \\( h_{\\text{enc}} \\) likely represents the flow of information or the transformation of the hidden state \\( h_3 \\) into an encoded representation \\( h_{\\text{enc}} \\) in a neural network, such as during the encoding phase of a sequence-to-sequence model in NLP.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_027.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.20512820512820512
+      }
+    },
+    {
+      "question_id": "cs288_q0099",
+      "question": "What is the mathematical expression for GELU(x)?",
+      "gold_answer": "GELU(x) = x \u00d7 \u03a6(x)",
+      "predicted_answer": "The mathematical expression for GELU(x), or the Gaussian Error Linear Unit, is:\n\n\\[ \\text{GELU}(x) = x \\cdot \\Phi(x) \\]\n\nwhere \\( \\Phi(x) \\) is the cumulative distribution function of the standard normal distribution. It can be approximated as:\n\n\\[ \\text{GELU}(x) \\approx 0.5 \\cdot x \\cdot (1 + \\tanh(\\sqrt{2/\\pi} \\cdot (x + 0.044715 \\cdot x^3))) \\]",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_152.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.08695652173913042
+      }
+    },
+    {
+      "question_id": "cs288_q0100",
+      "question": "Which architectures use autoregressive language models as their pretraining objective?",
+      "gold_answer": "Transformers Decoder",
+      "predicted_answer": "Autoregressive language models are used as the pretraining objective in architectures like GPT (Generative Pre-trained Transformer) and its variants.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_064.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0101",
+      "question": "How many times larger is the model size of GPT-3 compared to GPT-2?",
+      "gold_answer": "117 times larger",
+      "predicted_answer": "GPT-3 is approximately 100 times larger than GPT-2. GPT-3 has 175 billion parameters, while GPT-2 has 1.5 billion parameters.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_09/slide_015.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.18181818181818182
+      }
+    },
+    {
+      "question_id": "cs288_q0102",
+      "question": "How are the training stages visually differentiated?",
+      "gold_answer": "They are differentiated by color and spatial layout.",
+      "predicted_answer": "Training stages are often visually differentiated using distinct colors, shapes, or labels in diagrams and flowcharts to represent different phases such as data preprocessing, model training, validation, and testing.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_056.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.16216216216216217
+      }
+    },
+    {
+      "question_id": "cs288_q0103",
+      "question": "How is the probability p(Xi = w | x1, ..., xi-1) calculated?",
+      "gold_answer": "By using the softmax function: exp(s(w)) / \u03a3w'\u2208V exp(s(w')).",
+      "predicted_answer": "The probability \\( p(X_i = w \\mid x_1, \\ldots, x_{i-1}) \\) is typically calculated using a language model. In an n-gram model, it is approximated by considering the probability of \\( w \\) given the preceding \\( n-1 \\) words, i.e., \\( p(X_i = w \\mid x_{i-n+1}, \\ldots, x_{i-1}) \\). In neural language models, such as RNNs or Transformers, this probability is computed using learned representations of the context \\( x_1, \\ldots, x_{i-1} \\).",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_11/slide_012.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06349206349206349
+      }
+    },
+    {
+      "question_id": "cs288_q0104",
+      "question": "What is the significance of the underlined text in the reference sentence?",
+      "gold_answer": "The underlined text indicates a bigram in the reference sentence.",
+      "predicted_answer": "The underlined text in a reference sentence typically indicates emphasis or highlights a specific part of the sentence that is relevant to the discussion or analysis. It may denote a key concept, term, or element that is being focused on for further explanation or examination in the context of the lecture material.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_030.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2352941176470588
+      }
+    },
+    {
+      "question_id": "cs288_q0105",
+      "question": "Which paragraph contains information about an animal?",
+      "gold_answer": "Paragraph 1",
+      "predicted_answer": "I'm sorry, I can't determine which paragraph contains information about an animal without the specific text or context of the lecture material.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_028.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09523809523809525
+      }
+    },
+    {
+      "question_id": "cs288_q0106",
+      "question": "What are the main components depicted in the Gated DeltaNet diagram?",
+      "gold_answer": "Linear, RMSNorm, Gated Delta Rule, L2 Norm, Conv, SLU Gate",
+      "predicted_answer": "The main components depicted in the Gated DeltaNet diagram typically include input features, gating mechanisms (such as forget, input, and output gates), delta updates, and the final output layer. These components work together to manage information flow and update states in the network.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_036.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0816326530612245
+      }
+    },
+    {
+      "question_id": "cs288_q0107",
+      "question": "How many people are there in the images of the sled dogs?",
+      "gold_answer": "There are two, and only two, people.",
+      "predicted_answer": "I'm sorry, I don't have access to specific images from your NLP course lecture material. Please provide more context or details about the images for further assistance.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_033.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0108",
+      "question": "How is the trajectory in the decision-making section evaluated?",
+      "gold_answer": "Using internal/external evaluation.",
+      "predicted_answer": "The trajectory in the decision-making section is typically evaluated based on the sequence of actions taken and their outcomes, often using metrics like cumulative reward, accuracy, or efficiency in reaching a goal. In the context of NLP, this might involve assessing how well a model's decisions align with desired linguistic outputs or tasks.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_026.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.04
+      }
+    },
+    {
+      "question_id": "cs288_q0109",
+      "question": "How many operations in the SoS+ diagram result in a cross mark?",
+      "gold_answer": "Five operations",
+      "predicted_answer": "In the SoS+ diagram, two operations result in a cross mark.",
+      "category": "image_diagram",
+      "difficulty": "hard",
+      "evidence_slides": [
+        "lecture_17/slide_068.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1818181818181818
+      }
+    },
+    {
+      "question_id": "cs288_q0110",
+      "question": "What does the graph in the inset box suggest about data size and translation quality?",
+      "gold_answer": "More data is better data.",
+      "predicted_answer": "The graph in the inset box likely suggests that as data size increases, translation quality improves. This is a common trend in NLP, where larger datasets typically lead to better model performance due to more comprehensive language understanding.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19999999999999998
+      }
+    },
+    {
+      "question_id": "cs288_q0111",
+      "question": "How is the missing probability mass calculated?",
+      "gold_answer": "\u03b1(w_{i-1}) = 1 - \u03a3 (Count*(w_{i-1}, w) / Count(w_{i-1}))",
+      "predicted_answer": "The missing probability mass in a probability distribution is calculated by subtracting the sum of the probabilities of all known events from 1. If the sum of the probabilities of known events is less than 1, the difference represents the missing probability mass.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_048.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.048780487804878044
+      }
+    },
+    {
+      "question_id": "cs288_q0112",
+      "question": "In the CBOW model diagram, what is the function applied to the input words?",
+      "gold_answer": "SUM",
+      "predicted_answer": "In the CBOW (Continuous Bag of Words) model, the input words are typically processed through an embedding layer to convert them into vector representations. These vectors are then averaged to create a single context vector, which is used to predict the target word.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_062.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0113",
+      "question": "Which variable represents the presence of the word 'no' in the document?",
+      "gold_answer": "x3",
+      "predicted_answer": "The variable representing the presence of the word 'no' in a document is typically a binary feature in a bag-of-words model or a term in a term-frequency vector. It could be denoted as a specific index in a feature vector, such as `x_i`, where `i` corresponds to the position assigned to the word 'no' in the vocabulary.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_022.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0114",
+      "question": "In the diagram, which word is tagged as a plural noun?",
+      "gold_answer": "seashells",
+      "predicted_answer": "Without the specific diagram, I can't identify which word is tagged as a plural noun. However, plural nouns typically end in \"s\" or \"es\" in English, such as \"dogs\" or \"boxes.\" If you have a specific word in mind, I can help determine if it is a plural noun.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_005.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0115",
+      "question": "What are the two components involved in finding the best target sentence according to Bayes' rule?",
+      "gold_answer": "P(w^(s) | w^(t)) and P(w^(t)).",
+      "predicted_answer": "The two components involved in finding the best target sentence according to Bayes' rule are the language model probability \\( P(\\text{target sentence}) \\) and the translation model probability \\( P(\\text{source sentence} \\mid \\text{target sentence}) \\).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_012.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06451612903225806
+      }
+    },
+    {
+      "question_id": "cs288_q0116",
+      "question": "How does the NLTK tokenizer handle the input 'I'm'?",
+      "gold_answer": "The NLTK tokenizer splits 'I'm' into ['I', ''m'].",
+      "predicted_answer": "The NLTK tokenizer, specifically the `word_tokenize` function, will split the input \"I'm\" into two tokens: \"I\" and \"'m\".",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_095.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.5454545454545455
+      }
+    },
+    {
+      "question_id": "cs288_q0117",
+      "question": "Which generation of Llama has the largest context length?",
+      "gold_answer": "Llama 4 with 10,000,000 (?) tokens",
+      "predicted_answer": "LLaMA 2 has the largest context length, with a context window of 4,096 tokens.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_110.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.35294117647058826
+      }
+    },
+    {
+      "question_id": "cs288_q0118",
+      "question": "What is the sequence of stages in the data curation process as shown in the diagram?",
+      "gold_answer": "Acquisition, Linearization, Filtering",
+      "predicted_answer": "The sequence of stages in the data curation process typically includes: data collection, data cleaning, data integration, data transformation, data storage, and data dissemination.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_09/slide_063.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0119",
+      "question": "What does the diagram suggest happens after explaining the moon landing to a 6 year old?",
+      "gold_answer": "Some people went to the moon...",
+      "predicted_answer": "Without the specific diagram, I can only provide a general answer. Typically, explaining a complex event like the moon landing to a 6-year-old would involve simplifying the information, using engaging visuals or stories, and focusing on key concepts like astronauts, rockets, and the idea of traveling to the moon. The diagram might suggest that the child gains a basic understanding or curiosity about space exploration.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_030.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06779661016949153
+      }
+    },
+    {
+      "question_id": "cs288_q0120",
+      "question": "What is the probability of the prefix 'the look' in the current beam candidates table?",
+      "gold_answer": "0.06",
+      "predicted_answer": "The probability of the prefix 'the look' in the current beam candidates table would depend on the specific language model being used and the context in which it is being evaluated. Typically, this would be calculated using the scores or probabilities assigned to the sequence by the model, often involving factors like unigram, bigram, or trigram probabilities, and possibly adjusted by beam search parameters. Without specific data or model outputs, it's not possible to provide an exact probability.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_034.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0121",
+      "question": "What does the diagram on the slide represent?",
+      "gold_answer": "A syntactic (constituency) parse tree from the Penn Treebank.",
+      "predicted_answer": "I'm sorry, I can't see the diagram on the slide. Could you provide a description or more context about the diagram?",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_017.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0122",
+      "question": "What mathematical expression represents the encoding of z_i?",
+      "gold_answer": "z_i = Enc(z_i) \u2208 \u211d^h",
+      "predicted_answer": "The encoding of \\( z_i \\) in the context of NLP, such as in a variational autoencoder, is typically represented as a transformation of input data \\( x \\) through an encoder network. This can be mathematically expressed as:\n\n\\[ z_i = \\mu(x) + \\sigma(x) \\odot \\epsilon \\]\n\nwhere \\( \\mu(x) \\) and \\( \\sigma(x) \\) are the outputs of the encoder network representing the mean and standard deviation, respectively, and \\( \\epsilon \\) is a random noise vector sampled from a standard normal distribution. The symbol \\( \\odot \\) denotes element-wise multiplication.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_050.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.028571428571428574
+      }
+    },
+    {
+      "question_id": "cs288_q0123",
+      "question": "What does the diagram indicate about MiniMax's attention style?",
+      "gold_answer": "MiniMax went back to full attention.",
+      "predicted_answer": "The diagram likely indicates that MiniMax's attention style involves focusing on minimizing the maximum possible loss, which is a strategy used in decision-making and game theory to ensure the best worst-case scenario. In the context of attention mechanisms, it might suggest a method of distributing attention weights to optimize performance under uncertain conditions.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_035.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.07547169811320754
+      }
+    },
+    {
+      "question_id": "cs288_q0124",
+      "question": "Which color is highlighted by the arrow?",
+      "gold_answer": "Dark purple",
+      "predicted_answer": "I'm sorry, I can't determine the color highlighted by the arrow without visual content.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_059.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0125",
+      "question": "How many eggs does Janet sell according to the greedy decode reasoning path?",
+      "gold_answer": "She sells 7 eggs.",
+      "predicted_answer": "The greedy decode reasoning path is a method used in natural language processing to generate a sequence by selecting the most probable option at each step. Without specific context or data from the NLP course lecture material, I cannot determine how many eggs Janet sells. If this is part of an example or exercise, please provide more details or context.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_013.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06896551724137931
+      }
+    },
+    {
+      "question_id": "cs288_q0126",
+      "question": "What is the formula used to calculate the answer?",
+      "gold_answer": "answer = loaves_baked - loaves_sold_morning - loaves_sold_afternoon + loaves_returned",
+      "predicted_answer": "The formula used to calculate the answer depends on the specific problem or task in the NLP course. Common formulas in NLP include those for calculating term frequency-inverse document frequency (TF-IDF), cosine similarity, or perplexity. If you can specify the context or task, I can provide a more precise formula.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_17/slide_021.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.04081632653061225
+      }
+    },
+    {
+      "question_id": "cs288_q0127",
+      "question": "What visual element is used to represent the industrialization theme?",
+      "gold_answer": "An image of an industrial facility with smokestacks.",
+      "predicted_answer": "A gear or factory icon is commonly used to represent the industrialization theme.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_030.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0128",
+      "question": "What search query is being partially completed in the Google search example?",
+      "gold_answer": "how is the weather in new",
+      "predicted_answer": "The search query being partially completed in the Google search example is \"why are cats afraid of cucumbers.\"",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_005.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.19047619047619047
+      }
+    },
+    {
+      "question_id": "cs288_q0129",
+      "question": "How is the expression \\( \\frac{\\partial}{\\partial x_i} \\exp(\\sum_{k=1}^{n} w_i x_i) \\) simplified?",
+      "gold_answer": "\\( \\exp(\\sum_{k=1}^{n} w_i x_i) w_i \\)",
+      "predicted_answer": "The expression \\( \\frac{\\partial}{\\partial x_i} \\exp\\left(\\sum_{k=1}^{n} w_k x_k\\right) \\) is simplified using the chain rule. The derivative is:\n\n\\[ \\exp\\left(\\sum_{k=1}^{n} w_k x_k\\right) \\cdot w_i. \\]",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_046.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1818181818181818
+      }
+    },
+    {
+      "question_id": "cs288_q0130",
+      "question": "What is the formula for the softmax function as shown on the slide?",
+      "gold_answer": "softmax(y)_k = exp(y_k) / \u03a3_{j=1}^C exp(y_j)",
+      "predicted_answer": "The formula for the softmax function is:\n\n\\[ \\text{softmax}(z_i) = \\frac{e^{z_i}}{\\sum_{j=1}^{N} e^{z_j}} \\]\n\nwhere \\( z_i \\) is the input to the softmax function, and the sum is over all inputs \\( z_j \\) in the set.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_049.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0131",
+      "question": "How is the output y\u0302\u209c calculated in the training process?",
+      "gold_answer": "y\u0302\u209c = softmax(W\u2092h\u209c) \u2208 \u211d|V|",
+      "predicted_answer": "In the training process of a sequence model, the output \\( \\hat{y}_t \\) is typically calculated by passing the hidden state \\( h_t \\) through a linear layer followed by a softmax function. This process converts the hidden state into a probability distribution over the possible output classes, from which \\( \\hat{y}_t \\) is derived as the predicted output at time step \\( t \\).",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0132",
+      "question": "Which language pair has the highest number of sentences in the parallel corpus?",
+      "gold_answer": "French-English with 2,007,723 sentences",
+      "predicted_answer": "I don't have access to specific datasets or their contents, so I can't definitively say which language pair has the highest number of sentences in a parallel corpus. However, commonly used language pairs in large parallel corpora often include English-French, English-German, and English-Chinese. The specific language pair with the highest number of sentences would depend on the corpus in question.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_011.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06779661016949153
+      }
+    },
+    {
+      "question_id": "cs288_q0133",
+      "question": "How many times is 'Add & Normalize' mentioned in the diagram?",
+      "gold_answer": "Twice",
+      "predicted_answer": "'Add & Normalize' is mentioned twice in the diagram.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_059.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.25
+      }
+    },
+    {
+      "question_id": "cs288_q0134",
+      "question": "How many pages did Julie read in total yesterday and today?",
+      "gold_answer": "36 pages",
+      "predicted_answer": "I'm sorry, I don't have information on Julie's reading activity.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_08/slide_084.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0135",
+      "question": "Which dataset has the largest token size?",
+      "gold_answer": "RedPajama v1 with 1.2T tokens",
+      "predicted_answer": "The dataset with the largest token size is likely the Common Crawl dataset, which contains petabytes of web data and is used for training large language models.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_09/slide_047.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.06896551724137931
+      }
+    },
+    {
+      "question_id": "cs288_q0136",
+      "question": "Which models are marked as using a 'Merge of DPO models'?",
+      "gold_answer": "abideen/NexoNimbus-7B and samir-fama/SamiGPT-v1",
+      "predicted_answer": "The models marked as using a 'Merge of DPO models' are OpenAI's GPT-4-turbo and Anthropic's Claude 3.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_10/slide_050.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1111111111111111
+      }
+    },
+    {
+      "question_id": "cs288_q0137",
+      "question": "What does the mathematical expression at the bottom of the slide represent?",
+      "gold_answer": "It represents the renormalization by dividing remaining probabilities.",
+      "predicted_answer": "I'm sorry, I can't see the slide or the mathematical expression you're referring to. Could you provide more context or describe the expression?",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_11/slide_051.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0138",
+      "question": "Which metric has the highest correlation with human judgment for the en\u2194zh language pair?",
+      "gold_answer": "R_BERT with a correlation of .990/.976",
+      "predicted_answer": "BLEU and METEOR are commonly used metrics, but for the en\u2194zh language pair, the BERTScore and COMET have shown higher correlation with human judgment.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_12/slide_034.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.14814814814814814
+      }
+    },
+    {
+      "question_id": "cs288_q0139",
+      "question": "Which model size shows the greatest improvement in perplexity with retrieval?",
+      "gold_answer": "OPT-1.3B",
+      "predicted_answer": "The largest model size typically shows the greatest improvement in perplexity with retrieval.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_13/slide_081.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0140",
+      "question": "Which model has the highest normalized prefill throughput at 128K sequence length?",
+      "gold_answer": "Qwen3-Next-80B-A3B",
+      "predicted_answer": "The model with the highest normalized prefill throughput at 128K sequence length is the MPT-7B model.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_14/slide_040.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0141",
+      "question": "How many balloons are in the left image and what is notable about them?",
+      "gold_answer": "The left image has 4 balloons of all different colors.",
+      "predicted_answer": "I'm sorry, I cannot view images. Please provide a description of the image for assistance.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_15/slide_037.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.18181818181818185
+      }
+    },
+    {
+      "question_id": "cs288_q0142",
+      "question": "What mathematical operation is used to calculate the total earnings per day?",
+      "gold_answer": "Multiplication (7 * $2 = $14)",
+      "predicted_answer": "To calculate the total earnings per day, you typically use the mathematical operation of addition to sum up all individual earnings for that day.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_16/slide_012.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0143",
+      "question": "Why is the blue person unable to achieve their goal directly?",
+      "gold_answer": "The blue person is too short to reach the suitcase.",
+      "predicted_answer": "The blue person may be unable to achieve their goal directly due to obstacles such as lack of resources, insufficient knowledge, external constraints, or the complexity of the task.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_17/slide_012.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.1764705882352941
+      }
+    },
+    {
+      "question_id": "cs288_q0144",
+      "question": "Which type of word pair reaches a higher fraction seen according to the chart?",
+      "gold_answer": "Unigrams reach a higher fraction seen than bigrams.",
+      "predicted_answer": "Without access to the specific chart, I can't provide a definitive answer. However, in NLP, common word pairs (bigrams) like \"of the\" or \"in the\" typically have a higher fraction seen due to their frequent occurrence in the language.",
+      "category": "chart_graph",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_01/slide_019.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.2
+      }
+    },
+    {
+      "question_id": "cs288_q0145",
+      "question": "Which word pair has a Count*(x) of 0.5?",
+      "gold_answer": "the, telescope; the, manual; the, afternoon; the, country; the, street",
+      "predicted_answer": "To determine which word pair has a Count*(x) of 0.5, we need more context about the specific method or formula being used to calculate Count*(x). In NLP, Count*(x) could refer to a smoothed count or a specific metric in a probabilistic model. Without additional information, it's not possible to accurately identify a word pair with a Count*(x) of 0.5.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_02/slide_048.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0146",
+      "question": "What is the vector representation for the word 'cat'?",
+      "gold_answer": "(-0.224, 0.130, -0.290, 0.276)",
+      "predicted_answer": "The vector representation for the word 'cat' typically refers to its embedding in a word vector space, such as those generated by models like Word2Vec, GloVe, or FastText. These embeddings are high-dimensional vectors that capture semantic meaning based on the context in which words appear. The exact vector for 'cat' would depend on the specific model and dataset used, but it generally represents the word's semantic relationships with other words.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_03/slide_029.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0147",
+      "question": "What is the probability P(Y = 1|x) calculated on the slide?",
+      "gold_answer": "0.69",
+      "predicted_answer": "I'm sorry, I don't have access to the specific slide you're referring to. However, in a typical NLP context, \\( P(Y = 1|x) \\) would represent the probability of a binary outcome \\( Y \\) being 1 given the input features \\( x \\). This is often calculated using a logistic regression model or another probabilistic classifier. If you have more details or context from the slide, I might be able to provide a more specific answer.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_04/slide_025.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0148",
+      "question": "Which model has the lowest perplexity score?",
+      "gold_answer": "RNN-LDA LM with a perplexity of 113.7.",
+      "predicted_answer": "The model with the lowest perplexity score is typically considered the best at predicting a sample of text, as it indicates a better fit to the data. However, without specific models or data provided, I cannot definitively say which model has the lowest perplexity score. Generally, more advanced models like GPT-3 or BERT tend to have lower perplexity scores compared to simpler models.",
+      "category": "table",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_05/slide_028.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.09677419354838708
+      }
+    },
+    {
+      "question_id": "cs288_q0149",
+      "question": "What is the formula for dot-product attention?",
+      "gold_answer": "g(h_i^enc, h_t^dec) = (h_t^dec)^T h_i^enc \u2208 \u211d",
+      "predicted_answer": "The formula for dot-product attention is:\n\n\\[ \\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right)V \\]\n\nwhere \\( Q \\) is the query matrix, \\( K \\) is the key matrix, \\( V \\) is the value matrix, and \\( d_k \\) is the dimensionality of the key vectors.",
+      "category": "image_diagram",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_06/slide_065.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    },
+    {
+      "question_id": "cs288_q0150",
+      "question": "How many classes are part of the 'Architecture' section?",
+      "gold_answer": "7 classes",
+      "predicted_answer": "I'm sorry, I don't have access to specific course materials or their structure. Please refer to the course syllabus or materials for accurate information.",
+      "category": "layout_aware",
+      "difficulty": "medium",
+      "evidence_slides": [
+        "lecture_07/slide_002.png"
+      ],
+      "retrieved_slides": [],
+      "scores": {
+        "exact_match": 0.0,
+        "token_f1": 0.0
+      }
+    }
+  ],
+  "summary": {
+    "overall": {
+      "count": 150,
+      "exact_match": 0.0,
+      "token_f1": 0.0884
+    },
+    "per_category": {
+      "text_only": {
+        "count": 15,
+        "exact_match": 0.0,
+        "token_f1": 0.1463
+      },
+      "image_diagram": {
+        "count": 60,
+        "exact_match": 0.0,
+        "token_f1": 0.0773
+      },
+      "table": {
+        "count": 28,
+        "exact_match": 0.0,
+        "token_f1": 0.0889
+      },
+      "chart_graph": {
+        "count": 21,
+        "exact_match": 0.0,
+        "token_f1": 0.0899
+      },
+      "layout_aware": {
+        "count": 26,
+        "exact_match": 0.0,
+        "token_f1": 0.079
+      }
+    }
+  }
+}
