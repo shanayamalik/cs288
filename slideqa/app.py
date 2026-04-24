@@ -13,6 +13,7 @@ Deploy on Streamlit Community Cloud:
 """
 
 import json
+import random
 from pathlib import Path
 from typing import Optional
 
@@ -203,6 +204,26 @@ section[data-testid="stSidebar"] [data-testid="stCaptionContainer"] p {
 hr { border-color: #f1f5f9 !important; margin: 0.8rem 0 !important; }
 [data-testid="stDataFrame"] > div { border-radius: 6px; overflow: hidden; }
 .streamlit-expander { border: 1px solid #e2e8f0 !important; border-radius: 6px !important; }
+
+/* ── Buttons — minimal ghost style ───────────────────────────── */
+.stButton > button {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    color: #475569;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0.3rem 0.6rem;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.stButton > button:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+    background: #f5f3ff;
+}
+.stButton > button:active {
+    background: #ede9fe;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -276,14 +297,35 @@ with tab_browse:
     if not filtered:
         st.warning("No questions match the selected filters.")
     else:
-        # Question selector
-        selected_idx = st.selectbox(
-            "Select a question",
-            range(len(filtered)),
-            format_func=lambda i: (
-                filtered[i]["question"][:95] + ("..." if len(filtered[i]["question"]) > 95 else "")
-            ),
-        )
+        # Question selector — init / clamp session state index
+        if "q_idx" not in st.session_state:
+            st.session_state["q_idx"] = 0
+        st.session_state["q_idx"] = min(st.session_state["q_idx"], len(filtered) - 1)
+
+        # Navigation row: dropdown | ‹ | › | 🔀
+        nav_dd, nav_l, nav_r, nav_rand = st.columns([10, 1, 1, 2])
+        with nav_dd:
+            selected_idx = st.selectbox(
+                "Select a question",
+                range(len(filtered)),
+                index=st.session_state["q_idx"],
+                format_func=lambda i: (
+                    filtered[i]["question"][:95]
+                    + ("..." if len(filtered[i]["question"]) > 95 else "")
+                ),
+                label_visibility="collapsed",
+            )
+            st.session_state["q_idx"] = selected_idx
+        with nav_l:
+            if st.button("❮", width="stretch", key="nav_prev"):
+                st.session_state["q_idx"] = (st.session_state["q_idx"] - 1) % len(filtered)
+        with nav_r:
+            if st.button("❯", width="stretch", key="nav_next"):
+                st.session_state["q_idx"] = (st.session_state["q_idx"] + 1) % len(filtered)
+        with nav_rand:
+            if st.button("Shuffle", width="stretch", key="nav_rand"):
+                st.session_state["q_idx"] = random.randrange(len(filtered))
+
         qa = filtered[selected_idx]
         qid = qa["question_id"]
 
