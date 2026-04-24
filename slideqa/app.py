@@ -411,7 +411,7 @@ with tab_browse:
 # ==========================================================================
 with tab_compare:
     st.markdown("### Per-Category Performance")
-    st.caption("Macro-averaged from cached evaluation runs. Judge score = GPT-4o rating on a 1–5 scale.")
+    st.caption("Macro-averaged scores across all questions for the selected course. Judge = GPT-4o rating on a 1–5 scale.")
 
     # Build a summary table from judge_details for the current course
     import pandas as pd
@@ -440,30 +440,74 @@ with tab_compare:
     if rows:
         df = pd.DataFrame(rows)
 
-        # Pivot for judge scores
+        # Shorten baseline labels for pivot column headers
+        SHORT_LABELS = {
+            "ColPali RAG (our method)": "ColPali RAG",
+            "Text-Only BM25":           "Text BM25",
+            "Oracle VLM (upper bound)": "Oracle VLM",
+            "Closed-Book (no context)": "Closed-Book",
+        }
+        df["Baseline"] = df["Baseline"].map(lambda x: SHORT_LABELS.get(x, x))
+
         pivot_judge = df.pivot(index="Category", columns="Baseline", values="Judge (1–5)")
-        pivot_f1 = df.pivot(index="Category", columns="Baseline", values="Token F1")
+        pivot_f1    = df.pivot(index="Category", columns="Baseline", values="Token F1")
+        pivot_judge.columns.name = None
+        pivot_f1.columns.name    = None
+
+        # Build column_config with progress bars so values are visually encoded
+        judge_col_cfg = {
+            col: st.column_config.ProgressColumn(
+                col, min_value=0, max_value=5, format="%.2f"
+            )
+            for col in pivot_judge.columns
+        }
+        f1_col_cfg = {
+            col: st.column_config.ProgressColumn(
+                col, min_value=0, max_value=1, format="%.2f"
+            )
+            for col in pivot_f1.columns
+        }
 
         col_j, col_f = st.columns(2)
         with col_j:
-            st.caption("LM-as-Judge Score (1–5)")
-            st.dataframe(pivot_judge, use_container_width=True)
+            st.markdown(
+                '<div style="font-size:0.65rem;font-weight:700;letter-spacing:0.09em;'
+                'text-transform:uppercase;color:#6366f1;margin-bottom:6px;font-family:system-ui;">'
+                'LM-as-Judge Score (1–5)</div>',
+                unsafe_allow_html=True,
+            )
+            st.dataframe(pivot_judge, use_container_width=True, column_config=judge_col_cfg)
         with col_f:
-            st.caption("Token F1")
-            st.dataframe(pivot_f1, use_container_width=True)
+            st.markdown(
+                '<div style="font-size:0.65rem;font-weight:700;letter-spacing:0.09em;'
+                'text-transform:uppercase;color:#0d9488;margin-bottom:6px;font-family:system-ui;">'
+                'Token F1</div>',
+                unsafe_allow_html=True,
+            )
+            st.dataframe(pivot_f1, use_container_width=True, column_config=f1_col_cfg)
 
     # Recall@k table
     recall_path = RESULTS_DIR / "colpali_rag_recall_at_k.csv"
     if recall_path.exists():
-        st.markdown("---")
-        st.markdown("### ColPali RAG — Recall@k")
+        st.divider()
+        st.markdown(
+            '<div style="font-size:0.65rem;font-weight:700;letter-spacing:0.09em;'
+            'text-transform:uppercase;color:#94a3b8;margin-bottom:6px;font-family:system-ui;">'
+            'ColPali RAG — Recall@k</div>',
+            unsafe_allow_html=True,
+        )
         st.caption("Fraction of questions where the gold slide is in the top-k retrieved results.")
         recall_df = pd.read_csv(recall_path)
         course_recall = recall_df[recall_df["course"] == course].copy()
         if not course_recall.empty:
+            k_cols = [c for c in course_recall.columns if c not in ("course", "category", "n")]
+            recall_col_cfg = {
+                c: st.column_config.ProgressColumn(c, min_value=0, max_value=1, format="%.2f")
+                for c in k_cols
+            }
             course_recall = course_recall.drop(columns=["course"])
             course_recall = course_recall.set_index("category")
-            st.dataframe(course_recall, use_container_width=True)
+            st.dataframe(course_recall, use_container_width=True, column_config=recall_col_cfg)
 
 # ==========================================================================
 # TAB 3: Leaderboard (all 3 courses)
