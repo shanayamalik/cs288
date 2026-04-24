@@ -277,14 +277,12 @@ with tab_browse:
         st.warning("No questions match the selected filters.")
     else:
         # Question selector
-        q_labels = [
-            f"{q['question_id']} — {q['question'][:70]}{'…' if len(q['question']) > 70 else ''}"
-            for q in filtered
-        ]
         selected_idx = st.selectbox(
             "Select a question",
             range(len(filtered)),
-            format_func=lambda i: q_labels[i],
+            format_func=lambda i: (
+                filtered[i]["question"][:95] + ("..." if len(filtered[i]["question"]) > 95 else "")
+            ),
         )
         qa = filtered[selected_idx]
         qid = qa["question_id"]
