@@ -514,51 +514,87 @@ with tab_compare:
 # ==========================================================================
 with tab_leaderboard:
     st.markdown("### Overall Results")
-    st.caption("Macro-averaged over all 150 questions per course.")
+    st.caption("Macro-averaged judge score and token F1 across all questions per course.")
 
-    summary_rows = []
+    # Build per-course, per-baseline summary
+    lb_data: dict = {}  # {course_short: {bl_label: (judge, f1)}}
     for course_label_lb, course_key in COURSES.items():
+        course_short = course_label_lb.split("—")[0].strip()
+        lb_data[course_short] = {}
         for bl_label, bl_key in BASELINES.items():
-            judge_details = load_judge_details(course_key, bl_key)
-            if not judge_details:
+            judge_details_lb = load_judge_details(course_key, bl_key)
+            if not judge_details_lb:
                 continue
-            all_entries = list(judge_details.values())
-            f1_vals = [e["scores"]["token_f1"] for e in all_entries if "scores" in e]
-            j_vals = [e["scores"]["llm_judge"] for e in all_entries if "scores" in e]
-            em_vals = [e["scores"]["exact_match"] for e in all_entries if "scores" in e]
-            summary_rows.append(
-                {
-                    "Course": course_label_lb.split("—")[0].strip(),
-                    "Baseline": bl_label,
-                    "EM": round(sum(em_vals) / len(em_vals), 3) if em_vals else 0,
-                    "Token F1": round(sum(f1_vals) / len(f1_vals), 3) if f1_vals else 0,
-                    "Judge (1–5)": round(sum(j_vals) / len(j_vals), 2) if j_vals else 0,
-                    "N": len(all_entries),
-                }
+            entries = list(judge_details_lb.values())
+            f1_vals = [e["scores"]["token_f1"] for e in entries if "scores" in e]
+            j_vals  = [e["scores"]["llm_judge"]  for e in entries if "scores" in e]
+            short_label = {
+                "ColPali RAG (our method)": "ColPali RAG",
+                "Text-Only BM25":           "Text BM25",
+                "Oracle VLM (upper bound)": "Oracle VLM",
+                "Closed-Book (no context)": "Closed-Book",
+            }.get(bl_label, bl_label)
+            lb_data[course_short][short_label] = (
+                round(sum(j_vals)  / len(j_vals),  2) if j_vals  else 0,
+                round(sum(f1_vals) / len(f1_vals), 3) if f1_vals else 0,
             )
 
-    if summary_rows:
-        import pandas as pd
-        lb_df = pd.DataFrame(summary_rows)
-        lb_pivot = lb_df.pivot_table(
-            index="Baseline", columns="Course", values="Judge (1–5)"
-        )
-        st.caption("LM-as-Judge Score by Course")
-        st.dataframe(lb_pivot, use_container_width=True)
+    BASELINE_COLOR_MAP = {
+        "ColPali RAG": "#6366f1",
+        "Oracle VLM":  "#0d9488",
+        "Text BM25":   "#94a3b8",
+        "Closed-Book": "#cbd5e1",
+    }
 
-        st.caption("Full Results")
-        st.dataframe(
-            lb_df.sort_values(["Course", "Judge (1–5)"], ascending=[True, False]),
-            use_container_width=True,
-            hide_index=True,
-        )
+    if lb_data:
+        course_cols = st.columns(len(lb_data))
+        for col, (course_short, bl_scores) in zip(course_cols, lb_data.items()):
+            with col:
+                st.markdown(
+                    f'<div style="font-size:0.65rem;font-weight:700;letter-spacing:0.09em;'
+                    f'text-transform:uppercase;color:#6366f1;border-top:3px solid #6366f1;'
+                    f'padding-top:10px;margin-bottom:12px;font-family:system-ui;">'
+                    f'{course_short}</div>',
+                    unsafe_allow_html=True,
+                )
+                ranked = sorted(bl_scores.items(), key=lambda x: x[1][0], reverse=True)
+                for rank, (bl, (judge, f1)) in enumerate(ranked, 1):
+                    color = BASELINE_COLOR_MAP.get(bl, "#94a3b8")
+                    bar_pct = int(judge / 5 * 100)
+                    st.markdown(
+                        f'<div style="display:flex;align-items:center;gap:10px;'
+                        f'padding:9px 0;border-bottom:1px solid #f1f5f9;font-family:system-ui;">'
+                        f'<span style="font-size:0.7rem;font-weight:700;color:#94a3b8;width:14px;">#{rank}</span>'
+                        f'<span style="width:3px;height:28px;background:{color};border-radius:2px;flex-shrink:0;"></span>'
+                        f'<div style="flex:1;">'
+                        f'<div style="font-size:0.75rem;font-weight:600;color:#0f172a;">{bl}</div>'
+                        f'<div style="height:4px;background:#f1f5f9;border-radius:2px;margin-top:4px;">'
+                        f'<div style="width:{bar_pct}%;height:4px;background:{color};border-radius:2px;"></div>'
+                        f'</div></div>'
+                        f'<div style="text-align:right;flex-shrink:0;">'
+                        f'<div style="font-size:0.82rem;font-weight:700;color:{color};">{judge:.1f}</div>'
+                        f'<div style="font-size:0.68rem;color:#94a3b8;">F1 {f1:.2f}</div>'
+                        f'</div></div>',
+                        unsafe_allow_html=True,
+                    )
 
-    st.markdown("---")
-    st.markdown("### ColPali RAG — Recall@k")
+    # Recall@k
     recall_path = RESULTS_DIR / "colpali_rag_recall_at_k.csv"
     if recall_path.exists():
-        import pandas as pd
+        st.divider()
+        st.markdown(
+            '<div style="font-size:0.65rem;font-weight:700;letter-spacing:0.09em;'
+            'text-transform:uppercase;color:#94a3b8;margin-bottom:6px;font-family:system-ui;">'
+            'ColPali RAG — Recall@k (overall)</div>',
+            unsafe_allow_html=True,
+        )
         recall_df = pd.read_csv(recall_path)
         overall_recall = recall_df[recall_df["category"] == "OVERALL"].copy()
-        overall_recall = overall_recall.drop(columns=["category", "n"]).set_index("course")
-        st.dataframe(overall_recall, use_container_width=True)
+        if not overall_recall.empty:
+            k_cols = [c for c in overall_recall.columns if c not in ("course", "category", "n")]
+            recall_col_cfg = {
+                c: st.column_config.ProgressColumn(c, min_value=0, max_value=1, format="%.2f")
+                for c in k_cols
+            }
+            overall_recall = overall_recall.drop(columns=["category", "n"]).set_index("course")
+            st.dataframe(overall_recall, use_container_width=True, column_config=recall_col_cfg)
