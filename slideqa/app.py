@@ -57,6 +57,13 @@ CATEGORY_COLORS = {
     "layout_aware": "#9B6BB5",
 }
 
+BASELINE_COLORS = {
+    "colpali_rag":  "#6366f1",
+    "zero_shot_vlm": "#0d9488",
+    "text_only":    "#94a3b8",
+    "closed_book":  "#cbd5e1",
+}
+
 
 
 
@@ -115,7 +122,7 @@ st.set_page_config(
 st.markdown("""
 <style>
 /* ── Main content ─────────────────────────────────────────────── */
-.block-container { padding-top: 1.75rem !important; padding-bottom: 2rem !important; }
+.block-container { padding-top: 3rem !important; padding-bottom: 2rem !important; }
 
 /* ── Sidebar background ───────────────────────────────────────── */
 section[data-testid="stSidebar"] > div:first-child {
@@ -223,9 +230,9 @@ CATEGORY_ICONS = {
 }
 DIFFICULTY_ICONS = {
     "All":    "·· All",
-    "easy":   "○  Easy",
-    "medium": "◑  Medium",
-    "hard":   "●  Hard",
+    "easy":   "▮      Easy",
+    "medium": "▮▮    Medium",
+    "hard":   "▮▮▮  Hard",
 }
 filter_category = st.sidebar.selectbox(
     "Category",
@@ -282,92 +289,122 @@ with tab_browse:
         qa = filtered[selected_idx]
         qid = qa["question_id"]
 
-        # Question metadata strip
+        # Question + inline metadata (Main 2 style: dots below title)
         cat = qa.get("category", "unknown")
         diff = qa.get("difficulty", "unknown")
-        cat_color = CATEGORY_COLORS.get(cat, "#888")
         cat_label = CATEGORY_LABELS.get(cat, cat)
 
-        col_q, col_meta = st.columns([4, 1])
-        with col_q:
-            st.markdown(f"### {qa['question']}")
-        with col_meta:
-            st.markdown(
-                f"<span style='display:inline-block;border:1px solid #cbd5e1;"
-                f"color:#475569;padding:2px 8px;border-radius:4px;"
-                f"font-size:0.78rem;font-weight:500;letter-spacing:0.03em'>{cat_label}</span>"
-                f"&nbsp;"
-                f"<span style='display:inline-block;border:1px solid #cbd5e1;"
-                f"color:#475569;padding:2px 8px;border-radius:4px;"
-                f"font-size:0.78rem;font-weight:500;letter-spacing:0.03em'>{diff}</span>",
-                unsafe_allow_html=True,
-            )
-            st.caption(qid)
+        st.markdown(f"### {qa['question']}")
+        st.markdown(
+            f'<div style="display:flex;gap:8px;align-items:center;margin-top:-8px;'
+            f'margin-bottom:8px;font-family:system-ui;">'
+            f'<span style="font-size:0.68rem;font-weight:700;color:#6366f1;'
+            f'letter-spacing:0.05em;text-transform:uppercase;">{cat_label}</span>'
+            f'<span style="color:#cbd5e1;">·</span>'
+            f'<span style="font-size:0.68rem;font-weight:700;color:#64748b;'
+            f'letter-spacing:0.05em;text-transform:uppercase;">{diff}</span>'
+            f'<span style="color:#cbd5e1;">·</span>'
+            f'<span style="font-size:0.68rem;color:#cbd5e1;">{qid}</span>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
 
-        st.markdown("---")
+        st.divider()
 
-        # Gold answer + evidence slide
+        # Gold answer + evidence slide (Main 3 style: left-border teal, no box)
+        evidence = qa.get("evidence_slides", [])
         col_gold, col_slide = st.columns([1, 2])
         with col_gold:
-            st.markdown("**Gold Answer**")
-            with st.container(border=True):
-                st.markdown(qa["answer"])
-
-            evidence = qa.get("evidence_slides", [])
+            st.markdown(
+                '<div style="font-size:0.65rem;font-weight:700;letter-spacing:0.09em;'
+                'text-transform:uppercase;color:#94a3b8;margin-bottom:6px;font-family:system-ui;">'
+                'Gold Answer</div>',
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                f'<div style="padding-left:12px;border-left:3px solid #0d9488;'
+                f'font-size:0.88rem;color:#0f172a;line-height:1.6;font-family:system-ui;">'
+                f'{qa["answer"]}</div>',
+                unsafe_allow_html=True,
+            )
             if evidence:
-                st.caption(f"Evidence: {evidence[0]}")
+                st.caption(evidence[0])
 
         with col_slide:
-            evidence = qa.get("evidence_slides", [])
             if evidence:
                 img = get_slide_image(course, evidence[0])
                 if img:
-                    st.markdown("**Evidence Slide**")
                     st.image(img, use_container_width=True)
                 else:
                     st.caption(f"Slide image not available locally: {evidence[0]}")
 
-        st.markdown("---")
+        st.divider()
 
-        # Baseline answers
-        st.markdown("**Baseline Answers**")
+        # Baseline answers — stacked cards (Main 2 left strip + Main 3 Judge/F1 columns)
+        st.markdown(
+            '<div style="display:grid;grid-template-columns:190px 1fr 56px 46px;gap:8px;'
+            'font-size:0.62rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;'
+            'color:#94a3b8;padding:0 4px 8px;border-bottom:1px solid #e2e8f0;'
+            'font-family:system-ui;">'
+            '<span>Baseline</span><span>Answer</span>'
+            '<span style="text-align:right;">Judge</span>'
+            '<span style="text-align:right;">F1</span>'
+            '</div>',
+            unsafe_allow_html=True,
+        )
 
-        baseline_cols = st.columns(len(BASELINES))
-        for col, (bl_label, bl_key) in zip(baseline_cols, BASELINES.items()):
+        colpali_pred = None
+        for bl_label, bl_key in BASELINES.items():
             preds = load_preds(course, bl_key)
-            judge = load_judge_details(course, bl_key)
+            judge_details_bl = load_judge_details(course, bl_key)
 
             pred = preds.get(qid, {})
-            judge_entry = judge.get(qid, {})
+            judge_entry = judge_details_bl.get(qid, {})
             scores = judge_entry.get("scores", {})
 
-            answer = pred.get("predicted_answer", "_No prediction cached_")
+            answer = pred.get("predicted_answer", "No prediction cached")
             judge_score = scores.get("llm_judge")
             f1 = scores.get("token_f1")
+            color = BASELINE_COLORS.get(bl_key, "#94a3b8")
 
-            with col:
-                with st.container(border=True):
-                    st.markdown(f"**{bl_label}**")
-                    if judge_score is not None:
-                        st.caption(f"Judge {judge_score:.1f} / 5  ·  F1 {f1:.2f}")
-                    st.markdown(answer)
+            judge_str = f"{judge_score:.1f}" if judge_score is not None else "—"
+            f1_str = f"{f1:.2f}" if f1 is not None else "—"
 
-                    # Show retrieved slides for ColPali RAG
-                    if bl_key == "colpali_rag":
-                        retrieved = pred.get("retrieved_slides", [])
-                        if retrieved:
-                            with st.expander("Retrieved slides"):
-                                for i, slide_id in enumerate(retrieved[:5]):
-                                    img = get_slide_image(course, slide_id)
-                                    is_gold = slide_id in (qa.get("evidence_slides") or [])
-                                    label = f"#{i+1} · {slide_id}" + (" · gold" if is_gold else "")
-                                    st.caption(label)
-                                    if img:
-                                        st.image(img, use_container_width=True)
-                                    else:
-                                        st.caption("Image not available locally")
-                                    if i < 4:
-                                        st.markdown("---")
+            st.markdown(
+                f'<div style="display:grid;grid-template-columns:190px 1fr 56px 46px;gap:8px;'
+                f'padding:11px 4px;border-bottom:1px solid #f1f5f9;'
+                f'align-items:start;font-family:system-ui;">'
+                f'<div style="font-size:0.75rem;font-weight:600;color:#0f172a;'
+                f'display:flex;align-items:center;gap:7px;padding-top:2px;">'
+                f'<span style="width:3px;height:14px;background:{color};border-radius:2px;'
+                f'display:inline-block;flex-shrink:0;"></span>{bl_label}</div>'
+                f'<div style="font-size:0.82rem;color:#475569;line-height:1.5;">{answer}</div>'
+                f'<div style="font-size:0.85rem;font-weight:700;color:{color};'
+                f'text-align:right;padding-top:2px;">{judge_str}</div>'
+                f'<div style="font-size:0.82rem;color:#94a3b8;'
+                f'text-align:right;padding-top:2px;">{f1_str}</div>'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+
+            if bl_key == "colpali_rag":
+                colpali_pred = pred
+
+        if colpali_pred:
+            retrieved = colpali_pred.get("retrieved_slides", [])
+            if retrieved:
+                with st.expander("View ColPali RAG retrieved slides"):
+                    for i, slide_id in enumerate(retrieved[:5]):
+                        img = get_slide_image(course, slide_id)
+                        is_gold = slide_id in (qa.get("evidence_slides") or [])
+                        label = f"#{i+1} · {slide_id}" + (" · gold" if is_gold else "")
+                        st.caption(label)
+                        if img:
+                            st.image(img, use_container_width=True)
+                        else:
+                            st.caption("Image not available locally")
+                        if i < 4:
+                            st.markdown("---")
 
 # ==========================================================================
 # TAB 2: Compare baselines across all questions

@@ -1,4 +1,4 @@
-"""Design preview — shows 3 sidebar variations side by side as HTML mockups.
+"""Design preview landing page.
 Run with:  streamlit run slideqa/design_preview.py --server.port 8502
 """
 import streamlit as st
