@@ -225,8 +225,10 @@ st.sidebar.markdown(
     '<p style="font-size:1.25rem;font-weight:800;letter-spacing:-0.03em;'
     'color:#0f172a;margin:0 0 2px 0;line-height:1.2;">'
     '<span style="color:#6366f1;">Slide</span>QA</p>'
-    '<p style="font-size:0.72rem;color:#64748b;margin:0 0 1rem 0;">'
-    'Multimodal QA over lecture slides &nbsp;·&nbsp; CS 288</p>',
+    '<p style="font-size:0.72rem;color:#64748b;margin:0 0 4px 0;">'
+    'Multimodal QA over lecture slides &nbsp;·&nbsp; CS 288</p>'
+    '<p style="font-size:0.68rem;color:#db2777;margin:0 0 1rem 0;">'
+    'Nathan McNaughton &nbsp;·&nbsp; Shanaya Malik &nbsp;·&nbsp; Nicholas Eliacin</p>',
     unsafe_allow_html=True,
 )
 
