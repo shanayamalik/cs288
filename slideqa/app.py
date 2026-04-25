@@ -132,15 +132,6 @@ section[data-testid="stSidebar"] > div:first-child {
 }
 section[data-testid="stSidebar"] .block-container { padding-top: 2.5rem !important; }
 
-/* Sidebar app name */
-.sidebar-title {
-    font-size: 1.05rem; font-weight: 800; letter-spacing: -0.02em;
-    color: #0f172a; margin-bottom: 2px;
-}
-.sidebar-sub {
-    font-size: 0.71rem; color: #64748b; margin-top: 0; margin-bottom: 1rem;
-}
-
 /* Sidebar section labels — border-top acts as card accent */
 .sidebar-label-indigo {
     font-size: 0.62rem; font-weight: 700; letter-spacing: 0.09em;
@@ -231,8 +222,11 @@ hr { border-color: #f1f5f9 !important; margin: 0.8rem 0 !important; }
 # Sidebar — course + filter controls
 # ---------------------------------------------------------------------------
 st.sidebar.markdown(
-    '<p class="sidebar-title">SlideQA</p>'
-    '<p class="sidebar-sub">Multimodal QA benchmark</p>',
+    '<p style="font-size:1.25rem;font-weight:800;letter-spacing:-0.03em;'
+    'color:#0f172a;margin:0 0 2px 0;line-height:1.2;">'
+    '<span style="color:#6366f1;">Slide</span>QA</p>'
+    '<p style="font-size:0.72rem;color:#64748b;margin:0 0 1rem 0;">'
+    'Multimodal QA over lecture slides &nbsp;·&nbsp; CS 288</p>',
     unsafe_allow_html=True,
 )
 
@@ -280,18 +274,6 @@ if filter_difficulty != "All":
 st.sidebar.markdown(
     f'<span class="sidebar-chip">{len(filtered)}</span>'
     f'<span style="font-size:0.72rem;color:#64748b;">of {len(qa_list)} questions</span>',
-    unsafe_allow_html=True,
-)
-
-# ---------------------------------------------------------------------------
-# Page header
-# ---------------------------------------------------------------------------
-st.markdown(
-    '<p style="font-size:1.35rem;font-weight:800;letter-spacing:-0.03em;'
-    'color:#0f172a;margin:0 0 2px 0;line-height:1.2;">'
-    '<span style="color:#6366f1;">Slide</span>QA</p>'
-    '<p style="font-size:0.82rem;color:#64748b;margin:0 0 1rem 0;">'
-    'Multimodal question answering over lecture slides &nbsp;·&nbsp; CS 288 &nbsp;·&nbsp; Spring 2026</p>',
     unsafe_allow_html=True,
 )
 
