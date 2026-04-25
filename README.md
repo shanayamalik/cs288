@@ -1,6 +1,6 @@
 # SlideQA
 
-A multimodal benchmark and retrieval-augmented VLM agent for lecture slide question answering.  
+A multimodal benchmark and retrieval-augmented VLM pipeline for lecture slide question answering.  
 **CS 288 (Advanced NLP) — UC Berkeley, Spring 2026**
 
 ## Team
@@ -9,7 +9,7 @@ Nathan McNaughton, Nicholas Eliacin, Shanaya Malik
 
 ## Overview
 
-SlideQA is a QA benchmark built from lecture slides of three public NLP courses (UC Berkeley CS 288, Stanford CS 224N, JHU CS 601.471). It includes five question categories:
+SlideQA is a QA benchmark built from lecture slides of three public NLP courses (UC Berkeley CS 288, Stanford CS 224N, JHU CS 601.471). It includes 450 curated questions (150 per course) spanning five categories:
 
 1. **Text-only reasoning** — answerable from slide text alone
 2. **Image/diagram interpretation** — figures, diagrams, math expressions
@@ -17,135 +17,82 @@ SlideQA is a QA benchmark built from lecture slides of three public NLP courses 
 4. **Chart/graph analysis** — interpreting data visualizations
 5. **Layout-aware reasoning** — spatial relationships between slide elements
 
-We pair the benchmark with a retrieval-augmented multimodal pipeline (ColPali + VLM) and compare against text-only and zero-shot baselines.
+We pair the benchmark with a ColPali retrieval-augmented multimodal pipeline and evaluate four systems: text-only LLM, zero-shot VLM, closed-book LLM, and ColPali RAG.
 
-## Project Structure
+## Demo
 
-```
-slideqa/
-├── data/
-│   ├── raw_pdfs/{cs288,cs224n,cs601}/   # Lecture PDFs (tracked in git)
-│   ├── slides/                           # Extracted slide images (gitignored)
-│   ├── text/                             # Extracted slide text (gitignored)
-│   └── annotations/                      # QA JSON files
-├── src/
-│   ├── process_pdfs.py                   # PDF → slide images + text
-│   ├── generate_qa.py                    # VLM-assisted QA draft generation
-│   ├── curate_qa.py                      # Auto-filter + balanced sampling
-│   ├── annotate.py                       # Streamlit review tool
-│   ├── evaluate.py                       # Evaluation metrics
-│   └── slideqa_dataset.py                # Dataset loader + stats
-├── requirements.txt
-iclr2026/                                 # Paper (ICLR 2026 format)
-```
+An interactive demo is available at **https://shanaya-is-a-genius.streamlit.app/**. Browse questions by course, compare model outputs side by side, and view the leaderboard.
 
 ## Setup
 
 ```bash
-# Clone the repo (Git LFS required for lecture PDFs)
-git lfs install
 git clone https://github.com/shanayamalik/cs288-sp26-slideQA.git
 cd cs288-sp26-slideQA
 
-# Create and activate virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
-
-# Install Python dependencies
 pip install -r slideqa/requirements.txt
 
-# Install system dependencies (macOS)
-brew install poppler    # required for pdf2image
-brew install git-lfs    # if not already installed
+# macOS system deps
+brew install poppler
 ```
 
 ### API Keys
 
-Copy the `.env` template and paste your key:
-
 ```bash
-cp .env .env.local   # optional — .env works too
 # Edit .env and fill in:
 OPENROUTER_API_KEY=sk-or-...
-```
-
-Then load it before running scripts:
-
-```bash
 export $(grep -v '^#' .env | xargs)
 ```
 
-The `.env` file is gitignored — never commit API keys.
+### Running the Pipeline
 
-## Usage
+Replace `cs288` with `cs224n` or `cs601` for other courses.
 
-### 1. Process PDFs into slide images + text
 ```bash
+# 1. Process PDFs into slide images + text
 python slideqa/src/process_pdfs.py --course cs288
-```
 
-### 2. Generate QA drafts using a VLM
-```bash
+# 2. Generate + curate QA pairs
 python slideqa/src/generate_qa.py --course cs288 --model openrouter/gpt-4o
-
-# To generate for specific lectures only (e.g., first 3):
-python slideqa/src/generate_qa.py --course cs601 --model openrouter/gpt-4o --lectures 1 2 3
-```
-
-### 3. Curate benchmark subset
-```bash
 python slideqa/src/curate_qa.py --course cs288 --target 150
+
+# 3. Build ColPali index
+python slideqa/src/build_index.py --course cs288
+
+# 4. Run ColPali RAG
+python slideqa/src/run_colpali_rag.py --course cs288
+
+# 5. Evaluate
+python slideqa/src/evaluate.py --course cs288
 ```
 
-### 4. (Optional) Review QA pairs in Streamlit
-```bash
-streamlit run slideqa/src/annotate.py -- --course cs288
-```
+## Results
 
-### 5. View dataset statistics
-```bash
-python slideqa/src/slideqa_dataset.py --course cs288
-```
+Scores are LLM-judge ratings on a 1–5 scale, averaged over 150 questions per course. Token-F1 is also reported for exact-match comparison.
 
-### 6. Evaluate predictions
-```bash
-python slideqa/src/evaluate.py --course cs288 --predictions path/to/preds.json
-```
+### LLM-Judge Score (1–5)
 
-## Baselines (Checkpoint 2)
+| Course | Text-Only | Closed-Book | ColPali RAG | Zero-Shot VLM |
+|---|---|---|---|---|
+| CS 288 (Berkeley) | 1.79 | 2.09 | 3.73 | **4.70** |
+| CS 601 (JHU) | 2.11 | 2.03 | 3.39 | **4.42** |
+| CS 224N (Stanford) | 1.53 | 1.81 | 3.75 | **4.60** |
 
-Two baselines to measure the value of multimodality:
+### Token-F1
 
-| Baseline | Input | What it tests |
-|---|---|---|
-| Zero-shot VLM | slide image + question | Upper bound — full visual context |
-| Text-only LLM | extracted text + question (no image) | Does vision actually help? |
+| Course | Text-Only | Closed-Book | ColPali RAG | Zero-Shot VLM |
+|---|---|---|---|---|
+| CS 288 (Berkeley) | 0.143 | 0.088 | 0.292 | **0.377** |
+| CS 601 (JHU) | 0.186 | 0.090 | 0.296 | **0.373** |
+| CS 224N (Stanford) | 0.100 | 0.077 | 0.316 | **0.394** |
 
-Both use GPT-4o via OpenRouter. Run with:
-```bash
-python slideqa/src/run_baselines.py --course cs288
-```
+### ColPali Retrieval Recall
 
-### Results (3-lecture pilot per course, 75 QA pairs each — re-running on scaled data)
-
-| Course | Text-Only F1 | VLM F1 | VLM Advantage |
+| Course | R@1 | R@3 | R@5 |
 |---|---|---|---|
-| CS 288 (Berkeley) | 0.130 | 0.358 | 2.75x |
-| CS 601 (JHU) | 0.376 | 0.558 | 1.48x |
-| CS 224N (Stanford) | 0.106 | 0.372 | 3.51x |
+| CS 288 | 0.500 | 0.747 | 0.793 |
+| CS 601 | 0.373 | 0.600 | 0.707 |
+| CS 224N | 0.480 | 0.807 | 0.827 |
 
-VLM consistently outperforms text-only across all three courses. The advantage is largest on CS 224N (diagram-heavy) and smallest on CS 601 (text-heavy PPT slides). See [RESULTS.md](RESULTS.md) for detailed per-category breakdowns and reproduction steps.
-
-## Progress
-
-- [x] Project scaffolding and paper abstract
-- [x] PDF processing — CS 288 (17 lectures, 1301 slides)
-- [x] PDF processing — CS 601 (19 lectures, 1264 slides)
-- [x] PDF processing — CS 224N (19 lectures, 1207 slides)
-- [x] QA generation — CS 288 (5518 drafts → 150 curated, balanced across lectures + categories)
-- [x] Baseline evaluation — CS 288, CS 601, CS 224N (pilot, 75 Qs each)
-- [ ] QA generation — CS 601 (scale to all 19 lectures, 150 curated)
-- [ ] QA generation — CS 224N (scale to all 19 lectures, 150 curated)
-- [ ] Re-run baselines on scaled 150-question sets
-- [ ] Multimodal RAG baseline (ColPali embeddings → retrieval → VLM generation)
-- [ ] Final evaluation and ablations
+Zero-shot VLM (given the gold evidence slide) is the upper bound. ColPali RAG substantially outperforms text-only and closed-book across all courses, with the gap largest on diagram- and chart-heavy questions. Retrieval recall at 5 exceeds 70% on all courses.
