@@ -284,6 +284,18 @@ st.sidebar.markdown(
 )
 
 # ---------------------------------------------------------------------------
+# Page header
+# ---------------------------------------------------------------------------
+st.markdown(
+    '<p style="font-size:1.35rem;font-weight:800;letter-spacing:-0.03em;'
+    'color:#0f172a;margin:0 0 2px 0;line-height:1.2;">'
+    '<span style="color:#6366f1;">Slide</span>QA</p>'
+    '<p style="font-size:0.82rem;color:#64748b;margin:0 0 1rem 0;">'
+    'Multimodal question answering over lecture slides &nbsp;·&nbsp; CS 288 &nbsp;·&nbsp; Spring 2026</p>',
+    unsafe_allow_html=True,
+)
+
+# ---------------------------------------------------------------------------
 # Main content — tabs
 # ---------------------------------------------------------------------------
 tab_browse, tab_compare, tab_leaderboard = st.tabs(
