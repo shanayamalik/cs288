@@ -45,6 +45,28 @@ OPENROUTER_API_KEY=sk-or-...
 export $(grep -v '^#' .env | xargs)
 ```
 
+### Running the Pipeline
+
+Replace `cs288` with `cs224n` or `cs601` for other courses.
+
+```bash
+# 1. Process PDFs into slide images + text
+python slideqa/src/process_pdfs.py --course cs288
+
+# 2. Generate + curate QA pairs
+python slideqa/src/generate_qa.py --course cs288 --model openrouter/gpt-4o
+python slideqa/src/curate_qa.py --course cs288 --target 150
+
+# 3. Build ColPali index
+python slideqa/src/build_index.py --course cs288
+
+# 4. Run ColPali RAG
+python slideqa/src/run_colpali_rag.py --course cs288
+
+# 5. Evaluate
+python slideqa/src/evaluate.py --course cs288
+```
+
 ## Results
 
 Scores are LLM-judge ratings on a 1–5 scale, averaged over 150 questions per course. Token-F1 is also reported for exact-match comparison.
@@ -74,23 +96,3 @@ Scores are LLM-judge ratings on a 1–5 scale, averaged over 150 questions per c
 | CS 224N | 0.480 | 0.807 | 0.827 |
 
 Zero-shot VLM (given the gold evidence slide) is the upper bound. ColPali RAG substantially outperforms text-only and closed-book across all courses, with the gap largest on diagram- and chart-heavy questions. Retrieval recall at 5 exceeds 70% on all courses.
-
-## Reproducing Results
-
-```bash
-# 1. Process PDFs into slide images + text
-python slideqa/src/process_pdfs.py --course cs288
-
-# 2. Generate + curate QA pairs
-python slideqa/src/generate_qa.py --course cs288 --model openrouter/gpt-4o
-python slideqa/src/curate_qa.py --course cs288 --target 150
-
-# 3. Build ColPali index
-python slideqa/src/build_index.py --course cs288
-
-# 4. Run ColPali RAG
-python slideqa/src/run_colpali_rag.py --course cs288
-
-# 5. Evaluate
-python slideqa/src/evaluate.py --course cs288
-```
