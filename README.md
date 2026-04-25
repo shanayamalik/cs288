@@ -21,30 +21,7 @@ We pair the benchmark with a ColPali retrieval-augmented multimodal pipeline and
 
 ## Demo
 
-An interactive demo is available at the [Streamlit app](https://cs288-sp26-slideqa.streamlit.app). Browse questions by course, compare model outputs side by side, and view the leaderboard.
-
-## Project Structure
-
-```
-slideqa/
-├── app.py                                # Streamlit demo app
-├── data/
-│   ├── raw_pdfs/{cs288,cs224n,cs601}/   # Lecture PDFs
-│   ├── slides/                           # Extracted slide images
-│   ├── text/                             # Extracted slide text
-│   ├── annotations/                      # QA JSON files (450 questions)
-│   └── results/                          # Model predictions + evaluation
-├── src/
-│   ├── process_pdfs.py                   # PDF → slide images + text
-│   ├── generate_qa.py                    # VLM-assisted QA draft generation
-│   ├── curate_qa.py                      # Auto-filter + balanced sampling
-│   ├── build_index.py                    # ColPali embedding index
-│   ├── run_colpali_rag.py                # ColPali RAG inference
-│   ├── evaluate.py                       # Evaluation metrics
-│   └── slideqa_dataset.py                # Dataset loader + stats
-├── requirements.txt
-iclr2026/                                 # Paper (ICLR 2026 format)
-```
+An interactive demo is available at **https://shanaya-is-a-genius.streamlit.app/**. Browse questions by course, compare model outputs side by side, and view the leaderboard.
 
 ## Setup
 
