@@ -1,0 +1,320 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2026_conference,times}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit}
+
+% Optional math commands from https://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\title{SlideQA: A Multimodal Benchmark for Lecture Slide Question Answering}
+
+% Authors must not appear in the submitted version. They should be hidden
+% as long as the \iclrfinalcopy macro remains commented out below.
+% Non-anonymous submissions will be rejected without review.
+
+% TODO: Hide author names for final submission by keeping \iclrfinalcopy commented out
+
+\author{Nathan McNaughton, Nicholas Eliacin, Shanaya Malik}
+
+% Original example authors for reference:
+% \author{Antiquus S.~Hippocampus, Natalia Cerebro \& Amelie P. Amygdale \thanks{ Use footnote for providing further information
+% about author (webpage, alternative address)---\emph{not} for acknowledging
+% funding agencies.  Funding acknowledgements go at the end of the paper.} \\
+% Department of Computer Science\\
+% Cranberry-Lemon University\\
+% Pittsburgh, PA 15213, USA \\
+% \texttt{\{hippo,brain,jen\}@cs.cranberry-lemon.edu} \\
+% \And
+% Ji Q. Ren \& Yevgeny LeNet \\
+% Department of Computational Neuroscience \\
+% University of the Witwatersrand \\
+% Joburg, South Africa \\
+% \texttt{\{robot,net\}@wits.ac.za} \\
+% \AND
+% Coauthor \\
+% Affiliation \\
+% Address \\
+% \texttt{email}
+% }
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to \LaTeX{} to determine where to break
+% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
+% puts 3 of 4 authors names on the first line, and the last on the second
+% line, try using \AND instead of \And before the third author name.
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\iclrfinalcopy % Uncommented to show author names for abstract submission
+\begin{document}
+
+
+\maketitle
+
+\begin{abstract}
+Existing question-answering (QA) systems rely predominantly on text-only retrieval, even though lecture slides are a primary medium for university instruction. This is insufficient because slides integrate visuals such as diagrams, formulas, tables, charts, and spatial structure that text-based systems fail to capture, often leading to incomplete or incorrect answers. Moreover, there is no standardized benchmark for evaluating multimodal QA over lecture slides. To address this gap, we introduce SlideQA, a multimodal benchmark for lecture slide QA built from three public NLP courses at UC Berkeley, Stanford, and Johns Hopkins. The benchmark includes five categories of questions: (1) text-only reasoning, (2) image and diagram interpretation, including mathematical expressions, (3) table comprehension, (4) chart and graph analysis, and (5) layout-aware reasoning.
+
+We construct SlideQA from publicly available lecture PDFs and curate 225 question-answer pairs spanning three institutions and diverse slide formats. We also evaluate two baseline systems to quantify the contribution of visual information beyond text extraction alone: a text-only baseline using BM25 retrieval over extracted slide text, and a zero-shot vision-language baseline with oracle slide access. Across all three courses, the vision-language baseline substantially outperforms the text-only baseline, confirming that lecture slide QA requires genuine visual understanding. In ongoing work, we are developing a retrieval-augmented multimodal pipeline in which slide images are embedded using vision-language representations and stored in a vector database. At inference time, the system will retrieve relevant slides and generate answers conditioned on the retrieved visual content. We expect this retrieval-augmented design to close the gap between text-only retrieval and oracle slide selection while improving answer grounding on visually intensive questions. SlideQA provides a reproducible benchmark for multimodal reasoning over instructional materials and enables systematic evaluation of retrieval-augmented VLM agents in educational settings.
+\end{abstract}
+
+% ============================================================
+% SECTION 1: INTRODUCTION
+% ============================================================
+\section{Introduction}
+
+Lecture slides are the primary medium for delivering instruction in university courses, yet the information in slides resists conventional text-based question answering. A lecture slide combines mathematical notation, annotated diagrams, data tables, and explanatory text within a deliberate spatial layout. Text extraction via OCR or PDF parsing loses this structure entirely, reducing a multimodal document to tokens. This is particularly problematic for technical courses such as NLP, where slides routinely contain architecture diagrams and equation derivations that cannot be solely represented as plain text. In spite of growing interest in document visual question answering (DocVQA), there are no existing benchmarks that specifically target lecture slide QA for university-level technical content. SlideVQA \citep{tanaka2023slidevqa} focuses on general-domain business presentations, while ChartQA \citep{masry2022chartqa} and InfographicVQA \citep{mathew2021infographicvqa} target specific visual modalities in isolation---none capture the multimodal diversity of lecture slides.
+
+We introduce SlideQA, a multimodal QA benchmark constructed from publicly available lecture slides of three NLP courses at UC Berkeley (CS~288), Stanford (CS~224N), and Johns Hopkins (CS~601.471). SlideQA defines five question categories: (1)~text-only reasoning, (2)~image/diagram interpretation, (3)~table comprehension, (4)~chart/graph analysis, and (5)~layout-aware reasoning. To establish baselines, we implemented a text-only system (BM25 + GPT-4o) and a zero-shot VLM system (oracle slide + GPT-4o). The VLM outperforms text-only by 1.5--3.5$\times$ on Token~F1 across all three courses, confirming that the benchmark requires genuine visual understanding.
+
+Our contributions are: (1)~SlideQA, a benchmark of 225 curated questions across three institutions and five categories; (2)~an automated pipeline for generating and curating slide-based QA pairs; (3)~baseline evaluations demonstrating that visual understanding provides a substantial advantage over text-only approaches. In ongoing work, we are developing a retrieval-augmented pipeline using ColPali \citep{faysse2024colpali} vision-language embeddings.
+
+% ============================================================
+% SECTION 2: RELATED WORK
+% ============================================================
+\section{Related Work}
+
+Our work draws on three areas: (1)~document and slide-specific QA benchmarks, (2)~visual and structural reasoning, and (3)~multimodal retrieval-augmented generation.
+
+\paragraph{Document and Slide-Specific Benchmarks.}
+SlideVQA \citep{tanaka2023slidevqa} introduced approximately 52,000 slide images for multi-image reasoning but focuses on general-domain business presentations where visual elements tend to be decorative. The Lecture Presentations Multimodal Dataset \citep{lee2023lecture} explored multimodal understanding in educational videos but did not isolate slide-level QA. SlideQA targets university-level NLP lecture slides, which contain mathematical formulas, algorithm diagrams, and dense tables where the visual layout carries semantic meaning that text extraction cannot recover.
+
+\paragraph{Visual and Structural Reasoning.}
+ChartQA \citep{masry2022chartqa} targets reasoning over data visualizations, while InfographicVQA \citep{mathew2021infographicvqa} tests comprehension of complex layouts combining text, icons, and graphics. These benchmarks address individual visual modalities in isolation, but lecture slides require reasoning across multiple modalities simultaneously. SlideQA addresses this through five question categories enabling fine-grained analysis of which capabilities are needed. Our per-category Token~F1 ranges from 0.040 to 0.554, confirming that different categories test genuinely different capabilities.
+
+\paragraph{Multimodal Retrieval-Augmented Generation.}
+Traditional RAG pipelines discard visual information by converting documents to text before retrieval. VisRAG \citep{yu2024visrag} and ColPali \citep{faysse2024colpali} bypass this bottleneck by embedding document pages directly as images. SlideQA adopts this paradigm for our planned retrieval pipeline. Our current baselines---text-only retrieval (BM25) and oracle slide selection---establish the performance bounds that this approach must fall between.
+
+% ============================================================
+% SECTION 3: BASELINE SETUP
+% ============================================================
+\section{Baseline Setup}
+
+\subsection{Implementation Details}
+
+We implemented two baselines using GPT-4o (via OpenRouter) to quantify the contribution of visual information. The \textbf{text-only baseline (BM25 + LLM)} retrieves the top-3 slides using BM25 over extracted text (PyMuPDF with OCR fallback) and passes the concatenated text to GPT-4o with no visual input. The \textbf{zero-shot VLM baseline (Oracle Slide + VLM)} provides GPT-4o with the ground-truth slide image directly, bypassing retrieval. This serves as an upper bound given perfect retrieval. The gap between these baselines directly measures how much visual information contributes beyond text extraction.
+
+\subsection{Dataset Details}
+
+SlideQA is a synthetic dataset constructed from lecture slides of three publicly available NLP courses:
+
+\begin{itemize}[nosep]
+    \item \textbf{UC Berkeley CS~288}: 3 lectures, 183 slides. Modern PDF slides with diagrams, tables, charts, and math.
+    \item \textbf{JHU CS~601.471}: 3 lectures, 61 slides. Older PPT slides converted to PDF, predominantly text-heavy.
+    \item \textbf{Stanford CS~224N}: 3 lectures, 202 slides. Diagram- and formula-heavy slides.
+\end{itemize}
+
+For each course, we generated QA drafts by prompting GPT-4o with each slide image to produce question--answer pairs across the five categories. Raw drafts are curated through quality filters removing trivial questions, answers shorter than 2 characters or longer than 10 words, and vague or self-referential questions. We select 75 QA pairs per course via balanced sampling (minimum 5 per category), prioritizing hard/medium difficulty and multimodal categories, followed by manual review using a Streamlit annotation tool. The 225 curated pairs serve as the evaluation benchmark, which is a subset of the dataset (currently at 3 lectures per course); we plan to scale to all available lectures across all three courses for the final evaluation.
+
+\begin{table}[htbp]
+\caption{Dataset summary across three courses. Categories: TO = text\_only, ID = image\_diagram, TB = table, CG = chart\_graph, LA = layout\_aware.}
+\label{tab:dataset}
+\begin{center}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+\textbf{Course} & \textbf{Slides} & \textbf{Raw} & \textbf{Curated} & \textbf{TO} & \textbf{ID} & \textbf{TB} & \textbf{CG} & \textbf{LA} \\
+\midrule
+CS~288   & 183 &   706 & 75 &  7 & 43 & 11 & 7 & 7 \\
+CS~601   &  61 &   231 & 75 & 53 & 16 &  4 & 0 & 2 \\
+CS~224N  & 202 &   889 & 75 &  7 & 40 & 13 & 7 & 8 \\
+\midrule
+\textbf{Total} & 446 & 1{,}826 & 225 & 67 & 99 & 28 & 14 & 17 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+The category distribution reflects the slide format differences across institutions: CS~601's text-heavy PPT slides yield mostly text\_only questions (71\%), while CS~288 and CS~224N's modern slides produce predominantly image\_diagram questions (57\% and 53\% respectively).
+
+\subsection{Evaluation Setup and Baseline Results}
+
+We evaluate using Exact Match (EM) and Token~F1 (SQuAD-style token-level precision/recall). Token~F1 is our primary metric as it is robust to minor paraphrasing. All answers are constrained to at most 10 words.
+
+\begin{table}[htbp]
+\caption{Baseline results across three courses. VLM Advantage is the ratio of VLM F1 to Text-Only F1.}
+\label{tab:results}
+\begin{center}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Course} & \textbf{Text-Only EM} & \textbf{Text-Only F1} & \textbf{VLM EM} & \textbf{VLM F1} & \textbf{Advantage} \\
+\midrule
+CS~288  & 0.013 & 0.130 & 0.013 & 0.358 & 2.75$\times$ \\
+CS~601  & 0.120 & 0.376 & 0.160 & 0.558 & 1.48$\times$ \\
+CS~224N & 0.000 & 0.106 & 0.027 & 0.372 & 3.51$\times$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Across all three courses, the VLM baseline outperforms text-only, confirming that lecture slide QA requires genuine visual understanding. The advantage ranges from 1.48$\times$ (CS~601) to 3.51$\times$ (CS~224N), with CS~288 at 2.75$\times$. The smaller gap for CS~601 reflects its text-heavy slides, while the large gaps for CS~224N and CS~288 indicate a heavier reliance on diagrams, math, and visual structure that text-only retrieval misses entirely. These results validate the benchmark's core motivation and motivate our planned retrieval-augmented multimodal pipeline.
+
+% ============================================================
+% SECTION 4: METHOD SETUP
+% ============================================================
+\section{Method Setup}
+
+\subsection{Motivation}
+
+While the oracle baseline demonstrates the importance of visual information, it assumes perfect access to the correct slide. In practice, the key challenge is retrieving relevant slides from a large collection. Our goal is to bridge this gap by introducing a multimodal retrieval pipeline that operates directly on slide images.
+
+\subsection{Multimodal Retrieval Pipeline}
+
+Our approach replaces text-based retrieval with image-based retrieval using vision-language embeddings. The pipeline consists of four stages:
+
+\begin{enumerate}[nosep]
+    \item \textbf{Slide Preprocessing}: Lecture PDFs are converted into individual slide images using a PDF-to-image pipeline.
+    \item \textbf{Embedding}: Each slide image is encoded into a dense vector representation using a vision-language model.
+    \item \textbf{Retrieval}: Given a question, we compute a query embedding and retrieve the top-$k$ most relevant slides using cosine similarity.
+    \item \textbf{Answer Generation}: Retrieved slide images are passed to GPT-4o along with the question to generate an answer.
+\end{enumerate}
+
+This approach preserves visual and structural information that is lost in text extraction pipelines.
+
+\subsection{Implementation Details}
+
+We use top-$k=3$ retrieval for all experiments. Slide embeddings are stored in a vector index and queried using cosine similarity. All answers are generated using GPT-4o with image input and constrained to a maximum of 10 words.
+
+% ============================================================
+% SECTION 5: EXPERIMENTS
+% ============================================================
+\section{Experiments}
+
+\subsection{Setup}
+
+We evaluate four systems:
+
+\begin{itemize}[nosep]
+    \item \textbf{Closed-book}: GPT-4o without access to slides
+    \item \textbf{Text-only (BM25 + LLM)}
+    \item \textbf{Multimodal retrieval (Ours)}
+    \item \textbf{Oracle VLM}
+\end{itemize}
+
+\subsection{Results}
+
+We evaluate all four systems on the full SlideQA benchmark (150 questions per course, 450 total). Table~\ref{tab:main_results} reports Token~F1 and LLM-Judge scores (1--5 scale) for each course. LLM-Judge uses GPT-4o to score each predicted answer on a 1--5 scale for correctness, and serves as our primary metric due to its robustness to paraphrasing.
+
+\begin{table}[htbp]
+\caption{Main results on SlideQA (150 questions per course, 450 total). LLM-Judge is on a 1--5 scale. Oracle VLM is given the gold evidence slide directly and serves as an upper bound. $^\dagger$Our method.}
+\label{tab:main_results}
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+ & \textbf{Closed-Book} & \textbf{Text-Only} & \textbf{ColPali RAG}$^\dagger$ & \textbf{Oracle VLM} \\
+\midrule
+\multicolumn{5}{l}{\textit{Token~F1}} \\
+\quad CS~288  & 0.088 & 0.143 & 0.292 & \textbf{0.377} \\
+\quad CS~601  & 0.090 & 0.186 & 0.296 & \textbf{0.373} \\
+\quad CS~224N & 0.077 & 0.100 & 0.316 & \textbf{0.394} \\
+\quad \textit{Average} & 0.085 & 0.143 & 0.301 & \textbf{0.381} \\
+\midrule
+\multicolumn{5}{l}{\textit{LLM-Judge (1--5)}} \\
+\quad CS~288  & 2.09 & 1.79 & 3.73 & \textbf{4.70} \\
+\quad CS~601  & 2.03 & 2.11 & 3.39 & \textbf{4.42} \\
+\quad CS~224N & 1.81 & 1.53 & 3.75 & \textbf{4.60} \\
+\quad \textit{Average} & 1.98 & 1.81 & 3.62 & \textbf{4.57} \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+ColPali RAG substantially outperforms both text-only retrieval and closed-book generation on all three courses. The average LLM-Judge score of 3.62 for ColPali RAG represents a $2.0\times$ improvement over text-only (1.81) and a $1.8\times$ improvement over closed-book (1.98). The Oracle VLM ceiling of 4.57 indicates the headroom remaining from retrieval imperfection.
+
+\subsection{Discussion}
+
+The consistent advantage of ColPali RAG over text-only retrieval across all courses confirms that slide images encode information that extracted text cannot recover. The gap between ColPali RAG and Oracle VLM (3.62 vs.\ 4.57) reflects retrieval imperfection: when the gold evidence slide is absent from the top-$k$ results, the generator is conditioned on irrelevant visual context. CS~601 shows the lowest RAG performance (3.39), consistent with its text-heavy PPT-style slides producing less distinctive visual embeddings than the diagram-rich slides of CS~288 and CS~224N. The similar performance of closed-book (1.98) and text-only (1.81) suggests that BM25-retrieved slide text adds minimal grounding over parametric knowledge alone, reinforcing the necessity of visual retrieval for this task.
+
+% ============================================================
+% SECTION 6: ANALYSIS
+% ============================================================
+\section{Analysis}
+
+\subsection{Ablations}
+
+\paragraph{Retrieval vs Closed-Book}
+Comparing ColPali RAG (average LLM-Judge: 3.62) to closed-book generation (1.98) isolates the contribution of retrieval. The large gap demonstrates that retrieved slide images provide essential grounding that parametric knowledge cannot substitute. The advantage is most pronounced for CS~288 (3.73 vs.\ 2.09) and CS~224N (3.75 vs.\ 1.81), where slides contain course-specific notation and diagrams unlikely to appear verbatim in training data. For CS~601 the gap narrows (3.39 vs.\ 2.03), consistent with its more general text-heavy content.
+
+\paragraph{Text vs Multimodal Retrieval}
+Comparing ColPali RAG (average Token~F1: 0.301) to text-only BM25 retrieval (0.143) isolates the benefit of visual over textual retrieval. The $2.1\times$ Token~F1 improvement confirms that ColPali embeddings recover information that BM25 over extracted text misses entirely. Table~\ref{tab:recall} shows per-course retrieval recall; averaged across courses, the pipeline surfaces at least one relevant slide in the top five for 78\% of questions (R@5$=$0.776). The remaining 22\% where retrieval fails drives the residual gap between ColPali RAG and Oracle VLM.
+
+\begin{table}[htbp]
+\caption{ColPali retrieval recall at $k$. R@$k$ is the fraction of questions for which the gold evidence slide appears in the top $k$ retrieved results.}
+\label{tab:recall}
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Course} & \textbf{R@1} & \textbf{R@3} & \textbf{R@5} \\
+\midrule
+CS~288  & 0.500 & 0.747 & 0.793 \\
+CS~601  & 0.373 & 0.600 & 0.707 \\
+CS~224N & 0.480 & 0.807 & 0.827 \\
+\midrule
+\textit{Average} & 0.451 & 0.718 & 0.776 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Category Breakdown}
+
+Table~\ref{tab:category} reports LLM-Judge scores per question category, averaged across all three courses.
+
+\begin{table}[htbp]
+\caption{LLM-Judge scores (1--5) by question category, averaged across all three courses. $^\dagger$Our method.}
+\label{tab:category}
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Category} & \textbf{Closed-Book} & \textbf{Text-Only} & \textbf{ColPali RAG}$^\dagger$ & \textbf{Oracle VLM} \\
+\midrule
+Text-only     & 2.29 & 2.47 & 3.84 & \textbf{4.67} \\
+Image/Diagram & 2.06 & 1.81 & 3.41 & \textbf{4.60} \\
+Table         & 1.62 & 1.85 & 3.74 & \textbf{4.55} \\
+Chart/Graph   & 1.84 & 1.22 & 3.95 & \textbf{4.59} \\
+Layout-Aware  & 2.06 & 1.85 & 3.58 & \textbf{4.46} \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+ColPali RAG shows the largest improvement over text-only on chart/graph questions (3.95 vs.\ 1.22), where BM25 recovers none of the visual data encoded in the chart. Table questions benefit similarly (3.74 vs.\ 1.85), as slide tables are often not fully preserved by PDF text extraction. Text-only questions show the smallest gap (3.84 vs.\ 2.47), since BM25 can partially recover the relevant textual content without visual access. Layout-aware questions (3.58 RAG vs.\ 1.85 text-only) benefit substantially from visual retrieval, though they remain harder than structured visual categories as they require holistic spatial reasoning over the full slide.
+
+\subsection{Error Analysis}
+
+Three primary failure modes emerge from analysis of incorrect ColPali RAG responses. First, \emph{retrieval failure}: when the gold evidence slide is absent from the top-$k$ results ($\sim$22\% of questions at $k{=}5$), the model is conditioned on irrelevant visual context and generates confident but factually wrong answers. Second, \emph{VLM hallucination}: even with the correct slide retrieved, GPT-4o occasionally ignores specific visual elements in favor of parametric knowledge, most commonly on layout-aware questions that require precise spatial reading of the slide. Third, \emph{metric misalignment}: Token~F1 penalizes correct paraphrased answers, creating a large divergence from LLM-Judge scores (ColPali RAG: Token~F1 0.301 vs.\ LLM-Judge 3.62/5.0). This motivates our use of LLM-Judge as the primary evaluation metric.
+
+% ============================================================
+% SECTION 7: QUALITATIVE EXAMPLES
+% ============================================================
+\section{Qualitative Examples}
+
+% TO DO
+
+\paragraph{Diagram Question}
+% TO DO
+
+\paragraph{Chart Question}
+% TO DO
+
+
+% ============================================================
+% SECTION 8: CONCLUSION
+% ============================================================
+\section{Conclusion}
+% TODO
+
+% ============================================================
+% REFERENCES
+% ============================================================
+\bibliography{iclr2026_conference}
+\bibliographystyle{iclr2026_conference}
+
+\end{document}
