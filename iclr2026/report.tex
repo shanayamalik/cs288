@@ -9,6 +9,8 @@
 \usepackage{url}
 \usepackage{booktabs}
 \usepackage{enumitem}
+\usepackage{float}
+\raggedbottom
 
 \title{SlideQA: A Multimodal Benchmark for Lecture Slide Question Answering}
 
@@ -260,9 +262,9 @@ Three primary failure modes emerge from analysis of incorrect ColPali RAG respon
 \textbf{ColPali RAG:} $p(\bar{x}) \propto \frac{1}{|\bar{x}|^\alpha} \sum_{i=1}^{|\bar{x}|} \log p(x_i \mid x_1, \ldots, x_{i-1})$ \\
 \textbf{Oracle VLM:} $p(\bar{x}) \propto \frac{1}{|\bar{x}|^\alpha} \sum_{i=1}^{|\bar{x}|} \log p(x_i \mid x_1, \ldots, x_{i-1})$
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.75\linewidth]{figures/slide_length_norm.png}
+\includegraphics[width=0.6\linewidth]{figures/slide_length_norm.png}
 \caption{Evidence slide for the length normalization example. The formula appears only as a rendered image; OCR-extracted text does not capture it.}
 \label{fig:slide_length_norm}
 \end{figure}
@@ -276,9 +278,9 @@ The formula is visually encoded on the slide and absent from extracted text. Col
 \textbf{ColPali RAG:} ``In the graph, the words `man', `woman', and `king' are represented as points in a 2D space, with arrows indicating the direction and relationship between them.'' \\
 \textbf{Oracle VLM:} ``In the graph, the words `man', `woman', and `king' are represented as points in a vector space. Arrows indicate the direction and relationship between these points, illustrating the analogy `man:woman :: king:?'.''
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.75\linewidth]{figures/slide_word_vectors.png}
+\includegraphics[width=0.6\linewidth]{figures/slide_word_vectors.png}
 \caption{Evidence slide for the word vector analogy example. The relationship between man/woman/king is expressed entirely through the scatter plot; no equivalent textual description exists in the extracted slide text.}
 \label{fig:slide_word_vectors}
 \end{figure}
@@ -292,9 +294,9 @@ The answer requires reading a vector-space diagram. BM25 finds no relevant text;
 \textbf{ColPali RAG:} ``The loss function $L(\theta)$ is used for learning, and an example given is cross-entropy.'' \\
 \textbf{Oracle VLM:} $\mathcal{L}(\theta) = -\sum_{t=1}^{T} \log(\hat{y}_t(y_t))$
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.75\linewidth]{figures/slide_loss_function.png}
+\includegraphics[width=0.6\linewidth]{figures/slide_loss_function.png}
 \caption{Evidence slide for the retrieval failure example. The gold formula $\mathcal{L}(\theta) = -\sum_{t=1}^{T} \log(\hat{y}_t(y_t))$ appears in the lower-left training box. ColPali RAG retrieved a different slide and produced an incorrect vague answer.}
 \label{fig:slide_loss_function}
 \end{figure}
@@ -308,9 +310,9 @@ ColPali RAG did not retrieve the gold evidence slide and was conditioned on irre
 \textbf{ColPali RAG:} ``The slide does not provide specific example tasks or benchmarks for multiple-choice QA.'' \\
 \textbf{Oracle VLM:} ``GLUE and MMLU.''
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.75\linewidth]{figures/slide_glue_mmlu.png}
+\includegraphics[width=0.6\linewidth]{figures/slide_glue_mmlu.png}
 \caption{Evidence slide for the oracle VLM ceiling example. GLUE and MMLU appear in the top-right cell of the table. Text-only retrieval happened to surface this text; ColPali RAG retrieved the wrong slide and declined to answer.}
 \label{fig:slide_glue_mmlu}
 \end{figure}
