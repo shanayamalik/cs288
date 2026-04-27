@@ -293,49 +293,69 @@ Three primary failure modes emerge from analysis of incorrect ColPali RAG respon
 % ============================================================
 \section{Qualitative Examples}
 
-\paragraph{Text-only failure, multimodal success.}
-\textbf{Course / ID:} CS~288, cs288\_q0026. \\
-\textbf{Category:} image\_diagram. \\
+\paragraph{Text-only failure, multimodal success (CS~288, image/diagram).}
 \textbf{Question:} What mathematical expression is used for length normalization? \\
-\textbf{Gold answer:} $p(\bar{x}) \propto \frac{1}{|\bar{x}|^\alpha} \sum_{i=1}^{|\bar{x}|} \log p(x_i | x_1, \ldots, x_{i-1})$. \\
+\textbf{Gold:} $p(\bar{x}) \propto \frac{1}{|\bar{x}|^\alpha} \sum_{i=1}^{|\bar{x}|} \log p(x_i | x_1, \ldots, x_{i-1})$ \\
 \textbf{Text-only:} ``The provided context does not include information about a mathematical expression used for length normalization.'' \\
 \textbf{ColPali RAG:} $p(\bar{x}) \propto \frac{1}{|\bar{x}|^\alpha} \sum_{i=1}^{|\bar{x}|} \log p(x_i \mid x_1, \ldots, x_{i-1})$ \\
 \textbf{Oracle VLM:} $p(\bar{x}) \propto \frac{1}{|\bar{x}|^\alpha} \sum_{i=1}^{|\bar{x}|} \log p(x_i \mid x_1, \ldots, x_{i-1})$
 
-This example illustrates a case where the answer is visually encoded on the slide and is not recovered by extracted text alone. ColPali RAG retrieves the relevant visual context and matches the oracle VLM behavior.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\linewidth]{figures/slide_length_norm.png}
+\caption{Evidence slide for the length normalization example. The formula appears only as a rendered image; OCR-extracted text does not capture it.}
+\label{fig:slide_length_norm}
+\end{figure}
 
-\paragraph{Image-diagram question.}
-\textbf{Course / ID:} CS~224N, cs224n\_q0020. \\
-\textbf{Category:} image\_diagram. \\
-\textbf{Question:} Which companies are depicted as having adopted NMT by 2018? \\
-\textbf{Gold answer:} Microsoft, Systran, Google, Facebook, Baidu, NetEase, Tencent, Sogou. \\
-\textbf{Text-only:} ``The lecture slides indicate that by 2018, everyone had adopted NMT, but no specific companies are named.'' \\
-\textbf{ColPali RAG:} ``Microsoft, Systran, Google, Facebook, Baidu, NetEase, Tencent, and Sogou.'' \\
-\textbf{Oracle VLM:} ``Microsoft, Systran, Google, Facebook, Baidu, NetEase, Tencent, and Sogou.''
+The formula is visually encoded on the slide and absent from extracted text. ColPali RAG retrieves the relevant image and matches oracle VLM.
 
-This example demonstrates why slide QA requires visual grounding: the relevant entities appear in a visual timeline/diagram rather than in plain extracted text.
+\paragraph{Chart/graph failure for text-only (CS~224N, chart/graph).}
+\textbf{Question:} How are the words `man', `woman', and `king' represented in the graph? \\
+\textbf{Gold:} They are represented as points with vectors indicating relationships. \\
+\textbf{Text-only:} ``The provided context does not include specific information about how the words `man', `woman', and `king' are represented in the graph.'' \\
+\textbf{ColPali RAG:} ``In the graph, the words `man', `woman', and `king' are represented as points in a 2D space, with arrows indicating the direction and relationship between them.'' \\
+\textbf{Oracle VLM:} ``In the graph, the words `man', `woman', and `king' are represented as points in a vector space. Arrows indicate the direction and relationship between these points, illustrating the analogy `man:woman :: king:?'.''
 
-\paragraph{Retrieval failure.}
-\textbf{Course / ID:} CS~288, cs288\_q0005. \\
-\textbf{Category:} text\_only. \\
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\linewidth]{figures/slide_word_vectors.png}
+\caption{Evidence slide for the word vector analogy example. The relationship between man/woman/king is expressed entirely through the scatter plot; no equivalent textual description exists in the extracted slide text.}
+\label{fig:slide_word_vectors}
+\end{figure}
+
+The answer requires reading a vector-space diagram. BM25 finds no relevant text; ColPali retrieves the slide image and correctly describes the representation.
+
+\paragraph{Retrieval failure (CS~288, text-only category).}
 \textbf{Question:} How is the loss function $L(\theta)$ defined in the training process? \\
-\textbf{Gold answer:} $L(\theta) = -\sum_{t=1}^{T} \log(\hat{y}_t(y_t))$. \\
+\textbf{Gold:} $L(\theta) = -\sum_{t=1}^{T} \log(\hat{y}_t(y_t))$ \\
 \textbf{Text-only:} ``The loss function $L(\theta)$ is defined using cross entropy loss for logistic regression [\ldots]'' \\
 \textbf{ColPali RAG:} ``The loss function $L(\theta)$ is used for learning, and an example given is cross-entropy.'' \\
 \textbf{Oracle VLM:} $\mathcal{L}(\theta) = -\sum_{t=1}^{T} \log(\hat{y}_t(y_t))$
 
-Here, ColPali RAG did not retrieve the gold evidence slide, so the generator was conditioned on incomplete or irrelevant context. This supports our error analysis that retrieval failure remains a major bottleneck.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\linewidth]{figures/slide_loss_function.png}
+\caption{Evidence slide for the retrieval failure example. The gold formula $\mathcal{L}(\theta) = -\sum_{t=1}^{T} \log(\hat{y}_t(y_t))$ appears in the lower-left training box. ColPali RAG retrieved a different slide and produced an incorrect vague answer.}
+\label{fig:slide_loss_function}
+\end{figure}
 
-\paragraph{Oracle VLM ceiling.}
-\textbf{Course / ID:} CS~224N, cs224n\_q0042. \\
-\textbf{Category:} table. \\
+ColPali RAG did not retrieve the gold evidence slide and was conditioned on irrelevant context, producing a vague answer. Oracle VLM recovers the exact formula, confirming retrieval failure as the bottleneck.
+
+\paragraph{Oracle VLM ceiling (CS~224N, table).}
 \textbf{Question:} Name two example tasks or benchmarks for multiple-choice QA. \\
-\textbf{Gold answer:} GLUE and MMLU. \\
+\textbf{Gold:} GLUE and MMLU. \\
 \textbf{Text-only:} ``GLUE and MMLU.'' \\
 \textbf{ColPali RAG:} ``The slide does not provide specific example tasks or benchmarks for multiple-choice QA.'' \\
 \textbf{Oracle VLM:} ``GLUE and MMLU.''
 
-This example shows that the generator can answer correctly when given the gold evidence slide, but retrieval errors can prevent the full system from reaching oracle performance.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\linewidth]{figures/slide_glue_mmlu.png}
+\caption{Evidence slide for the oracle VLM ceiling example. GLUE and MMLU appear in the top-right cell of the table. Text-only retrieval happened to surface this text; ColPali RAG retrieved the wrong slide and declined to answer.}
+\label{fig:slide_glue_mmlu}
+\end{figure}
+
+Text-only happens to recover the correct answer from extracted text, but retrieval failure prevents ColPali RAG from doing so. Oracle VLM, given the gold slide directly, answers correctly.
 
 
 % ============================================================
