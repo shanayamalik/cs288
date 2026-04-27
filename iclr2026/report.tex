@@ -134,6 +134,30 @@ CS~224N  & 19 & 1{,}207 & 1{,}207 & 150 & 15 & 57 & 27 & 28 & 23 \\
 
 The category distribution reflects the slide format differences across institutions. All three courses are balanced at 15 text\_only questions each by design. CS~288 and CS~224N's diagram-heavy modern slides yield the most image\_diagram questions (40\% and 38\% respectively), while CS~601's older PPT-style slides produce more layout\_aware questions (22\%).
 
+Table~\ref{tab:examples} shows one representative question from each category to illustrate the range of reasoning types required.
+
+\begin{table}[htbp]
+\caption{Representative example questions from each SlideQA category, drawn from across the three courses.}
+\label{tab:examples}
+\begin{center}
+\begin{tabular}{p{2.0cm} p{1.5cm} p{6.5cm} p{3.2cm}}
+\toprule
+\textbf{Category} & \textbf{Course} & \textbf{Question} & \textbf{Gold Answer} \\
+\midrule
+Text-only     & CS~288  & What is the total planned duration for the `Course logistics' and `First lecture (n-gram LM!)' sections? & 50 minutes \\
+\midrule
+Image/Diagram & CS~224N & How many main components are there in the noisy channel model? & Five \\
+\midrule
+Table         & CS~601  & How many sentences are marked as good English according to the n-gram column? & Four \\
+\midrule
+Chart/Graph   & CS~224N & How many S\&P 500 earnings calls cited `AI' in Q2 2023? & Approximately 250 \\
+\midrule
+Layout-Aware  & CS~601  & How many sentences are marked with a question mark? & Three \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
 \subsection{Evaluation Metrics}
 
 We report Exact Match (EM), Token~F1, and LLM-Judge scores. EM measures exact string agreement and Token~F1 measures token-level overlap with the reference answer. However, EM is overly strict for SlideQA because many correct answers differ lexically from the reference despite being semantically equivalent. We therefore use LLM-Judge as our primary metric: GPT-4o scores each predicted answer on a 1--5 correctness scale given the question and reference answer. EM and Token~F1 are reported for comparability, while LLM-Judge better captures semantic correctness under paraphrase and visually grounded descriptions. All answers are constrained to at most 10 words.
