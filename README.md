@@ -17,7 +17,15 @@ SlideQA is a QA benchmark built from lecture slides of three public NLP courses 
 4. **Chart/graph analysis** — interpreting data visualizations
 5. **Layout-aware reasoning** — spatial relationships between slide elements
 
-We pair the benchmark with a ColPali retrieval-augmented multimodal pipeline and evaluate four systems: text-only LLM, zero-shot VLM, closed-book LLM, and ColPali RAG.
+We pair the benchmark with a ColPali retrieval-augmented multimodal pipeline and evaluate four systems: closed-book GPT-4o, text-only BM25 retrieval, ColPali RAG, and an oracle VLM upper bound (given the gold evidence slide directly).
+
+## Paper
+
+The ICLR 2026 writeup is in [`iclr2026/report.tex`](iclr2026/report.tex). Compile with:
+```bash
+cd iclr2026
+pdflatex report.tex && bibtex report && pdflatex report.tex && pdflatex report.tex
+```
 
 ## Demo
 
@@ -73,19 +81,19 @@ Scores are LLM-judge ratings on a 1–5 scale, averaged over 150 questions per c
 
 ### LLM-Judge Score (1–5)
 
-| Course | Text-Only | Closed-Book | ColPali RAG | Zero-Shot VLM |
+| Course | Closed-Book | Text-Only | ColPali RAG | Oracle VLM |
 |---|---|---|---|---|
-| CS 288 (Berkeley) | 1.79 | 2.09 | 3.73 | **4.70** |
-| CS 601 (JHU) | 2.11 | 2.03 | 3.39 | **4.42** |
-| CS 224N (Stanford) | 1.53 | 1.81 | 3.75 | **4.60** |
+| CS 288 (Berkeley) | 2.09 | 1.79 | 3.73 | **4.70** |
+| CS 601 (JHU) | 2.03 | 2.11 | 3.39 | **4.42** |
+| CS 224N (Stanford) | 1.81 | 1.53 | 3.75 | **4.60** |
 
 ### Token-F1
 
-| Course | Text-Only | Closed-Book | ColPali RAG | Zero-Shot VLM |
+| Course | Closed-Book | Text-Only | ColPali RAG | Oracle VLM |
 |---|---|---|---|---|
-| CS 288 (Berkeley) | 0.143 | 0.088 | 0.292 | **0.377** |
-| CS 601 (JHU) | 0.186 | 0.090 | 0.296 | **0.373** |
-| CS 224N (Stanford) | 0.100 | 0.077 | 0.316 | **0.394** |
+| CS 288 (Berkeley) | 0.088 | 0.143 | 0.292 | **0.377** |
+| CS 601 (JHU) | 0.090 | 0.186 | 0.296 | **0.373** |
+| CS 224N (Stanford) | 0.077 | 0.100 | 0.316 | **0.394** |
 
 ### ColPali Retrieval Recall
 
@@ -95,4 +103,4 @@ Scores are LLM-judge ratings on a 1–5 scale, averaged over 150 questions per c
 | CS 601 | 0.373 | 0.600 | 0.707 |
 | CS 224N | 0.480 | 0.807 | 0.827 |
 
-Zero-shot VLM (given the gold evidence slide) is the upper bound. ColPali RAG substantially outperforms text-only and closed-book across all courses, with the gap largest on diagram- and chart-heavy questions. Retrieval recall at 5 exceeds 70% on all courses.
+Oracle VLM (given the gold evidence slide directly) is the upper bound. ColPali RAG substantially outperforms text-only and closed-book across all courses, with the gap largest on diagram- and chart-heavy questions. Retrieval recall at R@5 exceeds 70% on all courses.
