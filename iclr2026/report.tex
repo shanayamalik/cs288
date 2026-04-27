@@ -158,7 +158,7 @@ Layout-Aware  & CS~601  & How many sentences are marked with a question mark? & 
 
 \subsection{Evaluation Metrics}
 
-We report Exact Match (EM), Token~F1, and LLM-Judge scores. EM measures exact string agreement and Token~F1 measures token-level overlap with the reference answer. However, EM is overly strict for SlideQA because many correct answers differ lexically from the reference despite being semantically equivalent. We therefore use LLM-Judge as our primary metric: GPT-4o scores each predicted answer on a 1--5 correctness scale given the question and reference answer. EM and Token~F1 are reported for comparability, while LLM-Judge better captures semantic correctness under paraphrase and visually grounded descriptions. All answers are constrained to at most 10 words.
+We report Exact Match (EM), Token~F1, and LLM-Judge scores. EM measures exact string agreement and Token~F1 measures token-level overlap with the reference answer. However, EM is overly strict for SlideQA because many correct answers differ lexically from the reference despite being semantically equivalent. We therefore use LLM-Judge as our primary metric: GPT-4o scores each predicted answer on a 1--5 correctness scale given the question and reference answer. EM and Token~F1 are reported for comparability, while LLM-Judge better captures semantic correctness under paraphrase and visually grounded descriptions. All systems are prompted to produce concise answers of at most 10 words.
 
 % ============================================================
 % SECTION 4: METHOD SETUP
@@ -184,7 +184,7 @@ This approach preserves visual and structural information that is lost in text e
 
 \subsection{Implementation Details}
 
-We use top-$k=3$ retrieval for all experiments. Slide embeddings are stored in a vector index and queried using cosine similarity. All answers are generated using GPT-4o with image input and constrained to a maximum of 10 words.
+We use top-$k=3$ retrieval for all experiments. Slide embeddings are stored in a vector index and queried using cosine similarity. All answers are generated using GPT-4o with image input, with a system prompt requesting concise answers of at most 10 words.
 
 % ============================================================
 % SECTION 5: EXPERIMENTS
@@ -193,7 +193,7 @@ We use top-$k=3$ retrieval for all experiments. Slide embeddings are stored in a
 
 \subsection{Setup}
 
-We evaluate four systems on the full 450-question SlideQA benchmark: \textbf{Closed-book}, \textbf{Text-only (BM25 + LLM)}, \textbf{ColPali RAG} (ours), and \textbf{Oracle VLM}. All systems use GPT-4o (\texttt{gpt-4o-2024-11-20}) via OpenRouter as the answer generator with temperature~$= 0$ for deterministic outputs and a maximum answer length of 10 words enforced via the system prompt. For retrieval-based systems, we retrieve the top~$k{=}3$ slides per query. BM25 retrieval uses the rank-bm25 library over PyMuPDF-extracted slide text (with Tesseract OCR fallback for image-only slides). ColPali embeddings are computed using \texttt{vidore/colpali-v1.2} and stored in a flat cosine-similarity index. LLM-Judge scoring uses a separate GPT-4o call with temperature~$= 0$ and a 1--5 integer scoring rubric.
+We evaluate four systems on the full 450-question SlideQA benchmark: \textbf{Closed-book}, \textbf{Text-only (BM25 + LLM)}, \textbf{ColPali RAG} (ours), and \textbf{Oracle VLM}. All systems use GPT-4o (\texttt{gpt-4o-2024-11-20}) via OpenRouter as the answer generator with temperature~$= 0$ for deterministic outputs and a concise answer format of at most 10 words requested via the system prompt. For retrieval-based systems, we retrieve the top~$k{=}3$ slides per query. BM25 retrieval uses the rank-bm25 library over PyMuPDF-extracted slide text (with Tesseract OCR fallback for image-only slides). ColPali embeddings are computed using \texttt{vidore/colpali-v1.2} and stored in a flat cosine-similarity index. LLM-Judge scoring uses a separate GPT-4o call with temperature~$= 0$ and a 1--5 integer scoring rubric.
 
 \subsection{Results}
 
@@ -296,48 +296,44 @@ Three primary failure modes emerge from analysis of incorrect ColPali RAG respon
 \paragraph{Text-only failure, multimodal success.}
 \textbf{Course / ID:} CS~288, cs288\_q0026. \\
 \textbf{Category:} image\_diagram. \\
-\textbf{Evidence slide:} lecture\_11/slide\_046.png. \\
 \textbf{Question:} What mathematical expression is used for length normalization? \\
 \textbf{Gold answer:} $p(\bar{x}) \propto \frac{1}{|\bar{x}|^\alpha} \sum_{i=1}^{|\bar{x}|} \log p(x_i | x_1, \ldots, x_{i-1})$. \\
-\textbf{Text-only prediction:} The provided context does not include information about a mathematical expression used for length normalization. \\
-\textbf{ColPali RAG prediction:} exact symbolic formula. \\
-\textbf{Oracle VLM prediction:} same formula.
+\textbf{Text-only:} ``The provided context does not include information about a mathematical expression used for length normalization.'' \\
+\textbf{ColPali RAG:} $p(\bar{x}) \propto \frac{1}{|\bar{x}|^\alpha} \sum_{i=1}^{|\bar{x}|} \log p(x_i \mid x_1, \ldots, x_{i-1})$ \\
+\textbf{Oracle VLM:} $p(\bar{x}) \propto \frac{1}{|\bar{x}|^\alpha} \sum_{i=1}^{|\bar{x}|} \log p(x_i \mid x_1, \ldots, x_{i-1})$
 
 This example illustrates a case where the answer is visually encoded on the slide and is not recovered by extracted text alone. ColPali RAG retrieves the relevant visual context and matches the oracle VLM behavior.
 
 \paragraph{Image-diagram question.}
 \textbf{Course / ID:} CS~224N, cs224n\_q0020. \\
 \textbf{Category:} image\_diagram. \\
-\textbf{Evidence slide:} lecture\_05/slide\_052.png. \\
 \textbf{Question:} Which companies are depicted as having adopted NMT by 2018? \\
 \textbf{Gold answer:} Microsoft, Systran, Google, Facebook, Baidu, NetEase, Tencent, Sogou. \\
-\textbf{Text-only prediction:} no specific companies named. \\
-\textbf{ColPali RAG prediction:} correct list. \\
-\textbf{Oracle VLM prediction:} correct list.
+\textbf{Text-only:} ``The lecture slides indicate that by 2018, everyone had adopted NMT, but no specific companies are named.'' \\
+\textbf{ColPali RAG:} ``Microsoft, Systran, Google, Facebook, Baidu, NetEase, Tencent, and Sogou.'' \\
+\textbf{Oracle VLM:} ``Microsoft, Systran, Google, Facebook, Baidu, NetEase, Tencent, and Sogou.''
 
 This example demonstrates why slide QA requires visual grounding: the relevant entities appear in a visual timeline/diagram rather than in plain extracted text.
 
 \paragraph{Retrieval failure.}
 \textbf{Course / ID:} CS~288, cs288\_q0005. \\
 \textbf{Category:} text\_only. \\
-\textbf{Evidence slide:} lecture\_05/slide\_024.png. \\
 \textbf{Question:} How is the loss function $L(\theta)$ defined in the training process? \\
-\textbf{Gold answer:} $L(\theta)$ is defined as $-\Sigma_{t=1}^{T} \log(\hat{y}_t(y_t))$. \\
-\textbf{Text-only prediction:} incorrect cross-entropy description. \\
-\textbf{ColPali RAG prediction:} partial cross-entropy phrasing. \\
-\textbf{Oracle VLM prediction:} correct formula text.
+\textbf{Gold answer:} $L(\theta) = -\sum_{t=1}^{T} \log(\hat{y}_t(y_t))$. \\
+\textbf{Text-only:} ``The loss function $L(\theta)$ is defined using cross entropy loss for logistic regression [\ldots]'' \\
+\textbf{ColPali RAG:} ``The loss function $L(\theta)$ is used for learning, and an example given is cross-entropy.'' \\
+\textbf{Oracle VLM:} $\mathcal{L}(\theta) = -\sum_{t=1}^{T} \log(\hat{y}_t(y_t))$
 
 Here, ColPali RAG did not retrieve the gold evidence slide, so the generator was conditioned on incomplete or irrelevant context. This supports our error analysis that retrieval failure remains a major bottleneck.
 
 \paragraph{Oracle VLM ceiling.}
 \textbf{Course / ID:} CS~224N, cs224n\_q0042. \\
 \textbf{Category:} table. \\
-\textbf{Evidence slide:} lecture\_13/slide\_031.png. \\
 \textbf{Question:} Name two example tasks or benchmarks for multiple-choice QA. \\
 \textbf{Gold answer:} GLUE and MMLU. \\
-\textbf{Text-only prediction:} GLUE and MMLU. \\
-\textbf{ColPali RAG prediction:} failed to answer. \\
-\textbf{Oracle VLM prediction:} GLUE and MMLU.
+\textbf{Text-only:} ``GLUE and MMLU.'' \\
+\textbf{ColPali RAG:} ``The slide does not provide specific example tasks or benchmarks for multiple-choice QA.'' \\
+\textbf{Oracle VLM:} ``GLUE and MMLU.''
 
 This example shows that the generator can answer correctly when given the gold evidence slide, but retrieval errors can prevent the full system from reaching oracle performance.
 
@@ -357,7 +353,7 @@ The gap between ColPali RAG and the oracle VLM baseline shows that retrieval rem
 \section{Limitations and Broader Impact}
 
 \paragraph{Limitations.}
-SlideQA has several limitations that should be considered when interpreting our results. First, the benchmark is constructed entirely from NLP courses at three English-language institutions; question style and difficulty may not generalize to other disciplines (e.g., medicine, law, or STEM lab courses) or to slides in non-English languages. Second, QA pairs are generated by GPT-4o and then filtered and manually reviewed, meaning the benchmark may inherit biases in GPT-4o's question-generation tendencies, such as a preference for visually salient or numerically precise questions. Third, our answer-length constraint of at most 10 words excludes open-ended questions requiring longer explanations, limiting the complexity of reasoning we can evaluate. Finally, all four systems use GPT-4o for answer generation, and LLM-Judge scoring also relies on GPT-4o; results may shift with different backbone models or judge models.
+SlideQA has several limitations that should be considered when interpreting our results. First, the benchmark is constructed entirely from NLP courses at three English-language institutions; question style and difficulty may not generalize to other disciplines (e.g., medicine, law, or STEM lab courses) or to slides in non-English languages. Second, QA pairs are generated by GPT-4o and then filtered and manually reviewed, meaning the benchmark may inherit biases in GPT-4o's question-generation tendencies, such as a preference for visually salient or numerically precise questions. Third, gold answers in SlideQA are filtered to at most 10 words during curation, which excludes open-ended questions requiring longer explanations and limits the complexity of reasoning we can evaluate. Finally, all four systems use GPT-4o for answer generation, and LLM-Judge scoring also relies on GPT-4o; results may shift with different backbone models or judge models.
 
 \paragraph{Broader Impact.}
 SlideQA is designed to advance the accessibility of educational materials. A reliable multimodal QA system over lecture slides could help students review course content, assist instructors in automatically generating quizzes, and improve accessibility for students who benefit from alternative question-and-answer formats. We use only publicly available lecture slides and do not collect any personal data. The QA pairs are synthetically generated and manually reviewed; they do not contain sensitive personal information. As with any AI system that processes educational content, care should be taken to validate outputs before deploying them in instructional settings, particularly given the hallucination failure mode identified in our error analysis.
