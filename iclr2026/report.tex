@@ -61,7 +61,7 @@
 \begin{abstract}
 Existing question-answering (QA) systems rely predominantly on text-only retrieval, even though lecture slides are a primary medium for university instruction. This is insufficient because slides integrate visuals such as diagrams, formulas, tables, charts, and spatial structure that text-based systems fail to capture, often leading to incomplete or incorrect answers. Moreover, there is no standardized benchmark for evaluating multimodal QA over lecture slides. To address this gap, we introduce SlideQA, a multimodal benchmark for lecture slide QA built from three public NLP courses at UC Berkeley, Stanford, and Johns Hopkins. The benchmark includes five categories of questions: (1) text-only reasoning, (2) image and diagram interpretation, including mathematical expressions, (3) table comprehension, (4) chart and graph analysis, and (5) layout-aware reasoning.
 
-We construct SlideQA from publicly available lecture PDFs and curate 450 question-answer pairs (150 per course) spanning three institutions and diverse slide formats. We evaluate four systems: closed-book GPT-4o, a text-only BM25 baseline, a ColPali retrieval-augmented generation (RAG) pipeline, and an oracle VLM upper bound. ColPali RAG achieves an average LLM-Judge score of 3.62 (on a 1--5 scale), compared to 1.81 for text-only retrieval and 4.57 for oracle VLM, confirming that multimodal retrieval substantially outperforms text-based approaches while narrowing the gap to oracle slide access. SlideQA provides a reproducible benchmark for multimodal reasoning over instructional materials and enables systematic evaluation of retrieval-augmented VLM agents in educational settings.\footnote{Code and data are available at \url{https://github.com/shanayamalik/cs288-sp26-slideQA}. % TODO: fork to a shared team repo and update this link before submission}
+We construct SlideQA from publicly available lecture PDFs and curate 450 question-answer pairs (150 per course) spanning three institutions and diverse slide formats. We evaluate four systems: closed-book GPT-4o, a text-only BM25 baseline, a ColPali retrieval-augmented generation (RAG) pipeline, and an oracle VLM upper bound. ColPali RAG achieves an average LLM-Judge score of 3.62 (on a 1--5 scale), compared to 1.81 for text-only retrieval and 4.57 for oracle VLM, confirming that multimodal retrieval substantially outperforms text-based approaches while narrowing the gap to oracle slide access. SlideQA provides a reproducible benchmark for multimodal reasoning over instructional materials and enables systematic evaluation of retrieval-augmented VLM agents in educational settings.\footnote{Code and data are available at \url{https://github.com/shanayamalik/cs288-sp26-slideQA}.}% TODO: fork to a shared team repo and update this URL before submission
 \end{abstract}
 
 % ============================================================
@@ -265,9 +265,9 @@ ColPali RAG shows the largest improvement over text-only on chart/graph question
 Three primary failure modes emerge from analysis of incorrect ColPali RAG responses. First, \emph{retrieval failure}: when the gold evidence slide is absent from the top-$k$ results ($\sim$22\% of questions at $k{=}5$), the model is conditioned on irrelevant visual context and generates confident but factually wrong answers. Second, \emph{VLM hallucination}: even with the correct slide retrieved, GPT-4o occasionally ignores specific visual elements in favor of parametric knowledge, most commonly on layout-aware questions that require precise spatial reading of the slide. Third, \emph{metric misalignment}: Token~F1 penalizes correct paraphrased answers, creating a large divergence from LLM-Judge scores (ColPali RAG: Token~F1 0.301 vs.\ LLM-Judge 3.62/5.0). This motivates our use of LLM-Judge as the primary evaluation metric.
 
 % ============================================================
-% SECTION 7: QUALITATIVE EXAMPLES
+% SECTION 6.4: QUALITATIVE EXAMPLES (subsection of Analysis)
 % ============================================================
-\section{Qualitative Examples}
+\subsection{Qualitative Examples}
 \label{sec:qualitative}
 
 \paragraph{Text-only failure, multimodal success (CS~288, image/diagram).}
@@ -336,24 +336,22 @@ Text-only happens to recover the correct answer from extracted text, but retriev
 
 
 % ============================================================
-% SECTION 8: CONCLUSION
-% ============================================================
-\section{Conclusion}
-
-We introduced SlideQA, a multimodal benchmark for lecture slide question answering across three public NLP courses. SlideQA targets five forms of reasoning that commonly appear in instructional slides: text-only reasoning, image and diagram interpretation, table comprehension, chart and graph analysis, and layout-aware reasoning. Our experiments show that text-only retrieval is insufficient and multimodal retrieval with ColPali substantially improves answer quality by preserving visual and spatial slide information (LLM-Judge 3.62 vs.\ 1.81 for text-only, with an oracle ceiling of 4.57).
-
-The gap between ColPali RAG and the oracle VLM baseline shows that retrieval remains the primary bottleneck: when the gold evidence slide is absent from the top-$k$ results ($\sim$22\% of questions), the generator is conditioned on irrelevant context. Future work should improve slide retrieval precision, scale SlideQA to more courses and domains, and evaluate stronger multimodal models for visually grounded educational question answering.
-
-% ============================================================
-% SECTION 9: LIMITATIONS AND BROADER IMPACT
+% SECTION 7: LIMITATIONS AND BROADER IMPACT
 % ============================================================
 \section{Limitations and Broader Impact}
 
 \paragraph{Limitations.}
-SlideQA has several limitations that should be considered when interpreting our results. First, the benchmark is constructed entirely from NLP courses at three English-language institutions; question style and difficulty may not generalize to other disciplines (e.g., medicine, law, or STEM lab courses) or to slides in non-English languages. Second, QA pairs are generated by GPT-4o and then filtered and manually reviewed, meaning the benchmark may inherit biases in GPT-4o's question-generation tendencies, such as a preference for visually salient or numerically precise questions. Third, gold answers in SlideQA are filtered to at most 10 words during curation, which excludes open-ended questions requiring longer explanations and limits the complexity of reasoning we can evaluate. Finally, all four systems use GPT-4o for answer generation, and LLM-Judge scoring also relies on GPT-4o; results may shift with different backbone models or judge models.
+SlideQA has several limitations. The benchmark is constructed entirely from NLP courses at three English-language institutions; question style and difficulty may not generalize to other disciplines or non-English slides. QA pairs are generated by GPT-4o and manually reviewed, so the benchmark may inherit GPT-4o's question-generation biases. Gold answers are filtered to at most 10 words during curation, which excludes open-ended questions and limits reasoning complexity. Finally, all four systems use GPT-4o for answer generation, and LLM-Judge scoring also relies on GPT-4o; results may shift with different backbone or judge models.
 
 \paragraph{Broader Impact.}
-SlideQA is designed to advance the accessibility of educational materials. A reliable multimodal QA system over lecture slides could help students review course content, assist instructors in automatically generating quizzes, and improve accessibility for students who benefit from alternative question-and-answer formats. We use only publicly available lecture slides and do not collect any personal data. The QA pairs are synthetically generated and manually reviewed; they do not contain sensitive personal information. As with any AI system that processes educational content, care should be taken to validate outputs before deploying them in instructional settings, particularly given the hallucination failure mode identified in our error analysis.
+SlideQA is designed to advance the accessibility of educational materials. A reliable multimodal QA system over lecture slides could help students review course content, assist instructors in generating quizzes, and improve accessibility for students who benefit from alternative question-and-answer formats. We use only publicly available lecture slides and do not collect personal data. As with any AI system processing educational content, outputs should be validated before deployment in instructional settings, particularly given the hallucination failure mode identified in our error analysis.
+
+% ============================================================
+% SECTION 8: CONCLUSION
+% ============================================================
+\section{Conclusion}
+
+We introduced SlideQA, a multimodal benchmark for lecture slide question answering across three public NLP courses, targeting five reasoning categories: text-only, image/diagram, table, chart/graph, and layout. Our experiments show that text-only retrieval is insufficient and multimodal retrieval with ColPali substantially improves answer quality (LLM-Judge 3.62 vs.\ 1.81 for text-only; oracle ceiling 4.57). The remaining gap to the oracle baseline is driven primarily by retrieval failures—when the gold evidence slide is missing from the top-$k$ context ($\sim$22\% of questions), the generator is conditioned on irrelevant slides. Future work should improve slide retrieval precision, scale SlideQA to more courses and domains, and explore stronger multimodal models for visually grounded educational QA.
 
 % ============================================================
 % REFERENCES
