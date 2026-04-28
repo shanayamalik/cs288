@@ -9,5 +9,5 @@
 *.fdb_latexmk
 *.toc
 
-# Compiled PDF (keep report.pdf out of git)
-report.pdf
+# Compiled PDFs (keep out of git)
+*.pdf

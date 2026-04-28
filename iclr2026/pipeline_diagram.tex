@@ -1,0 +1,95 @@
+\documentclass[tikz, border=14pt]{standalone}
+\usepackage{tikz}
+\usepackage{fontenc}
+\usetikzlibrary{arrows.meta, positioning, fit, backgrounds}
+
+% Standard RAG colors (muted)
+\definecolor{stdgray}{RGB}{180,180,180}
+\definecolor{badred}{RGB}{220,53,69}
+\definecolor{darktext}{RGB}{40,40,40}
+
+% ColPali RAG colors (rainbow progression)
+\definecolor{cpblue}{RGB}{66,133,244}
+\definecolor{cpteal}{RGB}{0,172,193}
+\definecolor{cpgreen}{RGB}{52,168,83}
+\definecolor{cporange}{RGB}{251,140,0}
+\definecolor{cppurple}{RGB}{142,68,173}
+\definecolor{cpgold}{RGB}{255,193,7}
+
+\begin{document}
+
+\begin{tikzpicture}[
+  node distance=0.5cm and 0.55cm,
+  box/.style={rectangle, rounded corners=5pt, minimum width=1.65cm, minimum height=0.75cm,
+              text centered, font=\small\sffamily\bfseries, inner sep=5pt},
+  sub/.style={font=\fontsize{6}{7}\selectfont\sffamily, text=darktext!70},
+  % Standard RAG styles
+  stdbox/.style={box, draw=stdgray!80, fill=stdgray!18, text=darktext},
+  badbox/.style={box, draw=badred!80, fill=badred!18, text=badred!80!black},
+  % ColPali per-step colors
+  cp1/.style={box, draw=cpblue,   fill=cpblue!18,   text=cpblue!80!black},
+  cp2/.style={box, draw=cpteal,   fill=cpteal!18,   text=cpteal!80!black},
+  cp3/.style={box, draw=cpgreen,  fill=cpgreen!18,  text=cpgreen!80!black},
+  cp4/.style={box, draw=cporange, fill=cporange!18, text=cporange!80!black},
+  cp5/.style={box, draw=cppurple, fill=cppurple!18, text=cppurple!80!black},
+  cp6/.style={box, draw=cpgold!80!black, fill=cpgold!30, text=cpgold!60!black},
+  % Arrows
+  stdarrow/.style={-{Stealth[length=6pt]}, thick, color=stdgray!80!black},
+  cparrow/.style={-{Stealth[length=6pt]}, thick, color=darktext!50},
+  rowlabel/.style={font=\small\sffamily\bfseries, text=darktext},
+]
+
+% ── Standard RAG row ──────────────────────────────────────────
+\node[rowlabel] (stdlabel) {Standard RAG:};
+
+\node[stdbox, right=0.9cm of stdlabel] (pdf1) {PDF};
+\node[badbox,  right=0.5cm of pdf1]    (ocr)  {OCR ✗};
+\node[stdbox,  right=0.5cm of ocr]     (text) {text chunks};
+\node[stdbox,  right=0.5cm of text]    (bm25) {BM25};
+\node[stdbox,  right=0.5cm of bm25]    (llm1) {LLM};
+\node[stdbox,  right=0.5cm of llm1]    (ans1) {answer};
+
+\draw[stdarrow] (pdf1) -- (ocr);
+\draw[stdarrow] (ocr)  -- (text);
+\draw[stdarrow] (text) -- (bm25);
+\draw[stdarrow] (bm25) -- (llm1);
+\draw[stdarrow] (llm1) -- (ans1);
+
+\node[sub, below=0.08cm of pdf1] {input lecture PDF};
+\node[sub, text=badred, below=0.08cm of ocr] {loses visual content!};
+\node[sub, below=0.08cm of text] {split into text blocks};
+\node[sub, below=0.08cm of bm25] {sparse keyword search};
+\node[sub, below=0.08cm of llm1] {text-only generation};
+\node[sub, below=0.08cm of ans1] {generated answer};
+
+% ── ColPali RAG row ───────────────────────────────────────────
+\node[rowlabel, below=2.0cm of stdlabel] (colpalilabel)
+  {ColPali RAG \textbf{(ours)}:};
+
+\node[cp1, right=0.9cm of colpalilabel] (pdf2)   {PDF};
+\node[cp2, right=0.5cm of pdf2]          (imgs)   {slide images};
+\node[cp3, right=0.5cm of imgs]          (embed)  {ColPali\\embed};
+\node[cp4, right=0.5cm of embed]         (search) {cosine\\search};
+\node[cp5, right=0.5cm of search]        (gpt4o)  {GPT-4o\\(vision)};
+\node[cp6, right=0.5cm of gpt4o]         (ans2)   {answer};
+
+\draw[cparrow] (pdf2)   -- (imgs);
+\draw[cparrow] (imgs)   -- (embed);
+\draw[cparrow] (embed)  -- (search);
+\draw[cparrow] (search) -- (gpt4o);
+\draw[cparrow] (gpt4o)  -- (ans2);
+
+% sublabels
+\node[sub, below=0.08cm of pdf2]   {input lecture PDF};
+\node[sub, below=0.08cm of imgs]   {pdf2image (PNG per page)};
+\node[sub, below=0.08cm of embed]  {colpali-v1.2 (image→vector)};
+\node[sub, below=0.08cm of search] {find top-3 most similar slides};
+\node[sub, below=0.08cm of gpt4o]  {answer from slide images (gpt-4o)};
+\node[sub, below=0.08cm of ans2]   {visually-grounded answer};
+
+\node[sub, text=cpgreen!80!black, below=0.45cm of imgs]
+  {no text extraction --- visuals preserved};
+
+\end{tikzpicture}
+
+\end{document}

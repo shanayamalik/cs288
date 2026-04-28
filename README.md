@@ -29,7 +29,7 @@ pdflatex report.tex && bibtex report && pdflatex report.tex && pdflatex report.t
 
 ## Demo
 
-An interactive demo is available at **https://shanaya-is-a-genius.streamlit.app/**. Browse questions by course, compare model outputs side by side, and view the leaderboard.
+An interactive demo is available at **https://cs288-shanaya.streamlit.app/**. Browse questions by course, compare model outputs side by side, and view the leaderboard.
 
 ## Setup
 
