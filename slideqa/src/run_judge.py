@@ -48,7 +48,7 @@ RESULTS_DIR = DATA_DIR / "results"
 ANNOTATIONS_DIR = DATA_DIR / "annotations"
 
 COURSES = ["cs288", "cs601", "cs224n"]
-BASELINES = ["text_only", "zero_shot_vlm", "closed_book", "colpali_rag"]
+BASELINES = ["text_only", "zero_shot_vlm", "closed_book", "colpali_rag", "dense_text_rag"]
 CATEGORIES = ["text_only", "image_diagram", "table", "chart_graph", "layout_aware"]
 
 OPENROUTER_BASE = "https://openrouter.ai/api/v1"
