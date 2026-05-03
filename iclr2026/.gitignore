@@ -11,3 +11,6 @@
 
 # Compiled PDFs (keep out of git)
 *.pdf
+
+# Generated images from PDF conversion
+category_chart.png
