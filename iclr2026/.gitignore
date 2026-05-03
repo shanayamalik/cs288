@@ -1,0 +1,16 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+
+# Compiled PDFs (keep out of git)
+*.pdf
+
+# Generated images from PDF conversion
+category_chart.png

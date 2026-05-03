@@ -1,0 +1,45 @@
+\documentclass[tikz, border=14pt]{standalone}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{fontenc}
+\usepackage{array}
+
+\definecolor{headerbg}{RGB}{52,168,83}       % green header
+\definecolor{headerfg}{RGB}{255,255,255}     % white text
+\definecolor{rowalt}{RGB}{240,248,241}       % light green row tint
+\definecolor{totalrow}{RGB}{220,240,222}     % slightly stronger for total row
+\definecolor{darktext}{RGB}{30,30,30}
+
+\begin{document}
+\sffamily
+\begin{tabular}{
+  >{\bfseries}l
+  r r r
+  >{\columncolor{rowalt}}r
+  >{\columncolor{rowalt}}r
+  >{\columncolor{rowalt}}r
+  >{\columncolor{rowalt}}r
+  >{\columncolor{rowalt}}r
+}
+\toprule
+\rowcolor{headerbg}
+\textcolor{headerfg}{\textbf{Course}} &
+\textcolor{headerfg}{\textbf{Lectures}} &
+\textcolor{headerfg}{\textbf{Slides}} &
+\textcolor{headerfg}{\textbf{Questions}} &
+\textcolor{headerfg}{\textbf{Text}} &
+\textcolor{headerfg}{\textbf{Image}} &
+\textcolor{headerfg}{\textbf{Table}} &
+\textcolor{headerfg}{\textbf{Chart}} &
+\textcolor{headerfg}{\textbf{Layout}} \\
+\midrule
+CS 288 (Berkeley) & 17 & 1,301 & 150 & 15 & 60 & 28 & 21 & 26 \\
+CS 601 (JHU)      & 19 & 1,264 & 150 & 15 & 59 & 27 & 16 & 33 \\
+CS 224N (Stanford)& 19 & 1,207 & 150 & 15 & 57 & 27 & 28 & 23 \\
+\midrule
+\rowcolor{totalrow}
+\textbf{Total} & \textbf{55} & \textbf{3,772} & \textbf{450} & \textbf{45} & \textbf{176} & \textbf{82} & \textbf{65} & \textbf{82} \\
+\bottomrule
+\end{tabular}
+\end{document}

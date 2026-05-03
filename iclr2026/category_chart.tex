@@ -1,0 +1,92 @@
+\documentclass[tikz, border=14pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{fontenc}
+
+% Pastel palette
+\definecolor{closedbook}{RGB}{180,200,230}   % pastel blue
+\definecolor{textonly}{RGB}{200,170,220}      % pastel purple
+\definecolor{colpali}{RGB}{130,210,160}       % pastel green — ours
+\definecolor{oracle}{RGB}{210,210,210}        % light grey — oracle (upper bound, not a real system)
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  ybar,
+  bar width=8pt,
+  width=15cm,
+  height=8.5cm,
+  enlarge x limits=0.12,
+  ymin=0, ymax=5.5,
+  ylabel={LLM-Judge Score (1--5)},
+  ylabel style={font=\footnotesize\sffamily},
+  symbolic x coords={Chart/Graph, Table, Text-Only, Layout-Aware, Image/Diag.},
+  xtick=data,
+  xticklabel style={font=\footnotesize\sffamily, rotate=15, anchor=north east},
+  ytick={1,2,3,4,5},
+  yticklabel style={font=\footnotesize\sffamily},
+  legend style={
+    at={(0.5,1.04)}, anchor=south,
+    legend columns=4,
+    font=\footnotesize\sffamily,
+    draw=none,
+    column sep=5pt,
+  },
+  legend cell align=left,
+  axis line style={gray!60},
+  tick style={gray!60},
+  grid=major,
+  grid style={dotted, gray!40},
+  axis background/.style={fill=white},
+  nodes near coords,
+  nodes near coords style={font=\fontsize{5.5}{6.5}\selectfont\sffamily, rotate=90, anchor=west},
+  every node near coord/.append style={xshift=1pt},
+]
+
+% Closed-Book
+\addplot[fill=closedbook, draw=closedbook!80!black]
+  coordinates {
+    (Chart/Graph,  1.84)
+    (Table,        1.62)
+    (Text-Only,    2.29)
+    (Layout-Aware, 2.06)
+    (Image/Diag.,  2.06)
+  };
+\addlegendentry{Closed-Book GPT-4o}
+
+% Text-Only BM25
+\addplot[fill=textonly!70, draw=textonly!90!black]
+  coordinates {
+    (Chart/Graph,  1.22)
+    (Table,        1.85)
+    (Text-Only,    2.47)
+    (Layout-Aware, 1.85)
+    (Image/Diag.,  1.81)
+  };
+\addlegendentry{Text-Only BM25}
+
+% ColPali RAG (ours)
+\addplot[fill=colpali, draw=colpali!80!black, very thick]
+  coordinates {
+    (Chart/Graph,  3.95)
+    (Table,        3.74)
+    (Text-Only,    3.84)
+    (Layout-Aware, 3.58)
+    (Image/Diag.,  3.41)
+  };
+\addlegendentry{ColPali RAG \textbf{(ours)}}
+
+% Oracle VLM
+\addplot[fill=oracle!80, draw=oracle!60!black]
+  coordinates {
+    (Chart/Graph,  4.59)
+    (Table,        4.55)
+    (Text-Only,    4.67)
+    (Layout-Aware, 4.46)
+    (Image/Diag.,  4.60)
+  };
+\addlegendentry{Oracle VLM (given gold slide — upper bound)}
+
+\end{axis}
+\end{tikzpicture}
+\end{document}
