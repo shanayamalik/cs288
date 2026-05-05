@@ -38,7 +38,7 @@ University of California, Berkeley \\
 \begin{abstract}
 Existing question-answering (QA) systems rely predominantly on text-only retrieval, even though lecture slides are a primary medium for university instruction. This is insufficient because slides integrate visuals such as diagrams, formulas, tables, charts, and spatial structure that text-based systems fail to capture, often leading to incomplete or incorrect answers. Moreover, there is no standardized benchmark for evaluating multimodal QA over lecture slides. To address this gap, we introduce SlideQA, a multimodal benchmark for lecture slide QA built from three public NLP courses at UC Berkeley, Stanford, and Johns Hopkins. The benchmark includes five categories of questions: (1) text-only reasoning, (2) image and diagram interpretation, including mathematical expressions, (3) table comprehension, (4) chart and graph analysis, and (5) layout-aware reasoning.
 
-We construct SlideQA from publicly available lecture PDFs and curate 450 question-answer pairs (150 per course) spanning three institutions and diverse slide formats. We evaluate five systems: closed-book GPT-4o, a text-only BM25 baseline, a dense text retrieval baseline using sentence-transformer embeddings, a ColPali retrieval-augmented generation (RAG) pipeline, and an oracle VLM upper bound. ColPali RAG achieves an average LLM-Judge score of 3.62 (on a 1--5 scale), compared to 2.12 for dense text retrieval, 1.81 for BM25 text-only, and 4.57 for oracle VLM, confirming that multimodal retrieval substantially outperforms text-based approaches while narrowing the gap to oracle slide access. SlideQA provides a reproducible benchmark for multimodal reasoning over instructional materials and enables systematic evaluation of retrieval-augmented VLM agents in educational settings.\footnote{Code and data are available at \url{https://github.com/shanayamalik/cs288-sp26-slideQA}.}% TODO: fork to a shared team repo and update this URL before submission
+We construct SlideQA from publicly available lecture PDFs and curate 450 question-answer pairs (150 per course) spanning three institutions and diverse slide formats. We evaluate five systems: closed-book GPT-4o, a text-only BM25 baseline, a dense text retrieval baseline using sentence-transformer embeddings, a ColPali retrieval-augmented generation (RAG) pipeline, and an oracle VLM upper bound. ColPali RAG achieves an average LLM-Judge score of 3.62 (on a 1--5 scale), compared to 2.12 for dense text retrieval, 1.81 for BM25 text-only, and 4.57 for oracle VLM, confirming that multimodal retrieval substantially outperforms text-based approaches while narrowing the gap to oracle slide access. SlideQA provides a reproducible benchmark for multimodal reasoning over instructional materials and enables systematic evaluation of retrieval-augmented VLM agents in educational settings.
 \end{abstract}
 
 % ============================================================
@@ -72,8 +72,11 @@ Traditional RAG pipelines discard visual information by converting documents to 
 % SECTION 3: BASELINE SETUP
 % ============================================================
 \section{Baseline Setup}
+\label{sec:baselines}
 
 \subsection{Implementation Details}
+
+Throughout this paper, we use \textit{text-only} to refer specifically to the BM25 sparse retrieval baseline, and \textit{text-based} as a general adjective for any approach that operates on extracted slide text rather than slide images (encompassing both BM25 and dense text retrieval).
 
 We evaluate five systems using GPT-4o (via OpenRouter). The \textbf{closed-book baseline} provides GPT-4o with only the question and no slide context, measuring how much can be answered from parametric knowledge alone. The \textbf{text-only baseline (BM25 + LLM)} retrieves the top-3 slides using BM25 over extracted slide text (PyMuPDF with OCR fallback) and passes the concatenated text to GPT-4o with no visual input. The \textbf{dense text retrieval baseline} replaces BM25 sparse matching with cosine similarity over sentence embeddings (\texttt{all-MiniLM-L6-v2}) computed from the same extracted slide text, passing retrieved text to GPT-4o without visual input. The \textbf{ColPali RAG system} retrieves visually relevant slides using image-based vision-language embeddings and passes the retrieved slide images to GPT-4o. The \textbf{oracle VLM baseline} provides GPT-4o with the gold evidence slide image directly, bypassing retrieval and serving as an upper bound given perfect slide selection.
 
@@ -111,18 +114,18 @@ The category distribution reflects the slide format differences across instituti
 
 \subsection{Evaluation Metrics}
 
-We report Exact Match (EM), Token~F1, and LLM-Judge scores. EM measures exact string agreement and Token~F1 measures token-level overlap with the reference answer. However, EM is overly strict for SlideQA because many correct answers differ lexically from the reference despite being semantically equivalent. We therefore use LLM-Judge as our primary metric: GPT-4o scores each predicted answer on a 1--5 correctness scale given the question and reference answer. EM and Token~F1 are reported for comparability, while LLM-Judge better captures semantic correctness under paraphrase and visually grounded descriptions. All systems are prompted to produce concise answers of at most 10 words.
+We report Token~F1 and LLM-Judge scores. Token~F1 measures token-level overlap with the reference answer. However, Token~F1 is overly strict for SlideQA because many correct answers differ lexically from the reference despite being semantically equivalent. We therefore use LLM-Judge as our primary metric: GPT-4o scores each predicted answer on a 1--5 correctness scale given the question and reference answer. Token~F1 is reported for comparability, while LLM-Judge better captures semantic correctness under paraphrase and visually grounded descriptions. All systems are prompted to produce concise answers of at most 10 words.
 
 % ============================================================
-% SECTION 4: METHOD SETUP
+% SECTION 4: COLPALI RAG PIPELINE
 % ============================================================
-\section{Method Setup}
+\section{ColPali RAG Pipeline}
 
 \subsection{Motivation}
 
-While the oracle baseline demonstrates the importance of visual information, it assumes perfect access to the correct slide. In practice, the key challenge is retrieving relevant slides from a large collection. Our goal is to bridge this gap by introducing a multimodal retrieval pipeline that operates directly on slide images.
+The baselines described in Section~\ref{sec:baselines} share a common limitation: they all operate on extracted slide text and discard visual content. Our proposed system replaces text-based retrieval with image-based retrieval using vision-language embeddings, preserving the visual and structural information that text extraction loses. In practice, the key challenge is retrieving relevant slides from a large collection without text extraction; our goal is to bridge the gap between text-only retrieval and the oracle upper bound.
 
-\subsection{Multimodal Retrieval Pipeline}
+\subsection{Pipeline Design}
 
 Our approach replaces text-based retrieval with image-based retrieval using vision-language embeddings. The pipeline consists of four stages:
 
@@ -132,8 +135,6 @@ Our approach replaces text-based retrieval with image-based retrieval using visi
     \item \textbf{Retrieval}: Given a question, we compute a query embedding and retrieve the top-$k$ most relevant slides using cosine similarity.
     \item \textbf{Answer Generation}: Retrieved slide images are passed to GPT-4o along with the question to generate an answer.
 \end{enumerate}
-
-This approach preserves visual and structural information that is lost in text extraction pipelines.
 
 \subsection{Implementation Details}
 
@@ -150,7 +151,7 @@ We evaluate five systems on the full 450-question SlideQA benchmark: \textbf{Clo
 
 \subsection{Results}
 
-We evaluate all four systems on the full SlideQA benchmark (150 questions per course, 450 total). Table~\ref{tab:main_results} reports Token~F1 and LLM-Judge scores (1--5 scale) for each course. LLM-Judge uses GPT-4o to score each predicted answer on a 1--5 scale for correctness, and serves as our primary metric due to its robustness to paraphrasing.
+Table~\ref{tab:main_results} reports Token~F1 and LLM-Judge scores (1--5 scale) for each course across the full 450-question benchmark.
 
 \begin{table}[htbp]
 \caption{Main results on SlideQA (150 questions per course, 450 total). LLM-Judge is on a 1--5 scale. Oracle VLM is given the gold evidence slide directly and serves as an upper bound. $^\dagger$Our method.}
@@ -190,7 +191,7 @@ The consistent advantage of ColPali RAG over text-only retrieval across all cour
 \subsection{Ablations}
 
 \paragraph{Retrieval vs Closed-Book}
-Comparing ColPali RAG (average LLM-Judge: 3.62) to closed-book generation (1.98) isolates the contribution of retrieval. The large gap demonstrates that retrieved slide images provide essential grounding that parametric knowledge cannot substitute. The advantage is most pronounced for CS~288 (3.73 vs.\ 2.09) and CS~224N (3.75 vs.\ 1.81), where slides contain course-specific notation and diagrams unlikely to appear verbatim in training data. For CS~601 the gap narrows (3.39 vs.\ 2.03), consistent with its more general text-heavy content.
+Comparing ColPali RAG (average LLM-Judge: 3.62) to closed-book generation (1.98) isolates the contribution of retrieval. The large gap demonstrates that retrieved slide images provide essential grounding that parametric knowledge cannot substitute.
 
 \paragraph{Text vs Multimodal Retrieval}
 Comparing ColPali RAG (average Token~F1: 0.301) to dense text retrieval (0.158) and BM25 (0.143) isolates the benefit of visual over textual retrieval. The $1.9\times$ Token~F1 improvement over dense text retrieval confirms that ColPali embeddings recover information that even dense semantic search over extracted text cannot, with the bottleneck being the loss of visual information during text extraction rather than the retrieval paradigm. Table~\ref{tab:recall} shows per-course retrieval recall; averaged across courses, the pipeline surfaces at least one relevant slide in the top five for 78\% of questions (R@5$=$0.776). The remaining 22\% where retrieval fails drives the residual gap between ColPali RAG and Oracle VLM.
@@ -256,7 +257,7 @@ Three primary failure modes emerge from analysis of incorrect ColPali RAG respon
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\linewidth]{figures/slide_length_norm.png}
+\includegraphics[width=0.5\linewidth]{figures/slide_length_norm.png}
 \caption{Evidence slide for the length normalization example. The formula appears only as a rendered image; OCR-extracted text does not capture it.}
 \label{fig:slide_length_norm}
 \end{figure}
@@ -272,7 +273,7 @@ The formula is visually encoded on the slide and absent from extracted text. Col
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\linewidth]{figures/slide_word_vectors.png}
+\includegraphics[width=0.5\linewidth]{figures/slide_word_vectors.png}
 \caption{Evidence slide for the word vector analogy example. The relationship between man/woman/king is expressed entirely through the scatter plot; no equivalent textual description exists in the extracted slide text.}
 \label{fig:slide_word_vectors}
 \end{figure}
@@ -288,7 +289,7 @@ The answer requires reading a vector-space diagram. BM25 finds no relevant text;
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\linewidth]{figures/slide_loss_function.png}
+\includegraphics[width=0.5\linewidth]{figures/slide_loss_function.png}
 \caption{Evidence slide for the retrieval failure example. The gold formula $\mathcal{L}(\theta) = -\sum_{t=1}^{T} \log(\hat{y}_t(y_t))$ appears in the lower-left training box. ColPali RAG retrieved a different slide and produced an incorrect vague answer.}
 \label{fig:slide_loss_function}
 \end{figure}
@@ -304,31 +305,25 @@ ColPali RAG did not retrieve the gold evidence slide and was conditioned on irre
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\linewidth]{figures/slide_glue_mmlu.png}
+\includegraphics[width=0.5\linewidth]{figures/slide_glue_mmlu.png}
 \caption{Evidence slide for the oracle VLM ceiling example. GLUE and MMLU appear in the top-right cell of the table. Text-only retrieval happened to surface this text; ColPali RAG retrieved the wrong slide and declined to answer.}
 \label{fig:slide_glue_mmlu}
 \end{figure}
 
 Text-only happens to recover the correct answer from extracted text, but retrieval failure prevents ColPali RAG from doing so. Oracle VLM, given the gold slide directly, answers correctly.
-
-
 % ============================================================
-% SECTION 7: LIMITATIONS AND BROADER IMPACT
-% ============================================================
-\section{Limitations and Broader Impact}
-
-\paragraph{Limitations.}
-SlideQA has several limitations. The benchmark is constructed entirely from NLP courses at three English-language institutions; question style and difficulty may not generalize to other disciplines or non-English slides. QA pairs are generated by GPT-4o and manually reviewed, so the benchmark may inherit GPT-4o's question-generation biases. Gold answers are filtered to at most 10 words during curation, which excludes open-ended questions and limits reasoning complexity. Finally, all four systems use GPT-4o for answer generation, and LLM-Judge scoring also relies on GPT-4o; results may shift with different backbone or judge models.
-
-\paragraph{Broader Impact.}
-SlideQA is designed to advance the accessibility of educational materials. A reliable multimodal QA system over lecture slides could help students review course content, assist instructors in generating quizzes, and improve accessibility for students who benefit from alternative question-and-answer formats. We use only publicly available lecture slides and do not collect personal data. As with any AI system processing educational content, outputs should be validated before deployment in instructional settings, particularly given the hallucination failure mode identified in our error analysis.
-
-% ============================================================
-% SECTION 8: CONCLUSION
+% SECTION 7: CONCLUSION
 % ============================================================
 \section{Conclusion}
 
 We introduced SlideQA, a multimodal benchmark for lecture slide question answering across three public NLP courses, targeting five reasoning categories: text-only, image/diagram, table, chart/graph, and layout. Our experiments show that text-only retrieval is insufficient and multimodal retrieval with ColPali substantially improves answer quality (LLM-Judge 3.62 vs.\ 2.12 for dense text, 1.81 for BM25 text-only; oracle ceiling 4.57). The remaining gap to the oracle baseline is driven primarily by retrieval failures—when the gold evidence slide is missing from the top-$k$ context ($\sim$22\% of questions), the generator is conditioned on irrelevant slides. Future work should improve slide retrieval precision, scale SlideQA to more courses and domains, and explore stronger multimodal models for visually grounded educational QA.
+
+% ============================================================
+% DEMO LINK
+% ============================================================
+
+\section*{Demo Link}
+\url{https://cs288-shanaya.streamlit.app/}
 
 % ============================================================
 % REFERENCES
